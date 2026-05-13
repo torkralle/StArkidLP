@@ -961,8 +961,8 @@
       <span class="hero-label-text">Sapporo-based Tech Company</span>
     </div>
     <h1 class="hero-headline">
-      <span class="scramble dim" id="scramble-line1">テクノロジーで、</span>
-      <span class="scramble" id="scramble-line2">日常をもっとシンプルに</span>
+      <span class="scramble dim" id="scramble-line1">テクノロジーを、</span>
+      <span class="scramble" id="scramble-line2">暮らしの言語に。</span>
     </h1>
     <p class="hero-sub">
       St.Arkidは、AI活用支援・開発マネジメント・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリースを手がける複合テックカンパニーです。<br>
@@ -1252,11 +1252,11 @@
         </p>
         <div class="philosophy-block reveal reveal-delay-1">
           <h5>Vision</h5>
-          <p>テクノロジーで、日常をもっとシンプルに</p>
+          <p>テクノロジーを、暮らしの言語に。</p>
         </div>
         <div class="philosophy-block reveal reveal-delay-2" style="border-left-color: var(--accent-green);">
           <h5 style="color: var(--accent-green);">Mission</h5>
-          <p>人の暮らしに余白とゆとりをつくる</p>
+          <p>人とテクノロジーの間に、翻訳者であり続ける。</p>
         </div>
       </div>
     </div>
@@ -1346,8 +1346,8 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
 
 /* ===== SCRAMBLE TEXT ===== */
 (function() {
-  const visionText  = '日常をもっとシンプルに';
-  const missionText = '人の暮らしに余白をつくる';
+  const visionText  = '暮らしの言語に。';
+  const missionText = '人とテクノロジーの間に、翻訳者であり続ける。';
   const line1 = document.getElementById('scramble-line1');
   const line2 = document.getElementById('scramble-line2');
   if (!line1 || !line2) return;
@@ -1383,13 +1383,13 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
   }
 
   function run() {
-    line1.textContent = 'テクノロジーで、';
+    line1.textContent = 'テクノロジーを、';
     line2.style.opacity = '1';
     setLabels(false);
     scramble(line2, missionText, 0.5, 1400, () => {
       setTimeout(() => {
         line2.style.opacity = '0';
-        scramble(line1, 'テクノロジーで、', 0.4, 700, () => {
+        scramble(line1, 'テクノロジーを、', 0.4, 700, () => {
           setTimeout(() => {
             line2.style.opacity = '1';
             setLabels(true);
