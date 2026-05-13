@@ -961,7 +961,7 @@
       <span class="hero-label-text">Sapporo-based Tech Company</span>
     </div>
     <h1 class="hero-headline">
-      <span class="scramble dim" id="scramble-line1">テクノロジーを、</span>
+      <span class="scramble" id="scramble-line1">テクノロジーを、</span>
       <span class="scramble" id="scramble-line2">暮らしの言語に。</span>
     </h1>
     <p class="hero-sub">
@@ -1346,13 +1346,13 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
 
 /* ===== SCRAMBLE TEXT ===== */
 (function() {
-  const visionText  = '暮らしの言語に。';
-  const missionText = '人とテクノロジーの間に、翻訳者であり続ける。';
+  const visionLine1  = 'テクノロジーを、';
+  const visionLine2  = '暮らしの言語に。';
+  const missionLine1 = '人とテクノロジーの間に、';
+  const missionLine2 = '翻訳者であり続ける。';
   const line1 = document.getElementById('scramble-line1');
   const line2 = document.getElementById('scramble-line2');
   if (!line1 || !line2) return;
-
-  line2.style.opacity = '0';
 
   function scramble(el, finalText, delay, duration, onDone) {
     const chars = '01';
@@ -1377,29 +1377,25 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
     }, ms);
   }
 
-  function setLabels(isVision) {
-    line1.classList.toggle('dim', !isVision);
-    line2.classList.toggle('dim', isVision);
-  }
-
   function run() {
-    line1.textContent = 'テクノロジーを、';
+    line1.style.opacity = '1';
     line2.style.opacity = '1';
-    setLabels(false);
-    scramble(line2, missionText, 0.5, 1400, () => {
-      setTimeout(() => {
-        line2.style.opacity = '0';
-        scramble(line1, 'テクノロジーを、', 0.4, 700, () => {
-          setTimeout(() => {
-            line2.style.opacity = '1';
-            setLabels(true);
-            scramble(line2, visionText, 0.5, 1400, () => {
-              setTimeout(run, 800);
-            });
-          }, 600);
-        });
-      }, 1800);
-    });
+    line1.textContent = visionLine1;
+    line2.textContent = visionLine2;
+
+    setTimeout(() => {
+      // Both lines scramble to Mission simultaneously
+      scramble(line1, missionLine1, 0.3, 1000, null);
+      scramble(line2, missionLine2, 0.3, 1000, () => {
+        setTimeout(() => {
+          // Both lines scramble back to Vision simultaneously
+          scramble(line1, visionLine1, 0.3, 1000, null);
+          scramble(line2, visionLine2, 0.3, 1000, () => {
+            setTimeout(run, 2000);
+          });
+        }, 2000);
+      });
+    }, 2000);
   }
   setTimeout(run, 400);
 })();
