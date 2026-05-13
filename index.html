@@ -1384,16 +1384,18 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
     line2.textContent = visionLine2;
 
     setTimeout(() => {
-      // Both lines scramble to Mission simultaneously
-      scramble(line1, missionLine1, 0.3, 1000, null);
-      scramble(line2, missionLine2, 0.3, 1000, () => {
-        setTimeout(() => {
-          // Both lines scramble back to Vision simultaneously
-          scramble(line1, visionLine1, 0.3, 1000, null);
-          scramble(line2, visionLine2, 0.3, 1000, () => {
-            setTimeout(run, 2000);
-          });
-        }, 2000);
+      // line1 → line2 の順でMissionへ
+      scramble(line1, missionLine1, 0.3, 900, () => {
+        scramble(line2, missionLine2, 0.3, 900, () => {
+          setTimeout(() => {
+            // line1 → line2 の順でVisionへ
+            scramble(line1, visionLine1, 0.3, 900, () => {
+              scramble(line2, visionLine2, 0.3, 900, () => {
+                setTimeout(run, 2000);
+              });
+            });
+          }, 2000);
+        });
       });
     }, 2000);
   }
