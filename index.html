@@ -1354,6 +1354,11 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
   const line2 = document.getElementById('scramble-line2');
   if (!line1 || !line2) return;
 
+  line1.textContent = '';
+  line2.textContent = '';
+  line1.style.opacity = '0';
+  line2.style.opacity = '0';
+
   function scramble(el, finalText, delay, duration, onDone) {
     const chars = '01';
     const ms = 60;
@@ -1377,29 +1382,26 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
     }, ms);
   }
 
-  function run() {
+  function runLoop() {
+    // Vision1行目が出現
     line1.style.opacity = '1';
-    line2.style.opacity = '1';
-    line1.textContent = visionLine1;
-    line2.textContent = visionLine2;
-
-    setTimeout(() => {
-      // line1 → line2 の順でMissionへ
-      scramble(line1, missionLine1, 0.3, 900, () => {
-        scramble(line2, missionLine2, 0.3, 900, () => {
-          setTimeout(() => {
-            // line1 → line2 の順でVisionへ
-            scramble(line1, visionLine1, 0.3, 900, () => {
-              scramble(line2, visionLine2, 0.3, 900, () => {
-                setTimeout(run, 2000);
-              });
+    scramble(line1, visionLine1, 0.3, 900, () => {
+      // Vision2行目が出現
+      line2.style.opacity = '1';
+      scramble(line2, visionLine2, 0.3, 900, () => {
+        setTimeout(() => {
+          // Mission1行目
+          scramble(line1, missionLine1, 0.3, 900, () => {
+            // Mission2行目
+            scramble(line2, missionLine2, 0.3, 900, () => {
+              setTimeout(runLoop, 2000);
             });
-          }, 2000);
-        });
+          });
+        }, 2000);
       });
-    }, 2000);
+    });
   }
-  setTimeout(run, 400);
+  setTimeout(runLoop, 400);
 })();
 
 /* ===== THREE.JS BACKGROUND ===== */
