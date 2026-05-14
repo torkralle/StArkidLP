@@ -1029,7 +1029,7 @@
         <h3>私たちが提供する<br>5つの事業</h3>
         <div class="h3-overlay"></div>
       </div>
-      <p>
+      <p class="reveal reveal-delay-2">
         テクノロジーと日常生活を橋渡しする多様なサービスで、
         あらゆるフェーズのお客様をサポートします。
       </p>
@@ -1163,7 +1163,7 @@
         <h3>St.Arkidの<br>3つのアプローチ</h3>
         <div class="h3-overlay"></div>
       </div>
-      <p>
+      <p class="reveal reveal-delay-2">
         私たちは常にユーザー視点に立ち、テクノロジーを人の生活に自然に溶け込ませることを大切にしています。
       </p>
     </div>
@@ -1468,7 +1468,7 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
   const els = document.querySelectorAll('.reveal');
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  }, { threshold: 0.05, rootMargin: '0px' });
   els.forEach(el => obs.observe(el));
 })();
 
