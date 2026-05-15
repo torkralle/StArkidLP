@@ -516,6 +516,30 @@
     .service-card.minpaku{ --card-accent: var(--accent-yellow); --card-accent-s: var(--accent-yellow-s); }
     .service-card.antique{ --card-accent: var(--navy);         --card-accent-s: #e8ecf5; }
     .service-card.offshore{ --card-accent: #3a9e8f;            --card-accent-s: #e4f5f3; }
+    .service-card.car-lease{ --card-accent: var(--accent-blue); --card-accent-s: var(--accent-blue-s); }
+
+    .service-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      font-family: var(--font-en);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: var(--card-accent, var(--accent-blue));
+      transition: gap 0.2s;
+    }
+    .service-card-link::after {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: currentColor;
+      transition: width 0.2s;
+    }
+    .service-card-link:hover { gap: 12px; }
+    .service-card-link:hover::after { width: 28px; }
 
     /* wide card */
     .service-card.wide {
@@ -1129,6 +1153,7 @@
           <span class="service-tag">保険込み</span>
           <span class="service-tag">全国対応</span>
         </div>
+        <a href="/carlease/" class="service-card-link">詳しく見る</a>
       </div>
       <div class="service-card offshore wide reveal reveal-delay-1">
         <span class="service-card-icon">🌏</span>
