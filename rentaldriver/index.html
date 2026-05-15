@@ -158,6 +158,60 @@
       transition: transform 0.3s, opacity 0.3s;
     }
 
+    /* Dropdown nav */
+    .nav-has-dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .nav-has-dropdown > a { display: flex; align-items: center; gap: 4px; }
+    .nav-has-dropdown > a::after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      transform: rotate(45deg) translateY(-2px);
+      transition: transform 0.2s;
+    }
+    .nav-has-dropdown:hover > a::after { transform: rotate(-135deg) translateY(-2px); }
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 16px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(18, 18, 18, 0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px;
+      padding: 6px 0;
+      min-width: 172px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, top 0.2s;
+      white-space: nowrap;
+    }
+    .nav-has-dropdown:hover .nav-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+      top: calc(100% + 8px);
+    }
+    .nav-dropdown a {
+      display: block !important;
+      padding: 9px 18px;
+      font-size: 12px !important;
+      color: var(--gray-light) !important;
+      letter-spacing: 0.06em;
+      gap: 0 !important;
+    }
+    .nav-dropdown a::after { display: none !important; }
+    .nav-dropdown a:hover {
+      color: var(--white) !important;
+      background: rgba(255,255,255,0.05);
+    }
+
     /* Mobile Nav */
     .mobile-nav {
       display: none;
@@ -860,6 +914,14 @@
     <a href="#licenses">対応免許</a>
     <a href="#plans">料金プラン</a>
     <a href="#flow">ご利用の流れ</a>
+    <div class="nav-has-dropdown">
+      <a href="../#services">Services</a>
+      <div class="nav-dropdown">
+        <a href="../">St.Arkid Top</a>
+        <a href="../offshore/">Offshore</a>
+        <a href="../carlease/">Car Lease</a>
+      </div>
+    </div>
     <a href="#cta" class="header-cta">お問い合わせ</a>
   </nav>
   <div class="hamburger" id="hamburger">
@@ -875,6 +937,9 @@
   <a href="#plans" onclick="closeMobileNav()">料金プラン</a>
   <a href="#flow" onclick="closeMobileNav()">ご利用の流れ</a>
   <a href="#cta" onclick="closeMobileNav()">お問い合わせ</a>
+  <a href="../" onclick="closeMobileNav()">St.Arkid Top</a>
+  <a href="../offshore/" onclick="closeMobileNav()">Offshore</a>
+  <a href="../carlease/" onclick="closeMobileNav()">Car Lease</a>
 </nav>
 
 <main>
