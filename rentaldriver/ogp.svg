@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1" fill="rgba(212,119,29,0.15)"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#121212"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="700" y="0" width="500" height="630" fill="url(#dots)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="900" cy="200" r="130" fill="none" stroke="rgba(212,119,29,0.08)" stroke-width="1"/>
+  <circle cx="900" cy="200" r="210" fill="none" stroke="rgba(212,119,29,0.05)" stroke-width="1"/>
+  <circle cx="900" cy="200" r="290" fill="none" stroke="rgba(212,119,29,0.03)" stroke-width="1"/>
+
+  <!-- Accent dots -->
+  <circle cx="860" cy="155" r="6" fill="rgba(212,119,29,0.5)"/>
+  <circle cx="945" cy="235" r="4" fill="rgba(212,119,29,0.35)"/>
+  <circle cx="988" cy="172" r="8" fill="rgba(212,119,29,0.25)"/>
+  <circle cx="820" cy="265" r="3" fill="rgba(212,119,29,0.4)"/>
+  <circle cx="1048" cy="212" r="5" fill="rgba(212,119,29,0.2)"/>
+  <circle cx="905" cy="112" r="3" fill="rgba(212,119,29,0.3)"/>
+  <circle cx="972" cy="295" r="6" fill="rgba(212,119,29,0.15)"/>
+
+  <!-- Left border -->
+  <rect x="80" y="80" width="2" height="470" fill="rgba(212,119,29,0.3)"/>
+
+  <!-- Top label -->
+  <line x1="112" y1="112" x2="144" y2="112" stroke="rgba(119,119,119,0.6)" stroke-width="1"/>
+  <text x="156" y="117" font-family="'Jost','Arial',sans-serif" font-size="11" font-weight="400" fill="rgba(119,119,119,0.8)" letter-spacing="3">PRO DRIVER DISPATCH SERVICE</text>
+
+  <!-- Logo -->
+  <text x="112" y="220" font-family="'Jost','Arial',sans-serif" font-size="72" font-weight="500" fill="#ffffff" letter-spacing="4">St</text>
+  <text x="196" y="220" font-family="'Jost','Arial',sans-serif" font-size="72" font-weight="500" fill="#d4771d" letter-spacing="4">.</text>
+  <text x="214" y="220" font-family="'Jost','Arial',sans-serif" font-size="72" font-weight="500" fill="#ffffff" letter-spacing="4">Arkid</text>
+
+  <!-- Sub label -->
+  <text x="116" y="258" font-family="'Jost','Arial',sans-serif" font-size="18" font-weight="400" fill="rgba(119,119,119,0.8)" letter-spacing="5">/ RENTALDRIVER</text>
+
+  <!-- Divider -->
+  <line x1="112" y1="292" x2="460" y2="292" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Tagline -->
+  <text x="112" y="350" font-family="'Noto Sans JP','Yu Gothic','Hiragino Sans',sans-serif" font-size="32" font-weight="300" fill="#ffffff">プロドライバーを、</text>
+  <text x="112" y="398" font-family="'Noto Sans JP','Yu Gothic','Hiragino Sans',sans-serif" font-size="32" font-weight="300" fill="#d4771d">必要なときに。</text>
+
+  <!-- Sub -->
+  <text x="112" y="448" font-family="'Noto Sans JP','Yu Gothic','Hiragino Sans',sans-serif" font-size="16" font-weight="300" fill="rgba(199,199,199,0.65)">大型・大型特殊・牽引・2種・普通二輪。5種の特殊免許に対応。</text>
+
+  <!-- Stats -->
+  <text x="112" y="530" font-family="'Jost','Arial',sans-serif" font-size="36" font-weight="300" fill="#ffffff">¥5,000</text>
+  <text x="112" y="556" font-family="'Jost','Arial',sans-serif" font-size="11" font-weight="400" fill="rgba(119,119,119,0.8)" letter-spacing="2">HALF-DAY FROM</text>
+
+  <text x="330" y="530" font-family="'Jost','Arial',sans-serif" font-size="36" font-weight="300" fill="#ffffff">5</text>
+  <text x="112" y="556" font-family="'Jost','Arial',sans-serif" font-size="11" font-weight="400" fill="rgba(119,119,119,0.8)" letter-spacing="2">HALF-DAY FROM</text>
+
+  <text x="330" y="556" font-family="'Jost','Arial',sans-serif" font-size="11" font-weight="400" fill="rgba(119,119,119,0.8)" letter-spacing="2">LICENSE TYPES</text>
+
+  <text x="430" y="530" font-family="'Jost','Arial',sans-serif" font-size="36" font-weight="300" fill="#ffffff">Spot〜</text>
+  <text x="430" y="556" font-family="'Jost','Arial',sans-serif" font-size="11" font-weight="400" fill="rgba(119,119,119,0.8)" letter-spacing="2">FLEXIBLE CONTRACT</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="620" width="1200" height="4" fill="#d4771d" opacity="0.6"/>
+
+  <!-- Domain -->
+  <text x="1110" y="600" font-family="'Jost','Arial',sans-serif" font-size="13" font-weight="400" fill="rgba(119,119,119,0.5)" text-anchor="end" letter-spacing="1">st.arkid.jp/rentaldriver</text>
+</svg>
