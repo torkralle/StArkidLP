@@ -545,14 +545,11 @@
     .service-card-link:hover { gap: 12px; }
     .service-card-link:hover::after { width: 28px; }
 
-    .service-card.car-lease .service-card-link {
+    .service-card.car-lease .service-card-link::before {
+      content: '';
       position: absolute;
       inset: 0;
       z-index: 1;
-      display: flex;
-      align-items: flex-end;
-      padding: 40px;
-      margin-top: 0;
     }
 
     /* wide card */
