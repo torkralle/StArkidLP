@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース</title>
-  <meta name="description" content="St.Arkidは、AI活用支援・開発プロジェクトマネジメント・Notionアンバサダー・民泊（Airbnb）事業・古物商・ベトナムエンジニアのオフショア人材紹介・学生向けカーリースを手がける複合テックカンパニーです。札幌を拠点に、テクノロジーと人の暮らしをつなぎます。">
-  <meta name="keywords" content="St.Arkid, AI, 人工知能, 開発マネジメント, Notion, Notionアンバサダー, 民泊, Airbnb, 古物商, テック, 札幌, ベトナム, オフショア, 人材紹介, エンジニア採用, カーリース, 学生カーリース">
-  <meta property="og:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース">
-  <meta property="og:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリースまで幅広く手がけます。">
+  <title>St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー</title>
+  <meta name="description" content="St.Arkidは、AI活用支援・開発プロジェクトマネジメント・Notionアンバサダー・民泊（Airbnb）事業・古物商・ベトナムエンジニアのオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣を手がける複合テックカンパニーです。札幌を拠点に、テクノロジーと人の暮らしをつなぎます。">
+  <meta name="keywords" content="St.Arkid, AI, 人工知能, 開発マネジメント, Notion, Notionアンバサダー, 民泊, Airbnb, 古物商, テック, 札幌, ベトナム, オフショア, 人材紹介, エンジニア採用, カーリース, 学生カーリース, レンタルドライバー, 運転代行, ドライバー派遣, 大型免許, 2種免許">
+  <meta property="og:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー">
+  <meta property="og:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣まで幅広く手がけます。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/">
   <meta property="og:image" content="https://st.arkid.jp/ogp.png">
@@ -16,8 +16,8 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="St.Arkid">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース">
-  <meta name="twitter:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリースまで幅広く手がけます。">
+  <meta name="twitter:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー">
+  <meta name="twitter:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣まで幅広く手がけます。">
   <meta name="twitter:image" content="https://st.arkid.jp/ogp.png">
   <meta name="robots" content="index, follow">
   <meta name="author" content="St.Arkid">
@@ -521,6 +521,17 @@
       --card-accent-s: var(--accent-blue-s);
       cursor: pointer;
     }
+    .service-card.rental-driver {
+      --card-accent: #d4771d;
+      --card-accent-s: #fdf0e3;
+      cursor: pointer;
+    }
+    .service-card.rental-driver .service-card-link::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
 
     .service-card-link {
       display: inline-flex;
@@ -877,7 +888,7 @@
           { "@type": "Country", "name": "Japan" },
           { "@type": "Country", "name": "Vietnam" }
         ],
-        "knowsAbout": ["人工知能", "AI活用支援", "開発マネジメント", "Notion", "民泊", "古物商", "オフショア人材紹介", "ベトナムエンジニア", "カーリース", "学生カーリース"],
+        "knowsAbout": ["人工知能", "AI活用支援", "開発マネジメント", "Notion", "民泊", "古物商", "オフショア人材紹介", "ベトナムエンジニア", "カーリース", "学生カーリース", "レンタルドライバー", "ドライバー派遣", "大型免許", "2種免許"],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "St.Arkid Services",
@@ -936,6 +947,14 @@
                 "@type": "Service",
                 "name": "学生向けカーリース",
                 "description": "学生でも審査が通りやすい月額定額の学生専用カーリースサービス。車両代・保険・車検・税金を一本化し、初期費用ゼロでカーライフを始められます。"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "レンタルドライバー派遣",
+                "description": "大型・大型特殊・牽引・2種・普通二輪など特殊免許を保持するプロドライバーを必要なときだけ派遣。急なドライバー不在・特殊車両の運転代行・イベント輸送まで柔軟に対応します。"
               }
             }
           ]
@@ -1000,7 +1019,7 @@
       <span class="scramble" id="scramble-line2">暮らしの言語に。</span>
     </h1>
     <p class="hero-sub">
-      St.Arkidは、AI活用支援・開発マネジメント・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリースを手がける複合テックカンパニーです。<br>
+      St.Arkidは、AI活用支援・開発マネジメント・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣を手がける複合テックカンパニーです。<br>
       テクノロジーと人の暮らしをつなぎ、日常に新しい価値を届けます。
     </p>
     <div class="hero-cta-group">
@@ -1166,7 +1185,24 @@
         </div>
         <a href="/carlease/" class="service-card-link">詳しく見る</a>
       </div>
-      <div class="service-card offshore wide reveal reveal-delay-1">
+      <div class="service-card rental-driver reveal reveal-delay-1">
+        <span class="service-card-icon">🚛</span>
+        <div class="service-card-en">Rental Driver</div>
+        <h4 class="service-card-title">レンタルドライバー<br>派遣</h4>
+        <p class="service-card-desc">
+          大型・大型特殊・牽引・2種・普通二輪など特殊免許保持のプロドライバーを必要なときだけ手配。
+          急なドライバー不在・特殊車両の運転代行・イベント輸送まで柔軟に対応します。
+        </p>
+        <div class="service-card-tags">
+          <span class="service-tag">大型免許</span>
+          <span class="service-tag">大型特殊</span>
+          <span class="service-tag">牽引</span>
+          <span class="service-tag">2種免許</span>
+          <span class="service-tag">普通二輪</span>
+        </div>
+        <a href="/rentaldriver/" class="service-card-link">詳しく見る</a>
+      </div>
+      <div class="service-card offshore reveal reveal-delay-2">
         <span class="service-card-icon">🌏</span>
         <div class="service-card-en">Offshore Staffing</div>
         <h4 class="service-card-title">オフショア人材紹介<br>（ベトナム）</h4>
@@ -1267,7 +1303,8 @@
               民泊（Airbnb）事業<br>
               古物商<br>
               オフショア人材紹介（ベトナム）<br>
-              学生向けカーリース
+              学生向けカーリース<br>
+              レンタルドライバー派遣
             </td>
           </tr>
           <tr>

@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentalDriver | プロドライバー派遣 — St.Arkid</title>
+  <meta name="description" content="大型・大型特殊・牽引・2種・普通二輪の特殊免許を保持するプロドライバーを必要なときだけ手配。ハーフデイ・フルデイ・月次契約まで柔軟対応。St.Arkidのレンタルドライバー派遣サービス。">
+  <meta name="keywords" content="レンタルドライバー, ドライバー派遣, 運転代行, 大型免許, 大型特殊免許, 牽引免許, 2種免許, 普通二輪, バイク便, 札幌, 北海道, St.Arkid">
+  <meta property="og:title" content="RentalDriver | プロドライバー派遣 — St.Arkid">
+  <meta property="og:description" content="特殊免許保持のプロドライバーを必要なときだけ手配。大型・大型特殊・牽引・2種・普通二輪に対応。ハーフデイ¥5,000〜。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://st.arkid.jp/rentaldriver/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="St.Arkid">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="St.Arkid">
+  <link rel="canonical" href="https://st.arkid.jp/rentaldriver/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:            #121212;
+      --black-mid:        #2d2d2d;
+      --gray:             #757575;
+      --gray-light:       #c7c7c7;
+      --surface:          #f9f9f9;
+      --white:            #ffffff;
+      --accent-blue:      #4290b6;
+      --accent-green:     #629f64;
+      --driver-accent:    #d4771d;
+      --driver-accent-s:  #fdf0e3;
+      --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-jp);
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ===== LOADING ===== */
+    #loading {
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeOutLoader 0.6s ease 1.6s forwards;
+    }
+    .loading-text {
+      font-family: var(--font-en);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      animation: loadingPulse 1s ease-in-out infinite alternate;
+    }
+    @keyframes loadingPulse { from { opacity: 0.3; } to { opacity: 1; } }
+    @keyframes fadeOutLoader { to { opacity: 0; pointer-events: none; visibility: hidden; } }
+
+    /* ===== HEADER ===== */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 48px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease, transform 0.3s ease;
+    }
+    #header.scrolled {
+      background: rgba(18, 18, 18, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-logo {
+      font-family: var(--font-en);
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .header-logo span { color: var(--driver-accent); }
+    .header-logo-sub {
+      font-family: var(--font-en);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--gray);
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+    nav.header-nav {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+    }
+    nav.header-nav a {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: var(--gray-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav.header-nav a:hover { color: var(--white); }
+    .header-cta {
+      font-family: var(--font-en);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--white) !important;
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 8px 20px;
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s !important;
+    }
+    .header-cta:hover {
+      background: rgba(255,255,255,0.1) !important;
+      border-color: var(--white) !important;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--white);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* Mobile Nav */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      z-index: 200;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: var(--font-jp);
+      font-size: 18px;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+    }
+    .mobile-nav-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      cursor: pointer;
+      font-size: 28px;
+      color: var(--gray-light);
+      line-height: 1;
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--black);
+      overflow: hidden;
+    }
+    #webgl-container {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 48px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .hero-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .hero-label-line {
+      width: 32px;
+      height: 1px;
+      background: var(--gray);
+    }
+    .hero-label-text {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+    .hero-headline {
+      font-size: clamp(42px, 7vw, 88px);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 32px;
+    }
+    .hero-headline .line { display: block; color: var(--white); }
+    .hero-headline .line.dim { color: var(--gray); }
+    .hero-headline .line em {
+      font-style: normal;
+      color: var(--driver-accent);
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 480px;
+      margin-bottom: 52px;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      background: var(--white);
+      color: var(--black);
+      padding: 14px 36px;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gray-light); }
+    .btn-secondary {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: var(--gray-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.2s;
+    }
+    .btn-secondary:hover { color: var(--white); }
+    .btn-secondary::after {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: currentColor;
+      transition: width 0.2s;
+    }
+    .btn-secondary:hover::after { width: 36px; }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, transparent, var(--gray));
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%, 100% { transform: scaleY(0); transform-origin: top; }
+      50%       { transform: scaleY(1); transform-origin: top; }
+    }
+    .hero-scroll-text {
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      writing-mode: vertical-rl;
+      text-transform: uppercase;
+    }
+
+    /* Hero stats */
+    .hero-stats {
+      position: absolute;
+      bottom: 40px;
+      right: 48px;
+      display: flex;
+      gap: 48px;
+      z-index: 2;
+    }
+    .hero-stat-item { text-align: right; }
+    .hero-stat-num {
+      font-family: var(--font-en);
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1;
+      display: block;
+    }
+    .hero-stat-label {
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ===== SECTION WRAPPER ===== */
+    section { position: relative; }
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ===== H3 ANIMATION ===== */
+    .h3-wrap {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+    .h3-wrap h3 {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+    .h3-wrap .h3-overlay {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0% 0%, 115% 0%, 130% 100%, 0% 100%);
+      transition: clip-path 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+      background: inherit;
+    }
+    .h3-wrap.revealed .h3-overlay {
+      clip-path: polygon(115% 0%, 115% 0%, 130% 100%, 130% 100%);
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .section-label-line {
+      width: 24px;
+      height: 1px;
+      background: var(--gray);
+    }
+    .section-label-text {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+
+    /* ===== PROBLEM SECTION ===== */
+    #problem {
+      background: var(--black-mid);
+      padding: 140px 0;
+    }
+    .problem-header {
+      margin-bottom: 72px;
+    }
+    .problem-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 560px;
+    }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+    }
+    .problem-item {
+      background: var(--black-mid);
+      padding: 48px 40px;
+      transition: background 0.3s;
+    }
+    .problem-item:hover { background: rgba(255,255,255,0.04); }
+    .problem-icon { font-size: 36px; margin-bottom: 20px; }
+    .problem-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .problem-desc {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+
+    /* ===== LICENSES SECTION ===== */
+    #licenses {
+      background: var(--surface);
+      color: var(--black);
+      padding: 140px 0;
+    }
+    #licenses .section-label-line { background: var(--gray); }
+    #licenses h3 { color: var(--black); }
+    .licenses-header {
+      margin-bottom: 72px;
+    }
+    .licenses-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray);
+      line-height: 1.9;
+      max-width: 560px;
+    }
+    .licenses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .license-card {
+      background: var(--white);
+      padding: 44px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .license-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+      z-index: 1;
+    }
+    .license-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--driver-accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .license-card:hover::before { transform: scaleX(1); }
+    .license-icon { font-size: 36px; margin-bottom: 20px; display: block; }
+    .license-en {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .license-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .license-desc {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+    .license-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .license-tag {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      color: var(--driver-accent);
+      background: var(--driver-accent-s);
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+    .license-card.wide-bottom {
+      grid-column: span 1;
+    }
+
+    /* ===== PLANS SECTION ===== */
+    #plans {
+      background: var(--black);
+      padding: 140px 0;
+    }
+    .plans-header {
+      margin-bottom: 72px;
+    }
+    .plans-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 560px;
+    }
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+    }
+    .plan-card {
+      background: var(--black);
+      padding: 48px 36px;
+      transition: background 0.3s;
+      position: relative;
+    }
+    .plan-card:hover { background: rgba(255,255,255,0.03); }
+    .plan-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--driver-accent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .plan-card:hover::before { opacity: 1; }
+    .plan-license-icon { font-size: 32px; margin-bottom: 16px; }
+    .plan-license-name {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--driver-accent);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .plan-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .plan-subtitle {
+      font-size: 13px;
+      color: var(--gray);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .plan-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+      margin-bottom: 24px;
+    }
+    .plan-slots { list-style: none; }
+    .plan-slot {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      gap: 12px;
+    }
+    .plan-slot:last-child { border-bottom: none; }
+    .plan-slot-name {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .plan-slot-time {
+      font-family: var(--font-en);
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .plan-slot-price {
+      font-family: var(--font-en);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--driver-accent);
+      white-space: nowrap;
+    }
+    .plan-note {
+      font-size: 12px;
+      color: var(--gray);
+      margin-top: 20px;
+      line-height: 1.8;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    /* ===== FLOW SECTION ===== */
+    #flow {
+      background: var(--black-mid);
+      padding: 140px 0;
+    }
+    .flow-header {
+      margin-bottom: 72px;
+    }
+    .flow-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 520px;
+    }
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+      position: relative;
+    }
+    .flow-step {
+      background: var(--black-mid);
+      padding: 48px 36px;
+      transition: background 0.3s;
+    }
+    .flow-step:hover { background: rgba(255,255,255,0.03); }
+    .flow-step-num {
+      font-family: var(--font-en);
+      font-size: 56px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.07);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .flow-step-icon { font-size: 28px; margin-bottom: 16px; }
+    .flow-step-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .flow-step-desc {
+      font-size: 13px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+
+    /* ===== CTA SECTION ===== */
+    #cta {
+      background: var(--black);
+      padding: 140px 0;
+      text-align: center;
+    }
+    .cta-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+    .cta-inner .section-label { justify-content: center; }
+    .cta-inner h2 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 24px;
+    }
+    .cta-inner h2 em {
+      font-style: normal;
+      color: var(--driver-accent);
+    }
+    .cta-inner p {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      margin-bottom: 52px;
+    }
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-cta {
+      font-family: var(--font-en);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      background: var(--white);
+      color: var(--black);
+      padding: 18px 60px;
+      border-radius: 2px;
+      width: 100%;
+      max-width: 360px;
+      display: block;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .btn-cta:hover { background: var(--gray-light); }
+    .cta-email {
+      font-family: var(--font-en);
+      font-size: 14px;
+      color: var(--gray);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .cta-email:hover { color: var(--gray-light); }
+    .cta-email::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 1px;
+      background: currentColor;
+    }
+    .cta-note {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 32px;
+      line-height: 1.8;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 48px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-logo {
+      font-family: var(--font-en);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-decoration: none;
+    }
+    .footer-logo span { color: var(--driver-accent); }
+    .footer-nav {
+      display: flex;
+      gap: 28px;
+    }
+    .footer-nav a {
+      font-family: var(--font-en);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--gray-light); }
+    .footer-copy {
+      font-family: var(--font-en);
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 0.05em;
+      width: 100%;
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      margin-top: 8px;
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .licenses-grid { grid-template-columns: 1fr 1fr; }
+      .plans-grid { grid-template-columns: 1fr 1fr; }
+      .flow-steps { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      #header { padding: 0 24px; }
+      nav.header-nav { display: none; }
+      .hamburger { display: flex; }
+      .hero-content { padding: 0 24px; }
+      .hero-scroll { left: 24px; }
+      .hero-stats { display: none; }
+      .section-inner { padding: 0 24px; }
+      .licenses-grid { grid-template-columns: 1fr; }
+      .plans-grid { grid-template-columns: 1fr; }
+      .flow-steps { grid-template-columns: 1fr; }
+      .problem-grid { grid-template-columns: 1fr; }
+      #problem, #licenses, #plans, #flow, #cta { padding: 100px 0; }
+      .cta-inner { padding: 0 24px; }
+      footer { padding: 40px 24px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-headline { font-size: 36px; }
+      .license-card { padding: 36px 28px; }
+      .plan-card { padding: 36px 28px; }
+      .flow-step { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Loading -->
+<div id="loading"><span class="loading-text">LOADING...</span></div>
+
+<!-- Header -->
+<header id="header">
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ RentalDriver</span></a>
+  <nav class="header-nav" aria-label="メインナビゲーション">
+    <a href="#problem">課題</a>
+    <a href="#licenses">対応免許</a>
+    <a href="#plans">料金プラン</a>
+    <a href="#flow">ご利用の流れ</a>
+    <a href="#cta" class="header-cta">お問い合わせ</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <span class="mobile-nav-close" id="mobileNavClose">✕</span>
+  <a href="#problem" onclick="closeMobileNav()">課題</a>
+  <a href="#licenses" onclick="closeMobileNav()">対応免許</a>
+  <a href="#plans" onclick="closeMobileNav()">料金プラン</a>
+  <a href="#flow" onclick="closeMobileNav()">ご利用の流れ</a>
+  <a href="#cta" onclick="closeMobileNav()">お問い合わせ</a>
+</nav>
+
+<main>
+
+<!-- Hero -->
+<section id="hero">
+  <div id="webgl-container"></div>
+  <div class="hero-content">
+    <div class="hero-label">
+      <div class="hero-label-line"></div>
+      <span class="hero-label-text">Rental Driver Dispatch Service</span>
+    </div>
+    <h1 class="hero-headline">
+      <span class="line">プロドライバーを、</span>
+      <span class="line"><em>必要なときに。</em></span>
+      <span class="line dim">5種の特殊免許に対応。</span>
+    </h1>
+    <p class="hero-sub">
+      大型・大型特殊・牽引・2種・普通二輪——<br>
+      特殊免許を保持するプロドライバーを、スポットから月次契約まで柔軟に手配します。<br>
+      急なドライバー不在も、特殊車両の運転代行も、St.Arkidにお任せください。
+    </p>
+    <div class="hero-cta-group">
+      <a href="#plans" class="btn-primary">料金プランを見る</a>
+      <a href="#cta" class="btn-secondary">まずは相談する</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-text">Scroll</span>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat-item">
+      <span class="hero-stat-num">5</span>
+      <div class="hero-stat-label">License Types</div>
+    </div>
+    <div class="hero-stat-item">
+      <span class="hero-stat-num">Same Day</span>
+      <div class="hero-stat-label">Fastest Dispatch</div>
+    </div>
+    <div class="hero-stat-item">
+      <span class="hero-stat-num">¥5k〜</span>
+      <div class="hero-stat-label">Half Day Plan</div>
+    </div>
+  </div>
+</section>
+
+<!-- Problem -->
+<section id="problem">
+  <div class="section-inner">
+    <div class="problem-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Use Cases</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
+        <h3>こんな場面で、<br>お役に立てます</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        ドライバー不足・特殊免許の壁・採用コストの問題——
+        「必要なときだけ」プロに頼める仕組みで、すべてを解決します。
+      </p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-item reveal reveal-delay-1">
+        <div class="problem-icon">🚨</div>
+        <div class="problem-title">急なドライバー<br>不在に対応したい</div>
+        <p class="problem-desc">病欠・退職・繁忙期の欠員補充など、突発的なドライバー不在に即日〜翌日対応で補填します。繁忙期のスポット増員にも活用できます。</p>
+      </div>
+      <div class="problem-item reveal reveal-delay-2">
+        <div class="problem-icon">🏗️</div>
+        <div class="problem-title">特殊免許が必要な業務が<br>スポットで発生する</div>
+        <p class="problem-desc">建設現場の重機移動・大型車両の納車・トレーラー輸送など、特定の免許が必要な業務が単発で生じるケースに対応します。採用・育成は不要です。</p>
+      </div>
+      <div class="problem-item reveal reveal-delay-3">
+        <div class="problem-icon">💼</div>
+        <div class="problem-title">採用コストを抑えて<br>柔軟に使いたい</div>
+        <p class="problem-desc">専任ドライバーを雇用すると年間コストが重くなります。必要なときだけ手配できるレンタルドライバーなら、人件費・教育費・社会保険コストを大幅に削減できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Licenses -->
+<section id="licenses">
+  <div class="section-inner">
+    <div class="licenses-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Supported Licenses</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--surface);">
+        <h3>5種の特殊免許に<br>対応しています</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        各免許の特性に精通したプロドライバーが対応します。
+        ご不明な場合はまずご相談ください。最適なドライバーをご提案します。
+      </p>
+    </div>
+    <div class="licenses-grid">
+
+      <div class="license-card reveal reveal-delay-1">
+        <span class="license-icon">🚛</span>
+        <div class="license-en">Large Vehicle License</div>
+        <div class="license-name">大型免許</div>
+        <p class="license-desc">
+          車両総重量11トン以上の大型トラック・バスの運転に必要な免許。
+          長距離輸送・大型引越し・工業製品の輸配送などに対応します。
+        </p>
+        <div class="license-tags">
+          <span class="license-tag">大型トラック</span>
+          <span class="license-tag">観光バス</span>
+          <span class="license-tag">長距離輸送</span>
+          <span class="license-tag">引越し</span>
+        </div>
+      </div>
+
+      <div class="license-card reveal reveal-delay-2">
+        <span class="license-icon">🏗️</span>
+        <div class="license-en">Large Special Vehicle License</div>
+        <div class="license-name">大型特殊免許</div>
+        <p class="license-desc">
+          最高速度が低い特殊構造の大型車両（重機・フォークリフト3.5t超・農業機械など）の公道走行に必要な免許。
+          建設現場・港湾・農場での重機移動に対応します。
+        </p>
+        <div class="license-tags">
+          <span class="license-tag">建設重機</span>
+          <span class="license-tag">フォークリフト</span>
+          <span class="license-tag">農業機械</span>
+          <span class="license-tag">港湾作業</span>
+        </div>
+      </div>
+
+      <div class="license-card reveal reveal-delay-3">
+        <span class="license-icon">🔗</span>
+        <div class="license-en">Towing License</div>
+        <div class="license-name">牽引免許</div>
+        <p class="license-desc">
+          車両総重量750kgを超える被牽引車（トレーラー・キャリアカー）をけん引するために必要な免許。
+          セミトレーラー・ロードトレーラーによる大型輸送に対応します。
+        </p>
+        <div class="license-tags">
+          <span class="license-tag">セミトレーラー</span>
+          <span class="license-tag">キャリアカー</span>
+          <span class="license-tag">大型輸送</span>
+          <span class="license-tag">重量物輸送</span>
+        </div>
+      </div>
+
+      <div class="license-card reveal reveal-delay-4">
+        <span class="license-icon">🚕</span>
+        <div class="license-en">Type 2 License</div>
+        <div class="license-name">2種免許</div>
+        <p class="license-desc">
+          旅客（乗客）を有償で運送するために必要な免許。タクシー・代行運転・送迎バス・観光バスの運転に対応します。
+          イベント時の貸切輸送や空港送迎にも活用できます。
+        </p>
+        <div class="license-tags">
+          <span class="license-tag">タクシー代行</span>
+          <span class="license-tag">送迎バス</span>
+          <span class="license-tag">観光バス</span>
+          <span class="license-tag">空港送迎</span>
+          <span class="license-tag">イベント輸送</span>
+        </div>
+      </div>
+
+      <div class="license-card reveal reveal-delay-5">
+        <span class="license-icon">🏍️</span>
+        <div class="license-en">Regular Motorcycle License</div>
+        <div class="license-name">普通二輪免許</div>
+        <p class="license-desc">
+          400cc以下のバイクを運転できる免許。
+          書類・小口荷物・医薬品のバイク便配送、都市部でのスピード感ある配達業務に対応します。
+        </p>
+        <div class="license-tags">
+          <span class="license-tag">バイク便</span>
+          <span class="license-tag">書類配達</span>
+          <span class="license-tag">小口輸送</span>
+          <span class="license-tag">医薬品配送</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Plans -->
+<section id="plans">
+  <div class="section-inner">
+    <div class="plans-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Pricing Plans</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black);">
+        <h3>免許種別・<br>時間帯別プラン</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        ハーフデイから月次契約まで、業務内容に合わせて選べます。
+        表示価格はガイドラインです。距離・作業内容によって変動しますので、まずはご相談ください。
+      </p>
+    </div>
+    <div class="plans-grid">
+
+      <!-- 大型免許 -->
+      <div class="plan-card reveal reveal-delay-1">
+        <div class="plan-license-icon">🚛</div>
+        <div class="plan-license-name">Large Vehicle</div>
+        <div class="plan-title">大型免許</div>
+        <div class="plan-subtitle">大型トラック・バス運転<br>長距離輸送・引越し</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-slots">
+          <li class="plan-slot">
+            <span class="plan-slot-name">ハーフデイ</span>
+            <span class="plan-slot-time">4時間</span>
+            <span class="plan-slot-price">¥12,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">フルデイ</span>
+            <span class="plan-slot-time">8時間</span>
+            <span class="plan-slot-price">¥20,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">残業追加</span>
+            <span class="plan-slot-time">1時間ごと</span>
+            <span class="plan-slot-price">¥2,500</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">月次契約</span>
+            <span class="plan-slot-time">要相談</span>
+            <span class="plan-slot-price">応相談</span>
+          </li>
+        </ul>
+        <p class="plan-note">※ 長距離輸送は距離に応じて別途高速・燃料費が発生します</p>
+      </div>
+
+      <!-- 大型特殊 -->
+      <div class="plan-card reveal reveal-delay-2">
+        <div class="plan-license-icon">🏗️</div>
+        <div class="plan-license-name">Large Special</div>
+        <div class="plan-title">大型特殊免許</div>
+        <div class="plan-subtitle">建設重機・フォークリフト<br>農業機械・港湾作業</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-slots">
+          <li class="plan-slot">
+            <span class="plan-slot-name">ショートタイム</span>
+            <span class="plan-slot-time">2時間〜</span>
+            <span class="plan-slot-price">¥8,000〜</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">ハーフデイ</span>
+            <span class="plan-slot-time">4時間</span>
+            <span class="plan-slot-price">¥14,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">フルデイ</span>
+            <span class="plan-slot-time">8時間</span>
+            <span class="plan-slot-price">¥24,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">月次契約</span>
+            <span class="plan-slot-time">要相談</span>
+            <span class="plan-slot-price">応相談</span>
+          </li>
+        </ul>
+        <p class="plan-note">※ 車両・重機のオペレーター資格が別途必要な場合があります</p>
+      </div>
+
+      <!-- 牽引 -->
+      <div class="plan-card reveal reveal-delay-3">
+        <div class="plan-license-icon">🔗</div>
+        <div class="plan-license-name">Towing</div>
+        <div class="plan-title">牽引免許</div>
+        <div class="plan-subtitle">セミトレーラー・キャリアカー<br>重量物・大型輸送</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-slots">
+          <li class="plan-slot">
+            <span class="plan-slot-name">ハーフデイ</span>
+            <span class="plan-slot-time">4時間</span>
+            <span class="plan-slot-price">¥10,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">フルデイ</span>
+            <span class="plan-slot-time">8時間</span>
+            <span class="plan-slot-price">¥18,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">残業追加</span>
+            <span class="plan-slot-time">1時間ごと</span>
+            <span class="plan-slot-price">¥2,200</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">月次契約</span>
+            <span class="plan-slot-time">要相談</span>
+            <span class="plan-slot-price">応相談</span>
+          </li>
+        </ul>
+        <p class="plan-note">※ 大型免許との複合保有者への依頼も対応可能です</p>
+      </div>
+
+      <!-- 2種免許 -->
+      <div class="plan-card reveal reveal-delay-4">
+        <div class="plan-license-icon">🚕</div>
+        <div class="plan-license-name">Type 2 License</div>
+        <div class="plan-title">2種免許</div>
+        <div class="plan-subtitle">送迎バス・観光バス<br>タクシー代行・空港送迎</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-slots">
+          <li class="plan-slot">
+            <span class="plan-slot-name">昼間プラン</span>
+            <span class="plan-slot-time">9:00〜17:00</span>
+            <span class="plan-slot-price">¥15,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">夜間プラン</span>
+            <span class="plan-slot-time">17:00〜翌1:00</span>
+            <span class="plan-slot-price">¥18,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">イベントプラン</span>
+            <span class="plan-slot-time">最大12時間</span>
+            <span class="plan-slot-price">¥28,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">月次契約</span>
+            <span class="plan-slot-time">要相談</span>
+            <span class="plan-slot-price">応相談</span>
+          </li>
+        </ul>
+        <p class="plan-note">※ 旅客運送事業許可（緑ナンバー）の取得が別途必要です</p>
+      </div>
+
+      <!-- 普通二輪 -->
+      <div class="plan-card reveal reveal-delay-5">
+        <div class="plan-license-icon">🏍️</div>
+        <div class="plan-license-name">Regular Motorcycle</div>
+        <div class="plan-title">普通二輪免許</div>
+        <div class="plan-subtitle">バイク便・書類配達<br>小口輸送・医薬品配送</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-slots">
+          <li class="plan-slot">
+            <span class="plan-slot-name">ハーフデイ</span>
+            <span class="plan-slot-time">4時間</span>
+            <span class="plan-slot-price">¥5,000</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">フルデイ</span>
+            <span class="plan-slot-time">8時間</span>
+            <span class="plan-slot-price">¥8,500</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">残業追加</span>
+            <span class="plan-slot-time">1時間ごと</span>
+            <span class="plan-slot-price">¥1,200</span>
+          </li>
+          <li class="plan-slot">
+            <span class="plan-slot-name">月次契約</span>
+            <span class="plan-slot-time">要相談</span>
+            <span class="plan-slot-price">応相談</span>
+          </li>
+        </ul>
+        <p class="plan-note">※ バイク・装備はドライバー持参。配送エリアにより追加費用あり</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Flow -->
+<section id="flow">
+  <div class="section-inner">
+    <div class="flow-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">How to Use</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
+        <h3>4ステップで<br>簡単手配</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        面倒な手続きは不要です。
+        メール・電話でのご連絡から最短当日〜翌日でドライバーを手配します。
+      </p>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step reveal reveal-delay-1">
+        <div class="flow-step-num">01</div>
+        <div class="flow-step-icon">📬</div>
+        <div class="flow-step-title">お問い合わせ・<br>ご依頼内容確認</div>
+        <p class="flow-step-desc">必要な免許種別・日時・業務内容・エリアをお知らせください。メール・電話どちらでも対応します。</p>
+      </div>
+      <div class="flow-step reveal reveal-delay-2">
+        <div class="flow-step-num">02</div>
+        <div class="flow-step-icon">🔍</div>
+        <div class="flow-step-title">ドライバー<br>マッチング</div>
+        <p class="flow-step-desc">ご依頼内容に合った免許・経験を持つドライバーをマッチング。スケジュール調整・見積もりをご提示します。</p>
+      </div>
+      <div class="flow-step reveal reveal-delay-3">
+        <div class="flow-step-num">03</div>
+        <div class="flow-step-icon">📋</div>
+        <div class="flow-step-title">ご契約・<br>事前確認</div>
+        <p class="flow-step-desc">メールでの電子契約で完了。業務内容・ルート・注意事項を事前に共有し、当日スムーズに開始できるよう準備します。</p>
+      </div>
+      <div class="flow-step reveal reveal-delay-4">
+        <div class="flow-step-num">04</div>
+        <div class="flow-step-icon">🚛</div>
+        <div class="flow-step-title">ドライバー派遣・<br>業務完了</div>
+        <p class="flow-step-desc">指定日時にドライバーが現地へ。業務完了後に報告書を提出。継続利用・定期契約への切り替えも歓迎します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Contact</span>
+    </div>
+    <h2 class="reveal reveal-delay-1">
+      まずは<em>気軽に</em><br>ご相談ください
+    </h2>
+    <p class="reveal reveal-delay-2">
+      必要な免許・日程・業務の規模感を教えていただければ、
+      最適なプランとドライバーをご提案します。<br>
+      見積もりは無料です。お気軽にどうぞ。
+    </p>
+    <div class="cta-actions reveal reveal-delay-3">
+      <a href="mailto:info@st.arkid.jp?subject=レンタルドライバー 相談&body=ご担当者名：%0A会社名・団体名：%0A必要な免許種別（大型・大型特殊・牽引・2種・普通二輪）：%0Aご利用希望日時：%0A業務内容・エリア：%0Aご質問・その他：" class="btn-cta">メールで相談する</a>
+      <a href="mailto:info@st.arkid.jp" class="cta-email">info@st.arkid.jp</a>
+    </div>
+    <p class="cta-note reveal reveal-delay-4">
+      現在は北海道・東北エリアを中心に対応しています。他エリアもお気軽にご相談ください。
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <a href="../" class="footer-logo">St<span>.</span>Arkid</a>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="#problem">課題</a>
+      <a href="#licenses">対応免許</a>
+      <a href="#plans">料金プラン</a>
+      <a href="#flow">ご利用の流れ</a>
+      <a href="#cta">お問い合わせ</a>
+      <a href="../">トップへ戻る</a>
+    </nav>
+    <div class="footer-copy">© <span id="footer-year">2026</span> St.Arkid. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ===== FOOTER YEAR ===== */
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+/* ===== LOADING ===== */
+(function() {
+  const loader = document.getElementById('loading');
+  if (!loader) return;
+  if (!sessionStorage.getItem('starkidRentalDriverLoaderPlayed')) {
+    loader.style.display = 'flex';
+    sessionStorage.setItem('starkidRentalDriverLoaderPlayed', 'true');
+  } else {
+    loader.style.display = 'none';
+  }
+})();
+
+/* ===== HEADER SCROLL ===== */
+(function() {
+  const header = document.getElementById('header');
+  const isSP = () => window.innerWidth <= 768;
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    if (isSP()) {
+      header.style.transform = (y > lastY && y > 80) ? 'translateY(-100%)' : 'translateY(0)';
+    } else {
+      header.style.transform = '';
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+/* ===== HAMBURGER ===== */
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileNav').classList.add('open');
+});
+document.getElementById('mobileNavClose').addEventListener('click', closeMobileNav);
+
+/* ===== THREE.JS BACKGROUND ===== */
+(function() {
+  setTimeout(() => {
+    const container = document.getElementById('webgl-container');
+    if (!container || typeof THREE === 'undefined') return;
+    let w = window.innerWidth, h = window.innerHeight;
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(w, h);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.domElement.style.cssText = 'position:absolute;top:0;left:0;';
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(60, w / h, 0.5, 120);
+    camera.position.set(0, 2, 10);
+    camera.lookAt(0, 0, 0);
+
+    const mat = new THREE.MeshPhongMaterial({ color: 0xffffff, transparent: true, opacity: 0.06, flatShading: false });
+    const geo = new THREE.BoxGeometry(2, 2, 0.01);
+    const boxes = [];
+    for (let i = 0; i < 300; i++) {
+      const box = new THREE.Mesh(geo, mat);
+      box.position.set((Math.random() * 2.3 - 1) * 20, (Math.random() * 2.2 - 1) * 20, (Math.random() * 2.1 - 1) * 20);
+      box.scale.set(Math.random() * 2 - 2, Math.random() * 2 - 1.98, 0.01);
+      scene.add(box);
+      boxes.push(box);
+    }
+    const dLight = new THREE.DirectionalLight(0xffffff, 1);
+    dLight.position.set(2.2, 2, Math.PI);
+    scene.add(dLight, new THREE.AmbientLight(0xffffff, 0.2));
+
+    let rot = 0, mx = 0, my = 0;
+    document.addEventListener('mousemove', e => { mx = e.pageX; my = e.pageY; });
+
+    function tick() {
+      const target = ((mx + my) / window.innerWidth) * -45;
+      rot += (target - rot) * 0.02;
+      const r = rot * Math.PI / 180;
+      camera.position.x = 11 * Math.sin(r);
+      camera.position.z = 11 * Math.cos(r);
+      camera.lookAt(new THREE.Vector3(-10, 0, 0));
+      boxes.forEach(b => {
+        b.position.x -= 0.008;
+        b.position.y -= (Math.random() * 0.002 + 0.002);
+        b.position.z += Math.random() * 0.004 + 0.001;
+      });
+      renderer.render(scene, camera);
+      requestAnimationFrame(tick);
+    }
+    window.addEventListener('resize', () => {
+      w = window.innerWidth; h = window.innerHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    });
+    tick();
+  }, 120);
+})();
+
+/* ===== SCROLL REVEAL ===== */
+(function() {
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px' });
+  els.forEach(el => obs.observe(el));
+})();
+
+/* ===== H3 CLIP ANIMATION ===== */
+(function() {
+  const wraps = document.querySelectorAll('.h3-wrap');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
+  }, { threshold: 0.2 });
+  wraps.forEach(w => obs.observe(w));
+})();
+</script>
+
+</body>
+</html>
