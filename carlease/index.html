@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentCarLease | 学生向けカーリース — St.Arkid</title>
+  <meta name="description" content="北海道の学生のための月額定額カーリース。¥5,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結でカーライフをスタート。">
+  <meta name="keywords" content="学生カーリース, 北海道, 北大, 車 学生, カーリース 審査なし, 月額 車, StudentCarLease, St.Arkid">
+  <meta property="og:title" content="StudentCarLease | 学生向けカーリース — St.Arkid">
+  <meta property="og:description" content="北海道の学生のための月額定額カーリース。¥5,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://starkid.jp/carlease/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="St.Arkid">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="St.Arkid">
+  <link rel="canonical" href="https://starkid.jp/carlease/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:          #121212;
+      --black-mid:      #2d2d2d;
+      --gray:           #757575;
+      --gray-light:     #c7c7c7;
+      --surface:        #f9f9f9;
+      --white:          #ffffff;
+      --accent-blue:    #4290b6;
+      --accent-blue-s:  #e9f2f6;
+      --accent-red:     #db5f5f;
+      --accent-red-s:   #fff0f0;
+      --accent-green:   #629f64;
+      --accent-green-s: #edf4ee;
+      --accent-yellow:  #c0b76a;
+      --accent-yellow-s:#f4f2e1;
+      --car-accent:     #4290b6;
+      --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-jp);
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ===== LOADING ===== */
+    #loading {
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeOutLoader 0.6s ease 1.6s forwards;
+    }
+    .loading-text {
+      font-family: var(--font-en);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      animation: loadingPulse 1s ease-in-out infinite alternate;
+    }
+    @keyframes loadingPulse { from { opacity: 0.3; } to { opacity: 1; } }
+    @keyframes fadeOutLoader { to { opacity: 0; pointer-events: none; visibility: hidden; } }
+
+    /* ===== HEADER ===== */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 48px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease, transform 0.3s ease;
+    }
+    #header.scrolled {
+      background: rgba(18, 18, 18, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-logo {
+      font-family: var(--font-en);
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .header-logo span { color: var(--accent-blue); }
+    .header-logo-sub {
+      font-family: var(--font-en);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--gray);
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+    nav.header-nav {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+    }
+    nav.header-nav a {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: var(--gray-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav.header-nav a:hover { color: var(--white); }
+    .header-cta {
+      font-family: var(--font-en);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--white) !important;
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 8px 20px;
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s !important;
+    }
+    .header-cta:hover {
+      background: rgba(255,255,255,0.1) !important;
+      border-color: var(--white) !important;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--white);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* Mobile Nav */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      z-index: 200;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: var(--font-jp);
+      font-size: 18px;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+    }
+    .mobile-nav-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      cursor: pointer;
+      font-size: 28px;
+      color: var(--gray-light);
+      line-height: 1;
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--black);
+      overflow: hidden;
+    }
+    #webgl-container {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 48px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .hero-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .hero-label-line {
+      width: 32px;
+      height: 1px;
+      background: var(--gray);
+    }
+    .hero-label-text {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+    .hero-headline {
+      font-size: clamp(42px, 7vw, 88px);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 32px;
+    }
+    .hero-headline .line { display: block; color: var(--white); }
+    .hero-headline .line.dim { color: var(--gray); }
+    .hero-headline .line em {
+      font-style: normal;
+      color: var(--accent-blue);
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 480px;
+      margin-bottom: 52px;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      background: var(--white);
+      color: var(--black);
+      padding: 14px 36px;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gray-light); }
+    .btn-secondary {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: var(--gray-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.2s;
+    }
+    .btn-secondary:hover { color: var(--white); }
+    .btn-secondary::after {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: currentColor;
+      transition: width 0.2s;
+    }
+    .btn-secondary:hover::after { width: 36px; }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, transparent, var(--gray));
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%, 100% { transform: scaleY(0); transform-origin: top; }
+      50%       { transform: scaleY(1); transform-origin: top; }
+    }
+    .hero-scroll-text {
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      writing-mode: vertical-rl;
+      text-transform: uppercase;
+    }
+
+    /* Hero stats */
+    .hero-stats {
+      position: absolute;
+      bottom: 40px;
+      right: 48px;
+      display: flex;
+      gap: 48px;
+      z-index: 2;
+    }
+    .hero-stat-item {
+      text-align: right;
+    }
+    .hero-stat-num {
+      font-family: var(--font-en);
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1;
+      display: block;
+    }
+    .hero-stat-label {
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ===== SECTION WRAPPER ===== */
+    section { position: relative; }
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ===== H3 ANIMATION ===== */
+    .h3-wrap {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+    .h3-wrap h3 {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+    .h3-wrap .h3-overlay {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0% 0%, 115% 0%, 130% 100%, 0% 100%);
+      transition: clip-path 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+      background: inherit;
+    }
+    .h3-wrap.revealed .h3-overlay {
+      clip-path: polygon(115% 0%, 115% 0%, 130% 100%, 130% 100%);
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .section-label-line {
+      width: 24px;
+      height: 1px;
+      background: var(--gray);
+    }
+    .section-label-text {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+
+    /* ===== PROBLEM SECTION ===== */
+    #problem {
+      background: var(--black-mid);
+      padding: 140px 0;
+    }
+    .problem-header {
+      margin-bottom: 72px;
+    }
+    .problem-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 560px;
+    }
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+    }
+    .problem-item {
+      background: var(--black-mid);
+      padding: 48px 40px;
+      transition: background 0.3s;
+    }
+    .problem-item:hover { background: rgba(255,255,255,0.04); }
+    .problem-icon {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .problem-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .problem-desc {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+
+    /* ===== PLANS SECTION ===== */
+    #plans {
+      background: var(--surface);
+      color: var(--black);
+      padding: 140px 0;
+    }
+    #plans .section-label-line { background: var(--gray); }
+    #plans h3 { color: var(--black); }
+    .plans-header {
+      margin-bottom: 72px;
+    }
+    .plans-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray);
+      line-height: 1.9;
+      max-width: 520px;
+    }
+
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .plan-card {
+      background: var(--white);
+      padding: 52px 48px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .plan-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.1);
+    }
+    .plan-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--plan-color, var(--accent-blue));
+    }
+    .plan-card.share  { --plan-color: var(--accent-blue); }
+    .plan-card.personal { --plan-color: var(--accent-green); }
+
+    .plan-badge {
+      display: inline-block;
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--plan-color, var(--accent-blue));
+      border: 1px solid var(--plan-color, var(--accent-blue));
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+    .plan-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+    .plan-tagline {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 32px;
+    }
+    .plan-price {
+      margin-bottom: 36px;
+    }
+    .plan-price-num {
+      font-family: var(--font-en);
+      font-size: 64px;
+      font-weight: 300;
+      color: var(--plan-color, var(--accent-blue));
+      line-height: 1;
+    }
+    .plan-price-unit {
+      font-size: 16px;
+      color: var(--gray);
+      margin-left: 4px;
+    }
+    .plan-price-note {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 8px;
+    }
+    .plan-divider {
+      height: 1px;
+      background: rgba(0,0,0,0.06);
+      margin-bottom: 28px;
+    }
+    .plan-features {
+      list-style: none;
+      margin-bottom: 40px;
+    }
+    .plan-features li {
+      font-size: 14px;
+      color: var(--black);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.6;
+    }
+    .plan-features li:last-child { border-bottom: none; }
+    .plan-features li::before {
+      content: '✓';
+      font-family: var(--font-en);
+      font-weight: 600;
+      color: var(--plan-color, var(--accent-blue));
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .plan-cta {
+      display: block;
+      text-align: center;
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+      background: var(--plan-color, var(--accent-blue));
+      color: var(--white);
+    }
+    .plan-cta:hover { opacity: 0.85; }
+
+    /* ===== FLOW SECTION ===== */
+    #flow {
+      background: var(--black);
+      padding: 140px 0;
+    }
+    .flow-header {
+      margin-bottom: 72px;
+    }
+    .flow-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 520px;
+    }
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+      position: relative;
+    }
+    .flow-step {
+      background: var(--black);
+      padding: 48px 36px;
+      position: relative;
+      transition: background 0.3s;
+    }
+    .flow-step:hover { background: rgba(255,255,255,0.03); }
+    .flow-step-num {
+      font-family: var(--font-en);
+      font-size: 56px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.07);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .flow-step-icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    .flow-step-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .flow-step-desc {
+      font-size: 13px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+
+    /* ===== FEATURES SECTION ===== */
+    #features {
+      background: var(--black-mid);
+      padding: 140px 0;
+    }
+    .features-header {
+      margin-bottom: 72px;
+    }
+    .features-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 520px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .feature-item {
+      padding: 40px 36px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .feature-item:hover {
+      border-color: rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.05);
+    }
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .feature-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .feature-desc {
+      font-size: 13px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+
+    /* ===== CTA SECTION ===== */
+    #cta {
+      background: var(--black);
+      padding: 140px 0;
+      text-align: center;
+    }
+    .cta-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+    .cta-inner .section-label { justify-content: center; }
+    .cta-inner h2 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 24px;
+    }
+    .cta-inner h2 em {
+      font-style: normal;
+      color: var(--accent-blue);
+    }
+    .cta-inner p {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      margin-bottom: 52px;
+    }
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-cta {
+      font-family: var(--font-en);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      background: var(--white);
+      color: var(--black);
+      padding: 18px 60px;
+      border-radius: 2px;
+      width: 100%;
+      max-width: 360px;
+      display: block;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .btn-cta:hover { background: var(--gray-light); }
+    .cta-email {
+      font-family: var(--font-en);
+      font-size: 14px;
+      color: var(--gray);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .cta-email:hover { color: var(--gray-light); }
+    .cta-email::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 1px;
+      background: currentColor;
+    }
+    .cta-note {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 32px;
+      line-height: 1.8;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 48px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-logo {
+      font-family: var(--font-en);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-decoration: none;
+    }
+    .footer-logo span { color: var(--accent-blue); }
+    .footer-nav {
+      display: flex;
+      gap: 28px;
+    }
+    .footer-nav a {
+      font-family: var(--font-en);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--gray-light); }
+    .footer-copy {
+      font-family: var(--font-en);
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 0.05em;
+      width: 100%;
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      margin-top: 8px;
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .plans-grid { grid-template-columns: 1fr 1fr; }
+      .flow-steps { grid-template-columns: 1fr 1fr; }
+      .features-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      #header { padding: 0 24px; }
+      nav.header-nav { display: none; }
+      .hamburger { display: flex; }
+      .hero-content { padding: 0 24px; }
+      .hero-scroll { left: 24px; }
+      .hero-stats { display: none; }
+      .section-inner { padding: 0 24px; }
+      .plans-grid { grid-template-columns: 1fr; }
+      .flow-steps { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: 1fr; }
+      .problem-grid { grid-template-columns: 1fr; }
+      #problem, #plans, #flow, #features, #cta { padding: 100px 0; }
+      .cta-inner { padding: 0 24px; }
+      footer { padding: 40px 24px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .plan-card { padding: 40px 32px; }
+      .plan-price-num { font-size: 48px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-headline { font-size: 36px; }
+      .plan-card { padding: 32px 24px; }
+      .flow-step { padding: 36px 24px; }
+      .feature-item { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Loading -->
+<div id="loading"><span class="loading-text">LOADING...</span></div>
+
+<!-- Header -->
+<header id="header">
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ CarLease</span></a>
+  <nav class="header-nav" aria-label="メインナビゲーション">
+    <a href="#problem">なぜ必要？</a>
+    <a href="#plans">プラン</a>
+    <a href="#flow">はじめ方</a>
+    <a href="#features">特徴</a>
+    <a href="#cta" class="header-cta">申し込む</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <span class="mobile-nav-close" id="mobileNavClose">✕</span>
+  <a href="#problem" onclick="closeMobileNav()">なぜ必要？</a>
+  <a href="#plans" onclick="closeMobileNav()">プラン</a>
+  <a href="#flow" onclick="closeMobileNav()">はじめ方</a>
+  <a href="#features" onclick="closeMobileNav()">特徴</a>
+  <a href="#cta" onclick="closeMobileNav()">申し込む</a>
+</nav>
+
+<main>
+
+<!-- Hero -->
+<section id="hero">
+  <div id="webgl-container"></div>
+  <div class="hero-content">
+    <div class="hero-label">
+      <div class="hero-label-line"></div>
+      <span class="hero-label-text">Student Car Lease — Hokkaido</span>
+    </div>
+    <h1 class="hero-headline">
+      <span class="line">クルマが、</span>
+      <span class="line"><em>月額5,000円</em>から。</span>
+      <span class="line dim">保険・車検コミ。</span>
+    </h1>
+    <p class="hero-sub">
+      北海道の学生のための、まったく新しいカーリース。<br>
+      学籍番号ひとつでスムーズ審査。初期費用ゼロで、<br>
+      今日からカーライフをはじめよう。
+    </p>
+    <div class="hero-cta-group">
+      <a href="#plans" class="btn-primary">プランを見る</a>
+      <a href="#cta" class="btn-secondary">まずは相談する</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-text">Scroll</span>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat-item">
+      <span class="hero-stat-num">¥5k〜</span>
+      <div class="hero-stat-label">Starting / Month</div>
+    </div>
+    <div class="hero-stat-item">
+      <span class="hero-stat-num">¥0</span>
+      <div class="hero-stat-label">Initial Cost</div>
+    </div>
+    <div class="hero-stat-item">
+      <span class="hero-stat-num">All-in</span>
+      <div class="hero-stat-label">Insurance Included</div>
+    </div>
+  </div>
+</section>
+
+<!-- Problem -->
+<section id="problem">
+  <div class="section-inner">
+    <div class="problem-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Why You Need It</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
+        <h3>北海道の学生に、<br>クルマは生活インフラ</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        バスや電車は廃線・減便が続き、冬は積雪で自転車も徒歩も困難。
+        北海道では「クルマがなければ生活できない」は比喩ではありません。
+        でも購入は高すぎる。一般リースは審査で弾かれる——そのギャップを埋めます。
+      </p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-item reveal reveal-delay-1">
+        <div class="problem-icon">🚌</div>
+        <div class="problem-title">公共交通が機能しない</div>
+        <p class="problem-desc">JR北海道の路線廃止・バス減便が加速。キャンパス外では徒歩圏内にスーパーも病院もない地域が多く、クルマは事実上の生活必需品です。</p>
+      </div>
+      <div class="problem-item reveal reveal-delay-2">
+        <div class="problem-icon">❄️</div>
+        <div class="problem-title">冬の半年間、移動が困難</div>
+        <p class="problem-desc">11月〜3月は積雪・凍結で自転車も徒歩も危険。通学・バイト・緊急時の移動にクルマが欠かせない季節が年の約半分を占めます。</p>
+      </div>
+      <div class="problem-item reveal reveal-delay-3">
+        <div class="problem-icon">💸</div>
+        <div class="problem-title">購入も一般リースも高すぎる</div>
+        <p class="problem-desc">スタッドレスタイヤ・4WD必須の北海道仕様は中古車＋冬装備で100万円超。一般リースは学生を審査対象外とすることも多く、選択肢がありません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Plans -->
+<section id="plans">
+  <div class="section-inner">
+    <div class="plans-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Plans</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--surface);">
+        <h3>2つのプランから<br>選べます</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        週末だけ使いたい方も、毎日通学に使いたい方も。
+        ライフスタイルに合わせて選べる2プラン。
+        すべて保険・車検コミの月額定額です。
+      </p>
+    </div>
+    <div class="plans-grid">
+
+      <!-- Share Plan -->
+      <div class="plan-card share reveal reveal-delay-1">
+        <div class="plan-badge">Share Plan</div>
+        <div class="plan-name">シェア駐車場プラン</div>
+        <div class="plan-tagline">週末・買い出し・不定期利用に最適</div>
+        <div class="plan-price">
+          <span class="plan-price-num">5,000</span><span class="plan-price-unit">円〜 / 月</span>
+          <div class="plan-price-note">大学・学生寮の駐車場に常設した車をシェア利用</div>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>大学・学生寮の駐車場1区画に車を常設</li>
+          <li>アプリで事前予約して乗り放題</li>
+          <li>複数ユーザーでシェアするため低コスト</li>
+          <li>保険・車検・税金すべて込み</li>
+          <li>初期費用ゼロ・敷金ゼロ</li>
+        </ul>
+        <a href="#cta" class="plan-cta">このプランで申し込む</a>
+      </div>
+
+      <!-- Personal Plan -->
+      <div class="plan-card personal reveal reveal-delay-2">
+        <div class="plan-badge">Personal Plan</div>
+        <div class="plan-name">個人専用プラン</div>
+        <div class="plan-tagline">毎日の通学・バイト・日常使いに</div>
+        <div class="plan-price">
+          <span class="plan-price-num" style="color: var(--accent-green);">15,000</span><span class="plan-price-unit">円 / 月</span>
+          <div class="plan-price-note">学生1名につき車1台を専有。在学期間に合わせた契約</div>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features" style="--plan-color: var(--accent-green);">
+          <li>車1台を専有契約（他と共有なし）</li>
+          <li>通学・バイト・日常利用すべてOK</li>
+          <li>在学期間に合わせた1〜4年の柔軟な契約期間</li>
+          <li>保険・車検・税金・スタッドレスタイヤすべて込み</li>
+          <li>初期費用ゼロ・アプリで契約完結</li>
+        </ul>
+        <a href="#cta" class="plan-cta" style="background: var(--accent-green);">このプランで申し込む</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Flow -->
+<section id="flow">
+  <div class="section-inner">
+    <div class="flow-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">How to Start</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black);">
+        <h3>4ステップで<br>カーライフスタート</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        面倒な手続きはありません。
+        スマホひとつで申し込みから鍵の受け取りまで完結します。
+      </p>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step reveal reveal-delay-1">
+        <div class="flow-step-num">01</div>
+        <div class="flow-step-icon">📱</div>
+        <div class="flow-step-title">アプリで登録</div>
+        <p class="flow-step-desc">学籍番号と在学証明書をアップロード。本人確認はオンラインで完結。</p>
+      </div>
+      <div class="flow-step reveal reveal-delay-2">
+        <div class="flow-step-num">02</div>
+        <div class="flow-step-icon">✅</div>
+        <div class="flow-step-title">審査・プラン選択</div>
+        <p class="flow-step-desc">独自の学生向け与信モデルでスムーズ審査。希望のプラン・車種・利用開始日を選択。</p>
+      </div>
+      <div class="flow-step reveal reveal-delay-3">
+        <div class="flow-step-num">03</div>
+        <div class="flow-step-icon">📋</div>
+        <div class="flow-step-title">契約完結</div>
+        <p class="flow-step-desc">電子署名でその場で契約完了。保証人不要、来店不要。月額払いはアプリ内で管理。</p>
+      </div>
+      <div class="flow-step reveal reveal-delay-4">
+        <div class="flow-step-num">04</div>
+        <div class="flow-step-icon">🚗</div>
+        <div class="flow-step-title">車を受け取ってスタート</div>
+        <p class="flow-step-desc">指定の場所で車を受け取り、そのままドライブへ。最短1週間でカーライフが始まります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features">
+  <div class="section-inner">
+    <div class="features-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Features</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
+        <h3>St.Arkidが選ばれる<br>6つの理由</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">一般のカーリースが断る「学生」を、私たちは全力でサポートします。</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item reveal reveal-delay-1">
+        <div class="feature-icon">🎓</div>
+        <div class="feature-title">学籍番号が<br>信用の担保になる</div>
+        <p class="feature-desc">北海道大学在籍は最高水準の社会的信用。金融履歴がなくても、学籍情報をもとにした独自の与信モデルで審査します。</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-2">
+        <div class="feature-icon">💰</div>
+        <div class="feature-title">初期費用ゼロで<br>スタート</div>
+        <p class="feature-desc">頭金・敷金・礼金・手数料すべて不要。月額のみで車が手に入ります。突然の出費を抑えながらカーライフを始められます。</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-3">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-title">保険・車検・税金<br>すべて込み</div>
+        <p class="feature-desc">任意保険・自賠責・車検・自動車税・スタッドレスタイヤまで月額に含まれます。予想外の出費が一切ありません。</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-1">
+        <div class="feature-icon">📅</div>
+        <div class="feature-title">在学期間に合わせた<br>柔軟な契約</div>
+        <p class="feature-desc">1年〜4年の柔軟な契約期間。卒業・引越し・ライフスタイルの変化に合わせて契約変更・終了ができます。</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-2">
+        <div class="feature-icon">📲</div>
+        <div class="feature-title">すべてアプリで<br>完結</div>
+        <p class="feature-desc">申し込み・審査・契約・支払い管理・サポート窓口——すべてスマホのアプリ内で完結。来店・電話不要。</p>
+      </div>
+      <div class="feature-item reveal reveal-delay-3">
+        <div class="feature-icon">🏔️</div>
+        <div class="feature-title">北海道仕様の<br>車両を用意</div>
+        <p class="feature-desc">スタッドレスタイヤ装着・4WD対応など北海道の冬に合わせた車両を自社で管理・提供。雪道でも安心して乗れます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Get Started</span>
+    </div>
+    <h2 class="reveal reveal-delay-1">
+      まずは<em>気軽に</em><br>相談してください
+    </h2>
+    <p class="reveal reveal-delay-2">
+      プランの詳細・審査について・利用可能エリアなど、<br>
+      どんな質問でもお気軽にどうぞ。<br>
+      現在は北海道大学を中心に先行受付中です。
+    </p>
+    <div class="cta-actions reveal reveal-delay-3">
+      <a href="mailto:info@st.arkid.jp?subject=学生カーリース 相談&body=お名前：%0A大学・学部：%0Aご質問内容：" class="btn-cta">メールで相談する</a>
+      <a href="mailto:info@st.arkid.jp" class="cta-email">info@st.arkid.jp</a>
+    </div>
+    <p class="cta-note reveal reveal-delay-4">
+      現在クローズドベータ受付中。北大・北海道主要大学の在籍学生を優先でご案内します。
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <a href="../" class="footer-logo">St<span>.</span>Arkid</a>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="#problem">なぜ必要？</a>
+      <a href="#plans">プラン</a>
+      <a href="#flow">はじめ方</a>
+      <a href="#features">特徴</a>
+      <a href="#cta">申し込む</a>
+      <a href="../">トップへ戻る</a>
+    </nav>
+    <div class="footer-copy">© <span id="footer-year">2026</span> St.Arkid. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ===== FOOTER YEAR ===== */
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+/* ===== LOADING ===== */
+(function() {
+  const loader = document.getElementById('loading');
+  if (!loader) return;
+  if (!sessionStorage.getItem('starkidCarLeaseLoaderPlayed')) {
+    loader.style.display = 'flex';
+    sessionStorage.setItem('starkidCarLeaseLoaderPlayed', 'true');
+  } else {
+    loader.style.display = 'none';
+  }
+})();
+
+/* ===== HEADER SCROLL ===== */
+(function() {
+  const header = document.getElementById('header');
+  const isSP = () => window.innerWidth <= 768;
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    if (isSP()) {
+      header.style.transform = (y > lastY && y > 80) ? 'translateY(-100%)' : 'translateY(0)';
+    } else {
+      header.style.transform = '';
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+/* ===== HAMBURGER ===== */
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileNav').classList.add('open');
+});
+document.getElementById('mobileNavClose').addEventListener('click', closeMobileNav);
+
+/* ===== THREE.JS BACKGROUND ===== */
+(function() {
+  setTimeout(() => {
+    const container = document.getElementById('webgl-container');
+    if (!container || typeof THREE === 'undefined') return;
+    let w = window.innerWidth, h = window.innerHeight;
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(w, h);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.domElement.style.cssText = 'position:absolute;top:0;left:0;';
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(60, w / h, 0.5, 120);
+    camera.position.set(0, 2, 10);
+    camera.lookAt(0, 0, 0);
+
+    const mat = new THREE.MeshPhongMaterial({ color: 0xffffff, transparent: true, opacity: 0.06, flatShading: false });
+    const geo = new THREE.BoxGeometry(2, 2, 0.01);
+    const boxes = [];
+    for (let i = 0; i < 300; i++) {
+      const box = new THREE.Mesh(geo, mat);
+      box.position.set((Math.random() * 2.3 - 1) * 20, (Math.random() * 2.2 - 1) * 20, (Math.random() * 2.1 - 1) * 20);
+      box.scale.set(Math.random() * 2 - 2, Math.random() * 2 - 1.98, 0.01);
+      scene.add(box);
+      boxes.push(box);
+    }
+    const dLight = new THREE.DirectionalLight(0xffffff, 1);
+    dLight.position.set(2.2, 2, Math.PI);
+    scene.add(dLight, new THREE.AmbientLight(0xffffff, 0.2));
+
+    let rot = 0, mx = 0, my = 0;
+    document.addEventListener('mousemove', e => { mx = e.pageX; my = e.pageY; });
+
+    function tick() {
+      const target = ((mx + my) / window.innerWidth) * -45;
+      rot += (target - rot) * 0.02;
+      const r = rot * Math.PI / 180;
+      camera.position.x = 11 * Math.sin(r);
+      camera.position.z = 11 * Math.cos(r);
+      camera.lookAt(new THREE.Vector3(-10, 0, 0));
+      boxes.forEach(b => {
+        b.position.x -= 0.008;
+        b.position.y -= (Math.random() * 0.002 + 0.002);
+        b.position.z += Math.random() * 0.004 + 0.001;
+      });
+      renderer.render(scene, camera);
+      requestAnimationFrame(tick);
+    }
+    window.addEventListener('resize', () => {
+      w = window.innerWidth; h = window.innerHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    });
+    tick();
+  }, 120);
+})();
+
+/* ===== SCROLL REVEAL ===== */
+(function() {
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px' });
+  els.forEach(el => obs.observe(el));
+})();
+
+/* ===== H3 CLIP ANIMATION ===== */
+(function() {
+  const wraps = document.querySelectorAll('.h3-wrap');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
+  }, { threshold: 0.2 });
+  wraps.forEach(w => obs.observe(w));
+})();
+</script>
+
+</body>
+</html>
