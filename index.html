@@ -516,7 +516,11 @@
     .service-card.minpaku{ --card-accent: var(--accent-yellow); --card-accent-s: var(--accent-yellow-s); }
     .service-card.antique{ --card-accent: var(--navy);         --card-accent-s: #e8ecf5; }
     .service-card.offshore{ --card-accent: #3a9e8f;            --card-accent-s: #e4f5f3; }
-    .service-card.car-lease{ --card-accent: var(--accent-blue); --card-accent-s: var(--accent-blue-s); }
+    .service-card.car-lease {
+      --card-accent: var(--accent-blue);
+      --card-accent-s: var(--accent-blue-s);
+      cursor: pointer;
+    }
 
     .service-card-link {
       display: inline-flex;
@@ -540,6 +544,16 @@
     }
     .service-card-link:hover { gap: 12px; }
     .service-card-link:hover::after { width: 28px; }
+
+    .service-card.car-lease .service-card-link {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      align-items: flex-end;
+      padding: 40px;
+      margin-top: 0;
+    }
 
     /* wide card */
     .service-card.wide {
