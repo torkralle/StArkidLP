@@ -533,6 +533,16 @@
       z-index: 1;
     }
 
+    .service-card.offshore {
+      cursor: pointer;
+    }
+    .service-card.offshore .service-card-link::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
     .service-card-link {
       display: inline-flex;
       align-items: center;
@@ -1055,7 +1065,7 @@
       </div>
       <div class="mission-right">
         <div class="mission-stat reveal reveal-delay-1">
-          <div class="mission-stat-num">6<sup>+</sup></div>
+          <div class="mission-stat-num">8<sup>+</sup></div>
           <div class="mission-stat-label">事業領域</div>
         </div>
         <div class="mission-stat reveal reveal-delay-2">
@@ -1080,7 +1090,7 @@
         <span class="section-label-text">Services</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--surface);">
-        <h3>私たちが提供する<br>5つの事業</h3>
+        <h3>私たちが提供する<br>8つの事業</h3>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
@@ -1218,6 +1228,7 @@
           <span class="service-tag">QA・テスト</span>
           <span class="service-tag">採用コスト削減</span>
         </div>
+        <a href="/offshore/" class="service-card-link">詳しく見る</a>
       </div>
     </div>
   </div>

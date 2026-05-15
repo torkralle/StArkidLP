@@ -3,34 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RentalDriver | プロドライバー派遣 — St.Arkid</title>
-  <meta name="description" content="大型・大型特殊・牽引・2種・普通二輪の特殊免許を保持するプロドライバーを必要なときだけ手配。ハーフデイ・フルデイ・月次契約まで柔軟対応。St.Arkidのレンタルドライバー派遣サービス。">
-  <meta name="keywords" content="レンタルドライバー, ドライバー派遣, 運転代行, 大型免許, 大型特殊免許, 牽引免許, 2種免許, 普通二輪, バイク便, 札幌, 北海道, St.Arkid">
-  <meta property="og:title" content="RentalDriver | プロドライバー派遣 — St.Arkid">
-  <meta property="og:description" content="特殊免許保持のプロドライバーを必要なときだけ手配。大型・大型特殊・牽引・2種・普通二輪に対応。ハーフデイ¥5,000〜。">
+  <title>OffshoreStaffing | ベトナムオフショア開発・人材紹介 — St.Arkid</title>
+  <meta name="description" content="ベトナムの優秀なエンジニアを日本企業へ。フロントエンド・バックエンド・モバイル・QAなど幅広い職種に対応。採用コストを抑えながら即戦力エンジニアをチームに加えます。St.Arkidのオフショア人材紹介サービス。">
+  <meta name="keywords" content="オフショア開発, ベトナムエンジニア, 人材紹介, オフショア人材, フロントエンド, バックエンド, モバイル, QA, 採用コスト削減, ラボ型開発, 札幌, St.Arkid">
+  <meta property="og:title" content="OffshoreStaffing | ベトナムオフショア開発・人材紹介 — St.Arkid">
+  <meta property="og:description" content="ベトナムの即戦力エンジニアを日本企業へ紹介。フロントエンド・バックエンド・モバイル・QA対応。採用コストを最大60%削減しながら開発チームを強化します。">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://st.arkid.jp/rentaldriver/">
+  <meta property="og:url" content="https://st.arkid.jp/offshore/">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="St.Arkid">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="robots" content="index, follow">
   <meta name="author" content="St.Arkid">
-  <link rel="canonical" href="https://st.arkid.jp/rentaldriver/">
+  <link rel="canonical" href="https://st.arkid.jp/offshore/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --black:            #121212;
-      --black-mid:        #2d2d2d;
-      --gray:             #757575;
-      --gray-light:       #c7c7c7;
-      --surface:          #f9f9f9;
-      --white:            #ffffff;
-      --accent-blue:      #4290b6;
-      --accent-green:     #629f64;
-      --driver-accent:    #d4771d;
-      --driver-accent-s:  #fdf0e3;
+      --black:              #121212;
+      --black-mid:          #2d2d2d;
+      --gray:               #757575;
+      --gray-light:         #c7c7c7;
+      --surface:            #f9f9f9;
+      --white:              #ffffff;
+      --offshore-accent:    #3a9e8f;
+      --offshore-accent-s:  #e4f5f3;
       --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
       --font-en: 'Jost', sans-serif;
     }
@@ -94,7 +92,7 @@
       color: var(--white);
       text-decoration: none;
     }
-    .header-logo span { color: var(--driver-accent); }
+    .header-logo span { color: var(--offshore-accent); }
     .header-logo-sub {
       font-family: var(--font-en);
       font-size: 11px;
@@ -232,7 +230,7 @@
     .hero-headline .line.dim { color: var(--gray); }
     .hero-headline .line em {
       font-style: normal;
-      color: var(--driver-accent);
+      color: var(--offshore-accent);
     }
     .hero-sub {
       font-size: 16px;
@@ -427,54 +425,54 @@
       line-height: 1.9;
     }
 
-    /* ===== LICENSES SECTION ===== */
-    #licenses {
+    /* ===== SKILLS SECTION ===== */
+    #skills {
       background: var(--surface);
       color: var(--black);
       padding: 140px 0;
     }
-    #licenses .section-label-line { background: var(--gray); }
-    #licenses h3 { color: var(--black); }
-    .licenses-header {
+    #skills .section-label-line { background: var(--gray); }
+    #skills h3 { color: var(--black); }
+    .skills-header {
       margin-bottom: 72px;
     }
-    .licenses-header p {
+    .skills-header p {
       margin-top: 24px;
       font-size: 16px;
       color: var(--gray);
       line-height: 1.9;
       max-width: 560px;
     }
-    .licenses-grid {
+    .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2px;
     }
-    .license-card {
+    .skill-card {
       background: var(--white);
       padding: 44px 36px;
       position: relative;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .license-card:hover {
+    .skill-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 16px 48px rgba(0,0,0,0.08);
       z-index: 1;
     }
-    .license-card::before {
+    .skill-card::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: var(--driver-accent);
+      background: var(--offshore-accent);
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.4s ease;
     }
-    .license-card:hover::before { transform: scaleX(1); }
-    .license-icon { font-size: 36px; margin-bottom: 20px; display: block; }
-    .license-en {
+    .skill-card:hover::before { transform: scaleX(1); }
+    .skill-icon { font-size: 36px; margin-bottom: 20px; display: block; }
+    .skill-en {
       font-family: var(--font-en);
       font-size: 11px;
       letter-spacing: 0.2em;
@@ -482,35 +480,32 @@
       text-transform: uppercase;
       margin-bottom: 10px;
     }
-    .license-name {
+    .skill-name {
       font-size: 20px;
       font-weight: 700;
       color: var(--black);
       margin-bottom: 12px;
       line-height: 1.4;
     }
-    .license-desc {
+    .skill-desc {
       font-size: 13px;
       color: var(--gray);
       line-height: 1.9;
       margin-bottom: 20px;
     }
-    .license-tags {
+    .skill-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
     }
-    .license-tag {
+    .skill-tag {
       font-family: var(--font-en);
       font-size: 11px;
       letter-spacing: 0.05em;
-      color: var(--driver-accent);
-      background: var(--driver-accent-s);
+      color: var(--offshore-accent);
+      background: var(--offshore-accent-s);
       padding: 4px 10px;
       border-radius: 2px;
-    }
-    .license-card.wide-bottom {
-      grid-column: span 1;
     }
 
     /* ===== PLANS SECTION ===== */
@@ -536,7 +531,7 @@
     }
     .plan-card {
       background: var(--black);
-      padding: 48px 36px;
+      padding: 52px 40px;
       transition: background 0.3s;
       position: relative;
     }
@@ -546,22 +541,22 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 2px;
-      background: var(--driver-accent);
+      background: var(--offshore-accent);
       opacity: 0;
       transition: opacity 0.3s;
     }
     .plan-card:hover::before { opacity: 1; }
-    .plan-license-icon { font-size: 32px; margin-bottom: 16px; }
-    .plan-license-name {
+    .plan-type-icon { font-size: 32px; margin-bottom: 16px; }
+    .plan-type-en {
       font-family: var(--font-en);
       font-size: 11px;
       letter-spacing: 0.2em;
-      color: var(--driver-accent);
+      color: var(--offshore-accent);
       text-transform: uppercase;
       margin-bottom: 8px;
     }
     .plan-title {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 700;
       color: var(--white);
       margin-bottom: 8px;
@@ -578,43 +573,53 @@
       background: rgba(255,255,255,0.07);
       margin-bottom: 24px;
     }
-    .plan-slots { list-style: none; }
-    .plan-slot {
+    .plan-features { list-style: none; }
+    .plan-feature {
       display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      align-items: flex-start;
       gap: 12px;
-    }
-    .plan-slot:last-child { border-bottom: none; }
-    .plan-slot-name {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
       font-size: 14px;
       color: var(--gray-light);
-      line-height: 1.5;
-      flex: 1;
+      line-height: 1.6;
     }
-    .plan-slot-time {
+    .plan-feature:last-child { border-bottom: none; }
+    .plan-feature::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--offshore-accent);
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .plan-price {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+    .plan-price-label {
       font-family: var(--font-en);
-      font-size: 11px;
+      font-size: 10px;
+      letter-spacing: 0.15em;
       color: var(--gray);
-      letter-spacing: 0.05em;
-      white-space: nowrap;
+      text-transform: uppercase;
+      margin-bottom: 6px;
     }
-    .plan-slot-price {
+    .plan-price-value {
       font-family: var(--font-en);
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 500;
-      color: var(--driver-accent);
-      white-space: nowrap;
+      color: var(--offshore-accent);
+      line-height: 1.2;
     }
     .plan-note {
       font-size: 12px;
       color: var(--gray);
-      margin-top: 20px;
+      margin-top: 12px;
       line-height: 1.8;
-      padding-top: 16px;
-      border-top: 1px solid rgba(255,255,255,0.05);
     }
 
     /* ===== FLOW SECTION ===== */
@@ -637,7 +642,6 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 1px;
       background: rgba(255,255,255,0.05);
-      position: relative;
     }
     .flow-step {
       background: var(--black-mid);
@@ -666,9 +670,56 @@
       line-height: 1.9;
     }
 
+    /* ===== WHY SECTION ===== */
+    #why {
+      background: var(--black);
+      padding: 140px 0;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+      margin-top: 72px;
+    }
+    .why-item {
+      background: var(--black);
+      padding: 52px 40px;
+      transition: background 0.3s;
+    }
+    .why-item:hover { background: rgba(255,255,255,0.03); }
+    .why-num {
+      font-family: var(--font-en);
+      font-size: 48px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.08);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+    .why-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.5;
+      color: var(--white);
+    }
+    .why-desc {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+    .why-highlight {
+      display: inline-block;
+      font-family: var(--font-en);
+      font-size: 28px;
+      font-weight: 300;
+      color: var(--offshore-accent);
+      margin-bottom: 8px;
+    }
+
     /* ===== CTA SECTION ===== */
     #cta {
-      background: var(--black);
+      background: var(--black-mid);
       padding: 140px 0;
       text-align: center;
     }
@@ -686,7 +737,7 @@
     }
     .cta-inner h2 em {
       font-style: normal;
-      color: var(--driver-accent);
+      color: var(--offshore-accent);
     }
     .cta-inner p {
       font-size: 16px;
@@ -765,7 +816,7 @@
       color: var(--gray);
       text-decoration: none;
     }
-    .footer-logo span { color: var(--driver-accent); }
+    .footer-logo span { color: var(--offshore-accent); }
     .footer-nav {
       display: flex;
       gap: 28px;
@@ -809,9 +860,10 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 1024px) {
-      .licenses-grid { grid-template-columns: 1fr 1fr; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
       .plans-grid { grid-template-columns: 1fr 1fr; }
       .flow-steps { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
     }
 
     @media (max-width: 768px) {
@@ -822,11 +874,12 @@
       .hero-scroll { left: 24px; }
       .hero-stats { display: none; }
       .section-inner { padding: 0 24px; }
-      .licenses-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
       .plans-grid { grid-template-columns: 1fr; }
       .flow-steps { grid-template-columns: 1fr; }
       .problem-grid { grid-template-columns: 1fr; }
-      #problem, #licenses, #plans, #flow, #cta { padding: 100px 0; }
+      .why-grid { grid-template-columns: 1fr; }
+      #problem, #skills, #plans, #flow, #why, #cta { padding: 100px 0; }
       .cta-inner { padding: 0 24px; }
       footer { padding: 40px 24px; }
       .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -834,9 +887,10 @@
 
     @media (max-width: 480px) {
       .hero-headline { font-size: 36px; }
-      .license-card { padding: 36px 28px; }
+      .skill-card { padding: 36px 28px; }
       .plan-card { padding: 36px 28px; }
       .flow-step { padding: 36px 24px; }
+      .why-item { padding: 36px 28px; }
     }
   </style>
 </head>
@@ -847,11 +901,11 @@
 
 <!-- Header -->
 <header id="header">
-  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ RentalDriver</span></a>
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ Offshore</span></a>
   <nav class="header-nav" aria-label="メインナビゲーション">
     <a href="#problem">課題</a>
-    <a href="#licenses">対応免許</a>
-    <a href="#plans">料金プラン</a>
+    <a href="#skills">対応職種</a>
+    <a href="#plans">契約形態</a>
     <a href="#flow">ご利用の流れ</a>
     <a href="#cta" class="header-cta">お問い合わせ</a>
   </nav>
@@ -864,8 +918,8 @@
 <nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
   <span class="mobile-nav-close" id="mobileNavClose">✕</span>
   <a href="#problem" onclick="closeMobileNav()">課題</a>
-  <a href="#licenses" onclick="closeMobileNav()">対応免許</a>
-  <a href="#plans" onclick="closeMobileNav()">料金プラン</a>
+  <a href="#skills" onclick="closeMobileNav()">対応職種</a>
+  <a href="#plans" onclick="closeMobileNav()">契約形態</a>
   <a href="#flow" onclick="closeMobileNav()">ご利用の流れ</a>
   <a href="#cta" onclick="closeMobileNav()">お問い合わせ</a>
 </nav>
@@ -878,20 +932,20 @@
   <div class="hero-content">
     <div class="hero-label">
       <div class="hero-label-line"></div>
-      <span class="hero-label-text">Rental Driver Dispatch Service</span>
+      <span class="hero-label-text">Vietnam Offshore Staffing Service</span>
     </div>
     <h1 class="hero-headline">
-      <span class="line">プロドライバーを、</span>
-      <span class="line"><em>必要なときに。</em></span>
-      <span class="line dim">5種の特殊免許に対応。</span>
+      <span class="line">ベトナムの即戦力を、</span>
+      <span class="line"><em>チームに加える。</em></span>
+      <span class="line dim">コストを抑えて、品質を上げる。</span>
     </h1>
     <p class="hero-sub">
-      大型・大型特殊・牽引・2種・普通二輪——<br>
-      特殊免許を保持するプロドライバーを、スポットから月次契約まで柔軟に手配します。<br>
-      急なドライバー不在も、特殊車両の運転代行も、St.Arkidにお任せください。
+      フロントエンド・バックエンド・モバイル・QA——<br>
+      ベトナムの優秀なエンジニアを、人材紹介からラボ型開発まで柔軟に提供します。<br>
+      国内採用より大幅にコストを抑えながら、開発チームを即時に強化します。
     </p>
     <div class="hero-cta-group">
-      <a href="#plans" class="btn-primary">料金プランを見る</a>
+      <a href="#plans" class="btn-primary">契約形態を見る</a>
       <a href="#cta" class="btn-secondary">まずは相談する</a>
     </div>
   </div>
@@ -901,16 +955,16 @@
   </div>
   <div class="hero-stats">
     <div class="hero-stat-item">
-      <span class="hero-stat-num">5</span>
-      <div class="hero-stat-label">License Types</div>
+      <span class="hero-stat-num">〜60%</span>
+      <div class="hero-stat-label">Cost Reduction</div>
     </div>
     <div class="hero-stat-item">
-      <span class="hero-stat-num">Same Day</span>
-      <div class="hero-stat-label">Fastest Dispatch</div>
+      <span class="hero-stat-num">6+</span>
+      <div class="hero-stat-label">Roles Available</div>
     </div>
     <div class="hero-stat-item">
-      <span class="hero-stat-num">¥20k〜</span>
-      <div class="hero-stat-label">Half Day Plan</div>
+      <span class="hero-stat-num">2 Weeks</span>
+      <div class="hero-stat-label">Fastest Onboarding</div>
     </div>
   </div>
 </section>
@@ -921,134 +975,153 @@
     <div class="problem-header">
       <div class="section-label reveal">
         <div class="section-label-line"></div>
-        <span class="section-label-text">Use Cases</span>
+        <span class="section-label-text">Pain Points</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
-        <h3>こんな場面で、<br>お役に立てます</h3>
+        <h3>こんな課題を、<br>抱えていませんか</h3>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
-        ドライバー不足・特殊免許の壁・採用コストの問題——
-        「必要なときだけ」プロに頼める仕組みで、すべてを解決します。
+        エンジニア不足・採用コスト・開発スピード——
+        3つの壁に同時に向き合うためのソリューションが、オフショア開発です。
       </p>
     </div>
     <div class="problem-grid">
       <div class="problem-item reveal reveal-delay-1">
-        <div class="problem-icon">🚨</div>
-        <div class="problem-title">急なドライバー<br>不在に対応したい</div>
-        <p class="problem-desc">病欠・退職・繁忙期の欠員補充など、突発的なドライバー不在に即日〜翌日対応で補填します。繁忙期のスポット増員にも活用できます。</p>
+        <div class="problem-icon">💸</div>
+        <div class="problem-title">国内エンジニアの<br>採用コストが高い</div>
+        <p class="problem-desc">求人広告費・エージェント手数料・育成コストを合わせると、1人採用するだけで数百万円かかることも。オフショア活用で採用コストを最大60%削減できます。</p>
       </div>
       <div class="problem-item reveal reveal-delay-2">
-        <div class="problem-icon">🏗️</div>
-        <div class="problem-title">特殊免許が必要な業務が<br>スポットで発生する</div>
-        <p class="problem-desc">建設現場の重機移動・大型車両の納車・トレーラー輸送など、特定の免許が必要な業務が単発で生じるケースに対応します。採用・育成は不要です。</p>
+        <div class="problem-icon">🔍</div>
+        <div class="problem-title">即戦力エンジニアが<br>なかなか見つからない</div>
+        <p class="problem-desc">国内市場ではスキルの合うエンジニアの採用に平均3〜6ヶ月かかることも珍しくありません。ベトナムには豊富なITエンジニア人材がおり、最短2週間でチームに参加できます。</p>
       </div>
       <div class="problem-item reveal reveal-delay-3">
-        <div class="problem-icon">💼</div>
-        <div class="problem-title">採用コストを抑えて<br>柔軟に使いたい</div>
-        <p class="problem-desc">専任ドライバーを雇用すると年間コストが重くなります。必要なときだけ手配できるレンタルドライバーなら、人件費・教育費・社会保険コストを大幅に削減できます。</p>
+        <div class="problem-icon">🚀</div>
+        <div class="problem-title">開発リソースが足りず<br>スピードが出ない</div>
+        <p class="problem-desc">新機能開発・技術的負債の解消・QA強化——やりたいことはあるのに人手が足りない。オフショアチームを既存チームに組み込み、開発ベロシティを一気に引き上げます。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Licenses -->
-<section id="licenses">
+<!-- Skills -->
+<section id="skills">
   <div class="section-inner">
-    <div class="licenses-header">
+    <div class="skills-header">
       <div class="section-label reveal">
         <div class="section-label-line"></div>
-        <span class="section-label-text">Supported Licenses</span>
+        <span class="section-label-text">Supported Roles</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--surface);">
-        <h3>5種の特殊免許に<br>対応しています</h3>
+        <h3>6つの職種・スキルに<br>対応しています</h3>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
-        各免許の特性に精通したプロドライバーが対応します。
-        ご不明な場合はまずご相談ください。最適なドライバーをご提案します。
+        各職種に精通したエンジニアが在籍しています。
+        ご要望のスキルセット・経験年数・日本語レベルをお伝えください。最適な候補者をご提案します。
       </p>
     </div>
-    <div class="licenses-grid">
+    <div class="skills-grid">
 
-      <div class="license-card reveal reveal-delay-1">
-        <span class="license-icon">🚛</span>
-        <div class="license-en">Large Vehicle License</div>
-        <div class="license-name">大型免許</div>
-        <p class="license-desc">
-          車両総重量11トン以上の大型トラック・バスの運転に必要な免許。
-          長距離輸送・大型引越し・工業製品の輸配送などに対応します。
+      <div class="skill-card reveal reveal-delay-1">
+        <span class="skill-icon">🖥️</span>
+        <div class="skill-en">Frontend Development</div>
+        <div class="skill-name">フロントエンド</div>
+        <p class="skill-desc">
+          モダンなUIフレームワークを使ったWebアプリケーション開発に対応。
+          デザインシステムの構築からパフォーマンス最適化まで幅広く担当します。
         </p>
-        <div class="license-tags">
-          <span class="license-tag">大型トラック</span>
-          <span class="license-tag">観光バス</span>
-          <span class="license-tag">長距離輸送</span>
-          <span class="license-tag">引越し</span>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Vue.js</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Tailwind CSS</span>
         </div>
       </div>
 
-      <div class="license-card reveal reveal-delay-2">
-        <span class="license-icon">🏗️</span>
-        <div class="license-en">Large Special Vehicle License</div>
-        <div class="license-name">大型特殊免許</div>
-        <p class="license-desc">
-          最高速度が低い特殊構造の大型車両（重機・フォークリフト3.5t超・農業機械など）の公道走行に必要な免許。
-          建設現場・港湾・農場での重機移動に対応します。
+      <div class="skill-card reveal reveal-delay-2">
+        <span class="skill-icon">⚙️</span>
+        <div class="skill-en">Backend Development</div>
+        <div class="skill-name">バックエンド</div>
+        <p class="skill-desc">
+          REST API・GraphQL・マイクロサービスなど、スケーラブルなバックエンドの設計・開発に対応。
+          データベース設計・パフォーマンスチューニングも担います。
         </p>
-        <div class="license-tags">
-          <span class="license-tag">建設重機</span>
-          <span class="license-tag">フォークリフト</span>
-          <span class="license-tag">農業機械</span>
-          <span class="license-tag">港湾作業</span>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">PHP / Laravel</span>
+          <span class="skill-tag">PostgreSQL</span>
         </div>
       </div>
 
-      <div class="license-card reveal reveal-delay-3">
-        <span class="license-icon">🔗</span>
-        <div class="license-en">Towing License</div>
-        <div class="license-name">牽引免許</div>
-        <p class="license-desc">
-          車両総重量750kgを超える被牽引車（トレーラー・キャリアカー）をけん引するために必要な免許。
-          セミトレーラー・ロードトレーラーによる大型輸送に対応します。
+      <div class="skill-card reveal reveal-delay-3">
+        <span class="skill-icon">📱</span>
+        <div class="skill-en">Mobile Development</div>
+        <div class="skill-name">モバイル</div>
+        <p class="skill-desc">
+          iOS・Android両対応のクロスプラットフォーム開発から、ネイティブアプリの新規開発・保守まで対応。
+          App Store / Google Play のリリース対応も含みます。
         </p>
-        <div class="license-tags">
-          <span class="license-tag">セミトレーラー</span>
-          <span class="license-tag">キャリアカー</span>
-          <span class="license-tag">大型輸送</span>
-          <span class="license-tag">重量物輸送</span>
+        <div class="skill-tags">
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">Swift</span>
+          <span class="skill-tag">Kotlin</span>
         </div>
       </div>
 
-      <div class="license-card reveal reveal-delay-4">
-        <span class="license-icon">🚕</span>
-        <div class="license-en">Type 2 License</div>
-        <div class="license-name">2種免許</div>
-        <p class="license-desc">
-          旅客（乗客）を有償で運送するために必要な免許。タクシー・代行運転・送迎バス・観光バスの運転に対応します。
-          イベント時の貸切輸送や空港送迎にも活用できます。
+      <div class="skill-card reveal reveal-delay-4">
+        <span class="skill-icon">🧪</span>
+        <div class="skill-en">QA / Testing</div>
+        <div class="skill-name">QA・テスト</div>
+        <p class="skill-desc">
+          手動テスト・自動化テストの両方に対応。テスト計画の策定からバグレポートの作成・再現確認まで、
+          品質担保に必要なプロセスをまるごと支援します。
         </p>
-        <div class="license-tags">
-          <span class="license-tag">タクシー代行</span>
-          <span class="license-tag">送迎バス</span>
-          <span class="license-tag">観光バス</span>
-          <span class="license-tag">空港送迎</span>
-          <span class="license-tag">イベント輸送</span>
+        <div class="skill-tags">
+          <span class="skill-tag">Selenium</span>
+          <span class="skill-tag">Playwright</span>
+          <span class="skill-tag">Jest</span>
+          <span class="skill-tag">Appium</span>
+          <span class="skill-tag">手動テスト</span>
         </div>
       </div>
 
-      <div class="license-card reveal reveal-delay-5">
-        <span class="license-icon">🏍️</span>
-        <div class="license-en">Regular Motorcycle License</div>
-        <div class="license-name">普通二輪免許</div>
-        <p class="license-desc">
-          400cc以下のバイクを運転できる免許。
-          書類・小口荷物・医薬品のバイク便配送、都市部でのスピード感ある配達業務に対応します。
+      <div class="skill-card reveal reveal-delay-5">
+        <span class="skill-icon">☁️</span>
+        <div class="skill-en">Infrastructure / Cloud</div>
+        <div class="skill-name">インフラ・クラウド</div>
+        <p class="skill-desc">
+          AWS・GCP・Azureを使ったクラウドインフラの設計・構築・運用に対応。
+          CI/CDパイプラインの整備やコンテナ化・IaC導入も支援します。
         </p>
-        <div class="license-tags">
-          <span class="license-tag">バイク便</span>
-          <span class="license-tag">書類配達</span>
-          <span class="license-tag">小口輸送</span>
-          <span class="license-tag">医薬品配送</span>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">GCP</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <span class="skill-icon">🌐</span>
+        <div class="skill-en">Bridge SE / PM</div>
+        <div class="skill-name">ブリッジSE・PM</div>
+        <p class="skill-desc">
+          日本語・ベトナム語・英語に対応し、オフショアチームと日本側の橋渡しを担うブリッジSE。
+          要件定義・仕様書翻訳・進捗管理まで、コミュニケーションの壁を解消します。
+        </p>
+        <div class="skill-tags">
+          <span class="skill-tag">日本語対応</span>
+          <span class="skill-tag">要件定義</span>
+          <span class="skill-tag">Jira / Notion</span>
+          <span class="skill-tag">スクラム</span>
         </div>
       </div>
 
@@ -1062,179 +1135,128 @@
     <div class="plans-header">
       <div class="section-label reveal">
         <div class="section-label-line"></div>
-        <span class="section-label-text">Pricing Plans</span>
+        <span class="section-label-text">Engagement Models</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black);">
-        <h3>免許種別・<br>時間帯別プラン</h3>
+        <h3>3つの契約形態から<br>選べます</h3>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
-        ハーフデイから月次契約まで、業務内容に合わせて選べます。
-        表示価格はガイドラインです。距離・作業内容によって変動しますので、まずはご相談ください。
+        プロジェクトの規模・期間・目的に合わせて最適な契約形態を選択できます。
+        まずはご相談ください。現状に合ったプランをご提案します。
       </p>
     </div>
     <div class="plans-grid">
 
-      <!-- 大型免許 -->
+      <!-- 人材紹介型 -->
       <div class="plan-card reveal reveal-delay-1">
-        <div class="plan-license-icon">🚛</div>
-        <div class="plan-license-name">Large Vehicle</div>
-        <div class="plan-title">大型免許</div>
-        <div class="plan-subtitle">大型トラック・バス運転<br>長距離輸送・引越し</div>
+        <div class="plan-type-icon">🤝</div>
+        <div class="plan-type-en">Recruitment</div>
+        <div class="plan-title">人材紹介型</div>
+        <div class="plan-subtitle">エンジニアを自社雇用・業務委託として採用したい場合に</div>
         <div class="plan-divider"></div>
-        <ul class="plan-slots">
-          <li class="plan-slot">
-            <span class="plan-slot-name">ハーフデイ</span>
-            <span class="plan-slot-time">4時間</span>
-            <span class="plan-slot-price">¥20,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">フルデイ</span>
-            <span class="plan-slot-time">8時間</span>
-            <span class="plan-slot-price">¥36,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">残業追加</span>
-            <span class="plan-slot-time">1時間ごと</span>
-            <span class="plan-slot-price">¥5,500</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">月次契約</span>
-            <span class="plan-slot-time">要相談</span>
-            <span class="plan-slot-price">応相談</span>
-          </li>
+        <ul class="plan-features">
+          <li class="plan-feature">候補者のスクリーニング・面談調整をSt.Arkidが代行</li>
+          <li class="plan-feature">スキルシート・ポートフォリオの事前確認あり</li>
+          <li class="plan-feature">日本語コミュニケーション力も事前確認済み</li>
+          <li class="plan-feature">採用後は直接雇用 or 業務委託契約に移行</li>
+          <li class="plan-feature">入社後フォローアップ（3ヶ月）込み</li>
         </ul>
-        <p class="plan-note">※ 長距離輸送は距離に応じて別途高速・燃料費が発生します</p>
+        <div class="plan-price">
+          <div class="plan-price-label">Fee</div>
+          <div class="plan-price-value">成功報酬型</div>
+          <p class="plan-note">※ 採用決定後に手数料が発生。金額は理論年収をベースに算出</p>
+        </div>
       </div>
 
-      <!-- 大型特殊 -->
+      <!-- ラボ型 -->
       <div class="plan-card reveal reveal-delay-2">
-        <div class="plan-license-icon">🏗️</div>
-        <div class="plan-license-name">Large Special</div>
-        <div class="plan-title">大型特殊免許</div>
-        <div class="plan-subtitle">建設重機・フォークリフト<br>農業機械・港湾作業</div>
+        <div class="plan-type-icon">🏭</div>
+        <div class="plan-type-en">Lab-based</div>
+        <div class="plan-title">ラボ型開発</div>
+        <div class="plan-subtitle">専任チームを長期で確保し、継続的に開発リソースを使いたい場合に</div>
         <div class="plan-divider"></div>
-        <ul class="plan-slots">
-          <li class="plan-slot">
-            <span class="plan-slot-name">ショートタイム</span>
-            <span class="plan-slot-time">2時間〜</span>
-            <span class="plan-slot-price">¥10,000〜</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">ハーフデイ</span>
-            <span class="plan-slot-time">4時間</span>
-            <span class="plan-slot-price">¥20,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">フルデイ</span>
-            <span class="plan-slot-time">8時間</span>
-            <span class="plan-slot-price">¥36,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">月次契約</span>
-            <span class="plan-slot-time">要相談</span>
-            <span class="plan-slot-price">応相談</span>
-          </li>
+        <ul class="plan-features">
+          <li class="plan-feature">専任エンジニア1〜5名を月単位で確保</li>
+          <li class="plan-feature">ブリッジSEによる日次コミュニケーション支援</li>
+          <li class="plan-feature">Slack / Notion / Jiraでの非同期連携に対応</li>
+          <li class="plan-feature">月次レポートで稼働・進捗を可視化</li>
+          <li class="plan-feature">最低契約期間3ヶ月〜、途中増減員も相談可</li>
         </ul>
-        <p class="plan-note">※ 車両・重機のオペレーター資格が別途必要な場合があります</p>
+        <div class="plan-price">
+          <div class="plan-price-label">Monthly Fee (per engineer)</div>
+          <div class="plan-price-value">¥30万〜</div>
+          <p class="plan-note">※ 職種・経験年数によって変動。詳細はお見積もりにて</p>
+        </div>
       </div>
 
-      <!-- 牽引 -->
+      <!-- プロジェクト型 -->
       <div class="plan-card reveal reveal-delay-3">
-        <div class="plan-license-icon">🔗</div>
-        <div class="plan-license-name">Towing</div>
-        <div class="plan-title">牽引免許</div>
-        <div class="plan-subtitle">セミトレーラー・キャリアカー<br>重量物・大型輸送</div>
+        <div class="plan-type-icon">📦</div>
+        <div class="plan-type-en">Project-based</div>
+        <div class="plan-title">プロジェクト型</div>
+        <div class="plan-subtitle">特定の機能開発・システム改修など、成果物を決めて依頼したい場合に</div>
         <div class="plan-divider"></div>
-        <ul class="plan-slots">
-          <li class="plan-slot">
-            <span class="plan-slot-name">ハーフデイ</span>
-            <span class="plan-slot-time">4時間</span>
-            <span class="plan-slot-price">¥20,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">フルデイ</span>
-            <span class="plan-slot-time">8時間</span>
-            <span class="plan-slot-price">¥36,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">残業追加</span>
-            <span class="plan-slot-time">1時間ごと</span>
-            <span class="plan-slot-price">¥5,500</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">月次契約</span>
-            <span class="plan-slot-time">要相談</span>
-            <span class="plan-slot-price">応相談</span>
-          </li>
+        <ul class="plan-features">
+          <li class="plan-feature">要件定義〜納品まで一括委託が可能</li>
+          <li class="plan-feature">スコープ・納期・品質基準を事前に合意</li>
+          <li class="plan-feature">マイルストーン管理で進捗を随時共有</li>
+          <li class="plan-feature">コードレビュー・テスト込みで納品</li>
+          <li class="plan-feature">納品後バグ対応保証期間あり</li>
         </ul>
-        <p class="plan-note">※ 大型免許との複合保有者への依頼も対応可能です</p>
+        <div class="plan-price">
+          <div class="plan-price-label">Fee</div>
+          <div class="plan-price-value">要件に応じて見積</div>
+          <p class="plan-note">※ 要件の規模・複雑度に応じて個別見積。まずはご相談ください</p>
+        </div>
       </div>
 
-      <!-- 2種免許 -->
-      <div class="plan-card reveal reveal-delay-4">
-        <div class="plan-license-icon">🚕</div>
-        <div class="plan-license-name">Type 2 License</div>
-        <div class="plan-title">2種免許</div>
-        <div class="plan-subtitle">送迎バス・観光バス<br>タクシー代行・空港送迎</div>
-        <div class="plan-divider"></div>
-        <ul class="plan-slots">
-          <li class="plan-slot">
-            <span class="plan-slot-name">昼間プラン</span>
-            <span class="plan-slot-time">9:00〜17:00（8h）</span>
-            <span class="plan-slot-price">¥40,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">夜間プラン</span>
-            <span class="plan-slot-time">17:00〜翌1:00（8h）</span>
-            <span class="plan-slot-price">¥44,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">イベントプラン</span>
-            <span class="plan-slot-time">最大12時間</span>
-            <span class="plan-slot-price">¥56,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">月次契約</span>
-            <span class="plan-slot-time">要相談</span>
-            <span class="plan-slot-price">応相談</span>
-          </li>
-        </ul>
-        <p class="plan-note">※ 旅客運送事業許可（緑ナンバー）の取得が別途必要です</p>
-      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- 普通二輪 -->
-      <div class="plan-card reveal reveal-delay-5">
-        <div class="plan-license-icon">🏍️</div>
-        <div class="plan-license-name">Regular Motorcycle</div>
-        <div class="plan-title">普通二輪免許</div>
-        <div class="plan-subtitle">バイク便・書類配達<br>小口輸送・医薬品配送</div>
-        <div class="plan-divider"></div>
-        <ul class="plan-slots">
-          <li class="plan-slot">
-            <span class="plan-slot-name">ハーフデイ</span>
-            <span class="plan-slot-time">4時間</span>
-            <span class="plan-slot-price">¥20,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">フルデイ</span>
-            <span class="plan-slot-time">8時間</span>
-            <span class="plan-slot-price">¥36,000</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">残業追加</span>
-            <span class="plan-slot-time">1時間ごと</span>
-            <span class="plan-slot-price">¥5,500</span>
-          </li>
-          <li class="plan-slot">
-            <span class="plan-slot-name">月次契約</span>
-            <span class="plan-slot-time">要相談</span>
-            <span class="plan-slot-price">応相談</span>
-          </li>
-        </ul>
-        <p class="plan-note">※ バイク・装備はドライバー持参。配送エリアにより追加費用あり</p>
+<!-- Why -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Why St.Arkid</span>
+    </div>
+    <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black);">
+      <h3>St.Arkidが<br>選ばれる理由</h3>
+      <div class="h3-overlay"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal reveal-delay-1">
+        <div class="why-num">01</div>
+        <div class="why-highlight">IT特化</div>
+        <div class="why-title">エンジニア専門の<br>マッチングで精度が高い</div>
+        <p class="why-desc">
+          汎用的な人材紹介会社とは異なり、ITエンジニアに特化しているため、
+          技術スキルの見極め精度が高く、ミスマッチが起きにくいです。
+          職種・フレームワーク・コードの品質基準まで踏み込んで確認します。
+        </p>
       </div>
-
+      <div class="why-item reveal reveal-delay-2">
+        <div class="why-num">02</div>
+        <div class="why-highlight">ブリッジSE</div>
+        <div class="why-title">言語・文化の壁を<br>越えるサポート体制</div>
+        <p class="why-desc">
+          日本語・ベトナム語・英語に対応するブリッジSEが常駐し、
+          日本側とエンジニアの間のコミュニケーションを円滑化します。
+          仕様の翻訳・文化差の調整・認識齟齬の防止まで担います。
+        </p>
+      </div>
+      <div class="why-item reveal reveal-delay-3">
+        <div class="why-num">03</div>
+        <div class="why-highlight">PM経験</div>
+        <div class="why-title">開発マネジメント知見で<br>プロジェクトを安定化</div>
+        <p class="why-desc">
+          St.Arkidは開発プロジェクトマネジメントも手がけるため、
+          オフショアチームの立ち上げからスクラム導入・KPI設計まで、
+          プロジェクト成功に必要な管理ノウハウを持っています。
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -1248,38 +1270,38 @@
         <span class="section-label-text">How to Use</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
-        <h3>4ステップで<br>簡単手配</h3>
+        <h3>4ステップで<br>チームを強化</h3>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
-        面倒な手続きは不要です。
-        メール・電話でのご連絡から最短当日〜翌日でドライバーを手配します。
+        ヒアリングから稼働開始まで、最短2週間で進めることができます。
+        複雑な手続きはSt.Arkidが代行。貴社はエンジニアとの協働に集中できます。
       </p>
     </div>
     <div class="flow-steps">
       <div class="flow-step reveal reveal-delay-1">
         <div class="flow-step-num">01</div>
-        <div class="flow-step-icon">📬</div>
-        <div class="flow-step-title">お問い合わせ・<br>ご依頼内容確認</div>
-        <p class="flow-step-desc">必要な免許種別・日時・業務内容・エリアをお知らせください。メール・電話どちらでも対応します。</p>
+        <div class="flow-step-icon">💬</div>
+        <div class="flow-step-title">ヒアリング・<br>要件整理</div>
+        <p class="flow-step-desc">必要な職種・スキルセット・稼働時間・日本語レベル・予算感をお聞きします。開発フロー・使用ツールも確認し、最適な候補者像を定めます。</p>
       </div>
       <div class="flow-step reveal reveal-delay-2">
         <div class="flow-step-num">02</div>
         <div class="flow-step-icon">🔍</div>
-        <div class="flow-step-title">ドライバー<br>マッチング</div>
-        <p class="flow-step-desc">ご依頼内容に合った免許・経験を持つドライバーをマッチング。スケジュール調整・見積もりをご提示します。</p>
+        <div class="flow-step-title">候補者の<br>選定・提案</div>
+        <p class="flow-step-desc">要件にマッチしたエンジニアのスキルシート・ポートフォリオ・経歴をご提示。通常3〜5名の候補者を1週間以内にご提案します。</p>
       </div>
       <div class="flow-step reveal reveal-delay-3">
         <div class="flow-step-num">03</div>
-        <div class="flow-step-icon">📋</div>
-        <div class="flow-step-title">ご契約・<br>事前確認</div>
-        <p class="flow-step-desc">メールでの電子契約で完了。業務内容・ルート・注意事項を事前に共有し、当日スムーズに開始できるよう準備します。</p>
+        <div class="flow-step-icon">🤝</div>
+        <div class="flow-step-title">面談・<br>スキルチェック</div>
+        <p class="flow-step-desc">オンラインで候補者との面談を設定します。必要に応じてコーディングテスト・技術試問も実施。ブリッジSEが通訳として参加します。</p>
       </div>
       <div class="flow-step reveal reveal-delay-4">
         <div class="flow-step-num">04</div>
-        <div class="flow-step-icon">🚛</div>
-        <div class="flow-step-title">ドライバー派遣・<br>業務完了</div>
-        <p class="flow-step-desc">指定日時にドライバーが現地へ。業務完了後に報告書を提出。継続利用・定期契約への切り替えも歓迎します。</p>
+        <div class="flow-step-icon">🚀</div>
+        <div class="flow-step-title">契約・<br>オンボーディング</div>
+        <p class="flow-step-desc">電子契約で手続きを完了。環境構築・Slack招待・ドキュメント共有など、スムーズな参加をSt.Arkidがサポート。稼働開始後も定期レビューで伴走します。</p>
       </div>
     </div>
   </div>
@@ -1296,16 +1318,16 @@
       まずは<em>気軽に</em><br>ご相談ください
     </h2>
     <p class="reveal reveal-delay-2">
-      必要な免許・日程・業務の規模感を教えていただければ、
-      最適なプランとドライバーをご提案します。<br>
-      見積もりは無料です。お気軽にどうぞ。
+      必要な職種・スキル・予算感をお聞かせいただければ、
+      最適な候補者と契約プランをご提案します。<br>
+      初回相談・お見積もりは無料です。
     </p>
     <div class="cta-actions reveal reveal-delay-3">
-      <a href="mailto:info@st.arkid.jp?subject=レンタルドライバー 相談&body=ご担当者名：%0A会社名・団体名：%0A必要な免許種別（大型・大型特殊・牽引・2種・普通二輪）：%0Aご利用希望日時：%0A業務内容・エリア：%0Aご質問・その他：" class="btn-cta">メールで相談する</a>
+      <a href="mailto:info@st.arkid.jp?subject=オフショア開発 相談&body=ご担当者名：%0A会社名・団体名：%0A必要な職種（フロントエンド・バックエンド・モバイル・QA・インフラ・ブリッジSEなど）：%0A希望する契約形態（人材紹介・ラボ型・プロジェクト型）：%0A稼働開始希望時期：%0A予算感：%0Aご質問・その他：" class="btn-cta">メールで相談する</a>
       <a href="mailto:info@st.arkid.jp" class="cta-email">info@st.arkid.jp</a>
     </div>
     <p class="cta-note reveal reveal-delay-4">
-      現在は北海道・東北エリアを中心に対応しています。他エリアもお気軽にご相談ください。
+      日本語・英語でのご連絡に対応しています。まずはお気軽にどうぞ。
     </p>
   </div>
 </section>
@@ -1318,8 +1340,8 @@
     <a href="../" class="footer-logo">St<span>.</span>Arkid</a>
     <nav class="footer-nav" aria-label="フッターナビゲーション">
       <a href="#problem">課題</a>
-      <a href="#licenses">対応免許</a>
-      <a href="#plans">料金プラン</a>
+      <a href="#skills">対応職種</a>
+      <a href="#plans">契約形態</a>
       <a href="#flow">ご利用の流れ</a>
       <a href="#cta">お問い合わせ</a>
       <a href="../">トップへ戻る</a>
@@ -1337,9 +1359,9 @@ document.getElementById('footer-year').textContent = new Date().getFullYear();
 (function() {
   const loader = document.getElementById('loading');
   if (!loader) return;
-  if (!sessionStorage.getItem('starkidRentalDriverLoaderPlayed')) {
+  if (!sessionStorage.getItem('starkidOffshoreLoaderPlayed')) {
     loader.style.display = 'flex';
-    sessionStorage.setItem('starkidRentalDriverLoaderPlayed', 'true');
+    sessionStorage.setItem('starkidOffshoreLoaderPlayed', 'true');
   } else {
     loader.style.display = 'none';
   }
@@ -1388,34 +1410,38 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
     camera.position.set(0, 2, 10);
     camera.lookAt(0, 0, 0);
 
-    const mat = new THREE.MeshPhongMaterial({ color: 0xffffff, transparent: true, opacity: 0.06, flatShading: false });
-    const geo = new THREE.BoxGeometry(2, 2, 0.01);
-    const boxes = [];
-    for (let i = 0; i < 300; i++) {
-      const box = new THREE.Mesh(geo, mat);
-      box.position.set((Math.random() * 2.3 - 1) * 20, (Math.random() * 2.2 - 1) * 20, (Math.random() * 2.1 - 1) * 20);
-      box.scale.set(Math.random() * 2 - 2, Math.random() * 2 - 1.98, 0.01);
-      scene.add(box);
-      boxes.push(box);
+    const mat = new THREE.MeshPhongMaterial({ color: 0x3a9e8f, transparent: true, opacity: 0.08, flatShading: false });
+    const geo = new THREE.SphereGeometry(0.3, 8, 8);
+    const particles = [];
+    for (let i = 0; i < 200; i++) {
+      const p = new THREE.Mesh(geo, mat);
+      p.position.set(
+        (Math.random() * 2.4 - 1) * 20,
+        (Math.random() * 2.2 - 1) * 20,
+        (Math.random() * 2.0 - 1) * 20
+      );
+      p.scale.setScalar(Math.random() * 1.5 + 0.5);
+      scene.add(p);
+      particles.push(p);
     }
-    const dLight = new THREE.DirectionalLight(0xffffff, 1);
-    dLight.position.set(2.2, 2, Math.PI);
-    scene.add(dLight, new THREE.AmbientLight(0xffffff, 0.2));
+    const dLight = new THREE.DirectionalLight(0x3af5e0, 1.2);
+    dLight.position.set(2, 3, 5);
+    scene.add(dLight, new THREE.AmbientLight(0xffffff, 0.15));
 
     let rot = 0, mx = 0, my = 0;
     document.addEventListener('mousemove', e => { mx = e.pageX; my = e.pageY; });
 
     function tick() {
-      const target = ((mx + my) / window.innerWidth) * -45;
-      rot += (target - rot) * 0.02;
+      const target = ((mx + my) / window.innerWidth) * -30;
+      rot += (target - rot) * 0.015;
       const r = rot * Math.PI / 180;
       camera.position.x = 11 * Math.sin(r);
       camera.position.z = 11 * Math.cos(r);
-      camera.lookAt(new THREE.Vector3(-10, 0, 0));
-      boxes.forEach(b => {
-        b.position.x -= 0.008;
-        b.position.y -= (Math.random() * 0.002 + 0.002);
-        b.position.z += Math.random() * 0.004 + 0.001;
+      camera.lookAt(new THREE.Vector3(0, 0, 0));
+      particles.forEach(p => {
+        p.position.y -= 0.012;
+        p.position.x += Math.sin(p.position.y * 0.1) * 0.003;
+        if (p.position.y < -20) p.position.y = 20;
       });
       renderer.render(scene, camera);
       requestAnimationFrame(tick);
