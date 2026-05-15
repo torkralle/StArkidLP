@@ -1549,7 +1549,7 @@
       各種サービスについてのご相談・お問い合わせは<br>
       以下よりお気軽にご連絡ください。
     </p>
-    <form class="contact-form reveal reveal-delay-3" id="contactForm" novalidate>
+    <form class="contact-form" id="contactForm" novalidate>
       <div class="form-row">
         <div class="form-group">
           <label for="cf-name">お名前<span class="required">*</span></label>
@@ -1793,7 +1793,7 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
   const status = document.getElementById('formStatus');
 
   // Worker URL: デプロイ後に差し替えてください
-  const WORKER_URL = 'https://contact.YOUR_SUBDOMAIN.workers.dev';
+  const WORKER_URL = 'https://black-mud-7786.hoshiko-d0f.workers.dev';
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
