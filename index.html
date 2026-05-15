@@ -1549,10 +1549,38 @@
       各種サービスについてのご相談・お問い合わせは<br>
       以下よりお気軽にご連絡ください。
     </p>
-    <div class="contact-actions reveal reveal-delay-3">
-      <a href="mailto:info@st.arkid.jp" class="btn-contact">メールで相談する</a>
-      <a href="mailto:info@st.arkid.jp" class="contact-email">info@st.arkid.jp</a>
-    </div>
+    <form class="contact-form reveal reveal-delay-3" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cf-name">お名前<span class="required">*</span></label>
+          <input type="text" id="cf-name" name="name" placeholder="山田 太郎" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-company">会社名</label>
+          <input type="text" id="cf-company" name="company" placeholder="株式会社○○">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cf-email">メールアドレス<span class="required">*</span></label>
+        <input type="email" id="cf-email" name="email" placeholder="example@company.com" required>
+      </div>
+      <div class="form-group">
+        <label for="cf-service">ご興味のあるサービス</label>
+        <select id="cf-service" name="service">
+          <option value="">選択してください</option>
+          <option value="rentaldriver">レンタルドライバー</option>
+          <option value="carlease">カーリース</option>
+          <option value="offshore">オフショア開発</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cf-message">お問い合わせ内容<span class="required">*</span></label>
+        <textarea id="cf-message" name="message" placeholder="ご質問・ご要望をご記入ください" required></textarea>
+      </div>
+      <div class="form-status" id="formStatus"></div>
+      <button type="submit" class="btn-submit" id="submitBtn">SEND MESSAGE</button>
+    </form>
   </div>
 </section>
 
@@ -1756,6 +1784,60 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
   }, { threshold: 0.2 });
   wraps.forEach(w => obs.observe(w));
+})();
+
+/* ===== CONTACT FORM ===== */
+(function () {
+  const form = document.getElementById('contactForm');
+  const btn = document.getElementById('submitBtn');
+  const status = document.getElementById('formStatus');
+
+  // Worker URL: デプロイ後に差し替えてください
+  const WORKER_URL = 'https://contact.YOUR_SUBDOMAIN.workers.dev';
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    status.className = 'form-status';
+    status.textContent = '';
+
+    const data = {
+      name: form.elements['name'].value.trim(),
+      company: form.elements['company'].value.trim(),
+      email: form.elements['email'].value.trim(),
+      service: form.elements['service'].value,
+      message: form.elements['message'].value.trim(),
+    };
+
+    if (!data.name || !data.email || !data.message) {
+      status.textContent = 'お名前・メールアドレス・お問い合わせ内容は必須です。';
+      status.className = 'form-status error';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'SENDING...';
+
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        form.reset();
+        status.textContent = 'お問い合わせありがとうございます。担当者より折り返しご連絡いたします。';
+        status.className = 'form-status success';
+      } else {
+        throw new Error();
+      }
+    } catch {
+      status.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+      status.className = 'form-status error';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'SEND MESSAGE';
+    }
+  });
 })();
 </script>
 
