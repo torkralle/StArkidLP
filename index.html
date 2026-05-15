@@ -228,6 +228,61 @@
       text-decoration: none;
       letter-spacing: 0.1em;
     }
+    .mobile-nav-accordion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .mobile-nav-accordion-btn {
+      font-family: var(--font-jp);
+      font-size: 18px;
+      color: var(--white);
+      background: none;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0;
+    }
+    .mobile-nav-accordion-btn .acc-arrow {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-right: 1.5px solid var(--gray-light);
+      border-bottom: 1.5px solid var(--gray-light);
+      transform: rotate(45deg) translateY(-2px);
+      transition: transform 0.3s;
+    }
+    .mobile-nav-accordion.open .acc-arrow {
+      transform: rotate(-135deg) translateY(-2px);
+    }
+    .mobile-nav-accordion-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease;
+    }
+    .mobile-nav-accordion.open .mobile-nav-accordion-body {
+      grid-template-rows: 1fr;
+    }
+    .mobile-nav-accordion-inner {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding-top: 0;
+      transition: padding-top 0.3s;
+    }
+    .mobile-nav-accordion.open .mobile-nav-accordion-inner {
+      padding-top: 20px;
+    }
+    .mobile-nav-accordion-inner a {
+      font-size: 15px !important;
+      color: var(--gray-light) !important;
+    }
     .mobile-nav-close {
       position: absolute;
       top: 24px;
@@ -780,52 +835,111 @@
       line-height: 1.25;
       margin-bottom: 24px;
     }
-    .contact-inner p {
+    .contact-inner > p {
       font-size: 16px;
       color: var(--gray-light);
       line-height: 1.9;
       margin-bottom: 52px;
     }
-    .contact-actions {
+    .contact-form {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 16px;
+      text-align: left;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 16px;
     }
-    .btn-contact {
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group label {
+      font-size: 12px;
+      font-family: var(--font-en);
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+    .form-group label .required {
+      color: #e06c75;
+      margin-left: 4px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 2px;
+      color: var(--white);
+      font-size: 15px;
+      font-family: var(--font-jp);
+      padding: 14px 16px;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      cursor: pointer;
+    }
+    .form-group select option {
+      background: #1a1a1a;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: rgba(255,255,255,0.4);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+    .btn-submit {
       font-family: var(--font-en);
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.1em;
-      text-decoration: none;
       background: var(--white);
       color: var(--black);
+      border: none;
       padding: 18px 60px;
       border-radius: 2px;
-      width: 100%;
-      max-width: 360px;
-      display: block;
-      text-align: center;
-      transition: background 0.2s;
+      cursor: pointer;
+      transition: background 0.2s, opacity 0.2s;
+      align-self: center;
+      min-width: 240px;
     }
-    .btn-contact:hover { background: var(--gray-light); }
-    .contact-email {
-      font-family: var(--font-en);
+    .btn-submit:hover { background: var(--gray-light); }
+    .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+    .form-status {
       font-size: 14px;
-      color: var(--gray);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.2s;
+      text-align: center;
+      padding: 14px;
+      border-radius: 2px;
+      display: none;
     }
-    .contact-email:hover { color: var(--gray-light); }
-    .contact-email::before {
-      content: '';
-      display: inline-block;
-      width: 16px;
-      height: 1px;
-      background: currentColor;
+    .form-status.success {
+      display: block;
+      background: rgba(152,195,121,0.12);
+      color: #98c379;
+      border: 1px solid rgba(152,195,121,0.3);
+    }
+    .form-status.error {
+      display: block;
+      background: rgba(224,108,117,0.12);
+      color: #e06c75;
+      border: 1px solid rgba(224,108,117,0.3);
+    }
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
     }
 
     /* ===== FOOTER ===== */
@@ -1068,13 +1182,21 @@
 <nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
   <span class="mobile-nav-close" id="mobileNavClose">✕</span>
   <a href="#mission" onclick="closeMobileNav()">About</a>
-  <a href="#services" onclick="closeMobileNav()">Services</a>
+  <div class="mobile-nav-accordion" id="mobileServicesAccordion">
+    <button class="mobile-nav-accordion-btn" onclick="toggleMobileAccordion('mobileServicesAccordion')">
+      Services <span class="acc-arrow"></span>
+    </button>
+    <div class="mobile-nav-accordion-body">
+      <div class="mobile-nav-accordion-inner">
+        <a href="rentaldriver/" onclick="closeMobileNav()">Rental Driver</a>
+        <a href="offshore/" onclick="closeMobileNav()">Offshore</a>
+        <a href="carlease/" onclick="closeMobileNav()">Car Lease</a>
+      </div>
+    </div>
+  </div>
   <a href="#approach" onclick="closeMobileNav()">Approach</a>
   <a href="#company" onclick="closeMobileNav()">Company</a>
   <a href="#contact" onclick="closeMobileNav()">Contact</a>
-  <a href="rentaldriver/" onclick="closeMobileNav()">Rental Driver</a>
-  <a href="offshore/" onclick="closeMobileNav()">Offshore</a>
-  <a href="carlease/" onclick="closeMobileNav()">Car Lease</a>
 </nav>
 
 <!-- Main Content -->
@@ -1490,6 +1612,9 @@ document.getElementById('footer-year').textContent = new Date().getFullYear();
 /* ===== HAMBURGER ===== */
 function closeMobileNav() {
   document.getElementById('mobileNav').classList.remove('open');
+}
+function toggleMobileAccordion(id) {
+  document.getElementById(id).classList.toggle('open');
 }
 document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('mobileNav').classList.add('open');
