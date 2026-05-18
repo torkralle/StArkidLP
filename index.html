@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー</title>
-  <meta name="description" content="St.Arkidは、AI活用支援・開発プロジェクトマネジメント・Notionアンバサダー・民泊（Airbnb）事業・古物商・ベトナムエンジニアのオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣を手がける複合テックカンパニーです。札幌を拠点に、テクノロジーと人の暮らしをつなぎます。">
-  <meta name="keywords" content="St.Arkid, AI, 人工知能, 開発マネジメント, Notion, Notionアンバサダー, 民泊, Airbnb, 古物商, テック, 札幌, ベトナム, オフショア, 人材紹介, エンジニア採用, カーリース, 学生カーリース, レンタルドライバー, 運転代行, ドライバー派遣, 大型免許, 2種免許">
-  <meta property="og:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー">
-  <meta property="og:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣まで幅広く手がけます。">
+  <title>St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー・自社アプリ開発</title>
+  <meta name="description" content="St.Arkidは、AI活用支援・開発プロジェクトマネジメント・Notionアンバサダー・民泊（Airbnb）事業・古物商・ベトナムエンジニアのオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣・自社アプリ開発を手がける複合テックカンパニーです。札幌を拠点に、テクノロジーと人の暮らしをつなぎます。">
+  <meta name="keywords" content="St.Arkid, AI, 人工知能, 開発マネジメント, Notion, Notionアンバサダー, 民泊, Airbnb, 古物商, テック, 札幌, ベトナム, オフショア, 人材紹介, エンジニア採用, カーリース, 学生カーリース, レンタルドライバー, 運転代行, ドライバー派遣, 大型免許, 2種免許, 自社アプリ, WORaDi, 英単語アプリ, 医療英単語">
+  <meta property="og:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー・自社アプリ開発">
+  <meta property="og:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣・自社アプリ開発まで幅広く手がけます。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/">
   <meta property="og:image" content="https://st.arkid.jp/ogp.png">
@@ -16,8 +16,8 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="St.Arkid">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー">
-  <meta name="twitter:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣まで幅広く手がけます。">
+  <meta name="twitter:title" content="St.Arkid | AI・開発マネジメント・Notion・民泊・古物商・オフショア人材・学生カーリース・レンタルドライバー・自社アプリ開発">
+  <meta name="twitter:description" content="テクノロジーと日常をつなぐ複合カンパニー。AI活用・開発管理・Notion・民泊・古物商・ベトナムオフショア人材紹介・学生向けカーリース・レンタルドライバー派遣・自社アプリ開発まで幅広く手がけます。">
   <meta name="twitter:image" content="https://st.arkid.jp/ogp.png">
   <meta name="robots" content="index, follow">
   <meta name="author" content="St.Arkid">
@@ -626,6 +626,36 @@
     .service-card.minpaku{ --card-accent: var(--accent-yellow); --card-accent-s: var(--accent-yellow-s); }
     .service-card.antique{ --card-accent: var(--navy);         --card-accent-s: #e8ecf5; }
     .service-card.offshore{ --card-accent: #3a9e8f;            --card-accent-s: #e4f5f3; }
+    .service-card.app-dev { --card-accent: #7c5cbf; --card-accent-s: #f0ebfa; }
+
+    .app-list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .app-list-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 12px 14px;
+      background: var(--card-accent-s, var(--accent-blue-s));
+      border-left: 3px solid var(--card-accent, var(--accent-blue));
+      border-radius: 2px;
+    }
+    .app-list-item-name {
+      font-family: var(--font-en);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--card-accent, var(--accent-blue));
+      letter-spacing: 0.04em;
+    }
+    .app-list-item-desc {
+      font-size: 12px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
     .service-card.car-lease {
       --card-accent: var(--accent-blue);
       --card-accent-s: var(--accent-blue-s);
@@ -1051,7 +1081,7 @@
         "url": "https://st.arkid.jp/",
         "email": "info@st.arkid.jp",
         "foundingDate": "2024-09-19",
-        "description": "St.Arkidは、AI活用支援・開発プロジェクトマネジメント・Notionアンバサダー・民泊（Airbnb）事業・古物商・ベトナムエンジニアのオフショア人材紹介・学生向けカーリースを手がける複合テックカンパニーです。札幌を拠点に、テクノロジーと人の暮らしをつなぎます。",
+        "description": "St.Arkidは、AI活用支援・開発プロジェクトマネジメント・Notionアンバサダー・民泊（Airbnb）事業・古物商・ベトナムエンジニアのオフショア人材紹介・学生向けカーリース・自社アプリ開発を手がける複合テックカンパニーです。札幌を拠点に、テクノロジーと人の暮らしをつなぎます。",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "札幌市",
@@ -1067,7 +1097,7 @@
           { "@type": "Country", "name": "Japan" },
           { "@type": "Country", "name": "Vietnam" }
         ],
-        "knowsAbout": ["人工知能", "AI活用支援", "開発マネジメント", "Notion", "民泊", "古物商", "オフショア人材紹介", "ベトナムエンジニア", "カーリース", "学生カーリース", "レンタルドライバー", "ドライバー派遣", "大型免許", "2種免許"],
+        "knowsAbout": ["人工知能", "AI活用支援", "開発マネジメント", "Notion", "民泊", "古物商", "オフショア人材紹介", "ベトナムエンジニア", "カーリース", "学生カーリース", "レンタルドライバー", "ドライバー派遣", "大型免許", "2種免許", "自社アプリ開発", "英単語アプリ", "WORaDi", "医療英単語"],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "St.Arkid Services",
@@ -1135,6 +1165,14 @@
                 "name": "レンタルドライバー派遣",
                 "description": "大型・大型特殊・牽引・2種・普通二輪など特殊免許を保持するプロドライバーを必要なときだけ派遣。急なドライバー不在・特殊車両の運転代行・イベント輸送まで柔軟に対応します。"
               }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "自社アプリ開発",
+                "description": "AIを活用した独自のモバイルアプリケーションを開発・運営。WORaDi（英単語をAIで覚えるアプリ）・医療英単語（医療英単語学習アプリ）など、学習体験を革新するアプリを提供しています。"
+              }
             }
           ]
         }
@@ -1168,6 +1206,7 @@
         <a href="rentaldriver/">Rental Driver</a>
         <a href="offshore/">Offshore</a>
         <a href="carlease/">Car Lease</a>
+        <a href="apps/">Apps</a>
       </div>
     </div>
     <a href="#approach">Approach</a>
@@ -1192,6 +1231,7 @@
         <a href="rentaldriver/" onclick="closeMobileNav()">Rental Driver</a>
         <a href="offshore/" onclick="closeMobileNav()">Offshore</a>
         <a href="carlease/" onclick="closeMobileNav()">Car Lease</a>
+        <a href="apps/" onclick="closeMobileNav()">Apps</a>
       </div>
     </div>
   </div>
@@ -1218,8 +1258,8 @@
     <p class="hero-sub">
       St.Arkidは、AI活用支援・開発マネジメント・<br>
       Notion・民泊・古物商・ベトナムオフショア人材紹介・<br>
-      学生向けカーリース・レンタルドライバー派遣を手がける<br>
-      複合テックカンパニーです。<br>
+      学生向けカーリース・レンタルドライバー派遣・<br>
+      自社アプリ開発を手がける複合テックカンパニーです。<br>
       テクノロジーと人の暮らしをつなぎ、日常に新しい価値を届けます。
     </p>
     <div class="hero-cta-group">
@@ -1255,7 +1295,7 @@
       </div>
       <div class="mission-right">
         <div class="mission-stat reveal reveal-delay-1">
-          <div class="mission-stat-num">8<sup>+</sup></div>
+          <div class="mission-stat-num">9<sup>+</sup></div>
           <div class="mission-stat-label">事業領域</div>
         </div>
         <div class="mission-stat reveal reveal-delay-2">
@@ -1280,7 +1320,7 @@
         <span class="section-label-text">Services</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--surface);">
-        <h3>私たちが提供する<br>8つの事業</h3>
+        <h3>私たちが提供する<br>9つの事業</h3>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
@@ -1420,6 +1460,34 @@
         </div>
         <a href="/offshore/" class="service-card-link">詳しく見る</a>
       </div>
+      <div class="service-card app-dev wide reveal reveal-delay-3" style="cursor:pointer;">
+        <span class="service-card-icon">📱</span>
+        <div class="service-card-en">In-house App Dev</div>
+        <h4 class="service-card-title">自社アプリ開発</h4>
+        <p class="service-card-desc">
+          AIを活用した独自のモバイルアプリケーションを企画・開発・運営。
+          ユーザーの学習体験を革新するプロダクトをゼロから内製で届けます。
+        </p>
+        <div class="app-list">
+          <div class="app-list-item">
+            <span class="app-list-item-name">WORaDi</span>
+            <span class="app-list-item-desc">英単語をAIで覚えるアプリ。AIが学習履歴を分析し、最適なタイミングで復習を提案します。</span>
+          </div>
+          <div class="app-list-item">
+            <span class="app-list-item-name">医療英単語</span>
+            <span class="app-list-item-desc">医療現場で必要な英単語を効率よく習得できるアプリ。医療従事者・学生向けに特化した学習コンテンツを提供します。</span>
+          </div>
+        </div>
+        <div class="service-card-tags" style="margin-top:20px;">
+          <span class="service-tag">iOS</span>
+          <span class="service-tag">Android</span>
+          <span class="service-tag">AI活用</span>
+          <span class="service-tag">英語学習</span>
+          <span class="service-tag">医療英語</span>
+        </div>
+        <a href="/apps/" class="service-card-link" style="position:relative;z-index:2;">詳しく見る</a>
+        <a href="/apps/" style="position:absolute;inset:0;z-index:1;" aria-hidden="true"></a>
+      </div>
     </div>
   </div>
 </section>
@@ -1506,7 +1574,8 @@
               古物商<br>
               オフショア人材紹介（ベトナム）<br>
               学生向けカーリース<br>
-              レンタルドライバー派遣
+              レンタルドライバー派遣<br>
+              自社アプリ開発
             </td>
           </tr>
           <tr>

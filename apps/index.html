@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自社アプリ開発 | WORaDi・医療英単語 — St.Arkid</title>
+  <meta name="description" content="St.Arkidが開発・運営する自社アプリ。AIで英単語を覚えるWORaDi、医療現場で使える英語を習得できる医療英単語。学習体験を革新するモバイルアプリを提供しています。">
+  <meta name="keywords" content="WORaDi, 英単語, AI, 英語学習, 医療英単語, 医療英語, 医療英語アプリ, 語学アプリ, St.Arkid, 自社アプリ, モバイルアプリ">
+  <meta property="og:title" content="自社アプリ開発 | WORaDi・医療英単語 — St.Arkid">
+  <meta property="og:description" content="AIで英単語を覚えるWORaDi、医療英語を習得できる医療英単語。St.Arkidが開発する学習特化モバイルアプリ。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://st.arkid.jp/apps/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="St.Arkid">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="自社アプリ開発 | WORaDi・医療英単語 — St.Arkid">
+  <meta name="twitter:description" content="AIで英単語を覚えるWORaDi、医療英語を習得できる医療英単語。St.Arkidが開発する学習特化モバイルアプリ。">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="St.Arkid">
+  <link rel="canonical" href="https://st.arkid.jp/apps/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:        #121212;
+      --black-mid:    #2d2d2d;
+      --gray:         #757575;
+      --gray-light:   #c7c7c7;
+      --surface:      #f9f9f9;
+      --white:        #ffffff;
+      --accent:       #7c5cbf;
+      --accent-s:     #f0ebfa;
+      --accent-woradi: #7c5cbf;
+      --accent-woradi-s: #f0ebfa;
+      --accent-med:   #3a7ebf;
+      --accent-med-s: #e8f2fb;
+      --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-jp);
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ===== LOADING ===== */
+    #loading {
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeOutLoader 0.6s ease 1.6s forwards;
+    }
+    .loading-text {
+      font-family: var(--font-en);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      animation: loadingPulse 1s ease-in-out infinite alternate;
+    }
+    @keyframes loadingPulse { from { opacity: 0.3; } to { opacity: 1; } }
+    @keyframes fadeOutLoader { to { opacity: 0; pointer-events: none; visibility: hidden; } }
+
+    /* ===== HEADER ===== */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 48px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.3s ease, backdrop-filter 0.3s ease, transform 0.3s ease;
+    }
+    #header.scrolled {
+      background: rgba(18, 18, 18, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .header-logo {
+      font-family: var(--font-en);
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .header-logo span { color: var(--accent); }
+    .header-logo-sub {
+      font-family: var(--font-en);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--gray);
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
+    nav.header-nav {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+    }
+    nav.header-nav a {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: var(--gray-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav.header-nav a:hover { color: var(--white); }
+    .header-cta {
+      font-family: var(--font-en);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--white) !important;
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 8px 20px;
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s !important;
+    }
+    .header-cta:hover {
+      background: rgba(255,255,255,0.1) !important;
+      border-color: var(--white) !important;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--white);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* Dropdown nav */
+    .nav-has-dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .nav-has-dropdown > a { display: flex; align-items: center; gap: 4px; }
+    .nav-has-dropdown > a::after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      transform: rotate(45deg) translateY(-2px);
+      transition: transform 0.2s;
+    }
+    .nav-has-dropdown:hover > a::after { transform: rotate(-135deg) translateY(-2px); }
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 16px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(18, 18, 18, 0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px;
+      padding: 6px 0;
+      min-width: 172px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, top 0.2s;
+      white-space: nowrap;
+    }
+    .nav-has-dropdown:hover .nav-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+      top: calc(100% + 8px);
+    }
+    .nav-dropdown a {
+      display: block !important;
+      padding: 9px 18px;
+      font-size: 12px !important;
+      color: var(--gray-light) !important;
+      letter-spacing: 0.06em;
+      gap: 0 !important;
+    }
+    .nav-dropdown a::after { display: none !important; }
+    .nav-dropdown a:hover {
+      color: var(--white) !important;
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* Mobile Nav */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      z-index: 200;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: var(--font-jp);
+      font-size: 18px;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+    }
+    .mobile-nav-accordion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .mobile-nav-accordion-btn {
+      font-family: var(--font-jp);
+      font-size: 18px;
+      color: var(--white);
+      background: none;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0;
+    }
+    .mobile-nav-accordion-btn .acc-arrow {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-right: 1.5px solid var(--gray-light);
+      border-bottom: 1.5px solid var(--gray-light);
+      transform: rotate(45deg) translateY(-2px);
+      transition: transform 0.3s;
+    }
+    .mobile-nav-accordion.open .acc-arrow { transform: rotate(-135deg) translateY(-2px); }
+    .mobile-nav-accordion-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease;
+    }
+    .mobile-nav-accordion.open .mobile-nav-accordion-body { grid-template-rows: 1fr; }
+    .mobile-nav-accordion-inner {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding-top: 0;
+      transition: padding-top 0.3s;
+    }
+    .mobile-nav-accordion.open .mobile-nav-accordion-inner { padding-top: 20px; }
+    .mobile-nav-accordion-inner a { font-size: 15px !important; color: var(--gray-light) !important; }
+    .mobile-nav-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      cursor: pointer;
+      font-size: 28px;
+      color: var(--gray-light);
+      line-height: 1;
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--black);
+      overflow: hidden;
+    }
+    #webgl-container {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 48px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .hero-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .hero-label-line {
+      width: 32px;
+      height: 1px;
+      background: var(--gray);
+    }
+    .hero-label-text {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+    .hero-headline {
+      font-size: clamp(42px, 7vw, 88px);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 32px;
+    }
+    .hero-headline .line { display: block; color: var(--white); }
+    .hero-headline .line.dim { color: var(--gray); }
+    .hero-headline .line em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      max-width: 480px;
+      margin-bottom: 52px;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      background: var(--white);
+      color: var(--black);
+      padding: 14px 36px;
+      border-radius: 2px;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gray-light); }
+    .btn-secondary {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: var(--gray-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.2s;
+    }
+    .btn-secondary:hover { color: var(--white); }
+    .btn-secondary::after {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: currentColor;
+      transition: width 0.2s;
+    }
+    .btn-secondary:hover::after { width: 36px; }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, transparent, var(--gray));
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%, 100% { transform: scaleY(0); transform-origin: top; }
+      50%       { transform: scaleY(1); transform-origin: top; }
+    }
+    .hero-scroll-text {
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      writing-mode: vertical-rl;
+      text-transform: uppercase;
+    }
+
+    /* Hero badges */
+    .hero-badges {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .hero-badge {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      border: 1px solid rgba(124, 92, 191, 0.4);
+      padding: 6px 14px;
+      border-radius: 100px;
+      background: rgba(124, 92, 191, 0.08);
+    }
+
+    /* ===== SECTION WRAPPER ===== */
+    section { position: relative; }
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ===== H3 ANIMATION ===== */
+    .h3-wrap {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+    .h3-wrap h3 {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+    .h3-wrap .h3-overlay {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0% 0%, 115% 0%, 130% 100%, 0% 100%);
+      transition: clip-path 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+      background: inherit;
+    }
+    .h3-wrap.revealed .h3-overlay {
+      clip-path: polygon(115% 0%, 115% 0%, 130% 100%, 130% 100%);
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .section-label-line { width: 24px; height: 1px; background: var(--gray); }
+    .section-label-text {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+
+    /* ===== CONCEPT SECTION ===== */
+    #concept {
+      background: var(--black-mid);
+      padding: 140px 0;
+    }
+    .concept-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-top: 72px;
+    }
+    .concept-left h3 {
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 32px;
+    }
+    .concept-left h3 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .concept-left p {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+    .concept-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+    }
+    .concept-point {
+      background: var(--black-mid);
+      padding: 36px 40px;
+      transition: background 0.3s;
+    }
+    .concept-point:hover { background: rgba(255,255,255,0.04); }
+    .concept-point-num {
+      font-family: var(--font-en);
+      font-size: 40px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.08);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .concept-point-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .concept-point-desc {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+
+    /* ===== APPS SECTION ===== */
+    #apps {
+      background: var(--surface);
+      color: var(--black);
+      padding: 140px 0;
+    }
+    #apps .section-label-line { background: var(--gray); }
+    #apps h3 { color: var(--black); }
+    .apps-header {
+      margin-bottom: 72px;
+    }
+    .apps-header p {
+      margin-top: 24px;
+      font-size: 16px;
+      color: var(--gray);
+      line-height: 1.9;
+      max-width: 520px;
+    }
+
+    .app-card {
+      background: var(--white);
+      margin-bottom: 2px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      position: relative;
+    }
+    .app-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 4px;
+      background: var(--app-accent, var(--accent));
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.5s ease;
+    }
+    .app-card:hover::before { transform: scaleY(1); }
+
+    .app-card-body {
+      padding: 64px 56px;
+    }
+    .app-card-icon {
+      font-size: 48px;
+      margin-bottom: 28px;
+      display: block;
+    }
+    .app-card-en {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--app-accent, var(--accent));
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .app-card-name {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .app-card-tagline {
+      font-size: 15px;
+      color: var(--gray);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+    .app-card-desc {
+      font-size: 15px;
+      color: var(--black);
+      line-height: 2;
+      margin-bottom: 32px;
+    }
+    .app-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 32px;
+    }
+    .app-tag {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      color: var(--app-accent, var(--accent));
+      background: var(--app-accent-s, var(--accent-s));
+      padding: 5px 12px;
+      border-radius: 2px;
+    }
+    .app-store-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .app-store-btn {
+      font-family: var(--font-en);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      color: var(--app-accent, var(--accent));
+      border: 1.5px solid var(--app-accent, var(--accent));
+      padding: 10px 22px;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .app-store-btn:hover {
+      background: var(--app-accent, var(--accent));
+      color: var(--white);
+    }
+    .app-store-btn-coming {
+      font-family: var(--font-en);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      border: 1.5px solid var(--gray-light);
+      padding: 10px 22px;
+      border-radius: 2px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0.6;
+    }
+
+    .app-card-features {
+      padding: 64px 56px;
+      background: var(--surface);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1px;
+    }
+    .app-feature {
+      padding: 28px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .app-feature:first-child { padding-top: 0; }
+    .app-feature:last-child { border-bottom: none; padding-bottom: 0; }
+    .app-feature-icon { font-size: 24px; margin-bottom: 10px; display: block; }
+    .app-feature-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .app-feature-desc {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.9;
+    }
+
+    .app-card.woradi { --app-accent: var(--accent-woradi); --app-accent-s: var(--accent-woradi-s); }
+    .app-card.medical { --app-accent: var(--accent-med); --app-accent-s: var(--accent-med-s); }
+
+    /* ===== WHY SECTION ===== */
+    #why {
+      background: var(--black);
+      padding: 140px 0;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+      margin-top: 72px;
+    }
+    .why-item {
+      background: var(--black);
+      padding: 52px 40px;
+      transition: background 0.3s;
+    }
+    .why-item:hover { background: rgba(255,255,255,0.03); }
+    .why-num {
+      font-family: var(--font-en);
+      font-size: 48px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.08);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+    .why-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .why-desc {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+    .why-highlight {
+      display: inline-block;
+      font-family: var(--font-en);
+      font-size: 24px;
+      font-weight: 300;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    /* ===== CTA SECTION ===== */
+    #cta {
+      background: var(--black-mid);
+      padding: 140px 0;
+      text-align: center;
+    }
+    .cta-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+    .cta-inner .section-label { justify-content: center; }
+    .cta-inner h2 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 24px;
+    }
+    .cta-inner h2 em { font-style: normal; color: var(--accent); }
+    .cta-inner > p {
+      font-size: 16px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      margin-bottom: 52px;
+    }
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-cta {
+      font-family: var(--font-en);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      background: var(--white);
+      color: var(--black);
+      padding: 18px 60px;
+      border-radius: 2px;
+      width: 100%;
+      max-width: 360px;
+      display: block;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .btn-cta:hover { background: var(--gray-light); }
+    .cta-email {
+      font-family: var(--font-en);
+      font-size: 14px;
+      color: var(--gray);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .cta-email:hover { color: var(--gray-light); }
+    .cta-email::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 1px;
+      background: currentColor;
+    }
+    .cta-note {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 32px;
+      line-height: 1.8;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 48px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .footer-logo {
+      font-family: var(--font-en);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-decoration: none;
+    }
+    .footer-logo span { color: var(--accent); }
+    .footer-nav {
+      display: flex;
+      gap: 28px;
+    }
+    .footer-nav a {
+      font-family: var(--font-en);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--gray-light); }
+    .footer-copy {
+      font-family: var(--font-en);
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 0.05em;
+      width: 100%;
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      margin-top: 8px;
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .app-card { grid-template-columns: 1fr; }
+      .app-card-features { padding: 48px 56px; }
+      .concept-grid { grid-template-columns: 1fr; gap: 60px; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      #header { padding: 0 24px; }
+      nav.header-nav { display: none; }
+      .hamburger { display: flex; }
+      .hero-content { padding: 0 24px; }
+      .hero-scroll { left: 24px; }
+      .section-inner { padding: 0 24px; }
+      .app-card-body { padding: 48px 28px; }
+      .app-card-features { padding: 40px 28px; }
+      .why-grid { grid-template-columns: 1fr; }
+      #concept, #apps, #why, #cta { padding: 100px 0; }
+      .cta-inner { padding: 0 24px; }
+      footer { padding: 40px 24px; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-headline { font-size: 36px; }
+      .app-card-name { font-size: 28px; }
+      .app-card-body { padding: 40px 20px; }
+      .app-card-features { padding: 32px 20px; }
+      .why-item { padding: 36px 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Loading -->
+<div id="loading"><span class="loading-text">LOADING...</span></div>
+
+<!-- Header -->
+<header id="header">
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ Apps</span></a>
+  <nav class="header-nav" aria-label="メインナビゲーション">
+    <a href="#apps">アプリ紹介</a>
+    <a href="#concept">コンセプト</a>
+    <a href="#why">特徴</a>
+    <div class="nav-has-dropdown">
+      <a href="../#services">Services</a>
+      <div class="nav-dropdown">
+        <a href="../">St.Arkid Top</a>
+        <a href="../rentaldriver/">Rental Driver</a>
+        <a href="../offshore/">Offshore</a>
+        <a href="../carlease/">Car Lease</a>
+      </div>
+    </div>
+    <a href="#cta" class="header-cta">お問い合わせ</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <span class="mobile-nav-close" id="mobileNavClose">✕</span>
+  <a href="#apps" onclick="closeMobileNav()">アプリ紹介</a>
+  <a href="#concept" onclick="closeMobileNav()">コンセプト</a>
+  <a href="#why" onclick="closeMobileNav()">特徴</a>
+  <a href="#cta" onclick="closeMobileNav()">お問い合わせ</a>
+  <div class="mobile-nav-accordion" id="mobileServicesAccordion">
+    <button class="mobile-nav-accordion-btn" onclick="toggleMobileAccordion('mobileServicesAccordion')">
+      Services <span class="acc-arrow"></span>
+    </button>
+    <div class="mobile-nav-accordion-body">
+      <div class="mobile-nav-accordion-inner">
+        <a href="../" onclick="closeMobileNav()">St.Arkid Top</a>
+        <a href="../rentaldriver/" onclick="closeMobileNav()">Rental Driver</a>
+        <a href="../offshore/" onclick="closeMobileNav()">Offshore</a>
+        <a href="../carlease/" onclick="closeMobileNav()">Car Lease</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- Hero -->
+<section id="hero">
+  <div id="webgl-container"></div>
+  <div class="hero-content">
+    <div class="hero-label">
+      <div class="hero-label-line"></div>
+      <span class="hero-label-text">In-house App Development</span>
+    </div>
+    <h1 class="hero-headline">
+      <span class="line">AIで、</span>
+      <span class="line"><em>学習を革新する。</em></span>
+      <span class="line dim">英語教育に、新しい体験を。</span>
+    </h1>
+    <div class="hero-badges">
+      <span class="hero-badge">WORaDi</span>
+      <span class="hero-badge">医療英単語</span>
+      <span class="hero-badge">AI-Powered</span>
+      <span class="hero-badge">Mobile App</span>
+    </div>
+    <p class="hero-sub">
+      St.Arkidは、AIを活用した学習アプリを自社開発しています。<br>
+      英語学習の「続かない」「効率が悪い」を<br>
+      テクノロジーで根本から解決します。
+    </p>
+    <div class="hero-cta-group">
+      <a href="#apps" class="btn-primary">アプリを見る</a>
+      <a href="#concept" class="btn-secondary">コンセプト</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- Apps -->
+<section id="apps">
+  <div class="section-inner">
+    <div class="apps-header">
+      <div class="section-label reveal">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Our Apps</span>
+      </div>
+      <div class="h3-wrap reveal reveal-delay-1" style="background: var(--surface);">
+        <h3>2つのアプリで<br>英語学習を変える</h3>
+        <div class="h3-overlay"></div>
+      </div>
+      <p class="reveal reveal-delay-2">
+        AIの力で、一人ひとりに最適な学習体験を届けます。<br>
+        単語暗記の常識を、St.Arkidが塗り替えます。
+      </p>
+    </div>
+
+    <!-- WORaDi -->
+    <div class="app-card woradi reveal">
+      <div class="app-card-body">
+        <span class="app-card-icon">🧠</span>
+        <div class="app-card-en">AI English Vocabulary App</div>
+        <h2 class="app-card-name">WORaDi</h2>
+        <p class="app-card-tagline">英単語を、AIで覚える</p>
+        <p class="app-card-desc">
+          WORaDiは、AIが学習者の記憶パターンを分析し、
+          忘れるタイミングを予測して最適なタイミングで復習を提示する英単語学習アプリです。
+          ただ単語を眺めるだけでなく、文脈・音声・AIコーチングを組み合わせることで、
+          記憶の定着率を飛躍的に高めます。
+        </p>
+        <div class="app-card-tags">
+          <span class="app-tag">AI学習分析</span>
+          <span class="app-tag">スペースドリピティション</span>
+          <span class="app-tag">音声学習</span>
+          <span class="app-tag">パーソナライズ</span>
+          <span class="app-tag">iOS / Android</span>
+        </div>
+        <div class="app-store-buttons">
+          <span class="app-store-btn-coming">🍎 App Store — Coming Soon</span>
+          <span class="app-store-btn-coming">🤖 Google Play — Coming Soon</span>
+        </div>
+      </div>
+      <div class="app-card-features">
+        <div class="app-feature">
+          <span class="app-feature-icon">🤖</span>
+          <div class="app-feature-title">AIが最適な復習タイミングを提案</div>
+          <p class="app-feature-desc">
+            エビングハウスの忘却曲線をベースにしたAIアルゴリズムが、
+            単語ごとに最適な復習間隔を動的に調整。効率よく長期記憶に定着させます。
+          </p>
+        </div>
+        <div class="app-feature">
+          <span class="app-feature-icon">🎧</span>
+          <div class="app-feature-title">ネイティブ音声 × 例文で文脈理解</div>
+          <p class="app-feature-desc">
+            単語単体ではなく、実際に使われる例文・フレーズとセットで学習。
+            ネイティブ音声で正しい発音も同時に習得できます。
+          </p>
+        </div>
+        <div class="app-feature">
+          <span class="app-feature-icon">📊</span>
+          <div class="app-feature-title">学習進捗のリアルタイム可視化</div>
+          <p class="app-feature-desc">
+            習得済み単語数・正答率・連続学習日数など、
+            学習データをダッシュボードで可視化。モチベーション維持をサポートします。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 医療英単語 -->
+    <div class="app-card medical reveal reveal-delay-1">
+      <div class="app-card-body">
+        <span class="app-card-icon">🏥</span>
+        <div class="app-card-en">Medical English Vocabulary App</div>
+        <h2 class="app-card-name">医療英単語</h2>
+        <p class="app-card-tagline">医療現場で使える英語を習得する</p>
+        <p class="app-card-desc">
+          医療英単語は、医師・看護師・薬剤師・医学生など医療従事者のために特化した英単語学習アプリです。
+          解剖学・症状・処置・薬品名など、医療現場で実際に使われる専門用語を体系的に学べます。
+          臨床英語・論文読解・海外研修の準備に最適です。
+        </p>
+        <div class="app-card-tags">
+          <span class="app-tag">医療専門用語</span>
+          <span class="app-tag">解剖学英語</span>
+          <span class="app-tag">臨床英語</span>
+          <span class="app-tag">論文英語</span>
+          <span class="app-tag">iOS / Android</span>
+        </div>
+        <div class="app-store-buttons">
+          <span class="app-store-btn-coming">🍎 App Store — Coming Soon</span>
+          <span class="app-store-btn-coming">🤖 Google Play — Coming Soon</span>
+        </div>
+      </div>
+      <div class="app-card-features">
+        <div class="app-feature">
+          <span class="app-feature-icon">🩺</span>
+          <div class="app-feature-title">医療分野別・診療科別の単語集</div>
+          <p class="app-feature-desc">
+            内科・外科・産婦人科・精神科・薬学など診療科ごとに整理された専門単語集。
+            必要な分野から重点的に学習できます。
+          </p>
+        </div>
+        <div class="app-feature">
+          <span class="app-feature-icon">📝</span>
+          <div class="app-feature-title">論文・カルテで使われる表現を収録</div>
+          <p class="app-feature-desc">
+            教科書英語だけでなく、実際の医学論文や電子カルテで頻出する表現・略語も収録。
+            実務ですぐに活きる英語力が身につきます。
+          </p>
+        </div>
+        <div class="app-feature">
+          <span class="app-feature-icon">🌏</span>
+          <div class="app-feature-title">海外研修・学会発表の準備に</div>
+          <p class="app-feature-desc">
+            国際学会でのプレゼンテーション、海外病院での臨床実習など、
+            グローバルな医療現場で必要な英語力を効率よく準備できます。
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Concept -->
+<section id="concept">
+  <div class="section-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Our Concept</span>
+    </div>
+    <div class="concept-grid">
+      <div class="concept-left">
+        <h3 class="reveal">
+          「続かない」を<br>
+          テクノロジーで<br>
+          <em>解決する</em>
+        </h3>
+        <p class="reveal reveal-delay-1">
+          従来の英単語学習は「覚える→忘れる→また覚える」の繰り返し。
+          意志力に頼る暗記は、多くの人が挫折してきました。
+        </p>
+        <p class="reveal reveal-delay-2">
+          St.Arkidのアプリは、AIが学習者の状態を継続的に観察し、
+          最適なタイミング・最適な量で復習を提示します。
+          人間の記憶の仕組みに合わせた設計で、
+          無理なく継続できる学習体験を実現します。
+        </p>
+      </div>
+      <div class="concept-right reveal reveal-delay-1">
+        <div class="concept-point">
+          <div class="concept-point-num">01</div>
+          <div class="concept-point-title">記憶科学に基づいたアルゴリズム</div>
+          <p class="concept-point-desc">忘却曲線・間隔反復法など、認知科学・記憶科学の知見をAIに組み込み。根拠のある学習設計で、効率を最大化します。</p>
+        </div>
+        <div class="concept-point">
+          <div class="concept-point-num">02</div>
+          <div class="concept-point-title">一人ひとりに合わせたパーソナライズ</div>
+          <p class="concept-point-desc">学習速度・得意な単語カテゴリ・間違いのパターンをAIが分析。全員に同じ問題を出すのではなく、その人専用の学習プランを生成します。</p>
+        </div>
+        <div class="concept-point">
+          <div class="concept-point-num">03</div>
+          <div class="concept-point-title">継続を設計でサポート</div>
+          <p class="concept-point-desc">意志力に頼らず、仕組みで続けられる設計。通知・ストリーク・短い学習セッションなど、日常に組み込みやすいUXにこだわっています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why St.Arkid Apps -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Why St.Arkid Apps</span>
+    </div>
+    <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black);">
+      <h3>St.Arkidが<br>アプリを作る理由</h3>
+      <div class="h3-overlay"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal reveal-delay-1">
+        <div class="why-num">01</div>
+        <div class="why-highlight">AI × 教育</div>
+        <div class="why-title">AI活用支援の知見を<br>プロダクトに注ぎ込む</div>
+        <p class="why-desc">
+          St.ArkidはAI活用支援を主力事業とするテックカンパニーです。
+          クライアント向けのAI導入で培った知見・技術を、
+          自社プロダクトの形で社会に届けます。
+        </p>
+      </div>
+      <div class="why-item reveal reveal-delay-2">
+        <div class="why-num">02</div>
+        <div class="why-highlight">Internal Dev</div>
+        <div class="why-title">開発マネジメント力で<br>品質の高いアプリを内製</div>
+        <p class="why-desc">
+          開発プロジェクトマネジメントを手がける当社が、
+          要件定義からリリースまでを一貫して内製します。
+          外注ではなく、自社チームが責任を持って開発・運営します。
+        </p>
+      </div>
+      <div class="why-item reveal reveal-delay-3">
+        <div class="why-num">03</div>
+        <div class="why-highlight">Niche × Deep</div>
+        <div class="why-title">医療という特定領域に<br>深く特化したコンテンツ</div>
+        <p class="why-desc">
+          汎用英語アプリが多い中、医療英語という専門性の高い領域に特化。
+          ニッチだからこそ深く、医療従事者の本当のニーズに応えるコンテンツを提供します。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="section-label reveal">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Contact</span>
+    </div>
+    <h2 class="reveal reveal-delay-1">
+      アプリについて<br><em>お問い合わせ</em>ください
+    </h2>
+    <p class="reveal reveal-delay-2">
+      リリース時期のご案内・法人向けの導入相談・<br>
+      コンテンツに関するご要望など、お気軽にご連絡ください。
+    </p>
+    <div class="cta-actions reveal reveal-delay-3">
+      <a href="mailto:info@st.arkid.jp?subject=自社アプリについて" class="btn-cta">メールで問い合わせる</a>
+      <a href="mailto:info@st.arkid.jp" class="cta-email">info@st.arkid.jp</a>
+    </div>
+    <p class="cta-note reveal">
+      法人向けの一括導入・カスタマイズについてもご相談を承ります。
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <a href="../" class="footer-logo">St<span>.</span>Arkid</a>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="#apps">アプリ紹介</a>
+      <a href="#concept">コンセプト</a>
+      <a href="#why">特徴</a>
+      <a href="#cta">お問い合わせ</a>
+      <a href="../">トップへ戻る</a>
+    </nav>
+    <div class="footer-copy">© <span id="footer-year">2026</span> St.Arkid. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+/* ===== LOADING ===== */
+(function() {
+  const loader = document.getElementById('loading');
+  if (!loader) return;
+  if (!sessionStorage.getItem('starkidAppsLoaderPlayed')) {
+    loader.style.display = 'flex';
+    sessionStorage.setItem('starkidAppsLoaderPlayed', 'true');
+  } else {
+    loader.style.display = 'none';
+  }
+})();
+
+/* ===== HEADER SCROLL ===== */
+(function() {
+  const header = document.getElementById('header');
+  const isSP = () => window.innerWidth <= 768;
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    if (isSP()) {
+      header.style.transform = (y > lastY && y > 80) ? 'translateY(-100%)' : 'translateY(0)';
+    } else {
+      header.style.transform = '';
+    }
+    lastY = y;
+  }, { passive: true });
+})();
+
+/* ===== HAMBURGER ===== */
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+function toggleMobileAccordion(id) {
+  document.getElementById(id).classList.toggle('open');
+}
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileNav').classList.add('open');
+});
+document.getElementById('mobileNavClose').addEventListener('click', closeMobileNav);
+
+/* ===== THREE.JS BACKGROUND ===== */
+(function() {
+  setTimeout(() => {
+    const container = document.getElementById('webgl-container');
+    if (!container || typeof THREE === 'undefined') return;
+    let w = window.innerWidth, h = window.innerHeight;
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(w, h);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.domElement.style.cssText = 'position:absolute;top:0;left:0;';
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(60, w / h, 0.5, 120);
+    camera.position.set(0, 2, 10);
+    camera.lookAt(0, 0, 0);
+
+    const mat = new THREE.MeshPhongMaterial({ color: 0x7c5cbf, transparent: true, opacity: 0.07, flatShading: false });
+    const geo = new THREE.IcosahedronGeometry(0.4, 0);
+    const particles = [];
+    for (let i = 0; i < 180; i++) {
+      const p = new THREE.Mesh(geo, mat);
+      p.position.set(
+        (Math.random() * 2.4 - 1) * 20,
+        (Math.random() * 2.2 - 1) * 20,
+        (Math.random() * 2.0 - 1) * 20
+      );
+      p.scale.setScalar(Math.random() * 1.8 + 0.4);
+      p.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
+      scene.add(p);
+      particles.push(p);
+    }
+    const dLight = new THREE.DirectionalLight(0xb39ddb, 1.2);
+    dLight.position.set(3, 4, 5);
+    scene.add(dLight, new THREE.AmbientLight(0xffffff, 0.15));
+
+    let rot = 0, mx = 0, my = 0;
+    document.addEventListener('mousemove', e => { mx = e.pageX; my = e.pageY; });
+
+    function tick() {
+      const target = ((mx + my) / window.innerWidth) * -30;
+      rot += (target - rot) * 0.015;
+      const r = rot * Math.PI / 180;
+      camera.position.x = 11 * Math.sin(r);
+      camera.position.z = 11 * Math.cos(r);
+      camera.lookAt(new THREE.Vector3(0, 0, 0));
+      particles.forEach(p => {
+        p.position.y -= 0.01;
+        p.rotation.y += 0.003;
+        if (p.position.y < -20) p.position.y = 20;
+      });
+      renderer.render(scene, camera);
+      requestAnimationFrame(tick);
+    }
+    window.addEventListener('resize', () => {
+      w = window.innerWidth; h = window.innerHeight;
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    });
+    tick();
+  }, 120);
+})();
+
+/* ===== SCROLL REVEAL ===== */
+(function() {
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.05 });
+  els.forEach(el => obs.observe(el));
+})();
+
+/* ===== H3 CLIP ANIMATION ===== */
+(function() {
+  const wraps = document.querySelectorAll('.h3-wrap');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
+  }, { threshold: 0.2 });
+  wraps.forEach(w => obs.observe(w));
+})();
+</script>
+
+</body>
+</html>
