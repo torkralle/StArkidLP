@@ -574,29 +574,49 @@ form.addEventListener('submit', async function (e) {
   status.textContent = '';
 
   const get = id => document.getElementById(id).value.trim();
-  const plan = document.querySelector('input[name="plan"]:checked');
+  const planEl = document.querySelector('input[name="plan"]:checked');
 
-  const data = {
-    type:       'carlease-apply',
-    name:       get('name'),
+  const fields = {
+    name:      get('name'),
+    studentId: get('studentId'),
+    email:     get('email'),
+    license:   get('license'),
+    plan:      planEl ? planEl.value : '',
     university: get('university'),
-    studentId:  get('studentId'),
-    email:      get('email'),
-    phone:      get('phone'),
-    area:       get('area'),
-    plan:       plan ? plan.value : '',
-    startDate:  get('startDate'),
-    duration:   get('duration'),
-    license:    get('license'),
-    message:    get('message'),
+    phone:     get('phone'),
+    area:      get('area'),
+    startDate: get('startDate'),
+    duration:  get('duration'),
+    note:      get('message'),
   };
 
-  // バリデーション
-  if (!data.name || !data.studentId || !data.email || !data.license || !data.plan) {
+  if (!fields.name || !fields.studentId || !fields.email || !fields.license || !fields.plan) {
     status.textContent = 'お名前・学籍番号・メールアドレス・運転免許・希望プランは必須です。';
     status.className = 'form-status error';
     return;
   }
+
+  const planLabel = { personal: '個人専用プラン（¥15,000/月）', share: 'シェア駐車場プラン（¥5,000〜/月）' }[fields.plan] || fields.plan;
+  const licenseLabel = { yes: 'あり', acquiring: '取得中・取得予定', no: 'なし' }[fields.license] || fields.license;
+
+  // デプロイ済みワーカーが受け付けるフォーマットに変換して送信
+  const payload = {
+    name:    fields.name,
+    company: fields.university || '—',
+    email:   fields.email,
+    service: 'carlease',
+    message: [
+      '━━━━ カーリース 申し込み ━━━━',
+      `学籍番号　：${fields.studentId}`,
+      `電話番号　：${fields.phone || '—'}`,
+      `居住エリア：${fields.area || '—'}`,
+      `希望プラン：${planLabel}`,
+      `利用開始　：${fields.startDate || '—'}`,
+      `契約期間　：${fields.duration ? fields.duration + '年' : '—'}`,
+      `運転免許　：${licenseLabel}`,
+      `質問・備考：${fields.note || '—'}`,
+    ].join('\n'),
+  };
 
   btn.disabled = true;
   btn.textContent = 'SENDING...';
@@ -605,7 +625,7 @@ form.addEventListener('submit', async function (e) {
     const res = await fetch(WORKER_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
+      body: JSON.stringify(payload),
     });
 
     if (res.ok) {
@@ -613,9 +633,10 @@ form.addEventListener('submit', async function (e) {
       document.getElementById('successView').classList.add('show');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      throw new Error();
+      throw new Error(`status ${res.status}`);
     }
-  } catch {
+  } catch (err) {
+    console.error('[CarLease apply]', err);
     status.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
     status.className = 'form-status error';
   } finally {
