@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>申し込み | StudentCarLease — St.Arkid</title>
+  <meta name="description" content="St.Arkid CarLeaseの申し込みフォーム。学籍番号ひとつで審査できます。">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:        #121212;
+      --black-mid:    #1e1e1e;
+      --black-card:   #242424;
+      --gray:         #757575;
+      --gray-light:   #c7c7c7;
+      --surface:      #f9f9f9;
+      --white:        #ffffff;
+      --blue:         #4290b6;
+      --blue-dim:     rgba(66,144,182,0.12);
+      --blue-border:  rgba(66,144,182,0.35);
+      --red:          #e06c75;
+      --green:        #98c379;
+      --font-jp: 'Noto Sans JP', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-jp);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── ヘッダー ── */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      background: rgba(18,18,18,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .site-logo {
+      font-family: var(--font-en);
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .site-logo .dot { color: var(--blue); }
+    .site-logo .sub {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      color: var(--gray);
+      margin-left: 8px;
+      text-transform: uppercase;
+    }
+    .back-link {
+      font-family: var(--font-en);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .back-link::before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: currentColor;
+      transition: width 0.2s;
+    }
+    .back-link:hover { color: var(--gray-light); }
+    .back-link:hover::before { width: 12px; }
+
+    /* ── ページレイアウト ── */
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 100px 24px 80px;
+    }
+
+    /* ── ページヘッド ── */
+    .page-head {
+      margin-bottom: 48px;
+    }
+    .page-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .page-label-line {
+      width: 24px;
+      height: 1px;
+      background: var(--blue);
+    }
+    .page-label-text {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--blue);
+      text-transform: uppercase;
+    }
+    .page-title {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+    }
+    .page-title em {
+      font-style: normal;
+      color: var(--blue);
+    }
+    .page-desc {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.9;
+    }
+
+    /* ── 注意書き ── */
+    .notice {
+      background: var(--blue-dim);
+      border: 1px solid var(--blue-border);
+      padding: 16px 20px;
+      margin-bottom: 40px;
+      font-size: 13px;
+      color: var(--gray-light);
+      line-height: 1.8;
+    }
+    .notice strong { color: var(--white); font-weight: 500; }
+
+    /* ── フォームセクション ── */
+    .form-section {
+      margin-bottom: 36px;
+    }
+    .form-section-title {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-grid.full { grid-template-columns: 1fr; }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .form-group.span2 { grid-column: span 2; }
+
+    label {
+      font-size: 12px;
+      font-family: var(--font-en);
+      letter-spacing: 0.1em;
+      color: var(--gray);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .req {
+      color: var(--red);
+      font-size: 10px;
+      font-family: var(--font-en);
+    }
+
+    input, select, textarea {
+      background: var(--black-card);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 2px;
+      color: var(--white);
+      font-size: 15px;
+      font-family: var(--font-jp);
+      padding: 13px 16px;
+      outline: none;
+      width: 100%;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+    }
+    input::placeholder, textarea::placeholder { color: var(--gray); }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--blue);
+    }
+    input.error, select.error, textarea.error {
+      border-color: var(--red);
+    }
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      cursor: pointer;
+      padding-right: 36px;
+    }
+    select option { background: #242424; }
+    textarea { resize: vertical; min-height: 120px; }
+
+    .field-note {
+      font-size: 11px;
+      color: var(--gray);
+      margin-top: -2px;
+    }
+
+    /* ラジオ・チェック風のカード選択 */
+    .plan-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .plan-card-label {
+      display: block;
+      cursor: pointer;
+    }
+    .plan-card-label input[type="radio"] { display: none; }
+    .plan-card-inner {
+      border: 1px solid rgba(255,255,255,0.1);
+      background: var(--black-card);
+      padding: 16px 18px;
+      border-radius: 2px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .plan-card-label input[type="radio"]:checked + .plan-card-inner {
+      border-color: var(--blue);
+      background: var(--blue-dim);
+    }
+    .plan-card-name {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .plan-card-price {
+      font-family: var(--font-en);
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .plan-card-desc {
+      font-size: 12px;
+      color: var(--gray-light);
+      line-height: 1.6;
+    }
+    .plan-card-soon {
+      display: inline-block;
+      font-family: var(--font-en);
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      color: var(--gray);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 2px 7px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* ── 送信ボタン ── */
+    .submit-wrap {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .btn-submit {
+      font-family: var(--font-en);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      background: var(--white);
+      color: var(--black);
+      border: none;
+      padding: 17px 0;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, opacity 0.2s;
+      text-transform: uppercase;
+    }
+    .btn-submit:hover { background: var(--gray-light); }
+    .btn-submit:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    .submit-note {
+      font-size: 12px;
+      color: var(--gray);
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* ── ステータス ── */
+    .form-status {
+      padding: 16px 20px;
+      border-radius: 2px;
+      font-size: 14px;
+      line-height: 1.7;
+      display: none;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .form-status.success {
+      display: block;
+      background: rgba(152,195,121,0.1);
+      border: 1px solid rgba(152,195,121,0.3);
+      color: var(--green);
+    }
+    .form-status.error {
+      display: block;
+      background: rgba(224,108,117,0.1);
+      border: 1px solid rgba(224,108,117,0.3);
+      color: var(--red);
+    }
+
+    /* ── 完了画面 ── */
+    .success-view {
+      display: none;
+      text-align: center;
+      padding: 60px 0;
+    }
+    .success-view.show { display: block; }
+    .success-icon {
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+    .success-view h2 {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    .success-view h2 em { font-style: normal; color: var(--blue); }
+    .success-view p {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.9;
+      margin-bottom: 40px;
+    }
+    .btn-back {
+      font-family: var(--font-en);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: var(--gray-light);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+    .btn-back::before { content: '←'; }
+    .btn-back:hover { color: var(--white); }
+
+    /* ── フッター ── */
+    .site-footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 28px 40px;
+      text-align: center;
+      font-family: var(--font-en);
+      font-size: 11px;
+      color: var(--gray);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── レスポンシブ ── */
+    @media (max-width: 600px) {
+      .site-header { padding: 0 20px; }
+      .page-wrap { padding: 88px 20px 60px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-group.span2 { grid-column: span 1; }
+      .plan-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="./" class="site-logo">St<span class="dot">.</span>Arkid<span class="sub">/ CarLease</span></a>
+  <a href="./" class="back-link">サービスページへ戻る</a>
+</header>
+
+<main>
+<div class="page-wrap">
+
+  <!-- ページヘッド -->
+  <div class="page-head">
+    <div class="page-label">
+      <div class="page-label-line"></div>
+      <span class="page-label-text">Application Form</span>
+    </div>
+    <h1 class="page-title">カーリース<em>申し込み</em></h1>
+    <p class="page-desc">
+      フォームを送信後、担当者より3営業日以内にご連絡いたします。<br>
+      まずはお気軽にどうぞ。
+    </p>
+  </div>
+
+  <!-- 注意書き -->
+  <div class="notice">
+    <strong>ご注意：</strong>任意保険は月額に含まれません。別途ご加入が必要です。<br>
+    自賠責保険・車検・自動車税・スタッドレスタイヤは月額に含まれます。
+  </div>
+
+  <!-- フォーム -->
+  <form id="applyForm" novalidate>
+
+    <!-- 01 基本情報 -->
+    <div class="form-section">
+      <div class="form-section-title">01 — Basic Info</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">お名前 <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+        </div>
+        <div class="form-group">
+          <label for="university">大学・学部</label>
+          <input type="text" id="university" name="university" placeholder="北海道大学 理学部">
+        </div>
+        <div class="form-group">
+          <label for="studentId">学籍番号 <span class="req">*</span></label>
+          <input type="text" id="studentId" name="studentId" placeholder="例：B2XXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label for="license">運転免許証 <span class="req">*</span></label>
+          <select id="license" name="license" required>
+            <option value="">選択してください</option>
+            <option value="yes">あり</option>
+            <option value="acquiring">取得中・取得予定</option>
+            <option value="no">なし（取得予定なし）</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">電話番号</label>
+          <input type="tel" id="phone" name="phone" placeholder="090-XXXX-XXXX">
+        </div>
+        <div class="form-group span2">
+          <label for="area">現在の居住エリア</label>
+          <input type="text" id="area" name="area" placeholder="例：札幌市北区、函館市">
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 プラン -->
+    <div class="form-section">
+      <div class="form-section-title">02 — Plan</div>
+      <div class="form-group">
+        <label>希望プラン <span class="req">*</span></label>
+        <div class="plan-cards" id="planCards">
+          <label class="plan-card-label">
+            <input type="radio" name="plan" value="personal" required>
+            <div class="plan-card-inner">
+              <div class="plan-card-name">個人専用プラン</div>
+              <div class="plan-card-price">¥15,000<span style="font-size:13px;color:#999;"> / 月</span></div>
+              <div class="plan-card-desc">毎日の通学・バイト・日常使いに。車1台を専有契約。</div>
+            </div>
+          </label>
+          <label class="plan-card-label">
+            <input type="radio" name="plan" value="share">
+            <div class="plan-card-inner">
+              <div class="plan-card-name">シェア駐車場プラン<span class="plan-card-soon">Coming Soon</span></div>
+              <div class="plan-card-price">¥5,000<span style="font-size:13px;color:#999;">〜 / 月</span></div>
+              <div class="plan-card-desc">週末・買い出しなど不定期利用に。複数人でシェア。</div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 利用条件 -->
+    <div class="form-section">
+      <div class="form-section-title">03 — Schedule</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="startDate">利用開始希望時期</label>
+          <input type="month" id="startDate" name="startDate">
+          <span class="field-note">目安で構いません</span>
+        </div>
+        <div class="form-group">
+          <label for="duration">希望契約期間</label>
+          <select id="duration" name="duration">
+            <option value="">選択してください</option>
+            <option value="1">1年</option>
+            <option value="2">2年</option>
+            <option value="3">3年</option>
+            <option value="4">4年</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 質問・備考 -->
+    <div class="form-section">
+      <div class="form-section-title">04 — Message</div>
+      <div class="form-group">
+        <label for="message">質問・備考</label>
+        <textarea id="message" name="message" placeholder="ご質問、気になること、ご要望などをご自由にどうぞ。"></textarea>
+      </div>
+    </div>
+
+    <!-- 送信 -->
+    <div class="submit-wrap">
+      <div class="form-status" id="formStatus"></div>
+      <button type="submit" class="btn-submit" id="submitBtn">申し込みを送信する</button>
+      <p class="submit-note">
+        送信後、担当者より3営業日以内にご連絡いたします。<br>
+        現在は北海道大学を中心に先行受付中です。
+      </p>
+    </div>
+
+  </form>
+
+  <!-- 完了画面 -->
+  <div class="success-view" id="successView">
+    <div class="success-icon">✅</div>
+    <h2>申し込みを<em>受け付けました</em></h2>
+    <p>
+      ご申し込みありがとうございます。<br>
+      担当者より3営業日以内にメールにてご連絡いたします。<br>
+      しばらくお待ちください。
+    </p>
+    <a href="./" class="btn-back">サービスページへ戻る</a>
+  </div>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  © <span id="year"></span> St.Arkid. All rights reserved.
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const WORKER_URL = 'https://black-mud-7786.hoshiko-d0f.workers.dev';
+
+const form = document.getElementById('applyForm');
+const btn  = document.getElementById('submitBtn');
+const status = document.getElementById('formStatus');
+
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+  status.className = 'form-status';
+  status.textContent = '';
+
+  const get = id => document.getElementById(id).value.trim();
+  const plan = document.querySelector('input[name="plan"]:checked');
+
+  const data = {
+    type:       'carlease-apply',
+    name:       get('name'),
+    university: get('university'),
+    studentId:  get('studentId'),
+    email:      get('email'),
+    phone:      get('phone'),
+    area:       get('area'),
+    plan:       plan ? plan.value : '',
+    startDate:  get('startDate'),
+    duration:   get('duration'),
+    license:    get('license'),
+    message:    get('message'),
+  };
+
+  // バリデーション
+  if (!data.name || !data.studentId || !data.email || !data.license || !data.plan) {
+    status.textContent = 'お名前・学籍番号・メールアドレス・運転免許・希望プランは必須です。';
+    status.className = 'form-status error';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'SENDING...';
+
+  try {
+    const res = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      form.style.display = 'none';
+      document.getElementById('successView').classList.add('show');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      throw new Error();
+    }
+  } catch {
+    status.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+    status.className = 'form-status error';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '申し込みを送信する';
+  }
+});
+</script>
+
+</body>
+</html>
