@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>St.Arkid CarLease — ポスター</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:     #f4f2ee;
+      --black:  #181818;
+      --mid:    #555555;
+      --light:  #999999;
+      --rule:   #d8d5d0;
+      --blue:   #4290b6;
+      --blue-s: #e6f0f5;
+      --font-jp: 'Noto Sans JP', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 210mm;
+      background: #ccc;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: var(--bg);
+      color: var(--black);
+      font-family: var(--font-jp);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ── 上部カラーバー ── */
+    .top-bar {
+      height: 2mm;
+      background: var(--blue);
+      flex-shrink: 0;
+    }
+
+    /* ── ヘッダー ── */
+    .header {
+      padding: 7mm 12mm 6mm;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 0.3mm solid var(--rule);
+      flex-shrink: 0;
+    }
+    .logo {
+      font-family: var(--font-en);
+      font-size: 14pt;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--black);
+    }
+    .logo .dot { color: var(--blue); }
+    .logo .sub {
+      font-size: 7.5pt;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      color: var(--light);
+      margin-left: 6pt;
+      text-transform: uppercase;
+    }
+    .header-tag {
+      font-family: var(--font-en);
+      font-size: 7pt;
+      letter-spacing: 0.2em;
+      color: var(--blue);
+      text-transform: uppercase;
+    }
+
+    /* ── ヒーロー ── */
+    .hero {
+      padding: 13mm 12mm 0;
+      flex-shrink: 0;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-en);
+      font-size: 7.5pt;
+      letter-spacing: 0.25em;
+      color: var(--light);
+      text-transform: uppercase;
+      margin-bottom: 6mm;
+      display: flex;
+      align-items: center;
+      gap: 8pt;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 18pt;
+      height: 0.3mm;
+      background: var(--light);
+    }
+
+    .hero-headline {
+      font-size: 40pt;
+      font-weight: 300;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      color: var(--black);
+      margin-bottom: 5mm;
+    }
+    .hero-headline .price {
+      font-family: var(--font-en);
+      font-size: 68pt;
+      font-weight: 200;
+      color: var(--blue);
+      display: block;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+    .hero-headline .price-unit {
+      font-size: 22pt;
+      font-weight: 300;
+      color: var(--mid);
+    }
+
+    .hero-sub {
+      font-size: 10pt;
+      color: var(--mid);
+      line-height: 1.8;
+      margin-bottom: 10mm;
+    }
+    .hero-sub strong {
+      color: var(--black);
+      font-weight: 700;
+    }
+
+    /* ── 区切り ── */
+    .divider {
+      height: 0.3mm;
+      background: var(--rule);
+      margin: 0 12mm;
+      flex-shrink: 0;
+    }
+
+    /* ── ポイントリスト ── */
+    .points {
+      padding: 8mm 12mm;
+      flex-shrink: 0;
+    }
+    .points-label {
+      font-family: var(--font-en);
+      font-size: 7pt;
+      letter-spacing: 0.22em;
+      color: var(--light);
+      text-transform: uppercase;
+      margin-bottom: 5mm;
+    }
+    .points-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4mm;
+    }
+    .points-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 4mm;
+      font-size: 11.5pt;
+      font-weight: 500;
+      line-height: 1.45;
+      color: var(--black);
+    }
+    .points-list li .check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6mm;
+      height: 6mm;
+      background: var(--blue);
+      color: #fff;
+      font-family: var(--font-en);
+      font-size: 9pt;
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 0.5mm;
+    }
+    .points-list li .point-sub {
+      display: block;
+      font-size: 8.5pt;
+      font-weight: 400;
+      color: var(--mid);
+      margin-top: 1mm;
+    }
+
+    /* ── 強調ブロック ── */
+    .highlight-band {
+      margin: 0 12mm 8mm;
+      background: var(--blue-s);
+      border-left: 1.5mm solid var(--blue);
+      padding: 5mm 7mm;
+      flex-shrink: 0;
+    }
+    .highlight-band p {
+      font-size: 9.5pt;
+      color: var(--black);
+      line-height: 1.75;
+    }
+    .highlight-band strong { color: var(--blue); font-weight: 700; }
+
+    /* ── フロー ── */
+    .flow {
+      margin: 0 12mm 0;
+      flex-shrink: 0;
+    }
+    .flow-label {
+      font-family: var(--font-en);
+      font-size: 7pt;
+      letter-spacing: 0.22em;
+      color: var(--light);
+      text-transform: uppercase;
+      margin-bottom: 4mm;
+    }
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 0.3mm solid var(--rule);
+    }
+    .flow-step {
+      padding: 4mm 4mm;
+      border-right: 0.3mm solid var(--rule);
+      position: relative;
+    }
+    .flow-step:last-child { border-right: none; }
+    .flow-step-num {
+      font-family: var(--font-en);
+      font-size: 7pt;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 2mm;
+    }
+    .flow-step-title {
+      font-size: 8pt;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 1mm;
+    }
+    .flow-step-desc {
+      font-size: 6.5pt;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ── スペーサー ── */
+    .spacer { flex: 1; }
+
+    /* ── フッター ── */
+    .footer {
+      border-top: 0.3mm solid var(--rule);
+      padding: 6mm 12mm;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .footer-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+    }
+    .footer-cta-label {
+      font-size: 8pt;
+      color: var(--mid);
+    }
+    .footer-cta-url {
+      font-family: var(--font-en);
+      font-size: 13pt;
+      font-weight: 500;
+      color: var(--black);
+      letter-spacing: 0.04em;
+    }
+    .footer-cta-url span { color: var(--blue); }
+    .footer-note {
+      font-size: 6.5pt;
+      color: var(--light);
+      text-align: right;
+      line-height: 1.7;
+    }
+
+    @page { size: A4 portrait; margin: 0; }
+    @media print {
+      html, body { background: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="top-bar"></div>
+
+  <div class="header">
+    <span class="logo">St<span class="dot">.</span>Arkid<span class="sub">/ CarLease</span></span>
+    <span class="header-tag">Student Car Lease — Hokkaido</span>
+  </div>
+
+  <div class="hero">
+    <div class="hero-eyebrow">北海道の学生のために</div>
+    <h1 class="hero-headline">
+      クルマが、<br>
+      <span class="price">¥15,000<span class="price-unit"> / 月</span></span>
+      から。
+    </h1>
+    <p class="hero-sub">
+      <strong>初期費用ゼロ。保証人なし。スマホだけで完結。</strong><br>
+      自賠責・車検・自動車税・スタッドレスタイヤ込み。<br>
+      北海道の冬も、月額定額で安心して乗れます。
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="points">
+    <div class="points-label">選ばれる理由</div>
+    <ul class="points-list">
+      <li>
+        <span class="check">✓</span>
+        <span>
+          学籍番号ひとつで審査できる
+          <span class="point-sub">金融履歴ゼロでも大丈夫。学生向け独自の与信モデルで審査します。</span>
+        </span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span>
+          頭金・敷金・手数料、すべてゼロ
+          <span class="point-sub">月額だけで車が手に入ります。突然の大きな出費はありません。</span>
+        </span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span>
+          スタッドレス＋4WDで北海道の冬も安心
+          <span class="point-sub">冬タイヤ交換費用も月額に含まれます。追加費用は一切なし。</span>
+        </span>
+      </li>
+      <li>
+        <span class="check">✓</span>
+        <span>
+          卒業まで乗れる、柔軟な契約期間
+          <span class="point-sub">1〜4年で選択可。進学・就職・引越しに合わせて変更もできます。</span>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="highlight-band">
+    <p>
+      申し込みから受け取りまで、<strong>最短1週間</strong>。<br>
+      来店不要・電話不要。すべてスマホのアプリで完結します。<br>
+      現在、<strong>北海道大学を中心に先行受付中</strong>です。
+    </p>
+  </div>
+
+  <div class="flow" style="padding: 0 0 7mm;">
+    <div class="flow-label" style="margin-left:12mm; margin-right:12mm;">はじめ方</div>
+    <div class="flow-steps" style="margin: 0 12mm;">
+      <div class="flow-step">
+        <div class="flow-step-num">STEP 01</div>
+        <div class="flow-step-title">アプリで登録</div>
+        <div class="flow-step-desc">学籍番号と在学証明書をアップロード</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">STEP 02</div>
+        <div class="flow-step-title">審査・プラン選択</div>
+        <div class="flow-step-desc">最短即日審査。車種・開始日を選択</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">STEP 03</div>
+        <div class="flow-step-title">電子契約完結</div>
+        <div class="flow-step-desc">電子署名で完了。保証人不要</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">STEP 04</div>
+        <div class="flow-step-title">車を受け取る</div>
+        <div class="flow-step-desc">指定場所で受け取り、すぐドライブへ</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="footer">
+    <div class="footer-cta">
+      <span class="footer-cta-label">詳細・お申し込みはこちら</span>
+      <span class="footer-cta-url">st<span>.</span>arkid.jp<span>/carlease</span></span>
+    </div>
+    <div class="footer-note">
+      ※任意保険は含まれません。別途ご加入ください。<br>
+      © 2026 St.Arkid. All rights reserved.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

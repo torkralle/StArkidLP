@@ -766,6 +766,66 @@
   .csv-spec-notes { padding-left: 0; list-style: none; }
   .csv-spec-notes li { padding: 3px 0; padding-left: 14px; position: relative; }
   .csv-spec-notes li::before { content: '·'; position: absolute; left: 0; color: var(--sage-dk); }
+
+  /* Load history */
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .history-item {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--ink-mid);
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  .history-item .h-time {
+    color: var(--ink-lt);
+    font-size: 11px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .history-item .h-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .history-item .h-count {
+    color: var(--sage-dk);
+    font-size: 11px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .history-empty {
+    font-size: 12px;
+    color: var(--ink-lt);
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .history-item-restore {
+    cursor: pointer;
+    transition: background 0.18s, border-color 0.18s;
+  }
+
+  .history-item-restore:hover {
+    background: #F2F6F1;
+    border-color: var(--sage-mid);
+  }
+
+  .history-item-restore .h-count { color: var(--sage-dk); }
 </style>
 </head>
 <body>
@@ -795,6 +855,13 @@
         </div>
         <input type="file" id="csv-input" accept=".csv,text/csv">
         <button class="btn-edit-csv" id="edit-csv-btn">台本を編集する →</button>
+
+        <div class="section" id="history-section" style="margin-top:18px;">
+          <div class="section-label">読み込み履歴</div>
+          <div class="history-list" id="history-list">
+            <div class="history-empty">まだ台本を読み込んでいません</div>
+          </div>
+        </div>
 
         <details class="csv-spec">
           <summary>CSV 仕様を見る</summary>
@@ -1029,12 +1096,58 @@ function parseCSV(text) {
   return { rows, chaps };
 }
 
+// ── Script load history ──
+const HISTORY_KEY = 'scriptLoadHistory';
+const HISTORY_MAX = 30;
+const HISTORY_WITH_DATA = 5;
+
+function logScriptLoad(filename, rows, chaps) {
+  const entries = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+  const entry = { filename, lineCount: rows.length, ts: Date.now() };
+  entries.unshift(entry);
+  if (entries.length > HISTORY_MAX) entries.length = HISTORY_MAX;
+  entries.forEach((e, i) => { if (i < HISTORY_WITH_DATA) { if (i === 0) { e.rows = rows; e.chaps = chaps; } } else { delete e.rows; delete e.chaps; } });
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(entries));
+  renderHistory();
+}
+
+function restoreFromHistory(entry) {
+  if (!entry.rows || !entry.rows.length) { toast('この履歴には台本データがありません'); return; }
+  script = entry.rows; chapters = entry.chaps || []; selectedChapter = null;
+  toast(`「${entry.filename}」を復元しました`);
+  $('edit-csv-btn').style.display = 'inline-block';
+  buildChars();
+}
+
+function renderHistory() {
+  const list = $('history-list');
+  if (!list) return;
+  const entries = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+  if (!entries.length) {
+    list.innerHTML = '<div class="history-empty">まだ台本を読み込んでいません</div>';
+    return;
+  }
+  list.innerHTML = '';
+  entries.forEach((e, i) => {
+    const d = new Date(e.ts);
+    const time = `${d.getFullYear()}/${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+    const hasData = !!e.rows;
+    const div = document.createElement('div');
+    div.className = 'history-item' + (hasData ? ' history-item-restore' : '');
+    div.title = hasData ? 'クリックして復元' : '';
+    div.innerHTML = `<span class="h-time">${time}</span><span class="h-name">${esc(e.filename)}</span><span class="h-count">${e.lineCount}行${hasData ? ' ↩' : ''}</span>`;
+    if (hasData) div.onclick = () => restoreFromHistory(e);
+    list.appendChild(div);
+  });
+}
+
 function handleFile(file) {
   const r = new FileReader();
   r.onload = e => {
     const { rows, chaps } = parseCSV(e.target.result);
     if (!rows.length) { toast('CSVのフォーマットを確認してください'); return; }
     script = rows; chapters = chaps; selectedChapter = null;
+    logScriptLoad(file.name, rows, chaps);
     toast(`${rows.length}行の台本を読み込みました`);
     $('edit-csv-btn').style.display = 'inline-block';
     buildChars();
@@ -1404,6 +1517,8 @@ function endRehearsal() {
 
 function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function toast(msg) { const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2800); }
+
+renderHistory();
 
 document.addEventListener('keydown', e => {
   if (e.key==='d'&&e.ctrlKey&&e.shiftKey) {
