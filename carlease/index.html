@@ -944,6 +944,101 @@
     .reveal-delay-3 { transition-delay: 0.3s; }
     .reveal-delay-4 { transition-delay: 0.4s; }
 
+    /* ===== CONTACT FORM ===== */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: left;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group label {
+      font-size: 12px;
+      font-family: var(--font-en);
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      text-transform: uppercase;
+    }
+    .form-group label .required {
+      color: #e06c75;
+      margin-left: 4px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 2px;
+      color: var(--white);
+      font-size: 15px;
+      font-family: var(--font-jp);
+      padding: 14px 16px;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      cursor: pointer;
+    }
+    .form-group select option { background: #1a1a1a; }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: rgba(255,255,255,0.4); }
+    .form-group textarea { resize: vertical; min-height: 140px; }
+    .btn-submit {
+      font-family: var(--font-en);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      background: var(--white);
+      color: var(--black);
+      border: none;
+      padding: 18px 60px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, opacity 0.2s;
+      align-self: center;
+      min-width: 240px;
+    }
+    .btn-submit:hover { background: var(--gray-light); }
+    .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+    .form-status {
+      font-size: 14px;
+      text-align: center;
+      padding: 14px;
+      border-radius: 2px;
+      display: none;
+    }
+    .form-status.success {
+      display: block;
+      background: rgba(152,195,121,0.12);
+      color: #98c379;
+      border: 1px solid rgba(152,195,121,0.3);
+    }
+    .form-status.error {
+      display: block;
+      background: rgba(224,108,117,0.12);
+      color: #e06c75;
+      border: 1px solid rgba(224,108,117,0.3);
+    }
+    @media (max-width: 600px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 1024px) {
       .plans-grid { grid-template-columns: 1fr 1fr; }
@@ -1288,13 +1383,37 @@
       どんな質問でもお気軽にどうぞ。<br>
       現在は北海道大学を中心に先行受付中です。
     </p>
-    <div class="cta-actions reveal reveal-delay-3">
-      <a href="mailto:info@st.arkid.jp?subject=学生カーリース 相談&body=お名前：%0A大学・学部：%0Aご質問内容：" class="btn-cta">メールで相談する</a>
-      <a href="mailto:info@st.arkid.jp" class="cta-email">info@st.arkid.jp</a>
-    </div>
-    <p class="cta-note reveal reveal-delay-4">
-      現在クローズドベータ受付中。北大・北海道主要大学の在籍学生を優先でご案内します。
-    </p>
+    <form class="contact-form reveal reveal-delay-3" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cf-name">お名前<span class="required">*</span></label>
+          <input type="text" id="cf-name" name="name" placeholder="山田 太郎" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-company">大学・学部</label>
+          <input type="text" id="cf-company" name="company" placeholder="北海道大学 理学部">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cf-email">メールアドレス<span class="required">*</span></label>
+        <input type="email" id="cf-email" name="email" placeholder="example@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="cf-service">ご希望のプラン</label>
+        <select id="cf-service" name="service">
+          <option value="">選択してください</option>
+          <option value="carlease-personal">個人専用プラン</option>
+          <option value="carlease-share">シェア駐車場プラン</option>
+          <option value="other">その他・未定</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cf-message">お問い合わせ内容<span class="required">*</span></label>
+        <textarea id="cf-message" name="message" placeholder="ご質問・ご要望をご記入ください" required></textarea>
+      </div>
+      <div class="form-status" id="formStatus"></div>
+      <button type="submit" class="btn-submit" id="submitBtn">SEND MESSAGE</button>
+    </form>
   </div>
 </section>
 
@@ -1437,6 +1556,58 @@ document.getElementById('mobileNavClose').addEventListener('click', closeMobileN
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
   }, { threshold: 0.2 });
   wraps.forEach(w => obs.observe(w));
+})();
+
+/* ===== CONTACT FORM ===== */
+(function () {
+  const form = document.getElementById('contactForm');
+  const btn = document.getElementById('submitBtn');
+  const status = document.getElementById('formStatus');
+  const WORKER_URL = 'https://black-mud-7786.hoshiko-d0f.workers.dev';
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    status.className = 'form-status';
+    status.textContent = '';
+
+    const data = {
+      name: form.elements['name'].value.trim(),
+      company: form.elements['company'].value.trim(),
+      email: form.elements['email'].value.trim(),
+      service: form.elements['service'].value,
+      message: form.elements['message'].value.trim(),
+    };
+
+    if (!data.name || !data.email || !data.message) {
+      status.textContent = 'お名前・メールアドレス・お問い合わせ内容は必須です。';
+      status.className = 'form-status error';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'SENDING...';
+
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        form.reset();
+        status.textContent = 'お問い合わせありがとうございます。担当者より折り返しご連絡いたします。';
+        status.className = 'form-status success';
+      } else {
+        throw new Error();
+      }
+    } catch {
+      status.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+      status.className = 'form-status error';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'SEND MESSAGE';
+    }
+  });
 })();
 </script>
 
