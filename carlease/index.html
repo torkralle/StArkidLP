@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudentCarLease | 学生向けカーリース — St.Arkid</title>
-  <meta name="description" content="北海道の学生のための月額定額カーリース。¥5,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結でカーライフをスタート。">
+  <meta name="description" content="北海道の学生のための月額定額カーリース。¥15,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結でカーライフをスタート。">
   <meta name="keywords" content="学生カーリース, 北海道, 北大, 車 学生, カーリース 審査なし, 月額 車, StudentCarLease, St.Arkid">
   <meta property="og:title" content="StudentCarLease | 学生向けカーリース — St.Arkid">
-  <meta property="og:description" content="北海道の学生のための月額定額カーリース。¥5,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結。">
+  <meta property="og:description" content="北海道の学生のための月額定額カーリース。¥15,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/carlease/">
   <meta property="og:image" content="https://st.arkid.jp/carlease/ogp.png">
@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://st.arkid.jp/carlease/ogp.png">
   <meta name="twitter:title" content="StudentCarLease | 学生向けカーリース — St.Arkid">
-  <meta name="twitter:description" content="北海道の学生のための月額定額カーリース。¥5,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結。">
+  <meta name="twitter:description" content="北海道の学生のための月額定額カーリース。¥15,000〜から保険・車検コミ。学籍番号認証でスムーズ審査、アプリ完結。">
   <meta name="robots" content="index, follow">
   <meta name="author" content="St.Arkid">
   <link rel="canonical" href="https://st.arkid.jp/carlease/">
@@ -684,6 +684,28 @@
     }
     .plan-cta:hover { opacity: 0.85; }
 
+    /* Coming Soon overlay */
+    .plan-card.coming-soon {
+      pointer-events: none;
+      user-select: none;
+    }
+    .plan-card.coming-soon::after {
+      content: 'COMING SOON';
+      position: absolute;
+      inset: 0;
+      background: rgba(249,249,249,0.82);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-en);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      color: var(--gray);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+    }
+
     /* ===== FLOW SECTION ===== */
     #flow {
       background: var(--black);
@@ -1019,7 +1041,7 @@
     </div>
     <h1 class="hero-headline">
       <span class="line">クルマが、</span>
-      <span class="line"><em>月額5,000円</em>から。</span>
+      <span class="line"><em>月額15,000円</em>から。</span>
       <span class="line dim">保険・車検コミ。</span>
     </h1>
     <p class="hero-sub">
@@ -1038,7 +1060,7 @@
   </div>
   <div class="hero-stats">
     <div class="hero-stat-item">
-      <span class="hero-stat-num">¥5k〜</span>
+      <span class="hero-stat-num">¥15k〜</span>
       <div class="hero-stat-label">Starting / Month</div>
     </div>
     <div class="hero-stat-item">
@@ -1112,7 +1134,7 @@
     <div class="plans-grid">
 
       <!-- Share Plan -->
-      <div class="plan-card share reveal reveal-delay-1">
+      <div class="plan-card share coming-soon reveal reveal-delay-1">
         <div class="plan-badge">Share Plan</div>
         <div class="plan-name">シェア駐車場プラン</div>
         <div class="plan-tagline">週末・買い出し・不定期利用に最適</div>
