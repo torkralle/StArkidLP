@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>舞台稽古</title>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #F7F4EF;
+    --surface:  #FDFBF8;
+    --sage:     #C8D5C0;
+    --sage-mid: #A5BAA0;
+    --sage-dk:  #6B8A65;
+    --blush:    #E8D5CC;
+    --blush-mid:#D4A898;
+    --blush-dk: #A06858;
+    --sand:     #DDD5C8;
+    --sand-dk:  #9B8E7E;
+    --ink:      #3A3530;
+    --ink-mid:  #6B6460;
+    --ink-lt:   #A8A09A;
+    --border:   #E5DFD8;
+  }
+
+  body {
+    font-family: 'Zen Kaku Gothic New', 'Hiragino Kaku Gothic ProN', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.75;
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  .app {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 48px 28px 100px;
+  }
+
+  /* Header */
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .header p {
+    font-size: 12px;
+    color: var(--ink-lt);
+    letter-spacing: 0.04em;
+  }
+
+  /* Section */
+  .section { margin-bottom: 24px; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    color: var(--sage-dk);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  /* Tabs */
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  .tab-btn {
+    flex: 1;
+    padding: 9px 0;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    border: none;
+    background: transparent;
+    color: var(--ink-lt);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1.5px;
+    transition: all 0.18s;
+  }
+
+  .tab-btn.active {
+    color: var(--sage-dk);
+    border-bottom-color: var(--sage-dk);
+    font-weight: 500;
+  }
+
+  .tab-btn:hover:not(.active) { color: var(--ink-mid); }
+
+  /* Upload */
+  .upload-zone {
+    border: 1.5px dashed var(--sand);
+    border-radius: 12px;
+    padding: 32px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: var(--surface);
+    color: var(--ink-lt);
+    font-size: 14px;
+  }
+
+  .upload-zone:hover, .upload-zone.drag-over {
+    border-color: var(--sage-mid);
+    background: #F2F6F1;
+    color: var(--ink-mid);
+  }
+
+  .upload-zone .icon { font-size: 26px; margin-bottom: 8px; }
+  .upload-zone .hint { font-size: 12px; color: var(--ink-lt); margin-top: 5px; letter-spacing: 0.02em; }
+  #csv-input { display: none; }
+
+  /* Chars */
+  .char-list { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .char-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+    font-family: inherit;
+    font-weight: 300;
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface);
+    color: var(--ink-mid);
+    cursor: pointer;
+    transition: all 0.18s;
+    letter-spacing: 0.04em;
+  }
+
+  .char-btn:hover { border-color: var(--sage-mid); color: var(--ink); background: #F2F6F1; }
+
+  .char-btn.selected {
+    background: var(--sage);
+    border-color: var(--sage-mid);
+    color: var(--sage-dk);
+    font-weight: 500;
+  }
+
+  /* Settings */
+  .setting-row { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+  .setting-row label { font-size: 13px; color: var(--ink-mid); min-width: 80px; }
+
+  select {
+    flex: 1;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 8px 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink);
+    outline: none;
+    cursor: pointer;
+  }
+
+  select:focus { border-color: var(--sage-mid); }
+
+  input[type=range] {
+    flex: 1;
+    accent-color: var(--sage-dk);
+    cursor: pointer;
+  }
+
+  .speed-val { font-size: 13px; color: var(--ink-mid); min-width: 36px; text-align: right; }
+
+  /* Divider */
+  hr { border: none; border-top: 1px solid var(--border); margin: 28px 0; }
+
+  /* Start */
+  .btn-start {
+    width: 100%;
+    padding: 13px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    background: var(--sage-dk);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .btn-start:hover:not(:disabled) { opacity: 0.82; }
+  .btn-start:disabled { opacity: 0.3; cursor: not-allowed; }
+
+  /* ── Rehearsal ── */
+  #rehearsal { display: none; }
+
+  .progress-wrap {
+    height: 3px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-bottom: 28px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--sage-mid), var(--sage-dk));
+    border-radius: 2px;
+    transition: width 0.35s ease;
+  }
+
+  /* Script */
+  .script-area {
+    max-height: 52vh;
+    overflow-y: auto;
+    margin-bottom: 16px;
+  }
+
+  .script-area::-webkit-scrollbar { width: 4px; }
+  .script-area::-webkit-scrollbar-thumb { background: var(--sand); border-radius: 2px; }
+
+  .line {
+    display: flex;
+    gap: 14px;
+    padding: 9px 14px;
+    border-radius: 8px;
+    margin-bottom: 3px;
+    transition: all 0.22s;
+    opacity: 0.28;
+    border-left: 2px solid transparent;
+  }
+
+  .line.past { opacity: 0.15; }
+
+  .line.active {
+    opacity: 1;
+    background: var(--surface);
+    border-left-color: var(--sage-mid);
+    box-shadow: 0 1px 6px rgba(168,160,154,0.12);
+  }
+
+  .line.active-mine {
+    opacity: 1;
+    background: #FDF5F2;
+    border-left-color: var(--blush-mid);
+    box-shadow: 0 1px 6px rgba(168,160,154,0.12);
+  }
+
+  .char {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--ink-lt);
+    min-width: 56px;
+    padding-top: 2px;
+  }
+
+  .line.active .char { color: var(--sage-dk); }
+  .line.active-mine .char { color: var(--blush-dk); }
+
+  .text { font-size: 14px; color: var(--ink); flex: 1; }
+
+  /* Status */
+  .status {
+    font-size: 12px;
+    color: var(--ink-lt);
+    text-align: center;
+    min-height: 18px;
+    margin-bottom: 14px;
+    letter-spacing: 0.04em;
+  }
+
+  .status .hl { color: var(--sage-dk); font-weight: 500; }
+  .status .mine { color: var(--blush-dk); font-weight: 500; }
+
+  /* Your turn */
+  .your-turn {
+    font-size: 13px;
+    color: var(--blush-dk);
+    background: #FDF5F2;
+    border: 1px solid var(--blush);
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-align: center;
+    margin-bottom: 14px;
+    letter-spacing: 0.05em;
+    display: none;
+  }
+
+  /* Controls */
+  .controls { display: flex; gap: 8px; }
+
+  .btn-next {
+    flex: 1;
+    padding: 11px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    background: var(--sage-dk);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.18s;
+  }
+
+  .btn-next:hover:not(:disabled) { opacity: 0.82; }
+  .btn-next:disabled { opacity: 0.22; cursor: not-allowed; }
+
+  .btn-icon {
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.18s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-mid);
+  }
+
+  .btn-icon:hover { border-color: var(--sage-mid); background: #F2F6F1; }
+
+  /* Finished */
+  .finished { display: none; text-align: center; padding: 44px 0; }
+  .finished .big { font-size: 40px; margin-bottom: 14px; }
+  .finished h2 { font-size: 18px; font-weight: 400; letter-spacing: 0.1em; margin-bottom: 6px; }
+  .finished p { font-size: 13px; color: var(--ink-lt); margin-bottom: 28px; }
+
+  .btn-again {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding: 9px 28px;
+    border: 1.5px solid var(--sage-mid);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--sage-dk);
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+
+  .btn-again:hover { background: var(--sage); }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    background: var(--ink);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    padding: 9px 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.25s;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 99;
+  }
+
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  /* Script Editor */
+  .editor-rows { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+
+  .editor-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .editor-row input[type=text] {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 8px 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .editor-row input[type=text]:focus { border-color: var(--sage-mid); }
+
+  .editor-char { width: 90px; flex-shrink: 0; }
+  .editor-text { flex: 1; }
+
+  .btn-del-row {
+    width: 32px;
+    height: 36px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink-lt);
+    font-size: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-del-row:hover { border-color: var(--blush-mid); color: var(--blush-dk); background: #FDF5F2; }
+
+  .btn-insert-above {
+    width: 22px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: var(--sage-mid);
+    font-size: 9px;
+    font-weight: 500;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.15s, color 0.15s;
+  }
+
+  .editor-row:hover .btn-insert-above { opacity: 1; }
+  .btn-insert-above:hover { color: var(--sage-dk); }
+
+  .editor-actions { display: flex; gap: 8px; margin-bottom: 8px; }
+
+  .btn-add-row {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 7px 16px;
+    border: 1.5px dashed var(--sand);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--ink-lt);
+    cursor: pointer;
+    transition: all 0.18s;
+    flex: 1;
+  }
+
+  .btn-add-row:hover { border-color: var(--sage-mid); color: var(--sage-dk); background: #F2F6F1; }
+
+  .btn-add-chapter {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 7px 16px;
+    border: 1.5px dashed var(--sage-mid);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--sage-dk);
+    cursor: pointer;
+    transition: all 0.18s;
+    flex: 1;
+  }
+
+  .btn-add-chapter:hover { background: #EEF3EC; }
+
+  .editor-chapter-row {
+    background: #EEF3EC;
+    border-radius: 8px;
+    padding: 4px 8px;
+    align-items: center;
+  }
+
+  .editor-chapter-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--sage-dk);
+    padding: 0 6px;
+    flex-shrink: 0;
+  }
+
+  .editor-chapter-input {
+    flex: 1;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.55);
+    color: var(--sage-dk);
+    outline: none;
+    transition: background 0.15s;
+  }
+
+  .editor-chapter-input:focus { background: rgba(255,255,255,0.9); }
+
+  .btn-edit-csv {
+    display: none;
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 6px 14px;
+    border: 1.5px solid var(--sage-mid);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--sage-dk);
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+
+  .btn-edit-csv:hover { background: var(--sage); }
+
+  .btn-export-csv {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 7px 16px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink-mid);
+    cursor: pointer;
+    transition: all 0.18s;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .btn-export-csv:hover { border-color: var(--sage-mid); color: var(--sage-dk); background: #F2F6F1; }
+  .btn-export-csv:disabled { opacity: 0.3; cursor: not-allowed; }
+
+  .editor-hint {
+    font-size: 11px;
+    color: var(--ink-lt);
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+  .editor-empty {
+    text-align: center;
+    padding: 24px 0;
+    color: var(--ink-lt);
+    font-size: 13px;
+  }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- SETUP -->
+  <div id="setup">
+    <div class="header">
+      <h1>舞台稽古</h1>
+      <p>CSVを読み込んで、自分のセリフ以外を自動で読み上げます</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">台本</div>
+      <div class="tab-bar">
+        <button class="tab-btn active" id="tab-csv">CSV 読み込み</button>
+        <button class="tab-btn" id="tab-write">手書き入力</button>
+      </div>
+
+      <!-- CSV tab -->
+      <div id="pane-csv">
+        <div class="upload-zone" id="upload-zone">
+          <div class="icon">🌿</div>
+          <div>クリックまたはドラッグ＆ドロップ</div>
+          <div class="hint">フォーマット：登場人物, セリフ（1行1セリフ）</div>
+          <div class="hint">章区切り：#章タイトル（行の先頭に # をつける）</div>
+        </div>
+        <input type="file" id="csv-input" accept=".csv,text/csv">
+        <button class="btn-edit-csv" id="edit-csv-btn">台本を編集する →</button>
+      </div>
+
+      <!-- Write tab -->
+      <div id="pane-write" class="hidden">
+        <p class="editor-hint">キャラクター名とセリフを1行ずつ入力してください。</p>
+        <div class="editor-rows" id="editor-rows">
+          <div class="editor-empty" id="editor-empty">＋ をクリックして最初のセリフを追加</div>
+        </div>
+        <div class="editor-actions">
+          <button class="btn-add-row" id="add-row-btn">＋ セリフを追加</button>
+          <button class="btn-add-chapter" id="add-chapter-btn">＋ 章を追加</button>
+        </div>
+        <button class="btn-export-csv" id="export-csv-btn" disabled>CSVをエクスポート</button>
+        <datalist id="char-datalist"></datalist>
+      </div>
+    </div>
+
+    <div class="section hidden" id="char-section">
+      <div class="section-label">担当するキャラ（複数選択可）</div>
+      <div class="char-list" id="char-list"></div>
+    </div>
+
+    <div class="section hidden" id="chapter-section">
+      <div class="section-label">練習する章</div>
+      <div class="char-list" id="chapter-list"></div>
+    </div>
+
+    <div class="section hidden" id="settings-section">
+      <div class="section-label">音声設定</div>
+      <div id="char-voice-list"></div>
+      <div class="setting-row">
+        <label>速度</label>
+        <input type="range" id="speed" min="0.6" max="1.8" step="0.1" value="1.0">
+        <span class="speed-val" id="speed-val">1.0×</span>
+      </div>
+    </div>
+
+    <hr class="hidden" id="divider">
+    <button class="btn-start" id="start-btn" disabled>稽古を始める</button>
+  </div>
+
+  <!-- REHEARSAL -->
+  <div id="rehearsal">
+    <div class="header">
+      <h1>稽古中</h1>
+      <p id="rehearsal-sub"></p>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-fill" id="progress" style="width:0%"></div>
+    </div>
+
+    <div class="script-area" id="script-area"></div>
+
+    <div class="your-turn" id="your-turn">あなたのセリフです</div>
+    <div class="status" id="status"></div>
+
+    <div class="controls">
+      <button class="btn-icon" id="stop-btn" title="読み上げ停止">⏸</button>
+      <button class="btn-next" id="next-btn" disabled>次へ →</button>
+      <button class="btn-icon" id="reset-btn" title="最初から">↩</button>
+    </div>
+
+    <div class="finished" id="finished">
+      <div class="big">🎭</div>
+      <h2>お疲れ様でした</h2>
+      <p>稽古が終わりました</p>
+      <button class="btn-again" id="again-btn">もう一度</button>
+    </div>
+  </div>
+
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+let script = [], chapters = [], selectedChapter = null;
+let practiceStart = 0, practiceEnd = 0;
+let myChars = new Set(), idx = 0, voices = [], charVoices = new Map(), isMyTurn = false;
+let speakGen = 0, isPaused = false;
+let activeTab = 'csv';
+const $ = id => document.getElementById(id);
+
+// ── Voice ──
+function loadVoices() {
+  let all = speechSynthesis.getVoices();
+  let ja = all.filter(v => v.lang.startsWith('ja'));
+  voices = ja.length ? ja : all;
+  for (const [char, oldVoice] of charVoices.entries()) {
+    const match = oldVoice ? voices.find(v => v.name === oldVoice.name) : null;
+    charVoices.set(char, match || voices[0] || null);
+  }
+  buildVoiceSettings();
+}
+speechSynthesis.onvoiceschanged = loadVoices; loadVoices();
+$('speed').oninput = () => { $('speed-val').textContent = parseFloat($('speed').value).toFixed(1) + '×'; };
+
+function buildVoiceSettings() {
+  const container = $('char-voice-list');
+  if (!container) return;
+  container.innerHTML = '';
+  const otherChars = [...new Set(script.map(l => l.char))].filter(c => !myChars.has(c));
+  otherChars.forEach(char => {
+    const row = document.createElement('div'); row.className = 'setting-row';
+    const label = document.createElement('label'); label.textContent = char;
+    const sel = document.createElement('select');
+    voices.forEach((v, i) => {
+      const o = document.createElement('option');
+      o.value = i; o.textContent = `${v.name} (${v.lang})`; sel.appendChild(o);
+    });
+    if (!charVoices.has(char)) charVoices.set(char, voices[0] || null);
+    const cur = charVoices.get(char);
+    if (cur) { const vi = voices.indexOf(cur); if (vi >= 0) sel.value = vi; }
+    sel.onchange = () => { const i = parseInt(sel.value); if (!isNaN(i)) charVoices.set(char, voices[i]); };
+    row.appendChild(label); row.appendChild(sel);
+    container.appendChild(row);
+  });
+}
+
+// ── CSV parse ──
+function parseRow(row) {
+  const res = []; let cur = '', inQ = false;
+  for (const c of row) { if (c==='"') { inQ=!inQ; } else if (c===','&&!inQ) { res.push(cur); cur=''; } else cur+=c; }
+  res.push(cur); return res;
+}
+
+function parseCSV(text) {
+  const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  let startIdx = 0;
+  if (lines.length > 1) {
+    const fc = parseRow(lines[0]);
+    const kw = ['登場人物','キャラクター','character','name','セリフ','台詞','text'];
+    if (fc.length >= 2 && kw.some(k => fc[0].toLowerCase().includes(k) || fc[1].toLowerCase().includes(k))) startIdx = 1;
+  }
+  const rows = [], chaps = [];
+  let chapTitle = null, chapStart = 0;
+  for (let i = startIdx; i < lines.length; i++) {
+    const cols = parseRow(lines[i]);
+    const char = cols[0].trim();
+    if (char.startsWith('#')) {
+      if (chapTitle !== null) chaps.push({ title: chapTitle, start: chapStart, end: rows.length - 1 });
+      chapTitle = char.slice(1).trim() || '無題'; chapStart = rows.length; continue;
+    }
+    if (cols.length < 2) continue;
+    let txt = cols.slice(1).join(',').trim().replace(/（[^）]*）/g,'').replace(/\([^)]*\)/g,'').trim();
+    if (char && txt) rows.push({ char, text: txt });
+  }
+  if (chapTitle !== null && rows.length > chapStart) chaps.push({ title: chapTitle, start: chapStart, end: rows.length - 1 });
+  return { rows, chaps };
+}
+
+function handleFile(file) {
+  const r = new FileReader();
+  r.onload = e => {
+    const { rows, chaps } = parseCSV(e.target.result);
+    if (!rows.length) { toast('CSVのフォーマットを確認してください'); return; }
+    script = rows; chapters = chaps; selectedChapter = null;
+    toast(`${rows.length}行の台本を読み込みました`);
+    $('edit-csv-btn').style.display = 'inline-block';
+    buildChars();
+  };
+  r.readAsText(file, 'UTF-8');
+}
+
+$('upload-zone').onclick = () => $('csv-input').click();
+$('csv-input').onchange = e => handleFile(e.target.files[0]);
+$('upload-zone').ondragover = e => { e.preventDefault(); $('upload-zone').classList.add('drag-over'); };
+$('upload-zone').ondragleave = () => $('upload-zone').classList.remove('drag-over');
+$('upload-zone').ondrop = e => { e.preventDefault(); $('upload-zone').classList.remove('drag-over'); handleFile(e.dataTransfer.files[0]); };
+
+// ── Tabs ──
+$('tab-csv').onclick = () => switchTab('csv');
+$('tab-write').onclick = () => switchTab('write');
+$('edit-csv-btn').onclick = () => { loadScriptIntoEditor(); switchTab('write'); };
+$('export-csv-btn').onclick = exportCSV;
+
+function switchTab(tab) {
+  activeTab = tab;
+  $('tab-csv').classList.toggle('active', tab === 'csv');
+  $('tab-write').classList.toggle('active', tab === 'write');
+  $('pane-csv').classList.toggle('hidden', tab !== 'csv');
+  $('pane-write').classList.toggle('hidden', tab !== 'write');
+  if (tab === 'write') syncEditorToScript();
+  checkReady();
+}
+
+// ── Editor ──
+let editorRows = [];
+
+function addEditorRow(char = '', text = '') {
+  $('editor-empty').style.display = 'none';
+  const row = { type: 'line', char, text };
+  editorRows.push(row);
+  const div = document.createElement('div'); div.className = 'editor-row';
+  const charIn = document.createElement('input');
+  charIn.type = 'text'; charIn.className = 'editor-char'; charIn.placeholder = 'キャラ名';
+  charIn.setAttribute('list', 'char-datalist'); charIn.value = char;
+  charIn.oninput = () => { row.char = charIn.value.trim(); updateCharDatalist(); syncEditorToScript(); };
+  const textIn = document.createElement('input');
+  textIn.type = 'text'; textIn.className = 'editor-text'; textIn.placeholder = 'セリフ…';
+  textIn.value = text;
+  textIn.oninput = () => { row.text = textIn.value.trim(); syncEditorToScript(); };
+  const delBtn = document.createElement('button');
+  delBtn.className = 'btn-del-row'; delBtn.title = '削除'; delBtn.textContent = '×';
+  delBtn.onclick = () => {
+    editorRows.splice(editorRows.indexOf(row), 1); div.remove();
+    if (editorRows.length === 0) $('editor-empty').style.display = '';
+    updateCharDatalist(); syncEditorToScript();
+  };
+  const insertBtn = document.createElement('button');
+  insertBtn.className = 'btn-insert-above'; insertBtn.title = '上に章を挿入'; insertBtn.textContent = '章↑';
+  insertBtn.onclick = () => insertChapterBefore(div, row);
+  div.appendChild(insertBtn); div.appendChild(charIn); div.appendChild(textIn); div.appendChild(delBtn);
+  $('editor-rows').appendChild(div);
+  if (!char) charIn.focus();
+}
+
+function insertChapterBefore(refDiv, refRow) {
+  $('editor-empty').style.display = 'none';
+  const row = { type: 'chapter', title: '' };
+  editorRows.splice(editorRows.indexOf(refRow), 0, row);
+  const div = document.createElement('div'); div.className = 'editor-row editor-chapter-row';
+  const label = document.createElement('span'); label.className = 'editor-chapter-label'; label.textContent = '章';
+  const titleIn = document.createElement('input');
+  titleIn.type = 'text'; titleIn.className = 'editor-chapter-input'; titleIn.placeholder = '章タイトル…';
+  titleIn.oninput = () => { row.title = titleIn.value.trim(); syncEditorToScript(); };
+  const delBtn = document.createElement('button');
+  delBtn.className = 'btn-del-row'; delBtn.title = '削除'; delBtn.textContent = '×';
+  delBtn.onclick = () => {
+    editorRows.splice(editorRows.indexOf(row), 1); div.remove();
+    if (editorRows.length === 0) $('editor-empty').style.display = '';
+    syncEditorToScript();
+  };
+  div.appendChild(label); div.appendChild(titleIn); div.appendChild(delBtn);
+  $('editor-rows').insertBefore(div, refDiv);
+  titleIn.focus();
+  syncEditorToScript();
+}
+
+function addChapterRow(title = '') {
+  $('editor-empty').style.display = 'none';
+  const row = { type: 'chapter', title };
+  editorRows.push(row);
+  const div = document.createElement('div'); div.className = 'editor-row editor-chapter-row';
+  const label = document.createElement('span'); label.className = 'editor-chapter-label'; label.textContent = '章';
+  const titleIn = document.createElement('input');
+  titleIn.type = 'text'; titleIn.className = 'editor-chapter-input'; titleIn.placeholder = '章タイトル…';
+  titleIn.value = title;
+  titleIn.oninput = () => { row.title = titleIn.value.trim(); syncEditorToScript(); };
+  const delBtn = document.createElement('button');
+  delBtn.className = 'btn-del-row'; delBtn.title = '削除'; delBtn.textContent = '×';
+  delBtn.onclick = () => {
+    editorRows.splice(editorRows.indexOf(row), 1); div.remove();
+    if (editorRows.length === 0) $('editor-empty').style.display = '';
+    syncEditorToScript();
+  };
+  div.appendChild(label); div.appendChild(titleIn); div.appendChild(delBtn);
+  $('editor-rows').appendChild(div);
+  if (!title) titleIn.focus();
+}
+
+$('add-row-btn').onclick = () => addEditorRow();
+$('add-chapter-btn').onclick = () => addChapterRow();
+
+function loadScriptIntoEditor() {
+  editorRows = [];
+  const container = $('editor-rows'); container.innerHTML = '';
+  const empty = document.createElement('div');
+  empty.className = 'editor-empty'; empty.id = 'editor-empty';
+  empty.textContent = '＋ をクリックして最初のセリフを追加'; empty.style.display = 'none';
+  container.appendChild(empty);
+  let chapIdx = 0;
+  for (let i = 0; i < script.length; i++) {
+    if (chapIdx < chapters.length && chapters[chapIdx].start === i) {
+      addChapterRow(chapters[chapIdx].title); chapIdx++;
+    }
+    addEditorRow(script[i].char, script[i].text);
+  }
+  updateCharDatalist();
+}
+
+function exportCSV() {
+  const hasLines = editorRows.some(r => r.type === 'line' && r.char && r.text);
+  if (!hasLines) { toast('エクスポートする内容がありません'); return; }
+  const lines = editorRows.map(r => {
+    if (r.type === 'chapter') return `#${r.title || ''}`;
+    if (r.char && r.text) return `${csvCell(r.char)},${csvCell(r.text)}`;
+    return null;
+  }).filter(Boolean).join('\r\n');
+  const blob = new Blob(['﻿' + lines], { type: 'text/csv;charset=utf-8;' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'script.csv'; a.click();
+  URL.revokeObjectURL(a.href);
+  toast('CSVをエクスポートしました');
+}
+
+function csvCell(s) { return /[,"\r\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; }
+
+function updateCharDatalist() {
+  const names = [...new Set(editorRows.filter(r => r.type === 'line').map(r => r.char).filter(Boolean))];
+  $('char-datalist').innerHTML = names.map(n => `<option value="${esc(n)}">`).join('');
+}
+
+function syncEditorToScript() {
+  if (activeTab !== 'write') return;
+  script = []; chapters = [];
+  let chapTitle = null, chapStart = 0;
+  editorRows.forEach(r => {
+    if (r.type === 'chapter') {
+      if (chapTitle !== null) chapters.push({ title: chapTitle, start: chapStart, end: script.length - 1 });
+      chapTitle = r.title || '無題'; chapStart = script.length;
+    } else if (r.char && r.text) {
+      script.push({ char: r.char, text: r.text });
+    }
+  });
+  if (chapTitle !== null && script.length > chapStart) chapters.push({ title: chapTitle, start: chapStart, end: script.length - 1 });
+  if (selectedChapter !== null && selectedChapter >= chapters.length) selectedChapter = null;
+  $('export-csv-btn').disabled = script.length === 0;
+  if (script.length) { buildChars(); } else {
+    myChars = new Set(); charVoices = new Map();
+    ['char-section','chapter-section','settings-section','divider'].forEach(id => $(id).classList.add('hidden'));
+    checkReady();
+  }
+}
+
+// ── Setup UI ──
+function buildChars() {
+  const chars = [...new Set(script.map(l => l.char))];
+  const list = $('char-list'); list.innerHTML = ''; myChars = new Set(); charVoices = new Map();
+  chars.forEach(c => {
+    const btn = document.createElement('button'); btn.className = 'char-btn'; btn.textContent = c;
+    btn.onclick = () => {
+      if (myChars.has(c)) { myChars.delete(c); charVoices.delete(c); btn.classList.remove('selected'); }
+      else { myChars.add(c); btn.classList.add('selected'); }
+      buildVoiceSettings(); checkReady();
+    };
+    list.appendChild(btn);
+  });
+  $('char-section').classList.remove('hidden');
+  $('settings-section').classList.remove('hidden');
+  $('divider').classList.remove('hidden');
+  buildChapterSection();
+  loadVoices(); checkReady();
+}
+
+function buildChapterSection() {
+  if (!chapters.length) { $('chapter-section').classList.add('hidden'); selectedChapter = null; return; }
+  $('chapter-section').classList.remove('hidden');
+  const list = $('chapter-list'); list.innerHTML = '';
+  const makeBtn = (label, val) => {
+    const btn = document.createElement('button'); btn.className = 'char-btn'; btn.textContent = label;
+    if (selectedChapter === val) btn.classList.add('selected');
+    btn.onclick = () => {
+      selectedChapter = val;
+      document.querySelectorAll('#chapter-list .char-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+    };
+    list.appendChild(btn);
+  };
+  makeBtn('全章', null);
+  chapters.forEach((ch, i) => makeBtn(ch.title, i));
+}
+
+function checkReady() { $('start-btn').disabled = !(script.length && myChars.size > 0); }
+
+// ── Rehearsal ──
+$('start-btn').onclick = start;
+$('again-btn').onclick = start;
+$('reset-btn').onclick = start;
+$('next-btn').onclick = () => { if (isMyTurn || isPaused) { isMyTurn = false; idx++; advance(); } };
+$('stop-btn').onclick = () => {
+  speakGen++; isPaused = true;
+  speechSynthesis.cancel();
+  $('next-btn').disabled = false;
+  $('status').innerHTML = '停止中 — 次へ で続ける';
+};
+
+function start() {
+  practiceStart = selectedChapter !== null ? chapters[selectedChapter].start : 0;
+  practiceEnd   = selectedChapter !== null ? chapters[selectedChapter].end   : script.length - 1;
+  idx = practiceStart;
+  $('setup').style.display = 'none'; $('rehearsal').style.display = 'block';
+  $('finished').style.display = 'none'; $('script-area').style.display = '';
+  $('your-turn').style.display = 'none';
+  const chapName = selectedChapter !== null ? `${chapters[selectedChapter].title} ／ ` : '';
+  $('rehearsal-sub').textContent = `${chapName}あなたの役：${[...myChars].join('・')}`;
+  buildScript(); advance();
+}
+
+function buildScript() {
+  $('script-area').innerHTML = '';
+  for (let i = practiceStart; i <= practiceEnd; i++) {
+    const l = script[i];
+    const div = document.createElement('div'); div.className = 'line'; div.id = `l${i}`;
+    div.innerHTML = `<span class="char">${esc(l.char)}</span><span class="text">${esc(l.text)}</span>`;
+    $('script-area').appendChild(div);
+  }
+}
+
+function advance() {
+  isPaused = false; speakGen++;
+  speechSynthesis.cancel();
+  if (idx > practiceEnd) { endRehearsal(); return; }
+  updateProgress(); updateStyles(); scrollTo(idx);
+  const line = script[idx]; isMyTurn = myChars.has(line.char);
+  if (isMyTurn) {
+    $('your-turn').style.display = 'block'; $('next-btn').disabled = false;
+    $('status').innerHTML = `<span class="mine">${esc(line.char)}</span> のセリフ`;
+  } else {
+    $('your-turn').style.display = 'none'; $('next-btn').disabled = true;
+    $('status').innerHTML = `<span class="hl">${esc(line.char)}</span> が話しています…`;
+    speak(line.text, line.char, () => { if (!isMyTurn) { idx++; setTimeout(advance, 350); } });
+  }
+}
+
+function speak(text, char, cb) {
+  if (!window.speechSynthesis) { cb(); return; }
+  const gen = speakGen;
+  const u = new SpeechSynthesisUtterance(text);
+  const voice = charVoices.get(char) || voices[0] || null;
+  if (voice) u.voice = voice;
+  u.rate = parseFloat($('speed').value); u.lang = 'ja-JP';
+  u.onend = () => { if (gen === speakGen) cb(); };
+  u.onerror = () => { if (gen === speakGen) cb(); };
+  speechSynthesis.speak(u);
+}
+
+function updateProgress() {
+  const total = practiceEnd - practiceStart;
+  $('progress').style.width = (total > 0 ? Math.min(100, ((idx - practiceStart) / total) * 100) : 100) + '%';
+}
+
+function updateStyles() {
+  for (let i = practiceStart; i <= practiceEnd; i++) {
+    const el = $(`l${i}`); if (!el) return;
+    el.className = 'line' + (i < idx ? ' past' : i === idx ? (myChars.has(script[i].char) ? ' active-mine' : ' active') : '');
+  }
+}
+
+function scrollTo(i) { const el = $(`l${i}`); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+
+function endRehearsal() {
+  speechSynthesis.cancel(); $('script-area').style.display = 'none';
+  $('your-turn').style.display = 'none'; $('status').innerHTML = '';
+  $('next-btn').disabled = true; $('finished').style.display = 'block'; $('progress').style.width = '100%';
+}
+
+function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function toast(msg) { const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2800); }
+
+document.addEventListener('keydown', e => {
+  if (e.key==='d'&&e.ctrlKey&&e.shiftKey) {
+    handleFile(new File([`#第一幕\n太郎,こんにちは、花子さん\n花子,あら、太郎さん！久しぶりね\n#第二幕\n太郎,元気でしたか？\n花子,ええ、おかげさまで`],'demo.csv',{type:'text/csv'}));
+  }
+});
+</script>
+</body>
+</html>
