@@ -548,6 +548,23 @@
   .btn-export-csv:hover { border-color: var(--sage-mid); color: var(--sage-dk); background: #F2F6F1; }
   .btn-export-csv:disabled { opacity: 0.3; cursor: not-allowed; }
 
+  .btn-preview {
+    padding: 4px 10px;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 400;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    color: var(--ink-lt);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s;
+    flex-shrink: 0;
+  }
+  .btn-preview:hover { border-color: var(--sage-mid); color: var(--sage-dk); background: #F2F6F1; }
+  .btn-preview.playing { border-color: var(--blush-mid); color: var(--blush-dk); background: #FDF5F2; }
+
   .editor-hint {
     font-size: 11px;
     color: var(--ink-lt);
@@ -959,6 +976,16 @@
         <input type="range" id="speed" min="0.6" max="1.8" step="0.1" value="1.0">
         <span class="speed-val" id="speed-val">1.0×</span>
       </div>
+      <div class="setting-row">
+        <label>ピッチ</label>
+        <input type="range" id="pitch" min="0.6" max="1.5" step="0.05" value="1.0">
+        <span class="speed-val" id="pitch-val">1.00</span>
+      </div>
+      <div class="setting-row">
+        <label>音量</label>
+        <input type="range" id="volume" min="0.2" max="1.0" step="0.1" value="1.0">
+        <span class="speed-val" id="volume-val">100%</span>
+      </div>
     </div>
 
     <hr class="hidden" id="divider">
@@ -1007,6 +1034,7 @@ let myChars = new Set(), idx = 0, voices = [], charVoices = new Map(), isMyTurn 
 let speakGen = 0, isPaused = false;
 let activeTab = 'csv';
 let narratorVoice = null;
+let voicePitch = 1.0, voiceVolume = 1.0;
 
 const NARRATOR_TYPES = new Set(['ト書き', '地の文']);
 const $ = id => document.getElementById(id);
@@ -1017,6 +1045,8 @@ const SETTINGS_KEY = 'theaterSettings';
 function saveSettings() {
   const s = {
     speed: parseFloat($('speed').value),
+    pitch: voicePitch,
+    volume: voiceVolume,
     myChars: [...myChars],
     charVoiceNames: Object.fromEntries([...charVoices.entries()].map(([c, v]) => [c, v ? v.name : null])),
     narratorVoiceName: narratorVoice ? narratorVoice.name : null,
@@ -1029,10 +1059,23 @@ function loadSettingsData() {
 }
 
 // ── Voice ──
+function voiceQuality(v) {
+  if (!v.localService) return 2; // online/remote voices are highest quality
+  const n = v.name.toLowerCase();
+  if (n.includes('enhanced') || n.includes('premium') || n.includes('neural') || n.includes('online')) return 1;
+  return 0;
+}
+
+function voiceLabel(v) {
+  const q = voiceQuality(v);
+  return (q === 2 ? '★ ' : q === 1 ? '◆ ' : '') + v.name;
+}
+
 function loadVoices() {
   let all = speechSynthesis.getVoices();
   let ja = all.filter(v => v.lang.startsWith('ja'));
-  voices = ja.length ? ja : all;
+  const pool = ja.length ? ja : all;
+  voices = pool.slice().sort((a, b) => voiceQuality(b) - voiceQuality(a));
   for (const [char, oldVoice] of charVoices.entries()) {
     const match = oldVoice ? voices.find(v => v.name === oldVoice.name) : null;
     charVoices.set(char, match || voices[0] || null);
@@ -1045,6 +1088,16 @@ function loadVoices() {
 speechSynthesis.onvoiceschanged = loadVoices; loadVoices();
 $('speed').oninput = () => {
   $('speed-val').textContent = parseFloat($('speed').value).toFixed(1) + '×';
+  saveSettings();
+};
+$('pitch').oninput = () => {
+  voicePitch = parseFloat($('pitch').value);
+  $('pitch-val').textContent = voicePitch.toFixed(2);
+  saveSettings();
+};
+$('volume').oninput = () => {
+  voiceVolume = parseFloat($('volume').value);
+  $('volume-val').textContent = Math.round(voiceVolume * 100) + '%';
   saveSettings();
 };
 
@@ -1060,7 +1113,7 @@ function buildVoiceSettings() {
     const sel = document.createElement('select');
     voices.forEach((v, i) => {
       const o = document.createElement('option');
-      o.value = i; o.textContent = `${v.name} (${v.lang})`; sel.appendChild(o);
+      o.value = i; o.textContent = voiceLabel(v); sel.appendChild(o);
     });
     // restore saved voice, otherwise use current
     const restored = savedVoiceName ? voices.find(v => v.name === savedVoiceName) : null;
@@ -1068,7 +1121,21 @@ function buildVoiceSettings() {
     if (restored) setCurrent(restored);
     if (cur) { const vi = voices.indexOf(cur); if (vi >= 0) sel.value = vi; }
     sel.onchange = () => { const i = parseInt(sel.value); if (!isNaN(i)) { setCurrent(voices[i]); saveSettings(); } };
-    row.appendChild(label); row.appendChild(sel);
+    const prevBtn = document.createElement('button');
+    prevBtn.type = 'button'; prevBtn.className = 'btn-preview'; prevBtn.textContent = '試聴';
+    prevBtn.onclick = () => {
+      speechSynthesis.cancel();
+      const i = parseInt(sel.value);
+      const v = !isNaN(i) ? voices[i] : null;
+      const u = new SpeechSynthesisUtterance('こんにちは、よろしくお願いします');
+      if (v) u.voice = v;
+      u.rate = parseFloat($('speed').value);
+      u.pitch = voicePitch; u.volume = voiceVolume; u.lang = 'ja-JP';
+      prevBtn.classList.add('playing');
+      u.onend = u.onerror = () => prevBtn.classList.remove('playing');
+      speechSynthesis.speak(u);
+    };
+    row.appendChild(label); row.appendChild(sel); row.appendChild(prevBtn);
     container.appendChild(row);
   };
 
@@ -1546,7 +1613,10 @@ function speak(text, voice, cb) {
   const gen = speakGen;
   const u = new SpeechSynthesisUtterance(text);
   if (voice) u.voice = voice;
-  u.rate = parseFloat($('speed').value); u.lang = 'ja-JP';
+  u.rate = parseFloat($('speed').value);
+  u.pitch = voicePitch;
+  u.volume = voiceVolume;
+  u.lang = 'ja-JP';
   u.onend = () => { if (gen === speakGen) cb(); };
   u.onerror = () => { if (gen === speakGen) cb(); };
   speechSynthesis.speak(u);
@@ -1580,10 +1650,12 @@ function endRehearsal() {
 function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function toast(msg) { const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2800); }
 
-// restore speed on load
+// restore speed/pitch/volume on load
 (function() {
   const s = loadSettingsData();
   if (s.speed) { $('speed').value = s.speed; $('speed-val').textContent = s.speed.toFixed(1) + '×'; }
+  if (s.pitch != null) { voicePitch = s.pitch; $('pitch').value = s.pitch; $('pitch-val').textContent = s.pitch.toFixed(2); }
+  if (s.volume != null) { voiceVolume = s.volume; $('volume').value = s.volume; $('volume-val').textContent = Math.round(s.volume * 100) + '%'; }
 })();
 
 renderHistory();
