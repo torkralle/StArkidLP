@@ -982,6 +982,7 @@
     <div class="status" id="status"></div>
 
     <div class="controls">
+      <button class="btn-icon" id="home-btn" title="トップへ戻る">⌂</button>
       <button class="btn-icon" id="stop-btn" title="読み上げ停止">⏸</button>
       <button class="btn-next" id="next-btn" disabled>次へ →</button>
       <button class="btn-icon hidden" id="next-chapter-btn" title="次の章へ">⏭</button>
@@ -1451,6 +1452,11 @@ function checkReady() {
 $('start-btn').onclick = start;
 $('again-btn').onclick = start;
 $('reset-btn').onclick = start;
+$('home-btn').onclick = () => {
+  speakGen++; speechSynthesis.cancel();
+  $('rehearsal').style.display = 'none';
+  $('setup').style.display = '';
+};
 $('next-btn').onclick = () => { if (isMyTurn || isPaused) { isMyTurn = false; idx++; advance(); } };
 $('next-chapter-btn').onclick = () => {
   let nextIdx;
