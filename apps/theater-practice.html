@@ -576,7 +576,8 @@
   .line.narration.active { background: #F3F1EE; border-left-color: var(--ink-lt); }
   .line.narration.active .char { color: var(--ink-mid); }
 
-  .paused .line:hover { opacity: 1; background: #F2F6F1; cursor: pointer; }
+  .line { cursor: pointer; }
+  .line:hover { opacity: 1 !important; background: #F2F6F1; }
 
   /* Editor direction/narration rows */
   .editor-direction-row {
@@ -983,6 +984,7 @@
     <div class="controls">
       <button class="btn-icon" id="stop-btn" title="読み上げ停止">⏸</button>
       <button class="btn-next" id="next-btn" disabled>次へ →</button>
+      <button class="btn-icon hidden" id="next-chapter-btn" title="次の章へ">⏭</button>
       <button class="btn-icon" id="reset-btn" title="最初から">↩</button>
     </div>
 
@@ -1450,12 +1452,16 @@ $('start-btn').onclick = start;
 $('again-btn').onclick = start;
 $('reset-btn').onclick = start;
 $('next-btn').onclick = () => { if (isMyTurn || isPaused) { isMyTurn = false; idx++; advance(); } };
+$('next-chapter-btn').onclick = () => {
+  const next = chapters.find(ch => ch.start > idx);
+  if (next) { idx = next.start; advance(); }
+  else { toast('最終章です'); }
+};
 $('stop-btn').onclick = () => {
   speakGen++; isPaused = true;
   speechSynthesis.cancel();
   $('next-btn').disabled = false;
-  $('status').innerHTML = '停止中 — セリフをクリックしてジャンプ、次へ で続ける';
-  $('script-area').classList.add('paused');
+  $('status').innerHTML = '停止中 — 次へ で続ける';
 };
 
 function start() {
@@ -1467,6 +1473,8 @@ function start() {
   $('your-turn').style.display = 'none';
   const chapName = selectedChapter !== null ? `${chapters[selectedChapter].title} ／ ` : '';
   $('rehearsal-sub').textContent = `${chapName}あなたの役：${[...myChars].join('・')}`;
+  const hasMultiChapter = selectedChapter === null && chapters.length >= 2;
+  $('next-chapter-btn').classList.toggle('hidden', !hasMultiChapter);
   buildScript(); advance();
 }
 
@@ -1480,7 +1488,6 @@ function buildScript() {
     const displayText = l.type === 'direction' ? `（${esc(l.text)}）` : esc(l.text);
     div.innerHTML = `<span class="char">${displayChar}</span><span class="text">${displayText}</span>`;
     div.addEventListener('click', ((lineIdx) => () => {
-      if (!isPaused) return;
       idx = lineIdx;
       advance();
     })(i));
@@ -1491,7 +1498,6 @@ function buildScript() {
 function advance() {
   isPaused = false; speakGen++;
   speechSynthesis.cancel();
-  $('script-area').classList.remove('paused');
   if (idx > practiceEnd) { endRehearsal(); return; }
   updateProgress(); updateStyles(); scrollTo(idx);
   const line = script[idx];
