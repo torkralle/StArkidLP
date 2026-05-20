@@ -565,6 +565,30 @@
   .btn-preview:hover { border-color: var(--sage-mid); color: var(--sage-dk); background: #F2F6F1; }
   .btn-preview.playing { border-color: var(--blush-mid); color: var(--blush-dk); background: #FDF5F2; }
 
+  .toggle-group {
+    display: flex;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
+  }
+  .toggle-btn {
+    flex: 1;
+    padding: 7px 12px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    border: none;
+    background: var(--surface);
+    color: var(--ink-lt);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .toggle-btn + .toggle-btn { border-left: 1.5px solid var(--border); }
+  .toggle-btn.active { background: var(--sage); color: var(--sage-dk); font-weight: 500; }
+  .toggle-btn:hover:not(.active) { background: #F2F6F1; color: var(--ink-mid); }
+
   .editor-hint {
     font-size: 11px;
     color: var(--ink-lt);
@@ -986,6 +1010,13 @@
         <input type="range" id="volume" min="0.2" max="1.0" step="0.1" value="1.0">
         <span class="speed-val" id="volume-val">100%</span>
       </div>
+      <div class="setting-row">
+        <label>自分のセリフ</label>
+        <div class="toggle-group">
+          <button class="toggle-btn active" id="mine-manual-btn" type="button">手動で次へ</button>
+          <button class="toggle-btn" id="mine-auto-btn" type="button">自動で次へ</button>
+        </div>
+      </div>
     </div>
 
     <hr class="hidden" id="divider">
@@ -1034,7 +1065,7 @@ let myChars = new Set(), idx = 0, voices = [], charVoices = new Map(), isMyTurn 
 let speakGen = 0, isPaused = false;
 let activeTab = 'csv';
 let narratorVoice = null;
-let voicePitch = 1.0, voiceVolume = 1.0;
+let voicePitch = 1.0, voiceVolume = 1.0, autoAdvanceMine = false;
 
 const NARRATOR_TYPES = new Set(['ト書き', '地の文']);
 const $ = id => document.getElementById(id);
@@ -1047,6 +1078,7 @@ function saveSettings() {
     speed: parseFloat($('speed').value),
     pitch: voicePitch,
     volume: voiceVolume,
+    autoAdvanceMine,
     myChars: [...myChars],
     charVoiceNames: Object.fromEntries([...charVoices.entries()].map(([c, v]) => [c, v ? v.name : null])),
     narratorVoiceName: narratorVoice ? narratorVoice.name : null,
@@ -1100,6 +1132,15 @@ $('volume').oninput = () => {
   $('volume-val').textContent = Math.round(voiceVolume * 100) + '%';
   saveSettings();
 };
+
+function setAutoAdvanceMine(val) {
+  autoAdvanceMine = val;
+  $('mine-manual-btn').classList.toggle('active', !val);
+  $('mine-auto-btn').classList.toggle('active', val);
+  saveSettings();
+}
+$('mine-manual-btn').onclick = () => setAutoAdvanceMine(false);
+$('mine-auto-btn').onclick = () => setAutoAdvanceMine(true);
 
 function buildVoiceSettings() {
   const container = $('char-voice-list');
@@ -1592,7 +1633,15 @@ function advance() {
   isMyTurn = !isNarratorLine && myChars.has(line.char);
   if (isMyTurn) {
     $('your-turn').style.display = 'block'; $('next-btn').disabled = false;
-    $('status').innerHTML = `<span class="mine">${esc(line.char)}</span> のセリフ`;
+    if (autoAdvanceMine) {
+      const rate = parseFloat($('speed').value);
+      const delay = Math.max(1800, (line.text.length / (5 * rate)) * 1000);
+      $('status').innerHTML = `<span class="mine">${esc(line.char)}</span> のセリフ（自動で進みます）`;
+      const gen = speakGen;
+      setTimeout(() => { if (gen === speakGen) { isMyTurn = false; idx++; advance(); } }, delay);
+    } else {
+      $('status').innerHTML = `<span class="mine">${esc(line.char)}</span> のセリフ`;
+    }
   } else {
     $('your-turn').style.display = 'none'; $('next-btn').disabled = true;
     if (isNarratorLine) {
@@ -1656,6 +1705,7 @@ function toast(msg) { const t=$('toast'); t.textContent=msg; t.classList.add('sh
   if (s.speed) { $('speed').value = s.speed; $('speed-val').textContent = s.speed.toFixed(1) + '×'; }
   if (s.pitch != null) { voicePitch = s.pitch; $('pitch').value = s.pitch; $('pitch-val').textContent = s.pitch.toFixed(2); }
   if (s.volume != null) { voiceVolume = s.volume; $('volume').value = s.volume; $('volume-val').textContent = Math.round(s.volume * 100) + '%'; }
+  if (s.autoAdvanceMine) { setAutoAdvanceMine(true); }
 })();
 
 renderHistory();
