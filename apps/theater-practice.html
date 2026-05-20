@@ -576,6 +576,8 @@
   .line.narration.active { background: #F3F1EE; border-left-color: var(--ink-lt); }
   .line.narration.active .char { color: var(--ink-mid); }
 
+  .paused .line:hover { opacity: 1; background: #F2F6F1; cursor: pointer; }
+
   /* Editor direction/narration rows */
   .editor-direction-row {
     background: #F6F0EA;
@@ -1425,7 +1427,8 @@ $('stop-btn').onclick = () => {
   speakGen++; isPaused = true;
   speechSynthesis.cancel();
   $('next-btn').disabled = false;
-  $('status').innerHTML = '停止中 — 次へ で続ける';
+  $('status').innerHTML = '停止中 — セリフをクリックしてジャンプ、次へ で続ける';
+  $('script-area').classList.add('paused');
 };
 
 function start() {
@@ -1449,6 +1452,11 @@ function buildScript() {
     const displayChar = l.type === 'direction' ? 'ト書き' : l.type === 'narration' ? '地の文' : esc(l.char);
     const displayText = l.type === 'direction' ? `（${esc(l.text)}）` : esc(l.text);
     div.innerHTML = `<span class="char">${displayChar}</span><span class="text">${displayText}</span>`;
+    div.addEventListener('click', ((lineIdx) => () => {
+      if (!isPaused) return;
+      idx = lineIdx;
+      advance();
+    })(i));
     $('script-area').appendChild(div);
   }
 }
@@ -1456,6 +1464,7 @@ function buildScript() {
 function advance() {
   isPaused = false; speakGen++;
   speechSynthesis.cancel();
+  $('script-area').classList.remove('paused');
   if (idx > practiceEnd) { endRehearsal(); return; }
   updateProgress(); updateStyles(); scrollTo(idx);
   const line = script[idx];
