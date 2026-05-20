@@ -1453,9 +1453,23 @@ $('again-btn').onclick = start;
 $('reset-btn').onclick = start;
 $('next-btn').onclick = () => { if (isMyTurn || isPaused) { isMyTurn = false; idx++; advance(); } };
 $('next-chapter-btn').onclick = () => {
-  const next = chapters.find(ch => ch.start > idx);
-  if (next) { idx = next.start; advance(); }
-  else { toast('最終章です'); }
+  let nextIdx;
+  if (selectedChapter === null) {
+    nextIdx = chapters.findIndex(ch => ch.start > idx);
+    if (nextIdx === -1) { toast('最終章です'); return; }
+    idx = chapters[nextIdx].start;
+    advance();
+  } else {
+    nextIdx = selectedChapter + 1;
+    if (nextIdx >= chapters.length) { toast('最終章です'); return; }
+    selectedChapter = nextIdx;
+    practiceStart = chapters[nextIdx].start;
+    practiceEnd = chapters[nextIdx].end;
+    idx = practiceStart;
+    $('rehearsal-sub').textContent = `${chapters[nextIdx].title} ／ あなたの役：${[...myChars].join('・')}`;
+    $('next-chapter-btn').classList.toggle('hidden', selectedChapter >= chapters.length - 1);
+    buildScript(); advance();
+  }
 };
 $('stop-btn').onclick = () => {
   speakGen++; isPaused = true;
@@ -1473,8 +1487,8 @@ function start() {
   $('your-turn').style.display = 'none';
   const chapName = selectedChapter !== null ? `${chapters[selectedChapter].title} ／ ` : '';
   $('rehearsal-sub').textContent = `${chapName}あなたの役：${[...myChars].join('・')}`;
-  const hasMultiChapter = selectedChapter === null && chapters.length >= 2;
-  $('next-chapter-btn').classList.toggle('hidden', !hasMultiChapter);
+  const hasNext = chapters.length >= 2 && (selectedChapter === null || selectedChapter < chapters.length - 1);
+  $('next-chapter-btn').classList.toggle('hidden', !hasNext);
   buildScript(); advance();
 }
 
