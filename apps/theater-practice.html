@@ -1008,6 +1008,23 @@ let narratorVoice = null;
 const NARRATOR_TYPES = new Set(['ト書き', '地の文']);
 const $ = id => document.getElementById(id);
 
+// ── Settings persistence ──
+const SETTINGS_KEY = 'theaterSettings';
+
+function saveSettings() {
+  const s = {
+    speed: parseFloat($('speed').value),
+    myChars: [...myChars],
+    charVoiceNames: Object.fromEntries([...charVoices.entries()].map(([c, v]) => [c, v ? v.name : null])),
+    narratorVoiceName: narratorVoice ? narratorVoice.name : null,
+  };
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(s));
+}
+
+function loadSettingsData() {
+  try { return JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}'); } catch { return {}; }
+}
+
 // ── Voice ──
 function loadVoices() {
   let all = speechSynthesis.getVoices();
@@ -1023,14 +1040,18 @@ function loadVoices() {
   buildVoiceSettings();
 }
 speechSynthesis.onvoiceschanged = loadVoices; loadVoices();
-$('speed').oninput = () => { $('speed-val').textContent = parseFloat($('speed').value).toFixed(1) + '×'; };
+$('speed').oninput = () => {
+  $('speed-val').textContent = parseFloat($('speed').value).toFixed(1) + '×';
+  saveSettings();
+};
 
 function buildVoiceSettings() {
   const container = $('char-voice-list');
   if (!container) return;
   container.innerHTML = '';
+  const saved = loadSettingsData();
 
-  const makeVoiceRow = (labelText, getCurrent, setCurrent) => {
+  const makeVoiceRow = (labelText, getCurrent, setCurrent, savedVoiceName) => {
     const row = document.createElement('div'); row.className = 'setting-row';
     const label = document.createElement('label'); label.textContent = labelText;
     const sel = document.createElement('select');
@@ -1038,9 +1059,12 @@ function buildVoiceSettings() {
       const o = document.createElement('option');
       o.value = i; o.textContent = `${v.name} (${v.lang})`; sel.appendChild(o);
     });
-    const cur = getCurrent();
+    // restore saved voice, otherwise use current
+    const restored = savedVoiceName ? voices.find(v => v.name === savedVoiceName) : null;
+    const cur = restored || getCurrent();
+    if (restored) setCurrent(restored);
     if (cur) { const vi = voices.indexOf(cur); if (vi >= 0) sel.value = vi; }
-    sel.onchange = () => { const i = parseInt(sel.value); if (!isNaN(i)) setCurrent(voices[i]); };
+    sel.onchange = () => { const i = parseInt(sel.value); if (!isNaN(i)) { setCurrent(voices[i]); saveSettings(); } };
     row.appendChild(label); row.appendChild(sel);
     container.appendChild(row);
   };
@@ -1048,13 +1072,14 @@ function buildVoiceSettings() {
   const otherChars = [...new Set(script.filter(l => l.type === 'line').map(l => l.char))].filter(c => !myChars.has(c));
   otherChars.forEach(char => {
     if (!charVoices.has(char)) charVoices.set(char, voices[0] || null);
-    makeVoiceRow(char, () => charVoices.get(char), v => charVoices.set(char, v));
+    const savedName = saved.charVoiceNames ? saved.charVoiceNames[char] : null;
+    makeVoiceRow(char, () => charVoices.get(char), v => charVoices.set(char, v), savedName);
   });
 
   const hasNarrator = script.some(l => l.type !== 'line');
   if (hasNarrator) {
     if (!narratorVoice) narratorVoice = voices[0] || null;
-    makeVoiceRow('ナレーター（ト書き・地の文）', () => narratorVoice, v => { narratorVoice = v; });
+    makeVoiceRow('ナレーター（ト書き・地の文）', () => narratorVoice, v => { narratorVoice = v; }, saved.narratorVoiceName || null);
   }
 }
 
@@ -1379,12 +1404,14 @@ function syncEditorToScript() {
 function buildChars() {
   const chars = [...new Set(script.filter(l => l.type === 'line').map(l => l.char))];
   const list = $('char-list'); list.innerHTML = ''; myChars = new Set(); charVoices = new Map();
+  const savedMyChars = new Set(loadSettingsData().myChars || []);
   chars.forEach(c => {
     const btn = document.createElement('button'); btn.className = 'char-btn'; btn.textContent = c;
+    if (savedMyChars.has(c)) { myChars.add(c); btn.classList.add('selected'); }
     btn.onclick = () => {
       if (myChars.has(c)) { myChars.delete(c); charVoices.delete(c); btn.classList.remove('selected'); }
       else { myChars.add(c); btn.classList.add('selected'); }
-      buildVoiceSettings(); checkReady();
+      buildVoiceSettings(); saveSettings(); checkReady();
     };
     list.appendChild(btn);
   });
@@ -1526,6 +1553,12 @@ function endRehearsal() {
 
 function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function toast(msg) { const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2800); }
+
+// restore speed on load
+(function() {
+  const s = loadSettingsData();
+  if (s.speed) { $('speed').value = s.speed; $('speed-val').textContent = s.speed.toFixed(1) + '×'; }
+})();
 
 renderHistory();
 
