@@ -1,0 +1,9 @@
+node_modules/
+_archive/
+.github/
+package.json
+package-lock.json
+worker.js
+.gitignore
+.DS_Store
+*.log
