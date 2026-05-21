@@ -358,6 +358,20 @@
 
   .btn-again:hover { background: var(--sage); }
 
+  /* Chapter indicator */
+  .chapter-indicator {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: #4A6A9A;
+    background: #E8EEF8;
+    border: 1px solid #C8D8F0;
+    border-radius: 20px;
+    padding: 4px 14px;
+    margin-bottom: 14px;
+  }
+
   /* Toast */
   .toast {
     position: fixed;
@@ -1030,6 +1044,8 @@
       <p id="rehearsal-sub"></p>
     </div>
 
+    <div id="chapter-indicator-wrap" style="display:none;"><span class="chapter-indicator" id="chapter-indicator"></span></div>
+
     <div class="progress-wrap">
       <div class="progress-fill" id="progress" style="width:0%"></div>
     </div>
@@ -1623,11 +1639,24 @@ function buildScript() {
   }
 }
 
+function updateChapterIndicator() {
+  const wrap = $('chapter-indicator-wrap');
+  if (selectedChapter === null && chapters.length) {
+    const curChap = chapters.find(ch => idx >= ch.start && idx <= ch.end);
+    if (curChap) {
+      $('chapter-indicator').textContent = curChap.title;
+      wrap.style.display = '';
+      return;
+    }
+  }
+  wrap.style.display = 'none';
+}
+
 function advance() {
   isPaused = false; speakGen++;
   speechSynthesis.cancel();
   if (idx > practiceEnd) { endRehearsal(); return; }
-  updateProgress(); updateStyles(); scrollTo(idx);
+  updateProgress(); updateStyles(); scrollTo(idx); updateChapterIndicator();
   const line = script[idx];
   const isNarratorLine = line.type !== 'line';
   isMyTurn = !isNarratorLine && myChars.has(line.char);
