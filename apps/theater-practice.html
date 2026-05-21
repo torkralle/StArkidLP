@@ -203,7 +203,7 @@
   .btn-start:disabled { opacity: 0.3; cursor: not-allowed; }
 
   /* ── Rehearsal ── */
-  #rehearsal { display: none; }
+  #rehearsal { display: none; padding-bottom: 170px; }
 
   .progress-wrap {
     height: 3px;
@@ -393,6 +393,31 @@
   }
 
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* Fixed bottom bar during rehearsal */
+  #rehearsal-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -2px 12px rgba(58,53,48,0.07);
+    padding: 0 0 env(safe-area-inset-bottom);
+    z-index: 100;
+    display: none;
+  }
+
+  #rehearsal-bar-inner {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 10px 20px 12px;
+  }
+
+  #rehearsal-bar .your-turn { margin-bottom: 7px; }
+  #rehearsal-bar .status { margin-bottom: 8px; }
+
+  body.rehearsing .toast { bottom: 155px; z-index: 101; }
   /* Script Editor */
   .editor-rows { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
 
@@ -1052,17 +1077,6 @@
 
     <div class="script-area" id="script-area"></div>
 
-    <div class="your-turn" id="your-turn">あなたのセリフです</div>
-    <div class="status" id="status"></div>
-
-    <div class="controls">
-      <button class="btn-icon" id="home-btn" title="トップへ戻る">⌂</button>
-      <button class="btn-icon" id="stop-btn" title="読み上げ停止">⏸</button>
-      <button class="btn-next" id="next-btn" disabled>次へ →</button>
-      <button class="btn-icon hidden" id="next-chapter-btn" title="次の章へ">⏭</button>
-      <button class="btn-icon" id="reset-btn" title="最初から">↩</button>
-    </div>
-
     <div class="finished" id="finished">
       <div class="big">🎭</div>
       <h2>お疲れ様でした</h2>
@@ -1071,6 +1085,19 @@
     </div>
   </div>
 
+</div>
+<div id="rehearsal-bar">
+  <div id="rehearsal-bar-inner">
+    <div class="your-turn" id="your-turn">あなたのセリフです</div>
+    <div class="status" id="status"></div>
+    <div class="controls">
+      <button class="btn-icon" id="home-btn" title="トップへ戻る">⌂</button>
+      <button class="btn-icon" id="stop-btn" title="読み上げ停止">⏸</button>
+      <button class="btn-next" id="next-btn" disabled>次へ →</button>
+      <button class="btn-icon hidden" id="next-chapter-btn" title="次の章へ">⏭</button>
+      <button class="btn-icon" id="reset-btn" title="最初から">↩</button>
+    </div>
+  </div>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -1579,6 +1606,8 @@ $('reset-btn').onclick = start;
 $('home-btn').onclick = () => {
   speakGen++; speechSynthesis.cancel();
   $('rehearsal').style.display = 'none';
+  $('rehearsal-bar').style.display = 'none';
+  document.body.classList.remove('rehearsing');
   $('setup').style.display = '';
 };
 $('next-btn').onclick = () => { if (isMyTurn || isPaused) { isMyTurn = false; idx++; advance(); } };
@@ -1613,6 +1642,7 @@ function start() {
   practiceEnd   = selectedChapter !== null ? chapters[selectedChapter].end   : script.length - 1;
   idx = practiceStart;
   $('setup').style.display = 'none'; $('rehearsal').style.display = 'block';
+  $('rehearsal-bar').style.display = 'block'; document.body.classList.add('rehearsing');
   $('finished').style.display = 'none'; $('script-area').style.display = '';
   $('your-turn').style.display = 'none';
   const chapName = selectedChapter !== null ? `${chapters[selectedChapter].title} ／ ` : '';
@@ -1688,17 +1718,28 @@ function advance() {
 
 function speak(text, voice, cb) {
   if (!window.speechSynthesis) { cb(); return; }
+  if (!voices.length) loadVoices();
   const gen = speakGen;
-  const u = new SpeechSynthesisUtterance(text);
-  if (voice) u.voice = voice;
-  u.rate = parseFloat($('speed').value);
-  u.pitch = voicePitch;
-  u.volume = voiceVolume;
-  u.lang = 'ja-JP';
-  u.onend = () => { if (gen === speakGen) cb(); };
-  u.onerror = () => { if (gen === speakGen) cb(); };
-  speechSynthesis.speak(u);
+  // iOS: cancel() + immediate speak() is silently dropped — wait 50ms first
+  setTimeout(() => {
+    if (gen !== speakGen) return;
+    const u = new SpeechSynthesisUtterance(text);
+    if (voice) { u.voice = voice; u.lang = voice.lang || 'ja-JP'; } else { u.lang = 'ja-JP'; }
+    u.rate = parseFloat($('speed').value);
+    u.pitch = voicePitch;
+    u.volume = voiceVolume;
+    u.onend = () => { if (gen === speakGen) cb(); };
+    u.onerror = () => { if (gen === speakGen) cb(); };
+    speechSynthesis.speak(u);
+  }, 50);
 }
+
+// iOS workaround: speechSynthesis can pause mid-utterance without firing onend
+setInterval(() => {
+  if (window.speechSynthesis && speechSynthesis.speaking && speechSynthesis.paused) {
+    speechSynthesis.resume();
+  }
+}, 250);
 
 function updateProgress() {
   const total = practiceEnd - practiceStart;
