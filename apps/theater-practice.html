@@ -336,6 +336,9 @@
 
   .btn-icon:hover { border-color: var(--sage-mid); background: #F2F6F1; }
 
+  #ff-btn { touch-action: none; user-select: none; -webkit-user-select: none; }
+  #ff-btn.ff-active { border-color: var(--sage-mid); background: #E8F0E6; color: var(--sage-dk); }
+
   /* Finished */
   .finished { display: none; text-align: center; padding: 44px 0; }
   .finished .big { font-size: 40px; margin-bottom: 14px; }
@@ -1128,6 +1131,7 @@
     <div class="controls">
       <button class="btn-icon" id="home-btn" title="トップへ戻る">⌂</button>
       <button class="btn-icon" id="stop-btn" title="読み上げ停止">⏸</button>
+      <button class="btn-icon" id="ff-btn" title="早送り（押し続ける）">⏩</button>
       <button class="btn-next" id="next-btn" disabled>次へ →</button>
       <button class="btn-icon hidden" id="next-chapter-btn" title="次の章へ">⏭</button>
       <button class="btn-icon" id="reset-btn" title="最初から">↩</button>
@@ -1140,7 +1144,7 @@
 let script = [], chapters = [], selectedChapter = null;
 let practiceStart = 0, practiceEnd = 0;
 let myChars = new Set(), idx = 0, voices = [], charVoices = new Map(), isMyTurn = false;
-let speakGen = 0, isPaused = false, hideMyLines = false;
+let speakGen = 0, isPaused = false, hideMyLines = false, isFastForward = false;
 let activeTab = 'csv';
 let narratorVoice = null;
 let voicePitch = 1.0, voiceVolume = 1.0, autoAdvanceMine = false;
@@ -1666,6 +1670,20 @@ $('next-chapter-btn').onclick = () => {
     buildScript(); advance();
   }
 };
+const ffBtn = $('ff-btn');
+ffBtn.addEventListener('pointerdown', e => {
+  ffBtn.setPointerCapture(e.pointerId);
+  ffBtn.classList.add('ff-active');
+  isFastForward = true;
+  if (!isMyTurn && !isPaused) {
+    speakGen++; speechSynthesis.cancel();
+    setTimeout(advance, 60);
+  }
+});
+const stopFF = () => { isFastForward = false; ffBtn.classList.remove('ff-active'); };
+ffBtn.addEventListener('pointerup', stopFF);
+ffBtn.addEventListener('pointercancel', stopFF);
+
 $('hide-mine-btn').onclick = () => {
   hideMyLines = !hideMyLines;
   $('hide-mine-btn').classList.toggle('active', hideMyLines);
@@ -1758,7 +1776,7 @@ function advance() {
     const voice = isNarratorLine
       ? (narratorVoice || voices[0] || null)
       : (charVoices.get(line.char) || voices[0] || null);
-    speak(line.text, voice, () => { if (!isMyTurn) { idx++; setTimeout(advance, 350); } });
+    speak(line.text, voice, () => { if (!isMyTurn) { idx++; setTimeout(advance, isFastForward ? 0 : 350); } });
   }
 }
 
@@ -1771,7 +1789,7 @@ function speak(text, voice, cb) {
     if (gen !== speakGen) return;
     const u = new SpeechSynthesisUtterance(text);
     if (voice) { u.voice = voice; u.lang = voice.lang || 'ja-JP'; } else { u.lang = 'ja-JP'; }
-    u.rate = parseFloat($('speed').value);
+    u.rate = isFastForward ? Math.min(10, parseFloat($('speed').value) * 3) : parseFloat($('speed').value);
     u.pitch = voicePitch;
     u.volume = voiceVolume;
     u.onend = () => { if (gen === speakGen) cb(); };
