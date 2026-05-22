@@ -1699,31 +1699,45 @@ ffBtn.addEventListener('pointercancel', stopFF);
 
 function updateHideMineBtn() {
   const btn = $('hide-mine-btn');
-  if (!hideMyLines) {
-    btn.textContent = '👁 セリフを隠す'; btn.classList.remove('active');
-  } else if (currentRevealed) {
-    btn.textContent = '🙈 隠す'; btn.classList.add('active');
-  } else {
-    btn.textContent = '👁 セリフを表示'; btn.classList.add('active');
-  }
+  btn.textContent = hideMyLines ? '👁 セリフを表示' : '👁 セリフを隠す';
+  btn.classList.toggle('active', hideMyLines);
 }
 
-$('hide-mine-btn').onclick = () => {
-  if (!hideMyLines) {
-    hideMyLines = true;
-    currentRevealed = false;
-    $('script-area').classList.add('hide-mine');
-  } else if (!currentRevealed) {
-    currentRevealed = true;
-    const el = $(`l${idx}`);
-    if (el && el.classList.contains('mine')) el.classList.add('revealed');
-  } else {
-    currentRevealed = false;
-    document.querySelectorAll('#script-area .line.revealed').forEach(e => e.classList.remove('revealed'));
-  }
-  updateHideMineBtn();
-  saveSettings();
-};
+(function() {
+  const btn = $('hide-mine-btn');
+  btn.style.touchAction = 'none';
+  btn.style.userSelect = 'none';
+  let pressTimer = null;
+
+  btn.addEventListener('pointerdown', e => {
+    btn.setPointerCapture(e.pointerId);
+    if (hideMyLines) {
+      pressTimer = setTimeout(() => {
+        currentRevealed = true;
+        const el = $(`l${idx}`);
+        if (el && el.classList.contains('mine')) el.classList.add('revealed');
+        updateHideMineBtn();
+      }, 180);
+    }
+  });
+
+  const endPress = (doToggle) => {
+    clearTimeout(pressTimer);
+    if (currentRevealed) {
+      currentRevealed = false;
+      document.querySelectorAll('#script-area .line.revealed').forEach(e => e.classList.remove('revealed'));
+      updateHideMineBtn();
+    } else if (doToggle) {
+      hideMyLines = !hideMyLines;
+      $('script-area').classList.toggle('hide-mine', hideMyLines);
+      updateHideMineBtn();
+      saveSettings();
+    }
+  };
+
+  btn.addEventListener('pointerup', () => endPress(true));
+  btn.addEventListener('pointercancel', () => endPress(false));
+})();
 
 $('stop-btn').onclick = () => {
   speakGen++; isPaused = true;
