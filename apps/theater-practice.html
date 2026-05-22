@@ -449,8 +449,7 @@
     background: #FDF5F2;
   }
 
-  .script-area.hide-mine .line.mine .text,
-  .script-area:not(.hide-mine) .line.mine:not(.active-mine) .text {
+  .script-area.hide-mine .line.mine:not(.revealed) .text {
     filter: blur(5px);
     user-select: none;
   }
@@ -1146,7 +1145,7 @@
 let script = [], chapters = [], selectedChapter = null;
 let practiceStart = 0, practiceEnd = 0;
 let myChars = new Set(), idx = 0, voices = [], charVoices = new Map(), isMyTurn = false;
-let speakGen = 0, isPaused = false, hideMyLines = false, isFastForward = false, ffSkipDelay = 80;
+let speakGen = 0, isPaused = false, hideMyLines = false, currentRevealed = false, isFastForward = false, ffSkipDelay = 80;
 let activeTab = 'csv';
 let narratorVoice = null;
 let voicePitch = 1.0, voiceVolume = 1.0, autoAdvanceMine = false;
@@ -1698,11 +1697,31 @@ ffBtn.addEventListener('pointerdown', e => { ffBtn.setPointerCapture(e.pointerId
 ffBtn.addEventListener('pointerup', stopFF);
 ffBtn.addEventListener('pointercancel', stopFF);
 
+function updateHideMineBtn() {
+  const btn = $('hide-mine-btn');
+  if (!hideMyLines) {
+    btn.textContent = '👁 セリフを隠す'; btn.classList.remove('active');
+  } else if (currentRevealed) {
+    btn.textContent = '🙈 隠す'; btn.classList.add('active');
+  } else {
+    btn.textContent = '👁 セリフを表示'; btn.classList.add('active');
+  }
+}
+
 $('hide-mine-btn').onclick = () => {
-  hideMyLines = !hideMyLines;
-  $('hide-mine-btn').classList.toggle('active', hideMyLines);
-  $('hide-mine-btn').textContent = hideMyLines ? '👁 セリフを表示' : '👁 セリフを隠す';
-  $('script-area').classList.toggle('hide-mine', hideMyLines);
+  if (!hideMyLines) {
+    hideMyLines = true;
+    currentRevealed = false;
+    $('script-area').classList.add('hide-mine');
+  } else if (!currentRevealed) {
+    currentRevealed = true;
+    const el = $(`l${idx}`);
+    if (el && el.classList.contains('mine')) el.classList.add('revealed');
+  } else {
+    currentRevealed = false;
+    document.querySelectorAll('#script-area .line.revealed').forEach(e => e.classList.remove('revealed'));
+  }
+  updateHideMineBtn();
   saveSettings();
 };
 
@@ -1763,6 +1782,7 @@ function updateChapterIndicator() {
 function advance() {
   isPaused = false; speakGen++;
   speechSynthesis.cancel();
+  if (currentRevealed) { currentRevealed = false; updateHideMineBtn(); }
   if (idx > practiceEnd) { endRehearsal(); return; }
   updateProgress(); updateStyles(); scrollTo(idx); updateChapterIndicator();
   const line = script[idx];
@@ -1860,11 +1880,8 @@ function toast(msg) { const t=$('toast'); t.textContent=msg; t.classList.add('sh
   if (s.pitch != null) { voicePitch = s.pitch; $('pitch').value = s.pitch; $('pitch-val').textContent = s.pitch.toFixed(2); }
   if (s.volume != null) { voiceVolume = s.volume; $('volume').value = s.volume; $('volume-val').textContent = Math.round(s.volume * 100) + '%'; }
   if (s.autoAdvanceMine) { setAutoAdvanceMine(true); }
-  if (s.hideMyLines) {
-    hideMyLines = true;
-    $('hide-mine-btn').classList.add('active');
-    $('hide-mine-btn').textContent = '👁 セリフを表示';
-  }
+  if (s.hideMyLines) { hideMyLines = true; }
+  updateHideMineBtn();
 })();
 
 renderHistory();
