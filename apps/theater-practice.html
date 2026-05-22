@@ -336,8 +336,8 @@
 
   .btn-icon:hover { border-color: var(--sage-mid); background: #F2F6F1; }
 
-  #ff-btn { touch-action: none; user-select: none; -webkit-user-select: none; }
-  #ff-btn.ff-active { border-color: var(--sage-mid); background: #E8F0E6; color: var(--sage-dk); }
+  #ff-btn, #ff-slow-btn { touch-action: none; user-select: none; -webkit-user-select: none; }
+  #ff-btn.ff-active, #ff-slow-btn.ff-active { border-color: var(--sage-mid); background: #E8F0E6; color: var(--sage-dk); }
 
   /* Finished */
   .finished { display: none; text-align: center; padding: 44px 0; }
@@ -1131,6 +1131,7 @@
     <div class="controls">
       <button class="btn-icon" id="home-btn" title="トップへ戻る">⌂</button>
       <button class="btn-icon" id="stop-btn" title="読み上げ停止">⏸</button>
+      <button class="btn-icon" id="ff-slow-btn" title="ゆっくり早送り（押し続ける）">▷</button>
       <button class="btn-icon" id="ff-btn" title="早送り（押し続ける）">⏩</button>
       <button class="btn-next" id="next-btn" disabled>次へ →</button>
       <button class="btn-icon hidden" id="next-chapter-btn" title="次の章へ">⏭</button>
@@ -1144,7 +1145,7 @@
 let script = [], chapters = [], selectedChapter = null;
 let practiceStart = 0, practiceEnd = 0;
 let myChars = new Set(), idx = 0, voices = [], charVoices = new Map(), isMyTurn = false;
-let speakGen = 0, isPaused = false, hideMyLines = false, isFastForward = false;
+let speakGen = 0, isPaused = false, hideMyLines = false, isFastForward = false, ffSkipDelay = 80;
 let activeTab = 'csv';
 let narratorVoice = null;
 let voicePitch = 1.0, voiceVolume = 1.0, autoAdvanceMine = false;
@@ -1671,16 +1672,28 @@ $('next-chapter-btn').onclick = () => {
   }
 };
 const ffBtn = $('ff-btn');
-ffBtn.addEventListener('pointerdown', e => {
-  ffBtn.setPointerCapture(e.pointerId);
-  ffBtn.classList.add('ff-active');
+const ffSlowBtn = $('ff-slow-btn');
+
+function startFF(btn, delay) {
+  document.querySelectorAll('.ff-active').forEach(b => b.classList.remove('ff-active'));
+  btn.classList.add('ff-active');
   isFastForward = true;
+  ffSkipDelay = delay;
   if (!isMyTurn && !isPaused) {
     speakGen++; speechSynthesis.cancel();
     setTimeout(advance, 60);
   }
-});
-const stopFF = () => { isFastForward = false; ffBtn.classList.remove('ff-active'); };
+}
+const stopFF = () => {
+  isFastForward = false;
+  document.querySelectorAll('.ff-active').forEach(b => b.classList.remove('ff-active'));
+};
+
+ffSlowBtn.addEventListener('pointerdown', e => { ffSlowBtn.setPointerCapture(e.pointerId); startFF(ffSlowBtn, 400); });
+ffSlowBtn.addEventListener('pointerup', stopFF);
+ffSlowBtn.addEventListener('pointercancel', stopFF);
+
+ffBtn.addEventListener('pointerdown', e => { ffBtn.setPointerCapture(e.pointerId); startFF(ffBtn, 80); });
 ffBtn.addEventListener('pointerup', stopFF);
 ffBtn.addEventListener('pointercancel', stopFF);
 
@@ -1775,7 +1788,7 @@ function advance() {
     }
     if (isFastForward) {
       const gen = speakGen;
-      setTimeout(() => { if (gen === speakGen) { idx++; advance(); } }, 80);
+      setTimeout(() => { if (gen === speakGen) { idx++; advance(); } }, ffSkipDelay);
     } else {
       const voice = isNarratorLine
         ? (narratorVoice || voices[0] || null)
