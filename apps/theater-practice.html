@@ -1773,10 +1773,15 @@ function advance() {
     } else {
       $('status').innerHTML = `<span class="hl">${esc(line.char)}</span> が話しています…`;
     }
-    const voice = isNarratorLine
-      ? (narratorVoice || voices[0] || null)
-      : (charVoices.get(line.char) || voices[0] || null);
-    speak(line.text, voice, () => { if (!isMyTurn) { idx++; setTimeout(advance, isFastForward ? 0 : 350); } });
+    if (isFastForward) {
+      const gen = speakGen;
+      setTimeout(() => { if (gen === speakGen) { idx++; advance(); } }, 80);
+    } else {
+      const voice = isNarratorLine
+        ? (narratorVoice || voices[0] || null)
+        : (charVoices.get(line.char) || voices[0] || null);
+      speak(line.text, voice, () => { if (!isMyTurn) { idx++; setTimeout(advance, 350); } });
+    }
   }
 }
 
@@ -1789,7 +1794,7 @@ function speak(text, voice, cb) {
     if (gen !== speakGen) return;
     const u = new SpeechSynthesisUtterance(text);
     if (voice) { u.voice = voice; u.lang = voice.lang || 'ja-JP'; } else { u.lang = 'ja-JP'; }
-    u.rate = isFastForward ? Math.min(10, parseFloat($('speed').value) * 3) : parseFloat($('speed').value);
+    u.rate = parseFloat($('speed').value);
     u.pitch = voicePitch;
     u.volume = voiceVolume;
     u.onend = () => { if (gen === speakGen) cb(); };
