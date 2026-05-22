@@ -449,7 +449,8 @@
     background: #FDF5F2;
   }
 
-  .script-area.hide-mine .line.mine .text {
+  .script-area.hide-mine .line.mine .text,
+  .script-area:not(.hide-mine) .line.mine:not(.active-mine) .text {
     filter: blur(5px);
     user-select: none;
   }
