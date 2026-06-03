@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://st.arkid.jp/sitemap.xml
