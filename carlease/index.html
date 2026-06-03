@@ -23,6 +23,63 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="St.Arkid">
   <link rel="canonical" href="https://st.arkid.jp/carlease/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://st.arkid.jp/carlease/#service",
+        "name": "StudentCarLease — 学生向けカーリース",
+        "description": "北海道の学生のための月額定額カーリース。¥15,000〜から自賠責・車検コミ。学籍番号認証でスムーズ審査、初期費用ゼロでカーライフをスタート。",
+        "url": "https://st.arkid.jp/carlease/",
+        "provider": { "@id": "https://st.arkid.jp/#organization" },
+        "areaServed": { "@type": "Place", "name": "北海道" },
+        "audience": { "@type": "Audience", "name": "大学生・専門学校生" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "個人専用プラン",
+            "description": "学生1名につき車1台を専有。自賠責・車検・税金・スタッドレスタイヤすべて込み。",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "15000",
+              "priceCurrency": "JPY",
+              "unitText": "月"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "シェア駐車場プラン",
+            "description": "大学・学生寮の駐車場に常設した車をシェア利用。アプリで事前予約して乗り放題。",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "5000",
+              "priceCurrency": "JPY",
+              "unitText": "月"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "St.Arkid", "item": "https://st.arkid.jp/" },
+          { "@type": "ListItem", "position": 2, "name": "学生向けカーリース", "item": "https://st.arkid.jp/carlease/" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://st.arkid.jp/carlease/#webpage",
+        "url": "https://st.arkid.jp/carlease/",
+        "name": "StudentCarLease | 学生向けカーリース — St.Arkid",
+        "description": "北海道の学生のための月額定額カーリース。¥15,000〜から自賠責・車検コミ。学籍番号認証でスムーズ審査、アプリ完結でカーライフをスタート。",
+        "inLanguage": "ja",
+        "isPartOf": { "@id": "https://st.arkid.jp/#website" }
+      }
+    ]
+  }
+  </script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -473,7 +530,7 @@
       display: inline-block;
       overflow: hidden;
     }
-    .h3-wrap h3 {
+    .h3-wrap h2 {
       font-size: clamp(28px, 4vw, 42px);
       font-weight: 300;
       letter-spacing: 0.02em;
@@ -1178,7 +1235,7 @@
         <span class="section-label-text">Why You Need It</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
-        <h3>北海道の学生に、<br>クルマは生活インフラ</h3>
+        <h2>北海道の学生に、<br>クルマは生活インフラ</h2>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
@@ -1217,7 +1274,7 @@
         <span class="section-label-text">Plans</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--surface);">
-        <h3>2つのプランから<br>選べます</h3>
+        <h2>2つのプランから<br>選べます</h2>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
@@ -1281,7 +1338,7 @@
         <span class="section-label-text">How to Start</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black);">
-        <h3>4ステップで<br>カーライフスタート</h3>
+        <h2>4ステップで<br>カーライフスタート</h2>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">
@@ -1328,7 +1385,7 @@
         <span class="section-label-text">Features</span>
       </div>
       <div class="h3-wrap reveal reveal-delay-1" style="background: var(--black-mid);">
-        <h3>St.Arkidが選ばれる<br>6つの理由</h3>
+        <h2>St.Arkidが選ばれる<br>6つの理由</h2>
         <div class="h3-overlay"></div>
       </div>
       <p class="reveal reveal-delay-2">一般のカーリースが断る「学生」を、私たちは全力でサポートします。</p>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名刺 — St.Arkid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:       #121212;
+      --black-mid:   #1e1e1e;
+      --gray:        #757575;
+      --gray-light:  #c7c7c7;
+      --white:       #ffffff;
+      --blue:        #4290b6;
+      --font-jp: 'Noto Sans JP', sans-serif;
+      --font-en: 'Jost', sans-serif;
+
+      /* 91mm × 55mm の 2× 表示: 688 × 416 */
+      --card-w: 688px;
+      --card-h: 416px;
+      --card-r: 6px;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; }
+
+    body {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 48px;
+      padding: 60px 24px;
+      font-family: var(--font-jp);
+    }
+
+    /* ── ページ見出し ── */
+    .page-title {
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: var(--gray);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .page-title::before,
+    .page-title::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--gray);
+      opacity: 0.4;
+    }
+
+    /* ── カード共通 ── */
+    .card-scene {
+      width: var(--card-w);
+      height: var(--card-h);
+      perspective: 1400px;
+      cursor: pointer;
+    }
+    .card-flip {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-scene:hover .card-flip,
+    .card-scene.flipped .card-flip {
+      transform: rotateY(180deg);
+    }
+    .card-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: var(--card-r);
+      overflow: hidden;
+    }
+    .card-back { transform: rotateY(180deg); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       表面（Front）
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    .front {
+      background: var(--black);
+      padding: 44px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .front::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 3px;
+      height: 80px;
+      background: var(--blue);
+    }
+
+    .f-logo {
+      font-family: var(--font-en);
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      line-height: 1;
+    }
+    .f-logo .dot { color: var(--blue); }
+
+    .f-name-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px 0 8px;
+    }
+    .f-title-en {
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .f-title-en::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: var(--blue);
+    }
+    .f-title-jp {
+      font-family: var(--font-jp);
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray);
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+    .f-name-jp {
+      font-family: var(--font-jp);
+      font-size: 34px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+    .f-name-en {
+      font-family: var(--font-en);
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      color: var(--gray-light);
+    }
+
+    .f-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .f-contact-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .f-contact-label {
+      font-family: var(--font-en);
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      color: var(--gray);
+      text-transform: uppercase;
+      width: 36px;
+      flex-shrink: 0;
+    }
+    .f-contact-value {
+      font-family: var(--font-en);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--gray-light);
+    }
+
+    .f-bg-text {
+      position: absolute;
+      bottom: 36px;
+      right: 44px;
+      font-family: var(--font-en);
+      font-size: 80px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: rgba(255,255,255,0.03);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       裏面（Back）
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    .back {
+      background: var(--black-mid);
+      padding: 34px 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    /* 左上の装飾円 */
+    .back::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 180px; height: 180px;
+      border: 1px solid rgba(66,144,182,0.1);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    /* ── ヘッダー行（ロゴ + QR） ── */
+    .b-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .b-header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .b-logo {
+      font-family: var(--font-en);
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      line-height: 1;
+    }
+    .b-logo .dot { color: var(--blue); }
+    .b-tagline {
+      font-family: var(--font-jp);
+      font-size: 10px;
+      font-weight: 300;
+      color: var(--gray);
+      letter-spacing: 0.14em;
+    }
+    .b-location {
+      font-family: var(--font-jp);
+      font-size: 10px;
+      color: var(--gray);
+      letter-spacing: 0.1em;
+      margin-top: 2px;
+    }
+
+    /* QRコードブロック */
+    .b-qr-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+    #qrcode {
+      width: 84px;
+      height: 84px;
+      background: #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #qrcode img,
+    #qrcode canvas {
+      display: block !important;
+      width: 84px !important;
+      height: 84px !important;
+    }
+    .b-qr-label {
+      font-family: var(--font-en);
+      font-size: 8.5px;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+    }
+
+    /* ── 区切り線 ── */
+    .b-divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(255,255,255,0.07);
+    }
+
+    /* ── 事業内容 ── */
+    .b-services {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .b-services-label {
+      font-family: var(--font-en);
+      font-size: 8px;
+      letter-spacing: 0.25em;
+      color: var(--blue);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .b-services-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(66,144,182,0.2);
+    }
+    .b-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px 16px;
+    }
+    .b-services-grid span {
+      font-family: var(--font-jp);
+      font-size: 10.5px;
+      font-weight: 300;
+      color: var(--gray-light);
+      letter-spacing: 0.04em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+    .b-services-grid span::before {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 3px;
+      background: var(--blue);
+      border-radius: 50%;
+      flex-shrink: 0;
+      opacity: 0.8;
+    }
+
+    /* ── ヒント ── */
+    .hint {
+      font-family: var(--font-en);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.18);
+      text-transform: uppercase;
+    }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       印刷
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    @media print {
+      body {
+        background: white;
+        gap: 0;
+        padding: 0;
+        min-height: auto;
+      }
+      .page-title, .hint { display: none; }
+      .card-scene {
+        width: 91mm;
+        height: 55mm;
+        cursor: default;
+        page-break-after: always;
+        margin: 0;
+      }
+      .card-flip {
+        transform: none !important;
+        transform-style: flat;
+      }
+      .card-face {
+        position: relative;
+        backface-visibility: visible;
+        -webkit-backface-visibility: visible;
+      }
+      .card-back {
+        transform: none;
+        margin-top: 8mm;
+      }
+      :root {
+        --card-w: 91mm;
+        --card-h: 55mm;
+      }
+      .front, .back { width: 91mm; height: 55mm; }
+      .f-name-jp { font-size: 20px; }
+      .f-logo, .b-logo { font-size: 14px; }
+      .f-bg-text { display: none; }
+      .b-services-grid span { font-size: 7px; }
+      .b-tagline, .b-location { font-size: 7px; }
+      #qrcode, #qrcode img, #qrcode canvas { width: 52px !important; height: 52px !important; }
+    }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       レスポンシブ
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    @media (max-width: 740px) {
+      :root {
+        --card-w: min(92vw, 480px);
+        --card-h: calc(min(92vw, 480px) * 0.605);
+      }
+      .f-name-jp { font-size: clamp(18px, 5vw, 34px); }
+      .f-logo, .b-logo { font-size: clamp(13px, 3vw, 22px); }
+      .front { padding: clamp(22px, 5vw, 44px) clamp(24px, 6vw, 48px); }
+      .back { padding: clamp(18px, 4vw, 34px) clamp(20px, 5vw, 40px) clamp(16px, 3.5vw, 30px); }
+      .b-tagline, .b-location { font-size: clamp(7px, 1.5vw, 10px); }
+      .b-services-grid span { font-size: clamp(7px, 1.5vw, 10.5px); }
+      #qrcode, #qrcode img, #qrcode canvas {
+        width: clamp(52px, 12vw, 84px) !important;
+        height: clamp(52px, 12vw, 84px) !important;
+      }
+      #qrcode { width: clamp(52px, 12vw, 84px); height: clamp(52px, 12vw, 84px); }
+    }
+  </style>
+</head>
+<body>
+
+<p class="page-title">Business Card — St.Arkid</p>
+
+<div class="card-scene" title="ホバーで裏面を表示">
+  <div class="card-flip">
+
+    <!-- ── 表面 ── -->
+    <div class="card-face front">
+      <div class="f-logo">St<span class="dot">.</span>Arkid</div>
+
+      <div class="f-name-block">
+        <div class="f-title-en">Representative Director</div>
+        <div class="f-title-jp">代表取締役社長</div>
+        <div class="f-name-jp">星子 祐哉</div>
+        <div class="f-name-en">Hoshiko Yuya</div>
+      </div>
+
+      <div class="f-contact">
+        <div class="f-contact-row">
+          <span class="f-contact-label">Mail</span>
+          <span class="f-contact-value">hoshiko@st.arkid.jp</span>
+        </div>
+        <div class="f-contact-row">
+          <span class="f-contact-label">Web</span>
+          <span class="f-contact-value">st.arkid.jp</span>
+        </div>
+      </div>
+
+      <div class="f-bg-text">SA</div>
+    </div>
+
+    <!-- ── 裏面 ── -->
+    <div class="card-face card-back back">
+
+      <!-- ヘッダー: ロゴ + QR -->
+      <div class="b-header">
+        <div class="b-header-left">
+          <div class="b-logo">St<span class="dot">.</span>Arkid</div>
+          <div class="b-tagline">テクノロジーを、暮らしの言語に。</div>
+          <div class="b-location">北海道札幌市</div>
+        </div>
+        <div class="b-qr-block">
+          <div id="qrcode"></div>
+          <div class="b-qr-label">st.arkid.jp</div>
+        </div>
+      </div>
+
+      <div class="b-divider"></div>
+
+      <!-- 事業内容 -->
+      <div class="b-services">
+        <div class="b-services-label">Services</div>
+        <div class="b-services-grid">
+          <span>AI活用支援</span>
+          <span>開発PM</span>
+          <span>Notionアンバサダー</span>
+          <span>民泊事業（Airbnb）</span>
+          <span>古物商</span>
+          <span>オフショア人材紹介</span>
+          <span>学生向けカーリース</span>
+          <span>レンタルドライバー派遣</span>
+          <span>自社アプリ開発</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<p class="hint">Hover to flip &nbsp;·&nbsp; Cmd+P to print</p>
+
+<!-- QR コード生成 (qrcode.js) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  new QRCode(document.getElementById('qrcode'), {
+    text: 'https://st.arkid.jp/',
+    width: 84,
+    height: 84,
+    colorDark: '#c7c7c7',
+    colorLight: '#1e1e1e',
+    correctLevel: QRCode.CorrectLevel.M
+  });
+</script>
+
+</body>
+</html>
