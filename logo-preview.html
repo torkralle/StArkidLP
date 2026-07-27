@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Preview — St.Arkid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      padding: 60px 24px;
+      font-family: 'Jost', sans-serif;
+    }
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: #757575;
+      text-transform: uppercase;
+    }
+    .preview-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .sticker-wrap {
+      filter: drop-shadow(0 8px 32px rgba(0,0,0,0.6));
+    }
+    .sticker-wrap img {
+      display: block;
+      max-width: 100%;
+    }
+    /* white background variant preview */
+    .bg-white-preview {
+      background: #f5f5f5;
+      padding: 32px 48px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="preview-block">
+    <span class="label">Dark — sticker preview</span>
+    <div class="sticker-wrap">
+      <img src="logo-sticker.svg" width="540" height="150" alt="St.Arkid sticker logo">
+    </div>
+  </div>
+
+  <div class="preview-block">
+    <span class="label">On white background</span>
+    <div class="bg-white-preview">
+      <div class="sticker-wrap">
+        <img src="logo-sticker.svg" width="540" height="150" alt="St.Arkid sticker logo">
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-block">
+    <span class="label">Small size (50%)</span>
+    <div class="sticker-wrap">
+      <img src="logo-sticker.svg" width="270" height="75" alt="St.Arkid sticker logo small">
+    </div>
+  </div>
+
+</body>
+</html>
