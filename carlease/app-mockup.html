@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentCarLease | アプリ モックアップ — St.Arkid</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#121212; --black-mid:#1c1c1c; --panel:#242424; --gray:#757575;
+    --gray-light:#c7c7c7; --surface:#f9f9f9; --white:#fff;
+    --blue:#4290b6; --blue-s:#0f2731; --green:#629f64; --green-s:#132416;
+    --red:#db5f5f; --yellow:#c0b76a;
+    --line:rgba(255,255,255,0.08);
+    --font-jp:'Noto Sans JP','Yu Gothic UI',sans-serif;
+    --font-en:'Jost',sans-serif;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:radial-gradient(circle at 50% 0%,#1e1e1e,#0d0d0d 70%);
+    color:var(--white); font-family:var(--font-jp); line-height:1.6;
+    min-height:100vh; padding:64px 24px 96px;
+  }
+
+  /* ===== PAGE HEADER ===== */
+  .page-head{max-width:1240px;margin:0 auto 56px;text-align:center;}
+  .page-eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--font-en);font-size:11px;letter-spacing:.25em;
+    color:var(--gray);text-transform:uppercase;margin-bottom:22px;
+  }
+  .page-eyebrow::before,.page-eyebrow::after{content:'';width:28px;height:1px;background:var(--gray);}
+  .page-head h1{
+    font-size:clamp(28px,4vw,44px);font-weight:300;letter-spacing:.01em;line-height:1.3;
+  }
+  .page-head h1 span{color:var(--blue);}
+  .page-head p{
+    margin-top:18px;color:var(--gray-light);font-size:15px;max-width:640px;
+    margin-left:auto;margin-right:auto;line-height:1.9;
+  }
+  .flow-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px;}
+  .flow-badge{
+    font-family:var(--font-en);font-size:11px;letter-spacing:.12em;
+    color:var(--gray-light);border:1px solid var(--line);border-radius:2px;
+    padding:7px 14px;background:rgba(255,255,255,.02);
+  }
+  .flow-badge b{color:var(--blue);font-weight:500;}
+
+  /* ===== GALLERY ===== */
+  .gallery{
+    max-width:1240px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:56px 40px;justify-items:center;
+  }
+  .device-wrap{width:300px;max-width:100%;}
+  .device-label{
+    text-align:center;margin-bottom:18px;
+  }
+  .device-step{
+    font-family:var(--font-en);font-size:11px;letter-spacing:.2em;color:var(--blue);
+    text-transform:uppercase;
+  }
+  .device-title{font-size:15px;font-weight:500;margin-top:4px;color:var(--white);}
+  .device-note{font-size:12px;color:var(--gray);margin-top:4px;line-height:1.7;}
+
+  /* ===== PHONE FRAME ===== */
+  .phone{
+    position:relative;width:300px;height:620px;border-radius:40px;
+    background:#000;padding:11px;
+    box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.06);
+  }
+  .phone::before{
+    content:'';position:absolute;top:16px;left:50%;transform:translateX(-50%);
+    width:110px;height:24px;background:#000;border-radius:0 0 16px 16px;z-index:20;
+  }
+  .screen{
+    position:relative;width:100%;height:100%;border-radius:30px;overflow:hidden;
+    background:var(--black);display:flex;flex-direction:column;
+  }
+  .screen.light{background:var(--surface);color:var(--black-mid);}
+
+  /* status bar */
+  .statusbar{
+    height:40px;flex-shrink:0;display:flex;align-items:flex-end;
+    justify-content:space-between;padding:0 22px 6px;
+    font-family:var(--font-en);font-size:12px;font-weight:500;color:var(--white);
+  }
+  .light .statusbar{color:var(--black-mid);}
+  .statusbar .dots{display:flex;gap:4px;align-items:center;}
+  .statusbar .dots i{display:block;width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.85;}
+
+  /* app top bar */
+  .appbar{
+    flex-shrink:0;display:flex;align-items:center;justify-content:space-between;
+    padding:6px 20px 14px;
+  }
+  .appbar .brand{font-family:var(--font-en);font-size:16px;font-weight:500;letter-spacing:.04em;}
+  .appbar .brand span{color:var(--blue);}
+  .light .appbar .brand{color:var(--black-mid);}
+  .appbar .ic{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.06);
+    display:flex;align-items:center;justify-content:center;font-size:14px;}
+
+  .body{flex:1;overflow:hidden;padding:6px 20px 16px;display:flex;flex-direction:column;gap:14px;}
+  .body.center{justify-content:center;align-items:center;text-align:center;}
+
+  /* step dots */
+  .steps{display:flex;gap:6px;margin-bottom:4px;}
+  .steps i{height:3px;flex:1;border-radius:2px;background:rgba(255,255,255,.12);}
+  .steps i.on{background:var(--blue);}
+  .light .steps i{background:rgba(0,0,0,.1);}
+  .light .steps i.on{background:var(--blue);}
+
+  .kicker{font-family:var(--font-en);font-size:10px;letter-spacing:.2em;color:var(--gray);text-transform:uppercase;}
+  h2.sc{font-size:19px;font-weight:500;line-height:1.4;}
+  .light h2.sc{color:var(--black-mid);}
+  .lead{font-size:12.5px;color:var(--gray-light);line-height:1.8;}
+  .light .lead{color:var(--gray);}
+
+  /* form field */
+  .field{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+  .light .field{background:#fff;border-color:rgba(0,0,0,.08);}
+  .field .lb{font-family:var(--font-en);font-size:9.5px;letter-spacing:.12em;color:var(--gray);text-transform:uppercase;}
+  .field .val{font-size:14px;margin-top:3px;color:var(--white);}
+  .light .field .val{color:var(--black-mid);}
+  .field.ph .val{color:var(--gray);}
+
+  .upload{
+    border:1.5px dashed rgba(255,255,255,.18);border-radius:12px;padding:20px;text-align:center;
+  }
+  .upload .ico{font-size:26px;}
+  .upload .t{font-size:12.5px;margin-top:8px;color:var(--gray-light);}
+  .upload .s{font-size:10.5px;color:var(--gray);margin-top:3px;}
+  .upload.done{border-color:var(--green);border-style:solid;background:var(--green-s);}
+  .upload.done .t{color:var(--green);}
+
+  /* buttons */
+  .btn{
+    display:block;text-align:center;font-family:var(--font-en);font-size:12.5px;font-weight:500;
+    letter-spacing:.08em;padding:14px;border-radius:10px;border:none;cursor:pointer;
+    background:var(--white);color:var(--black);width:100%;text-decoration:none;
+  }
+  .btn.blue{background:var(--blue);color:#fff;}
+  .btn.green{background:var(--green);color:#fff;}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--gray-light);}
+  .btn-row{margin-top:auto;display:flex;flex-direction:column;gap:9px;}
+
+  /* status list */
+  .stat-row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);}
+  .stat-row:last-child{border-bottom:none;}
+  .stat-ic{width:30px;height:30px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;}
+  .stat-ic.ok{background:var(--green-s);color:var(--green);}
+  .stat-ic.now{background:var(--blue-s);color:var(--blue);}
+  .stat-ic.wait{background:rgba(255,255,255,.05);color:var(--gray);}
+  .stat-tx{flex:1;}
+  .stat-tx .m{font-size:13px;}
+  .stat-tx .s{font-size:10.5px;color:var(--gray);}
+  .tag{font-family:var(--font-en);font-size:9px;letter-spacing:.08em;padding:3px 8px;border-radius:20px;text-transform:uppercase;}
+  .tag.ok{background:var(--green-s);color:var(--green);}
+  .tag.now{background:var(--blue-s);color:var(--blue);}
+  .tag.wait{background:rgba(255,255,255,.05);color:var(--gray);}
+
+  /* score card */
+  .scorecard{background:linear-gradient(150deg,#20343d,#16232a);border:1px solid rgba(66,144,182,.3);border-radius:16px;padding:18px;}
+  .scorecard .top{display:flex;justify-content:space-between;align-items:flex-start;}
+  .scorecard .lab{font-family:var(--font-en);font-size:9.5px;letter-spacing:.15em;color:var(--blue);text-transform:uppercase;}
+  .stars{font-size:20px;letter-spacing:2px;margin-top:8px;}
+  .stars .on{color:var(--yellow);}
+  .stars .off{color:rgba(255,255,255,.14);}
+  .score-num{font-family:var(--font-en);font-size:34px;font-weight:300;line-height:1;}
+  .score-num small{font-size:14px;color:var(--gray);}
+  .score-lv{font-size:11px;color:var(--gray-light);margin-top:6px;}
+
+  .terms{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+  .term{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:12px;}
+  .term .k{font-size:10px;color:var(--gray);}
+  .term .v{font-family:var(--font-en);font-size:19px;font-weight:400;margin-top:3px;}
+  .term .v.g{color:var(--green);}
+  .term .v.b{color:var(--blue);}
+
+  /* eval axis bars */
+  .axis{margin-top:2px;}
+  .axis-row{display:flex;align-items:center;gap:10px;margin:9px 0;}
+  .axis-row .nm{font-size:11px;width:78px;flex-shrink:0;color:var(--gray-light);}
+  .axis-bar{flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden;}
+  .axis-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:3px;}
+  .axis-row .pt{font-family:var(--font-en);font-size:11px;width:24px;text-align:right;color:var(--gray-light);}
+
+  /* contract / signature */
+  .doc{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:11px;color:var(--gray-light);line-height:1.9;flex:1;overflow:hidden;}
+  .doc h4{font-size:12px;color:var(--white);margin-bottom:8px;font-weight:500;}
+  .doc .li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);}
+  .doc .li b{color:var(--white);font-weight:500;}
+  .sign{border:1.5px dashed rgba(255,255,255,.2);border-radius:12px;height:78px;display:flex;align-items:center;justify-content:center;position:relative;}
+  .sign .scrawl{font-family:'Jost',cursive;font-size:30px;color:var(--white);transform:rotate(-6deg);opacity:.92;}
+  .sign .hint{position:absolute;bottom:8px;font-size:9.5px;color:var(--gray);letter-spacing:.1em;}
+  .chk{display:flex;gap:10px;align-items:flex-start;font-size:11.5px;color:var(--gray-light);}
+  .chk .box{width:18px;height:18px;border-radius:5px;background:var(--green);color:#fff;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;}
+
+  /* home dashboard */
+  .hero-pay{background:linear-gradient(150deg,#1b3a24,#12241a);border:1px solid rgba(98,159,100,.28);border-radius:16px;padding:18px;}
+  .hero-pay .k{font-family:var(--font-en);font-size:9.5px;letter-spacing:.15em;color:var(--green);text-transform:uppercase;}
+  .hero-pay .amt{font-family:var(--font-en);font-size:32px;font-weight:300;margin-top:4px;}
+  .hero-pay .amt small{font-size:14px;color:var(--gray);}
+  .hero-pay .due{font-size:11px;color:var(--gray-light);margin-top:4px;}
+  .hero-pay .paid{display:inline-block;margin-top:12px;font-family:var(--font-en);font-size:9.5px;letter-spacing:.1em;color:var(--green);background:var(--green-s);border-radius:20px;padding:4px 12px;}
+
+  .car-card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;gap:12px;align-items:center;}
+  .car-thumb{width:64px;height:48px;border-radius:8px;background:linear-gradient(135deg,#2c3e46,#1a252b);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;}
+  .car-card .nm{font-size:13.5px;font-weight:500;}
+  .car-card .meta{font-size:10.5px;color:var(--gray);margin-top:2px;}
+
+  .quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  .quick a{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:14px 12px;text-decoration:none;color:var(--gray-light);}
+  .quick a .qi{font-size:19px;}
+  .quick a .qt{font-size:11.5px;margin-top:7px;color:var(--white);}
+  .quick a .qs{font-size:9.5px;color:var(--gray);margin-top:2px;}
+
+  /* bottom nav */
+  .tabbar{flex-shrink:0;height:58px;border-top:1px solid var(--line);display:flex;}
+  .light .tabbar{border-color:rgba(0,0,0,.06);}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-decoration:none;color:var(--gray);font-size:9px;letter-spacing:.04em;}
+  .tabbar a .ti{font-size:16px;}
+  .tabbar a.on{color:var(--blue);}
+
+  /* share calendar */
+  .cal-head{display:flex;justify-content:space-between;align-items:center;}
+  .cal-head .mo{font-family:var(--font-en);font-size:14px;letter-spacing:.06em;}
+  .cal-head .nav{display:flex;gap:8px;color:var(--gray);font-size:13px;}
+  .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;}
+  .cal .dow{font-family:var(--font-en);font-size:9px;color:var(--gray);text-align:center;padding-bottom:2px;}
+  .cal .cell{aspect-ratio:1;border-radius:7px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-en);font-size:11px;background:rgba(255,255,255,.03);color:var(--gray-light);}
+  .cal .cell.dim{opacity:.3;}
+  .cal .cell.free{background:var(--green-s);color:var(--green);}
+  .cal .cell.mine{background:var(--blue);color:#fff;}
+  .cal .cell.full{background:rgba(219,95,95,.12);color:var(--red);}
+  .cal .cell i{width:4px;height:4px;border-radius:50%;background:currentColor;margin-top:3px;}
+  .legend{display:flex;gap:14px;justify-content:center;font-size:10px;color:var(--gray);margin-top:2px;}
+  .legend span{display:flex;align-items:center;gap:5px;}
+  .legend b{width:9px;height:9px;border-radius:3px;display:inline-block;}
+
+  .slot{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px;padding:11px 13px;display:flex;justify-content:space-between;align-items:center;}
+  .slot .st{font-size:12.5px;}
+  .slot .sm{font-size:10px;color:var(--gray);margin-top:2px;}
+  .slot .pick{font-family:var(--font-en);font-size:10px;letter-spacing:.08em;padding:5px 11px;border-radius:20px;background:var(--blue);color:#fff;}
+  .slot .pick.taken{background:rgba(255,255,255,.05);color:var(--gray);}
+
+  /* admin screen */
+  .admin-kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+  .admin-kpi .k{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px;padding:11px 8px;text-align:center;}
+  .admin-kpi .n{font-family:var(--font-en);font-size:19px;font-weight:400;}
+  .admin-kpi .n.b{color:var(--blue);}
+  .admin-kpi .n.g{color:var(--green);}
+  .admin-kpi .l{font-size:8.5px;color:var(--gray);margin-top:2px;letter-spacing:.04em;}
+  .queue .q{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);}
+  .queue .q:last-child{border-bottom:none;}
+  .av{width:30px;height:30px;border-radius:50%;background:rgba(66,144,182,.15);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;}
+  .queue .qn{flex:1;font-size:12px;}
+  .queue .qn s{display:block;font-size:9.5px;color:var(--gray);text-decoration:none;margin-top:1px;}
+
+  .footer-note{max-width:1240px;margin:64px auto 0;text-align:center;color:var(--gray);font-size:12px;line-height:1.9;border-top:1px solid var(--line);padding-top:32px;}
+  .footer-note a{color:var(--blue);text-decoration:none;}
+
+  @media(max-width:640px){
+    body{padding:40px 16px 64px;}
+    .gallery{gap:44px 24px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="page-head">
+  <div class="page-eyebrow">App Mockup</div>
+  <h1>StudentCarLease <span>マッチングアプリ</span></h1>
+  <p>登録・与信審査・運転実技評価・電子契約・月額管理・シェア予約までをスマホで完結。以下は各画面のモックアップです。</p>
+  <div class="flow-badges">
+    <span class="flow-badge"><b>01</b> 登録・本人確認</span>
+    <span class="flow-badge"><b>02</b> 審査・運転評価</span>
+    <span class="flow-badge"><b>03</b> 電子契約</span>
+    <span class="flow-badge"><b>04</b> 受取・月額管理</span>
+    <span class="flow-badge"><b>+</b> シェア予約</span>
+    <span class="flow-badge"><b>+</b> 運営管理</span>
+  </div>
+</header>
+
+<div class="gallery">
+
+  <!-- ===== 1. LOGIN ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Start</div>
+      <div class="device-title">ログイン / 登録</div>
+      <div class="device-note">学生専用アカウントを作成</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="body center" style="gap:22px;padding:24px;">
+        <div>
+          <div style="font-family:var(--font-en);font-size:30px;font-weight:500;letter-spacing:.03em;">St<span style="color:var(--blue)">.</span>Arkid</div>
+          <div style="font-family:var(--font-en);font-size:11px;letter-spacing:.28em;color:var(--gray);margin-top:6px;text-transform:uppercase;">Student Car Lease</div>
+        </div>
+        <p class="lead" style="max-width:220px;">北海道の学生のための<br>月額15,000円〜のカーリース。<br>まずはアカウント登録から。</p>
+        <div style="width:100%;display:flex;flex-direction:column;gap:10px;margin-top:6px;">
+          <a class="btn blue" href="#">大学メールで新規登録</a>
+          <a class="btn ghost" href="#">ログイン</a>
+        </div>
+        <div style="font-size:10px;color:var(--gray);max-width:210px;">在学証明・運転免許・運転実技評価により審査します。保証人・来店は不要です。</div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ===== 2. STEP 01 REGISTER ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Step 01</div>
+      <div class="device-title">登録・本人確認</div>
+      <div class="device-note">学籍番号 + eKYC + 免許</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="appbar"><span class="brand">St<span>.</span>Arkid</span><span class="ic">?</span></div>
+      <div class="body">
+        <div class="steps"><i class="on"></i><i></i><i></i><i></i></div>
+        <div class="kicker">Step 01 / 登録</div>
+        <h2 class="sc">在学と本人を<br>確認します</h2>
+        <div class="field ph"><div class="lb">大学 / 学部</div><div class="val">北海道大学 理学部</div></div>
+        <div class="field"><div class="lb">学籍番号</div><div class="val">02•••••••</div></div>
+        <div class="upload done"><div class="ico">✅</div><div class="t">在学証明書 アップロード済</div><div class="s">zaigaku_2026.pdf</div></div>
+        <div class="upload"><div class="ico">🪪</div><div class="t">運転免許証を撮影</div><div class="s">表面・裏面 + 顔認証（eKYC）</div></div>
+        <div class="btn-row"><a class="btn blue" href="#">次へ：審査に進む</a></div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ===== 3. STEP 02 SCREENING ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Step 02</div>
+      <div class="device-title">審査ステータス</div>
+      <div class="device-note">学籍スコア + 運転実技評価</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="appbar"><span class="brand">St<span>.</span>Arkid</span><span class="ic">🔔</span></div>
+      <div class="body">
+        <div class="steps"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+        <div class="kicker">Step 02 / 審査</div>
+        <h2 class="sc">審査ステータス</h2>
+        <div class="stat-row"><div class="stat-ic ok">✓</div><div class="stat-tx"><div class="m">本人確認 (eKYC)</div><div class="s">照合完了</div></div><span class="tag ok">完了</span></div>
+        <div class="stat-row"><div class="stat-ic ok">✓</div><div class="stat-tx"><div class="m">学籍・在学信用スコア</div><div class="s">北海道大学 在籍を確認</div></div><span class="tag ok">承認</span></div>
+        <div class="stat-row"><div class="stat-ic now">🚗</div><div class="stat-tx"><div class="m">運転実技評価</div><div class="s">同乗チェックの日程調整中</div></div><span class="tag now">予約</span></div>
+        <div class="stat-row"><div class="stat-ic wait">…</div><div class="stat-tx"><div class="m">最終審査・条件提示</div><div class="s">頭金・全損時負担額を決定</div></div><span class="tag wait">待機</span></div>
+        <p class="lead" style="margin-top:4px;">運転の同乗チェックで安全運転レベルを5段階評価し、あなたに合った条件を提示します。</p>
+        <div class="btn-row"><a class="btn blue" href="#">実技評価を予約する</a></div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ===== 4. DRIVING EVAL RESULT ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Step 02 · 評価結果</div>
+      <div class="device-title">運転実技 5段階評価</div>
+      <div class="device-note">評価に連動した頭金・全損時負担額</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="appbar"><span class="brand">St<span>.</span>Arkid</span><span class="ic">🔔</span></div>
+      <div class="body">
+        <div class="kicker">運転実技評価 / 結果</div>
+        <div class="scorecard">
+          <div class="top">
+            <div>
+              <div class="lab">Driving Score</div>
+              <div class="stars"><span class="on">★★★★</span><span class="off">★</span></div>
+            </div>
+            <div style="text-align:right;"><div class="score-num">4<small>/5</small></div><div class="score-lv">安定して安全</div></div>
+          </div>
+          <div class="axis">
+            <div class="axis-row"><span class="nm">車両感覚</span><div class="axis-bar"><i style="width:80%"></i></div><span class="pt">4</span></div>
+            <div class="axis-row"><span class="nm">危険予測</span><div class="axis-bar"><i style="width:90%"></i></div><span class="pt">5</span></div>
+            <div class="axis-row"><span class="nm">車庫入れ</span><div class="axis-bar"><i style="width:70%"></i></div><span class="pt">4</span></div>
+            <div class="axis-row"><span class="nm">冬道対応</span><div class="axis-bar"><i style="width:70%"></i></div><span class="pt">3</span></div>
+            <div class="axis-row"><span class="nm">法規遵守</span><div class="axis-bar"><i style="width:95%"></i></div><span class="pt">5</span></div>
+          </div>
+        </div>
+        <div class="terms">
+          <div class="term"><div class="k">頭金</div><div class="v g">¥8,000</div></div>
+          <div class="term"><div class="k">全損時 負担額</div><div class="v b">¥40,000</div></div>
+        </div>
+        <p class="lead" style="font-size:11px;">評価が高いほど頭金・全損時の負担が軽くなります。安全運転で次回更新時に条件が改善します。</p>
+        <div class="btn-row"><a class="btn blue" href="#">この条件で契約へ進む</a></div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ===== 5. STEP 03 CONTRACT ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Step 03</div>
+      <div class="device-title">電子契約・署名</div>
+      <div class="device-note">その場で契約完結・保証人不要</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="appbar"><span class="brand">St<span>.</span>Arkid</span><span class="ic">📄</span></div>
+      <div class="body">
+        <div class="steps"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <div class="kicker">Step 03 / 契約</div>
+        <h2 class="sc">契約内容の確認</h2>
+        <div class="doc">
+          <h4>個人専用プラン</h4>
+          <div class="li"><span>月額</span><b>¥15,000 / 月</b></div>
+          <div class="li"><span>契約期間</span><b>2年（在学期間）</b></div>
+          <div class="li"><span>頭金</span><b>¥8,000</b></div>
+          <div class="li"><span>全損時 負担額</span><b>¥40,000</b></div>
+          <div class="li"><span>含まれるもの</span><b>自賠責・車検・税金・冬タイヤ</b></div>
+        </div>
+        <div class="chk"><span class="box">✓</span><span>利用規約・免責事項・全損時負担条件に同意します</span></div>
+        <div class="sign"><span class="scrawl">Taro Y.</span><span class="hint">SIGN HERE — 指でサイン</span></div>
+        <div class="btn-row"><a class="btn green" href="#">署名して契約を完了</a></div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ===== 6. HOME / PAYMENT ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Step 04</div>
+      <div class="device-title">ホーム / 月額管理</div>
+      <div class="device-note">受取後の支払い・車両状況</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="appbar"><span class="brand">St<span>.</span>Arkid</span><span class="ic">🔔</span></div>
+      <div class="body" style="gap:13px;">
+        <div class="hero-pay">
+          <div class="k">今月のお支払い</div>
+          <div class="amt">¥15,000<small> / 月</small></div>
+          <div class="due">次回引き落とし：2026年8月27日</div>
+          <span class="paid">● 8月分 支払い済み</span>
+        </div>
+        <div class="car-card">
+          <div class="car-thumb">🚗</div>
+          <div><div class="nm">スズキ ハスラー 4WD</div><div class="meta">札幌 500 • 冬タイヤ装着済 • 契約中</div></div>
+        </div>
+        <div class="quick">
+          <a href="#"><div class="qi">🅿️</div><div class="qt">シェア予約</div><div class="qs">空き状況を見る</div></a>
+          <a href="#"><div class="qi">🛠️</div><div class="qt">整備・車検</div><div class="qs">次回 2027/03</div></a>
+          <a href="#"><div class="qi">🚨</div><div class="qt">事故・故障</div><div class="qs">24hサポート</div></a>
+          <a href="#"><div class="qi">⭐</div><div class="qt">運転スコア</div><div class="qs">★★★★☆ 4/5</div></a>
+        </div>
+      </div>
+      <div class="tabbar">
+        <a class="on" href="#"><span class="ti">🏠</span>ホーム</a>
+        <a href="#"><span class="ti">🅿️</span>予約</a>
+        <a href="#"><span class="ti">💳</span>支払い</a>
+        <a href="#"><span class="ti">💬</span>サポート</a>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ===== 7. SHARE RESERVATION ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Share Plan</div>
+      <div class="device-title">シェア予約カレンダー</div>
+      <div class="device-note">常設車をアプリ予約 → 解錠</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="appbar"><span class="brand">St<span>.</span>Arkid</span><span class="ic">🅿️</span></div>
+      <div class="body" style="gap:12px;">
+        <div class="kicker">恵迪寮 駐車場 / 共有車</div>
+        <div class="cal-head"><span class="mo">2026 August</span><span class="nav">‹ ›</span></div>
+        <div class="cal">
+          <span class="dow">M</span><span class="dow">T</span><span class="dow">W</span><span class="dow">T</span><span class="dow">F</span><span class="dow">S</span><span class="dow">S</span>
+          <span class="cell dim">28</span><span class="cell dim">29</span><span class="cell dim">30</span><span class="cell dim">31</span><span class="cell free">1<i></i></span><span class="cell free">2<i></i></span><span class="cell full">3<i></i></span>
+          <span class="cell free">4<i></i></span><span class="cell free">5<i></i></span><span class="cell mine">6<i></i></span><span class="cell free">7<i></i></span><span class="cell free">8<i></i></span><span class="cell full">9<i></i></span><span class="cell full">10<i></i></span>
+          <span class="cell free">11<i></i></span><span class="cell free">12<i></i></span><span class="cell free">13<i></i></span><span class="cell free">14<i></i></span><span class="cell free">15<i></i></span><span class="cell free">16<i></i></span><span class="cell free">17<i></i></span>
+        </div>
+        <div class="legend">
+          <span><b style="background:var(--green)"></b>空き</span>
+          <span><b style="background:var(--blue)"></b>予約済</span>
+          <span><b style="background:var(--red)"></b>満車</span>
+        </div>
+        <div class="slot"><div><div class="st">8月6日 (水) 午前</div><div class="sm">09:00 – 13:00 ・ あなたの予約</div></div><span class="pick">解錠</span></div>
+        <div class="slot"><div><div class="st">8月6日 (水) 午後</div><div class="sm">14:00 – 18:00 ・ 空き</div></div><span class="pick">予約</span></div>
+        <div class="slot"><div><div class="st">8月6日 (水) 夜間</div><div class="sm">19:00 – 22:00 ・ 田中さん</div></div><span class="pick taken">満</span></div>
+      </div>
+      <div class="tabbar">
+        <a href="#"><span class="ti">🏠</span>ホーム</a>
+        <a class="on" href="#"><span class="ti">🅿️</span>予約</a>
+        <a href="#"><span class="ti">💳</span>支払い</a>
+        <a href="#"><span class="ti">💬</span>サポート</a>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- ===== 8. ADMIN ===== -->
+  <div class="device-wrap">
+    <div class="device-label">
+      <div class="device-step">Admin</div>
+      <div class="device-title">運営 管理ダッシュボード</div>
+      <div class="device-note">与信キュー・車両台帳・稼働</div>
+    </div>
+    <div class="phone"><div class="screen">
+      <div class="statusbar"><span>9:41</span><span class="dots"><i></i><i></i><i></i></span></div>
+      <div class="appbar"><span class="brand">St<span>.</span>Arkid <span style="font-size:9px;color:var(--gray);letter-spacing:.1em;">ADMIN</span></span><span class="ic">⚙️</span></div>
+      <div class="body" style="gap:13px;">
+        <div class="admin-kpi">
+          <div class="k"><div class="n b">3</div><div class="l">稼働台数</div></div>
+          <div class="k"><div class="n g">¥45k</div><div class="l">月間売上</div></div>
+          <div class="k"><div class="n">100%</div><div class="l">稼働率</div></div>
+        </div>
+        <div class="kicker">審査キュー / 運転評価待ち</div>
+        <div class="queue">
+          <div class="q"><div class="av">佐</div><div class="qn">佐藤 花子<s>北大 工学部 ・ 実技評価 予約済</s></div><span class="tag now">評価待</span></div>
+          <div class="q"><div class="av">鈴</div><div class="qn">鈴木 一郎<s>北大 農学部 ・ ★5 評価済</s></div><span class="tag ok">承認可</span></div>
+          <div class="q"><div class="av">高</div><div class="qn">高橋 学<s>札幌医大 ・ eKYC 完了</s></div><span class="tag wait">書類</span></div>
+        </div>
+        <div class="kicker" style="margin-top:2px;">車両台帳</div>
+        <div class="slot"><div><div class="st">ハスラー 4WD ・ 札幌500</div><div class="sm">個人 / 山田 ・ 車検 2027-03</div></div><span class="pick" style="background:var(--green-s);color:var(--green)">稼働</span></div>
+      </div>
+      <div class="tabbar">
+        <a class="on" href="#"><span class="ti">📊</span>概要</a>
+        <a href="#"><span class="ti">🧾</span>審査</a>
+        <a href="#"><span class="ti">🚗</span>車両</a>
+        <a href="#"><span class="ti">👤</span>顧客</a>
+      </div>
+    </div></div>
+  </div>
+
+</div>
+
+<div class="footer-note">
+  StudentCarLease アプリ モックアップ（面談用）<br>
+  実装状況：問い合わせ・先行受付は稼働中／登録・eKYC・与信・運転評価フローはプロトタイプ実装中／シェア予約・解錠はシェアプランのローンチに合わせて実装予定。<br>
+  <a href="index.html">← CarLease LP に戻る</a>
+</div>
+
+</body>
+</html>
