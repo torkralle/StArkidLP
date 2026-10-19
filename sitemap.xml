@@ -37,14 +37,14 @@
   </url>
 
   <url>
-    <loc>https://st.arkid.jp/apps/shuchu/support.html</loc>
+    <loc>https://st.arkid.jp/apps/shuchu/support</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://st.arkid.jp/apps/shuchu/privacy.html</loc>
+    <loc>https://st.arkid.jp/apps/shuchu/privacy</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
