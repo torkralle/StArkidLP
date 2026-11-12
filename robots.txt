@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+# Cloudflare 管理の robots.txt が GoogleOther などを Disallow: / にするため、
+# AdMob の app-ads.txt 確認だけは明示的に許可する
+User-agent: GoogleOther
+User-agent: Google-Extended
+Allow: /app-ads.txt
+Allow: /ads.txt
+Disallow: /
+
 Sitemap: https://st.arkid.jp/sitemap.xml
