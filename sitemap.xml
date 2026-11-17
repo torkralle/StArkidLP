@@ -125,4 +125,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/kyotecount/support</loc>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/kyotecount/privacy</loc>
+  </url>
 </urlset>
