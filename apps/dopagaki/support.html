@@ -53,6 +53,9 @@
       main { padding: 40px 16px 72px; }
       h1 { font-size: 24px; }
     }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
   </style>
 </head>
 <body>
@@ -62,6 +65,7 @@
 </header>
 
 <main>
+  <nav class="app-links" aria-label="アプリのリンク"><a href="./">「歩いてドパガキ」の紹介ページ</a><a href="https://apps.apple.com/jp/app/id6833058321" rel="noopener">App Store</a></nav>
   <p class="eyebrow">Support</p>
   <h1>「歩いてドパガキ」サポート</h1>
   <p class="lead">選んだアプリをふだんはブロックし、歩いた歩数で使える時間を貯めるアプリです。広告を見て1分足すこともできます。</p>

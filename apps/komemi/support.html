@@ -58,6 +58,9 @@
     th { background: var(--card); color: var(--white); }
     .table-wrap { overflow-x: auto; }
     ol { color: var(--gray-light); font-size: 15px; padding-left: 1.6em; margin: 8px 0; }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
   </style>
 </head>
 <body>
@@ -67,6 +70,7 @@
 </header>
 
 <main>
+  <nav class="app-links" aria-label="アプリのリンク"><a href="./">「コメミ」の紹介ページ</a><a href="https://apps.apple.com/jp/app/id6834823638" rel="noopener">App Store</a><span>Google Play 近日公開</span></nav>
   <p class="eyebrow">Support</p>
   <h1>「コメミ」サポート</h1>
   <p>「コメミ」は、YouTube 動画のコメントだけを保存して、機内などオフラインでも読めるようにするアプリです。YouTube アプリでオフライン保存した動画を小窓（ピクチャ・イン・ピクチャ）で再生しながら、そのコメントを並べて読めます。</p>

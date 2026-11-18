@@ -53,6 +53,9 @@
       main { padding: 40px 16px 72px; }
       h1 { font-size: 24px; }
     }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
   </style>
 </head>
 <body>
@@ -62,6 +65,7 @@
 </header>
 
 <main>
+  <nav class="app-links" aria-label="アプリのリンク"><a href="./">「板書ノート」の紹介ページ</a><span>App Store 近日公開</span></nav>
   <p class="eyebrow">Support</p>
   <h1>「板書ノート」サポート</h1>
   <p class="lead">授業や会議のスライド・板書を撮って、正面から見た形に補正し、授業ごとのノートに整理する iPhone 用アプリです。</p>

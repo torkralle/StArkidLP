@@ -58,6 +58,9 @@
     th { background: var(--card); color: var(--white); }
     .table-wrap { overflow-x: auto; }
     ol { color: var(--gray-light); font-size: 15px; padding-left: 1.6em; margin: 8px 0; }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
   </style>
 </head>
 <body>
@@ -67,6 +70,7 @@
 </header>
 
 <main>
+  <nav class="app-links" aria-label="アプリのリンク"><a href="./">「オフライン英語」の紹介ページ</a><span>App Store 近日公開</span><span>Google Play 近日公開</span></nav>
   <p class="eyebrow">Support</p>
   <h1>「オフライン英語」サポート</h1>
   <p class="lead">「オフライン英語」は、インターネットにつながらなくても使える英語学習アプリです。AI は端末の中で動くので、機内や地下鉄でも英会話の練習ができます。</p>
