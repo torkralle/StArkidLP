@@ -7,3 +7,5 @@ worker.js
 .gitignore
 .DS_Store
 *.log
+.git/
+.wrangler/
