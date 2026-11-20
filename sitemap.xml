@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://st.arkid.jp/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -31,7 +31,7 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,6 +68,16 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://st.arkid.jp/apps/kyotecount/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/kyotecount/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/kyotecount/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/kyotecount/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/kyotecount/ss-3.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://st.arkid.jp/apps/kyotecount/support</loc>
   </url>
   <url>
@@ -75,9 +85,13 @@
   </url>
   <url>
     <loc>https://st.arkid.jp/apps/ippon-board/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/ippon-board/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/ippon-board/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/ippon-board/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/ippon-board/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -103,9 +117,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/temoto-crm/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/temoto-crm/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/temoto-crm/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/temoto-crm/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/temoto-crm/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -131,9 +149,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/komemi/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/komemi/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/komemi/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/komemi/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/komemi/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -159,9 +181,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/dopagaki/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/dopagaki/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/dopagaki/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/dopagaki/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/dopagaki/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -180,9 +206,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/mechanic-exam/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/mechanic-exam/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/mechanic-exam/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/mechanic-exam/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/mechanic-exam/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -201,9 +231,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/ad-alarm/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/ad-alarm/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/ad-alarm/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/ad-alarm/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/ad-alarm/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -222,9 +256,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/shuchu/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/shuchu/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/shuchu/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/shuchu/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/shuchu/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -243,9 +281,12 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/medical-wordbook/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/medical-wordbook/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/medical-wordbook/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/medical-wordbook/ss-2.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -257,9 +298,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/woradi/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/woradi/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/woradi/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/woradi/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/woradi/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -277,9 +322,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/offline-eigo/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/offline-eigo/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/offline-eigo/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/offline-eigo/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/offline-eigo/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>
@@ -305,9 +354,13 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/silent-camera/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://st.arkid.jp/apps/silent-camera/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/silent-camera/ss-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/silent-camera/ss-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://st.arkid.jp/apps/silent-camera/ss-3.webp</image:loc></image:image>
   </url>
 
   <url>

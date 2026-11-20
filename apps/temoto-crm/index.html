@@ -12,24 +12,27 @@
   <meta property="og:description" content="スマホで使う自分専用の顧客管理（CRM）アプリ。取引先・商談・ToDoを、項目をノーコードで足しながら管理できます。ダッシュボード、カンバンのパイプライン、期日のリマインド通知。データは端末内に保存、登録不要。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/apps/temoto-crm/">
-  <meta property="og:image" content="https://st.arkid.jp/ogp.png">
+  <meta property="og:image" content="https://st.arkid.jp/apps/temoto-crm/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="てもとCRM｜個人事業主の顧客管理・営業管理">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="St.Arkid">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="てもとCRM - 個人事業主の顧客管理・営業管理｜iPhone・Android アプリ — St.Arkid">
   <meta name="twitter:description" content="スマホで使う自分専用の顧客管理（CRM）アプリ。取引先・商談・ToDoを、項目をノーコードで足しながら管理できます。ダッシュボード、カンバンのパイプライン、期日のリマインド通知。データは端末内に保存、登録不要。">
-  <meta name="twitter:image" content="https://st.arkid.jp/ogp.png">
+  <meta name="twitter:image" content="https://st.arkid.jp/apps/temoto-crm/og.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "@id": "https://st.arkid.jp/apps/temoto-crm/#app",
       "name": "てもとCRM",
       "description": "スマホで使う自分専用の顧客管理（CRM）アプリ。取引先・商談・ToDoを、項目をノーコードで足しながら管理できます。ダッシュボード、カンバンのパイプライン、期日のリマインド通知。データは端末内に保存、登録不要。",
       "url": "https://st.arkid.jp/apps/temoto-crm/",
-      "image": "https://st.arkid.jp/ogp.png",
+      "image": "https://st.arkid.jp/apps/temoto-crm/og.jpg",
       "operatingSystem": "iOS, Android",
       "applicationCategory": "BusinessApplication",
       "inLanguage": "ja",
@@ -39,15 +42,24 @@
         "priceCurrency": "JPY"
       },
       "publisher": {
-        "@type": "Organization",
-        "name": "株式会社St.Arkid",
-        "url": "https://st.arkid.jp/"
+        "@id": "https://st.arkid.jp/#organization"
       },
-      "downloadUrl": "https://apps.apple.com/jp/app/id6834715426",
+      "downloadUrl": [
+        "https://apps.apple.com/jp/app/id6834715426",
+        "https://play.google.com/store/apps/details?id=com.st.arkid.temoto_crm"
+      ],
       "sameAs": [
         "https://apps.apple.com/jp/app/id6834715426",
         "https://play.google.com/store/apps/details?id=com.st.arkid.temoto_crm"
-      ]
+      ],
+      "screenshot": [
+        "https://st.arkid.jp/apps/temoto-crm/ss-1.webp",
+        "https://st.arkid.jp/apps/temoto-crm/ss-2.webp",
+        "https://st.arkid.jp/apps/temoto-crm/ss-3.webp"
+      ],
+      "author": {
+        "@id": "https://st.arkid.jp/#organization"
+      }
     },
     {
       "@type": "FAQPage",
@@ -99,6 +111,22 @@
           "name": "てもとCRM",
           "item": "https://st.arkid.jp/apps/temoto-crm/"
         }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://st.arkid.jp/#organization",
+      "name": "株式会社St.Arkid",
+      "alternateName": [
+        "St.Arkid",
+        "ST.ARKID, K.K."
+      ],
+      "url": "https://st.arkid.jp/",
+      "logo": "https://st.arkid.jp/logo/starkid-logo-dark.svg",
+      "email": "info@st.arkid.jp",
+      "sameAs": [
+        "https://apps.apple.com/jp/developer/id1801094401",
+        "https://play.google.com/store/apps/developer?id=St.Arkid"
       ]
     }
   ]
@@ -187,6 +215,15 @@
     .others a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; color: var(--white); text-decoration: none; font-size: 14px; }
     .others a:hover { border-color: var(--accent); }
     .others span { display: block; font-size: 12px; color: var(--gray); }
+    img.app-icon { object-fit: cover; padding: 0; }
+    .stores { align-items: center; }
+    .store-badge { display: inline-block; line-height: 0; }
+    .store-badge img { height: 40px; width: auto; }
+    .store-badge-play img { height: 60px; margin: -10px -10px; }
+    .store-badge:hover { opacity: 0.85; }
+    .shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-top: 16px; }
+    .shots img { flex: none; width: 200px; height: auto; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; background: var(--card); }
+    .for-whom li { margin: 4px 0; }
   </style>
 </head>
 <body>
@@ -200,16 +237,19 @@
   <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">St.Arkid</a> › <a href="../">自社アプリ</a> › てもとCRM</nav>
   <p class="eyebrow">Mobile CRM</p>
   <div class="app-hero">
-    <div class="app-icon" aria-hidden="true">📇</div>
+    <img class="app-icon" src="icon.webp" width="80" height="80" alt="てもとCRM のアプリアイコン">
     <h1>てもとCRM<small>個人事業主の顧客管理・営業管理｜iPhone・Android アプリ</small></h1>
   </div>
   <p class="lead" style="margin-top:20px">てもとCRM は、スマホの上で自分専用の CRM（顧客管理）を組み立てて使えるアプリです。「取引先・取引先責任者・商談・活動」の営業テンプレートですぐに始められ、項目やオブジェクトはノーコードで自由に追加・変更できます。</p>
   <div class="stores">
-      <a class="store-btn" href="https://apps.apple.com/jp/app/id6834715426" rel="noopener"><span class="store-small">Download on the</span><span class="store-big"> App Store</span></a>
-      <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.st.arkid.temoto_crm" rel="noopener"><span class="store-small">GET IT ON</span><span class="store-big"> Google Play</span></a>
+      <a class="store-badge" href="https://apps.apple.com/jp/app/id6834715426" rel="noopener"><img src="../badges/app-store.svg" width="109" height="40" alt="App Store からダウンロード"></a>
+      <a class="store-badge store-badge-play" href="https://play.google.com/store/apps/details?id=com.st.arkid.temoto_crm" rel="noopener"><img src="../badges/google-play.png" width="155" height="60" alt="Google Play で手に入れよう"></a>
   </div>
   <p class="facts">対応: iPhone・Android ／ 価格: 無料（オンラインバックアップのみ月額300円／年額3,000円） ／ 提供: 株式会社St.Arkid</p>
   <div class="tags"><span class="tag">顧客管理</span><span class="tag">CRM</span><span class="tag">営業管理</span><span class="tag">案件管理</span><span class="tag">個人事業主</span></div>
+
+  <h2>こんな人におすすめ</h2>
+  <ul class="for-whom"><li>顧客・商談・ToDo をスマホで手軽に管理したい人</li><li>項目やオブジェクトを自分の仕事に合わせてノーコードで作りたい人</li><li>アカウント登録なしで、データを端末の中に置いて使いたい人</li></ul>
 
   <h2>主な特徴</h2>
   <div class="features">
@@ -218,6 +258,13 @@
     <div class="feature"><div class="feature-icon">⏰</div><h3>ToDo とリマインド</h3><p>期日の時刻にリマインド通知。電話・メール・地図・Web もワンタップで開けます。</p></div>
     <div class="feature"><div class="feature-icon">🔒</div><h3>データは手元に</h3><p>データはすべて端末の中（SQLite）に保存。アカウント登録なしで使え、CSV の書き出し・取り込みと端末内バックアップは無料です。</p></div>
     <div class="feature"><div class="feature-icon">☁️</div><h3>暗号化オンラインバックアップ（任意）</h3><p>端末でパスフレーズから暗号化（AES-256）してから保存。毎日の自動バックアップ（最新5世代）で機種変更時も復元できます。</p></div>
+  </div>
+
+  <h2>スクリーンショット</h2>
+  <div class="shots">
+    <img src="ss-1.webp" width="440" height="956" loading="lazy" decoding="async" alt="てもとCRM のアプリ画面（1）">
+    <img src="ss-2.webp" width="440" height="956" loading="lazy" decoding="async" alt="てもとCRM のアプリ画面（2）">
+    <img src="ss-3.webp" width="440" height="956" loading="lazy" decoding="async" alt="てもとCRM のアプリ画面（3）">
   </div>
 
   <h2>よくある質問</h2>
@@ -237,6 +284,7 @@
     <a href="../mechanic-exam/">整備士3級 合格ドリル<span>三級自動車整備士（総合）の学科対策</span></a>
     <a href="../ad-alarm/">広告を見ないと止まらない目覚まし<span>動画を1本見るまで鳴り続ける二度寝防止アラーム</span></a>
     <a href="../shuchu/">集中。<span>気が散るアプリをブロックして集中</span></a>
+    <a href="../kyotecount/">共テカウント<span>共通テストまでの残り日数と勉強法</span></a>
     <a href="../medical-wordbook/">医療英単語<span>医療系の英単語を効率よく学ぶ</span></a>
     <a href="../woradi/">WORaDi<span>単語帳 × AI</span></a>
     <a href="../offline-eigo/">オフライン英語<span>機内でも使える端末内AIの英会話</span></a>

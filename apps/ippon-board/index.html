@@ -12,24 +12,27 @@
   <meta property="og:description" content="大喜利の審査をみんなのスマホで。審査員が「一本」を押すと司会の画面に集まり、満点なら読み上げと効果音で「IPPON!」。飲み会・忘年会の余興や文化祭に。アプリがなくてもブラウザから参加でき、登録も不要です。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/apps/ippon-board/">
-  <meta property="og:image" content="https://st.arkid.jp/ogp.png">
+  <meta property="og:image" content="https://st.arkid.jp/apps/ippon-board/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="大喜利IPPON!｜飲み会・忘年会の大喜利を判定するアプリ">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="St.Arkid">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="大喜利IPPON! - 飲み会・忘年会の大喜利を判定するアプリ｜iPhone・Android アプリ — St.Arkid">
   <meta name="twitter:description" content="大喜利の審査をみんなのスマホで。審査員が「一本」を押すと司会の画面に集まり、満点なら読み上げと効果音で「IPPON!」。飲み会・忘年会の余興や文化祭に。アプリがなくてもブラウザから参加でき、登録も不要です。">
-  <meta name="twitter:image" content="https://st.arkid.jp/ogp.png">
+  <meta name="twitter:image" content="https://st.arkid.jp/apps/ippon-board/og.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "@id": "https://st.arkid.jp/apps/ippon-board/#app",
       "name": "大喜利IPPON!",
       "description": "大喜利の審査をみんなのスマホで。審査員が「一本」を押すと司会の画面に集まり、満点なら読み上げと効果音で「IPPON!」。飲み会・忘年会の余興や文化祭に。アプリがなくてもブラウザから参加でき、登録も不要です。",
       "url": "https://st.arkid.jp/apps/ippon-board/",
-      "image": "https://st.arkid.jp/ogp.png",
+      "image": "https://st.arkid.jp/apps/ippon-board/og.jpg",
       "operatingSystem": "iOS, Android",
       "applicationCategory": "EntertainmentApplication",
       "inLanguage": "ja",
@@ -39,15 +42,24 @@
         "priceCurrency": "JPY"
       },
       "publisher": {
-        "@type": "Organization",
-        "name": "株式会社St.Arkid",
-        "url": "https://st.arkid.jp/"
+        "@id": "https://st.arkid.jp/#organization"
       },
-      "downloadUrl": "https://apps.apple.com/jp/app/id6833998263",
+      "downloadUrl": [
+        "https://apps.apple.com/jp/app/id6833998263",
+        "https://play.google.com/store/apps/details?id=com.st.arkid.ippon_board"
+      ],
       "sameAs": [
         "https://apps.apple.com/jp/app/id6833998263",
         "https://play.google.com/store/apps/details?id=com.st.arkid.ippon_board"
-      ]
+      ],
+      "screenshot": [
+        "https://st.arkid.jp/apps/ippon-board/ss-1.webp",
+        "https://st.arkid.jp/apps/ippon-board/ss-2.webp",
+        "https://st.arkid.jp/apps/ippon-board/ss-3.webp"
+      ],
+      "author": {
+        "@id": "https://st.arkid.jp/#organization"
+      }
     },
     {
       "@type": "FAQPage",
@@ -99,6 +111,22 @@
           "name": "大喜利IPPON!",
           "item": "https://st.arkid.jp/apps/ippon-board/"
         }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://st.arkid.jp/#organization",
+      "name": "株式会社St.Arkid",
+      "alternateName": [
+        "St.Arkid",
+        "ST.ARKID, K.K."
+      ],
+      "url": "https://st.arkid.jp/",
+      "logo": "https://st.arkid.jp/logo/starkid-logo-dark.svg",
+      "email": "info@st.arkid.jp",
+      "sameAs": [
+        "https://apps.apple.com/jp/developer/id1801094401",
+        "https://play.google.com/store/apps/developer?id=St.Arkid"
       ]
     }
   ]
@@ -187,6 +215,15 @@
     .others a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; color: var(--white); text-decoration: none; font-size: 14px; }
     .others a:hover { border-color: var(--accent); }
     .others span { display: block; font-size: 12px; color: var(--gray); }
+    img.app-icon { object-fit: cover; padding: 0; }
+    .stores { align-items: center; }
+    .store-badge { display: inline-block; line-height: 0; }
+    .store-badge img { height: 40px; width: auto; }
+    .store-badge-play img { height: 60px; margin: -10px -10px; }
+    .store-badge:hover { opacity: 0.85; }
+    .shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-top: 16px; }
+    .shots img { flex: none; width: 200px; height: auto; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; background: var(--card); }
+    .for-whom li { margin: 4px 0; }
   </style>
 </head>
 <body>
@@ -200,16 +237,19 @@
   <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">St.Arkid</a> › <a href="../">自社アプリ</a> › 大喜利IPPON!</nav>
   <p class="eyebrow">Party Game</p>
   <div class="app-hero">
-    <div class="app-icon" aria-hidden="true">🎤</div>
+    <img class="app-icon" src="icon.webp" width="80" height="80" alt="大喜利IPPON! のアプリアイコン">
     <h1>大喜利IPPON!<small>飲み会・忘年会の大喜利を判定するアプリ｜iPhone・Android アプリ</small></h1>
   </div>
   <p class="lead" style="margin-top:20px">大喜利の審査を、その場にいる人のスマホで行うアプリです。司会のスマホで部屋を作り、審査員に招待リンクを送るだけ。審査員が押した「一本」がリアルタイムに司会の画面に集まり、満点になると読み上げと効果音で「IPPON!」をお知らせします。</p>
   <div class="stores">
-      <a class="store-btn" href="https://apps.apple.com/jp/app/id6833998263" rel="noopener"><span class="store-small">Download on the</span><span class="store-big"> App Store</span></a>
-      <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.st.arkid.ippon_board" rel="noopener"><span class="store-small">GET IT ON</span><span class="store-big"> Google Play</span></a>
+      <a class="store-badge" href="https://apps.apple.com/jp/app/id6833998263" rel="noopener"><img src="../badges/app-store.svg" width="109" height="40" alt="App Store からダウンロード"></a>
+      <a class="store-badge store-badge-play" href="https://play.google.com/store/apps/details?id=com.st.arkid.ippon_board" rel="noopener"><img src="../badges/google-play.png" width="155" height="60" alt="Google Play で手に入れよう"></a>
   </div>
   <p class="facts">対応: iPhone・Android ／ 価格: 無料（広告あり。買い切りの「広告を消す」で非表示にできます） ／ 提供: 株式会社St.Arkid</p>
   <div class="tags"><span class="tag">大喜利</span><span class="tag">飲み会</span><span class="tag">忘年会</span><span class="tag">余興</span><span class="tag">レクリエーション</span></div>
+
+  <h2>こんな人におすすめ</h2>
+  <ul class="for-whom"><li>飲み会・忘年会・パーティーの余興で大喜利をしたい人</li><li>審査をその場にいる全員のスマホで盛り上げたい司会・幹事</li><li>「IPPON!」の読み上げと効果音で本格的な雰囲気を出したい人</li></ul>
 
   <h2>主な特徴</h2>
   <div class="features">
@@ -217,6 +257,13 @@
     <div class="feature"><div class="feature-icon">⚡</div><h3>その場で集計して発表</h3><p>だれが押したかと合計が司会の画面にすぐ出ます。満点なら「IPPON!」、届かなければ「IPPONならず」を読み上げと効果音で発表します。</p></div>
     <div class="feature"><div class="feature-icon">🔗</div><h3>アプリなしでも参加できる</h3><p>招待リンクか4桁の部屋コードで審査員を集めます。リンクをブラウザで開けば、アプリを入れていない人も審査員になれます。</p></div>
     <div class="feature"><div class="feature-icon">📝</div><h3>お題表示と練習モード</h3><p>お題の表示と回答者の指定（回答者は審査から外れます）ができます。1台だけで流れを試せる練習モード付き。</p></div>
+  </div>
+
+  <h2>スクリーンショット</h2>
+  <div class="shots">
+    <img src="ss-1.webp" width="440" height="956" loading="lazy" decoding="async" alt="大喜利IPPON! のアプリ画面（1）">
+    <img src="ss-2.webp" width="440" height="956" loading="lazy" decoding="async" alt="大喜利IPPON! のアプリ画面（2）">
+    <img src="ss-3.webp" width="440" height="956" loading="lazy" decoding="async" alt="大喜利IPPON! のアプリ画面（3）">
   </div>
 
   <h2>よくある質問</h2>
@@ -236,6 +283,7 @@
     <a href="../mechanic-exam/">整備士3級 合格ドリル<span>三級自動車整備士（総合）の学科対策</span></a>
     <a href="../ad-alarm/">広告を見ないと止まらない目覚まし<span>動画を1本見るまで鳴り続ける二度寝防止アラーム</span></a>
     <a href="../shuchu/">集中。<span>気が散るアプリをブロックして集中</span></a>
+    <a href="../kyotecount/">共テカウント<span>共通テストまでの残り日数と勉強法</span></a>
     <a href="../medical-wordbook/">医療英単語<span>医療系の英単語を効率よく学ぶ</span></a>
     <a href="../woradi/">WORaDi<span>単語帳 × AI</span></a>
     <a href="../offline-eigo/">オフライン英語<span>機内でも使える端末内AIの英会話</span></a>
