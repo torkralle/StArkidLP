@@ -12,24 +12,27 @@
   <meta property="og:description" content="歩いた分だけスマホが使えるアプリ制限アプリ。SNS・動画・ゲームはふだんブロックし、歩くと使える時間が貯まります。100歩で1分など換算は自由。スマホの使いすぎと運動不足の対策に。データは端末内だけ、登録不要。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/apps/dopagaki/">
-  <meta property="og:image" content="https://st.arkid.jp/ogp.png">
+  <meta property="og:image" content="https://st.arkid.jp/apps/dopagaki/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="歩いてドパガキ｜歩数でスマホ時間を貯めるアプリ制限">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="St.Arkid">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="歩いてドパガキ - 歩数でスマホ時間を貯めるアプリ制限｜iPhone アプリ — St.Arkid">
   <meta name="twitter:description" content="歩いた分だけスマホが使えるアプリ制限アプリ。SNS・動画・ゲームはふだんブロックし、歩くと使える時間が貯まります。100歩で1分など換算は自由。スマホの使いすぎと運動不足の対策に。データは端末内だけ、登録不要。">
-  <meta name="twitter:image" content="https://st.arkid.jp/ogp.png">
+  <meta name="twitter:image" content="https://st.arkid.jp/apps/dopagaki/og.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "@id": "https://st.arkid.jp/apps/dopagaki/#app",
       "name": "歩いてドパガキ",
       "description": "歩いた分だけスマホが使えるアプリ制限アプリ。SNS・動画・ゲームはふだんブロックし、歩くと使える時間が貯まります。100歩で1分など換算は自由。スマホの使いすぎと運動不足の対策に。データは端末内だけ、登録不要。",
       "url": "https://st.arkid.jp/apps/dopagaki/",
-      "image": "https://st.arkid.jp/ogp.png",
+      "image": "https://st.arkid.jp/apps/dopagaki/og.jpg",
       "operatingSystem": "iOS",
       "applicationCategory": "HealthApplication",
       "inLanguage": "ja",
@@ -39,14 +42,20 @@
         "priceCurrency": "JPY"
       },
       "publisher": {
-        "@type": "Organization",
-        "name": "株式会社St.Arkid",
-        "url": "https://st.arkid.jp/"
+        "@id": "https://st.arkid.jp/#organization"
       },
       "downloadUrl": "https://apps.apple.com/jp/app/id6833058321",
       "sameAs": [
         "https://apps.apple.com/jp/app/id6833058321"
-      ]
+      ],
+      "screenshot": [
+        "https://st.arkid.jp/apps/dopagaki/ss-1.webp",
+        "https://st.arkid.jp/apps/dopagaki/ss-2.webp",
+        "https://st.arkid.jp/apps/dopagaki/ss-3.webp"
+      ],
+      "author": {
+        "@id": "https://st.arkid.jp/#organization"
+      }
     },
     {
       "@type": "FAQPage",
@@ -98,6 +107,22 @@
           "name": "歩いてドパガキ",
           "item": "https://st.arkid.jp/apps/dopagaki/"
         }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://st.arkid.jp/#organization",
+      "name": "株式会社St.Arkid",
+      "alternateName": [
+        "St.Arkid",
+        "ST.ARKID, K.K."
+      ],
+      "url": "https://st.arkid.jp/",
+      "logo": "https://st.arkid.jp/logo/starkid-logo-dark.svg",
+      "email": "info@st.arkid.jp",
+      "sameAs": [
+        "https://apps.apple.com/jp/developer/id1801094401",
+        "https://play.google.com/store/apps/developer?id=St.Arkid"
       ]
     }
   ]
@@ -186,6 +211,15 @@
     .others a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; color: var(--white); text-decoration: none; font-size: 14px; }
     .others a:hover { border-color: var(--accent); }
     .others span { display: block; font-size: 12px; color: var(--gray); }
+    img.app-icon { object-fit: cover; padding: 0; }
+    .stores { align-items: center; }
+    .store-badge { display: inline-block; line-height: 0; }
+    .store-badge img { height: 40px; width: auto; }
+    .store-badge-play img { height: 60px; margin: -10px -10px; }
+    .store-badge:hover { opacity: 0.85; }
+    .shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-top: 16px; }
+    .shots img { flex: none; width: 200px; height: auto; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; background: var(--card); }
+    .for-whom li { margin: 4px 0; }
   </style>
 </head>
 <body>
@@ -199,15 +233,18 @@
   <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">St.Arkid</a> › <a href="../">自社アプリ</a> › 歩いてドパガキ</nav>
   <p class="eyebrow">Walk to Unlock</p>
   <div class="app-hero">
-    <div class="app-icon" aria-hidden="true">🚶</div>
+    <img class="app-icon" src="icon.webp" width="80" height="80" alt="歩いてドパガキ のアプリアイコン">
     <h1>歩いてドパガキ<small>歩数でスマホ時間を貯めるアプリ制限｜iPhone アプリ</small></h1>
   </div>
   <p class="lead" style="margin-top:20px">「歩いてドパガキ」は、歩いた分だけスマホを使えるようにするアプリです。SNSや動画、ゲームなど、つい開いてしまうアプリをふだんはブロック。歩くと使える時間が貯まり、使った分だけ減っていきます。</p>
   <div class="stores">
-      <a class="store-btn" href="https://apps.apple.com/jp/app/id6833058321" rel="noopener"><span class="store-small">Download on the</span><span class="store-big"> App Store</span></a>
+      <a class="store-badge" href="https://apps.apple.com/jp/app/id6833058321" rel="noopener"><img src="../badges/app-store.svg" width="109" height="40" alt="App Store からダウンロード"></a>
   </div>
   <p class="facts">対応: iPhone ／ 価格: 無料（広告あり） ／ 提供: 株式会社St.Arkid</p>
   <div class="tags"><span class="tag">スクリーンタイム</span><span class="tag">アプリ制限</span><span class="tag">歩数</span><span class="tag">スマホ依存</span><span class="tag">運動不足</span></div>
+
+  <h2>こんな人におすすめ</h2>
+  <ul class="for-whom"><li>SNS・動画・ゲームをつい開いてしまう人</li><li>スマホの時間を減らしながら、歩く習慣もつけたい人</li><li>アプリごとに「使いすぎの重さ」を変えて制限したい人</li></ul>
 
   <h2>主な特徴</h2>
   <div class="features">
@@ -216,6 +253,13 @@
     <div class="feature"><div class="feature-icon">🔄</div><h3>リセットのタイミングを選べる</h3><p>毎日または毎週（曜日）と時刻を決めてリセット。平日に貯めて週末に使うこともできます。</p></div>
     <div class="feature"><div class="feature-icon">🛡️</div><h3>勢いで甘くできない</h3><p>1分あたりの歩数を減らすなどの「ゆるめる」変更は、次のリセットから反映します。</p></div>
     <div class="feature"><div class="feature-icon">🔐</div><h3>情報は端末の中だけ</h3><p>歩数・使った時間・制限するアプリの情報は外部に送信しません。アカウント登録も不要です。</p></div>
+  </div>
+
+  <h2>スクリーンショット</h2>
+  <div class="shots">
+    <img src="ss-1.webp" width="440" height="956" loading="lazy" decoding="async" alt="歩いてドパガキ のアプリ画面（1）">
+    <img src="ss-2.webp" width="440" height="956" loading="lazy" decoding="async" alt="歩いてドパガキ のアプリ画面（2）">
+    <img src="ss-3.webp" width="440" height="956" loading="lazy" decoding="async" alt="歩いてドパガキ のアプリ画面（3）">
   </div>
 
   <h2>よくある質問</h2>
@@ -235,6 +279,7 @@
     <a href="../mechanic-exam/">整備士3級 合格ドリル<span>三級自動車整備士（総合）の学科対策</span></a>
     <a href="../ad-alarm/">広告を見ないと止まらない目覚まし<span>動画を1本見るまで鳴り続ける二度寝防止アラーム</span></a>
     <a href="../shuchu/">集中。<span>気が散るアプリをブロックして集中</span></a>
+    <a href="../kyotecount/">共テカウント<span>共通テストまでの残り日数と勉強法</span></a>
     <a href="../medical-wordbook/">医療英単語<span>医療系の英単語を効率よく学ぶ</span></a>
     <a href="../woradi/">WORaDi<span>単語帳 × AI</span></a>
     <a href="../offline-eigo/">オフライン英語<span>機内でも使える端末内AIの英会話</span></a>

@@ -11,25 +11,28 @@
   <meta property="og:description" content="AIがスマホの中で動く英語学習アプリ。機内モードや圏外でも、空港・レストラン・ホテルなどの場面でAIと英会話を練習できます。英単語と例文、和文英訳の英作文も。会話は端末の外に送らず、登録・広告なし。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/apps/offline-eigo/">
-  <meta property="og:image" content="https://st.arkid.jp/ogp.png">
+  <meta property="og:image" content="https://st.arkid.jp/apps/offline-eigo/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="オフライン英語｜AI英会話・英単語・英作文">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="St.Arkid">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="オフライン英語 - AI英会話・英単語・英作文｜iPhone・Android アプリ — St.Arkid">
   <meta name="twitter:description" content="AIがスマホの中で動く英語学習アプリ。機内モードや圏外でも、空港・レストラン・ホテルなどの場面でAIと英会話を練習できます。英単語と例文、和文英訳の英作文も。会話は端末の外に送らず、登録・広告なし。">
-  <meta name="twitter:image" content="https://st.arkid.jp/ogp.png">
+  <meta name="twitter:image" content="https://st.arkid.jp/apps/offline-eigo/og.jpg">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
+      "@type": "MobileApplication",
       "@id": "https://st.arkid.jp/apps/offline-eigo/#app",
       "name": "オフライン英語",
       "description": "AIがスマホの中で動く英語学習アプリ。機内モードや圏外でも、空港・レストラン・ホテルなどの場面でAIと英会話を練習できます。英単語と例文、和文英訳の英作文も。会話は端末の外に送らず、登録・広告なし。",
       "url": "https://st.arkid.jp/apps/offline-eigo/",
-      "image": "https://st.arkid.jp/ogp.png",
-      "operatingSystem": "iOS, Android",
+      "image": "https://st.arkid.jp/apps/offline-eigo/og.jpg",
+      "operatingSystem": "iOS",
       "applicationCategory": "EducationalApplication",
       "inLanguage": "ja",
       "offers": {
@@ -38,10 +41,20 @@
         "priceCurrency": "JPY"
       },
       "publisher": {
-        "@type": "Organization",
-        "name": "株式会社St.Arkid",
-        "url": "https://st.arkid.jp/"
-      }
+        "@id": "https://st.arkid.jp/#organization"
+      },
+      "screenshot": [
+        "https://st.arkid.jp/apps/offline-eigo/ss-1.webp",
+        "https://st.arkid.jp/apps/offline-eigo/ss-2.webp",
+        "https://st.arkid.jp/apps/offline-eigo/ss-3.webp"
+      ],
+      "author": {
+        "@id": "https://st.arkid.jp/#organization"
+      },
+      "downloadUrl": "https://apps.apple.com/jp/app/id6835656839",
+      "sameAs": [
+        "https://apps.apple.com/jp/app/id6835656839"
+      ]
     },
     {
       "@type": "FAQPage",
@@ -93,6 +106,22 @@
           "name": "オフライン英語",
           "item": "https://st.arkid.jp/apps/offline-eigo/"
         }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://st.arkid.jp/#organization",
+      "name": "株式会社St.Arkid",
+      "alternateName": [
+        "St.Arkid",
+        "ST.ARKID, K.K."
+      ],
+      "url": "https://st.arkid.jp/",
+      "logo": "https://st.arkid.jp/logo/starkid-logo-dark.svg",
+      "email": "info@st.arkid.jp",
+      "sameAs": [
+        "https://apps.apple.com/jp/developer/id1801094401",
+        "https://play.google.com/store/apps/developer?id=St.Arkid"
       ]
     }
   ]
@@ -181,6 +210,15 @@
     .others a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; color: var(--white); text-decoration: none; font-size: 14px; }
     .others a:hover { border-color: var(--accent); }
     .others span { display: block; font-size: 12px; color: var(--gray); }
+    img.app-icon { object-fit: cover; padding: 0; }
+    .stores { align-items: center; }
+    .store-badge { display: inline-block; line-height: 0; }
+    .store-badge img { height: 40px; width: auto; }
+    .store-badge-play img { height: 60px; margin: -10px -10px; }
+    .store-badge:hover { opacity: 0.85; }
+    .shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-top: 16px; }
+    .shots img { flex: none; width: 200px; height: auto; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; background: var(--card); }
+    .for-whom li { margin: 4px 0; }
   </style>
 </head>
 <body>
@@ -194,16 +232,18 @@
   <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">St.Arkid</a> › <a href="../">自社アプリ</a> › オフライン英語</nav>
   <p class="eyebrow">Offline AI English</p>
   <div class="app-hero">
-    <div class="app-icon" aria-hidden="true">🗣️</div>
+    <img class="app-icon" src="icon.webp" width="80" height="80" alt="オフライン英語 のアプリアイコン">
     <h1>オフライン英語<small>AI英会話・英単語・英作文｜iPhone・Android アプリ</small></h1>
   </div>
   <p class="lead" style="margin-top:20px">オフライン英語は、AI がスマホの中で動く英語学習アプリです。最初に AI モデルを一度ダウンロードすれば、あとはインターネットにつながっていなくても、AI と英会話の練習ができます。</p>
   <div class="stores">
-      <span class="store-soon">App Store 近日公開</span>
-      <span class="store-soon">Google Play 近日公開</span>
+      <a class="store-badge" href="https://apps.apple.com/jp/app/id6835656839" rel="noopener"><img src="../badges/app-store.svg" width="109" height="40" alt="App Store からダウンロード"></a>
   </div>
-  <p class="facts">対応: iPhone・Android ／ 価格: 無料（広告なし） ／ 提供: 株式会社St.Arkid</p>
+  <p class="facts">対応: iPhone ／ 価格: 無料（広告なし） ／ 提供: 株式会社St.Arkid</p>
   <div class="tags"><span class="tag">英会話</span><span class="tag">英語学習</span><span class="tag">オフライン</span><span class="tag">AI</span><span class="tag">英作文</span></div>
+
+  <h2>こんな人におすすめ</h2>
+  <ul class="for-whom"><li>機内や海外など、通信できない場所でも英会話を練習したい人</li><li>空港・レストラン・ホテルなど旅行の場面の英語を練習したい人</li><li>会話の内容を外部に送らずに、AI と英語を練習したい人</li></ul>
 
   <h2>主な特徴</h2>
   <div class="features">
@@ -212,6 +252,13 @@
     <div class="feature"><div class="feature-icon">✍️</div><h3>英作文</h3><p>和文英訳の問題に答えると、大事な表現が入っているかをチェック。AI が同じ内容の別の言い方を提案します。</p></div>
     <div class="feature"><div class="feature-icon">🎯</div><h3>正確さへの工夫</h3><p>単語の意味と英作文の判定は、AI ではなくアプリに収録したデータで行います。</p></div>
     <div class="feature"><div class="feature-icon">🔐</div><h3>会話は端末の外に出さない</h3><p>AI の処理はすべて端末の中。アカウント登録なし、広告なし、トラッキングなしです。</p></div>
+  </div>
+
+  <h2>スクリーンショット</h2>
+  <div class="shots">
+    <img src="ss-1.webp" width="440" height="956" loading="lazy" decoding="async" alt="オフライン英語 のアプリ画面（1）">
+    <img src="ss-2.webp" width="440" height="956" loading="lazy" decoding="async" alt="オフライン英語 のアプリ画面（2）">
+    <img src="ss-3.webp" width="440" height="956" loading="lazy" decoding="async" alt="オフライン英語 のアプリ画面（3）">
   </div>
 
   <h2>よくある質問</h2>
@@ -232,6 +279,7 @@
     <a href="../mechanic-exam/">整備士3級 合格ドリル<span>三級自動車整備士（総合）の学科対策</span></a>
     <a href="../ad-alarm/">広告を見ないと止まらない目覚まし<span>動画を1本見るまで鳴り続ける二度寝防止アラーム</span></a>
     <a href="../shuchu/">集中。<span>気が散るアプリをブロックして集中</span></a>
+    <a href="../kyotecount/">共テカウント<span>共通テストまでの残り日数と勉強法</span></a>
     <a href="../medical-wordbook/">医療英単語<span>医療系の英単語を効率よく学ぶ</span></a>
     <a href="../woradi/">WORaDi<span>単語帳 × AI</span></a>
     <a href="../silent-camera/">板書ノート<span>授業ごとに自動でノート整理・Face ID保護</span></a>
