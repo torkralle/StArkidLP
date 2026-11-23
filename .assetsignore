@@ -9,3 +9,4 @@ worker.js
 *.log
 .git/
 .wrangler/
+functions/
