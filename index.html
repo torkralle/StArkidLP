@@ -347,6 +347,13 @@
       color: var(--white);
     }
     .hero-headline .scramble.dim { color: var(--gray); }
+    .hero-headline .hero-company {
+      display: block;
+      font-size: 0.28em;
+      letter-spacing: 0.08em;
+      color: var(--gray);
+      margin-bottom: 0.4em;
+    }
     .hero-sub {
       font-size: 16px;
       color: var(--gray-light);
@@ -1080,7 +1087,15 @@
         "@id": "https://st.arkid.jp/#organization",
         "name": "株式会社St.Arkid",
         "legalName": "株式会社St.Arkid",
-        "alternateName": ["St.Arkid", "エスティーアーキッド", "St Arkid", "StArkid"],
+        "alternateName": ["St.Arkid", "株式会社St．Arkid", "ST.ARKID, K.K.", "エスティーアーキッド", "St Arkid", "StArkid"],
+        "identifier": { "@type": "PropertyValue", "propertyID": "法人番号", "value": "5430001092699" },
+        "logo": "https://st.arkid.jp/logo/starkid-logo.png",
+        "image": "https://st.arkid.jp/ogp.png",
+        "sameAs": [
+          "https://apps.apple.com/jp/developer/st-arkid-k-k/id1801094401",
+          "https://play.google.com/store/apps/developer?id=St.Arkid",
+          "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5430001092699"
+        ],
         "url": "https://st.arkid.jp/",
         "email": "info@st.arkid.jp",
         "foundingDate": "2024-09-19",
@@ -1256,6 +1271,7 @@
       <span class="hero-label-text">Sapporo-based Tech Company</span>
     </div>
     <h1 class="hero-headline">
+      <span class="hero-company">株式会社St.Arkid</span>
       <span class="scramble" id="scramble-line1">テクノロジーを、</span>
       <span class="scramble" id="scramble-line2">暮らしの言語に。</span>
     </h1>
