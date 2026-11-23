@@ -10,3 +10,5 @@ worker.js
 .git/
 .wrangler/
 functions/
+site-worker.js
+wrangler.jsonc
