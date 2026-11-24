@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「都道府県・国旗クイズ」サポート — St.Arkid</title>
+  <meta name="description" content="小学生から大人まで学べる地理クイズ「都道府県・国旗クイズ」のサポート。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://st.arkid.jp/apps/todofukenKokki/support">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #121212;
+      --gray: #757575;
+      --gray-light: #c7c7c7;
+      --line: rgba(255,255,255,0.08);
+      --card: #1c1c1c;
+      --white: #ffffff;
+      --accent: #2dd4bf;
+      --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--black); color: var(--white); font-family: var(--font-jp); line-height: 1.9; overflow-x: hidden; }
+    a { color: var(--accent); }
+    header { height: 64px; padding: 0 48px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .header-logo { font-family: var(--font-en); font-size: 20px; font-weight: 500; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+    .header-logo span { color: var(--accent); }
+    .header-logo-sub { font-family: var(--font-en); font-size: 11px; letter-spacing: 0.12em; color: var(--gray); margin-left: 10px; text-transform: uppercase; }
+    main { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+    .eyebrow { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; }
+    h1 { font-size: 28px; font-weight: 700; line-height: 1.5; margin: 8px 0 12px; }
+    .meta, .lead { color: var(--gray-light); font-size: 15px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 48px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { color: var(--gray-light); font-size: 15px; margin: 8px 0; }
+    ul { color: var(--gray-light); font-size: 15px; padding-left: 1.4em; margin: 8px 0; }
+    details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 12px 0; }
+    summary { font-weight: 500; cursor: pointer; }
+    details[open] summary { color: var(--accent); }
+    .contact { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-top: 12px; }
+    footer { border-top: 1px solid var(--line); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { font-family: var(--font-en); font-size: 16px; font-weight: 500; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-logo span { color: var(--accent); }
+    .footer-nav { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-nav a { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-nav a:hover { color: var(--gray-light); }
+    .footer-copy { width: 100%; text-align: center; font-family: var(--font-en); font-size: 11px; color: var(--gray); letter-spacing: 0.05em; padding-top: 24px; }
+    @media (max-width: 768px) {
+      header, footer { padding-left: 16px; padding-right: 16px; }
+      main { padding: 40px 16px 72px; }
+      h1 { font-size: 24px; }
+    }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; color: var(--gray-light); margin: 12px 0; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--card); color: var(--white); }
+    .table-wrap { overflow-x: auto; }
+    ol { color: var(--gray-light); font-size: 15px; padding-left: 1.6em; margin: 8px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ Apps</span></a>
+</header>
+
+<main>
+  <p class="eyebrow">Support</p>
+  <h1>「都道府県・国旗クイズ」サポート</h1>
+  <p>「都道府県・国旗クイズ」は、小学生（3〜6年生）から大人まで楽しく学べる地理クイズアプリです。日本の県庁所在地・地方と位置・名産と自然、世界の国旗・世界の国（首都など）の 5 分野・約 380 問の 4 択クイズを収録しています。全問に解説と「ことば」（用語集）があり、成績の確認や苦手の復習、20 問のテスト（16 点以上で合格）に挑戦できます。日本語・英語・スペイン語・ポルトガル語・ドイツ語・韓国語・繁体字中国語の 7 言語に対応しています。</p>
+  <h2>よくある質問</h2>
+  <p><strong>問題の数と出典について教えてください</strong></p>
+  <p>日本の県庁所在地、地方と位置、名産と自然、世界の国旗、世界の国（首都など）の 5 分野・約 380 問を収録しています。問題と解説はすべてオリジナルで、外務省『国・地域』や公的統計など公開された事実をもとに作成しています。</p>
+  <p><strong>テストはどのような形式ですか？</strong></p>
+  <p>各分野から 20 問が出題され、16 点以上（16 問以上正解）で合格となります。学習の成果確認にご活用ください。</p>
+  <p><strong>記録は消えますか？</strong></p>
+  <p>解答履歴・復習・テスト結果・設定などの記録はすべてお使いの端末の中だけに保存されています。アカウント登録やログインはありません。アプリを端末から削除すると記録も消えます。</p>
+  <p><strong>広告を減らすにはどうすればいいですか？</strong></p>
+  <p>ホーム画面にある「広告なしカード」からリワード広告（動画）を最後まで見ていただくと、24 時間広告が表示されなくなります（動画を見るかどうかは任意です）。なお、本アプリは完全無料のため、有料での広告削除機能はありません。</p>
+  <p><strong>言語を切り替えるにはどうすればいいですか？</strong></p>
+  <p>お使いの端末本体の言語設定に従って自動的に言語が切り替わります。日本語・英語・スペイン語・ポルトガル語・ドイツ語・韓国語・繁体字中国語に対応しています。</p>
+  <p><strong>問題や解説に間違いを見つけました</strong></p>
+  <p>お手数ですが、解説の下に表示されている問題番号（No.）を添えて、下のメールアドレスまでお知らせください。確かめて更新で直します。</p>
+  <p><strong>公的機関の公式アプリですか？</strong></p>
+  <p>いいえ、公的機関のアプリではありません。株式会社St.Arkidが独自に作成した非公式のアプリであり、外務省等の公的機関とは関係ありません。</p>
+  <h2>お問い合わせ</h2>
+  <p>不具合やご要望は <a href="mailto:info@st.arkid.jp">info@st.arkid.jp</a> までお送りください。お使いの端末・OS のバージョンと、起きたことをお書きいただけると早く対応できます。</p>
+  <p>運営: 株式会社St.Arkid</p>
+</main>
+
+<footer>
+  <a href="../../" class="footer-logo">St<span>.</span>Arkid</a>
+  <nav class="footer-nav" aria-label="フッターナビゲーション">
+    <a href="support">サポート</a>
+    <a href="terms">利用規約</a>
+    <a href="privacy">プライバシーポリシー</a>
+    <a href="../">アプリ一覧</a>
+    <a href="../../">トップへ戻る</a>
+  </nav>
+  <div class="footer-copy">© 2026 St.Arkid. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
