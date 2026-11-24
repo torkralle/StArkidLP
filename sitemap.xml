@@ -49,24 +49,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/dopagaki/privacy</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/ad-alarm/privacy</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/ippon-board/terms</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/kyotecount/</loc>
     <lastmod>2026-11-20</lastmod>
@@ -77,12 +81,15 @@
     <image:image><image:loc>https://st.arkid.jp/apps/kyotecount/ss-2.webp</image:loc></image:image>
     <image:image><image:loc>https://st.arkid.jp/apps/kyotecount/ss-3.webp</image:loc></image:image>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/kyotecount/support</loc>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/kyotecount/privacy</loc>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/ippon-board/</loc>
     <lastmod>2026-11-20</lastmod>
@@ -103,13 +110,6 @@
 
   <url>
     <loc>https://st.arkid.jp/apps/ippon-board/privacy</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://st.arkid.jp/apps/ippon-board/terms</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -198,13 +198,6 @@
   </url>
 
   <url>
-    <loc>https://st.arkid.jp/apps/dopagaki/privacy</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
     <loc>https://st.arkid.jp/apps/mechanic-exam/</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -223,13 +216,6 @@
   </url>
 
   <url>
-    <loc>https://st.arkid.jp/apps/mechanic-exam/privacy</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
     <loc>https://st.arkid.jp/apps/ad-alarm/</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -245,13 +231,6 @@
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://st.arkid.jp/apps/ad-alarm/privacy</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
   </url>
 
   <url>
@@ -313,6 +292,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/woradi/privacy</loc>
     <lastmod>2026-11-18</lastmod>
@@ -376,19 +356,165 @@
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/nemurimix/support</loc>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/nemurimix/privacy</loc>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/otoate/support</loc>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/otoate/privacy</loc>
   </url>
+
   <url>
     <loc>https://st.arkid.jp/apps/otoate/terms</loc>
   </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/carquiz/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/carquiz/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/carquiz/terms</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/daihon/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/daihon/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/daihon/terms</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/fp3Drill/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/fp3Drill/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/kanjiDrill/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/kanjiDrill/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/kikenbutsuOtsu4/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/kikenbutsuOtsu4/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/menkyoGakka/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/menkyoGakka/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/study-dopagaki/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/study-dopagaki/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/takkenDrill/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/takkenDrill/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/tourokuHanbaisha/privacy</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://st.arkid.jp/apps/tourokuHanbaisha/support</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
