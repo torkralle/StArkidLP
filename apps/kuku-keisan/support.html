@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「九九・計算ドリル」サポート — St.Arkid</title>
+  <meta name="description" content="小学1〜3年生向けの九九と計算の練習アプリ「九九・計算ドリル」のサポート。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://st.arkid.jp/apps/kuku-keisan/support">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #121212;
+      --gray: #757575;
+      --gray-light: #c7c7c7;
+      --line: rgba(255,255,255,0.08);
+      --card: #1c1c1c;
+      --white: #ffffff;
+      --accent: #2dd4bf;
+      --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--black); color: var(--white); font-family: var(--font-jp); line-height: 1.9; overflow-x: hidden; }
+    a { color: var(--accent); }
+    header { height: 64px; padding: 0 48px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .header-logo { font-family: var(--font-en); font-size: 20px; font-weight: 500; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+    .header-logo span { color: var(--accent); }
+    .header-logo-sub { font-family: var(--font-en); font-size: 11px; letter-spacing: 0.12em; color: var(--gray); margin-left: 10px; text-transform: uppercase; }
+    main { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+    .eyebrow { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; }
+    h1 { font-size: 28px; font-weight: 700; line-height: 1.5; margin: 8px 0 12px; }
+    .meta, .lead { color: var(--gray-light); font-size: 15px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 48px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { color: var(--gray-light); font-size: 15px; margin: 8px 0; }
+    ul { color: var(--gray-light); font-size: 15px; padding-left: 1.4em; margin: 8px 0; }
+    details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 12px 0; }
+    summary { font-weight: 500; cursor: pointer; }
+    details[open] summary { color: var(--accent); }
+    .contact { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-top: 12px; }
+    footer { border-top: 1px solid var(--line); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { font-family: var(--font-en); font-size: 16px; font-weight: 500; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-logo span { color: var(--accent); }
+    .footer-nav { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-nav a { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-nav a:hover { color: var(--gray-light); }
+    .footer-copy { width: 100%; text-align: center; font-family: var(--font-en); font-size: 11px; color: var(--gray); letter-spacing: 0.05em; padding-top: 24px; }
+    @media (max-width: 768px) {
+      header, footer { padding-left: 16px; padding-right: 16px; }
+      main { padding: 40px 16px 72px; }
+      h1 { font-size: 24px; }
+    }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; color: var(--gray-light); margin: 12px 0; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--card); color: var(--white); }
+    .table-wrap { overflow-x: auto; }
+    ol { color: var(--gray-light); font-size: 15px; padding-left: 1.6em; margin: 8px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ Apps</span></a>
+</header>
+
+<main>
+  <p class="eyebrow">Support</p>
+  <h1>「九九・計算ドリル」サポート</h1>
+  <p>「九九・計算ドリル」は、小学1〜3年生向けの九九と計算の練習アプリです。たしざん・ひきざん・九九・わりざん・文しょうだいの 5 分野・366 問の 4 択問題を収録しています。全問に解説があり、きろく（成績）の確認や間違えた問題の復習、10 問のテスト（8 問正解で合格）に挑戦できます。日本語・英語・スペイン語・ポルトガル語・ドイツ語・韓国語・繁体字中国語の 7 言語に対応しています。</p>
+  <h2>よくある質問</h2>
+  <p><strong>問題の数と出典について教えてください</strong></p>
+  <p>たしざん 72 問・ひきざん 72 問・九九 108 問・わりざん 64 問・文しょうだい 50 問の計 366 問です。問題と解説はすべて当社が作成したオリジナルです。</p>
+  <p><strong>テストはどのような形式ですか？</strong></p>
+  <p>10 問・10 分で、8 問以上正解で合格です。アプリ内の目安で、公的な検定ではありません。</p>
+  <p><strong>記録は消えますか？</strong></p>
+  <p>解答履歴・復習・テスト結果・設定などの記録はすべてお使いの端末の中だけに保存されています。アカウント登録やログインはありません。アプリを端末から削除すると記録も消えます。</p>
+  <p><strong>広告について</strong></p>
+  <p>本アプリは無料で、画面の下にバナー広告が表示されます。子ども向けの設定で、パーソナライズしない一般向け（G）の広告だけを表示します。アプリ内課金はありません。</p>
+  <p><strong>言語を切り替えるにはどうすればいいですか？</strong></p>
+  <p>お使いの端末本体の言語設定に従って自動的に切り替わります。対応していない言語の端末では英語で表示されます。</p>
+  <p><strong>問題や解説に間違いを見つけました</strong></p>
+  <p>お手数ですが、解説の下に表示されている問題番号（No.）を添えて、下のメールアドレスまでお知らせください。確かめて更新で直します。</p>
+  <h2>お問い合わせ</h2>
+  <p>不具合やご要望は <a href="mailto:info@st.arkid.jp">info@st.arkid.jp</a> までお送りください。お使いの端末・OS のバージョンと、起きたことをお書きいただけると早く対応できます。</p>
+  <h2>Support (English)</h2>
+  <p>"Times Tables &amp; Math Drill" is a free practice app for grades 1–3 with 366 original multiple-choice questions (addition, subtraction, times tables, division and word problems) in 7 languages. All records stay on your device. For bugs or questions, email <a href="mailto:info@st.arkid.jp">info@st.arkid.jp</a>.</p>
+  <p>運営: 株式会社St.Arkid</p>
+</main>
+
+<footer>
+  <a href="../../" class="footer-logo">St<span>.</span>Arkid</a>
+  <nav class="footer-nav" aria-label="フッターナビゲーション">
+    <a href="support">サポート</a>
+    <a href="terms">利用規約</a>
+    <a href="privacy">プライバシーポリシー</a>
+    <a href="../">アプリ一覧</a>
+    <a href="../../">トップへ戻る</a>
+  </nav>
+  <div class="footer-copy">© 2026 St.Arkid. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
