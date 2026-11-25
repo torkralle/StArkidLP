@@ -876,5 +876,21 @@
   <url>
     <loc>https://st.arkid.jp/apps/rekishiGoro/app/</loc>
     <lastmod>2026-11-25</lastmod>
+    <loc>https://st.arkid.jp/apps/gomi-no-hi/privacy</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/gomi-no-hi/support</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/gomi-no-hi/terms</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
