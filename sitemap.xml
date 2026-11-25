@@ -807,4 +807,28 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://st.arkid.jp/apps/menkyoGakka/app/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/kikenbutsuOtsu4/app/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/kanjiDrill/app/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/fp3Drill/app/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/takkenDrill/app/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/tourokuHanbaisha/app/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
 </urlset>
