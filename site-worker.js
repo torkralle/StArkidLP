@@ -6,6 +6,12 @@ export default {
       url.protocol = 'https:';
       return Response.redirect(url.toString(), 301);
     }
+    // ルートの arkid.jp（AdSense に登録したサイト）は ads.txt だけ返し、ほかは st.arkid.jp へ 301
+    if (url.hostname === 'arkid.jp' || url.hostname === 'www.arkid.jp') {
+      if (url.pathname === '/ads.txt') return env.ASSETS.fetch(request);
+      url.hostname = 'st.arkid.jp';
+      return Response.redirect(url.toString(), 301);
+    }
     // Search Console の確認ファイルは .html 付きの URL のまま 200 で返す（静的配信だと /google… へ 307 になり確認に失敗しうる）
     if (/^\/google[0-9a-f]+\.html$/.test(url.pathname)) {
       url.pathname = url.pathname.slice(0, -5);
