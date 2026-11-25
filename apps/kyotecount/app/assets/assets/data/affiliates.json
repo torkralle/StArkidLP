@@ -1,0 +1,111 @@
+{
+  "_note": "参考書・問題集の紹介枠（広告）。Amazon アソシエイト（トラッキング ID starkidapps-22、St.Arkid）の商品リンク。placeholder:true の間は「リンク準備中」の注記を出す。remote_url に同じ形式の JSON を置けばアプリ更新なしで差し替え可。subject は articles.json の subject と対応。版が変わったら ASIN を差し替える。",
+  "remote_url": "",
+  "disclosure": "このページには広告（アフィリエイトリンク）が含まれます。Amazonのアソシエイトとして、運営者（株式会社St.Arkid）は適格販売により収入を得ています。",
+  "items": [
+    {
+      "id": "kakomon-all",
+      "subject": "all",
+      "title": "共通テスト過去問研究 英語（2027年版 赤本）",
+      "description": "教学社の赤本。本番と同じ形式の問題を時間を計って解く定番。ほかの教科も同じシリーズで出ている。",
+      "url": "https://www.amazon.co.jp/dp/4325273379?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "jissen-moshi",
+      "subject": "all",
+      "title": "2027年用 共通テスト実戦模試 英語リーディング（Z会）",
+      "description": "Z会の予想問題。過去問を一通り解いたあと、初見の問題で時間配分を練習するのに使う。",
+      "url": "https://www.amazon.co.jp/dp/4865317260?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "eng-vocab",
+      "subject": "english",
+      "title": "DUO 3.0",
+      "description": "例文 560 本で重要単語・熟語をまとめて覚える定番。音声（CD・アプリ）と一緒に繰り返す。",
+      "url": "https://www.amazon.co.jp/dp/4900790052?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "eng-listening",
+      "subject": "english",
+      "title": "きめる！共通テスト 英語リスニング 改訂版",
+      "description": "音声付き。共通テストのリスニングの形式と、1回読み上げの問題に慣れる。",
+      "url": "https://www.amazon.co.jp/dp/4053058511?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "math-basic",
+      "subject": "math",
+      "title": "チャート式 基礎からの数学I+A（青チャート）",
+      "description": "例題で解法を網羅する定番。共通テスト形式の前に、例題を自力で解ける状態をつくる。II・B・C も同じシリーズで。",
+      "url": "https://www.amazon.co.jp/dp/4410105795?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "jp-kobun",
+      "subject": "japanese",
+      "title": "読んで見て聞いて覚える 重要古文単語315 四訂版",
+      "description": "古文単語の定番。古文・漢文は覚えた量がそのまま点に出やすいので、単語を先に。",
+      "url": "https://www.amazon.co.jp/dp/4342353091?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "jp-kanbun",
+      "subject": "japanese",
+      "title": "漢文早覚え速答法 パーフェクト版",
+      "description": "句形と重要語を短期間で覚える定番。共通テストの漢文は覚えた句形がそのまま点になる。",
+      "url": "https://www.amazon.co.jp/dp/4053060842?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "sci-basic",
+      "subject": "science",
+      "title": "物理のエッセンス［力学・波動］五訂版",
+      "description": "物理の考え方を短い解説と基本問題で身につける定番。公式の意味から理解したい人に。",
+      "url": "https://www.amazon.co.jp/dp/4777227235?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "phys-essence2",
+      "subject": "science",
+      "title": "物理のエッセンス［熱・電磁気・原子］五訂版",
+      "description": "物理のエッセンスの後半。電磁気は苦手な人が多いので早めに。",
+      "url": "https://www.amazon.co.jp/dp/4777227243?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "chem-juyo",
+      "subject": "science",
+      "title": "2027 実戦 化学重要問題集 化学基礎・化学",
+      "description": "入試の標準〜やや難の問題で実戦力をつける定番。セミナーなど基本の問題集の次に。",
+      "url": "https://www.amazon.co.jp/dp/4410143379?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "chem-seminar",
+      "subject": "science",
+      "title": "セミナー化学基礎+化学",
+      "description": "教科書の内容を基本問題で確認する問題集。化学の土台づくりに。",
+      "url": "https://www.amazon.co.jp/dp/4804047247?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "social-ichimon",
+      "subject": "social",
+      "title": "山川 一問一答 日本史",
+      "description": "用語の確認の定番。世界史・地理などは同じ山川の一問一答や資料集を。",
+      "url": "https://www.amazon.co.jp/dp/4634012243?tag=starkidapps-22",
+      "placeholder": false
+    },
+    {
+      "id": "info-1",
+      "subject": "info",
+      "title": "きめる！共通テスト 情報I",
+      "description": "プログラム（共通テスト用の表記）とデータ分析の問題に慣れる。",
+      "url": "https://www.amazon.co.jp/dp/4053058031?tag=starkidapps-22",
+      "placeholder": false
+    }
+  ]
+}

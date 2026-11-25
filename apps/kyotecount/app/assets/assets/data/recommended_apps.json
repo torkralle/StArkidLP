@@ -1,0 +1,16 @@
+{
+  "_note": "おすすめアプリ欄。enabled:false の間は表示しない。remote_url に JSON（この形式）を置けば、アプリ更新なしで出し分けできる。status を coming_soon にすると「準備中」と表示。",
+  "enabled": false,
+  "remote_url": "",
+  "title": "St.Arkid のおすすめアプリ",
+  "apps": [
+    {
+      "id": "sample",
+      "name": "（準備中）勉強用アプリ",
+      "description": "共通テスト対策に使えるアプリを準備しています。",
+      "status": "coming_soon",
+      "ios_url": "",
+      "android_url": ""
+    }
+  ]
+}
