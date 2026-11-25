@@ -2,7 +2,7 @@
 const VERSION = 'c3004d4965de';
 const CACHE = 'pwa-' + VERSION;
 const CDN_CACHE = 'pwa-cdn';
-const FILES = ["./", "assets/AssetManifest.bin", "assets/AssetManifest.bin.json", "assets/FontManifest.json", "assets/NOTICES", "assets/assets/alarm/beep.wav", "assets/assets/alarm/birds.wav", "assets/assets/alarm/chime.wav", "assets/assets/alarm/marimba.wav", "assets/assets/sounds/brown.wav", "assets/assets/sounds/crickets.wav", "assets/assets/sounds/deepsea.wav", "assets/assets/sounds/fan.wav", "assets/assets/sounds/fire.wav", "assets/assets/sounds/heartbeat.wav", "assets/assets/sounds/pink.wav", "assets/assets/sounds/rain.wav", "assets/assets/sounds/river.wav", "assets/assets/sounds/thunder.wav", "assets/assets/sounds/waves.wav", "assets/assets/sounds/white.wav", "assets/assets/sounds/wind.wav", "assets/fonts/MaterialIcons-Regular.otf", "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf", "assets/shaders/ink_sparkle.frag", "assets/shaders/stretch_effect.frag", "favicon.png", "flutter.js", "flutter_bootstrap.js", "icons/Icon-192.png", "icons/Icon-512.png", "icons/Icon-maskable-192.png", "icons/Icon-maskable-512.png", "index.html", "main.dart.js", "manifest.json", "version.json"];
+const FILES = ["./", "assets/AssetManifest.bin", "assets/AssetManifest.bin.json", "assets/FontManifest.json", "assets/NOTICES", "assets/fonts/MaterialIcons-Regular.otf", "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf", "assets/shaders/ink_sparkle.frag", "assets/shaders/stretch_effect.frag", "favicon.png", "flutter.js", "flutter_bootstrap.js", "icons/Icon-192.png", "icons/Icon-512.png", "icons/Icon-maskable-192.png", "icons/Icon-maskable-512.png", "index.html", "main.dart.js", "manifest.json", "version.json"];
 const CDN = ["https://www.gstatic.com/flutter-canvaskit/e4b8dca3f1b4ede4c30371002441c88c12187ed6/canvaskit.js", "https://www.gstatic.com/flutter-canvaskit/e4b8dca3f1b4ede4c30371002441c88c12187ed6/canvaskit.wasm", "https://www.gstatic.com/flutter-canvaskit/e4b8dca3f1b4ede4c30371002441c88c12187ed6/chromium/canvaskit.js", "https://www.gstatic.com/flutter-canvaskit/e4b8dca3f1b4ede4c30371002441c88c12187ed6/chromium/canvaskit.wasm"];
 self.addEventListener('install', (e) => {
   e.waitUntil((async () => {
@@ -25,6 +25,10 @@ self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
+  if (url.origin === self.location.origin && url.pathname.includes('/assets/assets/sounds/')) {
+    e.respondWith(audioResponse(req));
+    return;
+  }
   if (url.origin === 'https://www.gstatic.com' || url.origin === 'https://fonts.gstatic.com' || url.origin === 'https://fonts.googleapis.com') {
     e.respondWith((async () => {
       const cc = await caches.open(CDN_CACHE);
@@ -46,3 +50,33 @@ self.addEventListener('fetch', (e) => {
     try { return await fetch(req); } catch (err) { return (await c.match('index.html')) || Response.error(); }
   })());
 });
+
+const AUDIO_CACHE = 'audio-v1';
+async function audioResponse(req) {
+  const key = new URL(req.url).pathname;
+  const c = await caches.open(AUDIO_CACHE);
+  let full = await c.match(key);
+  if (!full) {
+    const r = await fetch(key);
+    if (!r.ok) return r;
+    await c.put(key, r.clone());
+    full = r;
+  }
+  const range = req.headers.get('range');
+  const m = range && /bytes=(\d*)-(\d*)/.exec(range);
+  if (!m) return full;
+  const buf = await full.arrayBuffer();
+  const size = buf.byteLength;
+  let start = m[1] === '' ? Math.max(0, size - Number(m[2])) : Number(m[1]);
+  let end = m[1] !== '' && m[2] !== '' ? Math.min(Number(m[2]), size - 1) : size - 1;
+  if (start >= size) return new Response(null, {status: 416, headers: {'Content-Range': `bytes */${size}`}});
+  return new Response(buf.slice(start, end + 1), {
+    status: 206,
+    headers: {
+      'Content-Type': full.headers.get('Content-Type') || 'audio/wav',
+      'Content-Range': `bytes ${start}-${end}/${size}`,
+      'Content-Length': String(end - start + 1),
+      'Accept-Ranges': 'bytes',
+    },
+  });
+}
