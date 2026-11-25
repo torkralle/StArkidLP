@@ -35,5 +35,4 @@ if (!window._flutter) {
 }
 _flutter.buildConfig = {"engineRevision":"e4b8dca3f1b4ede4c30371002441c88c12187ed6","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}]};
 
-// Flutter 標準の flutter_service_worker.js は登録しない（オフラインは pwa-sw.js）
 _flutter.loader.load();
