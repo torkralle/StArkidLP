@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "client": "ca-pub-1468496302380146",
+  "bannerSlot": "",
+  "h5": false,
+  "test": false,
+  "interstitialMinSeconds": 180,
+  "disabledApps": []
+}
