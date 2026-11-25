@@ -1,0 +1,6076 @@
+{
+ "meta": {
+  "content_version": "240bb615",
+  "built_at": "2026-11-22T04:31:32.459012Z"
+ },
+ "exams": [
+  {
+   "id": "karimen",
+   "name": "仮免許 学科試験（文章問題50問）",
+   "short_name": "仮免",
+   "regime": "new",
+   "question_count": 50,
+   "minutes": 30,
+   "pass_score": 45,
+   "section_min_ratio": null,
+   "sections": [
+    {
+     "id": "signal",
+     "name": "信号・標識・標示",
+     "mock_count": 10
+    },
+    {
+     "id": "passage",
+     "name": "通行方法・速度",
+     "mock_count": 12
+    },
+    {
+     "id": "intersection",
+     "name": "交差点・歩行者・踏切",
+     "mock_count": 12
+    },
+    {
+     "id": "parking",
+     "name": "駐停車・合図・灯火",
+     "mock_count": 8
+    },
+    {
+     "id": "driver",
+     "name": "運転者の心得・免許",
+     "mock_count": 8
+    }
+   ]
+  },
+  {
+   "id": "honmen",
+   "name": "本免許 学科試験（文章問題90問）",
+   "short_name": "本免",
+   "regime": "new",
+   "question_count": 90,
+   "minutes": 50,
+   "pass_score": 81,
+   "section_min_ratio": null,
+   "sections": [
+    {
+     "id": "signal",
+     "name": "信号・標識・標示",
+     "mock_count": 13
+    },
+    {
+     "id": "passage",
+     "name": "通行方法・速度",
+     "mock_count": 17
+    },
+    {
+     "id": "intersection",
+     "name": "交差点・歩行者・踏切",
+     "mock_count": 17
+    },
+    {
+     "id": "parking",
+     "name": "駐停車・合図・灯火",
+     "mock_count": 13
+    },
+    {
+     "id": "driver",
+     "name": "運転者の心得・免許",
+     "mock_count": 15
+    },
+    {
+     "id": "highway",
+     "name": "高速道路・危険な場面",
+     "mock_count": 15
+    }
+   ]
+  }
+ ],
+ "terms": [
+  {
+   "id": "futsu-jidosha",
+   "term": "普通自動車",
+   "reading": "ふつうじどうしゃ",
+   "body": "車体の大きさ等が大型・中型・準中型・大型特殊・大型自動二輪・普通自動二輪・小型特殊のいずれの自動車にも当たらない自動車（道路交通法施行規則第2条）。"
+  },
+  {
+   "id": "kari-menkyo",
+   "term": "仮免許",
+   "reading": "かりめんきょ",
+   "body": "大型・中型・準中型・普通自動車を練習のため又は運転免許試験等において運転するための運転免許（道路交通法第84条第5項・第87条）。"
+  },
+  {
+   "id": "shoshin-untensha-kikan",
+   "term": "初心運転者期間",
+   "reading": "しょしんうんてんしゃきかん",
+   "body": "準中型免許・普通免許などを受けた日から、その免許を受けていた期間が通算して1年に達する日までの間（道路交通法第100条の2）。"
+  },
+  {
+   "id": "zaseki-beruto",
+   "term": "座席ベルト",
+   "reading": "ざせきべると",
+   "body": "道路運送車両法の規定により自動車に備えなければならないこととされているシートベルト（道路交通法第71条の3）。"
+  },
+  {
+   "id": "youji-hojo-souchi",
+   "term": "幼児用補助装置",
+   "reading": "ようじようほじょそうち",
+   "body": "幼児を乗車させる際に座席ベルトに代わる機能を果たさせるため座席に固定して用いる補助装置（いわゆるチャイルドシート。道路交通法第71条の3第3項）。"
+  },
+  {
+   "id": "untensha-tou",
+   "term": "運転者等",
+   "reading": "うんてんしゃとう",
+   "body": "交通事故に係る車両等の運転者その他の乗務員（道路交通法第72条第1項）。"
+  },
+  {
+   "id": "futsu-jitensha",
+   "term": "普通自転車",
+   "reading": "ふつうじてんしゃ",
+   "body": "車体の大きさ及び構造が内閣府令で定める基準に適合する自転車で、他の車両を牽引していないもの（道路交通法第63条の3）。"
+  },
+  {
+   "id": "honsen-shado",
+   "term": "本線車道",
+   "reading": "ほんせんしゃどう",
+   "body": "高速自動車国道または自動車専用道路の本線車線により構成する車道（道路交通法第2条第1項第3号の2）。"
+  },
+  {
+   "id": "kosoku-jidosha-kokudo-to",
+   "term": "高速自動車国道等",
+   "reading": "こうそくじどうしゃこくどうとう",
+   "body": "高速自動車国道と自動車専用道路をまとめた呼び方（道路交通法第75条の3）。"
+  },
+  {
+   "id": "honsen-shado-to",
+   "term": "本線車道等",
+   "reading": "ほんせんしゃどうとう",
+   "body": "本線車道と、これに接する加速車線・減速車線・登坂車線をまとめた呼び方（道路交通法第75条の11）。"
+  },
+  {
+   "id": "teishi-hyoji-kizai",
+   "term": "停止表示器材",
+   "reading": "ていしひょうじきざい",
+   "body": "故障などで運転できなくなった自動車が停止していることを後方に示すため、路面に置く器材で、夜間用と昼間用がある（道路交通法施行令第27条の6）。"
+  },
+  {
+   "id": "kasoku-shasen",
+   "term": "加速車線",
+   "reading": "かそくしゃせん",
+   "body": "本線車道に入ろうとする自動車が速度を上げるため、本線車道に接して設けられた車線（道路交通法第75条の7）。"
+  },
+  {
+   "id": "kousaten",
+   "term": "交差点",
+   "reading": "こうさてん",
+   "body": "十字路、丁字路その他2以上の道路が交わる場合における当該2以上の道路（歩道と車道の区別のある道路では車道）の交わる部分（道路交通法第2条第1項第5号）。"
+  },
+  {
+   "id": "oudan-hodou",
+   "term": "横断歩道",
+   "reading": "おうだんほどう",
+   "body": "道路標識等により歩行者の横断の用に供するための場所であることが示されている道路の部分（道路交通法第2条第1項第4号）。"
+  },
+  {
+   "id": "jitensha-oudantai",
+   "term": "自転車横断帯",
+   "reading": "じてんしゃおうだんたい",
+   "body": "道路標識等により自転車の横断の用に供するための場所であることが示されている道路の部分（道路交通法第2条第1項第4号の2）。"
+  },
+  {
+   "id": "anzen-chitai",
+   "term": "安全地帯",
+   "reading": "あんぜんちたい",
+   "body": "路面電車に乗降する者や横断している歩行者の安全を図るため道路に設けられた島状の施設、または道路標識及び道路標示により安全地帯であることが示されている道路の部分（道路交通法第2条第1項第6号）。"
+  },
+  {
+   "id": "yuusen-douro",
+   "term": "優先道路",
+   "reading": "ゆうせんどうろ",
+   "body": "道路標識等により優先道路として指定されている道路と、交差点において中央線または車両通行帯が設けられている道路（道路交通法第36条第2項）。"
+  },
+  {
+   "id": "kanjou-kousaten",
+   "term": "環状交差点",
+   "reading": "かんじょうこうさてん",
+   "body": "車両の通行の用に供する部分が環状の交差点で、道路標識等により車両が右回りに通行すべきことが指定されているもの（道路交通法第4条第3項）。"
+  },
+  {
+   "id": "sahou-yuusen",
+   "term": "左方優先",
+   "reading": "さほうゆうせん",
+   "body": "交通整理の行われていない交差点で、優先道路や明らかに広い道路の関係がないとき、車両は交差道路を左方から進行してくる車両の進行を妨げてはならないという決まり（道路交通法第36条第1項）。"
+  },
+  {
+   "id": "jidou",
+   "term": "児童",
+   "reading": "じどう",
+   "body": "6歳以上13歳未満の者（道路交通法第14条第3項）。"
+  },
+  {
+   "id": "youji",
+   "term": "幼児",
+   "reading": "ようじ",
+   "body": "6歳未満の者（道路交通法第14条第3項）。"
+  },
+  {
+   "id": "chusha",
+   "term": "駐車",
+   "reading": "ちゅうしゃ",
+   "body": "車両等が客待ち・荷待ち・貨物の積卸し・故障などのため継続的に停止すること（5分以内の貨物の積卸しと人の乗降のための停止を除く）、または運転者が車両等を離れて直ちに運転できない状態にあること（道路交通法第2条第1項第18号）。"
+  },
+  {
+   "id": "teisha",
+   "term": "停車",
+   "reading": "ていしゃ",
+   "body": "車両等が停止することで駐車以外のもの（道路交通法第2条第1項第19号）。"
+  },
+  {
+   "id": "jikan-seigen-chusha-kukan",
+   "term": "時間制限駐車区間",
+   "reading": "じかんせいげんちゅうしゃくかん",
+   "body": "時間を限って同一の車両が引き続き駐車できる道路の区間として道路標識等で指定された区間（道路交通法第49条第1項）。"
+  },
+  {
+   "id": "yakan",
+   "term": "夜間",
+   "reading": "やかん",
+   "body": "灯火をつける義務に関していう、日没時から日出時までの時間（道路交通法第52条第1項）。"
+  },
+  {
+   "id": "ju-hikenin-sha",
+   "term": "重被牽引車",
+   "reading": "じゅうひけんいんしゃ",
+   "body": "牽引されるための構造と装置をもち、車両総重量が750kgを超える車両（道路交通法第51条の4第1項）。"
+  },
+  {
+   "id": "jokou",
+   "term": "徐行",
+   "reading": "じょこう",
+   "body": "車両等が直ちに停止することができるような速度で進行すること（道路交通法第2条第1項第20号）。"
+  },
+  {
+   "id": "oikoshi",
+   "term": "追越し",
+   "reading": "おいこし",
+   "body": "車両が他の車両等に追い付いた場合に、進路を変えてその車両等の側方を通過し、かつ、その前方に出ること（道路交通法第2条第1項第21号）。"
+  },
+  {
+   "id": "sharyo-tsukotai",
+   "term": "車両通行帯",
+   "reading": "しゃりょうつうこうたい",
+   "body": "車両が道路の定められた部分を通行すべきことが道路標示により示されている場合の、その道路の部分（道路交通法第2条第1項第7号）。"
+  },
+  {
+   "id": "hidarigawa-bubun",
+   "term": "左側部分",
+   "reading": "ひだりがわぶぶん",
+   "body": "道路（歩道等と車道の区別がある道路では車道）の中央から左の部分で、中央線があるときはその中央線から左の部分（道路交通法第17条第4項）。"
+  },
+  {
+   "id": "ippan-doro",
+   "term": "一般道路",
+   "reading": "いっぱんどうろ",
+   "body": "高速自動車国道の本線車道とこれに接する加速車線・減速車線以外の道路（道路交通法施行令第11条）。"
+  },
+  {
+   "id": "kinkyu-jidosha",
+   "term": "緊急自動車",
+   "reading": "きんきゅうじどうしゃ",
+   "body": "消防用自動車・救急用自動車など政令で定める自動車で、緊急用務のため政令で定めるところにより運転中のもの（道路交通法第39条第1項）。"
+  },
+  {
+   "id": "rosen-bus-to",
+   "term": "路線バス等",
+   "reading": "ろせんばすとう",
+   "body": "路線定期運行の乗合バスのほか、通学通園バスなどで公安委員会が指定した自動車（道路交通法第20条の2、施行令第10条）。"
+  },
+  {
+   "id": "shingouki",
+   "term": "信号機",
+   "reading": "しんごうき",
+   "body": "電気により操作され、道路の交通に関し、灯火により交通整理等のための信号を表示する装置（道路交通法第2条第1項第14号）。"
+  },
+  {
+   "id": "douro-hyoushiki",
+   "term": "道路標識",
+   "reading": "どうろひょうしき",
+   "body": "道路の交通に関し、規制又は指示を表示する標示板（道路交通法第2条第1項第15号）。"
+  },
+  {
+   "id": "douro-hyouji",
+   "term": "道路標示",
+   "reading": "どうろひょうじ",
+   "body": "道路の交通に関し、規制又は指示を表示する標示で、路面に描かれた道路鋲、ペイント、石等による線、記号又は文字（道路交通法第2条第1項第16号）。"
+  },
+  {
+   "id": "hojo-hyoushiki",
+   "term": "補助標識",
+   "reading": "ほじょひょうしき",
+   "body": "本標識に附置され、規制の日・時間や対象となる車両、区間などを示して本標識の意味を補う道路標識（標識令第1条・別表第一）。"
+  },
+  {
+   "id": "rosokutai",
+   "term": "路側帯",
+   "reading": "ろそくたい",
+   "body": "歩行者の通行の用に供し、又は車道の効用を保つため、歩道の設けられていない道路又は歩道の設けられていない側の路端寄りに設けられた帯状の道路の部分で、道路標示によって区画されたもの（道路交通法第2条第1項第3号の4）。"
+  },
+  {
+   "id": "teishi-ichi",
+   "term": "停止位置",
+   "reading": "ていしいち",
+   "body": "信号に従って停止する位置で、停止線があればその直前、なければ交差点の直前などとされる位置（道路交通法施行令第2条の表の備考）。"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_100001",
+   "no": 100001,
+   "topic": "青色の灯火",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "信号機の青色の灯火に対面する普通自動車は、交差点で直進、左折、右折のいずれもすることができる。",
+   "explanation": "施行令第2条の表で、青色の灯火は自動車が直進・左折・右折できることを意味します。右折するときは対向車の進行を妨げないなど、交差点の通行方法は別に守ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100002",
+   "no": 100002,
+   "topic": "黄色の灯火",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "黄色の灯火に変わったとき、車両は停止位置のすぐ手前まで来ていて安全に停止できない場合であっても、停止位置を越えて進んではならない。",
+   "explanation": "誤りです。黄色の灯火の意味には「黄色に変わった時点で停止位置に近接していて安全に停止できない場合を除く」というただし書があり、その場合は進行できます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100003",
+   "no": 100003,
+   "topic": "赤色の灯火",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点ですでに右折している普通自動車は、赤色の灯火に変わったときは、その右折している地点で停止しなければならない。",
+   "explanation": "誤りです。交差点ですでに右折している自動車は、そのまま進行できます（青色で進む車両の進行を妨げてはならない）。右折している地点で止まるのは、二段階で右折する一般原付・特定小型原付・軽車両です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100004",
+   "no": 100004,
+   "topic": "停止位置",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "停止線のない交差点のすぐ手前に横断歩道があるとき、赤色の灯火での停止位置は、横断歩道を渡りきった先の交差点の直前である。",
+   "explanation": "誤りです。交差点の直近に横断歩道がある場合、交差点には横断歩道の外側までの部分が含まれるので、停止位置は横断歩道の手前（直前）です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100005",
+   "no": 100005,
+   "topic": "点滅信号",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "赤色の灯火の点滅信号に対面する車両は、一時停止をせずに、徐行して他の交通に注意しながら進行すればよい。",
+   "explanation": "誤りです。赤色の灯火の点滅では、車両等は停止位置で一時停止しなければなりません。他の交通に注意して進行できるのは歩行者等です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100006",
+   "no": 100006,
+   "topic": "青色の矢印",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "青色の灯火の矢印信号が表示されているとき、車両は、同時に黄色や赤色の灯火が表示されていても、矢印の方向に進行することができる。",
+   "explanation": "施行令第2条の表で、青色の灯火の矢印は、黄色・赤色の灯火の信号にかかわらず矢印の方向に進行できることを意味します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100007",
+   "no": 100007,
+   "topic": "左折可の表示",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点で左折することができる旨の表示がある場合、車両は、信号機が赤色の灯火を表示していても左折することができる。",
+   "explanation": "施行令第2条第2項により、左折できる旨の表示があると、黄色や赤色の灯火の意味に「左折できる」ことが含まれます。表示は信号機の下などに設けられます（施行規則第3条）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第2条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100008",
+   "no": 100008,
+   "topic": "警察官の手信号",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "警察官が腕を横に水平に上げているとき、その警察官の身体の正面に対面する交通については、青色の灯火の信号と同じ意味である。",
+   "explanation": "誤りです。腕を水平に上げた警察官に対面する交通は、赤色の灯火の信号と同じ意味です。青色と同じになるのは腕に平行する交通です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第4条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100009",
+   "no": 100009,
+   "topic": "警察官の灯火信号",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "警察官が灯火を頭上に上げているとき、それまで灯火が振られていた方向に進行する交通については、赤色の灯火の信号と同じ意味である。",
+   "explanation": "誤りです。灯火を頭上に上げた状態では、それまで振られていた方向に進む交通は黄色の灯火と同じ意味です。交差する交通は赤色の灯火と同じ意味です（施行令第5条）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第5条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100010",
+   "no": 100010,
+   "topic": "信号と手信号",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点の信号機の信号と警察官の手信号の意味が異なるときは、車両は警察官の手信号に従わなければならない。",
+   "explanation": "道路交通法第6条第1項後段により、警察官等は信号機と異なる手信号等をすることができ、第7条によりその場合は手信号等に従います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第6条・第7条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100011",
+   "no": 100011,
+   "topic": "標識の種類",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "道路標識のうち本標識には、案内標識、警戒標識、規制標識、指示標識の4種類がある。",
+   "explanation": "標識令第1条で、[[道路標識]]は本標識と補助標識に分けられ、本標識は案内・警戒・規制・指示の4種類とされています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 第1条",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100012",
+   "no": 100012,
+   "topic": "補助標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "規制標識に「日・時間」の補助標識が付いている場合、本標識の規制は、そこに示された日や時間に行われる。",
+   "explanation": "標識令別表第一で、「日・時間」の補助標識は、本標識が表示する交通の規制が行われている日又は時間を示すものとされています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第一",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100013",
+   "no": 100013,
+   "topic": "警戒標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "警戒標識は、文字や記号を黒色、地を黄色とするのが基本の色彩である。",
+   "explanation": "標識令別表第二の色彩の定めで、警戒標識は縁線・文字・記号を黒色、縁と地を黄色とするとされています（「信号機あり」などに一部例外あり）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第二",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100014",
+   "no": 100014,
+   "topic": "通行止め",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "「通行止め」の標識がある道路では、車両の通行は禁止されているが、歩行者は通行することができる。",
+   "explanation": "誤りです。「通行止め」は歩行者等・車両・路面電車の通行をすべて禁止します。車両だけを禁止するのは「車両通行止め」です（標識令別表第一）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第一",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100015",
+   "no": 100015,
+   "topic": "車両進入禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "「車両進入禁止」の標識は、一方通行の道路などで、車両が通行を禁止された方向に向かって進入することを禁止するものである。",
+   "explanation": "標識令別表第一のとおりです。一定方向への通行が禁止された道路で、その禁止される方向に向かって入ることを禁止します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第一",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100016",
+   "no": 100016,
+   "topic": "車両横断禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "「車両横断禁止」の標識がある道路でも、道路外の駐車場に入るための右折を伴う横断はすることができる。",
+   "explanation": "誤りです。「車両横断禁止」の例外は道路外の施設等に出入りするための「左折」を伴う横断だけで、右折を伴う横断は禁止されます（標識令別表第一）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第一",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100017",
+   "no": 100017,
+   "topic": "追越し禁止の標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "「追越しのための右側部分はみ出し通行禁止」の標識がある区間では、右側部分にはみ出さずに追越しをすることは禁止されていない。",
+   "explanation": "この標識が禁止するのは、追越しのために道路の右側部分にはみ出して通行することです（標識令別表第一）。はみ出さない追越しまでは禁止していません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第一",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100018",
+   "no": 100018,
+   "topic": "駐停車禁止の標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "「駐車禁止」の標識がある場所では、駐車だけでなく停車も禁止されている。",
+   "explanation": "誤りです。「駐車禁止」が禁止するのは駐車だけで、停車はできます。駐車と停車の両方を禁止するのは「駐停車禁止」の標識です（標識令別表第一）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第一",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100019",
+   "no": 100019,
+   "topic": "一時停止の標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "「一時停止」の標識がある交差点では、停止線の直前で一時停止し、停止線がない場合は交差点の直前で一時停止しなければならない。",
+   "explanation": "道路交通法第43条のとおりです。一時停止の標識は交通整理の行われていない交差点やその手前の直近に設けられます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第43条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100020",
+   "no": 100020,
+   "topic": "停止禁止部分",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "停止禁止部分の標示がある場所では、前方の車の状況によりその中で停止するおそれがあるときは、その部分に入ってはならない。",
+   "explanation": "標識令別表第五と道路交通法第50条第2項のとおりです。前が詰まっているときは、手前で待ちます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第50条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100021",
+   "no": 100021,
+   "topic": "進路変更禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "進路変更禁止の道路標示で区画された車両通行帯を通行しているときでも、道路工事などでその通行帯を通れない場合は、標示を越えて進路を変更できる。",
+   "explanation": "道路交通法第26条の2第3項のとおりです。道路の損壊・工事などで通行帯を通れない場合や、緊急自動車に道を譲る場合などは例外とされています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第26条の2第3項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100022",
+   "no": 100022,
+   "topic": "横断歩道の予告",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "「横断歩道又は自転車横断帯あり」の指示標示は、その標示が描かれている位置が横断歩道であることを示している。",
+   "explanation": "誤りです。この標示は「前方に」横断歩道又は自転車横断帯があることをあらかじめ示すものです（標識令別表第五）。標示の位置そのものが横断歩道ではありません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第五",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100023",
+   "no": 100023,
+   "topic": "路側帯での駐停車",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "幅が0.75m以下の路側帯がある場所で駐車するときは、車の全部を路側帯の中に入れなければならない。",
+   "explanation": "誤りです。幅0.75m以下の路側帯は道路交通法第47条第3項の対象外（施行令第14条の6第1項）で、中に入らず車道の左端に沿って駐停車します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第14条の6",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100024",
+   "no": 100024,
+   "topic": "路側帯の種類",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "駐停車禁止路側帯では、駐車は禁止されているが、路側帯に入って短い時間停車することはできる。",
+   "explanation": "誤りです。駐停車禁止路側帯は、路側帯での車両の駐車と停車の両方を禁止するものです（標識令別表第五、道路交通法第47条第3項）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第五",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100025",
+   "no": 100025,
+   "topic": "路側帯の通行",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通自動車が道路外の駐車場に入るために路側帯を横切るときは、路側帯に入る直前で一時停止し、歩行者の通行を妨げないようにする。",
+   "explanation": "道路交通法第17条第1項ただし書・第2項のとおりです。歩道を横切るときも同じです。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第17条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_100026",
+   "no": 100026,
+   "topic": "安全地帯",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "安全地帯が設けられている道路では、安全地帯の左側の部分とその前後5m以内の部分が駐停車禁止となる。",
+   "explanation": "誤りです。駐停車禁止となるのは、安全地帯の左側の部分と、その前後の側端からそれぞれ前後10m以内の部分です（道路交通法第44条第1項第4号）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第44条第1項第4号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "signal"
+    },
+    {
+     "exam": "honmen",
+     "section": "signal"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200001",
+   "no": 200001,
+   "topic": "左側通行",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "車両は道路の中央から左の部分を通行するのが原則で、道路標識等による中央線があるときは、その中央線から左の部分を通行する。",
+   "explanation": "車両は道路の[[左側部分]]を通行するのが原則です。中央線が引かれているときは、その中央線が道路の中央とみなされます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第17条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200002",
+   "no": 200002,
+   "topic": "右側部分へのはみ出し",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "左側部分の幅が6mに満たない道路で他の車を追い越すときは、反対方向からの交通を妨げるおそれがあっても、右側部分にはみ出してよい。",
+   "explanation": "誤りです。幅6m未満の道路で追越しのため右側部分にはみ出せるのは、右側部分を見通すことができ、かつ反対方向からの交通を妨げるおそれがない場合に限られます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第17条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200003",
+   "no": 200003,
+   "topic": "車両通行帯の通行区分",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "片側2車線の道路では、自動車は、追越しなどの場合を除き、左側の車両通行帯を通行しなければならない。",
+   "explanation": "[[車両通行帯]]のある道路では、左端から数えて1番目の通行帯を通るのが原則です。速度に応じて最も右側以外の通行帯を選べるのは、片側3車線以上の道路です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第20条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200004",
+   "no": 200004,
+   "topic": "車両通行帯の通行区分",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "車両通行帯のある道路で追越しをするときは、通行している車両通行帯のすぐ右側の車両通行帯を通行しなければならない。",
+   "explanation": "車両通行帯のある道路で追越しをするときは、通行中の通行帯の直近の右側の通行帯を通ります。2つ以上右の通行帯へ一気に移ることはできません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第20条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200005",
+   "no": 200005,
+   "topic": "進路変更禁止の標示",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "進路変更禁止の道路標示で区画された車両通行帯を通行中でも、前の車が遅いときは、標示をこえて進路を変更してよい。",
+   "explanation": "誤りです。進路変更禁止の標示で区画された通行帯では、緊急自動車に進路を譲るときや工事などで通れないときを除き、標示をこえて進路を変えてはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第26条の2",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200006",
+   "no": 200006,
+   "topic": "進路変更",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "進路を変えると後方から来る車が急ブレーキをかけることになる場合でも、合図をしていれば進路を変更してよい。",
+   "explanation": "誤りです。進路変更後の進路を後方から来る車の速度や方向を急に変えさせるおそれがあるときは、合図をしていても進路を変えてはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第26条の2",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200007",
+   "no": 200007,
+   "topic": "路線バス等優先通行帯",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "路線バス等優先通行帯を普通自動車で通行中に、後方から路線バスが近づいてきたときは、すみやかにその通行帯の外に出なければならない。",
+   "explanation": "優先通行帯は普通自動車も通れますが、後方から[[路線バス等]]が近づいたら、その運行を妨げないようすみやかに通行帯の外に出なければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第20条の2",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200008",
+   "no": 200008,
+   "topic": "専用通行帯",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "『専用通行帯』の標識で路線バスの専用とされた車両通行帯でも、後方から路線バスが来ていなければ、普通自動車は通行してよい。",
+   "explanation": "誤りです。専用通行帯は指定された車両以外は通行できず、普通自動車は、左折のため道路の左側端に寄るときや工事などでやむを得ないときなどを除き、バスが来ていなくても通れません（道路交通法第20条第2項・第3項）。バスが来ていなければ通れるのは優先通行帯です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第20条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200009",
+   "no": 200009,
+   "topic": "軌道敷内の通行",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自動車は、右折するために軌道敷を横切る場合であっても、軌道敷内に入ってはならない。",
+   "explanation": "誤りです。左折・右折・横断・転回のため軌道敷を横切る場合や、危険防止のためやむを得ない場合は、軌道敷内に入ることができます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第21条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200010",
+   "no": 200010,
+   "topic": "一般道路の法定速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "中央線も車両通行帯もなく、往復の方向別に分離もされていない一般道路では、標識で指定がなければ、普通自動車の最高速度は30km/hである。",
+   "explanation": "[[一般道路]]のうち、中央線・車両通行帯がなく、構造や柵などで往復の方向別に分離されていない道路の法定速度は30km/hです。施行令の現行の条文で定められています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第11条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200011",
+   "no": 200011,
+   "topic": "一般道路の法定速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "中央線のある一般道路で最高速度の標識や標示がないとき、普通自動車の最高速度は50km/hである。",
+   "explanation": "誤りです。中央線や車両通行帯のある一般道路では、標識等で指定がなければ普通自動車の最高速度は60km/hです。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第11条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200012",
+   "no": 200012,
+   "topic": "原動機付自転車の法定速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "『最高速度』の標識で50km/hと指定されている一般道路では、原動機付自転車も50km/hまで出してよい。",
+   "explanation": "誤りです。『最高速度』の標識で原動機付自転車の速度を指定できるのは法定速度以下の場合に限られるため、50km/hの指定があっても原動機付自転車は30km/hまでです。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第1 最高速度(323)",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200013",
+   "no": 200013,
+   "topic": "最低速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "『最低速度』の標識がある一般道路でも、法令の規定で速度を落とす場合や危険を防止するためやむを得ない場合は、指定速度より遅く進行できる。",
+   "explanation": "最低速度が指定された道路でも、法令の規定により速度を減ずる場合と、危険を防止するためやむを得ない場合は例外とされています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第23条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200014",
+   "no": 200014,
+   "topic": "徐行すべき場所",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "道路標識による指定がなくても、道路の曲がり角付近を通行するときは、徐行しなければならない。",
+   "explanation": "道路の曲がり角付近は、標識がなくても法令で徐行すべき場所とされています。上り坂の頂上付近や勾配の急な下り坂も同じです。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第42条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200015",
+   "no": 200015,
+   "topic": "徐行すべき場所",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "勾配の急な上り坂を通行するときは、標識がなくても徐行しなければならない。",
+   "explanation": "誤りです。法令で徐行すべき場所とされているのは、上り坂の頂上付近と勾配の急な下り坂です。勾配の急な上り坂そのものは含まれません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第42条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200016",
+   "no": 200016,
+   "topic": "追越しの意味",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "進路を変えずに、前の車の側方を通過してその前方に出ることも、道路交通法上の追越しにあたる。",
+   "explanation": "誤りです。法律上の[[追越し]]は、進路を変えて前の車の側方を通過し、その前方に出ることです。進路を変えずに前に出るのは追越しにあたりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200017",
+   "no": 200017,
+   "topic": "追越しの方法",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "他の車を追い越すときは、前の車が右折のため道路の中央に寄っている場合などを除き、その右側を通行しなければならない。",
+   "explanation": "追越しは前の車の右側を通るのが原則です。前の車が右折のため中央（一方通行では右側端）に寄っているときは、左側を通ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第28条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200018",
+   "no": 200018,
+   "topic": "二重追越しの禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "前の車がほかの自動車を追い越そうとしているときでも、安全が確認できれば、その車を追い越し始めてよい。",
+   "explanation": "誤りです。前の車が他の自動車を追い越そうとしているときは、追越しを始めてはなりません（二重追越しの禁止）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第29条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200019",
+   "no": 200019,
+   "topic": "追越し禁止場所（交差点・横断歩道・踏切）",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "横断歩道とその手前30m以内の場所では、自動車を追い越すため進路を変えたり、前の車の側方を通過したりしてはならない。",
+   "explanation": "横断歩道・自転車横断帯・踏切・交差点とその手前30m以内は、追越し禁止の場所です（優先道路を通行しているときのその交差点を除く）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第30条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200020",
+   "no": 200020,
+   "topic": "追越し禁止場所（坂・曲がり角・トンネル）",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "トンネル内は、車両通行帯が設けられている場合でも、他の自動車を追い越すことが禁止されている。",
+   "explanation": "誤りです。トンネルで追越しが禁止されるのは、車両通行帯が設けられていない部分です。車両通行帯のあるトンネルでは、標識で禁止されていなければ追い越せます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第30条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200021",
+   "no": 200021,
+   "topic": "追越し禁止の標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "『追越し禁止』の標識がある区間では、道路の右側部分にはみ出さなくても、他の車を追い越してはならない。",
+   "explanation": "『追越し禁止』の標識は追越しそのものを禁止します。右側部分へのはみ出しだけを禁止する『追越しのための右側部分はみ出し通行禁止』とは意味が違います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路標識、区画線及び道路標示に関する命令 別表第1 追越し禁止(314の2)",
+    "url": "https://laws.e-gov.go.jp/law/335M50004002003"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200022",
+   "no": 200022,
+   "topic": "追いつかれた車両の義務",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自分より最高速度が高い車に追いつかれたときは、その車が追越しを終わるまで速度を上げてはならない。",
+   "explanation": "最高速度が高い車両に追いつかれたときは、追越しが終わるまで速度を増してはなりません。最高速度が同じか低い車両でも、相手より遅い速度で進み続けるなら同じです。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第27条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200023",
+   "no": 200023,
+   "topic": "割込みの禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "信号待ちで停止している車の列に追いついたとき、列の前方に空きがあれば、その側方を通過して列に割り込んでもよい。",
+   "explanation": "誤りです。法令や警察官の命令、危険防止のため停止・徐行している車両等とそれに続く車両等の前方に、側方を通過して割り込んだり、横切ったりしてはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第32条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200024",
+   "no": 200024,
+   "topic": "車間距離",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "同じ進路を進む車のすぐ後ろを走るときは、前の車が急に止まっても追突を避けられるだけの距離を保たなければならない。",
+   "explanation": "直前の車が急停止しても追突を避けられる車間距離を保つことが義務付けられています。必要な距離は速度や路面の状態で変わります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第26条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200025",
+   "no": 200025,
+   "topic": "急ブレーキの禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "後続車がいないときは、危険を防止するためでなくても、急ブレーキをかけてかまわない。",
+   "explanation": "誤りです。急ブレーキが認められるのは危険を防止するためやむを得ない場合だけで、後続車の有無は関係ありません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第24条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200026",
+   "no": 200026,
+   "topic": "緊急自動車への進路の譲り方",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点やその付近で緊急自動車が近づいてきたときは、交差点を避け、道路の左側に寄って一時停止しなければならない。",
+   "explanation": "交差点やその付近で[[緊急自動車]]が近づいたときは、交差点を避けて道路の左側に寄り、一時停止します。一方通行の道路で左側に寄るとかえって妨げになるときは、右側に寄ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第40条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200027",
+   "no": 200027,
+   "topic": "緊急自動車への進路の譲り方",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点やその付近以外の場所で緊急自動車が近づいてきたときは、その場で直ちに一時停止しなければならない。",
+   "explanation": "誤りです。交差点やその付近以外では、道路の左側に寄って進路を譲ればよく、一時停止までは義務付けられていません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第40条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_200028",
+   "no": 200028,
+   "topic": "坂道での行き違い",
+   "status": "draft",
+   "version": 1,
+   "stem": "狭い坂道で対向車と行き違うとき、近くに待避所がなければ、下りの車が上りの車に道を譲るのが原則である。",
+   "explanation": "坂道では、発進の難しい上りの車を優先させ、下りの車が道を譲ります。ただし、近くに待避所があるときは、上りの車でも待避所に入って道を譲ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "交通の方法に関する教則（国家公安委員会告示）の趣旨"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "passage"
+    },
+    {
+     "exam": "honmen",
+     "section": "passage"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300001",
+   "no": 300001,
+   "topic": "左折の方法",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通自動車が左折するときは、あらかじめできる限り道路の左側端に寄り、できる限り道路の左側端に沿って徐行しなければならない。",
+   "explanation": "左折は「左に寄って、左側端に沿って徐行」が基本です。標識等で通行部分が指定されているときはその部分を通ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第34条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300002",
+   "no": 300002,
+   "topic": "右折の方法",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通自動車が右折するときは、対向車との接触を避けるため、交差点の中心の外側を大回りして徐行しなければならない。",
+   "explanation": "誤りです。右折するときは、交差点の中心の直近の内側を徐行します。中心の外側を大回りするのではありません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第34条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300003",
+   "no": 300003,
+   "topic": "原付の二段階右折",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "一般原動機付自転車は、信号機や警察官による交通整理の行われていない交差点であっても、道路の左側部分に車両通行帯が3以上あれば、二段階の方法で右折しなければならない。",
+   "explanation": "誤りです。車両通行帯が3以上の道路で二段階右折をするのは、交通整理の行われている交差点で右折する場合に限られます。交通整理の行われていない交差点では、通行帯の数にかかわらず小回りの方法で右折します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第34条第5項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300004",
+   "no": 300004,
+   "topic": "進行方向別通行区分",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点で進行する方向ごとの通行区分が標識等で指定されている道路では、右折する普通自動車は、右折用に指定された車両通行帯を通行しなければならない。",
+   "explanation": "進行方向別通行区分が指定されているときは、その区分に従って車両通行帯を通行します。右折するなら右折用の通行帯を通ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第35条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300005",
+   "no": 300005,
+   "topic": "左方優先",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交通整理の行われていない交差点で、どちらも優先道路でなく道幅も同じ程度のときは、車両は右方から進行してくる車両の進行を妨げてはならない。",
+   "explanation": "誤りです。この場合は左方から進行してくる車両の進行を妨げてはなりません（左方優先）。右方からの車両が優先するのではありません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第36条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300006",
+   "no": 300006,
+   "topic": "優先道路",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交通整理の行われていない交差点で、交差道路が優先道路であるときは、その優先道路を通行する車両等の進行を妨げてはならない。",
+   "explanation": "自分の道路が優先道路でない場合、交差道路が[[優先道路]]であれば、そちらを通る車両等の進行を妨げてはなりません。左右どちらから来るかは関係ありません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第36条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300007",
+   "no": 300007,
+   "topic": "道幅の広い道路",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交通整理の行われていない交差点で、自分が通行している道路の道幅が明らかに広いときでも、狭い交差道路の左方から来る車両の進行を妨げてはならない。",
+   "explanation": "誤りです。交差道路より自分の道路の幅員が明らかに広いときは、狭い道路の車両のほうが進行を妨げてはならない立場になります。左方優先より道幅の関係が優先します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第36条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300008",
+   "no": 300008,
+   "topic": "右折時の直進車優先",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点で右折しようとするとき、自分のほうが先に交差点に入っていれば、対向の直進車より先に右折してよい。",
+   "explanation": "誤りです。先に交差点に入っていても、右折車は直進または左折しようとする車両等の進行を妨げてはなりません。対向車が通過するのを待って右折します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第37条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300009",
+   "no": 300009,
+   "topic": "一時停止の標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "一時停止の標識がある交通整理の行われていない交差点では、停止線の直前で一時停止し、交差道路を通行する車両等の進行を妨げてはならない。",
+   "explanation": "一時停止の指定がある場所では停止線の直前（停止線がなければ交差点の直前）で止まり、交差道路を通行する車両等の進行を妨げてはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第43条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300010",
+   "no": 300010,
+   "topic": "交差点付近の追越し",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点の手前30m以内では追越しが禁止されているが、交差点の中であれば、優先道路でなくても追越しをしてよい。",
+   "explanation": "誤りです。追越し禁止の場所には交差点そのものも含まれます。優先道路を通行している場合を除き、交差点の中でも追越しはできません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第30条第3号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300011",
+   "no": 300011,
+   "topic": "交差点の駐停車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点の側端から5m以内の場所は駐車禁止であるが、人の乗り降りのための短時間の停車であればしてよい。",
+   "explanation": "誤りです。交差点の側端から5m以内は、駐車だけでなく停車も禁止されています。人の乗り降りのための停車もできません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第44条第1項第2号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300012",
+   "no": 300012,
+   "topic": "環状交差点での優先",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "車両等は、環状交差点に入ろうとするときは、その環状交差点内を通行している車両等の進行を妨げてはならない。",
+   "explanation": "環状交差点では、すでに環状交差点内を通行している車両等が優先します。入ろうとする車両はその進行を妨げてはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第37条の2第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300013",
+   "no": 300013,
+   "topic": "環状交差点への進入",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "環状交差点に入ろうとするときは、交差道路が優先道路でなければ、徐行する必要はない。",
+   "explanation": "誤りです。環状交差点に入ろうとするときは、道路の関係にかかわらず徐行しなければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第37条の2第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300014",
+   "no": 300014,
+   "topic": "混雑時の交差点進入禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "信号機のある交差点で、前方の車両の状況から交差点内で停止して交差道路の通行を妨げるおそれがあるときは、青色の灯火であっても交差点に入ってはならない。",
+   "explanation": "交差点内で止まって交差道路の交通をふさぐおそれがあるときは、青信号でも交差点に入ってはなりません。交差点内に停止線があるときは、その停止線をこえた部分が基準です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第50条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300015",
+   "no": 300015,
+   "topic": "横断歩道への接近",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "横断歩道に近づいたときは、横断しようとする歩行者がいないことが明らかな場合を除き、横断歩道の直前で停止できるような速度で進行しなければならない。",
+   "explanation": "[[横断歩道]]の手前では、歩行者がいないと明らかな場合を除き、直前で止まれる速度に落として近づきます。停止線があれば停止線の直前が基準です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第38条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300016",
+   "no": 300016,
+   "topic": "横断歩道での一時停止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "横断歩道を横断しようとしている歩行者がいても、警音器を鳴らして知らせれば、一時停止しないで通過してよい。",
+   "explanation": "誤りです。横断しようとしている歩行者がいるときは、横断歩道の直前で一時停止し、その通行を妨げないようにしなければなりません。警音器で知らせても義務はなくなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第38条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300017",
+   "no": 300017,
+   "topic": "横断歩道手前の停止車両",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "横断歩道の手前で停止している車両があるとき、その側方を通過して前方に出ようとする場合は、前方に出る前に一時停止しなければならない。",
+   "explanation": "停止車両の陰から歩行者が出てくるおそれがあるため、側方を通って前に出る前に一時停止が必要です。信号などで歩行者の横断が禁止されている横断歩道は除かれます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第38条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300018",
+   "no": 300018,
+   "topic": "自転車横断帯",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自転車横断帯を自転車が横断しているときは、自動車は徐行して通過すればよく、一時停止する必要はない。",
+   "explanation": "誤りです。自転車横断帯を横断し、または横断しようとする自転車がいるときは、その直前で一時停止し、通行を妨げないようにしなければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第38条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300019",
+   "no": 300019,
+   "topic": "横断歩道のない交差点",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点またはその直近の横断歩道のない場所で歩行者が道路を横断しているときは、車両はその歩行者の通行を妨げてはならない。",
+   "explanation": "横断歩道がなくても、交差点やその直近で横断している歩行者の通行を妨げてはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第38条の2",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300020",
+   "no": 300020,
+   "topic": "歩行者の側方通過",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "歩道と車道の区別のない道路で歩行者の側方を通過するときは、歩行者との間に安全な間隔をあけるか、徐行しなければならない。",
+   "explanation": "歩行者のそばを通るときは、安全な間隔を保つか、それができなければ徐行します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第18条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300021",
+   "no": 300021,
+   "topic": "子どもの保護",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "保護者などが付き添っていない児童や幼児が歩いているときは、一時停止するか徐行して、その歩行を妨げないようにしなければならない。",
+   "explanation": "監護者が付き添わない児童や幼児は急に飛び出すおそれがあるため、一時停止または徐行して歩行を妨げないようにします。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条第2号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300022",
+   "no": 300022,
+   "topic": "高齢者などの保護",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高齢の歩行者や身体の障害のある歩行者が通行しているときは、一時停止するか徐行して、その通行を妨げないようにしなければならない。",
+   "explanation": "高齢者や身体の障害のある人など、通行に支障のある歩行者が通行しているときは、一時停止または徐行が必要です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条第2号の2",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300023",
+   "no": 300023,
+   "topic": "目が見えない人の保護",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "目が見えない人が連れて通行する盲導犬は、法令で定める赤色の用具を付けた犬とされている。",
+   "explanation": "誤りです。盲導犬が付ける用具は白色または黄色と定められています。つえも白色または黄色です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第8条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300024",
+   "no": 300024,
+   "topic": "歩道を横切るとき",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "道路に面した駐車場に入るため歩道を横切るときは、歩道に入る直前で一時停止し、歩行者の通行を妨げないようにしなければならない。",
+   "explanation": "道路外の施設に出入りするため歩道等を横切るときは、歩行者の有無にかかわらず、歩道等に入る直前で一時停止し、歩行者の通行を妨げないようにします。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第17条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300025",
+   "no": 300025,
+   "topic": "安全地帯のそば",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "道路の左側部分にある安全地帯の側方を通過するときは、歩行者がいなくても、必ず一時停止しなければならない。",
+   "explanation": "誤りです。安全地帯の側方を通過するときの義務は、歩行者がいる場合に徐行することです。歩行者がいないときに一時停止する義務はありません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条第3号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300026",
+   "no": 300026,
+   "topic": "踏切の一時停止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "踏切を通過しようとするときは、信号機の表示する信号に従う場合を除き、踏切の直前で停止し、安全を確認した後でなければ進行してはならない。",
+   "explanation": "踏切では直前（停止線があればその直前）で停止し、安全を確認してから進みます。信号機がありその信号に従うときは停止しないで進行できます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第33条第1項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300027",
+   "no": 300027,
+   "topic": "遮断機・警報機",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "踏切の遮断機が下り始めていても、まだ下りきっていなければ、急いで踏切に入ってよい。",
+   "explanation": "誤りです。遮断機が閉じようとしている間は、踏切に入ってはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第33条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_300028",
+   "no": 300028,
+   "topic": "踏切内で動けなくなったとき",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "踏切内で車が故障して動かせなくなったときは、乗っている人が避難すれば、鉄道の係員などに知らせる措置をとる義務はない。",
+   "explanation": "誤りです。直ちに非常信号を行うなどして、踏切に停止している車があることを鉄道の係員や警察官に知らせる措置をとらなければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第33条第3項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "intersection"
+    },
+    {
+     "exam": "honmen",
+     "section": "intersection"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400001",
+   "no": 400001,
+   "topic": "駐車の定義",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "運転者がすぐに運転できる状態のまま、貨物の積卸しのために車を止め、5分以内に終えて発進した場合は、駐車ではなく停車にあたる。",
+   "explanation": "貨物の積卸しのための停止で5分を超えないものは[[駐車]]から除かれているので、停車にあたる。5分を超えたときや、運転者が車を離れてすぐに運転できない状態のときは駐車になる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第2条第1項第18号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400002",
+   "no": 400002,
+   "topic": "人の乗降のための停止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "運転者が車から離れずに人の乗り降りのために止めている場合でも、5分を超えると駐車にあたる。",
+   "explanation": "誤り。人の乗降のための停止は時間の長さに関係なく駐車から除かれているので、運転者が車を離れなければ[[停車]]にあたる。5分の区切りがあるのは貨物の積卸しのほうである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第2条第1項第18号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400003",
+   "no": 400003,
+   "topic": "交差点付近の駐停車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "道路の曲がり角付近で駐停車が禁止されているのは、曲がり角から10m以内の部分である。",
+   "explanation": "誤り。交差点の側端や道路の曲がり角の駐停車禁止の範囲は、そこから5m以内の部分である。10mではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第44条第1項第2号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400004",
+   "no": 400004,
+   "topic": "横断歩道付近の駐停車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自転車横断帯の前後5m以内の部分では、駐車は禁止されているが、停車は禁止されていない。",
+   "explanation": "誤り。横断歩道や自転車横断帯の前後の側端からそれぞれ前後5m以内の部分は、駐車だけでなく停車も禁止されている（駐停車禁止場所）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第44条第1項第3号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400005",
+   "no": 400005,
+   "topic": "踏切付近の駐停車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "踏切の前後の側端から、それぞれ前後に10m以内の部分では駐車も停車もしてはならない。",
+   "explanation": "踏切の中だけでなく、踏切の前後の側端からそれぞれ前後10m以内の部分も駐停車禁止場所である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第44条第1項第6号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400006",
+   "no": 400006,
+   "topic": "停留所付近の駐停車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "バスの停留所の標示柱から10m以内の部分は、そのバスの運行時間中に限り駐停車禁止である。",
+   "explanation": "乗合自動車の停留所の標示柱や標示板から10m以内の部分は、その停留所に係る路線のバスの運行時間中に限って駐停車禁止となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第44条第1項第5号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400007",
+   "no": 400007,
+   "topic": "坂・トンネルの駐停車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "トンネルの中では駐車は禁止されているが、人の乗降のための停車であれば認められている。",
+   "explanation": "誤り。トンネルは坂の頂上付近や勾配の急な坂と同じく駐停車禁止場所であり、駐車だけでなく停車も禁止されている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第44条第1項第1号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400008",
+   "no": 400008,
+   "topic": "出入口付近の駐車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "駐車場や車庫など、道路外の施設の自動車用の出入口付近で駐車が禁止されているのは、出入口から5m以内の部分である。",
+   "explanation": "誤り。道路外の施設や場所の自動車用出入口から駐車禁止となるのは3m以内の部分である。5mではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第45条第1項第1号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400009",
+   "no": 400009,
+   "topic": "消防関係の駐車禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "消火栓や、指定消防水利の標識が設けられている位置から5m以内の部分は駐車禁止である。",
+   "explanation": "消火栓、指定消防水利の標識の位置、消防用防火水槽の吸水口・吸管投入孔から5m以内の部分は駐車禁止場所である。なお火災報知機は1m以内。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第45条第1項第4号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400010",
+   "no": 400010,
+   "topic": "駐車時の右側の余地",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "駐車したとき、車の右側の道路上に3.5m以上の余地がなくなる場所では、原則として駐車してはならない。",
+   "explanation": "駐車したときに車両の右側の道路上に3.5m（標識等で距離が指定されていればその距離）以上の余地がない場所は駐車禁止である。運転者が車を離れない荷物の積卸しや傷病者の救護などの例外がある。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第45条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400011",
+   "no": 400011,
+   "topic": "路側帯での駐停車",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "白線1本で区画された幅0.75m以下の路側帯がある道路で駐車するときは、その路側帯に入って駐車しなければならない。",
+   "explanation": "誤り。幅0.75m以下の歩行者用の路側帯には入らず、車道の左側端に沿って駐車する。路側帯に入って止めるのは幅が0.75mを超える場合で、車の左側に0.75mの余地をとる。駐停車禁止路側帯や歩行者用路側帯には、幅にかかわらず入って止められない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第14条の6",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400012",
+   "no": 400012,
+   "topic": "時間制限駐車区間",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "時間制限駐車区間では、パーキング・メーターが車を感知した時から、標識等で表示された時間を超えて駐車してはならない。",
+   "explanation": "[[時間制限駐車区間]]では、パーキング・メーターが車両を感知した時やパーキング・チケットの発給を受けた時から、表示された時間を超えて引き続き駐車することはできない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第49条の3第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400013",
+   "no": 400013,
+   "topic": "右左折の合図の時期",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交差点で右折するときの合図は、交差点の手前の側端から10m手前の地点に達したときに始めればよい。",
+   "explanation": "誤り。右折や左折の合図は、交差点の手前の側端から30m手前の地点に達したときに行う。10mでは遅い。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第21条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400014",
+   "no": 400014,
+   "topic": "進路変更の合図",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "同じ方向に進みながら進路を右に変えるときの合図は、進路を変えようとする約3秒前に行う。",
+   "explanation": "同一方向に進行しながら進路を変えるときは、その行為をしようとする時の3秒前に合図を行う。30m手前で行うのは右左折・転回のときである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第21条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400015",
+   "no": 400015,
+   "topic": "後退の合図",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "後退するときの手による合図は、腕を車体の外に出して水平に伸ばすことである。",
+   "explanation": "誤り。後退の手による合図は、腕を車体の外に出して斜め下に伸ばし、手のひらを後ろに向けて腕を前後に動かす。後退灯を備える自動車は後退灯をつける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第21条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400016",
+   "no": 400016,
+   "topic": "警音器の使用制限",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "信号が青に変わっても発進しない前の車に知らせるためであれば、警音器を鳴らしてもよい。",
+   "explanation": "誤り。警音器は法令で鳴らすよう定められた場合と、危険を防止するためやむを得ない場合以外は鳴らしてはならない。発進を促すために鳴らすことはできない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第54条第2項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400017",
+   "no": 400017,
+   "topic": "夜間の灯火",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "夜間であっても、街灯で明るく照らされている一般道路を走るときは、前照灯をつけなくてよい。",
+   "explanation": "誤り。[[夜間]]に道路を通行するときは前照灯・車幅灯・尾灯などをつけなければならない。照明による例外は、十分に照明されたトンネルを通行する場合に限られる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第18条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400018",
+   "no": 400018,
+   "topic": "夜間の駐停車の灯火",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通自動車が夜間、車道の幅が5.5m以上の道路に駐車するときは、原則として非常点滅表示灯か尾灯をつけなければならない。",
+   "explanation": "夜間、車道の幅員が5.5m以上の道路に駐停車する自動車は、駐車灯をつける場合や照明のある場所などの例外を除き、非常点滅表示灯または尾灯をつける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第18条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400019",
+   "no": 400019,
+   "topic": "積載物の大きさ",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通自動車の積載物の長さは、自動車の長さにその長さの10分の2を加えた長さを超えてはならない。",
+   "explanation": "自動車（二輪を除く）の積載物の長さは自動車の長さの1.2倍まで、車体の前後からはみ出せるのはそれぞれ自動車の長さの10分の1までである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第22条第3号",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400020",
+   "no": 400020,
+   "topic": "車を離れるとき",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "車から離れるときは、エンジンを止め、ブレーキを完全にかけるなど、車が停止の状態を保つための措置をとらなければならない。",
+   "explanation": "車両等を離れるときは、原動機を止め、完全にブレーキをかけるなど停止の状態を保つため必要な措置を講じる義務がある。他人に無断で運転されないための措置も必要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条第5号",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400021",
+   "no": 400021,
+   "topic": "故障車の牽引",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "故障車をロープで牽引するときは、ロープの見やすい箇所に0.3m平方以上の赤色の布をつける。",
+   "explanation": "誤り。故障自動車を牽引しているロープ等の見やすい箇所には、0.3m平方以上の白色の布をつける。車輪を上げずに牽引するときは、車間を5m以内にする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第25条第2号",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "parking"
+    },
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_400022",
+   "no": 400022,
+   "topic": "牽引免許",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "牽引されるための構造と装置を持ち、車両総重量が750kgを超える車両（重被牽引車）を牽引自動車で牽引して運転するには、牽引する自動車の免許のほかに牽引免許が必要である。",
+   "explanation": "車両総重量750kgを超える[[重被牽引車]]を牽引するときは、牽引自動車に係る免許に加えて牽引免許を受けなければならない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第85条第3項",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "parking"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500001",
+   "no": 500001,
+   "topic": "普通免許で運転できる車",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "二輪車や特殊自動車ではない自動車で、車両総重量3,500kg未満、最大積載量2,000kg未満、乗車定員10人以下のものは、普通免許で運転することができる。",
+   "explanation": "[[普通自動車]]は、大型・中型・準中型・大型特殊・二輪・小型特殊のどれにも当たらない自動車です。準中型は車両総重量3,500kg以上または最大積載量2,000kg以上、中型は乗車定員11人以上なども含むので、二輪・特殊自動車以外で3つの条件をすべて満たす車は普通自動車に当たります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行規則 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335M50000002060"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500002",
+   "no": 500002,
+   "topic": "普通免許で運転できる車",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通免許を受けていれば、乗車定員11人のマイクロバスを運転することができる。",
+   "explanation": "誤りです。乗車定員11人以上29人以下の自動車は中型自動車に当たり、中型免許以上が必要です。普通免許で運転できるのは乗車定員10人以下までです。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行規則 第2条",
+    "url": "https://laws.e-gov.go.jp/law/335M50000002060"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500003",
+   "no": 500003,
+   "topic": "普通免許で運転できるほかの車",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通免許を受けていれば、普通自動車のほかに普通自動二輪車も運転することができる。",
+   "explanation": "誤りです。普通免許で運転できるのは、普通自動車のほか小型特殊自動車と一般原動機付自転車だけです。普通自動二輪車には普通二輪免許（または大型二輪免許）が必要です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第85条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500004",
+   "no": 500004,
+   "topic": "仮免許の同乗者",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通仮免許で練習のため運転するときは、普通免許を受けて通算1年以上の人を助手席に乗せ、その指導を受ければよい。",
+   "explanation": "誤りです。[[仮免許]]での練習には、その車を運転できる第一種免許を通算3年以上受けている人（免許停止中の人を除く）などを運転者席の横に乗せ、その指導の下で運転しなければなりません。1年では足りません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第87条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500005",
+   "no": 500005,
+   "topic": "仮免許の有効期間",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通仮免許の有効期間は、適性試験を受けた日から起算して1年である。",
+   "explanation": "誤りです。仮免許の有効期間は、適性試験を受けた日から起算して6か月です。その間に普通免許などを受ければ、仮免許は効力を失います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第87条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500006",
+   "no": 500006,
+   "topic": "初心運転者標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "普通免許を受けていた期間が通算して1年に達しない人は、原則として普通自動車の前面と後面に初心運転者標識を付けて運転しなければならない。",
+   "explanation": "[[初心運転者期間]]中の人には、初心運転者標識（若葉マーク）の表示義務があります。付ける位置は地上0.4m以上1.2m以下の見やすいところです（施行規則第9条の6）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条の5",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500007",
+   "no": 500007,
+   "topic": "高齢運転者標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "70歳以上の人が普通自動車を運転するときは、高齢運転者標識を必ず付けなければならず、付けずに運転すると違反になる。",
+   "explanation": "誤りです。75歳以上の表示義務の規定（第71条の5第3項）は附則第22条により当分の間適用されず、70歳以上の人は、加齢による身体機能の低下が運転に影響するおそれがあるときに標識を付けるよう努めなければならない（努力義務）とされています。付けなくても違反にはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条の5",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500008",
+   "no": 500008,
+   "topic": "聴覚障害者標識",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "政令で定める程度の聴覚障害を理由に免許に条件を付されている人は、普通自動車に聴覚障害者標識を付けなければ運転してはならない。",
+   "explanation": "聴覚障害を理由に条件を付された人には、前面と後面への聴覚障害者標識の表示義務があります。肢体不自由を理由とする身体障害者標識は努力義務で、扱いが異なります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条の6",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500009",
+   "no": 500009,
+   "topic": "標識を付けた車の保護",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "仮免許練習の標識を付けて練習中の普通自動車に対しては、危険防止のためやむを得ない場合を除き、幅寄せをしてはならない。",
+   "explanation": "初心運転者標識・高齢運転者標識などの標識や仮免許練習の標識を付けた車には、幅寄せをしてはなりません。その車が必要な車間距離を保てなくなるような割り込み（進路変更）も禁止されています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500010",
+   "no": 500010,
+   "topic": "免許証の携帯・提示",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自動車を運転中に警察官から免許証の提示を求められても、運転者はこれに応じる義務はない。",
+   "explanation": "誤りです。運転中に警察官から免許証の提示を求められたときは、提示しなければなりません。また、運転するときは免許証を携帯していなければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第95条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500011",
+   "no": 500011,
+   "topic": "免許証の更新期間",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "免許証の更新期間は、有効期間が満了する日の直前の誕生日の1か月前から、有効期間が満了する日までである。",
+   "explanation": "更新期間は「満了日の直前の誕生日の1か月前から満了日まで」です。海外旅行などで期間内に更新できない人は、期間前の更新を申請できます（第101条の2）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第101条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500012",
+   "no": 500012,
+   "topic": "日常点検",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自家用の普通自動車の日常点検は、運転者や使用者が自分で行うことはできず、必ず整備工場に依頼しなければならない。",
+   "explanation": "誤りです。日常点検は使用者や運転者が自分で行う点検で、ブレーキの踏みしろや効き、タイヤの空気圧・溝の深さ、灯火類などを確かめます。整備不良の車を運転してはならないことは法律で定められています（道路交通法第62条）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "安全運転の一般的な知識"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500013",
+   "no": 500013,
+   "topic": "酒気帯び運転の禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "呼気1リットルにつき0.15mg未満のわずかなアルコールであれば、酒気を帯びて車を運転しても道路交通法上禁止されていない。",
+   "explanation": "誤りです。酒気を帯びて車両等を運転することは、量にかかわらず禁止されています。呼気1リットルにつき0.15mg（血液1mLにつき0.3mg）は罰則の対象となる基準です（施行令第44条の3）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第65条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500014",
+   "no": 500014,
+   "topic": "飲酒運転の周辺者",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "運転者が酒気を帯びていることを知りながら、自分を送ってくれるよう頼んで、その車に同乗してはならない。",
+   "explanation": "飲酒運転の車への同乗を頼むことは禁止されています。酒気を帯びた人に車を貸すこと、運転するおそれがある人に酒類を提供することも禁止されています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第65条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500015",
+   "no": 500015,
+   "topic": "自転車の酒気帯び運転",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自転車を酒気帯びで運転することも禁止されており、身体に一定以上のアルコールを保有する状態で運転すれば罰則の対象となる。",
+   "explanation": "自転車も車両なので酒気帯び運転は禁止です。罰則（3年以下の拘禁刑または50万円以下の罰金）の対象から除かれるのは自転車以外の軽車両だけで、自転車は含まれます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第117条の2の2",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500016",
+   "no": 500016,
+   "topic": "過労運転等の禁止",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "薬の影響で正常な運転ができないおそれがある状態でも、酒気を帯びていなければ、車を運転することは禁止されていない。",
+   "explanation": "誤りです。過労・病気・薬物の影響その他の理由で正常な運転ができないおそれがある状態で車両等を運転することは禁止されています。酒気帯びかどうかは関係ありません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第66条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500017",
+   "no": 500017,
+   "topic": "携帯電話の使用",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自動車の運転中は、停止しているときを除き、手で持たなければ通話できない携帯電話を通話のために使用してはならない。",
+   "explanation": "停止中を除き、手で保持する携帯電話での通話や、画像表示用装置の画面の注視は禁止です。傷病者の救護など緊急やむを得ない通話は除かれます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500018",
+   "no": 500018,
+   "topic": "座席ベルト",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自動車を後退させるために運転するときは、運転者が座席ベルトを装着しないで運転しても違反にはならない。",
+   "explanation": "運転者は[[座席ベルト]]を装着しなければなりませんが、後退させるときは政令で定めるやむを得ない理由として例外になります。運転者は、ほかの座席の同乗者にも座席ベルトを装着させなければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第26条の3の2",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500019",
+   "no": 500019,
+   "topic": "幼児用補助装置",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "幼児を乗せて近所の店まで短い距離を運転するときは、幼児用補助装置を使用させなくてもよい。",
+   "explanation": "誤りです。距離が短いことは例外になりません。疾病や授乳などの世話のため使用できないなど、政令で定めるやむを得ない理由がある場合を除き、幼児には[[幼児用補助装置]]を使用させなければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条の3",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500020",
+   "no": 500020,
+   "topic": "交通事故の措置",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交通事故を起こした車の運転者は、直ちに運転をやめて、負傷者を救護し、道路における危険を防止するなど必要な措置をとらなければならない。",
+   "explanation": "交通事故があったときは、[[運転者等]]は直ちに運転を停止し、負傷者の救護や危険防止の措置をとる義務があります。そのうえで警察官に事故を報告します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第72条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500021",
+   "no": 500021,
+   "topic": "交通事故の報告",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "交通事故で人の死傷がなく、物が壊れただけの場合は、運転者に警察官へ事故を報告する義務はない。",
+   "explanation": "誤りです。報告義務は物損だけの事故にもあります。事故の日時・場所、死傷者の数、損壊した物とその程度、積載物、講じた措置を警察官に報告しなければなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第72条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500022",
+   "no": 500022,
+   "topic": "運転者の遵守事項",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "ぬかるみや水たまりを通行するときは、泥よけを付けたり徐行したりして、泥や汚水をはねて他人に迷惑をかけないようにしなければならない。",
+   "explanation": "運転者の遵守事項の1つです。ほかに、車を離れるときはエンジンを止め完全にブレーキをかけること、安全を確かめずにドアを開けないことなども定められています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第71条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500023",
+   "no": 500023,
+   "topic": "自転車の通行方法",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "歩道を通行できる普通自転車は、原則として歩道の中央から車道寄りの部分を徐行し、歩行者の通行を妨げるときは一時停止しなければならない。",
+   "explanation": "[[普通自転車]]は車道通行が原則で、標識で認められたときや、運転者が児童・幼児・70歳以上の人などのときは歩道を通行できます。その場合は車道寄り（普通自転車通行指定部分があればその部分）を徐行し、歩行者優先です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第63条の4",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_500024",
+   "no": 500024,
+   "topic": "無免許運転",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "免許の効力が停止されている期間中に自動車を運転しても、免許を受けているので無免許運転にはならない。",
+   "explanation": "誤りです。免許の効力が停止されている間に運転することも無免許運転に含まれます。無免許とわかっている人に車を貸すことも禁止されています。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第64条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "karimen",
+     "section": "driver"
+    },
+    {
+     "exam": "honmen",
+     "section": "driver"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600001",
+   "no": 600001,
+   "topic": "高速道路の最高速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "往復の方向別に分離された高速自動車国道の本線車道で最高速度の指定がない区間では、普通乗用自動車の最高速度は100km/hである。",
+   "explanation": "高速自動車国道の本線車道とこれに接する加速車線・減速車線では、普通自動車（三輪や牽引中のものを除く）の最高速度は100km/hと定められています。標識等で指定があればその速度に従います。往復の方向別に分離されていない（対面通行の）本線車道は、この100km/hの対象から除かれています（施行令第11条・第27条の2）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第27条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600002",
+   "no": 600002,
+   "topic": "自動車専用道路の速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "最高速度の標識がない自動車専用道路では、普通自動車の最高速度は60km/hである。",
+   "explanation": "自動車専用道路は高速自動車国道の本線車道ではないため、一般道路の最高速度が適用され、60km/hになります。標識等で最高速度が指定されていればそれに従います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第11条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600003",
+   "no": 600003,
+   "topic": "最低速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "往復の方向別に分離された高速自動車国道の本線車道では、標識で指定がない区間の最低速度は50km/hである。",
+   "explanation": "高速自動車国道の本線車道では、標識等で最低速度が指定されていない区間は政令で定める50km/hが最低速度です。これに達しない速度で進行してはなりません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第27条の3",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600004",
+   "no": 600004,
+   "topic": "対面通行の本線車道",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "往復の方向別に分離されていない高速自動車国道の本線車道でも、法令の最低速度50km/hが適用される。",
+   "explanation": "誤りです。本線車線が道路の構造上往復の方向別に分離されていない本線車道は、政令で最低速度の規定から除かれています。最低速度が標識で指定されていればそれに従います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第27条の2",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600005",
+   "no": 600005,
+   "topic": "本線車道への合流",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自動車が本線車道に入ろうとするとき、本線車道を通行している自動車があれば、その進行を妨げてはならない。",
+   "explanation": "緊急自動車を除き、本線車道に入ろうとする自動車は、本線車道を通行する自動車の進行妨害をしてはなりません。加速車線で十分に加速し、本線車道の車の流れを確かめて合流します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の6",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600006",
+   "no": 600006,
+   "topic": "本線車道での横断・転回・後退",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高速自動車国道の本線車道で中央分離帯に切れ目があれば、そこから転回して反対方向の本線車道へ移ってよい。",
+   "explanation": "誤りです。本線車道での横断・転回は禁止されており、中央分離帯の切れ目を使って反対車線に移ることもできません。緊急自動車などを除きます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の5",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600007",
+   "no": 600007,
+   "topic": "停止表示器材",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高速道路の本線車道や路肩で故障して運転できなくなったときは、停止表示器材を後方から見やすい位置に置かなければならない。",
+   "explanation": "本線車道等やこれに接する路肩・路側帯で運転できなくなったときは、停止していることを表示する義務があります。表示は停止表示器材を後方から来る運転者が見やすい位置に置いて行います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の11",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600008",
+   "no": 600008,
+   "topic": "停止表示器材",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高速道路で故障したときに停止表示器材を置く義務があるのは夜間だけで、昼間は置かなくてよい。",
+   "explanation": "誤りです。昼間も停止表示器材を置かなければなりません。夜間は夜間用の[[停止表示器材]]、それ以外の時間は昼間用を使います（トンネルの中など視界が200m以下の場所では昼間でも夜間用）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第27条の6",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600009",
+   "no": 600009,
+   "topic": "高速道路走行前の点検",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高速道路を走る前の点検で法令が求めているのは燃料の量だけで、貨物の積載状態は対象になっていない。",
+   "explanation": "誤りです。燃料のほか、冷却水や原動機のオイルの量、貨物の積載の状態も点検しなければなりません。積載物の転落や飛散を防ぐ措置も必要です。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の10",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600010",
+   "no": 600010,
+   "topic": "昼間の灯火",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高速道路では、昼間でも霧などで視界が200m以下の暗い場所を通るときは、前照灯などの灯火をつけなければならない。",
+   "explanation": "高速自動車国道や自動車専用道路では、トンネルの中や濃霧の場所などで視界が200m以下のときは、夜間以外でも灯火をつける義務があります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法施行令 第19条",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000270"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600011",
+   "no": 600011,
+   "topic": "下り坂のブレーキ",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "長い下り坂でフットブレーキを使い続けると、ブレーキが効かなくなることがある。",
+   "explanation": "フットブレーキを使い続けるとブレーキが過熱し、フェード現象やベーパーロック現象でブレーキの効きが悪くなります。長い下り坂ではエンジンブレーキを主に使います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "安全運転の一般的な知識"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600012",
+   "no": 600012,
+   "topic": "走行中のパンク",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "走行中にタイヤがパンクしたときは、車が左右に取られないよう、すぐに急ブレーキをかけて止める。",
+   "explanation": "誤りです。パンクしたときに急ブレーキをかけると、かえって車が左右に取られて危険です。ハンドルをしっかり握って進路を保ち、断続的なブレーキで徐々に速度を落とします。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "安全運転の一般的な知識"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600013",
+   "no": 600013,
+   "topic": "止血",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "負傷者の出血が多いときは、清潔なガーゼやハンカチを傷口に当て、直接強く押さえて止血する。",
+   "explanation": "出血を止める基本は、傷口を清潔な布などで直接押さえる方法（直接圧迫止血）です。感染を防ぐため、手袋やビニール袋があれば使います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "安全運転の一般的な知識"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600014",
+   "no": 600014,
+   "topic": "自動車専用道路の速度",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "自動車専用道路では、標識による指定がなくても、法令で50km/hの最低速度が定められている。",
+   "explanation": "誤りです。法令で50km/hの最低速度があるのは高速自動車国道の本線車道です。自動車専用道路の最低速度は、標識等で指定されている区間に限られます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の4",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600015",
+   "no": 600015,
+   "topic": "加速車線",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "加速車線が設けられていても、本線車道が空いていれば、加速車線を通らずに直接本線車道に入ってよい。",
+   "explanation": "誤りです。加速車線が設けられているときは、本線車道の混み具合にかかわらず加速車線を通行しなければなりません。加速車線で速度を上げ、安全を確かめてから合流します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の7",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600016",
+   "no": 600016,
+   "topic": "高速道路の駐停車",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高速道路では、道順を確かめるために地図を見るときなら、路肩に停車してもよい。",
+   "explanation": "誤りです。高速自動車国道等で路肩や路側帯に停車できるのは、故障その他の理由で停車がやむを得ない場合です。道順の確認は、サービスエリアなど駐車用に区画された場所で行います。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の8",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600017",
+   "no": 600017,
+   "topic": "故障時の移動",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "故障で本線車道等を走れなくなったときは、速やかに車を本線車道等以外の場所へ移すために必要な措置をとらなければならない。",
+   "explanation": "本線車道や加速車線・減速車線・登坂車線で動けなくなったときは、停止の表示に加え、[[本線車道等]]の外へ車を移す措置が義務づけられています。自力で動かせなければレッカー車などを手配します。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の11",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600018",
+   "no": 600018,
+   "topic": "高速道路の通行帯",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "片側3車線の高速道路では、追越しが終わった後もそのまま一番右側の車両通行帯を走り続けてよい。",
+   "explanation": "誤りです。片側3車線以上の道路で自動車が速度に応じて通行できるのは、一番右側以外の車両通行帯です。一番右側は追越しのときなどに使い、追越しが終わったら左へ戻ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第20条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600019",
+   "no": 600019,
+   "topic": "前照灯の切替え",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "夜間、前の車の直後を走るときは、その車の運転を妨げるおそれがあっても前照灯を上向きのままにしてよい。",
+   "explanation": "誤りです。灯火の操作が必要なのは対向車と行き違うときだけでなく、他の車両の直後を進行して交通を妨げるおそれがあるときも同じです。前照灯を下向きに切り替えます。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第52条",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600020",
+   "no": 600020,
+   "topic": "霧の中の運転",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "霧で見通しが悪いときは、前照灯を上向きにすると遠くまでよく見えるようになる。",
+   "explanation": "誤りです。霧の中で前照灯を上向きにすると、光が霧に反射してかえって見えにくくなります。前照灯は下向きにし、霧灯があれば使って、速度を落として走ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "安全運転の一般的な知識"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600021",
+   "no": 600021,
+   "topic": "ハイドロプレーニング",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "水がたまった路面を高速で走ると、タイヤが水の膜の上に浮いて、ハンドルやブレーキが効かなくなることがある。",
+   "explanation": "これがハイドロプレーニング現象です。速度が高いほど、またタイヤの溝がすり減っているほど起こりやすいので、雨の高速道路では速度を落として走ります。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "安全運転の一般的な知識"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_600022",
+   "no": 600022,
+   "topic": "緊急自動車と本線車道",
+   "status": "reviewed",
+   "version": 1,
+   "stem": "高速道路の本線車道では、緊急自動車であっても横断・転回・後退をしてはならない。",
+   "explanation": "誤りです。本線車道での横断・転回・後退の禁止（第75条の5）は、緊急自動車には適用されません（第75条の9）。一般の自動車は本線車道でこれらをしてはいけません。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "道路交通法 第75条の5・第75条の9",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000105"
+   },
+   "exams": [
+    {
+     "exam": "honmen",
+     "section": "highway"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○　正しい",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×　誤り",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  }
+ ]
+}
