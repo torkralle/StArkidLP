@@ -560,6 +560,24 @@
   </url>
 
   <url>
+    <loc>https://st.arkid.jp/apps/one-line-diary/privacy</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/one-line-diary/terms</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/one-line-diary/support</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://st.arkid.jp/apps/urge-surf/privacy</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
