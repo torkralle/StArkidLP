@@ -1,0 +1,7274 @@
+{
+ "meta": {
+  "content_version": "b0b5a685",
+  "built_at": "2026-11-21T13:37:52.349305Z"
+ },
+ "exams": [
+  {
+   "id": "lv5",
+   "name": "5級レベル（小学校で習う漢字）",
+   "short_name": "5級レベル",
+   "regime": "new",
+   "question_count": 30,
+   "minutes": 20,
+   "pass_score": 21,
+   "section_min_ratio": null,
+   "sections": [
+    {
+     "id": "yomi",
+     "name": "読み",
+     "mock_count": 7
+    },
+    {
+     "id": "kaki",
+     "name": "書き取り",
+     "mock_count": 7
+    },
+    {
+     "id": "bushu",
+     "name": "部首・画数",
+     "mock_count": 5
+    },
+    {
+     "id": "jukugo",
+     "name": "熟語（四字熟語・対義語・類義語）",
+     "mock_count": 6
+    },
+    {
+     "id": "okuri",
+     "name": "送りがな・同音異字",
+     "mock_count": 5
+    }
+   ]
+  },
+  {
+   "id": "lv3",
+   "name": "4級・3級レベル（中学校で習う漢字）",
+   "short_name": "4級・3級レベル",
+   "regime": "new",
+   "question_count": 30,
+   "minutes": 20,
+   "pass_score": 21,
+   "section_min_ratio": null,
+   "sections": [
+    {
+     "id": "yomi",
+     "name": "読み",
+     "mock_count": 7
+    },
+    {
+     "id": "kaki",
+     "name": "書き取り",
+     "mock_count": 7
+    },
+    {
+     "id": "bushu",
+     "name": "部首・画数",
+     "mock_count": 5
+    },
+    {
+     "id": "jukugo",
+     "name": "熟語（四字熟語・対義語・類義語）",
+     "mock_count": 6
+    },
+    {
+     "id": "okuri",
+     "name": "送りがな・同音異字",
+     "mock_count": 5
+    }
+   ]
+  },
+  {
+   "id": "lv2",
+   "name": "準2級・2級レベル（常用漢字すべて）",
+   "short_name": "準2級・2級レベル",
+   "regime": "new",
+   "question_count": 30,
+   "minutes": 20,
+   "pass_score": 21,
+   "section_min_ratio": null,
+   "sections": [
+    {
+     "id": "yomi",
+     "name": "読み",
+     "mock_count": 7
+    },
+    {
+     "id": "kaki",
+     "name": "書き取り",
+     "mock_count": 7
+    },
+    {
+     "id": "bushu",
+     "name": "部首・画数",
+     "mock_count": 5
+    },
+    {
+     "id": "jukugo",
+     "name": "熟語（四字熟語・対義語・類義語）",
+     "mock_count": 6
+    },
+    {
+     "id": "okuri",
+     "name": "送りがな・同音異字",
+     "mock_count": 5
+    }
+   ]
+  }
+ ],
+ "terms": [
+  {
+   "id": "on-yomi",
+   "term": "音読み",
+   "reading": "おんよみ",
+   "body": "漢字が中国から伝わったときの発音をもとにした読み方。"
+  },
+  {
+   "id": "kun-yomi",
+   "term": "訓読み",
+   "reading": "くんよみ",
+   "body": "漢字の意味に日本語の言葉を当てた読み方。"
+  },
+  {
+   "id": "jukujikun",
+   "term": "熟字訓",
+   "reading": "じゅくじくん",
+   "body": "「今日（きょう）」のように、熟語全体にまとめて当てた特別な読み方。"
+  },
+  {
+   "id": "jubako",
+   "term": "重箱読み",
+   "reading": "じゅうばこよみ",
+   "body": "熟語の上の字を音読み、下の字を訓読みにする読み方。"
+  },
+  {
+   "id": "yuto",
+   "term": "湯桶読み",
+   "reading": "ゆとうよみ",
+   "body": "熟語の上の字を訓読み、下の字を音読みにする読み方。"
+  },
+  {
+   "id": "okurigana",
+   "term": "送りがな",
+   "reading": "おくりがな",
+   "body": "漢字の読みをはっきりさせるため、漢字の後ろに付けるひらがな。"
+  },
+  {
+   "id": "bushu",
+   "term": "部首",
+   "reading": "ぶしゅ",
+   "body": "漢字を形で分類するときの目印になる共通の部分。"
+  },
+  {
+   "id": "hen",
+   "term": "へん",
+   "reading": "へん",
+   "body": "漢字の左側にくる部首。"
+  },
+  {
+   "id": "tsukuri",
+   "term": "つくり",
+   "reading": "つくり",
+   "body": "漢字の右側にくる部首。"
+  },
+  {
+   "id": "kanmuri",
+   "term": "かんむり",
+   "reading": "かんむり",
+   "body": "漢字の上側にくる部首。"
+  },
+  {
+   "id": "ashi",
+   "term": "あし",
+   "reading": "あし",
+   "body": "漢字の下側にくる部首。"
+  },
+  {
+   "id": "tare",
+   "term": "たれ",
+   "reading": "たれ",
+   "body": "漢字の上から左下へ垂れ下がる形の部首。"
+  },
+  {
+   "id": "nyo",
+   "term": "にょう",
+   "reading": "にょう",
+   "body": "漢字の左から下へ回り込む形の部首。"
+  },
+  {
+   "id": "kamae",
+   "term": "かまえ",
+   "reading": "かまえ",
+   "body": "漢字の外側を囲む形の部首。"
+  },
+  {
+   "id": "kakusu",
+   "term": "画数",
+   "reading": "かくすう",
+   "body": "漢字を書くときに、ひと続きに書く線（画）の数。"
+  },
+  {
+   "id": "hitsujun",
+   "term": "筆順",
+   "reading": "ひつじゅん",
+   "body": "漢字を書くときの、画を書く順番。"
+  },
+  {
+   "id": "yoji",
+   "term": "四字熟語",
+   "reading": "よじじゅくご",
+   "body": "漢字四字で一つのまとまった意味を表す熟語。"
+  },
+  {
+   "id": "taigigo",
+   "term": "対義語",
+   "reading": "たいぎご",
+   "body": "意味が反対、または対になる言葉。"
+  },
+  {
+   "id": "ruigigo",
+   "term": "類義語",
+   "reading": "るいぎご",
+   "body": "意味がよく似ている言葉。"
+  },
+  {
+   "id": "doon",
+   "term": "同音異義語",
+   "reading": "どうおんいぎご",
+   "body": "読み方が同じで意味が違う言葉。"
+  },
+  {
+   "id": "dokun",
+   "term": "同訓異字",
+   "reading": "どうくんいじ",
+   "body": "訓読みが同じで意味が違う漢字。"
+  },
+  {
+   "id": "joyo",
+   "term": "常用漢字",
+   "reading": "じょうようかんじ",
+   "body": "一般の社会生活で使う漢字の目安として国が定めた漢字（2136字）。"
+  },
+  {
+   "id": "haito",
+   "term": "学年別漢字配当表",
+   "reading": "がくねんべつかんじはいとうひょう",
+   "body": "小学校の各学年で習う漢字を定めた表（1026字）。"
+  },
+  {
+   "id": "kokuji",
+   "term": "国字",
+   "reading": "こくじ",
+   "body": "「畑」「峠」のように日本で作られた漢字。"
+  },
+  {
+   "id": "keisei",
+   "term": "形声文字",
+   "reading": "けいせいもじ",
+   "body": "意味を表す部分と音を表す部分を組み合わせて作った漢字。"
+  },
+  {
+   "id": "kaii",
+   "term": "会意文字",
+   "reading": "かいいもじ",
+   "body": "二つ以上の漢字の意味を組み合わせて作った漢字。"
+  },
+  {
+   "id": "shokei",
+   "term": "象形文字",
+   "reading": "しょうけいもじ",
+   "body": "物の形をかたどって作った漢字。"
+  },
+  {
+   "id": "shiji",
+   "term": "指事文字",
+   "reading": "しじもじ",
+   "body": "形で表しにくい数や位置を、点や線の記号で示した漢字。"
+  },
+  {
+   "id": "jukugo",
+   "term": "熟語",
+   "reading": "じゅくご",
+   "body": "二つ以上の漢字が結びついて、一つの言葉になったもの。"
+  },
+  {
+   "id": "ateji",
+   "term": "当て字",
+   "reading": "あてじ",
+   "body": "漢字の意味とは関係なく、音や訓だけを借りて書き表した言葉。"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_001001",
+   "no": 1001,
+   "topic": "音読み（観察）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「あさがおの〔観察〕日記をつける。」",
+   "explanation": "「観察」は、ものごとのようすをよく見てしらべること。「観」も「察」も「よく見る」という意味をもつ字で、どちらも[[音読み]]で読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "かんざつ",
+     "correct": false,
+     "why": "「観察」はにごらずに「かんさつ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "けんさつ",
+     "correct": false,
+     "why": "「観」を「ケン」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "かんさい",
+     "correct": false,
+     "why": "「察」を「サイ」とは読まない。"
+    },
+    {
+     "label": 4,
+     "body": "かんさつ",
+     "correct": true,
+     "why": "「観」の音読みは「カン」、「察」は「サツ」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001003",
+   "no": 1003,
+   "topic": "音読み（郷土）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「ふるさとの〔郷土〕料理を味わう。」",
+   "explanation": "「郷土」は、生まれ育った土地、ふるさとのこと。「郷」には「キョウ」と「ゴウ」の[[音読み]]があるが、「郷土」「故郷」では「キョウ」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ごうど",
+     "correct": false,
+     "why": "「郷」の「ゴウ」は「在郷」などの読みで、「郷土」では使わない。"
+    },
+    {
+     "label": 2,
+     "body": "きょうど",
+     "correct": true,
+     "why": "「郷」の音読みは「キョウ」、「土」は「ド」。"
+    },
+    {
+     "label": 3,
+     "body": "きょうと",
+     "correct": false,
+     "why": "「郷土」の「土」はにごって「ド」と読む。"
+    },
+    {
+     "label": 4,
+     "body": "けいど",
+     "correct": false,
+     "why": "「郷」を「ケイ」とは読まない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001005",
+   "no": 1005,
+   "topic": "音読み（貿易）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「港町で〔貿易〕のしごとにつく。」",
+   "explanation": "「貿易」は、外国と品物を売り買いすること。「易」には「エキ」と「イ」の[[音読み]]があり、「とりかえる」意味では「エキ」、「やさしい」意味では「イ」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ぼえき",
+     "correct": false,
+     "why": "「貿」は「ボウ」とのばして読む。"
+    },
+    {
+     "label": 2,
+     "body": "ぼうえき",
+     "correct": true,
+     "why": "「貿」の音読みは「ボウ」、「易」はここでは「エキ」。"
+    },
+    {
+     "label": 3,
+     "body": "ぼうい",
+     "correct": false,
+     "why": "「易」の「イ」は「容易」などの読みで、「貿易」では「エキ」と読む。"
+    },
+    {
+     "label": 4,
+     "body": "ぼうやく",
+     "correct": false,
+     "why": "「易」を「ヤク」とは読まない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001008",
+   "no": 1008,
+   "topic": "音読み（訪問）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「あした〔訪問〕する家に電話をかける。」",
+   "explanation": "「訪問」は、人の家などをたずねること。「訪」には「おとず（れる）」「たず（ねる）」という[[訓読み]]もある。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ぼうもん",
+     "correct": false,
+     "why": "「訪」はにごらずに「ホウ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "ほうぶん",
+     "correct": false,
+     "why": "「問」を「ブン」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "ほもん",
+     "correct": false,
+     "why": "「訪」は「ホウ」とのばして読む。"
+    },
+    {
+     "label": 4,
+     "body": "ほうもん",
+     "correct": true,
+     "why": "「訪」の音読みは「ホウ」、「問」は「モン」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001010",
+   "no": 1010,
+   "topic": "音読み（仏像）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「古いお寺で〔仏像〕を見学する。」",
+   "explanation": "「仏像」は、仏の姿をあらわした像のこと。「仏」は[[音読み]]で「ブツ」、[[訓読み]]で「ほとけ」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ふつぞう",
+     "correct": false,
+     "why": "「仏」はにごって「ブツ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "ぶつぞう",
+     "correct": true,
+     "why": "「仏」の音読みは「ブツ」、「像」は「ゾウ」。"
+    },
+    {
+     "label": 3,
+     "body": "ぶつしょう",
+     "correct": false,
+     "why": "「像」を「ショウ」とは読まない。"
+    },
+    {
+     "label": 4,
+     "body": "ほとけぞう",
+     "correct": false,
+     "why": "「仏像」は音読みどうしで読み、「ほとけぞう」とは読まない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001013",
+   "no": 1013,
+   "topic": "音読み（衛星）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「〔衛星〕から地球をうつした写真を見る。」",
+   "explanation": "「衛星」は、月のように地球などのまわりを回る天体や、人が打ち上げて地球のまわりを回らせる人工衛星のこと。「衛」は「守る」という意味で、「衛生」「守衛」などにも使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "えいしょう",
+     "correct": false,
+     "why": "「星」の「ショウ」は「明星」などの読みで、「衛星」では「セイ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "えいせい",
+     "correct": true,
+     "why": "「衛」の音読みは「エイ」、「星」は「セイ」。"
+    },
+    {
+     "label": 3,
+     "body": "えせい",
+     "correct": false,
+     "why": "「衛」は「エイ」と読む。"
+    },
+    {
+     "label": 4,
+     "body": "いせい",
+     "correct": false,
+     "why": "「衛」を「イ」とは読まない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001015",
+   "no": 1015,
+   "topic": "音読み（宇宙）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「図書館で〔宇宙〕についての本をかりる。」",
+   "explanation": "「宇宙」は、地球や星をふくむ、かぎりなく広い空間のこと。「宇」も「宙」も6年で習う字で、どちらも[[音読み]]しかない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "うじゅう",
+     "correct": false,
+     "why": "「宙」はにごらずに「チュウ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "うちょう",
+     "correct": false,
+     "why": "「宙」を「チョウ」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "ゆうちゅう",
+     "correct": false,
+     "why": "「宇」を「ユウ」とは読まない。"
+    },
+    {
+     "label": 4,
+     "body": "うちゅう",
+     "correct": true,
+     "why": "「宇」の音読みは「ウ」、「宙」は「チュウ」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001017",
+   "no": 1017,
+   "topic": "訓読み（率）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「キャプテンがチームを〔率いる〕。」",
+   "explanation": "「率いる」は、先に立って人々を引きつれること。「率」は[[音読み]]で「ソツ」「リツ」と読み、「引率」「確率」などの熟語がある。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "みちびく",
+     "correct": false,
+     "why": "「みちびく」は「導く」と書き、「率」の読みではない。"
+    },
+    {
+     "label": 2,
+     "body": "ひきいる",
+     "correct": true,
+     "why": "「率」の訓読みは「ひき（いる）」。"
+    },
+    {
+     "label": 3,
+     "body": "そついる",
+     "correct": false,
+     "why": "「ソツ」は音読みで、送りがなをつけて読むことはない。"
+    },
+    {
+     "label": 4,
+     "body": "ひきる",
+     "correct": false,
+     "why": "送りがなは「いる」で、「ひきる」とは読まない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001020",
+   "no": 1020,
+   "topic": "音読み（宣伝ほか・誤り探し）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の熟語の読みのうち、誤っているものはどれか。「預金・貯蔵・宣伝・縮小」",
+   "explanation": "「宣伝」は、品物や考えを多くの人に広く知らせること。「伝」は「伝言」「伝記」のように「デン」とにごって読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "預金（よきん）",
+     "correct": false,
+     "why": "「預」は「ヨ」、「金」は「キン」で正しい。"
+    },
+    {
+     "label": 2,
+     "body": "貯蔵（ちょぞう）",
+     "correct": false,
+     "why": "「貯」は「チョ」、「蔵」は「ゾウ」で正しい。"
+    },
+    {
+     "label": 3,
+     "body": "宣伝（せんてん）",
+     "correct": true,
+     "why": "「伝」はにごって「デン」と読み、正しくは「せんでん」。"
+    },
+    {
+     "label": 4,
+     "body": "縮小（しゅくしょう）",
+     "correct": false,
+     "why": "「縮」は「シュク」、「小」は「ショウ」で正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_001022",
+   "no": 1022,
+   "topic": "音読み（沿線ほか・誤り探し）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の熟語の読みのうち、誤っているものはどれか。「沿線・乳歯・誤解・拝見」",
+   "explanation": "「沿線」は、線路や道路にそった土地のこと。「沿」は右側が「船」の右側と同じ形だが「セン」とは読まず、[[音読み]]は「エン」、[[訓読み]]は「そ（う）」。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "拝見（はいけん）",
+     "correct": false,
+     "why": "「拝」は「ハイ」、「見」は「ケン」で正しい。"
+    },
+    {
+     "label": 2,
+     "body": "乳歯（にゅうし）",
+     "correct": false,
+     "why": "「乳」は「ニュウ」、「歯」は「シ」で正しい。"
+    },
+    {
+     "label": 3,
+     "body": "誤解（ごかい）",
+     "correct": false,
+     "why": "「誤」は「ゴ」、「解」は「カイ」で正しい。"
+    },
+    {
+     "label": 4,
+     "body": "沿線（せんせん）",
+     "correct": true,
+     "why": "「沿」の音読みは「エン」で、正しくは「えんせん」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001025",
+   "no": 1025,
+   "topic": "書き取り（警備）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「夜のビルの〔ケイビ〕をする。」",
+   "explanation": "「警備」は、悪いことや事故が起きないように、見回って守ること。「警」と「敬」は形が似ているので、下に「言」がつくのが「警」と覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "警備",
+     "correct": true,
+     "why": "「警」は注意をうながす、「備」はそなえるという意味で「警備」。"
+    },
+    {
+     "label": 2,
+     "body": "敬備",
+     "correct": false,
+     "why": "「敬」はうやまうという意味で、「ケイビ」には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "警美",
+     "correct": false,
+     "why": "「美」は「ビ」と読むが、うつくしいという意味で文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "径備",
+     "correct": false,
+     "why": "「径」は道や直径の意味で、「ケイビ」には使わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001027",
+   "no": 1027,
+   "topic": "書き取り（清潔）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「いつも〔セイケツ〕なハンカチを持ち歩く。」",
+   "explanation": "「清潔」は、よごれがなく、きれいなこと。「清」も「潔」もさんずいがついた字で、水できれいにするイメージで覚えるとよい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "青潔",
+     "correct": false,
+     "why": "「青」はあおいという意味で、文に合わない。"
+    },
+    {
+     "label": 2,
+     "body": "清潔",
+     "correct": true,
+     "why": "「清」も「潔」もきよらかという意味で「清潔」。"
+    },
+    {
+     "label": 3,
+     "body": "静潔",
+     "correct": false,
+     "why": "「静」はしずかという意味で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "清結",
+     "correct": false,
+     "why": "「結」はむすぶという意味で、「ケツ」の字がちがう。"
+    }
+   ]
+  },
+  {
+   "id": "q_001029",
+   "no": 1029,
+   "topic": "書き取り（標準）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「このくつは〔ヒョウジュン〕的な大きさだ。」",
+   "explanation": "「標準」は、ものごとをくらべるときのよりどころや、ふつうの程度のこと。「標」は「目標」「標識」にも使う、木へんの字。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "表準",
+     "correct": false,
+     "why": "「表」はおもてという意味で、「ヒョウジュン」には使わない。"
+    },
+    {
+     "label": 2,
+     "body": "標純",
+     "correct": false,
+     "why": "「純」はまじりけがないという意味で、「ジュン」の字がちがう。"
+    },
+    {
+     "label": 3,
+     "body": "票準",
+     "correct": false,
+     "why": "「票」は選挙の票などに使う字で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "標準",
+     "correct": true,
+     "why": "「標」はめじるし、「準」はよりどころという意味で「標準」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001032",
+   "no": 1032,
+   "topic": "書き取り（郵便）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「〔ユウビン〕局で切手を買う。」",
+   "explanation": "「郵便」は、手紙や荷物を相手にとどけるしくみのこと。「便」は「便利」では「ベン」、「郵便」「船便」では「ビン」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "郵便",
+     "correct": true,
+     "why": "「郵」は手紙を送るしくみ、「便」はたよりという意味で「郵便」。"
+    },
+    {
+     "label": 2,
+     "body": "有便",
+     "correct": false,
+     "why": "「有」はあるという意味で、文に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "遊便",
+     "correct": false,
+     "why": "「遊」はあそぶという意味で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "郵弁",
+     "correct": false,
+     "why": "「弁」は「ベン」と読み、「ビン」とは読まないので誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_001034",
+   "no": 1034,
+   "topic": "書き取り（経験）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「キャンプでの〔ケイケン〕を作文に書く。」",
+   "explanation": "「経験」は、実際に見たりやったりすること。「験」は馬へん、「検」は木へんで形が似ているので、「試験」「実験」とセットで覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "径験",
+     "correct": false,
+     "why": "「径」は道や直径の意味で、「ケイケン」には使わない。"
+    },
+    {
+     "label": 2,
+     "body": "計験",
+     "correct": false,
+     "why": "「計」ははかるという意味で、文に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "経験",
+     "correct": true,
+     "why": "「経」はへる、「験」はためすという意味で「経験」。"
+    },
+    {
+     "label": 4,
+     "body": "経検",
+     "correct": false,
+     "why": "「検」はしらべるという意味で、「ケン」の字がちがう。"
+    }
+   ]
+  },
+  {
+   "id": "q_001037",
+   "no": 1037,
+   "topic": "書き取り（輸出）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「この工場で作った車を海外に〔ユシュツ〕する。」",
+   "explanation": "「輸出」は、品物を外国へ売り出すこと。反対の意味のことばは「輸入」で、「輸」と「輪」は右側の形のちがいに気をつける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "由出",
+     "correct": false,
+     "why": "「由」はわけという意味で、文に合わない。"
+    },
+    {
+     "label": 2,
+     "body": "輪出",
+     "correct": false,
+     "why": "「輪」はわという意味で、「輸」と形が似ているが別の字。"
+    },
+    {
+     "label": 3,
+     "body": "油出",
+     "correct": false,
+     "why": "「油」はあぶらという意味で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "輸出",
+     "correct": true,
+     "why": "「輸」はものをはこぶ、「出」はだすという意味で「輸出」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001039",
+   "no": 1039,
+   "topic": "書き取り（尊敬）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「いつもやさしい先生を〔ソンケイ〕している。」",
+   "explanation": "「尊敬」は、人をすぐれていると認めて、うやまうこと。「敬」と「警」は形が似ているが、うやまう意味には下に「言」のない「敬」を使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "損敬",
+     "correct": false,
+     "why": "「損」はそこなう、へるという意味で、文に合わない。"
+    },
+    {
+     "label": 2,
+     "body": "孫敬",
+     "correct": false,
+     "why": "「孫」はまごという意味で、文に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "尊敬",
+     "correct": true,
+     "why": "「尊」はとうとい、「敬」はうやまうという意味で「尊敬」。"
+    },
+    {
+     "label": 4,
+     "body": "尊警",
+     "correct": false,
+     "why": "「警」は注意をうながすという意味で、「ケイ」の字がちがう。"
+    }
+   ]
+  },
+  {
+   "id": "q_001041",
+   "no": 1041,
+   "topic": "書き取り（効果）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「かぜ薬の〔コウカ〕があらわれて、熱が下がる。」",
+   "explanation": "「効果」は、何かをしたことによって表れるよい結果、ききめのこと。「効」は「き（く）」と[[訓読み]]し、「薬が効く」のように使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "功果",
+     "correct": false,
+     "why": "「功」はてがらという意味で、「コウカ」には使わない。"
+    },
+    {
+     "label": 2,
+     "body": "効果",
+     "correct": true,
+     "why": "「効」はききめ、「果」は結果という意味で「効果」。"
+    },
+    {
+     "label": 3,
+     "body": "校果",
+     "correct": false,
+     "why": "「校」は学校などの意味で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "効課",
+     "correct": false,
+     "why": "「課」は「課題」などの字で、「カ」の字がちがう。"
+    }
+   ]
+  },
+  {
+   "id": "q_001044",
+   "no": 1044,
+   "topic": "書き取り（劇場ほか・誤り探し）",
+   "status": "published",
+   "version": 1,
+   "stem": "次のカタカナを漢字にしたもののうち、誤っているものはどれか。「キンニク・ゲキジョウ・ヒミツ・ホウリツ」",
+   "explanation": "「劇場」は、しばいや音楽などを見せる建物のこと。「劇」はりっとう、「激」はさんずいの字で、しばいには「劇」を使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "キンニク（筋肉）",
+     "correct": false,
+     "why": "「筋」はすじ、「肉」はにくで正しい。"
+    },
+    {
+     "label": 2,
+     "body": "ホウリツ（法律）",
+     "correct": false,
+     "why": "「法」も「律」もきまりという意味で、正しい。"
+    },
+    {
+     "label": 3,
+     "body": "ヒミツ（秘密）",
+     "correct": false,
+     "why": "「秘」も「密」もかくすという意味をもち、正しい。"
+    },
+    {
+     "label": 4,
+     "body": "ゲキジョウ（激場）",
+     "correct": true,
+     "why": "「激」ははげしいという意味で、しばいを見せる場所は「劇場」と書く。"
+    }
+   ]
+  },
+  {
+   "id": "q_001046",
+   "no": 1046,
+   "topic": "書き取り（資源ほか・誤り探し）",
+   "status": "published",
+   "version": 1,
+   "stem": "次のカタカナを漢字にしたもののうち、誤っているものはどれか。「ジョウキ・シゲン・エンソウ・ゲンカク」",
+   "explanation": "「資源」は、ものを作るもとになる石油や木材などのこと。「源」は「みなもと」と[[訓読み]]し、水が流れ出るもとをあらわすのでさんずいがつく。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ジョウキ（蒸気）",
+     "correct": false,
+     "why": "「蒸」はむす、「気」は気体で正しい。"
+    },
+    {
+     "label": 2,
+     "body": "シゲン（資原）",
+     "correct": true,
+     "why": "「原」は野原などの字で、もとになるものの意味の「シゲン」は「資源」と書く。"
+    },
+    {
+     "label": 3,
+     "body": "エンソウ（演奏）",
+     "correct": false,
+     "why": "「演」も「奏」も音楽などをおこなう意味で正しい。"
+    },
+    {
+     "label": 4,
+     "body": "ゲンカク（厳格）",
+     "correct": false,
+     "why": "「厳」はきびしい、「格」はきまりで正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_001501",
+   "no": 1501,
+   "topic": "部首（顔）",
+   "status": "published",
+   "version": 1,
+   "stem": "漢字「顔」の部首はどれか。",
+   "explanation": "「顔」の[[部首]]は「頁（おおがい）」で、頭や顔に関係する字に多い。「頭」「額」なども同じ部首。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "さんづくり",
+     "correct": false,
+     "why": "「彡（さんづくり）」は左側の部分の中にある形で、部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "おおがい",
+     "correct": true,
+     "why": "「顔」は右側の「頁（おおがい）」が部首。"
+    },
+    {
+     "label": 3,
+     "body": "たつ",
+     "correct": false,
+     "why": "「立」は左上の一部分で、部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "がんだれ",
+     "correct": false,
+     "why": "「厂（がんだれ）」に似た形があるが、「顔」の部首ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001503",
+   "no": 1503,
+   "topic": "部首（識）",
+   "status": "published",
+   "version": 1,
+   "stem": "漢字「識」の部首はどれか。",
+   "explanation": "「識」の[[部首]]は「言（ごんべん）」で、言葉や知ることに関係する字に多い。右側の「戈」を部首とまちがえやすいので注意。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "おと",
+     "correct": false,
+     "why": "中央の「音」は部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "ほこづくり",
+     "correct": false,
+     "why": "右側の「戈」は部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "たつ",
+     "correct": false,
+     "why": "「立」は「音」の一部分で、部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "ごんべん",
+     "correct": true,
+     "why": "「識」は左側の「言（ごんべん）」が部首。"
+    }
+   ]
+  },
+  {
+   "id": "q_001505",
+   "no": 1505,
+   "topic": "部首（郡）",
+   "status": "published",
+   "version": 1,
+   "stem": "漢字「郡」の部首はどれか。",
+   "explanation": "「阝」は右側につくと「おおざと」、左側につくと「こざとへん」と呼び分ける。「郡」「都」「部」は右側なのでおおざと。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "くち",
+     "correct": false,
+     "why": "左側の「君」の中の「口」は部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "こざとへん",
+     "correct": false,
+     "why": "「阝」が左側にあるときが「こざとへん」で、「郡」は右側なのでちがう。"
+    },
+    {
+     "label": 3,
+     "body": "おおざと",
+     "correct": true,
+     "why": "「郡」は右側の「阝（おおざと）」が部首。"
+    },
+    {
+     "label": 4,
+     "body": "ふるとり",
+     "correct": false,
+     "why": "「隹（ふるとり）」の形は「郡」にない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001507",
+   "no": 1507,
+   "topic": "部首（庫）",
+   "status": "published",
+   "version": 1,
+   "stem": "漢字「庫」の部首はどれか。",
+   "explanation": "「庫」の[[部首]]は「广（まだれ）」で、建物に関係する字に多い。上から左へたれる形の部首を[[たれ]]という。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "くるま",
+     "correct": false,
+     "why": "中の「車」は部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "がんだれ",
+     "correct": false,
+     "why": "「厂（がんだれ）」は上に点がない形で、「庫」の部首とはちがう。"
+    },
+    {
+     "label": 3,
+     "body": "しかばね",
+     "correct": false,
+     "why": "「尸（しかばね）」の形は「庫」にない。"
+    },
+    {
+     "label": 4,
+     "body": "まだれ",
+     "correct": true,
+     "why": "「庫」は上から左をおおう「广（まだれ）」が部首。"
+    }
+   ]
+  },
+  {
+   "id": "q_001509",
+   "no": 1509,
+   "topic": "部首（建）",
+   "status": "published",
+   "version": 1,
+   "stem": "漢字「建」の部首はどれか。",
+   "explanation": "「建」の[[部首]]は「廴（えんにょう）」。左から下へまわる形の部首を[[にょう]]といい、「しんにょう」と形が似ているのでまちがえやすい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ふでづくり",
+     "correct": false,
+     "why": "右上の「聿」は部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "そうにょう",
+     "correct": false,
+     "why": "「走（そうにょう）」の形は「建」にない。"
+    },
+    {
+     "label": 3,
+     "body": "しんにょう",
+     "correct": false,
+     "why": "「辶（しんにょう）」は点のある別の部首で、「建」とはちがう。"
+    },
+    {
+     "label": 4,
+     "body": "えんにょう",
+     "correct": true,
+     "why": "「建」は左から下へまわる「廴（えんにょう）」が部首。"
+    }
+   ]
+  },
+  {
+   "id": "q_001511",
+   "no": 1511,
+   "topic": "画数（飛）",
+   "status": "published",
+   "version": 1,
+   "stem": "「飛行機」の「飛」の総画数はどれか。",
+   "explanation": "「飛」の[[画数]]は 9 画。形が複雑に見えるが、書き順どおりに一画ずつ数えると 9 画になる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "9",
+     "correct": true,
+     "why": "「飛」は 9 画で書く。"
+    },
+    {
+     "label": 2,
+     "body": "8",
+     "correct": false,
+     "why": "1 画少ない。右上のはねと点を一続きと数えてしまうと出やすい誤り。"
+    },
+    {
+     "label": 3,
+     "body": "10",
+     "correct": false,
+     "why": "1 画多い。"
+    },
+    {
+     "label": 4,
+     "body": "11",
+     "correct": false,
+     "why": "2 画多い。"
+    }
+   ]
+  },
+  {
+   "id": "q_001513",
+   "no": 1513,
+   "topic": "画数（版）",
+   "status": "published",
+   "version": 1,
+   "stem": "「出版」の「版」の総画数はどれか。",
+   "explanation": "「版」の[[画数]]は 8 画。[[へん]]の「片」（4 画）と「反」（4 画）に分けて数えると確かめやすい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "7",
+     "correct": false,
+     "why": "1 画少ない。"
+    },
+    {
+     "label": 2,
+     "body": "8",
+     "correct": true,
+     "why": "「版」は左の「片」4 画と右の「反」4 画で 8 画。"
+    },
+    {
+     "label": 3,
+     "body": "9",
+     "correct": false,
+     "why": "1 画多い。"
+    },
+    {
+     "label": 4,
+     "body": "10",
+     "correct": false,
+     "why": "2 画多い。"
+    }
+   ]
+  },
+  {
+   "id": "q_001515",
+   "no": 1515,
+   "topic": "画数（収）",
+   "status": "published",
+   "version": 1,
+   "stem": "「収入」の「収」の総画数はどれか。",
+   "explanation": "「収」の[[画数]]は 4 画。左側は縦の線とはねる線の 2 画で書くので、多く数えないように注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "6",
+     "correct": false,
+     "why": "2 画多い。"
+    },
+    {
+     "label": 2,
+     "body": "5",
+     "correct": false,
+     "why": "1 画多い。"
+    },
+    {
+     "label": 3,
+     "body": "3",
+     "correct": false,
+     "why": "1 画少ない。"
+    },
+    {
+     "label": 4,
+     "body": "4",
+     "correct": true,
+     "why": "「収」は左の部分 2 画と右の部分 2 画で 4 画。"
+    }
+   ]
+  },
+  {
+   "id": "q_001517",
+   "no": 1517,
+   "topic": "画数（興）",
+   "status": "published",
+   "version": 1,
+   "stem": "「興味」の「興」の総画数はどれか。",
+   "explanation": "「興」の[[画数]]は 16 画。中央の「同」に似た部分と両側の部分を分けて、一画ずつていねいに数える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "14",
+     "correct": false,
+     "why": "2 画少ない。"
+    },
+    {
+     "label": 2,
+     "body": "15",
+     "correct": false,
+     "why": "1 画少ない。"
+    },
+    {
+     "label": 3,
+     "body": "17",
+     "correct": false,
+     "why": "1 画多い。"
+    },
+    {
+     "label": 4,
+     "body": "16",
+     "correct": true,
+     "why": "「興」は 16 画で書く。"
+    }
+   ]
+  },
+  {
+   "id": "q_001519",
+   "no": 1519,
+   "topic": "部首（夢）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字のうち、部首が「くさかんむり」ではないものはどれか。",
+   "explanation": "「夢」は見た目が[[かんむり]]の「艹」に似ているが、[[部首]]は「夕（ゆうべ）」。夜に見るものと結びつけて覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "学年別漢字配当表（文部科学省）",
+    "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "夢",
+     "correct": true,
+     "why": "「夢」は上に「艹」に似た形があるが、部首は下の「夕（ゆうべ）」。"
+    },
+    {
+     "label": 2,
+     "body": "薬",
+     "correct": false,
+     "why": "「薬」の部首はくさかんむり。"
+    },
+    {
+     "label": 3,
+     "body": "茶",
+     "correct": false,
+     "why": "「茶」の部首はくさかんむり。"
+    },
+    {
+     "label": 4,
+     "body": "菜",
+     "correct": false,
+     "why": "「菜」の部首はくさかんむり。"
+    }
+   ]
+  },
+  {
+   "id": "q_001521",
+   "no": 1521,
+   "topic": "四字熟語（一石二鳥）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「一石二〔　〕」",
+   "explanation": "「一石二鳥」は、一つのことをして二つの得をすること。石を一つ投げて鳥を二羽とる様子から覚えるとよい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "朝",
+     "correct": false,
+     "why": "「一石二朝」という語はない。"
+    },
+    {
+     "label": 2,
+     "body": "長",
+     "correct": false,
+     "why": "「一石二長」という語はない。"
+    },
+    {
+     "label": 3,
+     "body": "調",
+     "correct": false,
+     "why": "「一石二調」という語はない。"
+    },
+    {
+     "label": 4,
+     "body": "鳥",
+     "correct": true,
+     "why": "一つの石で二羽の鳥をとる、という意味から「一石二鳥」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001523",
+   "no": 1523,
+   "topic": "四字熟語（半信半疑）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「半信半〔　〕」",
+   "explanation": "「半信半疑」は、本当かどうか決めかねて迷っている様子。「信じる」と反対の意味の「疑う」が組になっている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "義",
+     "correct": false,
+     "why": "「半信半義」という語はない。"
+    },
+    {
+     "label": 2,
+     "body": "議",
+     "correct": false,
+     "why": "「半信半議」という語はない。"
+    },
+    {
+     "label": 3,
+     "body": "技",
+     "correct": false,
+     "why": "「半信半技」という語はない。"
+    },
+    {
+     "label": 4,
+     "body": "疑",
+     "correct": true,
+     "why": "半分信じて半分うたがう、という意味なので「疑」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001525",
+   "no": 1525,
+   "topic": "四字熟語（異口同音）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「〔　〕口同音」",
+   "explanation": "「異口同音」は、多くの人が口をそろえて同じことを言うこと。「異」と「同」が反対の意味で組になっている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "意",
+     "correct": false,
+     "why": "「意口同音」という語はない。"
+    },
+    {
+     "label": 2,
+     "body": "異",
+     "correct": true,
+     "why": "ちがう（異なる）口から同じ言葉が出る意味なので「異」。"
+    },
+    {
+     "label": 3,
+     "body": "移",
+     "correct": false,
+     "why": "「移口同音」という語はない。"
+    },
+    {
+     "label": 4,
+     "body": "以",
+     "correct": false,
+     "why": "「以口同音」という語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001528",
+   "no": 1528,
+   "topic": "四字熟語（心機一転）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「心機一〔　〕」",
+   "explanation": "「心機一転」は、あることをきっかけに気持ちをすっかり入れかえること。「心機」は心の動き、「一転」はがらりと変わること。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "点",
+     "correct": false,
+     "why": "「心機一点」という語はない。"
+    },
+    {
+     "label": 2,
+     "body": "天",
+     "correct": false,
+     "why": "「心機一天」という語はない。"
+    },
+    {
+     "label": 3,
+     "body": "転",
+     "correct": true,
+     "why": "気持ちががらりと変わる（転じる）ので「転」。"
+    },
+    {
+     "label": 4,
+     "body": "展",
+     "correct": false,
+     "why": "「心機一展」という語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001530",
+   "no": 1530,
+   "topic": "対義語（拡大）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の語の対義語として正しいものはどれか。「拡大」",
+   "explanation": "「拡大」の[[対義語]]は「縮小」。「拡」と「縮」、「大」と「小」がそれぞれ反対の意味で対応している。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "最小",
+     "correct": false,
+     "why": "「最小」の対義語は「最大」。"
+    },
+    {
+     "label": 2,
+     "body": "減少",
+     "correct": false,
+     "why": "「減少」の対義語は「増加」。"
+    },
+    {
+     "label": 3,
+     "body": "縮小",
+     "correct": true,
+     "why": "広げて大きくする「拡大」に対し、ちぢめて小さくするのが「縮小」。"
+    },
+    {
+     "label": 4,
+     "body": "小型",
+     "correct": false,
+     "why": "「小型」の対義語は「大型」。"
+    }
+   ]
+  },
+  {
+   "id": "q_001533",
+   "no": 1533,
+   "topic": "対義語（賛成）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の語の対義語として正しいものはどれか。「賛成」",
+   "explanation": "「賛成」の[[対義語]]は「反対」。「賛同」は似た意味の[[類義語]]なので、取りちがえないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "反対",
+     "correct": true,
+     "why": "意見に同意する「賛成」に対し、同意しないのが「反対」。"
+    },
+    {
+     "label": 2,
+     "body": "反省",
+     "correct": false,
+     "why": "「反省」は自分の行いをふり返ることで、対義語ではない。"
+    },
+    {
+     "label": 3,
+     "body": "賛同",
+     "correct": false,
+     "why": "「賛同」は「賛成」とほぼ同じ意味の類義語。"
+    },
+    {
+     "label": 4,
+     "body": "不足",
+     "correct": false,
+     "why": "「不足」の対義語は「十分」などで、「賛成」とは関係がない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001535",
+   "no": 1535,
+   "topic": "対義語（出席）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の対義語の組み合わせのうち、誤っているものはどれか。",
+   "explanation": "「出席」の[[対義語]]は「欠席」。「欠点」は「長所」と対になる語なので、同じ「欠」の字でも意味がちがう。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "生産―消費",
+     "correct": false,
+     "why": "ものを作る「生産」と使う「消費」で、正しい対義語。"
+    },
+    {
+     "label": 2,
+     "body": "権利―義務",
+     "correct": false,
+     "why": "してよい「権利」としなければならない「義務」で、正しい対義語。"
+    },
+    {
+     "label": 3,
+     "body": "出席―欠点",
+     "correct": true,
+     "why": "「出席」の対義語は「欠席」で、「欠点」は不十分なところの意味なので誤り。"
+    },
+    {
+     "label": 4,
+     "body": "増加―減少",
+     "correct": false,
+     "why": "ふえる「増加」とへる「減少」で、正しい対義語。"
+    }
+   ]
+  },
+  {
+   "id": "q_001537",
+   "no": 1537,
+   "topic": "類義語（準備）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の語の類義語として正しいものはどれか。「準備」",
+   "explanation": "「準備」の[[類義語]]は「用意」。「旅行の準備をする」は「旅行の用意をする」と言いかえられる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "注意",
+     "correct": false,
+     "why": "「注意」は気をつけることで、類義語ではない。"
+    },
+    {
+     "label": 2,
+     "body": "用件",
+     "correct": false,
+     "why": "「用件」は伝えるべき用事の内容で、類義語ではない。"
+    },
+    {
+     "label": 3,
+     "body": "用意",
+     "correct": true,
+     "why": "前もってととのえておく意味で、「準備」とほぼ同じ。"
+    },
+    {
+     "label": 4,
+     "body": "意味",
+     "correct": false,
+     "why": "「意味」は言葉などが表す内容で、類義語ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001540",
+   "no": 1540,
+   "topic": "類義語（平等）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の類義語の組み合わせのうち、誤っているものはどれか。",
+   "explanation": "「平等」と「平和」は同じ「平」をふくむが意味はちがう。[[類義語]]は、言いかえても文の意味が変わらないかで確かめる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "案外―意外",
+     "correct": false,
+     "why": "思いのほかという意味で、正しい類義語。"
+    },
+    {
+     "label": 2,
+     "body": "永久―永遠",
+     "correct": false,
+     "why": "いつまでも続くという意味で、正しい類義語。"
+    },
+    {
+     "label": 3,
+     "body": "重要―大切",
+     "correct": false,
+     "why": "とても大事という意味で、正しい類義語。"
+    },
+    {
+     "label": 4,
+     "body": "平等―平和",
+     "correct": true,
+     "why": "「平等」は差がないこと、「平和」は争いがないことで、意味がちがうので誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_001542",
+   "no": 1542,
+   "topic": "熟語の構成（豊富）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の熟語と同じ組み立て（構成）のものはどれか。「豊富」",
+   "explanation": "「豊富」は「豊か」と「富む」という似た意味の字を重ねた[[熟語]]。「岩石」「森林」「救助」なども同じ組み立て。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "開閉",
+     "correct": false,
+     "why": "「開く」と「閉じる」で、反対の意味の字を重ねた組み立て。"
+    },
+    {
+     "label": 2,
+     "body": "岩石",
+     "correct": true,
+     "why": "「岩」も「石」もいしの意味で、「豊富」と同じく似た意味の字を重ねた組み立て。"
+    },
+    {
+     "label": 3,
+     "body": "読書",
+     "correct": false,
+     "why": "「書を読む」で、下の字が上の字の目的になる組み立て。"
+    },
+    {
+     "label": 4,
+     "body": "前進",
+     "correct": false,
+     "why": "「前へ進む」で、上の字が下の字をくわしく説明する組み立て。"
+    }
+   ]
+  },
+  {
+   "id": "q_001545",
+   "no": 1545,
+   "topic": "送りがな（暖）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナを漢字と送りがなで正しく書いたものはどれか。「今日は〔アタタカイ〕日ざしがふりそそいでいる。」",
+   "explanation": "「暖かい」は「暖かだ」と同じく「か」から送る。「暖い」と書くまちがいが多いので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "暖い",
+     "correct": false,
+     "why": "「た」が足りない。"
+    },
+    {
+     "label": 2,
+     "body": "暖たかい",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 3,
+     "body": "暖たたかい",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 4,
+     "body": "暖かい",
+     "correct": true,
+     "why": "「暖かい」は「か」から送るのが決まり。"
+    }
+   ]
+  },
+  {
+   "id": "q_001546",
+   "no": 1546,
+   "topic": "送りがな（冷）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナを漢字と送りがなで正しく書いたものはどれか。「朝起きたら〔ツメタイ〕水で顔をあらう。」",
+   "explanation": "「冷たい」は「た」から送る。「冷える」「冷める」と送りがながちがうので、語ごとに覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "冷い",
+     "correct": false,
+     "why": "「た」が足りない。"
+    },
+    {
+     "label": 2,
+     "body": "冷たい",
+     "correct": true,
+     "why": "「冷たい」は「た」から送るのが決まり。"
+    },
+    {
+     "label": 3,
+     "body": "冷めたい",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 4,
+     "body": "冷やたい",
+     "correct": false,
+     "why": "このような書き方はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001548",
+   "no": 1548,
+   "topic": "送りがな（快）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナを漢字と送りがなで正しく書いたものはどれか。「野原で朝の〔ココロヨイ〕風にふかれる。」",
+   "explanation": "「快い」は[[送りがな]]が「い」だけで、「ここちよい」とは別の語。「快よい」と書かないように注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "快よい",
+     "correct": false,
+     "why": "送りがなが多すぎる。よく見られるまちがい。"
+    },
+    {
+     "label": 2,
+     "body": "快ろよい",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 3,
+     "body": "快い",
+     "correct": true,
+     "why": "「快い」は活用する「い」だけを送るのが決まり。"
+    },
+    {
+     "label": 4,
+     "body": "快こよい",
+     "correct": false,
+     "why": "このような書き方はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001549",
+   "no": 1549,
+   "topic": "送りがな（難）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナを漢字と送りがなで正しく書いたものはどれか。「この算数の問題は少し〔ムズカシイ〕。」",
+   "explanation": "「しい」で終わる形容詞は「し」から送る決まりがあり、「難しい」「美しい」「楽しい」などがそうなる。「難かしい」と書かないように注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "難かしい",
+     "correct": false,
+     "why": "送りがなが多すぎる。よく見られるまちがい。"
+    },
+    {
+     "label": 2,
+     "body": "難ずかしい",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 3,
+     "body": "難しい",
+     "correct": true,
+     "why": "「しい」で終わる形容詞は「し」から送るので「難しい」。"
+    },
+    {
+     "label": 4,
+     "body": "難い",
+     "correct": false,
+     "why": "「難い」は「かたい」と読む別の語で、「むずかしい」とは読まない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001551",
+   "no": 1551,
+   "topic": "送りがな（導）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナを漢字と送りがなで正しく書いたものはどれか。「ガイドさんが旅行者を出口へ〔ミチビク〕。」",
+   "explanation": "「導く」は[[送りがな]]が「く」だけ。「導びく」と書くまちがいが多いので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "導びく",
+     "correct": false,
+     "why": "送りがなが多すぎる。よく見られるまちがい。"
+    },
+    {
+     "label": 2,
+     "body": "導ちびく",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 3,
+     "body": "導みちびく",
+     "correct": false,
+     "why": "読みをすべて送ってしまっており、誤り。"
+    },
+    {
+     "label": 4,
+     "body": "導く",
+     "correct": true,
+     "why": "「導く」は活用する「く」だけを送るのが決まり。"
+    }
+   ]
+  },
+  {
+   "id": "q_001553",
+   "no": 1553,
+   "topic": "送りがな（幼）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナを漢字と送りがなで正しく書いたものはどれか。「〔オサナイ〕弟の手を引いて公園へ行く。」",
+   "explanation": "「幼い」は[[送りがな]]が「い」だけ。「少ない」に引かれて「幼ない」と書かないように注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "幼ない",
+     "correct": false,
+     "why": "送りがなが多すぎる。よく見られるまちがい。"
+    },
+    {
+     "label": 2,
+     "body": "幼さない",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 3,
+     "body": "幼なない",
+     "correct": false,
+     "why": "このような書き方はない。"
+    },
+    {
+     "label": 4,
+     "body": "幼い",
+     "correct": true,
+     "why": "「幼い」は活用する「い」だけを送るのが決まり。"
+    }
+   ]
+  },
+  {
+   "id": "q_001554",
+   "no": 1554,
+   "topic": "送りがな（貧）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナを漢字と送りがなで正しく書いたものはどれか。「物語の主人公は〔マズシイ〕けれど心のやさしい少年だ。」",
+   "explanation": "「しい」で終わる形容詞は「し」から送る決まりがあり、「貧しい」もそのひとつ。「貧い」と「し」を落とさないように注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "貧しい",
+     "correct": true,
+     "why": "「しい」で終わる形容詞は「し」から送るので「貧しい」。"
+    },
+    {
+     "label": 2,
+     "body": "貧い",
+     "correct": false,
+     "why": "「し」が足りない。"
+    },
+    {
+     "label": 3,
+     "body": "貧ずしい",
+     "correct": false,
+     "why": "送りがなが多すぎる。"
+    },
+    {
+     "label": 4,
+     "body": "貧まずしい",
+     "correct": false,
+     "why": "読みをすべて送ってしまっており、誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_001556",
+   "no": 1556,
+   "topic": "送りがな（喜）",
+   "status": "published",
+   "version": 1,
+   "stem": "次のうち、送りがなのつけ方がまちがっているものはどれか。",
+   "explanation": "「喜ぶ」は[[送りがな]]が「ぶ」だけ。「喜こぶ」と「こ」を送りすぎないように注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "救う",
+     "correct": false,
+     "why": "「すくう」は「う」だけを送るので正しい。"
+    },
+    {
+     "label": 2,
+     "body": "志す",
+     "correct": false,
+     "why": "「こころざす」は「す」だけを送るので正しい。"
+    },
+    {
+     "label": 3,
+     "body": "喜こぶ",
+     "correct": true,
+     "why": "「よろこぶ」は「喜ぶ」と書くのが正しく、「喜こぶ」は誤り。"
+    },
+    {
+     "label": 4,
+     "body": "届ける",
+     "correct": false,
+     "why": "「とどける」は「け」から送るので正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_001557",
+   "no": 1557,
+   "topic": "同音異義語（衛生）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナにあてはまる漢字として正しいものはどれか。「手あらいとうがいで、毎日の〔エイセイ〕に気をつける。」",
+   "explanation": "「衛生」は、体やまわりを清潔にして病気をふせぐこと。「衛」は「守る」、「生」は「いのち」の意味。「衛星」は同じ読みの[[同音異義語]]なので、意味で使い分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "衛生",
+     "correct": true,
+     "why": "体を清潔にして病気をふせぐ意味の「衛生」で、文に合う。"
+    },
+    {
+     "label": 2,
+     "body": "衛星",
+     "correct": false,
+     "why": "「衛星」は星のまわりを回る天体で、文に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "永世",
+     "correct": false,
+     "why": "「永世」はいつまでも続くことで、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "英生",
+     "correct": false,
+     "why": "「英生」という語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_001559",
+   "no": 1559,
+   "topic": "同音異義語（実験）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕のカタカナにあてはまる漢字として正しいものはどれか。「理科の時間に、水をあたためる〔ジッケン〕をした。」",
+   "explanation": "「実験」の「験」は「ためす・しらべる」の意味で、「試験」「経験」にも使う。形の似た「検」「険」と書きまちがえないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv5",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "実権",
+     "correct": false,
+     "why": "「実権」は実際の権力のことで、文に合わない。"
+    },
+    {
+     "label": 2,
+     "body": "実験",
+     "correct": true,
+     "why": "実際にためして確かめる意味の「実験」で、文に合う。"
+    },
+    {
+     "label": 3,
+     "body": "実検",
+     "correct": false,
+     "why": "「実検」という語はふつう使わず、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "実険",
+     "correct": false,
+     "why": "「実険」という語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002001",
+   "no": 2001,
+   "topic": "音読み（抵抗）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「強い風に〔抵抗〕して進む。」",
+   "explanation": "「抵抗」は外から加わる力にさからうこと。「抵」は「テイ」、「抗」は「コウ」の[[音読み]]だけを覚えておけばよい。「抗議」「対抗」も同じ「コウ」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ていこう",
+     "correct": true,
+     "why": "「抵」は「テイ」、「抗」は「コウ」と読み、「ていこう」となる。"
+    },
+    {
+     "label": 2,
+     "body": "てきこう",
+     "correct": false,
+     "why": "「抵」を「敵（テキ）」と取りちがえた誤り。"
+    },
+    {
+     "label": 3,
+     "body": "ていきょう",
+     "correct": false,
+     "why": "「抗」に「キョウ」という読みはない。"
+    },
+    {
+     "label": 4,
+     "body": "しこう",
+     "correct": false,
+     "why": "「抵」に「シ」という読みはない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002003",
+   "no": 2003,
+   "topic": "音読み（撮影）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「公園で花の写真を〔撮影〕する。」",
+   "explanation": "「撮影」は写真や動画をとること。「撮」の[[音読み]]は「サツ」、[[訓読み]]は「と（る）」。「影」は「エイ」と読み、「かげ」は訓読み。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "さいえい",
+     "correct": false,
+     "why": "「撮」に「サイ」という読みはない。"
+    },
+    {
+     "label": 2,
+     "body": "しゅえい",
+     "correct": false,
+     "why": "「撮」の中の「取（シュ）」に引かれた誤りで、「撮」に「シュ」という読みはない。"
+    },
+    {
+     "label": 3,
+     "body": "さつえい",
+     "correct": true,
+     "why": "「撮」は「サツ」、「影」は「エイ」と読み、「さつえい」となる。"
+    },
+    {
+     "label": 4,
+     "body": "さつかげ",
+     "correct": false,
+     "why": "「影」を訓読みの「かげ」で読むのは、この熟語では誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_002005",
+   "no": 2005,
+   "topic": "音読み（繊維）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「この服は細い〔繊維〕で織られている。」",
+   "explanation": "「繊維」は糸や布のもとになる細い糸状のもの。「繊」は「繊細」の「セン」、「維」は「維持」の「イ」。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "けんい",
+     "correct": false,
+     "why": "「繊」に「ケン」という読みはない。"
+    },
+    {
+     "label": 2,
+     "body": "せんゆい",
+     "correct": false,
+     "why": "「維」は「イ」と読み、「ユイ」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "さんい",
+     "correct": false,
+     "why": "「繊」に「サン」という読みはない。"
+    },
+    {
+     "label": 4,
+     "body": "せんい",
+     "correct": true,
+     "why": "「繊」は「セン」、「維」は「イ」と読み、「せんい」となる。"
+    }
+   ]
+  },
+  {
+   "id": "q_002008",
+   "no": 2008,
+   "topic": "音読み（遭遇）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「山道でシカの群れに〔遭遇〕した。」",
+   "explanation": "「遭遇」は思いがけず出あうこと。「遭」の[[訓読み]]は「あ（う）」。「遇」は「待遇」「境遇」でも「グウ」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "そうごう",
+     "correct": false,
+     "why": "「遇」は「グウ」と読み、「ゴウ」とは読まない。"
+    },
+    {
+     "label": 2,
+     "body": "ぞうぐう",
+     "correct": false,
+     "why": "「遭」は濁らずに「ソウ」と読む。"
+    },
+    {
+     "label": 3,
+     "body": "そうぐう",
+     "correct": true,
+     "why": "「遭」は「ソウ」、「遇」は「グウ」と読み、「そうぐう」となる。"
+    },
+    {
+     "label": 4,
+     "body": "そうぐ",
+     "correct": false,
+     "why": "「遇」は長くのばして「グウ」と読む。"
+    }
+   ]
+  },
+  {
+   "id": "q_002010",
+   "no": 2010,
+   "topic": "音読み（喫茶）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「駅前の〔喫茶〕店で友だちと待ち合わせる。」",
+   "explanation": "「喫茶」は茶などを飲むこと。「喫」は「キツ」と読み、「満喫」では「マンキツ」。「茶」は「チャ」のほかに「サ」とも読み、「茶道」「茶菓」にも使われる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "けっさ",
+     "correct": false,
+     "why": "「喫」は「キツ」と読み、「ケツ」とは読まない。"
+    },
+    {
+     "label": 2,
+     "body": "きっさ",
+     "correct": true,
+     "why": "「喫」の「キツ」がつまって「キッ」、「茶」は「サ」と読み、「きっさ」となる。"
+    },
+    {
+     "label": 3,
+     "body": "かいさ",
+     "correct": false,
+     "why": "「喫」に「カイ」という読みはない。"
+    },
+    {
+     "label": 4,
+     "body": "きつさ",
+     "correct": false,
+     "why": "「喫茶」では「キツ」がつまって「きっさ」となる。"
+    }
+   ]
+  },
+  {
+   "id": "q_002013",
+   "no": 2013,
+   "topic": "音読み（克服）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「毎日練習して苦手な水泳を〔克服〕した。」",
+   "explanation": "「克服」は努力して困難に打ちかつこと。「克」の[[常用漢字]]での読みは[[音読み]]の「コク」だけで、「克明」でも同じ。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "こくふく",
+     "correct": true,
+     "why": "「克」は「コク」、「服」は「フク」と読み、「こくふく」となる。"
+    },
+    {
+     "label": 2,
+     "body": "かつふく",
+     "correct": false,
+     "why": "「克」に「カツ」という読みはない。"
+    },
+    {
+     "label": 3,
+     "body": "こっぷく",
+     "correct": false,
+     "why": "「克服」は音がつまらず「こくふく」と読む。"
+    },
+    {
+     "label": 4,
+     "body": "きょくふく",
+     "correct": false,
+     "why": "「克」に「キョク」という読みはない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002015",
+   "no": 2015,
+   "topic": "訓読み（煙）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「たき火から白い〔煙〕が立ちのぼる。」",
+   "explanation": "「煙」の[[訓読み]]は「けむり」「けむ（る）」「けむ（い）」、[[音読み]]は「エン」。「禁煙」「煙突」では「エン」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ほのお",
+     "correct": false,
+     "why": "「ほのお」は「炎」の読みで、「煙」とは読まない。"
+    },
+    {
+     "label": 2,
+     "body": "くもり",
+     "correct": false,
+     "why": "「くもり」は「曇り」の読みで、「煙」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "けむり",
+     "correct": true,
+     "why": "「煙」は一字で訓読みの「けむり」と読む。"
+    },
+    {
+     "label": 4,
+     "body": "すす",
+     "correct": false,
+     "why": "「煙」に「すす」という読みはない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002017",
+   "no": 2017,
+   "topic": "訓読み（鮮）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「庭に〔鮮やか〕な色の花がさいている。」",
+   "explanation": "「鮮やか」は色や形がはっきりして目立つようす。「鮮」の[[音読み]]は「セン」で、「新鮮」「鮮明」に使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "あざやか",
+     "correct": true,
+     "why": "「鮮」の訓読みは「あざ（やか）」で、「あざやか」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "さわやか",
+     "correct": false,
+     "why": "「さわやか」は「爽やか」と書き、「鮮」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "あでやか",
+     "correct": false,
+     "why": "「鮮」に「あで（やか）」という読みはない。"
+    },
+    {
+     "label": 4,
+     "body": "にぎやか",
+     "correct": false,
+     "why": "「鮮」に「にぎ（やか）」という読みはない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002020",
+   "no": 2020,
+   "topic": "音読み（濃厚）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の熟語と読みの組み合わせのうち、読みが誤っているものはどれか。",
+   "explanation": "「濃厚」は味や色がこいこと、また可能性などが強いこと。「濃」の[[音読み]]は「ノウ」、[[訓読み]]は「こ（い）」。形の似た「農（ノウ）」と同じ音と覚えるとよい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "匹敵（ひってき）",
+     "correct": false,
+     "why": "「匹」は「ヒツ」、「敵」は「テキ」で、「ひってき」は正しい読み。"
+    },
+    {
+     "label": 2,
+     "body": "概略（がいりゃく）",
+     "correct": false,
+     "why": "「概」は「ガイ」、「略」は「リャク」で、「がいりゃく」は正しい読み。"
+    },
+    {
+     "label": 3,
+     "body": "頻繁（ひんぱん）",
+     "correct": false,
+     "why": "「頻」は「ヒン」、「繁」は「ハン」で、「ひんぱん」は正しい読み。"
+    },
+    {
+     "label": 4,
+     "body": "濃厚（じょうこう）",
+     "correct": true,
+     "why": "「濃」は「ノウ」と読み、「濃厚」の正しい読みは「のうこう」。"
+    }
+   ]
+  },
+  {
+   "id": "q_002022",
+   "no": 2022,
+   "topic": "音読み（緩慢）",
+   "status": "published",
+   "version": 1,
+   "stem": "次のうち、熟語の読みが誤っているものはどれか。",
+   "explanation": "「緩慢」は動きがゆっくりしてにぶいこと。「緩」の[[音読み]]は「カン」で「緩和」にも使い、[[訓読み]]は「ゆる（い）」。形の似た「暖（ダン）」と取りちがえないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "寛大（かんだい）",
+     "correct": false,
+     "why": "「寛」は「カン」、「大」は「ダイ」で、「かんだい」は正しい読み。"
+    },
+    {
+     "label": 2,
+     "body": "緩慢（だんまん）",
+     "correct": true,
+     "why": "「緩」は「カン」と読み、「緩慢」の正しい読みは「かんまん」。"
+    },
+    {
+     "label": 3,
+     "body": "傑作（けっさく）",
+     "correct": false,
+     "why": "「傑」は「ケツ」、「作」は「サク」で、つまって「けっさく」と読むのは正しい。"
+    },
+    {
+     "label": 4,
+     "body": "欄外（らんがい）",
+     "correct": false,
+     "why": "「欄」は「ラン」、「外」は「ガイ」で、「らんがい」は正しい読み。"
+    }
+   ]
+  },
+  {
+   "id": "q_002025",
+   "no": 2025,
+   "topic": "書き取り（強烈）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「真夏の〔キョウレツ〕な日差しをさける。」",
+   "explanation": "「強烈」は力や刺激がとても強いこと。「烈」は下に「灬（れっか）」がつき、「熱烈」「猛烈」にも使う。同じ「レツ」の「列・裂・劣」と書き分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "強烈",
+     "correct": true,
+     "why": "「烈」ははげしいという意味で、「強烈」と書く。"
+    },
+    {
+     "label": 2,
+     "body": "強列",
+     "correct": false,
+     "why": "「列」はならぶという意味で、はげしさを表さない。"
+    },
+    {
+     "label": 3,
+     "body": "強裂",
+     "correct": false,
+     "why": "「裂」はさけるという意味で、この語には使わない。"
+    },
+    {
+     "label": 4,
+     "body": "強劣",
+     "correct": false,
+     "why": "「劣」はおとるという意味で、この語には使わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002027",
+   "no": 2027,
+   "topic": "書き取り（真剣）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「みんなが〔シンケン〕な顔で先生の話を聞いている。」",
+   "explanation": "「真剣」はもとは本物の刀のことで、そこから本気で取り組むようすを表す。「剣」は「刀（りっとう）」がつく字。「検・険・倹」は形が似ているので部分のちがいに注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "真検",
+     "correct": false,
+     "why": "「検」はしらべるという意味で、この語には使わない。"
+    },
+    {
+     "label": 2,
+     "body": "真険",
+     "correct": false,
+     "why": "「険」はけわしいという意味で、この語には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "真剣",
+     "correct": true,
+     "why": "本物の刀を意味する「真剣」から、本気であるようすを表す。"
+    },
+    {
+     "label": 4,
+     "body": "真倹",
+     "correct": false,
+     "why": "「倹」はむだを省くという意味で、この語には使わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002029",
+   "no": 2029,
+   "topic": "書き取り（衝突）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「交差点での自転車どうしの〔ショウトツ〕を防ぐ。」",
+   "explanation": "「衝突」はものとものがぶつかること、また意見が対立すること。「衝」は「行」の間に「重」を入れた形で、「衝撃」にも使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "衝突",
+     "correct": true,
+     "why": "「衝」はつく・ぶつかる、「突」はつきあたるという意味で、「衝突」と書く。"
+    },
+    {
+     "label": 2,
+     "body": "傷突",
+     "correct": false,
+     "why": "「傷」はきずという意味で、この語には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "衝徒",
+     "correct": false,
+     "why": "「徒」は仲間や歩くことを表す字で、この語には使わない。"
+    },
+    {
+     "label": 4,
+     "body": "焦突",
+     "correct": false,
+     "why": "「焦」はこげる・あせるという意味で、この語には使わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002032",
+   "no": 2032,
+   "topic": "書き取り（冗談）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「友だちの〔ジョウダン〕にクラスのみんなが笑った。」",
+   "explanation": "「冗談」はふざけて言う話のこと。「冗」は「わかんむり」の字で、むだという意味を持ち「冗長」にも使う。「談」は「ごんべん」で話に関係する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "冗段",
+     "correct": false,
+     "why": "「段」は区切りや階段を表す字で、話す意味はない。"
+    },
+    {
+     "label": 2,
+     "body": "常談",
+     "correct": false,
+     "why": "「常」はいつもという意味で、この語には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "剰談",
+     "correct": false,
+     "why": "「剰」はあまるという意味で、この語には使わない。"
+    },
+    {
+     "label": 4,
+     "body": "冗談",
+     "correct": true,
+     "why": "「冗」はむだ、「談」は話すという意味で、「冗談」と書く。"
+    }
+   ]
+  },
+  {
+   "id": "q_002034",
+   "no": 2034,
+   "topic": "書き取り（歓迎）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「新しく入った仲間を〔カンゲイ〕する会を開く。」",
+   "explanation": "「歓迎」はよろこんでむかえること。「歓」は「欠（あくび）」がつく字で、「歓声」にも使う。「迎」は「しんにょう」、「仰」は「にんべん」で書き分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "勧迎",
+     "correct": false,
+     "why": "「勧」はすすめるという意味で、この語には使わない。"
+    },
+    {
+     "label": 2,
+     "body": "歓迎",
+     "correct": true,
+     "why": "「歓」はよろこぶ、「迎」はむかえるという意味で、「歓迎」と書く。"
+    },
+    {
+     "label": 3,
+     "body": "観迎",
+     "correct": false,
+     "why": "「観」はみるという意味で、この語には使わない。"
+    },
+    {
+     "label": 4,
+     "body": "歓仰",
+     "correct": false,
+     "why": "「仰」はあおぐという意味で、むかえる意味はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002037",
+   "no": 2037,
+   "topic": "書き取り（考慮）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「相手の気持ちも〔コウリョ〕して、話し合いで決める。」",
+   "explanation": "「考慮」はいろいろな事情をよく考えに入れること。「慮」は「心」がつき、「配慮」「遠慮」にも使う。形の似た「虜」は下が「男」になる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "考慮",
+     "correct": true,
+     "why": "「慮」はよく考えるという意味で、「考慮」と書く。"
+    },
+    {
+     "label": 2,
+     "body": "考虜",
+     "correct": false,
+     "why": "「虜」はとりこという意味で、この語には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "考慰",
+     "correct": false,
+     "why": "「慰」はなぐさめるという意味で、この語には使わない。"
+    },
+    {
+     "label": 4,
+     "body": "孝慮",
+     "correct": false,
+     "why": "「孝」は親を大切にするという意味で、「考」とは別の字。"
+    }
+   ]
+  },
+  {
+   "id": "q_002039",
+   "no": 2039,
+   "topic": "書き取り（迫力）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「お祭りで〔ハクリョク〕のある太鼓の演奏を聞いた。」",
+   "explanation": "「迫力」は見る人・聞く人の心に強くせまる力のこと。「迫」の訓読みは「せま（る）」で「しんにょう」がつく。同じ「ハク」の「泊・拍」は、へんのちがいで見分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "泊力",
+     "correct": false,
+     "why": "「泊」はとまるという意味で、この語には使わない。"
+    },
+    {
+     "label": 2,
+     "body": "拍力",
+     "correct": false,
+     "why": "「拍」は手を打つという意味で、この語には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "迫力",
+     "correct": true,
+     "why": "「迫」はせまるという意味で、人の心にせまる力を「迫力」と書く。"
+    },
+    {
+     "label": 4,
+     "body": "博力",
+     "correct": false,
+     "why": "「博」は広いという意味で、この語には使わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002041",
+   "no": 2041,
+   "topic": "書き取り（獲得）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「水泳の大会で金メダルを〔カクトク〕した。」",
+   "explanation": "「獲得」は努力して手に入れること。「獲」はもとは狩りでえものをとる意味で「けものへん」、「穫」は作物なので「のぎへん」と書き分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "獲得",
+     "correct": true,
+     "why": "「獲」は手に入れるという意味で、「獲得」と書く。"
+    },
+    {
+     "label": 2,
+     "body": "穫得",
+     "correct": false,
+     "why": "「穫」は作物をとり入れる「収穫」の字で、この語には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "確得",
+     "correct": false,
+     "why": "「確」はたしかという意味で、この語には使わない。"
+    },
+    {
+     "label": 4,
+     "body": "獲徳",
+     "correct": false,
+     "why": "「徳」はよい行いを表す字で、「得（える）」とは別の字。"
+    }
+   ]
+  },
+  {
+   "id": "q_002044",
+   "no": 2044,
+   "topic": "書き取り（普遍）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の熟語のうち、漢字の書き表し方が誤っているものはどれか。",
+   "explanation": "「普遍」はすべてのものに共通して当てはまること。「遍」は「しんにょう」で、「あまねく行きわたる」意味。「にんべん」の「偏」は「かたよる」意味で、反対の意味になるので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "隔離",
+     "correct": false,
+     "why": "「へだてて離す」意味で、「隔離」は正しい書き方。"
+    },
+    {
+     "label": 2,
+     "body": "浸透",
+     "correct": false,
+     "why": "「しみこんで行きわたる」意味で、「浸透」は正しい書き方。"
+    },
+    {
+     "label": 3,
+     "body": "普偏",
+     "correct": true,
+     "why": "「すべてに行きわたる」意味の「フヘン」は「普遍」と書き、「偏」は誤り。"
+    },
+    {
+     "label": 4,
+     "body": "懸命",
+     "correct": false,
+     "why": "「力をつくす」意味で、「懸命」は正しい書き方。"
+    }
+   ]
+  },
+  {
+   "id": "q_002046",
+   "no": 2046,
+   "topic": "書き取り（侵略）",
+   "status": "published",
+   "version": 1,
+   "stem": "次のうち、書き表し方に誤りがある熟語はどれか。",
+   "explanation": "「侵略」は他の領土などに攻め入ってうばうこと。「侵」は「にんべん」で人が入りこむ意味、「浸」は「さんずい」で水がしみる意味。同じ「シン」でも書き分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "恒例",
+     "correct": false,
+     "why": "「いつも決まって行われる」意味で、「恒例」は正しい書き方。"
+    },
+    {
+     "label": 2,
+     "body": "濁流",
+     "correct": false,
+     "why": "「にごった水の流れ」の意味で、「濁流」は正しい書き方。"
+    },
+    {
+     "label": 3,
+     "body": "潜水",
+     "correct": false,
+     "why": "「水の中にもぐる」意味で、「潜水」は正しい書き方。"
+    },
+    {
+     "label": 4,
+     "body": "浸略",
+     "correct": true,
+     "why": "「他の国などに入りこんでうばう」意味の「シンリャク」は「侵略」と書き、「浸」は誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_002501",
+   "no": 2501,
+   "topic": "部首（募）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の部首はどれか。「募」",
+   "explanation": "「募」の[[部首]]は下の「力（ちから）」。上の「艹」に目が行きやすいので注意する。「募集」「応募」などに使う字。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ちから",
+     "correct": true,
+     "why": "「募」は下の「力」が部首で、力の部に入る。"
+    },
+    {
+     "label": 2,
+     "body": "くさかんむり",
+     "correct": false,
+     "why": "上に「艹」の形があるが、部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "ひ",
+     "correct": false,
+     "why": "中ほどの「日」の形は部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "だい",
+     "correct": false,
+     "why": "「大」の部の字ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002503",
+   "no": 2503,
+   "topic": "部首（雇）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の部首はどれか。「雇」",
+   "explanation": "「雇」の[[部首]]は「隹（ふるとり）」。「戸」がたれのように見えるが、部首ではない。「雇用」「雇う」などに使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "とだれ",
+     "correct": false,
+     "why": "左上に「戸」の形があるが、部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "ふるとり",
+     "correct": true,
+     "why": "「雇」は中の「隹（ふるとり）」が部首。"
+    },
+    {
+     "label": 3,
+     "body": "しかばね",
+     "correct": false,
+     "why": "「尸」の部の字ではない。"
+    },
+    {
+     "label": 4,
+     "body": "まだれ",
+     "correct": false,
+     "why": "「广」の部の字ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002505",
+   "no": 2505,
+   "topic": "部首（斜）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の部首はどれか。「斜」",
+   "explanation": "「斜」の[[部首]]は右側の「斗（とます）」。左の「余」は音を表す部分。「斜め」「傾斜」などに使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "とます",
+     "correct": true,
+     "why": "「斜」は右側の「斗（とます）」が部首。"
+    },
+    {
+     "label": 2,
+     "body": "ひとやね",
+     "correct": false,
+     "why": "左側の「余」の上に「人」の形があるが、部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "き",
+     "correct": false,
+     "why": "「木」の部の字ではない。"
+    },
+    {
+     "label": 4,
+     "body": "しょう",
+     "correct": false,
+     "why": "「小」の部の字ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002507",
+   "no": 2507,
+   "topic": "部首（魅）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の部首はどれか。「魅」",
+   "explanation": "「魅」の[[部首]]は「鬼（きにょう）」。「鬼」が左から下へまわりこむ[[にょう]]の形になっている。「魅力」「魅了」などに使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "き",
+     "correct": false,
+     "why": "右側の「未」に「木」の形があるが、部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "きにょう",
+     "correct": true,
+     "why": "「魅」は「鬼」が部首で、右の「未」をかかえる形（にょう）になっている。"
+    },
+    {
+     "label": 3,
+     "body": "た",
+     "correct": false,
+     "why": "「鬼」の上の「田」に似た形は部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "ひとあし",
+     "correct": false,
+     "why": "「儿」の部の字ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002509",
+   "no": 2509,
+   "topic": "部首（載）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の部首はどれか。「載」",
+   "explanation": "「載」の[[部首]]は「車（くるま）」。車に物をのせる意味から車の部に入る。「記載」「満載」などに使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "くるま",
+     "correct": true,
+     "why": "「載」は左下の「車」が部首。"
+    },
+    {
+     "label": 2,
+     "body": "ほこづくり",
+     "correct": false,
+     "why": "右側に「戈」の形があるが、部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "つち",
+     "correct": false,
+     "why": "左上の「土」に似た形は部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "じゅう",
+     "correct": false,
+     "why": "「十」の部の字ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002511",
+   "no": 2511,
+   "topic": "部首の組み合わせ（翼）",
+   "status": "published",
+   "version": 1,
+   "stem": "漢字とその部首名の組み合わせとして誤っているものはどれか。",
+   "explanation": "「翼」の[[部首]]は「羽（はね）」。中の「田」や下の「共」は部首ではない。「症」「繁」「髪」の部首はそれぞれ組み合わせのとおり。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "症―やまいだれ",
+     "correct": false,
+     "why": "「症」の部首は「疒（やまいだれ）」で正しい。"
+    },
+    {
+     "label": 2,
+     "body": "翼―た",
+     "correct": true,
+     "why": "「翼」の部首は上の「羽（はね）」で、「田」ではない。"
+    },
+    {
+     "label": 3,
+     "body": "繁―いと",
+     "correct": false,
+     "why": "「繁」の部首は下の「糸（いと）」で正しい。"
+    },
+    {
+     "label": 4,
+     "body": "髪―かみがしら",
+     "correct": false,
+     "why": "「髪」の部首は「髟（かみがしら）」で正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_002513",
+   "no": 2513,
+   "topic": "画数（凸）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の総画数はどれか。「凸レンズ」の「凸」",
+   "explanation": "「凸」の[[画数]]は5画。形が入り組んで見えるが、折れ曲がる部分を続けて書くので数えすぎに注意する。反対の形の「凹」も5画。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "5",
+     "correct": true,
+     "why": "「凸」の総画数は5画。"
+    },
+    {
+     "label": 2,
+     "body": "4",
+     "correct": false,
+     "why": "1画少ない。折れる線を数え落とさないようにする。"
+    },
+    {
+     "label": 3,
+     "body": "6",
+     "correct": false,
+     "why": "1画多い。折れる線は続けて1画で書く。"
+    },
+    {
+     "label": 4,
+     "body": "3",
+     "correct": false,
+     "why": "2画少ない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002515",
+   "no": 2515,
+   "topic": "画数（亜）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の総画数はどれか。「亜熱帯」の「亜」",
+   "explanation": "「亜」の[[画数]]は7画。中の折れる線を1画で書くことに注意する。「亜熱帯」などに使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "6",
+     "correct": false,
+     "why": "1画少ない。"
+    },
+    {
+     "label": 2,
+     "body": "8",
+     "correct": false,
+     "why": "1画多い。"
+    },
+    {
+     "label": 3,
+     "body": "7",
+     "correct": true,
+     "why": "「亜」の総画数は7画。"
+    },
+    {
+     "label": 4,
+     "body": "9",
+     "correct": false,
+     "why": "2画多い。"
+    }
+   ]
+  },
+  {
+   "id": "q_002517",
+   "no": 2517,
+   "topic": "画数（甚）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の総画数はどれか。「甚大」の「甚」",
+   "explanation": "「甚」の[[画数]]は9画。下の部分の折れる線を1画で書く。「甚大」「甚だしい」などに使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "9",
+     "correct": true,
+     "why": "「甚」の総画数は9画。"
+    },
+    {
+     "label": 2,
+     "body": "8",
+     "correct": false,
+     "why": "1画少ない。"
+    },
+    {
+     "label": 3,
+     "body": "10",
+     "correct": false,
+     "why": "1画多い。"
+    },
+    {
+     "label": 4,
+     "body": "11",
+     "correct": false,
+     "why": "2画多い。"
+    }
+   ]
+  },
+  {
+   "id": "q_002519",
+   "no": 2519,
+   "topic": "画数（奥）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字の総画数はどれか。「奥歯」の「奥」",
+   "explanation": "「奥」の[[画数]]は12画。中の「米」の形と下の「大」を正しく数える。「奥歯」「奥地」などに使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "11",
+     "correct": false,
+     "why": "1画少ない。"
+    },
+    {
+     "label": 2,
+     "body": "13",
+     "correct": false,
+     "why": "1画多い。"
+    },
+    {
+     "label": 3,
+     "body": "12",
+     "correct": true,
+     "why": "「奥」の総画数は12画。"
+    },
+    {
+     "label": 4,
+     "body": "14",
+     "correct": false,
+     "why": "2画多い。"
+    }
+   ]
+  },
+  {
+   "id": "q_002521",
+   "no": 2521,
+   "topic": "四字熟語（危機一髪）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「危機一〔　〕」",
+   "explanation": "「危機一髪」は、髪の毛1本ほどのわずかな差で大きな危険がせまっている状態。「一発」と書きまちがえやすいので、「髪の毛1本」と覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "発",
+     "correct": false,
+     "why": "「危機一発」と書くのはよくあるまちがい。"
+    },
+    {
+     "label": 2,
+     "body": "髪",
+     "correct": true,
+     "why": "髪の毛1本ほどの差で危険がせまる意味なので「髪」。"
+    },
+    {
+     "label": 3,
+     "body": "八",
+     "correct": false,
+     "why": "数の「八」では意味が通らない。"
+    },
+    {
+     "label": 4,
+     "body": "初",
+     "correct": false,
+     "why": "「初」では意味が通らない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002523",
+   "no": 2523,
+   "topic": "四字熟語（優柔不断）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「優〔　〕不断」",
+   "explanation": "「優柔不断」は、ぐずぐずして物事をなかなか決められないこと。「柔」は「やわらかい」の意味で、「柔軟」の「柔」と同じ字。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "柔",
+     "correct": true,
+     "why": "ぐずぐずしてやわらかすぎる意味で「柔」。"
+    },
+    {
+     "label": 2,
+     "body": "重",
+     "correct": false,
+     "why": "「優重」という語はない。"
+    },
+    {
+     "label": 3,
+     "body": "従",
+     "correct": false,
+     "why": "「優従」という語はない。"
+    },
+    {
+     "label": 4,
+     "body": "渋",
+     "correct": false,
+     "why": "「優渋」という語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002525",
+   "no": 2525,
+   "topic": "四字熟語（大胆不敵）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「大〔　〕不敵」",
+   "explanation": "「大胆不敵」は、度胸があって何ものもおそれないこと。「胆」は「きも」で、度胸を表す。同じ音の「担」と書きまちがえないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "担",
+     "correct": false,
+     "why": "「大担」という語はない。"
+    },
+    {
+     "label": 2,
+     "body": "胆",
+     "correct": true,
+     "why": "きもがすわっている意味で「胆」。"
+    },
+    {
+     "label": 3,
+     "body": "丹",
+     "correct": false,
+     "why": "「大丹」という語はない。"
+    },
+    {
+     "label": 4,
+     "body": "端",
+     "correct": false,
+     "why": "「大端」では意味が通らない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002528",
+   "no": 2528,
+   "topic": "四字熟語（一触即発）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「一〔　〕即発」",
+   "explanation": "「一触即発」は、ちょっとふれただけですぐ爆発しそうなほど、危ない状態にあること。「触」は「ふれる」の意味。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "色",
+     "correct": false,
+     "why": "「一色」に引きずられたまちがい。"
+    },
+    {
+     "label": 2,
+     "body": "食",
+     "correct": false,
+     "why": "「食」では意味が通らない。"
+    },
+    {
+     "label": 3,
+     "body": "触",
+     "correct": true,
+     "why": "ちょっとふれるだけで、の意味で「触」。"
+    },
+    {
+     "label": 4,
+     "body": "職",
+     "correct": false,
+     "why": "「職」では意味が通らない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002530",
+   "no": 2530,
+   "topic": "対義語（偶然）",
+   "status": "published",
+   "version": 1,
+   "stem": "「偶然」の対義語として正しいものはどれか。",
+   "explanation": "「偶然」は思いがけずそうなること、「必然」は必ずそうなると決まっていることで、[[対義語]]の関係。「当然」と迷いやすいが、組になるのは「必然」。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "突然",
+     "correct": false,
+     "why": "「突然」は「急に」の意味で、反対の意味ではない。"
+    },
+    {
+     "label": 2,
+     "body": "自然",
+     "correct": false,
+     "why": "「自然」は反対の意味ではない。"
+    },
+    {
+     "label": 3,
+     "body": "当然",
+     "correct": false,
+     "why": "「当然」は「あたりまえ」の意味で、組になる語ではない。"
+    },
+    {
+     "label": 4,
+     "body": "必然",
+     "correct": true,
+     "why": "思いがけない「偶然」に対し、必ずそうなるのが「必然」。"
+    }
+   ]
+  },
+  {
+   "id": "q_002533",
+   "no": 2533,
+   "topic": "対義語の組み合わせ（模倣）",
+   "status": "published",
+   "version": 1,
+   "stem": "二つの言葉が反対の意味の組み合わせになっていないものはどれか。",
+   "explanation": "「模倣」の[[対義語]]は、自分で新しく作り出す「創造」。「模写」は絵などをまねて写すことで、意味が近い語になる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "濃厚―希薄",
+     "correct": false,
+     "why": "こいことと、うすいことで、正しい対義語。"
+    },
+    {
+     "label": 2,
+     "body": "違反―遵守",
+     "correct": false,
+     "why": "きまりを破ることと、守ることで、正しい対義語。"
+    },
+    {
+     "label": 3,
+     "body": "繁栄―衰退",
+     "correct": false,
+     "why": "さかえることと、おとろえることで、正しい対義語。"
+    },
+    {
+     "label": 4,
+     "body": "模倣―模写",
+     "correct": true,
+     "why": "どちらも「まねる・うつす」意味で、反対の意味ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002535",
+   "no": 2535,
+   "topic": "類義語（憂慮）",
+   "status": "published",
+   "version": 1,
+   "stem": "「憂慮」の類義語として正しいものはどれか。",
+   "explanation": "「憂慮」は悪くならないかと心配し、思いなやむこと。「憂」は「うれえる」で、[[類義語]]は「心配」。同じ「慮」をふくむ「遠慮」「熟慮」とは意味がちがう。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "心配",
+     "correct": true,
+     "why": "先のことを気にかけて不安に思う意味で、「憂慮」と近い。"
+    },
+    {
+     "label": 2,
+     "body": "安心",
+     "correct": false,
+     "why": "「安心」は不安がないことで、反対に近い。"
+    },
+    {
+     "label": 3,
+     "body": "遠慮",
+     "correct": false,
+     "why": "「遠慮」はひかえめにすることで、意味がちがう。"
+    },
+    {
+     "label": 4,
+     "body": "熟慮",
+     "correct": false,
+     "why": "「熟慮」はよく考えることで、不安に思う意味はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002537",
+   "no": 2537,
+   "topic": "類義語（了承）",
+   "status": "published",
+   "version": 1,
+   "stem": "「了承」の類義語として正しいものはどれか。",
+   "explanation": "「了承」は相手の申し出や事情をわかって受け入れること。「承知」も同じように聞き入れることで、[[類義語]]の関係。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "拒否",
+     "correct": false,
+     "why": "「拒否」はことわることで、反対の意味。"
+    },
+    {
+     "label": 2,
+     "body": "継承",
+     "correct": false,
+     "why": "「継承」は受けつぐことで、意味がちがう。"
+    },
+    {
+     "label": 3,
+     "body": "終了",
+     "correct": false,
+     "why": "「終了」は終わることで、意味がちがう。"
+    },
+    {
+     "label": 4,
+     "body": "承知",
+     "correct": true,
+     "why": "事情を聞いて受け入れる意味で、「了承」と近い。"
+    }
+   ]
+  },
+  {
+   "id": "q_002540",
+   "no": 2540,
+   "topic": "熟語の構成（濃淡）",
+   "status": "published",
+   "version": 1,
+   "stem": "「濃淡」の熟語の構成として正しいものはどれか。",
+   "explanation": "「濃淡」は、色や味のこい「濃」とうすい「淡」を重ねた[[熟語]]で、反対の意味の字の組み合わせ。「高低」「強弱」と同じ構成。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "意味の似た字を組み合わせたもの",
+     "correct": false,
+     "why": "「濃」と「淡」は似た意味ではない。"
+    },
+    {
+     "label": 2,
+     "body": "上の字が下の字を修飾しているもの",
+     "correct": false,
+     "why": "「こいうすさ」のように上が下をくわしくしているのではない。"
+    },
+    {
+     "label": 3,
+     "body": "反対の意味の字を重ねたもの",
+     "correct": true,
+     "why": "「濃（こい）」と「淡（あわい）」は反対の意味。"
+    },
+    {
+     "label": 4,
+     "body": "下の字が上の字の目的語・補語になっているもの",
+     "correct": false,
+     "why": "「淡を濃くする」とは読めない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002542",
+   "no": 2542,
+   "topic": "熟語の構成（未踏）",
+   "status": "published",
+   "version": 1,
+   "stem": "「未踏」の熟語の構成として正しいものはどれか。",
+   "explanation": "「未踏」は、まだだれも足をふみ入れていないこと。上の「未」が下の「踏」の意味を打ち消す[[熟語]]で、「未知」「無害」「不足」と同じ構成。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "上の字が下の字の意味を打ち消しているもの",
+     "correct": true,
+     "why": "「未だ踏まない」と、上の「未」が下の意味を打ち消している。"
+    },
+    {
+     "label": 2,
+     "body": "上の字が下の字を修飾しているもの",
+     "correct": false,
+     "why": "「未」は修飾ではなく打ち消しの働きをしている。"
+    },
+    {
+     "label": 3,
+     "body": "下の字が上の字の目的語・補語になっているもの",
+     "correct": false,
+     "why": "「踏を未する」とは読めない。"
+    },
+    {
+     "label": 4,
+     "body": "意味の似た字を組み合わせたもの",
+     "correct": false,
+     "why": "「未」と「踏」は同じような意味ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002545",
+   "no": 2545,
+   "topic": "送りがな（脅かす）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「新人の活やくが、王者の地位を〔オビヤカス〕。」",
+   "explanation": "「脅かす」は[[送りがな]]を「かす」とする語。同じ「脅かす」は「おどかす」とも読むが、文に合わせて「おびやかす」と読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "脅かす",
+     "correct": true,
+     "why": "「おびやかす」は「脅かす」と送るのが本則。"
+    },
+    {
+     "label": 2,
+     "body": "脅す",
+     "correct": false,
+     "why": "「脅す」は「おどす」と読み、カタカナの語と合わない。"
+    },
+    {
+     "label": 3,
+     "body": "脅やかす",
+     "correct": false,
+     "why": "「や」から送るのは誤り。"
+    },
+    {
+     "label": 4,
+     "body": "脅びやかす",
+     "correct": false,
+     "why": "「び」から送るのは誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_002546",
+   "no": 2546,
+   "topic": "送りがな（巧み）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「職人が〔タクミナ〕手つきで竹かごを編む。」",
+   "explanation": "「巧みだ」は、送り仮名の付け方で「み」から送ると決められている語。「巧妙」「技巧」の「巧」で、「じょうずである」の意味。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "巧な",
+     "correct": false,
+     "why": "「み」を送らないのは誤り。"
+    },
+    {
+     "label": 2,
+     "body": "巧みな",
+     "correct": true,
+     "why": "「たくみだ」は「巧みだ」と「み」から送る。"
+    },
+    {
+     "label": 3,
+     "body": "巧くみな",
+     "correct": false,
+     "why": "「くみ」から送るのは誤り。"
+    },
+    {
+     "label": 4,
+     "body": "巧たくみな",
+     "correct": false,
+     "why": "読みをすべて送っており誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_002547",
+   "no": 2547,
+   "topic": "送りがな（携える）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「地図を〔タズサエテ〕山道を歩く。」",
+   "explanation": "「携える」は活用語尾の「える」を送る。[[送りがな]]は形が変わる部分から送るのが基本。「携帯」の「携」で、「手に持つ」の意味。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "携て",
+     "correct": false,
+     "why": "活用語尾「え」を送っておらず誤り。"
+    },
+    {
+     "label": 2,
+     "body": "携さえて",
+     "correct": false,
+     "why": "「さ」から送るのは誤り。"
+    },
+    {
+     "label": 3,
+     "body": "携えて",
+     "correct": true,
+     "why": "活用語尾の「える」を送り、「携えて」と書く。"
+    },
+    {
+     "label": 4,
+     "body": "携ずさえて",
+     "correct": false,
+     "why": "「ずさ」から送るのは誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_002548",
+   "no": 2548,
+   "topic": "送りがな（妨げる）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「となりの部屋の大きな音が、眠りを〔サマタゲル〕。」",
+   "explanation": "「妨げる」は活用語尾の「げる」を送る。「妨害」の「妨」で、「じゃまをする」の意味。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "妨る",
+     "correct": false,
+     "why": "「げ」を送っておらず誤り。"
+    },
+    {
+     "label": 2,
+     "body": "妨たげる",
+     "correct": false,
+     "why": "「た」から送るのは誤り。"
+    },
+    {
+     "label": 3,
+     "body": "妨またげる",
+     "correct": false,
+     "why": "「また」から送るのは誤り。"
+    },
+    {
+     "label": 4,
+     "body": "妨げる",
+     "correct": true,
+     "why": "活用語尾の「げる」を送り、「妨げる」と書く。"
+    }
+   ]
+  },
+  {
+   "id": "q_002549",
+   "no": 2549,
+   "topic": "送りがな（戒める）",
+   "status": "published",
+   "version": 1,
+   "stem": "漢字と送りがなの組み合わせとして正しくないものはどれか。",
+   "explanation": "「いましめる」は活用語尾の「める」だけを送り「戒める」と書く。「戒しめる」は[[送りがな]]の送りすぎ。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "戒しめる（いましめる）",
+     "correct": true,
+     "why": "正しくは「戒める」で、「し」は送らない。"
+    },
+    {
+     "label": 2,
+     "body": "偽る（いつわる）",
+     "correct": false,
+     "why": "活用語尾の「る」を送り、正しい。"
+    },
+    {
+     "label": 3,
+     "body": "慰める（なぐさめる）",
+     "correct": false,
+     "why": "活用語尾の「める」を送り、正しい。"
+    },
+    {
+     "label": 4,
+     "body": "潤う（うるおう）",
+     "correct": false,
+     "why": "活用語尾の「う」を送り、正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_002551",
+   "no": 2551,
+   "topic": "同音異字（徴）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕にあてはまる漢字として正しいものはどれか。「町内会の会費を〔チョウ〕収する。」",
+   "explanation": "「徴収」は、会費や税金などを取り立てて集めること。同じ「チョウ」の音の「調」「聴」「張」と意味で区別する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "調",
+     "correct": false,
+     "why": "「調べる・ととのえる」の意味で、文に合わない。"
+    },
+    {
+     "label": 2,
+     "body": "聴",
+     "correct": false,
+     "why": "「きく」の意味で、文に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "徴",
+     "correct": true,
+     "why": "お金などを取り立てる「徴収」の「徴」。"
+    },
+    {
+     "label": 4,
+     "body": "張",
+     "correct": false,
+     "why": "「はる」の意味で、文に合わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002552",
+   "no": 2552,
+   "topic": "同音異字（寛）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕にあてはまる漢字として正しいものはどれか。「失敗した後輩に〔カン〕大な態度で接する。」",
+   "explanation": "「寛大」は、心が広く、人の失敗などをきびしくとがめないこと。「寛」は「ひろい・ゆるやか」の意味で、「寛容」にも使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "完",
+     "correct": false,
+     "why": "「完」は「すっかり終わる」の意味で、文に合わない。"
+    },
+    {
+     "label": 2,
+     "body": "官",
+     "correct": false,
+     "why": "「官」は役所・役人の意味で、文に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "感",
+     "correct": false,
+     "why": "「感」は「感じる」の意味で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "寛",
+     "correct": true,
+     "why": "心が広く、きびしくとがめない「寛大」の「寛」。"
+    }
+   ]
+  },
+  {
+   "id": "q_002553",
+   "no": 2553,
+   "topic": "同訓異字（冒）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕にあてはまる漢字として正しいものはどれか。「危険を〔オカ〕してまで近道をする必要はない。」",
+   "explanation": "「おかす」には「犯す（きまりを破る）」「侵す（領分に入りこむ）」「冒す（危険をおしきって行う）」がある。「危険をおかす」は「冒険」の「冒」を使う[[同訓異字]]。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "冒",
+     "correct": true,
+     "why": "危険をかえりみずに行う意味の「冒す」。"
+    },
+    {
+     "label": 2,
+     "body": "犯",
+     "correct": false,
+     "why": "「犯す」は法やきまりを破る意味で、文に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "侵",
+     "correct": false,
+     "why": "「侵す」は他人の領分に入りこむ意味で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "岡",
+     "correct": false,
+     "why": "「岡」は小高い土地のことで、文に合わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_002554",
+   "no": 2554,
+   "topic": "同訓異字（拭）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕にあてはまる漢字として正しいものはどれか。「ぬれた手をタオルで〔フ〕く。」",
+   "explanation": "「ふく」と読む字には「吹く」「噴く」「拭く」などがある。布でぬぐうときは「拭く」を使う[[同訓異字]]。「拭」は「拭う（ぬぐう）」とも読む。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv3",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "吹",
+     "correct": false,
+     "why": "「吹く」は息や風を出す意味で、文に合わない。"
+    },
+    {
+     "label": 2,
+     "body": "拭",
+     "correct": true,
+     "why": "布などで水気やよごれを取る意味の「拭く」。"
+    },
+    {
+     "label": 3,
+     "body": "噴",
+     "correct": false,
+     "why": "「噴く」は勢いよくふき出す意味で、文に合わない。"
+    },
+    {
+     "label": 4,
+     "body": "振",
+     "correct": false,
+     "why": "「振」に「ふく」という訓はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003001",
+   "no": 3001,
+   "topic": "音読み（漸）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「新しいきまりは〔漸次〕取り入れていく。」",
+   "explanation": "「漸次」は「だんだんと、少しずつ」という意味。「漸」の[[音読み]]は「ゼン」で、形の似た「暫（ザン）」と取りちがえやすいので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ざんじ",
+     "correct": false,
+     "why": "「ざんじ」は「暫時」の読みで、「漸」を「ザン」とは読まない。"
+    },
+    {
+     "label": 2,
+     "body": "ぜんじ",
+     "correct": true,
+     "why": "「漸」の音読みは「ゼン」、「次」は「ジ」と読む。"
+    },
+    {
+     "label": 3,
+     "body": "せんじ",
+     "correct": false,
+     "why": "「漸」は濁って「ゼン」と読み、「セン」ではない。"
+    },
+    {
+     "label": 4,
+     "body": "ぜんし",
+     "correct": false,
+     "why": "「漸次」の「次」は「ジ」と濁って読む。"
+    }
+   ]
+  },
+  {
+   "id": "q_003003",
+   "no": 3003,
+   "topic": "音読み（頒）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「会報を会員に〔頒布〕する。」",
+   "explanation": "「頒布」は「品物や資料を多くの人に配ること」。「頒」の[[音読み]]は「ハン」で、左がわの「分」につられて「ブン」「フン」と読まないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "はんぷ",
+     "correct": true,
+     "why": "「頒」の音読みは「ハン」、「布」は「ハン」に続いて「プ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "ぶんぷ",
+     "correct": false,
+     "why": "「ぶんぷ」は「分布」の読みで、「頒」は「ブン」と読まない。"
+    },
+    {
+     "label": 3,
+     "body": "はんぶ",
+     "correct": false,
+     "why": "「布」は「フ」が「プ」に変わる語で、「ブ」とは読まない。"
+    },
+    {
+     "label": 4,
+     "body": "ふんぷ",
+     "correct": false,
+     "why": "「頒」に「フン」という読みはない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003005",
+   "no": 3005,
+   "topic": "音読み（殺）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「貸し借りを〔相殺〕する。」",
+   "explanation": "「相殺」は「たがいの貸し借りや損得を差し引いて、なしにすること」。「殺」の[[音読み]]は「サツ」が多いが、「相殺」では「サイ」と読む特別な読みである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "そうさつ",
+     "correct": false,
+     "why": "「殺」はふつう「サツ」と読むが、「相殺」では「サイ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "そうせつ",
+     "correct": false,
+     "why": "「相殺」の「殺」を「セツ」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "そうさい",
+     "correct": true,
+     "why": "「相」は「ソウ」、「殺」はこの語で「サイ」と読む。"
+    },
+    {
+     "label": 4,
+     "body": "あいさつ",
+     "correct": false,
+     "why": "「相」を訓で「あい」と読み、「殺」を「サツ」と読んだ誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_003008",
+   "no": 3008,
+   "topic": "音読み（督）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「図書館から本の返却の〔督促〕が届いた。」",
+   "explanation": "「督促」は「約束したことを早くするように、せきたてること」。「督」の[[音読み]]は「トク」で、「監督」「督促」のように使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "しゅくそく",
+     "correct": false,
+     "why": "上の部分の「叔（シュク）」につられた読みで、「督」は「シュク」と読まない。"
+    },
+    {
+     "label": 2,
+     "body": "とくそく",
+     "correct": true,
+     "why": "「督」の音読みは「トク」、「促」は「ソク」と読む。"
+    },
+    {
+     "label": 3,
+     "body": "どくそく",
+     "correct": false,
+     "why": "「督」は「トク」と読み、「ドク」と濁らない。"
+    },
+    {
+     "label": 4,
+     "body": "とくさく",
+     "correct": false,
+     "why": "「促」の音読みは「ソク」で、「サク」ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003010",
+   "no": 3010,
+   "topic": "音読み（嫌悪）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「自分の失敗に〔嫌悪〕を感じる。」",
+   "explanation": "「嫌悪」は「ひどくきらうこと」。「悪」には「アク」のほかに「オ」という[[音読み]]があり、「嫌悪」「憎悪」で使われる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "けんあく",
+     "correct": false,
+     "why": "「悪」はふつう「アク」と読むが、「嫌悪」では「オ」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "けんわる",
+     "correct": false,
+     "why": "音と訓をまぜた読みで、このような読みはない。"
+    },
+    {
+     "label": 3,
+     "body": "けんお",
+     "correct": true,
+     "why": "「嫌」は「ケン」、「悪」はこの語で「オ」と読む。"
+    },
+    {
+     "label": 4,
+     "body": "げんお",
+     "correct": false,
+     "why": "「嫌」は「機嫌」では「ゲン」と読むが、「嫌悪」では「ケン」と読む。"
+    }
+   ]
+  },
+  {
+   "id": "q_003013",
+   "no": 3013,
+   "topic": "熟字訓（名残）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「夏の〔名残〕を感じる夕方だ。」",
+   "explanation": "「名残」は「物事が過ぎ去ったあとに残るけはいや気持ち」。常用漢字表の付表にある[[熟字訓]]で、「名残惜しい」のようにも使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "なごり",
+     "correct": true,
+     "why": "「名残」は常用漢字表の付表にある語で、「なごり」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "めいざん",
+     "correct": false,
+     "why": "一字ずつ音で読んだもので、この語の読みではない。"
+    },
+    {
+     "label": 3,
+     "body": "なのこり",
+     "correct": false,
+     "why": "一字ずつ訓で読んだもので、この語の読みではない。"
+    },
+    {
+     "label": 4,
+     "body": "みょうざん",
+     "correct": false,
+     "why": "「名」を「ミョウ」と読んだ音読みで、この語の読みではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003015",
+   "no": 3015,
+   "topic": "熟字訓（固唾）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「試合の行方を〔固唾〕をのんで見守る。」",
+   "explanation": "「固唾をのむ」は「どうなるかと緊張して見守る」という意味。「固唾」は付表の[[熟字訓]]で、かなでは「かたず」と書く。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "こすい",
+     "correct": false,
+     "why": "「唾」を「スイ」と読む読みはなく、この語の読みではない。"
+    },
+    {
+     "label": 2,
+     "body": "かたず",
+     "correct": true,
+     "why": "「固唾」は常用漢字表の付表にある語で、「かたず」と読む。"
+    },
+    {
+     "label": 3,
+     "body": "かたつば",
+     "correct": false,
+     "why": "一字ずつ訓で読んだもので、この語の読みではない。"
+    },
+    {
+     "label": 4,
+     "body": "こだ",
+     "correct": false,
+     "why": "一字ずつ音で読んだもので、この語の読みではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003017",
+   "no": 3017,
+   "topic": "音読み（捗）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔　〕の中の読みとして正しいものはどれか。「週に一度、作業の〔進捗〕を報告する。」",
+   "explanation": "「進捗」は「物事がはかどり、進んでいくこと」。「捗」の[[音読み]]は「チョク」、訓読みは「はかど（る）」で、つくりの「歩」につられないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "しんちょく",
+     "correct": true,
+     "why": "「進」は「シン」、「捗」の音読みは「チョク」と読む。"
+    },
+    {
+     "label": 2,
+     "body": "しんぽ",
+     "correct": false,
+     "why": "「捗」の右がわの「歩（ホ）」につられた読みで、誤り。"
+    },
+    {
+     "label": 3,
+     "body": "しんしょう",
+     "correct": false,
+     "why": "「捗」に「ショウ」という読みはない。"
+    },
+    {
+     "label": 4,
+     "body": "しんちゅう",
+     "correct": false,
+     "why": "「捗」の音読みは「チョク」で、「チュウ」ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003020",
+   "no": 3020,
+   "topic": "熟字訓（寄席）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の語と読みの組み合わせのうち、誤っているものはどれか。（若人・足袋・凸凹・寄席）",
+   "explanation": "「寄席」は落語などを聞かせる演芸場のこと。どれも常用漢字表の付表にある[[熟字訓]]で、一字ずつの読みに分けずに語ごと覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "若人（わこうど）",
+     "correct": false,
+     "why": "「若人」は付表の語で「わこうど」と読み、正しい。"
+    },
+    {
+     "label": 2,
+     "body": "足袋（たび）",
+     "correct": false,
+     "why": "「足袋」は付表の語で「たび」と読み、正しい。"
+    },
+    {
+     "label": 3,
+     "body": "凸凹（でこぼこ）",
+     "correct": false,
+     "why": "「凸凹」は付表の語で「でこぼこ」と読み、正しい。"
+    },
+    {
+     "label": 4,
+     "body": "寄席（よせき）",
+     "correct": true,
+     "why": "「寄席」は付表の語で「よせ」と読み、「よせき」は誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_003022",
+   "no": 3022,
+   "topic": "音読み（惨）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の語と読みの組み合わせのうち、誤っているものはどれか。（嗅覚・賄賂・凄惨・毀損）",
+   "explanation": "「凄惨」は「目をそむけたくなるほどむごたらしいこと」。「惨」の[[音読み]]は「サン」「ザン」で、「ソウ」とは読まない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "yomi"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "嗅覚（きゅうかく）",
+     "correct": false,
+     "why": "「嗅」の音読みは「キュウ」で、正しい。"
+    },
+    {
+     "label": 2,
+     "body": "賄賂（わいろ）",
+     "correct": false,
+     "why": "「賄」は「ワイ」、「賂」は「ロ」と読み、正しい。"
+    },
+    {
+     "label": 3,
+     "body": "凄惨（せいそう）",
+     "correct": true,
+     "why": "「惨」の音読みは「サン」で「せいさん」と読み、「せいそう」は誤り。"
+    },
+    {
+     "label": 4,
+     "body": "毀損（きそん）",
+     "correct": false,
+     "why": "「毀」の音読みは「キ」で、正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_003025",
+   "no": 3025,
+   "topic": "書き取り（謙虚）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「ほめられても〔ケンキョ〕な態度を忘れない。」",
+   "explanation": "「謙虚」は「ひかえめで、すなおに人の意見を受け入れる様子」。「謙」はごんべんで、言葉づかいをひかえめにする意味から覚えるとよい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "兼虚",
+     "correct": false,
+     "why": "「兼」は「かねる」の意味で、ひかえめな態度を表さない。"
+    },
+    {
+     "label": 2,
+     "body": "嫌虚",
+     "correct": false,
+     "why": "「嫌」は「きらう」の意味で、文意に合わない。"
+    },
+    {
+     "label": 3,
+     "body": "謙虚",
+     "correct": true,
+     "why": "「謙」は「へりくだる」の意味で、ひかえめで素直な様子を表す。"
+    },
+    {
+     "label": 4,
+     "body": "廉虚",
+     "correct": false,
+     "why": "「廉」は「安い・いさぎよい」の意味で、このような語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003027",
+   "no": 3027,
+   "topic": "書き取り（洞察）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「人の心を見ぬく深い〔ドウサツ〕力がある。」",
+   "explanation": "「洞察」は「物事の奥にある本質を見ぬくこと」。「洞」は「ほら穴」の意味から「奥まで通る」意味が生まれた字で、同じつくりの「胴」「銅」と書き分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "胴察",
+     "correct": false,
+     "why": "「胴」は体の部分を表す字で、このような語はない。"
+    },
+    {
+     "label": 2,
+     "body": "銅察",
+     "correct": false,
+     "why": "「銅」は金属の字で、このような語はない。"
+    },
+    {
+     "label": 3,
+     "body": "動察",
+     "correct": false,
+     "why": "「動」は「うごく」の意味で、このような語はない。"
+    },
+    {
+     "label": 4,
+     "body": "洞察",
+     "correct": true,
+     "why": "「洞」は「見通す・つらぬく」の意味があり、「洞察」で物事の奥を見ぬくことを表す。"
+    }
+   ]
+  },
+  {
+   "id": "q_003029",
+   "no": 3029,
+   "topic": "書き取り（緩衝）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「割れ物の荷物の間に〔カンショウ〕材をつめる。」",
+   "explanation": "「緩衝」は「二つのものの間で、ぶつかる力や衝撃をやわらげること」。「緩」「援」「暖」は同じ右がわを持つので、いとへん（ゆるめる）で見分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "援衝",
+     "correct": false,
+     "why": "「援」は「たすける」の意味で、このような語はない。"
+    },
+    {
+     "label": 2,
+     "body": "緩衝",
+     "correct": true,
+     "why": "「緩」は「ゆるめる」、「衝」は「ぶつかる」の意味で、ぶつかる力をやわらげることを表す。"
+    },
+    {
+     "label": 3,
+     "body": "緩衡",
+     "correct": false,
+     "why": "「衡」は「つりあい」の意味で、形が似ているが誤り。"
+    },
+    {
+     "label": 4,
+     "body": "暖衝",
+     "correct": false,
+     "why": "「暖」は「あたたかい」の意味で、このような語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003032",
+   "no": 3032,
+   "topic": "書き取り（搬入）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「会場に展示品を〔ハンニュウ〕する。」",
+   "explanation": "「搬入」は「荷物などを運びこむこと」で、対になる語は「搬出」。「搬」は手で運ぶのでてへんが付くと覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "般入",
+     "correct": false,
+     "why": "「般」は「一般」の字で、てへんがないため「はこぶ」意味にならない。"
+    },
+    {
+     "label": 2,
+     "body": "販入",
+     "correct": false,
+     "why": "「販」は「売る」の意味で、このような語はない。"
+    },
+    {
+     "label": 3,
+     "body": "搬入",
+     "correct": true,
+     "why": "「搬」は「はこぶ」の意味で、物を運びこむことを表す。"
+    },
+    {
+     "label": 4,
+     "body": "盤入",
+     "correct": false,
+     "why": "「盤」は「さら・台」の意味で、このような語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003034",
+   "no": 3034,
+   "topic": "書き取り（慰労）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「大会を終えた選手のために〔イロウ〕会を開く。」",
+   "explanation": "「慰労」は「苦労をねぎらい、なぐさめること」。「慰」は「尉」の下に「心」を書く字で、心をなぐさめる意味と結びつけて覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "尉労",
+     "correct": false,
+     "why": "「尉」は下に「心」がなく、「なぐさめる」意味にならない。"
+    },
+    {
+     "label": 2,
+     "body": "慰労",
+     "correct": true,
+     "why": "「慰」は「なぐさめる」の意味で、苦労をねぎらうことを表す。"
+    },
+    {
+     "label": 3,
+     "body": "慰老",
+     "correct": false,
+     "why": "「老」は「おいる」の意味で、このような語はない。"
+    },
+    {
+     "label": 4,
+     "body": "威労",
+     "correct": false,
+     "why": "「威」は「おどす・いきおい」の意味で、このような語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003037",
+   "no": 3037,
+   "topic": "書き取り（抑揚）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「〔ヨクヨウ〕をつけて詩を朗読する。」",
+   "explanation": "「抑揚」は「声や文章の調子の上げ下げ」。「おさえる」と「あげる」という反対の意味の字を組み合わせた[[熟語]]で、どちらもてへんで書く。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "抑揚",
+     "correct": true,
+     "why": "「抑」は「おさえる」、「揚」は「あげる」の意味で、声の上げ下げを表す。"
+    },
+    {
+     "label": 2,
+     "body": "仰揚",
+     "correct": false,
+     "why": "「仰」は「あおぐ」の意味で、「ヨク」とは読まない。"
+    },
+    {
+     "label": 3,
+     "body": "抑陽",
+     "correct": false,
+     "why": "「陽」は「日の光」の意味で、このような語はない。"
+    },
+    {
+     "label": 4,
+     "body": "抑場",
+     "correct": false,
+     "why": "「場」は「ところ」の意味で、このような語はない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003039",
+   "no": 3039,
+   "topic": "書き取り（拘束）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「朝から夜まで長い時間〔コウソク〕される仕事だ。」",
+   "explanation": "「拘束」は「行動の自由をしばり、制限すること」。「拘」はてへんに「句」で、同じ形をふくむ「句」と書きまちがえないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "句束",
+     "correct": false,
+     "why": "「句」は「文の区切り」の意味で、このような語はない。"
+    },
+    {
+     "label": 2,
+     "body": "拘束",
+     "correct": true,
+     "why": "「拘」は「とらえる・こだわる」の意味で、自由をしばることを表す。"
+    },
+    {
+     "label": 3,
+     "body": "抱束",
+     "correct": false,
+     "why": "「抱」は「だく」の意味で、「コウ」とは読まない。"
+    },
+    {
+     "label": 4,
+     "body": "拘速",
+     "correct": false,
+     "why": "「速」は「はやい」の意味で、文意に合わない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003041",
+   "no": 3041,
+   "topic": "書き取り（逸材）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文のカタカナを漢字にしたものとして正しいものはどれか。「わたしたちのチームに期待の〔イツザイ〕が加わった。」",
+   "explanation": "「逸材」は「すぐれた才能を持つ人」。「逸」は「それる」のほか「ぬきんでる」意味があり、「人材」の「材」と組み合わせる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "逸材",
+     "correct": true,
+     "why": "「逸」は「すぐれる」、「材」は「才能のある人」の意味で、すぐれた人を表す。"
+    },
+    {
+     "label": 2,
+     "body": "逸財",
+     "correct": false,
+     "why": "「財」は「お金や品物」の意味で、人の才能を表さない。"
+    },
+    {
+     "label": 3,
+     "body": "免材",
+     "correct": false,
+     "why": "「免」は「まぬかれる」の意味で、しんにょうがない別の字。"
+    },
+    {
+     "label": 4,
+     "body": "遺材",
+     "correct": false,
+     "why": "「遺」は「のこす」の意味で、「イツ」とは読まない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003044",
+   "no": 3044,
+   "topic": "書き取り（隠蔽）",
+   "status": "published",
+   "version": 1,
+   "stem": "次のカタカナと漢字の組み合わせのうち、誤っているものはどれか。（ガイトウ・フニン・ヒンパン・インペイ）",
+   "explanation": "「隠蔽」は「人に知られないように、おおいかくすこと」。「隠」はこざとへん、「穏」はのぎへんで、形が似ているので[[へん]]で見分ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "ガイトウ（該当）",
+     "correct": false,
+     "why": "「該当」は「条件にあてはまること」で、正しい。"
+    },
+    {
+     "label": 2,
+     "body": "フニン（赴任）",
+     "correct": false,
+     "why": "「赴任」は「任地におもむくこと」で、正しい。"
+    },
+    {
+     "label": 3,
+     "body": "ヒンパン（頻繁）",
+     "correct": false,
+     "why": "「頻繁」は「たびたび行われること」で、正しい。"
+    },
+    {
+     "label": 4,
+     "body": "インペイ（穏蔽）",
+     "correct": true,
+     "why": "「インペイ」は「隠蔽」と書き、「穏」は「おだやか」の意味で誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_003046",
+   "no": 3046,
+   "topic": "書き取り（啓発）",
+   "status": "published",
+   "version": 1,
+   "stem": "次のカタカナと漢字の組み合わせのうち、誤っているものはどれか。（キョウジュン・ヒヘイ・ケイハツ・ジュンタク）",
+   "explanation": "「啓発」は「知らなかったことに気づかせ、理解を深めさせること」。「啓」は「ひらく・教えみちびく」の意味で、下に「口」がある形と覚える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "kaki"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "キョウジュン（恭順）",
+     "correct": false,
+     "why": "「恭順」は「つつしんで従うこと」で、正しい。"
+    },
+    {
+     "label": 2,
+     "body": "ヒヘイ（疲弊）",
+     "correct": false,
+     "why": "「疲弊」は「つかれて弱ること」で、正しい。"
+    },
+    {
+     "label": 3,
+     "body": "ケイハツ（敬発）",
+     "correct": true,
+     "why": "「ケイハツ」は「啓発」と書き、「敬」は「うやまう」の意味で誤り。"
+    },
+    {
+     "label": 4,
+     "body": "ジュンタク（潤沢）",
+     "correct": false,
+     "why": "「潤沢」は「物が豊かにあること」で、正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_003501",
+   "no": 3501,
+   "topic": "部首（酌）",
+   "status": "published",
+   "version": 1,
+   "stem": "『酌』の部首はどれか。",
+   "explanation": "「酌」は「酒をくむ」意味で、酒に関係する字の多くは[[部首]]が「酉（とりへん）」。「配」「酢」「酬」なども同じ[[へん]]を持つ。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "勹（つつみがまえ）",
+     "correct": false,
+     "why": "「勹」は右側の「勺」の一部で、部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "酉（とりへん）",
+     "correct": true,
+     "why": "「酌」は酒に関係する字で、部首は左側の「酉（とりへん）」。"
+    },
+    {
+     "label": 3,
+     "body": "丶（てん）",
+     "correct": false,
+     "why": "「丶」は「勺」の中の点で、部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "襾（にし）",
+     "correct": false,
+     "why": "「酉」の上部が似ているが、「酌」の部首は「襾」ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003503",
+   "no": 3503,
+   "topic": "部首（憂）",
+   "status": "published",
+   "version": 1,
+   "stem": "『憂』の部首はどれか。",
+   "explanation": "「憂」（うれえる）は心の動きを表すので、[[部首]]は「心（こころ）」。「愛」「慶」も同じように字の中ほどに「心」がある。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "心（こころ）",
+     "correct": true,
+     "why": "「憂」は心配する気持ちを表す字で、部首は中ほどの「心」。"
+    },
+    {
+     "label": 2,
+     "body": "夂（ふゆがしら）",
+     "correct": false,
+     "why": "下の「夂」は字の一部で、部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "冖（わかんむり）",
+     "correct": false,
+     "why": "「冖」に似た部分を含むが、部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "頁（おおがい）",
+     "correct": false,
+     "why": "上部が「頁」に似ているが、「憂」の部首ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003505",
+   "no": 3505,
+   "topic": "部首（賓）",
+   "status": "published",
+   "version": 1,
+   "stem": "『賓』の部首はどれか。",
+   "explanation": "「賓」（来賓のヒン）は、もてなしの贈り物に関係する字で[[部首]]は「貝（かい）」。上の「宀」を部首と思いこみやすいので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "宀（うかんむり）",
+     "correct": false,
+     "why": "上に「宀」があるが、「賓」の部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "少（しょう）",
+     "correct": false,
+     "why": "中ほどの「少」は字の一部で、部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "貝（かい）",
+     "correct": true,
+     "why": "「賓」は下の「貝」が部首の字。"
+    },
+    {
+     "label": 4,
+     "body": "一（いち）",
+     "correct": false,
+     "why": "横画を含むが、部首ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003507",
+   "no": 3507,
+   "topic": "部首（斬）",
+   "status": "published",
+   "version": 1,
+   "stem": "『斬』の部首はどれか。",
+   "explanation": "「斬」（きる）の[[部首]]は刃物の「おの」を表す右側の「斤（おのづくり）」。「新」「断」も同じ[[つくり]]を部首とする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "車（くるまへん）",
+     "correct": false,
+     "why": "左側に「車」があるが、「斬」の部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "一（いち）",
+     "correct": false,
+     "why": "横画を含むが、部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "丨（ぼう）",
+     "correct": false,
+     "why": "縦画を含むが、部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "斤（おのづくり）",
+     "correct": true,
+     "why": "「斬」は「おの」で切る意味で、部首は右側の「斤（おのづくり）」。"
+    }
+   ]
+  },
+  {
+   "id": "q_003509",
+   "no": 3509,
+   "topic": "部首（虞）",
+   "status": "published",
+   "version": 1,
+   "stem": "『虞』の部首はどれか。",
+   "explanation": "「虞」（おそれ）の[[部首]]は「虍（とらがしら）」で、「虐」「虚」と同じ仲間。下の「呉」は音（グ）を表す部分。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "虍（とらがしら）",
+     "correct": true,
+     "why": "「虞」の部首は上から左を覆う「虍（とらがしら）」。"
+    },
+    {
+     "label": 2,
+     "body": "口（くち）",
+     "correct": false,
+     "why": "下の「呉」の中の「口」は部首ではない。"
+    },
+    {
+     "label": 3,
+     "body": "八（はち）",
+     "correct": false,
+     "why": "下部の形に似ているが、部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "卜（ぼく）",
+     "correct": false,
+     "why": "「虍」の一部に似た形があるが、部首ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003511",
+   "no": 3511,
+   "topic": "部首（隷）",
+   "status": "published",
+   "version": 1,
+   "stem": "『隷』の部首はどれか。",
+   "explanation": "「隷」（隷属のレイ）の[[部首]]は右側の「隶（れいづくり）」。左側の「士」や「示」を部首と考えやすいので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "士（さむらい）",
+     "correct": false,
+     "why": "左上の「士」は字の一部で、部首ではない。"
+    },
+    {
+     "label": 2,
+     "body": "隶（れいづくり）",
+     "correct": true,
+     "why": "「隷」の部首は右側の「隶（れいづくり）」。"
+    },
+    {
+     "label": 3,
+     "body": "示（しめす）",
+     "correct": false,
+     "why": "左下の「示」は字の一部で、部首ではない。"
+    },
+    {
+     "label": 4,
+     "body": "木（き）",
+     "correct": false,
+     "why": "「木」は「隷」に含まれる部首ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003513",
+   "no": 3513,
+   "topic": "画数（凹）",
+   "status": "published",
+   "version": 1,
+   "stem": "『凹』の総画数はどれか。",
+   "explanation": "「凹」（へこむ・オウ）は 5 画。折れ曲がる線を 1 画で書くところが多く、見た目より画数が少ないので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "4",
+     "correct": false,
+     "why": "1 画少ない。"
+    },
+    {
+     "label": 2,
+     "body": "6",
+     "correct": false,
+     "why": "1 画多い。"
+    },
+    {
+     "label": 3,
+     "body": "7",
+     "correct": false,
+     "why": "2 画多い。"
+    },
+    {
+     "label": 4,
+     "body": "5",
+     "correct": true,
+     "why": "「凹」の総画数は 5 画。"
+    }
+   ]
+  },
+  {
+   "id": "q_003515",
+   "no": 3515,
+   "topic": "画数（臼）",
+   "status": "published",
+   "version": 1,
+   "stem": "『臼』の総画数はどれか。",
+   "explanation": "「臼」（うす・キュウ）は 6 画。中の短い横画を数え落とさないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "5",
+     "correct": false,
+     "why": "1 画少ない。"
+    },
+    {
+     "label": 2,
+     "body": "7",
+     "correct": false,
+     "why": "1 画多い。"
+    },
+    {
+     "label": 3,
+     "body": "6",
+     "correct": true,
+     "why": "「臼」（うす）の総画数は 6 画。"
+    },
+    {
+     "label": 4,
+     "body": "8",
+     "correct": false,
+     "why": "2 画多い。"
+    }
+   ]
+  },
+  {
+   "id": "q_003517",
+   "no": 3517,
+   "topic": "画数（弔）",
+   "status": "published",
+   "version": 1,
+   "stem": "『弔』の総画数はどれか。",
+   "explanation": "「弔」（とむらう）は「弓」の 3 画に、中を貫く縦画 1 画を加えた 4 画。[[部首]]も「弓」である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "3",
+     "correct": false,
+     "why": "1 画少ない。縦画を数え落としている。"
+    },
+    {
+     "label": 2,
+     "body": "4",
+     "correct": true,
+     "why": "「弓」3 画に縦画 1 画を加えて、総画数は 4 画。"
+    },
+    {
+     "label": 3,
+     "body": "5",
+     "correct": false,
+     "why": "1 画多い。"
+    },
+    {
+     "label": 4,
+     "body": "6",
+     "correct": false,
+     "why": "2 画多い。"
+    }
+   ]
+  },
+  {
+   "id": "q_003519",
+   "no": 3519,
+   "topic": "部首の誤り（麓）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の漢字と部首の組み合わせのうち、誤っているものはどれか。",
+   "explanation": "「麓」（ふもと）の[[部首]]は「鹿（しか）」。上の「林」から「木」と考えやすいので注意する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "bushu"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "麓 ― 木（き）",
+     "correct": true,
+     "why": "「麓」の部首は下の「鹿（しか）」で、「木」ではない。"
+    },
+    {
+     "label": 2,
+     "body": "釜 ― 金（かね）",
+     "correct": false,
+     "why": "「釜」の部首は下の「金」で、正しい組み合わせ。"
+    },
+    {
+     "label": 3,
+     "body": "蔑 ― 艹（くさかんむり）",
+     "correct": false,
+     "why": "「蔑」の部首は「艹」で、正しい組み合わせ。"
+    },
+    {
+     "label": 4,
+     "body": "囚 ― 囗（くにがまえ）",
+     "correct": false,
+     "why": "「囚」の部首は外側の「囗」で、正しい組み合わせ。"
+    }
+   ]
+  },
+  {
+   "id": "q_003521",
+   "no": 3521,
+   "topic": "四字熟語（傍若無人）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「〔　〕若無人（人のことを気にせず、勝手にふるまうこと）」",
+   "explanation": "「傍若無人」（ぼうじゃくぶじん）は「かたわらに人がいないかのようにふるまう」ことから生まれた[[四字熟語]]。同じ音の「防」「坊」「房」と書きまちがえやすい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "防",
+     "correct": false,
+     "why": "「防」（ふせぐ）では意味が通らない。"
+    },
+    {
+     "label": 2,
+     "body": "坊",
+     "correct": false,
+     "why": "「坊」では四字熟語にならない。"
+    },
+    {
+     "label": 3,
+     "body": "傍",
+     "correct": true,
+     "why": "「傍（かたわら）に人無きが若し」から「傍若無人」と書く。"
+    },
+    {
+     "label": 4,
+     "body": "房",
+     "correct": false,
+     "why": "「房」では四字熟語にならない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003523",
+   "no": 3523,
+   "topic": "四字熟語（泰然自若）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「〔　〕然自若（落ち着いていて、ものごとに動じないようす）」",
+   "explanation": "「泰然自若」（たいぜんじじゃく）は「泰然」と「自若」という似た意味の語を重ねた[[四字熟語]]。「泰」は「安泰」の「泰」で、やすらかな意味。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "態",
+     "correct": false,
+     "why": "「態然」という言葉はない。"
+    },
+    {
+     "label": 2,
+     "body": "体",
+     "correct": false,
+     "why": "「体然」という言葉はない。"
+    },
+    {
+     "label": 3,
+     "body": "耐",
+     "correct": false,
+     "why": "「たえる」の意味を連想しやすいが、「耐然」とは書かない。"
+    },
+    {
+     "label": 4,
+     "body": "泰",
+     "correct": true,
+     "why": "「泰然」は落ち着いて動じないようすを表す。"
+    }
+   ]
+  },
+  {
+   "id": "q_003525",
+   "no": 3525,
+   "topic": "四字熟語（千載一遇）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「千載一〔　〕（めったにめぐってこない、よい機会）」",
+   "explanation": "「千載一遇」（せんざいいちぐう）の「載」は年、「遇」は出あうこと。形と音の似た「偶」「隅」と書きまちがえやすい[[四字熟語]]である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "遇",
+     "correct": true,
+     "why": "「遇」は「出あう」意味で、千年に一度出あうほどの機会を表す。"
+    },
+    {
+     "label": 2,
+     "body": "偶",
+     "correct": false,
+     "why": "「偶然」の「偶」と取りちがえやすいが、ここでは使わない。"
+    },
+    {
+     "label": 3,
+     "body": "隅",
+     "correct": false,
+     "why": "「隅」（すみ）では意味が通らない。"
+    },
+    {
+     "label": 4,
+     "body": "愚",
+     "correct": false,
+     "why": "「愚」（おろか）では意味が通らない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003528",
+   "no": 3528,
+   "topic": "四字熟語（換骨奪胎）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「換骨奪〔　〕（先人の作品を土台に、独自の新しいものを作ること）」",
+   "explanation": "「換骨奪胎」（かんこつだったい）は、もとの作品の骨組みや趣向を生かして新しいものを生み出すこと。「胎」は「胎児」の「胎」である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "怠",
+     "correct": false,
+     "why": "「怠」（おこたる）では意味が通らない。"
+    },
+    {
+     "label": 2,
+     "body": "台",
+     "correct": false,
+     "why": "「台」では意味が通らない。"
+    },
+    {
+     "label": 3,
+     "body": "体",
+     "correct": false,
+     "why": "「からだ」を連想しやすいが、「奪体」とは書かない。"
+    },
+    {
+     "label": 4,
+     "body": "胎",
+     "correct": true,
+     "why": "「胎」は子がやどる母の体内を表す字で、「奪胎」と書く。"
+    }
+   ]
+  },
+  {
+   "id": "q_003530",
+   "no": 3530,
+   "topic": "四字熟語（当意即妙）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の四字熟語の〔　〕に入る漢字として正しいものはどれか。「当意〔　〕妙（その場に合わせて、すばやく機転をきかせること）」",
+   "explanation": "「当意即妙」（とういそくみょう）は、その場にうまく合った気のきいた対応をすること。「即」は「即座」「即答」の「即」である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "則",
+     "correct": false,
+     "why": "「則」（きまり）では意味が通らない。"
+    },
+    {
+     "label": 2,
+     "body": "即",
+     "correct": true,
+     "why": "「即」はすぐに・その場での意味で、「即妙」と書く。"
+    },
+    {
+     "label": 3,
+     "body": "促",
+     "correct": false,
+     "why": "「促」（うながす）では意味が通らない。"
+    },
+    {
+     "label": 4,
+     "body": "測",
+     "correct": false,
+     "why": "「測」（はかる）では意味が通らない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003533",
+   "no": 3533,
+   "topic": "対義語（凡庸）",
+   "status": "published",
+   "version": 1,
+   "stem": "「凡庸」の対義語として正しいものはどれか。",
+   "explanation": "「凡庸」（ぼんよう）は平凡でとりえのないこと。打ち消しの「非」をつけた「非凡」がその[[対義語]]になる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "平凡",
+     "correct": false,
+     "why": "「平凡」は「凡庸」と似た意味の類義語。"
+    },
+    {
+     "label": 2,
+     "body": "非凡",
+     "correct": true,
+     "why": "「非凡」は並外れてすぐれていることで、「凡庸」と反対の意味。"
+    },
+    {
+     "label": 3,
+     "body": "凡例",
+     "correct": false,
+     "why": "「凡例」は本の使い方などを示したもので、反対の意味ではない。"
+    },
+    {
+     "label": 4,
+     "body": "凡人",
+     "correct": false,
+     "why": "「凡人」はふつうの人のことで、反対の意味ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003535",
+   "no": 3535,
+   "topic": "対義語（隆起）",
+   "status": "published",
+   "version": 1,
+   "stem": "「隆起」の対義語として正しいものはどれか。",
+   "explanation": "「隆起」（りゅうき）は土地などが高く盛り上がること。落ちこんでくぼむ「陥没」が[[対義語]]で、「陥」は「おちいる」と読む字。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "陥没",
+     "correct": true,
+     "why": "「陥没」は地面などが落ちこんでくぼむことで、「隆起」と反対の意味。"
+    },
+    {
+     "label": 2,
+     "body": "隆盛",
+     "correct": false,
+     "why": "「隆盛」は勢いが盛んなことで、反対の意味ではない。"
+    },
+    {
+     "label": 3,
+     "body": "起伏",
+     "correct": false,
+     "why": "「起伏」は高低があることで、反対の意味ではない。"
+    },
+    {
+     "label": 4,
+     "body": "突起",
+     "correct": false,
+     "why": "「突起」は突き出た部分で、むしろ似た意味。"
+    }
+   ]
+  },
+  {
+   "id": "q_003537",
+   "no": 3537,
+   "topic": "対義語（寡黙）",
+   "status": "published",
+   "version": 1,
+   "stem": "「寡黙」の対義語として正しいものはどれか。",
+   "explanation": "「寡黙」（かもく）は口数が少ないこと。「寡」は少ない意味で、よくしゃべる「多弁」が[[対義語]]になる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "沈黙",
+     "correct": false,
+     "why": "「沈黙」はだまっていることで、むしろ似た意味。"
+    },
+    {
+     "label": 2,
+     "body": "無口",
+     "correct": false,
+     "why": "「無口」は口数が少ないことで、「寡黙」の類義語。"
+    },
+    {
+     "label": 3,
+     "body": "多弁",
+     "correct": true,
+     "why": "「多弁」はよくしゃべることで、「寡黙」と反対の意味。"
+    },
+    {
+     "label": 4,
+     "body": "寡少",
+     "correct": false,
+     "why": "「寡少」は非常に少ないことで、反対の意味ではない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003540",
+   "no": 3540,
+   "topic": "類義語（奔走）",
+   "status": "published",
+   "version": 1,
+   "stem": "「奔走」の類義語として正しいものはどれか。",
+   "explanation": "「奔走」（ほんそう）は、ものごとがうまく運ぶようにあちこち走り回って努力すること。「尽力」が[[類義語]]で、「資金集めに奔走する」のように使う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "逃走",
+     "correct": false,
+     "why": "「逃走」はにげることで、意味がちがう。"
+    },
+    {
+     "label": 2,
+     "body": "尽力",
+     "correct": true,
+     "why": "「尽力」は力をつくすことで、あれこれ努める「奔走」と似た意味。"
+    },
+    {
+     "label": 3,
+     "body": "奔放",
+     "correct": false,
+     "why": "「奔放」は思うままにふるまうことで、意味がちがう。"
+    },
+    {
+     "label": 4,
+     "body": "静養",
+     "correct": false,
+     "why": "「静養」は心身を休めることで、むしろ反対の意味。"
+    }
+   ]
+  },
+  {
+   "id": "q_003542",
+   "no": 3542,
+   "topic": "類義語（示唆）",
+   "status": "published",
+   "version": 1,
+   "stem": "「示唆」の類義語として正しいものはどれか。",
+   "explanation": "「示唆」（しさ）は、それとなく気づかせるように示すこと。「暗示」が[[類義語]]で、「唆」は「そそのかす」とも読む字。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "一般的な国語辞典の語義"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "jukugo"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "明示",
+     "correct": false,
+     "why": "「明示」ははっきり示すことで、それとなく示す「示唆」とは反対に近い。"
+    },
+    {
+     "label": 2,
+     "body": "示談",
+     "correct": false,
+     "why": "「示談」は話し合いで争いを解決することで、意味がちがう。"
+    },
+    {
+     "label": 3,
+     "body": "暗示",
+     "correct": true,
+     "why": "「暗示」はそれとなく示すことで、「示唆」と似た意味。"
+    },
+    {
+     "label": 4,
+     "body": "掲示",
+     "correct": false,
+     "why": "「掲示」は人目につく所に示すことで、意味がちがう。"
+    }
+   ]
+  },
+  {
+   "id": "q_003545",
+   "no": 3545,
+   "topic": "送りがな（穏やか）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「〔オダヤカナ〕日ざしが部屋にさしこむ。」",
+   "explanation": "「穏やかだ」は、語の中に「やか」を含む形容動詞なので「やか」から送る（「健やかだ」「和やかだ」も同じ）。形の似た「隠」と書きまちがえないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "穏かな",
+     "correct": false,
+     "why": "「や」を落としている。「やか」を含む語は「やか」から送る。"
+    },
+    {
+     "label": 2,
+     "body": "穏だやかな",
+     "correct": false,
+     "why": "「だ」は送らない。"
+    },
+    {
+     "label": 3,
+     "body": "隠やかな",
+     "correct": false,
+     "why": "「隠」（かくす）は形の似た別の字。"
+    },
+    {
+     "label": 4,
+     "body": "穏やかな",
+     "correct": true,
+     "why": "「やか」を含む形容動詞は「やか」から送るので「穏やかな」。"
+    }
+   ]
+  },
+  {
+   "id": "q_003546",
+   "no": 3546,
+   "topic": "送りがな（滑らか）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「〔ナメラカナ〕手ざわりの布を選ぶ。」",
+   "explanation": "「滑らかだ」は語の中に「らか」を含む形容動詞なので「らか」から送る。「明らかだ」「柔らかだ」も同じ決まりである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "滑かな",
+     "correct": false,
+     "why": "「ら」を落としている。"
+    },
+    {
+     "label": 2,
+     "body": "滑らかな",
+     "correct": true,
+     "why": "「らか」を含む形容動詞は「らか」から送るので「滑らかな」。"
+    },
+    {
+     "label": 3,
+     "body": "滑めらかな",
+     "correct": false,
+     "why": "「め」は送らない。"
+    },
+    {
+     "label": 4,
+     "body": "滑なめらかな",
+     "correct": false,
+     "why": "読みをすべて送っており誤り。"
+    }
+   ]
+  },
+  {
+   "id": "q_003547",
+   "no": 3547,
+   "topic": "送りがな（惨め）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「試合に大差で負けて〔ミジメナ〕思いをした。」",
+   "explanation": "「惨めだ」は送り仮名の付け方で例外として示された語で、「め」から送る。「惨」は「むごい」意味で、音読みは「サン」「ザン」。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "惨じめな",
+     "correct": false,
+     "why": "「じ」は送らない。"
+    },
+    {
+     "label": 2,
+     "body": "惨な",
+     "correct": false,
+     "why": "「め」を落としている。"
+    },
+    {
+     "label": 3,
+     "body": "惨めな",
+     "correct": true,
+     "why": "「みじめだ」は「惨めだ」と書くのが本則。"
+    },
+    {
+     "label": 4,
+     "body": "参めな",
+     "correct": false,
+     "why": "「参」は音の似た別の字。"
+    }
+   ]
+  },
+  {
+   "id": "q_003548",
+   "no": 3548,
+   "topic": "送りがな（慈しむ）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「祖母は庭の草花を〔イツクシム〕。」",
+   "explanation": "「慈しむ」は送り仮名の付け方で例外として示された語で、「しむ」から送る。「慈」は「慈愛」の「慈」で、音の同じ「滋」と区別する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "慈しむ",
+     "correct": true,
+     "why": "「いつくしむ」は「慈しむ」と書くのが本則。"
+    },
+    {
+     "label": 2,
+     "body": "慈くしむ",
+     "correct": false,
+     "why": "「く」は送らない。"
+    },
+    {
+     "label": 3,
+     "body": "慈む",
+     "correct": false,
+     "why": "「し」を落としている。"
+    },
+    {
+     "label": 4,
+     "body": "滋しむ",
+     "correct": false,
+     "why": "「滋」は音の同じ別の字。"
+    }
+   ]
+  },
+  {
+   "id": "q_003549",
+   "no": 3549,
+   "topic": "送りがな（恭しい）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕を漢字と送りがなで正しく書いたものはどれか。「式の始まりに〔ウヤウヤシク〕頭を下げる。」",
+   "explanation": "「恭しい」のように語幹が「し」で終わる形容詞は「し」から送る（「著しい」「珍しい」も同じ）。読みが長いので余分に送りやすい。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "恭く",
+     "correct": false,
+     "why": "「し」を落としている。"
+    },
+    {
+     "label": 2,
+     "body": "恭やしく",
+     "correct": false,
+     "why": "「や」は送らない。"
+    },
+    {
+     "label": 3,
+     "body": "恭うやしく",
+     "correct": false,
+     "why": "「うや」は送らない。"
+    },
+    {
+     "label": 4,
+     "body": "恭しく",
+     "correct": true,
+     "why": "語幹が「し」で終わる形容詞は「し」から送るので「恭しく」。"
+    }
+   ]
+  },
+  {
+   "id": "q_003550",
+   "no": 3550,
+   "topic": "送りがなの誤り（哀れむ）",
+   "status": "published",
+   "version": 1,
+   "stem": "送りがなが誤っているものはどれか。",
+   "explanation": "「哀れむ」は送り仮名の付け方で例外として示された語で、「れむ」から送る。「哀れだ」も同じように「れ」から送る。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "送り仮名の付け方（内閣告示）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/okurigana/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "培う",
+     "correct": false,
+     "why": "活用語尾の「う」を送り、正しい。"
+    },
+    {
+     "label": 2,
+     "body": "謹む",
+     "correct": false,
+     "why": "活用語尾の「む」を送り、正しい。"
+    },
+    {
+     "label": 3,
+     "body": "哀われむ",
+     "correct": true,
+     "why": "「あわれむ」は「哀れむ」と書くので、「わ」を送るのは誤り。"
+    },
+    {
+     "label": 4,
+     "body": "鮮やかだ",
+     "correct": false,
+     "why": "「やか」を含む形容動詞は「やか」から送り、正しい。"
+    }
+   ]
+  },
+  {
+   "id": "q_003551",
+   "no": 3551,
+   "topic": "同音異字（緩）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕に当てはまる漢字として正しいものはどれか。「〔カン〕慢な動きのせいで、相手に追いつかれた。」",
+   "explanation": "「緩慢」（かんまん）は動きがのろいこと。「緩」は「ゆるい・ゆるやか」と読み、心の広い意味の「寛」と取りちがえないようにする。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "寛",
+     "correct": false,
+     "why": "「寛」は心が広い意味で、「寛慢」という言葉はない。"
+    },
+    {
+     "label": 2,
+     "body": "緩",
+     "correct": true,
+     "why": "動きがゆっくりでのろいことは「緩慢」と書く。"
+    },
+    {
+     "label": 3,
+     "body": "勧",
+     "correct": false,
+     "why": "「勧」（すすめる）では意味が通らない。"
+    },
+    {
+     "label": 4,
+     "body": "換",
+     "correct": false,
+     "why": "「換」（かえる）では意味が通らない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003552",
+   "no": 3552,
+   "topic": "同音異字（冒）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕に当てはまる漢字として正しいものはどれか。「物語の〔ボウ〕頭で主人公が旅に出る。」",
+   "explanation": "「冒頭」（ぼうとう）は文章や話のはじめの部分。「冒」はもとは頭をおおう意味で、形の似た「帽」と区別する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "帽",
+     "correct": false,
+     "why": "「帽」はぼうしの意味で、「帽頭」という言葉はない。"
+    },
+    {
+     "label": 2,
+     "body": "某",
+     "correct": false,
+     "why": "「某」（なにがし）では意味が通らない。"
+    },
+    {
+     "label": 3,
+     "body": "冒",
+     "correct": true,
+     "why": "文章や話のはじめの部分は「冒頭」と書く。"
+    },
+    {
+     "label": 4,
+     "body": "謀",
+     "correct": false,
+     "why": "「謀」（はかりごと）では意味が通らない。"
+    }
+   ]
+  },
+  {
+   "id": "q_003553",
+   "no": 3553,
+   "topic": "同訓異字（割く）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕に当てはまる漢字として正しいものはどれか。「いそがしい中、時間を〔サ〕いて相談に乗ってくれた。」",
+   "explanation": "時間や人手などの一部を分けて回すときは「割く」、布や紙を力で引きはなすときは「裂く」と書き分ける[[同訓異字]]。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "裂",
+     "correct": false,
+     "why": "「裂く」は布などを引きさく意味で、時間には使わない。"
+    },
+    {
+     "label": 2,
+     "body": "咲",
+     "correct": false,
+     "why": "「咲く」は花がひらく意味で、合わない。"
+    },
+    {
+     "label": 3,
+     "body": "避",
+     "correct": false,
+     "why": "「避ける」の字で、「さく」とは読まない。"
+    },
+    {
+     "label": 4,
+     "body": "割",
+     "correct": true,
+     "why": "一部を分けて他に回す意味の「割く」を使う。"
+    }
+   ]
+  },
+  {
+   "id": "q_003554",
+   "no": 3554,
+   "topic": "同訓異字（務める）",
+   "status": "published",
+   "version": 1,
+   "stem": "次の文の〔カタカナ〕に当てはまる漢字として正しいものはどれか。「学校の記念式典で司会を〔ツト〕める。」",
+   "explanation": "役目を受け持つときは「務める」、努力するときは「努める」、会社などで働くときは「勤める」と書き分ける[[同訓異字]]。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "常用漢字表（文化庁）",
+    "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/"
+   },
+   "exams": [
+    {
+     "exam": "lv2",
+     "section": "okuri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "務",
+     "correct": true,
+     "why": "役目や役割を受け持つことは「務める」と書く。"
+    },
+    {
+     "label": 2,
+     "body": "努",
+     "correct": false,
+     "why": "「努める」は力をつくして励む意味で、役目には使わない。"
+    },
+    {
+     "label": 3,
+     "body": "勤",
+     "correct": false,
+     "why": "「勤める」は勤め先で働く意味で、合わない。"
+    },
+    {
+     "label": 4,
+     "body": "勉",
+     "correct": false,
+     "why": "「勉」には常用漢字表で「つとめる」の読みがない。"
+    }
+   ]
+  }
+ ]
+}
