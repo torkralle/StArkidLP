@@ -1,0 +1,5506 @@
+{
+ "meta": {
+  "content_version": "ffeb7780",
+  "built_at": "2026-11-21T13:37:00.080120Z"
+ },
+ "exams": [
+  {
+   "id": "takken",
+   "name": "宅地建物取引士資格試験",
+   "short_name": "宅建 一問一答",
+   "regime": "current",
+   "question_count": 50,
+   "minutes": 60,
+   "pass_score": 35,
+   "section_min_ratio": null,
+   "sections": [
+    {
+     "id": "gyouhou",
+     "name": "宅建業法",
+     "mock_count": 20
+    },
+    {
+     "id": "kenri",
+     "name": "権利関係",
+     "mock_count": 14
+    },
+    {
+     "id": "hourei",
+     "name": "法令上の制限",
+     "mock_count": 8
+    },
+    {
+     "id": "zei",
+     "name": "税・その他",
+     "mock_count": 8
+    }
+   ]
+  }
+ ],
+ "terms": [
+  {
+   "id": "takken-gyousha",
+   "term": "宅地建物取引業者",
+   "reading": "たくちたてものとりひきぎょうしゃ",
+   "body": "国土交通大臣または都道府県知事の免許を受けて、宅地・建物の売買・交換や、売買・交換・貸借の代理・媒介を業として行う者。"
+  },
+  {
+   "id": "takken-shi",
+   "term": "宅地建物取引士",
+   "reading": "たくちたてものとりひきし",
+   "body": "試験に合格し、都道府県知事の登録を受け、宅地建物取引士証の交付を受けた者。重要事項の説明などを行う。"
+  },
+  {
+   "id": "jimusho",
+   "term": "事務所",
+   "reading": "じむしょ",
+   "body": "宅建業法では本店・支店（宅建業を営むもの）と、継続的に業務を行う施設があり契約を締結する権限のある使用人を置くもの。"
+  },
+  {
+   "id": "eigyo-hoshoukin",
+   "term": "営業保証金",
+   "reading": "えいぎょうほしょうきん",
+   "body": "取引の相手方の損害を補うため、宅建業者が主たる事務所の最寄りの供託所に供託するお金。本店1,000万円・支店1か所ごとに500万円。"
+  },
+  {
+   "id": "hoshou-kyoukai",
+   "term": "保証協会",
+   "reading": "ほしょうきょうかい",
+   "body": "国土交通大臣の指定を受けた一般社団法人。社員の宅建業者は営業保証金の代わりに弁済業務保証金分担金を納める。"
+  },
+  {
+   "id": "baikai-keiyaku",
+   "term": "媒介契約",
+   "reading": "ばいかいけいやく",
+   "body": "宅地・建物の売買などの相手を探して契約の成立に尽力することを宅建業者に頼む契約。一般・専任・専属専任の3種類がある。"
+  },
+  {
+   "id": "juyou-jikou",
+   "term": "重要事項説明",
+   "reading": "じゅうようじこうせつめい",
+   "body": "契約が成立するまでに、宅地建物取引士が相手方に書面（35条書面）を交付して物件や取引条件を説明すること。"
+  },
+  {
+   "id": "37jou-shomen",
+   "term": "37条書面",
+   "reading": "さんじゅうななじょうしょめん",
+   "body": "契約が成立したとき、宅建業者が遅滞なく当事者に交付する、契約の内容を記した書面。"
+  },
+  {
+   "id": "cooling-off",
+   "term": "クーリング・オフ",
+   "reading": "くーりんぐおふ",
+   "body": "宅建業者が自ら売主の売買で、事務所等以外の場所で申込み・契約をした買主が、書面で無条件に申込みの撤回や契約の解除をできる制度。"
+  },
+  {
+   "id": "tetsuke",
+   "term": "手付",
+   "reading": "てつけ",
+   "body": "契約のときに買主から売主に渡すお金。相手方が履行に着手するまでは、買主は放棄、売主は倍額を現実に提供して契約を解除できる。"
+  },
+  {
+   "id": "keiyaku-futekigou",
+   "term": "契約不適合責任",
+   "reading": "けいやくふてきごうせきにん",
+   "body": "引き渡した目的物が種類・品質・数量について契約の内容に適合しないときに売主が負う責任。追完請求・代金減額・損害賠償・解除がある。"
+  },
+  {
+   "id": "kyogi-hyoji",
+   "term": "虚偽表示",
+   "reading": "きょぎひょうじ",
+   "body": "相手方と通じてした真意でない意思表示。当事者間では無効だが、善意の第三者には無効を主張できない。"
+  },
+  {
+   "id": "muken-dairi",
+   "term": "無権代理",
+   "reading": "むけんだいり",
+   "body": "代理権がない者が代理人として行った行為。本人が追認しなければ本人に効果が及ばない。"
+  },
+  {
+   "id": "hyouken-dairi",
+   "term": "表見代理",
+   "reading": "ひょうけんだいり",
+   "body": "代理権があるように見える事情に本人の責任があり、相手方が代理権を信じたことに正当な理由があるとき、本人に責任を負わせる制度。"
+  },
+  {
+   "id": "taikou-youken",
+   "term": "対抗要件",
+   "reading": "たいこうようけん",
+   "body": "自分の権利を第三者に主張するために必要なもの。不動産の物権変動では登記。"
+  },
+  {
+   "id": "teitouken",
+   "term": "抵当権",
+   "reading": "ていとうけん",
+   "body": "債務者などが占有を移さずに担保に出した不動産から、他の債権者より先に弁済を受けられる権利。"
+  },
+  {
+   "id": "houtei-chijouken",
+   "term": "法定地上権",
+   "reading": "ほうていちじょうけん",
+   "body": "抵当権設定時に同じ所有者の土地と建物があり、競売で所有者が別々になったとき、建物のために法律上当然に成立する地上権。"
+  },
+  {
+   "id": "shakuchiken",
+   "term": "借地権",
+   "reading": "しゃくちけん",
+   "body": "建物の所有を目的とする地上権または土地の賃借権。借地借家法が適用される。"
+  },
+  {
+   "id": "teiki-shakuchi",
+   "term": "定期借地権",
+   "reading": "ていきしゃくちけん",
+   "body": "契約の更新がなく、期間が満了すると終わる借地権。一般定期借地権・事業用定期借地権・建物譲渡特約付借地権がある。"
+  },
+  {
+   "id": "iryuubun",
+   "term": "遺留分",
+   "reading": "いりゅうぶん",
+   "body": "兄弟姉妹以外の相続人に法律が保障する、相続財産の最低限の取り分。侵害されたときは遺留分侵害額を請求できる。"
+  },
+  {
+   "id": "kuiki-kubun",
+   "term": "区域区分",
+   "reading": "くいきくぶん",
+   "body": "都市計画区域を市街化区域と市街化調整区域に分けること（線引き）。"
+  },
+  {
+   "id": "shigaika-chousei",
+   "term": "市街化調整区域",
+   "reading": "しがいかちょうせいくいき",
+   "body": "市街化を抑える区域。原則として用途地域を定めない。"
+  },
+  {
+   "id": "kaihatsu-kyoka",
+   "term": "開発許可",
+   "reading": "かいはつきょか",
+   "body": "主として建築物の建築などのために土地の区画形質を変更する開発行為をするときに、原則として必要な都道府県知事などの許可。"
+  },
+  {
+   "id": "kenpeiritsu",
+   "term": "建蔽率",
+   "reading": "けんぺいりつ",
+   "body": "建築物の建築面積の敷地面積に対する割合。"
+  },
+  {
+   "id": "yousekiritsu",
+   "term": "容積率",
+   "reading": "ようせきりつ",
+   "body": "建築物の延べ面積の敷地面積に対する割合。"
+  },
+  {
+   "id": "setsudou-gimu",
+   "term": "接道義務",
+   "reading": "せつどうぎむ",
+   "body": "建築物の敷地は、原則として建築基準法上の道路に2m以上接しなければならないという決まり。"
+  },
+  {
+   "id": "karikanchi",
+   "term": "仮換地",
+   "reading": "かりかんち",
+   "body": "土地区画整理事業で、換地処分の前に従前の宅地の代わりに使用・収益できるよう指定される土地。"
+  },
+  {
+   "id": "koteishisanzei",
+   "term": "固定資産税",
+   "reading": "こていしさんぜい",
+   "body": "毎年1月1日（賦課期日）に固定資産課税台帳に所有者として登録されている者に、市町村が課す税。"
+  },
+  {
+   "id": "fudousan-shutokuzei",
+   "term": "不動産取得税",
+   "reading": "ふどうさんしゅとくぜい",
+   "body": "売買・贈与・新築などで不動産を取得した者に、その不動産がある都道府県が課す税。相続による取得には課されない。"
+  },
+  {
+   "id": "koujikakaku",
+   "term": "公示価格",
+   "reading": "こうじかかく",
+   "body": "地価公示法に基づき、土地鑑定委員会が標準地について毎年1月1日時点の1㎡当たりの正常な価格を判定して公示するもの。"
+  }
+ ],
+ "questions": [
+  {
+   "id": "q_001001",
+   "no": 1001,
+   "topic": "宅地建物取引業の定義",
+   "status": "published",
+   "version": 1,
+   "stem": "自ら所有する賃貸マンションの各住戸を、多数の者に対して反復継続して貸し付ける行為は、宅地建物取引業に当たらない。",
+   "explanation": "宅地建物取引業は、宅地・建物の売買・交換と、売買・交換・貸借の代理・媒介を業として行うものをいう。自ら貸主として貸し付ける行為（自ら貸借）は含まれないので、免許は不要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第2条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001002",
+   "no": 1002,
+   "topic": "免許の要否",
+   "status": "published",
+   "version": 1,
+   "stem": "地方公共団体が宅地の分譲を反復継続して行う場合、その地方公共団体は宅地建物取引業の免許を受けなければならない。",
+   "explanation": "宅地建物取引業法の規定は、国及び地方公共団体には適用されない。したがって地方公共団体は免許なしで宅地の分譲を行うことができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第78条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001003",
+   "no": 1003,
+   "topic": "免許の種類",
+   "status": "published",
+   "version": 1,
+   "stem": "甲県内にのみ事務所を設置している宅地建物取引業者Aが、乙県内に所在する宅地の売買の媒介をするには、国土交通大臣の免許を受けなければならない。",
+   "explanation": "国土交通大臣の免許か都道府県知事の免許かは、事務所を2以上の都道府県に設置するかどうかで決まり、取引する物件の所在地は関係ない。甲県知事の免許で全国の物件を扱うことができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第3条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001004",
+   "no": 1004,
+   "topic": "免許の有効期間・更新",
+   "status": "published",
+   "version": 1,
+   "stem": "免許の更新を受けようとする宅地建物取引業者は、免許の有効期間満了の日の90日前から30日前までの間に免許申請書を提出しなければならない。",
+   "explanation": "更新の申請期間は、有効期間満了の日の90日前から30日前までの間と定められている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行規則 第3条",
+    "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001005",
+   "no": 1005,
+   "topic": "免許換え",
+   "status": "published",
+   "version": 1,
+   "stem": "甲県知事の免許を受けている宅地建物取引業者Aが、乙県内にも事務所を設置して引き続き宅地建物取引業を営もうとする場合、Aは国土交通大臣の免許を受けなければならない。",
+   "explanation": "知事免許の業者が2以上の都道府県に事務所を有することとなったときは、国土交通大臣の免許を受ける必要がある（免許換え）。新たな免許を受けると、従前の甲県知事の免許は効力を失う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第7条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001006",
+   "no": 1006,
+   "topic": "免許の欠格事由",
+   "status": "published",
+   "version": 1,
+   "stem": "破産手続開始の決定を受けた個人Bは、復権を得れば、その日から5年を経過していなくても宅地建物取引業の免許を受けることができる。",
+   "explanation": "欠格事由は「破産手続開始の決定を受けて復権を得ない者」であり、復権を得れば直ちに欠格事由に当たらなくなる。復権後に5年の経過を待つ必要はない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第5条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001007",
+   "no": 1007,
+   "topic": "免許の欠格事由（刑罰）",
+   "status": "published",
+   "version": 1,
+   "stem": "道路交通法違反により罰金の刑に処せられ、その刑の執行を終わった日から5年を経過していない者は、宅地建物取引業の免許を受けることができない。",
+   "explanation": "罰金刑が欠格事由となるのは、宅地建物取引業法・暴力団対策法違反や、傷害・暴行・脅迫・背任など刑法の特定の罪などによる場合に限られる。道路交通法違反の罰金刑は欠格事由に当たらない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第5条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001008",
+   "no": 1008,
+   "topic": "免許の欠格事由（法人の役員）",
+   "status": "published",
+   "version": 1,
+   "stem": "法人Aの非常勤の取締役Bが拘禁刑に処せられ、その刑の執行を終わった日から5年を経過していない場合、Aは宅地建物取引業の免許を受けることができない。",
+   "explanation": "法人の役員に欠格事由に当たる者がいるときは、その法人は免許を受けられない。役員には常勤か非常勤かを問わず取締役が含まれる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第5条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001009",
+   "no": 1009,
+   "topic": "変更の届出",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者Aは、事務所ごとに置かれる専任の宅地建物取引士を別の者に交代させた場合、30日以内に、免許を受けた国土交通大臣又は都道府県知事に変更の届出をしなければならない。",
+   "explanation": "専任の宅地建物取引士の氏名は免許申請書の記載事項であり、変更があれば30日以内に変更の届出が必要である。商号・役員の氏名・事務所の名称及び所在地の変更も同様である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第9条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001010",
+   "no": 1010,
+   "topic": "廃業等の届出",
+   "status": "published",
+   "version": 1,
+   "stem": "個人である宅地建物取引業者Aが死亡した場合、Aの相続人は、Aが死亡した日から30日以内に、その旨を免許を受けた国土交通大臣又は都道府県知事に届け出なければならない。",
+   "explanation": "死亡の場合の届出期限は、死亡の日からではなく、相続人がその事実を知った日から30日以内である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第11条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001011",
+   "no": 1011,
+   "topic": "廃業等の届出",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者Aについて破産手続開始の決定があった場合、その破産管財人は30日以内にその旨を届け出なければならず、届出があった時にAの免許は効力を失う。",
+   "explanation": "破産手続開始の決定があったときは、破産管財人がその日から30日以内に届け出る。破産・解散・廃業の場合は、届出があった時に免許が効力を失う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第11条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001012",
+   "no": 1012,
+   "topic": "専任の宅地建物取引士",
+   "status": "published",
+   "version": 1,
+   "stem": "既存の事務所において成年者である専任の宅地建物取引士の数が法定数に不足することとなった場合、宅地建物取引業者は30日以内に必要な措置を執らなければならない。",
+   "explanation": "法定数に抵触するに至ったときは、30日以内ではなく2週間以内に、補充などの必要な措置を執らなければならない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第31条の3",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001013",
+   "no": 1013,
+   "topic": "案内所等の届出",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者Aが10区画以上の一団の宅地の分譲のため契約の申込みを受ける案内所を設置する場合、業務を開始する日の10日前までに、免許を受けた国土交通大臣又は都道府県知事及び案内所の所在地を管轄する都道府県知事に届け出なければならない。",
+   "explanation": "契約の締結や申込みの受付をする案内所等については、所在地・業務内容・業務を行う期間・専任の宅地建物取引士の氏名を、業務開始の10日前までに免許権者と所在地の知事の両方に届け出る。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行規則 第19条",
+    "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001014",
+   "no": 1014,
+   "topic": "案内所等の専任の宅地建物取引士",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者が一団の宅地の分譲のために設置する案内所では、契約の締結も申込みの受付も行わない場合であっても、成年者である専任の宅地建物取引士を1人以上置かなければならない。",
+   "explanation": "専任の宅地建物取引士の設置が必要な案内所等は、契約を締結し、又は契約の申込みを受けるものに限られる。物件の案内だけを行う案内所には専任の宅地建物取引士を置く必要はない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行規則 第15条の5の2",
+    "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001015",
+   "no": 1015,
+   "topic": "登録の移転",
+   "status": "published",
+   "version": 1,
+   "stem": "甲県知事の登録を受けている宅地建物取引士Bは、住所を乙県に移した場合、乙県知事への登録の移転を申請しなければならない。",
+   "explanation": "登録の移転は、登録をしている都道府県以外の都道府県にある宅地建物取引業者の事務所の業務に従事し、又は従事しようとするときに申請できるものである。住所の移転は理由にならず、申請も義務ではなく任意である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第19条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001016",
+   "no": 1016,
+   "topic": "変更の登録",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引士の登録を受けている者は、勤務先の宅地建物取引業者が変わった場合、30日以内に変更の登録を申請しなければならない。",
+   "explanation": "宅地建物取引業者の業務に従事する者は、その業者の商号又は名称及び免許証番号が登録事項になっており、変更があれば変更の登録を申請する。期限は30日以内ではなく「遅滞なく」である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第20条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001017",
+   "no": 1017,
+   "topic": "宅地建物取引士証",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引士証の交付を受けようとする者は、原則として交付の申請前6か月以内に行われる都道府県知事指定の講習を受講しなければならないが、試験に合格した日から1年以内に交付を受けようとする者は受講を要しない。",
+   "explanation": "取引士証の交付を受けるには、申請前6か月以内に行われる知事指定の講習（法定講習）の受講が原則として必要である。ただし試験合格日から1年以内に交付を受ける者などは受講が免除される。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第22条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001018",
+   "no": 1018,
+   "topic": "営業保証金の供託",
+   "status": "published",
+   "version": 1,
+   "stem": "主たる事務所のほかに従たる事務所を2か所設置して宅地建物取引業を営もうとする者が供託すべき営業保証金の額は、1,500万円である。",
+   "explanation": "営業保証金の額は、主たる事務所につき1,000万円、その他の事務所につき1か所ごとに500万円である。1,000万円＋500万円×2＝2,000万円となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行令 第2条の4",
+    "url": "https://laws.e-gov.go.jp/law/339CO0000000383"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001019",
+   "no": 1019,
+   "topic": "営業保証金の届出",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者は、営業保証金を供託すれば、その旨を免許を受けた国土交通大臣又は都道府県知事に届け出る前であっても、事業を開始することができる。",
+   "explanation": "営業保証金を供託したときは、供託書の写しを添えて免許権者に届け出なければならず、その届出をした後でなければ事業を開始してはならない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第25条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001020",
+   "no": 1020,
+   "topic": "営業保証金の還付",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者Aと宅地の売買契約を締結した宅地建物取引業者Bは、その取引により生じた債権について、Aが供託した営業保証金から還付を受けることができる。",
+   "explanation": "営業保証金から還付を受けられるのは、宅地建物取引業者と宅地建物取引業に関し取引をした者であるが、宅地建物取引業者に該当する者は除かれる。業者であるBは還付を受けられない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第27条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001021",
+   "no": 1021,
+   "topic": "営業保証金の取戻し",
+   "status": "published",
+   "version": 1,
+   "stem": "免許の有効期間満了により営業保証金を取り戻す場合、原則として還付請求権者に対し6か月以上の期間を定めて申し出るべき旨の公告が必要であるが、取り戻すことができる事由が発生した時から10年を経過したときは公告は不要である。",
+   "explanation": "営業保証金の取戻しには、原則として6か月を下らない期間を定めた公告が必要である。ただし取戻し事由が発生してから10年を経過したときは公告せずに取り戻せる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第30条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001022",
+   "no": 1022,
+   "topic": "弁済業務保証金分担金",
+   "status": "published",
+   "version": 1,
+   "stem": "主たる事務所のほかに従たる事務所を1か所有する宅地建物取引業者が宅地建物取引業保証協会に加入しようとする場合、加入しようとする日までに、90万円の弁済業務保証金分担金を納付しなければならない。",
+   "explanation": "分担金の額は、主たる事務所につき60万円、その他の事務所につき1か所ごとに30万円であり、60万円＋30万円＝90万円となる。加入しようとする日までに保証協会に納付する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行令 第7条",
+    "url": "https://laws.e-gov.go.jp/law/339CO0000000383"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001023",
+   "no": 1023,
+   "topic": "弁済業務保証金の還付",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業保証協会の社員と宅地建物取引業に関し取引をした者（宅地建物取引業者を除く。）が弁済業務保証金から弁済を受けようとするときは、弁済を受けることができる額について、その保証協会の認証を受けなければならない。",
+   "explanation": "弁済業務保証金の還付を受けるには、まず保証協会の認証を受ける必要がある。還付の対象からは宅地建物取引業者が除かれる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第64条の8",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001024",
+   "no": 1024,
+   "topic": "保証協会の社員の地位",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業保証協会の社員の地位を失った宅地建物取引業者は、その地位を失った日から2週間以内に営業保証金を供託しなければならない。",
+   "explanation": "社員の地位を失った宅地建物取引業者は、2週間以内ではなく、地位を失った日から1週間以内に営業保証金を供託しなければならない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第64条の15",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001025",
+   "no": 1025,
+   "topic": "帳簿",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者は、事務所ごとに業務に関する帳簿を備え、各事業年度の末日に閉鎖し、閉鎖後5年間（自ら売主となる新築住宅に係るものは10年間）保存しなければならない。",
+   "explanation": "帳簿は事務所ごとに備え、取引のあったつど記載する。各事業年度の末日に閉鎖し、閉鎖後5年間、自ら売主となる新築住宅に係るものは10年間保存する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行規則 第18条",
+    "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001026",
+   "no": 1026,
+   "topic": "従業者名簿・従業者証明書",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者は、宅地建物取引士証の交付を受けている従業者については、従業者証明書を携帯させなくても業務に従事させることができる。",
+   "explanation": "従業者証明書は、宅地建物取引士であるかどうかにかかわらず、業務に従事させるすべての従業者に携帯させなければならない。取引士証で代えることはできない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第48条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001027",
+   "no": 1027,
+   "topic": "広告の開始時期",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者は、建築工事の完了前の建物について、建築確認の申請中である旨を明示すれば、建築確認を受ける前であっても、その建物の売買の広告をすることができる。",
+   "explanation": "工事完了前の建物は、建築確認などの処分があった後でなければ、売買その他の業務に関する広告をしてはならない。申請中である旨を明示しても広告はできない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第33条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001028",
+   "no": 1028,
+   "topic": "取引態様の明示",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者は、広告において取引態様の別を明示していれば、その広告を見た者から注文を受けたときに改めて取引態様の別を明らかにする必要はない。",
+   "explanation": "取引態様の明示は、広告をするときと注文を受けたときのそれぞれで必要である。広告で明示していても、注文を受けたときは遅滞なく注文者に明らかにしなければならない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第34条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001101",
+   "no": 1101,
+   "topic": "媒介契約の有効期間",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が、Bとの間で宅地の売買について専任媒介契約を締結し、その有効期間を4か月と定めた場合、有効期間は3か月となる。",
+   "explanation": "専任媒介契約の有効期間は3か月を超えることができず、これより長い期間を定めたときは3か月とされる。契約全体が無効になるわけではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第34条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001102",
+   "no": 1102,
+   "topic": "媒介契約の有効期間",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）がBと締結する専任媒介契約に「有効期間の満了時にBから異議の申出がなければ、同一の条件で自動的に更新される」旨の特約を定めた場合、その特約は有効である。",
+   "explanation": "専任媒介契約の更新は、依頼者の申出があった場合にだけすることができる（更新後の期間も3か月以内）。自動更新の特約は依頼者の申出によらない更新なので無効である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第34条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001103",
+   "no": 1103,
+   "topic": "指定流通機構への登録",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）は、Bとの間で専属専任媒介契約を締結したときは、契約締結の日から休業日数を算入せずに5日以内に、目的物件を指定流通機構に登録しなければならない。",
+   "explanation": "登録の期限は、専任媒介契約では契約締結の日から7日、専属専任媒介契約では5日であり、いずれも休業日数は算入しない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行規則 第15条の10",
+    "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001104",
+   "no": 1104,
+   "topic": "業務処理状況の報告",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）は、Bとの間で専任媒介契約（専属専任媒介契約ではないもの）を締結したときは、Bに対し、業務の処理状況を1週間に1回以上報告しなければならない。",
+   "explanation": "専任媒介契約の業務処理状況の報告は2週間に1回以上である。1週間に1回以上とされるのは、専属専任媒介契約の場合である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第34条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001105",
+   "no": 1105,
+   "topic": "媒介契約の書面",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）は、Bから建物の貸借の媒介の依頼を受けて媒介契約を締結したときも、宅地建物取引業法第34条の2に定める事項を記載した書面を作成し、Bに交付しなければならない。",
+   "explanation": "媒介契約の内容を記載した書面の交付義務は、宅地又は建物の売買又は交換の媒介契約についてのものである。貸借の媒介契約には、この書面の交付義務はない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第34条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001106",
+   "no": 1106,
+   "topic": "宅地建物取引業者間の取引",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が自ら売主となり、宅地建物取引業者Bに建物を売却する契約において、損害賠償の額の予定を代金の額の10分の3と定めることは、宅地建物取引業法に違反しない。",
+   "explanation": "損害賠償額の予定等を代金の10分の2までとする制限は、宅地建物取引業者間の取引には適用されない。そのため、買主が宅地建物取引業者であれば10分の3と定めても違反しない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第78条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001107",
+   "no": 1107,
+   "topic": "重要事項説明の方法",
+   "status": "published",
+   "version": 1,
+   "stem": "重要事項の説明は、宅地建物取引士が行わなければならないが、その宅地建物取引士は事務所に置かれる専任の宅地建物取引士である必要はない。",
+   "explanation": "重要事項の説明は宅地建物取引士にさせなければならないが、専任であることまでは求められていない。専任でない宅地建物取引士も説明をすることができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第35条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001108",
+   "no": 1108,
+   "topic": "重要事項説明の方法",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引士は、重要事項の説明をするとき、説明の相手方から求められなかったときは、宅地建物取引士証を提示しなくてもよい。",
+   "explanation": "宅地建物取引士は、重要事項の説明をするときは、相手方からの請求の有無にかかわらず、宅地建物取引士証を提示しなければならない。違反すると10万円以下の過料の対象となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第35条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001109",
+   "no": 1109,
+   "topic": "重要事項説明の方法",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が、宅地建物取引業者Bに対して自ら売主として建物を売却する場合、Aは、重要事項を記載した書面を交付すれば、宅地建物取引士に説明をさせる必要はない。",
+   "explanation": "相手方等が宅地建物取引業者である場合は、重要事項を記載した書面の交付で足り、宅地建物取引士による説明は不要である。ただし、その書面には宅地建物取引士の記名が必要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第35条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001110",
+   "no": 1110,
+   "topic": "重要事項説明の時期と相手方",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が、宅地の売主Bと買主Cとの間の売買の媒介を行う場合、Aは、BとCの双方に対して重要事項の説明をしなければならない。",
+   "explanation": "重要事項の説明は、宅地又は建物を取得し、又は借りようとしている者に対して行う。売買の媒介では買主Cに説明すればよく、売主Bへの説明義務はない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第35条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001111",
+   "no": 1111,
+   "topic": "重要事項説明の説明事項",
+   "status": "published",
+   "version": 1,
+   "stem": "建物の貸借の媒介を行う場合、宅地建物取引業者は、私道に関する負担に関する事項を重要事項として説明する必要はない。",
+   "explanation": "私道に関する負担に関する事項は、建物の貸借以外の契約で説明すべき事項とされている。建物の貸借では説明不要である（宅地の貸借では必要）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第35条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001112",
+   "no": 1112,
+   "topic": "重要事項説明の説明事項",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地の売買の媒介を行う場合、宅地建物取引業者は、石綿の使用の有無の調査の結果が記録されているときは、その内容を重要事項として説明しなければならない。",
+   "explanation": "石綿の使用の有無の調査結果は、建物についての説明事項である。宅地の売買では説明事項とされていない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行規則 第16条の4の3",
+    "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001113",
+   "no": 1113,
+   "topic": "37条書面の記載事項",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地の売買の媒介において、天災その他不可抗力による損害の負担に関する定めがないときは、37条書面にその事項を記載する必要はない。",
+   "explanation": "天災その他不可抗力による損害の負担は、定めがあるときに記載すべき事項である。定めがなければ記載は不要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第37条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001114",
+   "no": 1114,
+   "topic": "37条書面の記載事項",
+   "status": "published",
+   "version": 1,
+   "stem": "建物の貸借の媒介において作成する37条書面には、移転登記の申請の時期を記載しなければならない。",
+   "explanation": "移転登記の申請の時期は、売買又は交換の37条書面の記載事項である。貸借の37条書面の記載事項には含まれていない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第37条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001115",
+   "no": 1115,
+   "topic": "37条書面の交付",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が売主Bを代理して、買主Cとの間で建物の売買契約を締結した場合、AはCに37条書面を交付すれば、Bに交付する必要はない。",
+   "explanation": "代理により契約を締結したときは、契約の相手方Cと代理を依頼した者Bの双方に37条書面を交付しなければならない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第37条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001116",
+   "no": 1116,
+   "topic": "クーリング・オフの場所",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が自ら売主となる宅地の売買で、買主Bが自ら申し出て、Bの勤務先でAから説明を受けて買受けの申込みをした場合、Bはクーリング・オフによる申込みの撤回をすることができない。",
+   "explanation": "相手方が自ら申し出た場合の自宅又は勤務先は、クーリング・オフができない「事務所等」に当たる。業者側から申し出て訪問した場合は事務所等に当たらない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法施行規則 第16条の5",
+    "url": "https://laws.e-gov.go.jp/law/332M50004000012"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001117",
+   "no": 1117,
+   "topic": "クーリング・オフの場所",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が自ら売主となる宅地の売買で、買主Bが喫茶店で買受けの申込みをし、後日Aの事務所で売買契約を締結した場合、Bは、引渡しと代金全額の支払がなく、所定の告知から8日を経過していなければ、クーリング・オフをすることができる。",
+   "explanation": "クーリング・オフができるかは、買受けの申込みをした場所で判断する。事務所等以外の場所で申込みをしていれば、その後に事務所で契約しても対象となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第37条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001118",
+   "no": 1118,
+   "topic": "クーリング・オフの方法と期間",
+   "status": "published",
+   "version": 1,
+   "stem": "クーリング・オフによる申込みの撤回等は書面で行う必要があり、その効力は、その書面が売主である宅地建物取引業者に到達した時に生ずる。",
+   "explanation": "クーリング・オフは書面で行うが、その効力は買主が書面を発した時に生ずる（発信主義）。到達時ではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第37条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001119",
+   "no": 1119,
+   "topic": "損害賠償額の予定等の制限",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が自ら売主として宅地建物取引業者でないBに代金3,000万円で建物を売却する契約で、損害賠償の予定額と違約金を合計800万円と定めた場合、その定めは全体が無効となる。",
+   "explanation": "損害賠償の予定額と違約金の合計は代金の10分の2（3,000万円×2/10＝600万円）を超えられないが、違反した場合に無効となるのは超える部分（200万円）だけである。600万円の限度で定めは有効である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第38条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001120",
+   "no": 1120,
+   "topic": "手付の額と性質",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が自ら売主として、宅地建物取引業者でないBに代金4,000万円で宅地を売却する場合、Aは手付として1,000万円を受領することができる。",
+   "explanation": "自ら売主の場合、代金の10分の2を超える手付は受領できない。4,000万円×2/10＝800万円が上限なので、1,000万円は受領できない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第39条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001121",
+   "no": 1121,
+   "topic": "手付金等の保全措置の要否",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が自ら売主として、工事完了前の建物を宅地建物取引業者でないBに代金5,000万円で売却する場合、Aが手付金200万円を受領するときは、保全措置を講じる必要はない。",
+   "explanation": "工事完了前の物件では、手付金等の額が代金の5％以下かつ1,000万円以下なら保全措置は不要である。5,000万円×5％＝250万円なので、200万円は保全措置不要の範囲内である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第41条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001122",
+   "no": 1122,
+   "topic": "手付金等の保全措置の要否",
+   "status": "published",
+   "version": 1,
+   "stem": "既に完成している建物を代金1億2,000万円で宅地建物取引業者でないBに売却する売主の宅地建物取引業者A（以下「A」）は、受け取る手付金が1,100万円であれば、代金の1割に満たないので、保全措置なしで受領してよい。",
+   "explanation": "工事完了後の物件で保全措置が不要なのは、代金の10％以下で、かつ1,000万円以下の場合である。1,100万円は10％（1,200万円）以下だが1,000万円を超えるので、保全措置が必要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第41条の2",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001123",
+   "no": 1123,
+   "topic": "契約不適合責任の特約の制限",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地建物取引業者A（以下「A」）が自ら売主として宅地建物取引業者でないBに建物を売却する契約で、「種類又は品質に関する不適合の通知期間を引渡しの日から2年とする」旨の特約をすることは、宅地建物取引業法に違反しない。",
+   "explanation": "自ら売主の場合、民法の規定より買主に不利な特約は原則として禁止されるが、通知期間を目的物の引渡しの日から2年以上とする特約は例外として認められる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第40条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001124",
+   "no": 1124,
+   "topic": "報酬額の制限",
+   "status": "published",
+   "version": 1,
+   "stem": "消費税の課税事業者である宅地建物取引業者A（以下「A」）が、売主Bから代金2,000万円の宅地（消費税非課税）の売却の媒介を依頼されて売買契約を成立させた場合、AがBから受領できる報酬の上限は72万6,000円である。",
+   "explanation": "代金が400万円を超える売買の媒介の報酬上限は、代金×3％＋6万円に消費税を加えた額である。2,000万円×3％＋6万円＝66万円、66万円×1.1＝72万6,000円となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第46条（報酬額の告示）",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001125",
+   "no": 1125,
+   "topic": "報酬額の制限",
+   "status": "published",
+   "version": 1,
+   "stem": "売主Bから売却の代理を頼まれた宅地建物取引業者A（以下「A」、消費税の課税事業者）が、消費税のかからない3,000万円の宅地の売買を成立させたとき、Bから受け取れる報酬は、媒介の場合と同じく105万6,000円が限度となる。",
+   "explanation": "105万6,000円は媒介の場合の上限（3,000万円×3％＋6万円＝96万円、×1.1）である。代理の場合はその2倍が上限なので、96万円×2×1.1＝211万2,000円まで受領できる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第46条（報酬額の告示）",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001126",
+   "no": 1126,
+   "topic": "監督処分の権限",
+   "status": "published",
+   "version": 1,
+   "stem": "甲県知事の免許を受けた宅地建物取引業者が、乙県内の業務で業務停止処分に当たる違反をした場合、乙県知事は、その宅地建物取引業者に業務停止を命ずることはできるが、免許を取り消すことはできない。",
+   "explanation": "業務地の都道府県知事は、他の免許権者の免許を受けた宅地建物取引業者に対し、指示と業務停止の処分をすることができる。免許の取消しは免許権者（この場合は甲県知事）だけが行える。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第65条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_001127",
+   "no": 1127,
+   "topic": "監督処分の公告",
+   "status": "published",
+   "version": 1,
+   "stem": "都道府県知事は、宅地建物取引業者に対して指示処分をしたときは、その旨を公告しなければならない。",
+   "explanation": "公告が必要なのは、業務停止処分と免許取消処分である。指示処分については公告は義務づけられていない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地建物取引業法 第70条",
+    "url": "https://laws.e-gov.go.jp/law/327AC1000000176"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "gyouhou"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002001",
+   "no": 2001,
+   "topic": "未成年者の法律行為",
+   "status": "published",
+   "version": 1,
+   "stem": "17歳のAが、法定代理人の同意を得ずに、Bから負担のない贈与を受ける契約を結んだ場合、Aは未成年者であることを理由にこの契約を取り消すことができる。",
+   "explanation": "未成年者が法律行為をするには原則として法定代理人の同意が必要だが、単に権利を得、又は義務を免れる法律行為は例外とされる。負担のない贈与を受けることはこれに当たるため、同意がなくても取り消すことはできない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第5条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002002",
+   "no": 2002,
+   "topic": "成年被後見人・被保佐人",
+   "status": "published",
+   "version": 1,
+   "stem": "被保佐人Aが、保佐人の同意を得ずに、自己所有の土地をBに売却した場合、Aはこの売買契約を取り消すことができる。",
+   "explanation": "被保佐人が不動産その他重要な財産に関する権利の得喪を目的とする行為をするには、保佐人の同意が必要である。同意を得ずにした行為は取り消すことができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第13条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002003",
+   "no": 2003,
+   "topic": "心裡留保",
+   "status": "published",
+   "version": 1,
+   "stem": "Aが、真意ではないことを自覚しながら、自己所有の土地をBに贈与すると意思表示した場合、Bがその意思表示が真意でないことを知ることができたときは、その意思表示は無効である。",
+   "explanation": "心裡留保による意思表示は原則として有効だが、相手方が表意者の真意でないことを知り、又は知ることができたときは無効となる。この無効は善意の第三者には対抗できない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第93条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002004",
+   "no": 2004,
+   "topic": "虚偽表示",
+   "status": "published",
+   "version": 1,
+   "stem": "AとBが通謀して、A所有の土地をBに売却したように仮装する契約を結んだ場合、その売買契約はAB間では有効である。",
+   "explanation": "相手方と通じてした虚偽の意思表示は、当事者間では無効である。ただし、その無効は善意の第三者に対抗することができない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第94条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002005",
+   "no": 2005,
+   "topic": "虚偽表示",
+   "status": "published",
+   "version": 1,
+   "stem": "AとBが通謀してA所有の土地をBに仮装譲渡し、Bがこれを仮装と知らないCに売却した場合、Cが所有権移転の登記を備えていなくても、AはCに対して売買の無効を主張することができない。",
+   "explanation": "虚偽表示の無効は善意の第三者に対抗できない。判例は、この第三者として保護されるために登記を備えることは必要ないとしている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第94条（判例）",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002006",
+   "no": 2006,
+   "topic": "錯誤",
+   "status": "published",
+   "version": 1,
+   "stem": "意思表示に対応する意思を欠く錯誤があり、その錯誤が法律行為の目的及び取引上の社会通念に照らして重要なものであるときは、その意思表示は当然に無効となる。",
+   "explanation": "重要な錯誤に基づく意思表示は、無効ではなく「取り消すことができる」とされている。また、表意者に重大な過失があるときは、相手方が悪意・重過失の場合などを除き取り消すことができない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第95条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002007",
+   "no": 2007,
+   "topic": "詐欺・強迫",
+   "status": "published",
+   "version": 1,
+   "stem": "Aが第三者Cにだまされて自己所有の土地をBに売却した場合、Bがその詐欺の事実を知らず、かつ知ることができなかったときは、Aは詐欺を理由に売買契約を取り消すことができない。",
+   "explanation": "第三者が詐欺を行った場合、相手方がその事実を知り、又は知ることができたときに限り取り消すことができる。なお、強迫の場合はこのような制限はなく、相手方が善意無過失でも取り消せる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第96条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002008",
+   "no": 2008,
+   "topic": "詐欺・強迫",
+   "status": "published",
+   "version": 1,
+   "stem": "AがBにだまされて自己所有の土地をBに売却し、Bがこれを詐欺の事実について善意無過失のCに転売した後に、Aが詐欺を理由に売買契約を取り消した場合、Aは取消しをCに対抗することができる。",
+   "explanation": "詐欺による意思表示の取消しは、善意でかつ過失がない第三者に対抗することができない。取消し前に現れた善意無過失のCに対しては、Aは取消しを対抗できない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第96条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002009",
+   "no": 2009,
+   "topic": "取消し・解除と第三者",
+   "status": "published",
+   "version": 1,
+   "stem": "AがBの詐欺を理由にAB間の土地の売買契約を取り消した後、Bがその土地をCに売却した場合、AとCのどちらが所有権を主張できるかは、登記の先後によって決まる。",
+   "explanation": "判例は、取消し後に現れた第三者との関係を、Bを起点とする二重譲渡と同様の対抗関係とみる。したがって、AとCは先に登記を備えた方が優先する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第177条（判例）",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002010",
+   "no": 2010,
+   "topic": "代理人の行為能力",
+   "status": "published",
+   "version": 1,
+   "stem": "Aから代理権を与えられたBが未成年者であった場合、Aは、Bが未成年者であることを理由に、BがAの代理人としてCと結んだ売買契約を取り消すことができる。",
+   "explanation": "制限行為能力者が代理人としてした行為は、行為能力の制限によっては取り消すことができない。効果は本人に帰属し、代理人自身に不利益は生じないためである（他の制限行為能力者の法定代理人としてした行為は例外）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第102条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002011",
+   "no": 2011,
+   "topic": "無権代理",
+   "status": "published",
+   "version": 1,
+   "stem": "代理権のないBがAの代理人と称してCと契約した場合、CがBに代理権がないことを過失によって知らなかったときでも、B自身が代理権のないことを知っていたときは、CはBに対して履行又は損害賠償を請求することができる。",
+   "explanation": "無権代理人の責任は、相手方が無権代理を過失によって知らなかったときは原則として生じない。ただし、無権代理人が自己に代理権がないことを知っていたときは、相手方に過失があっても責任を負う。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第117条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002012",
+   "no": 2012,
+   "topic": "無権代理と相続",
+   "status": "published",
+   "version": 1,
+   "stem": "Bが代理権なくAの代理人としてA所有の土地をCに売却した後、Aが追認も追認拒絶もしないまま死亡し、BがAを単独で相続した場合、その売買契約は当然に有効となる。",
+   "explanation": "判例は、無権代理人が本人を単独で相続した場合、本人が自ら法律行為をしたのと同様の地位を生じ、無権代理行為は当然に有効になるとしている。Bが追認を拒絶することは信義則上許されない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第113条（判例）",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002013",
+   "no": 2013,
+   "topic": "取得時効",
+   "status": "published",
+   "version": 1,
+   "stem": "他人の土地を所有の意思をもって平穏かつ公然と占有した者は、占有の開始の時に善意であれば、過失があったとしても、10年間の占有によってその土地の所有権を取得する。",
+   "explanation": "10年の取得時効には、占有開始時に善意であり、かつ過失がなかったことが必要である。善意でも過失があった場合は、20年間の占有が必要となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第162条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002014",
+   "no": 2014,
+   "topic": "消滅時効",
+   "status": "published",
+   "version": 1,
+   "stem": "債権は、債権者が権利を行使することができることを知った時から5年間行使しないとき、又は権利を行使することができる時から10年間行使しないときは、時効によって消滅する。",
+   "explanation": "債権の消滅時効は、主観的起算点から5年、客観的起算点から10年のいずれか早い方で完成する。人の生命又は身体の侵害による損害賠償請求権は、客観的起算点からの期間が20年に延長される。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第166条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002015",
+   "no": 2015,
+   "topic": "時効の完成猶予",
+   "status": "published",
+   "version": 1,
+   "stem": "催告によって時効の完成が猶予されている間に債権者が再度の催告をした場合、再度の催告の時から6か月を経過するまで、時効の完成がさらに猶予される。",
+   "explanation": "催告があったときは、その時から6か月を経過するまで時効は完成しない。しかし、催告による完成猶予の間にされた再度の催告には、完成猶予の効力がない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第150条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002016",
+   "no": 2016,
+   "topic": "物権変動と対抗要件",
+   "status": "published",
+   "version": 1,
+   "stem": "AがBに土地を売却した後、同じ土地をCにも売却した場合、先に売買契約を結んだBは、所有権移転の登記を備えていなくても、Cに対して所有権を主張することができる。",
+   "explanation": "不動産に関する物権の得喪及び変更は、登記をしなければ第三者に対抗できない。二重譲渡の場合、契約の先後ではなく、先に登記を備えた方が所有権を主張できる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第177条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002017",
+   "no": 2017,
+   "topic": "時効取得と登記",
+   "status": "published",
+   "version": 1,
+   "stem": "BがA所有の土地を占有して取得時効が完成した後に、Aがその土地をCに売却して所有権移転の登記をした場合、Bは登記がなくても時効による所有権の取得をCに対抗することができる。",
+   "explanation": "判例は、時効完成後に原所有者から譲り受けた第三者とは対抗関係になるとし、時効取得者は登記がなければ対抗できないとしている。これに対し、時効完成前の第三者に対しては登記なしで対抗できる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第177条（判例）",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002018",
+   "no": 2018,
+   "topic": "共有物の変更・管理",
+   "status": "published",
+   "version": 1,
+   "stem": "共有物に、その形状又は効用の著しい変更を伴わない変更を加えるには、共有者全員の同意が必要である。",
+   "explanation": "共有物の変更には原則として共有者全員の同意が必要だが、形状又は効用の著しい変更を伴わない変更（軽微変更）は除かれる。軽微変更は管理に関する事項として、各共有者の持分の価格の過半数で決する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第251条・第252条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002019",
+   "no": 2019,
+   "topic": "竹木の枝・根の切取り",
+   "status": "published",
+   "version": 1,
+   "stem": "隣地の竹木の枝が境界線を越える場合、土地の所有者が竹木の所有者に枝を切除するよう催告したにもかかわらず、竹木の所有者が相当の期間内に切除しないときは、土地の所有者は自らその枝を切り取ることができる。",
+   "explanation": "越境した枝は竹木の所有者に切除させるのが原則だが、催告しても相当の期間内に切除しないとき、竹木の所有者を知ることができないとき、急迫の事情があるときは、土地の所有者が自ら切り取ることができる。なお、根は自ら切り取ることができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第233条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002020",
+   "no": 2020,
+   "topic": "法定地上権",
+   "status": "published",
+   "version": 1,
+   "stem": "更地にAのための抵当権が設定された後、土地の所有者がその土地に建物を建築した場合、抵当権が実行されて土地と建物の所有者が異なるに至ったときは、その建物のために法定地上権が成立する。",
+   "explanation": "法定地上権は、抵当権設定当時に土地とその上の建物が同一の所有者に属していることが要件である。判例は、更地に抵当権が設定された後に建物が建てられた場合には法定地上権は成立しないとしている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第388条（判例）",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002021",
+   "no": 2021,
+   "topic": "抵当権消滅請求",
+   "status": "published",
+   "version": 1,
+   "stem": "抵当不動産の第三取得者から抵当権消滅請求の書面の送付を受けた債権者が、その送付を受けた後2か月以内に抵当権を実行して競売の申立てをしないときは、第三取得者が提供した代価又は金額を承諾したものとみなされる。",
+   "explanation": "抵当権消滅請求の書面の送付を受けた債権者は、2か月以内に競売の申立てをしなければ、提供された金額を承諾したものとみなされる。なお、主たる債務者や保証人は抵当権消滅請求をすることができない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第384条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002022",
+   "no": 2022,
+   "topic": "連帯保証",
+   "status": "published",
+   "version": 1,
+   "stem": "連帯保証人は、債権者から保証債務の履行を請求されたときは、まず主たる債務者に催告をすべき旨を請求することができる。",
+   "explanation": "保証人が主たる債務者と連帯して債務を負担したときは、催告の抗弁権も検索の抗弁権も有しない。したがって、連帯保証人は先に主たる債務者へ請求するよう求めることはできない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第454条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002023",
+   "no": 2023,
+   "topic": "契約の解除",
+   "status": "published",
+   "version": 1,
+   "stem": "売買契約の売主の債務の全部の履行が不能であるときは、買主は、履行の催告をすることなく、直ちに契約を解除することができる。",
+   "explanation": "債務の全部の履行が不能であるときは、催告をしても意味がないため、債権者は催告なしに直ちに解除できる。ただし、不履行が債権者の責めに帰すべき事由によるときは解除できない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第542条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002024",
+   "no": 2024,
+   "topic": "手付",
+   "status": "published",
+   "version": 1,
+   "stem": "買主が売主に解約手付を交付した場合、売主は、買主が代金の一部を支払うなど契約の履行に着手した後であっても、手付の倍額を現実に提供して契約を解除することができる。",
+   "explanation": "手付による解除は、相手方が契約の履行に着手した後はすることができない。売主が手付の倍額を現実に提供して解除できるのは、買主が履行に着手する前に限られる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第557条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002025",
+   "no": 2025,
+   "topic": "契約不適合責任",
+   "status": "published",
+   "version": 1,
+   "stem": "売主が品質に関して契約の内容に適合しない目的物を買主に引き渡した場合、買主がその不適合を知った時から1年以内にその旨を売主に通知しないときは、売主が引渡しの時に不適合を知っていたときなどを除き、買主はその不適合を理由として契約の解除をすることができない。",
+   "explanation": "種類又は品質に関する不適合は、買主が知った時から1年以内に売主に通知しなければ、追完請求・代金減額請求・損害賠償請求・解除ができなくなる。ただし、売主が引渡しの時に不適合を知り、又は重大な過失によって知らなかったときは、この期間制限は適用されない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第566条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002026",
+   "no": 2026,
+   "topic": "賃借物の無断転貸",
+   "status": "published",
+   "version": 1,
+   "stem": "建物の賃借人が賃貸人の承諾を得ずに第三者に建物を転貸して使用させた場合でも、その行為が賃貸人に対する背信的行為と認めるに足りない特段の事情があるときは、賃貸人は賃貸借契約を解除することができない。",
+   "explanation": "無断転貸は解除原因となるのが原則である。しかし判例は、賃貸人に対する背信的行為と認めるに足りない特段の事情があるときは、解除権は発生しないとしている（信頼関係破壊の法理）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第612条（判例）",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002027",
+   "no": 2027,
+   "topic": "使用者責任",
+   "status": "published",
+   "version": 1,
+   "stem": "被用者が事業の執行について第三者に損害を加えた場合でも、使用者が被用者の選任及びその事業の監督について相当の注意をしたことを証明したときは、使用者は使用者責任を負わない。",
+   "explanation": "使用者責任には、選任・監督について相当の注意をしたとき、又は相当の注意をしても損害が生ずべきであったときは責任を負わないという免責規定がある。なお、賠償した使用者は被用者に求償することができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第715条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002028",
+   "no": 2028,
+   "topic": "借地権の存続期間",
+   "status": "published",
+   "version": 1,
+   "stem": "建物の所有を目的とする土地の賃貸借で、存続期間を20年と定めた場合、その借地権の存続期間は30年となる。",
+   "explanation": "借地権の存続期間は30年であり、契約でこれより長い期間を定めたときはその期間となる。30年より短い期間を定めても、存続期間は30年となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第3条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002029",
+   "no": 2029,
+   "topic": "借地契約の更新",
+   "status": "published",
+   "version": 1,
+   "stem": "借地権の存続期間が満了する際、借地上に建物がない場合でも、借地権者が契約の更新を請求すれば、従前の契約と同一の条件で契約を更新したものとみなされる。",
+   "explanation": "借地権者の更新請求による法定更新は、建物がある場合に限られる。また、建物がある場合でも、借地権設定者が正当の事由に基づき遅滞なく異議を述べたときは更新されない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第5条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002030",
+   "no": 2030,
+   "topic": "借地権の対抗力",
+   "status": "published",
+   "version": 1,
+   "stem": "借地権者は、借地権の登記がなくても、その土地の上に自己を所有者として登記された建物を所有していれば、借地権を第三者に対抗することができる。",
+   "explanation": "借地権は、土地の上に借地権者が登記されている建物を所有するときは、借地権自体の登記がなくても第三者に対抗できる。この建物の登記は表示の登記でもよいとされている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第10条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002031",
+   "no": 2031,
+   "topic": "借地権の対抗力",
+   "status": "published",
+   "version": 1,
+   "stem": "借地上の建物について、借地権者ではなくその同居する長男を所有者とする登記がされている場合でも、借地権者はその建物の登記によって借地権を第三者に対抗することができる。",
+   "explanation": "借地権の対抗要件となる建物の登記は、借地権者自身の名義でなければならない。判例は、同居の家族名義の登記では借地権を第三者に対抗できないとしている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第10条（判例）",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002032",
+   "no": 2032,
+   "topic": "定期借地権",
+   "status": "published",
+   "version": 1,
+   "stem": "居住の用に供する賃貸マンションの所有を目的とする場合でも、存続期間を30年以上50年未満として、公正証書により事業用定期借地権を設定することができる。",
+   "explanation": "事業用定期借地権は、専ら事業の用に供する建物（居住の用に供するものを除く）の所有を目的とする場合に限り設定できる。賃貸マンションは居住の用に供する建物なので対象外である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第23条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002033",
+   "no": 2033,
+   "topic": "建物賃貸借の更新",
+   "status": "published",
+   "version": 1,
+   "stem": "期間の定めがある建物の賃貸借で、当事者が期間満了の1年前から6か月前までの間に更新をしない旨の通知をしなかったときは、従前の契約と同一の条件かつ同一の期間で契約を更新したものとみなされる。",
+   "explanation": "通知期間内に更新拒絶の通知をしなかったときは、従前の契約と同一の条件で更新したものとみなされる。ただし、更新後の期間は従前と同じではなく、期間の定めがないものとなる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第26条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002034",
+   "no": 2034,
+   "topic": "建物賃貸借の対抗力",
+   "status": "published",
+   "version": 1,
+   "stem": "建物の賃借人は、賃借権の登記がなくても、建物の引渡しを受けていれば、その後にその建物の所有権を取得した者に賃借権を対抗することができる。",
+   "explanation": "建物の賃貸借は、登記がなくても建物の引渡しがあれば、その後その建物について物権を取得した者に対抗できる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第31条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002035",
+   "no": 2035,
+   "topic": "定期建物賃貸借",
+   "status": "published",
+   "version": 1,
+   "stem": "定期建物賃貸借をしようとする建物の賃貸人が、あらかじめ賃借人に対し、契約の更新がなく期間の満了により終了することを記載した書面を交付して説明しなかったときは、契約の更新がないこととする旨の定めは無効となる。",
+   "explanation": "定期建物賃貸借では、契約書とは別に、更新がなく期間満了で終了する旨を記載した書面を交付して事前に説明しなければならない（賃借人の承諾を得て電磁的方法で提供することもできる）。この説明がなかったときは、更新がない旨の定めは無効となり、普通の建物賃貸借となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第38条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002036",
+   "no": 2036,
+   "topic": "定期建物賃貸借",
+   "status": "published",
+   "version": 1,
+   "stem": "期間が1年以上の定期建物賃貸借では、建物の賃貸人は、期間満了の6か月前から3か月前までの間に、期間の満了により賃貸借が終了する旨を賃借人に通知しなければ、その終了を賃借人に対抗することができない。",
+   "explanation": "終了の通知期間は、期間満了の1年前から6か月前までの間である。通知期間の経過後に通知した場合は、その通知の日から6か月を経過した後であれば終了を対抗できる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "借地借家法 第38条",
+    "url": "https://laws.e-gov.go.jp/law/403AC0000000090"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002037",
+   "no": 2037,
+   "topic": "共用部分の変更",
+   "status": "published",
+   "version": 1,
+   "stem": "形状又は効用の著しい変更を伴う共用部分の変更は、区分所有者全員の同意がなければすることができない。",
+   "explanation": "共用部分の変更（形状又は効用の著しい変更を伴わないものを除く）は、全員の同意ではなく集会の特別決議で決する。決議は、出席した区分所有者及びその議決権の各4分の3以上の多数によるのが原則で、規約で2分の1を超える割合まで減ずることができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建物の区分所有等に関する法律 第17条",
+    "url": "https://laws.e-gov.go.jp/law/337AC0000000069"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002038",
+   "no": 2038,
+   "topic": "規約",
+   "status": "published",
+   "version": 1,
+   "stem": "規約の設定、変更又は廃止が一部の区分所有者の権利に特別の影響を及ぼすべきときは、その区分所有者の承諾を得なければならない。",
+   "explanation": "規約の設定・変更・廃止は集会の特別決議によるが、一部の区分所有者の権利に特別の影響を及ぼすべきときは、その区分所有者の承諾も必要となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建物の区分所有等に関する法律 第31条",
+    "url": "https://laws.e-gov.go.jp/law/337AC0000000069"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002039",
+   "no": 2039,
+   "topic": "登記の申請",
+   "status": "published",
+   "version": 1,
+   "stem": "相続による所有権の移転の登記は、登記権利者である相続人が単独で申請することができる。",
+   "explanation": "権利に関する登記は登記権利者と登記義務者の共同申請が原則である。ただし、相続又は法人の合併による権利の移転の登記は、登記権利者が単独で申請できる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "不動産登記法 第63条",
+    "url": "https://laws.e-gov.go.jp/law/416AC0000000123"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002040",
+   "no": 2040,
+   "topic": "相続登記の申請義務",
+   "status": "published",
+   "version": 1,
+   "stem": "相続により不動産の所有権を取得した者は、自己のために相続の開始があったことを知り、かつ、その所有権を取得したことを知った日から1年以内に、所有権の移転の登記を申請しなければならない。",
+   "explanation": "相続登記の申請義務の期限は、相続の開始と所有権の取得を知った日から3年以内である。期間内に相続人である旨の申出をすれば、申請義務を履行したものとみなされる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "不動産登記法 第76条の2",
+    "url": "https://laws.e-gov.go.jp/law/416AC0000000123"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002041",
+   "no": 2041,
+   "topic": "法定相続分",
+   "status": "published",
+   "version": 1,
+   "stem": "被相続人の配偶者と兄弟姉妹が相続人である場合、配偶者の相続分は3分の2である。",
+   "explanation": "配偶者と兄弟姉妹が相続人のときは、配偶者が4分の3、兄弟姉妹が4分の1である。配偶者の相続分が3分の2となるのは、直系尊属と共に相続する場合である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第900条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002042",
+   "no": 2042,
+   "topic": "代襲相続",
+   "status": "published",
+   "version": 1,
+   "stem": "被相続人の子が相続の放棄をした場合、その子の子が代襲して相続人となる。",
+   "explanation": "代襲相続の原因は、相続開始以前の死亡、相続欠格、廃除の3つであり、相続の放棄は含まれない。放棄をした者は初めから相続人とならなかったものとみなされるため、その子は代襲相続しない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第887条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002043",
+   "no": 2043,
+   "topic": "相続の承認・放棄",
+   "status": "published",
+   "version": 1,
+   "stem": "相続人は、原則として、自己のために相続の開始があったことを知った時から3か月以内に、単純承認、限定承認又は相続の放棄をしなければならない。",
+   "explanation": "この熟慮期間は、利害関係人又は検察官の請求により家庭裁判所が伸長できる。期間内に限定承認も放棄もしなかったときは、単純承認をしたものとみなされる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第915条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002044",
+   "no": 2044,
+   "topic": "遺留分",
+   "status": "published",
+   "version": 1,
+   "stem": "相続人が被相続人の直系尊属のみである場合、その遺留分の割合は、遺留分を算定するための財産の価額の3分の1である。",
+   "explanation": "遺留分の割合は、直系尊属のみが相続人である場合は3分の1、それ以外の場合は2分の1である。なお、兄弟姉妹には遺留分がない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第1042条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_002045",
+   "no": 2045,
+   "topic": "遺言",
+   "status": "published",
+   "version": 1,
+   "stem": "自筆証書遺言に相続財産の目録を添付する場合、その目録は自書でなくてもよいが、遺言者は目録の毎葉に署名し、印を押さなければならない。",
+   "explanation": "自筆証書遺言は全文・日付・氏名を自書し押印するのが原則だが、添付する財産目録はパソコンでの作成や登記事項証明書の添付などでもよい。その場合、目録の毎葉（両面に記載があるときは両面）に署名押印が必要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "民法 第968条",
+    "url": "https://laws.e-gov.go.jp/law/129AC0000000089"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "kenri"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003001",
+   "no": 3001,
+   "topic": "準都市計画区域",
+   "status": "published",
+   "version": 1,
+   "stem": "準都市計画区域については、都市計画に市街化区域と市街化調整区域との区分（区域区分）を定めることができる。",
+   "explanation": "区域区分は都市計画区域について定めるもので、準都市計画区域には定められない。準都市計画区域で定められるのは、用途地域・特別用途地区・特定用途制限地域・高度地区・景観地区・風致地区など一部の地域地区に限られる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第7条・第8条",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003002",
+   "no": 3002,
+   "topic": "用途地域",
+   "status": "published",
+   "version": 1,
+   "stem": "市街化区域については少なくとも用途地域を定めるものとし、市街化調整区域については原則として用途地域を定めないものとされている。",
+   "explanation": "都市計画の基準として、市街化区域には少なくとも用途地域を定め、市街化調整区域には原則として用途地域を定めないとされている。市街化調整区域は市街化を抑制すべき区域だからである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第13条",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003003",
+   "no": 3003,
+   "topic": "地区計画",
+   "status": "published",
+   "version": 1,
+   "stem": "地区整備計画が定められている地区計画の区域内において建築物の建築を行おうとする者は、原則として、当該行為に着手する日の30日前までに、一定の事項を市町村長に届け出なければならない。",
+   "explanation": "地区整備計画などが定められた地区計画の区域内で、土地の区画形質の変更や建築物の建築等を行う者は、着手日の30日前までに市町村長へ届け出る。許可制ではなく届出制である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第58条の2",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003004",
+   "no": 3004,
+   "topic": "開発許可の要否（規模）",
+   "status": "published",
+   "version": 1,
+   "stem": "市街化区域内において店舗の建築を目的として行う開発行為で、その規模が400㎡であるものは、都道府県の条例で規模が別に定められていない限り、開発許可を受ける必要がない。",
+   "explanation": "市街化区域内では、原則1,000㎡未満（首都圏の既成市街地などは500㎡未満）の開発行為は許可不要である。条例で300㎡まで引き下げられている場合を除き、400㎡の開発行為は許可不要となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第29条（同施行令 第19条）",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003005",
+   "no": 3005,
+   "topic": "開発許可の要否（規模）",
+   "status": "published",
+   "version": 1,
+   "stem": "都市計画区域及び準都市計画区域外の区域内において、5,000㎡の開発行為を行おうとする者は、開発許可を受けなければならない。",
+   "explanation": "都市計画区域及び準都市計画区域外の区域で開発許可が必要となるのは、1ha（10,000㎡）以上の開発行為である。5,000㎡であれば許可は要らない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第29条第2項（同施行令 第22条の2）",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003006",
+   "no": 3006,
+   "topic": "開発許可の要否（目的）",
+   "status": "published",
+   "version": 1,
+   "stem": "市街化調整区域内において、農業を営む者の居住の用に供する建築物の建築を目的として行う開発行為は、その規模にかかわらず開発許可を受ける必要がない。",
+   "explanation": "市街化調整区域・非線引き都市計画区域・準都市計画区域では、農林漁業用の一定の建築物や農林漁業者の住宅のための開発行為は、規模にかかわらず許可不要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第29条",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003007",
+   "no": 3007,
+   "topic": "開発許可の要否（学校等）",
+   "status": "published",
+   "version": 1,
+   "stem": "市街化調整区域内において、私立の学校の建築を目的として行う開発行為は、公益上必要な建築物のためのものであるから、開発許可を受ける必要がない。",
+   "explanation": "学校・病院・社会福祉施設などのための開発行為は、許可不要となる公益上必要な建築物に含まれない。市街化調整区域では規模にかかわらず許可が必要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第29条（同施行令 第21条）",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003008",
+   "no": 3008,
+   "topic": "工事完了公告前後の建築制限",
+   "status": "published",
+   "version": 1,
+   "stem": "開発許可を受けた開発区域内の土地について用途地域が定められている場合、工事完了の公告後に予定建築物以外の建築物を新築するときでも、都道府県知事の許可を受ける必要はない。",
+   "explanation": "工事完了公告後は予定建築物以外の建築物の新築は原則として知事の許可が必要だが、その土地に用途地域等が定められているときはこの制限は及ばない。用途地域による規制で足りるからである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第42条",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003009",
+   "no": 3009,
+   "topic": "都市計画施設等の区域内の建築",
+   "status": "published",
+   "version": 1,
+   "stem": "都市計画施設の区域内における建築の許可申請について、建築物が階数3以下で地階を有せず、主要構造部が木造で容易に移転・除却できるものであるときは、都道府県知事等は許可をしなければならない。",
+   "explanation": "許可をしなければならないのは、階数が「2以下」で地階を有せず、主要構造部が木造・鉄骨造・コンクリートブロック造などで、容易に移転・除却できる建築物である。階数3以下ではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "都市計画法 第54条",
+    "url": "https://laws.e-gov.go.jp/law/343AC0000000100"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003010",
+   "no": 3010,
+   "topic": "建築確認の要否",
+   "status": "published",
+   "version": 1,
+   "stem": "都市計画区域及び準都市計画区域外において、木造2階建てで延べ面積100㎡の住宅を新築する場合でも、建築確認を受けなければならない。",
+   "explanation": "2025年4月施行の改正後は、階数2以上又は延べ面積200㎡超の建築物は、構造にかかわらず全国どこでも新築に建築確認が必要である。木造2階建ての住宅も、都市計画区域外で確認が必要となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第6条",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003011",
+   "no": 3011,
+   "topic": "建築確認の要否",
+   "status": "published",
+   "version": 1,
+   "stem": "防火地域及び準防火地域外において、既存の建築物に床面積8㎡の増築をする場合でも、建築確認を受けなければならない。",
+   "explanation": "防火地域及び準防火地域外で行う増築・改築・移転で、その部分の床面積の合計が10㎡以内であれば、建築確認は不要である。8㎡の増築は確認が要らない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第6条第2項",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003012",
+   "no": 3012,
+   "topic": "用途制限",
+   "status": "published",
+   "version": 1,
+   "stem": "第一種低層住居専用地域内においては、特定行政庁の許可を受けなくても、病院を建築することができる。",
+   "explanation": "第一種低層住居専用地域・第二種低層住居専用地域・田園住居地域では、病院は特定行政庁の許可がない限り建築できない。病院が建築できるようになるのは第一種中高層住居専用地域からである（診療所は全用途地域で可）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第48条・別表第二",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003013",
+   "no": 3013,
+   "topic": "建蔽率",
+   "status": "published",
+   "version": 1,
+   "stem": "建蔽率の限度が10分の8とされている地域内で、かつ、防火地域内にある耐火建築物等については、建蔽率の制限は適用されない。",
+   "explanation": "都市計画で建蔽率の限度が10分の8とされている地域の防火地域内にある耐火建築物等には、建蔽率の制限が適用されない。巡査派出所・公衆便所なども同様に適用除外である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第53条第6項",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003014",
+   "no": 3014,
+   "topic": "容積率",
+   "status": "published",
+   "version": 1,
+   "stem": "建築物の敷地が容積率の限度の異なる2つの地域にわたる場合、その敷地全体について、敷地の過半の属する地域の容積率の限度が適用される。",
+   "explanation": "敷地が容積率の異なる地域にわたるときは、各地域の容積率の限度にその地域内の敷地部分の面積割合を乗じたものの合計（加重平均）が限度となる。過半の属する地域で決めるのは用途制限である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第52条第7項",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003015",
+   "no": 3015,
+   "topic": "道路と接道義務",
+   "status": "published",
+   "version": 1,
+   "stem": "都市計画区域等の指定の際に現に建築物が立ち並んでいる幅員4m未満の道で特定行政庁が指定したものは、原則として、その中心線から水平距離2mの線が道路の境界線とみなされる。",
+   "explanation": "いわゆる2項道路は道路とみなされ、原則として中心線から水平距離2mの線が道路境界線とみなされる。道の片側が崖地や川などに沿う場合は、その境界線から道の側に4mの線が道路境界線となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第42条第2項",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003016",
+   "no": 3016,
+   "topic": "道路と接道義務",
+   "status": "published",
+   "version": 1,
+   "stem": "建築物の敷地は、原則として、道路に3m以上接しなければならない。",
+   "explanation": "建築物の敷地は、原則として道路に2m以上接しなければならない（接道義務）。地方公共団体は、特殊建築物などについて条例で制限を付け加えることができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第43条",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003017",
+   "no": 3017,
+   "topic": "防火地域・準防火地域",
+   "status": "published",
+   "version": 1,
+   "stem": "防火地域内にある建築物で、階数が3以上であるもの又は延べ面積が100㎡を超えるものは、原則として耐火建築物又はこれと同等以上の延焼防止性能を有する建築物としなければならない。",
+   "explanation": "防火地域内で階数3以上又は延べ面積100㎡超の建築物は、耐火建築物等としなければならない。準防火地域では、地階を除く階数4以上又は延べ面積1,500㎡超の建築物が耐火建築物等の対象となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建築基準法 第61条（同施行令 第136条の2）",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000201"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003018",
+   "no": 3018,
+   "topic": "国土利用計画法の事後届出（要否）",
+   "status": "published",
+   "version": 1,
+   "stem": "市街化区域内にある1,500㎡の土地について売買契約を締結した場合、一団の土地の取得に当たらなければ、事後届出は不要である。",
+   "explanation": "事後届出が必要となるのは、市街化区域では2,000㎡以上の土地の売買等である。1,500㎡で、一団の土地として2,000㎡以上を取得するものでなければ届出は要らない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "国土利用計画法 第23条",
+    "url": "https://laws.e-gov.go.jp/law/349AC1000000092"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003019",
+   "no": 3019,
+   "topic": "事後届出の手続と勧告",
+   "status": "published",
+   "version": 1,
+   "stem": "都道府県知事は、事後届出に係る土地の利用目的について必要な変更をすべきことを勧告する場合、原則として、届出があった日から起算して3週間以内にしなければならない。",
+   "explanation": "事後届出の勧告は土地の利用目的について行い、原則として届出があった日から3週間以内にする。実地調査が必要な場合などは、3週間の範囲内で期間を延長できる。対価の額は勧告の対象ではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "国土利用計画法 第24条",
+    "url": "https://laws.e-gov.go.jp/law/349AC1000000092"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003020",
+   "no": 3020,
+   "topic": "事後届出の手続と勧告",
+   "status": "published",
+   "version": 1,
+   "stem": "事後届出をした者が土地の利用目的に関する勧告に従わなかった場合、その土地売買等の契約は無効となる。",
+   "explanation": "勧告に従わない場合、都道府県知事はその旨と勧告の内容を公表できるが、契約の効力には影響しない。届出をしなかった場合も罰則はあるが、契約自体は有効である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "国土利用計画法 第26条",
+    "url": "https://laws.e-gov.go.jp/law/349AC1000000092"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003021",
+   "no": 3021,
+   "topic": "農地法3条の許可",
+   "status": "published",
+   "version": 1,
+   "stem": "農地に抵当権を設定する場合には、農地法第3条の許可を受ける必要はない。",
+   "explanation": "3条の許可が必要なのは、所有権の移転や、地上権・賃借権など使用及び収益を目的とする権利の設定・移転である。抵当権は使用収益を目的とする権利ではないため、許可は要らない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "農地法 第3条",
+    "url": "https://laws.e-gov.go.jp/law/327AC0000000229"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003022",
+   "no": 3022,
+   "topic": "農地法3条の許可",
+   "status": "published",
+   "version": 1,
+   "stem": "農地法第3条の許可を受けないで締結した農地の売買契約も有効であり、許可は所有権移転登記をするための要件にすぎない。",
+   "explanation": "3条の許可を受けないでした行為は、その効力を生じない。許可がなければ、売買契約による所有権移転の効力そのものが生じない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "農地法 第3条第6項",
+    "url": "https://laws.e-gov.go.jp/law/327AC0000000229"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003023",
+   "no": 3023,
+   "topic": "農地転用（4条・5条）",
+   "status": "published",
+   "version": 1,
+   "stem": "市街化調整区域内にある農地を住宅用地に転用するために売却する場合、当事者は農業委員会の許可を受けなければならない。",
+   "explanation": "転用目的の権利移動（5条）の許可権者は、都道府県知事（指定市町村の区域内では指定市町村の長）である。農業委員会が許可するのは、農地のまま権利を移動する3条の場合である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "農地法 第5条",
+    "url": "https://laws.e-gov.go.jp/law/327AC0000000229"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003024",
+   "no": 3024,
+   "topic": "宅地造成等工事規制区域",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地造成等工事規制区域内において行われる宅地造成等に関する工事については、政令で定める工事を除き、工事主は、工事に着手する前に都道府県知事の許可を受けなければならない。",
+   "explanation": "宅地造成等工事規制区域内の宅地造成等の工事は、災害のおそれがないとして政令で定める工事を除き、工事主が着手前に知事（指定都市・中核市ではその長）の許可を受ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地造成及び特定盛土等規制法 第12条",
+    "url": "https://laws.e-gov.go.jp/law/336AC0000000191"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003025",
+   "no": 3025,
+   "topic": "宅地造成等工事規制区域",
+   "status": "published",
+   "version": 1,
+   "stem": "宅地造成等工事規制区域内の土地で、許可や届出の対象とならない擁壁等に関する政令で定める工事を行おうとする者は、工事に着手する日の30日前までに都道府県知事に届け出なければならない。",
+   "explanation": "この届出の期限は、工事に着手する日の「14日前」までである。30日前までの届出は、特定盛土等規制区域内の特定盛土等・土石の堆積に関する工事の計画の届出である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "宅地造成及び特定盛土等規制法 第21条第3項",
+    "url": "https://laws.e-gov.go.jp/law/336AC0000000191"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003026",
+   "no": 3026,
+   "topic": "土地区画整理組合",
+   "status": "published",
+   "version": 1,
+   "stem": "土地区画整理組合を設立しようとする者は、7人以上共同して定款及び事業計画を定め、その組合の設立について都道府県知事の認可を受けなければならない。",
+   "explanation": "組合の設立には、7人以上が共同して定款と事業計画（又は事業基本方針）を定め、都道府県知事の認可を受ける。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "土地区画整理法 第14条",
+    "url": "https://laws.e-gov.go.jp/law/329AC0000000119"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003027",
+   "no": 3027,
+   "topic": "仮換地",
+   "status": "published",
+   "version": 1,
+   "stem": "仮換地が指定された場合、従前の宅地について権原に基づき使用収益できる者は、仮換地の指定の効力発生日から換地処分の公告がある日まで、仮換地を使用収益でき、従前の宅地は使用収益できない。",
+   "explanation": "仮換地の指定により、従前の宅地の使用収益権者は、仮換地について従前と同じ内容の使用収益ができる。その反面、従前の宅地は使用収益できなくなる。所有権自体は従前の宅地に残っている。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "土地区画整理法 第99条",
+    "url": "https://laws.e-gov.go.jp/law/329AC0000000119"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_003028",
+   "no": 3028,
+   "topic": "換地処分の効果",
+   "status": "published",
+   "version": 1,
+   "stem": "施行地区内の宅地について存する地役権は、換地処分の公告があった日が終了した時にすべて消滅する。",
+   "explanation": "地役権は、換地処分の公告があった日の翌日以後も、なお従前の宅地の上に存する。ただし、事業の施行により行使する利益がなくなった地役権は、公告があった日が終了した時に消滅する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "土地区画整理法 第104条",
+    "url": "https://laws.e-gov.go.jp/law/329AC0000000119"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "hourei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004001",
+   "no": 4001,
+   "topic": "不動産取得税の課税対象",
+   "status": "published",
+   "version": 1,
+   "stem": "家屋が新築された日から6月を経過しても最初の使用又は譲渡が行われない場合には、原則として、6月を経過した日に家屋の取得があったものとみなされ、その家屋の所有者に不動産取得税が課される。",
+   "explanation": "新築家屋は、原則として最初の使用又は譲渡が行われた日に取得があったものとみなされる。新築から6月を経過してもなお使用・譲渡がないときは、6月を経過した日に取得があったものとみなし、所有者を取得者として課税する（家屋を新築して譲渡することを業とする者などには期間の特例がある）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地方税法 第73条の2",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004002",
+   "no": 4002,
+   "topic": "不動産取得税の非課税",
+   "status": "published",
+   "version": 1,
+   "stem": "個人が親から土地の贈与を受けた場合、対価を支払わない無償の取得であるため、不動産取得税は課されない。",
+   "explanation": "不動産取得税は有償・無償を問わず不動産の取得に課されるので、贈与による取得にも課される。非課税となるのは相続（包括遺贈・相続人への遺贈を含む）や法人の合併による取得などである。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地方税法 第73条の7",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004004",
+   "no": 4004,
+   "topic": "不動産取得税の課税標準の特例",
+   "status": "published",
+   "version": 1,
+   "stem": "一定の要件を満たす新築住宅を取得した場合、不動産取得税の課税標準の算定にあたって、1戸につき1,200万円が価格から控除される。",
+   "explanation": "政令で定める要件を満たす住宅の建築（未入居の新築住宅の購入を含む）については、1戸（共同住宅等は独立区画ごと）につき1,200万円を価格から控除する。この特例は取得者の申告がある場合に適用されるのが原則である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地方税法 第73条の14",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004005",
+   "no": 4005,
+   "topic": "固定資産税の納税義務者",
+   "status": "published",
+   "version": 1,
+   "stem": "土地の所有者として登記されているAが、年の途中の3月にその土地をBに売却した場合、その年度の固定資産税はAに課される。",
+   "explanation": "固定資産税の賦課期日は当該年度の初日の属する年の1月1日であり、その時点で登記簿等に所有者として登記されている者が納税義務者となる。年の途中で売却しても、その年度分はAに課される（売主・買主間の負担の精算は当事者の取決めによる）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地方税法 第343条・第359条",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004006",
+   "no": 4006,
+   "topic": "固定資産税の納税義務者",
+   "status": "published",
+   "version": 1,
+   "stem": "存続期間を50年とする地上権が設定されている土地については、地上権者が固定資産税の納税義務者となる。",
+   "explanation": "所有者に代わって納税義務者となるのは、質権者と、存続期間が100年より長い地上権の地上権者である。存続期間50年の地上権であれば、原則どおり所有者が納税義務者となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地方税法 第343条",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004007",
+   "no": 4007,
+   "topic": "固定資産税の住宅用地の特例",
+   "status": "published",
+   "version": 1,
+   "stem": "住宅用地のうち住宅1戸あたり200平方メートル以下の部分（小規模住宅用地）については、固定資産税の課税標準が価格の3分の1の額とされる。",
+   "explanation": "小規模住宅用地（住宅1戸あたり200平方メートル以下の部分）の課税標準は価格の6分の1の額である。3分の1とされるのは、200平方メートルを超える部分（一般の住宅用地）である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地方税法 第349条の3の2",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004008",
+   "no": 4008,
+   "topic": "固定資産税の縦覧と閲覧",
+   "status": "published",
+   "version": 1,
+   "stem": "市町村長は、固定資産税の納税義務者などの求めに応じ、固定資産課税台帳のうちその者に係る固定資産に関する事項が記載された部分を閲覧に供しなければならない。",
+   "explanation": "固定資産課税台帳の閲覧は、納税義務者その他政令で定める者（借地人・借家人など）の求めに応じ、その者に係る固定資産の部分について行われる。土地価格等縦覧帳簿などの縦覧（毎年4月1日からの一定期間、納税者が対象）とは別の制度である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地方税法 第382条の2",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004009",
+   "no": 4009,
+   "topic": "登録免許税の納税義務者",
+   "status": "published",
+   "version": 1,
+   "stem": "登記を受ける者が2人以上いる場合には、これらの者は連帯して登録免許税を納付する義務を負う。",
+   "explanation": "登録免許税は登記を受ける者が納める税であり、登記を受ける者が2人以上あるときは連帯して納付義務を負う。売買による所有権の移転登記では、売主と買主がともに登記を受ける者にあたる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "登録免許税法 第3条",
+    "url": "https://laws.e-gov.go.jp/law/342AC0000000035"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004010",
+   "no": 4010,
+   "topic": "登録免許税の課税標準",
+   "status": "published",
+   "version": 1,
+   "stem": "地上権が設定されている土地について所有権の移転登記を受ける場合、登録免許税の課税標準は、その土地の価額から地上権の価額を差し引いた額となる。",
+   "explanation": "不動産の登記の課税標準は登記の時の不動産の価額であり、その不動産の上に所有権以外の権利や処分の制限があるときは、それらがないものとした場合の価額による。地上権の価額を差し引くのではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "登録免許税法 第10条",
+    "url": "https://laws.e-gov.go.jp/law/342AC0000000035"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004011",
+   "no": 4011,
+   "topic": "印紙税の非課税",
+   "status": "published",
+   "version": 1,
+   "stem": "地方公共団体と個人Aが土地の売買契約書を2通作成し、それぞれ1通ずつ保存する場合、Aが保存する契約書には印紙税が課されない。",
+   "explanation": "国等と国等以外の者が共同で作成した文書は、国等以外の者が保存するものは国等が作成したものとみなされる。国・地方公共団体が作成した文書は非課税なので、Aが保存する契約書は非課税となり、地方公共団体が保存するものはAが作成したものとして課税される。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "印紙税法 第4条・第5条",
+    "url": "https://laws.e-gov.go.jp/law/342AC0000000023"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004012",
+   "no": 4012,
+   "topic": "印紙税の記載金額",
+   "status": "published",
+   "version": 1,
+   "stem": "売買代金5,000万円の土地売買契約書を作成した後、代金を4,000万円に減額する変更契約書を作成した場合、変更契約書の記載金額は4,000万円となる。",
+   "explanation": "変更前の契約金額の記載のある文書が作成されていることが明らかで、変更契約書で変更金額が分かる場合、減額の変更契約書は記載金額の記載がないものとして扱われる。増額の場合は、その増加額が記載金額となる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "印紙税法 別表第一 課税物件表の適用に関する通則4",
+    "url": "https://laws.e-gov.go.jp/law/342AC0000000023"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004013",
+   "no": 4013,
+   "topic": "印紙税の過怠税",
+   "status": "published",
+   "version": 1,
+   "stem": "印紙税を納付しなかった課税文書の作成者が、税務調査を予知することなく自ら納付していない旨を申し出た場合、過怠税の額は納付しなかった印紙税の額の1.1倍に相当する額となる。",
+   "explanation": "印紙を貼らなかった場合の過怠税は、原則として納付しなかった印紙税の額とその2倍の合計（3倍）である。調査を予知しないで自主的に申し出たときは、印紙税の額に100分の10を加えた額（1.1倍）に軽減される。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "印紙税法 第20条",
+    "url": "https://laws.e-gov.go.jp/law/342AC0000000023"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004014",
+   "no": 4014,
+   "topic": "長期譲渡所得と短期譲渡所得",
+   "status": "published",
+   "version": 1,
+   "stem": "個人が土地を譲渡した場合、譲渡した日において所有期間が5年を超えていれば、その譲渡による所得は長期譲渡所得となる。",
+   "explanation": "長期譲渡所得となるのは、譲渡した年の1月1日において所有期間が5年を超える土地等・建物等の譲渡である。譲渡した日を基準に判定するのではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "租税特別措置法 第31条",
+    "url": "https://laws.e-gov.go.jp/law/332AC0000000026"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004015",
+   "no": 4015,
+   "topic": "居住用財産の3,000万円特別控除",
+   "status": "published",
+   "version": 1,
+   "stem": "個人が自己の居住の用に供している家屋とその敷地を配偶者に譲渡した場合でも、居住用財産の3,000万円特別控除の適用を受けることができる。",
+   "explanation": "配偶者その他特別の関係がある者に対する譲渡は、居住用財産の3,000万円特別控除の対象から除かれている。なお、この特別控除には所有期間の要件はない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "租税特別措置法 第35条",
+    "url": "https://laws.e-gov.go.jp/law/332AC0000000026"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004016",
+   "no": 4016,
+   "topic": "地価公示の手続き",
+   "status": "published",
+   "version": 1,
+   "stem": "土地鑑定委員会は、標準地について1人の不動産鑑定士の鑑定評価を求め、その結果に基づいて正常な価格を判定する。",
+   "explanation": "土地鑑定委員会は、標準地について2人以上の不動産鑑定士の鑑定評価を求め、その結果を審査し必要な調整を行って、基準日における単位面積当たりの正常な価格を判定し、官報で公示する。1人ではない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地価公示法 第2条",
+    "url": "https://laws.e-gov.go.jp/law/344AC0000000049"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004017",
+   "no": 4017,
+   "topic": "地価公示の正常な価格",
+   "status": "published",
+   "version": 1,
+   "stem": "地価公示法でいう正常な価格は、その土地に地上権などの使用収益を制限する権利が存する場合には、その権利が存しないものとして通常成立すると認められる価格である。",
+   "explanation": "正常な価格とは、自由な取引が行われるとした場合に通常成立すると認められる価格をいい、建物などの定着物や地上権などの権利がある場合には、それらが存しないものとして通常成立すると認められる価格をいう。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地価公示法 第2条",
+    "url": "https://laws.e-gov.go.jp/law/344AC0000000049"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004018",
+   "no": 4018,
+   "topic": "公示価格の効力",
+   "status": "published",
+   "version": 1,
+   "stem": "公示区域内で土地の取引を行う者は、取引の対象土地に類似する利用価値を有する標準地の公示価格で取引を行わなければならない。",
+   "explanation": "土地の取引を行う者は、類似する標準地の公示価格を「指標として取引を行うよう努めなければならない」とされているにとどまる（努力義務）。公示価格で取引する義務はない。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "地価公示法 第1条の2",
+    "url": "https://laws.e-gov.go.jp/law/344AC0000000049"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004019",
+   "no": 4019,
+   "topic": "鑑定評価の3手法",
+   "status": "published",
+   "version": 1,
+   "stem": "原価法は、価格時点における対象不動産の再調達原価を求め、これに減価修正を行って対象不動産の試算価格（積算価格）を求める手法である。",
+   "explanation": "原価法は再調達原価に減価修正を加えて積算価格を求める手法である。ほかに、取引事例から比準価格を求める取引事例比較法、純収益から収益価格を求める収益還元法がある。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "不動産鑑定評価基準（一般的な知識）"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004020",
+   "no": 4020,
+   "topic": "住宅金融支援機構の業務",
+   "status": "published",
+   "version": 1,
+   "stem": "独立行政法人住宅金融支援機構は、住宅の建設又は購入に必要な資金の貸付けに係る金融機関の貸付債権の譲受けを業務として行う。",
+   "explanation": "機構は、民間金融機関が行った住宅の建設・購入等の資金の貸付債権を譲り受ける業務（証券化支援事業の買取型）を行う。これにより民間金融機関による長期固定金利の住宅ローンの供給を支援している。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "住宅金融支援機構法 第13条",
+    "url": "https://laws.e-gov.go.jp/law/417AC0000000082"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004021",
+   "no": 4021,
+   "topic": "景品表示法の措置命令",
+   "status": "published",
+   "version": 1,
+   "stem": "不当な表示を行った事業者に対する措置命令は、その違反行為がすでになくなっている場合においても、することができる。",
+   "explanation": "内閣総理大臣（消費者庁長官に委任）は、不当表示などの違反行為について措置命令をすることができ、その命令は違反行為がすでになくなっている場合にもすることができる。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "景品表示法 第7条",
+    "url": "https://laws.e-gov.go.jp/law/337AC0000000134"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004022",
+   "no": 4022,
+   "topic": "景品表示法の課徴金",
+   "status": "published",
+   "version": 1,
+   "stem": "優良誤認表示などの課徴金対象行為をした事業者に対する課徴金の額は、原則として、対象となる商品又は役務の売上額に100分の10を乗じて得た額である。",
+   "explanation": "課徴金の額は、原則として課徴金対象期間における対象商品・役務の売上額に100分の3を乗じて得た額である。100分の10ではない（10年以内に課徴金納付命令を受けたことがある場合などの加算はある）。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "景品表示法 第8条",
+    "url": "https://laws.e-gov.go.jp/law/337AC0000000134"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004023",
+   "no": 4023,
+   "topic": "土地の知識",
+   "status": "published",
+   "version": 1,
+   "stem": "旧河道は、かつて川が流れていたことから地盤が締まっており、地震時に液状化が起こるおそれは小さい。",
+   "explanation": "旧河道はかつての川筋が埋まった低い土地で、軟弱な地盤であることが多く、地下水位も高いため、地震時の液状化や浸水のおそれが大きい。宅地としては注意を要する。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "土地の知識（一般的な知識）"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": false,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "q_004024",
+   "no": 4024,
+   "topic": "建物の知識",
+   "status": "published",
+   "version": 1,
+   "stem": "コンクリートはアルカリ性であるため、鉄筋コンクリート造では、コンクリートが内部の鉄筋のさびを防ぐ役割を果たしている。",
+   "explanation": "コンクリートはアルカリ性で、内部の鉄筋がさびるのを防ぐ。コンクリートが空気中の二酸化炭素と反応して中性化が進むと鉄筋がさびやすくなるため、鉄筋を覆うコンクリートのかぶり厚さの確保が重要である。",
+   "figure": null,
+   "source": {
+    "kind": "original",
+    "title": "建物の知識（一般的な知識）"
+   },
+   "exams": [
+    {
+     "exam": "takken",
+     "section": "zei"
+    }
+   ],
+   "choices": [
+    {
+     "label": 1,
+     "body": "○",
+     "correct": true,
+     "why": ""
+    },
+    {
+     "label": 2,
+     "body": "×",
+     "correct": false,
+     "why": ""
+    }
+   ]
+  }
+ ]
+}

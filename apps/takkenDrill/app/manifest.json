@@ -1,0 +1,36 @@
+{
+  "name": "宅建 一問一答ドリル",
+  "short_name": "宅建ドリル",
+  "description": "宅建試験の一問一答ドリル。忘れかけた問題を自動で復習、模擬試験・用語集つき。オフラインでも使えます。",
+  "lang": "ja",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#17A398",
+  "theme_color": "#17A398",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
