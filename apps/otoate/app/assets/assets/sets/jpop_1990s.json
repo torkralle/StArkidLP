@@ -1,0 +1,1123 @@
+{
+ "id": "jpop_1990s",
+ "title": "J-POP 90年代",
+ "genre": "jpop",
+ "decades": [
+  1990
+ ],
+ "reviewed": true,
+ "songs": [
+  {
+   "trackId": 1374940057,
+   "title": "終わりなき旅",
+   "artist": "Mr.Children",
+   "year": 1999,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1375009930,
+   "title": "名もなき詩",
+   "artist": "Mr.Children",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1374994314,
+   "title": "innocent world",
+   "artist": "Mr.Children",
+   "year": 1994,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1375203246,
+   "title": "Tomorrow never knows",
+   "artist": "Mr.Children",
+   "year": 1994,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1374993699,
+   "title": "シーソーゲーム~勇敢な恋の歌~",
+   "artist": "Mr.Children",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440747285,
+   "title": "チェリー",
+   "artist": "スピッツ",
+   "year": 1996,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440649500,
+   "title": "楓",
+   "artist": "スピッツ",
+   "year": 1998,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440863470,
+   "title": "空も飛べるはず",
+   "artist": "スピッツ",
+   "year": 1994,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440746483,
+   "title": "ロビンソン",
+   "artist": "スピッツ",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440746845,
+   "title": "渚",
+   "artist": "スピッツ",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 75353680,
+   "title": "いつかのメリークリスマス",
+   "artist": "B'z",
+   "year": 1992,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1560793178,
+   "title": "愛のままにわがままに 僕は君だけを傷つけない",
+   "artist": "B'z",
+   "year": 1993,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1560085807,
+   "title": "LOVE PHANTOM",
+   "artist": "B'z",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 75682439,
+   "title": "もう一度キスしたかった",
+   "artist": "B'z",
+   "year": 1991,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1560793582,
+   "title": "裸足の女神",
+   "artist": "B'z",
+   "year": 1993,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536278294,
+   "title": "決戦は金曜日",
+   "artist": "DREAMS COME TRUE",
+   "year": 1992,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536279335,
+   "title": "LOVE LOVE LOVE",
+   "artist": "DREAMS COME TRUE",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536199616,
+   "title": "HAPPY HAPPY BIRTHDAY",
+   "artist": "DREAMS COME TRUE",
+   "year": 1993,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536196112,
+   "title": "晴れたらいいね",
+   "artist": "DREAMS COME TRUE",
+   "year": 1992,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536315577,
+   "title": "サンキュ.",
+   "artist": "DREAMS COME TRUE",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 991567669,
+   "title": "HOWEVER",
+   "artist": "GLAY",
+   "year": 1997,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 992492931,
+   "title": "誘惑",
+   "artist": "GLAY",
+   "year": 1998,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 989804459,
+   "title": "BELOVED",
+   "artist": "GLAY",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 991784444,
+   "title": "ずっと2人で⋯",
+   "artist": "GLAY",
+   "year": 1997,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 991784445,
+   "title": "グロリアス",
+   "artist": "GLAY",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536367612,
+   "title": "HONEY",
+   "artist": "L'Arc-en-Ciel",
+   "year": 1998,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536357607,
+   "title": "Driver's High",
+   "artist": "L'Arc-en-Ciel",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536479228,
+   "title": "snow drop",
+   "artist": "L'Arc-en-Ciel",
+   "year": 1998,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536479372,
+   "title": "winter fall",
+   "artist": "L'Arc-en-Ciel",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536478029,
+   "title": "flower",
+   "artist": "L'Arc-en-Ciel",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1373527776,
+   "title": "TRY ME～私を信じて～",
+   "artist": "安室奈美恵 with SUPER MONKEY'S",
+   "year": 1995,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 75073758,
+   "title": "DEPARTURES",
+   "artist": "globe",
+   "year": 1996,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 76133273,
+   "title": "FACES PLACES",
+   "artist": "globe",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 75073321,
+   "title": "Feel Like dance",
+   "artist": "globe",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 910108616,
+   "title": "FACE",
+   "artist": "globe",
+   "year": 1997,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 894970779,
+   "title": "Can't Stop Fallin' in Love",
+   "artist": "globe",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 306462248,
+   "title": "BOY MEETS GIRL",
+   "artist": "TRF",
+   "year": 1994,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1133401287,
+   "title": "EZ DO DANCE",
+   "artist": "trf",
+   "year": 1993,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1133424130,
+   "title": "CRAZY GONNA CRAZY",
+   "artist": "TRF",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 306403102,
+   "title": "survival dAnce ~no no cry more~ (オリジナルシングルチャートミックス)",
+   "artist": "TRF",
+   "year": 1994,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 306403190,
+   "title": "Overnight Sensation ~時代はあなたに委ねてる~",
+   "artist": "TRF",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440763351,
+   "title": "Automatic (Remastered 2014)",
+   "artist": "宇多田ヒカル",
+   "year": 1998,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440763358,
+   "title": "First Love (Remastered 2014)",
+   "artist": "宇多田ヒカル",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440763354,
+   "title": "Movin’ on without you (Remastered 2014)",
+   "artist": "宇多田ヒカル",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440763601,
+   "title": "time will tell (Remastered 2014)",
+   "artist": "宇多田ヒカル",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440763356,
+   "title": "In My Room (Remastered 2014)",
+   "artist": "宇多田ヒカル",
+   "year": 1999,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 949272139,
+   "title": "希望の轍",
+   "artist": "サザンオールスターズ",
+   "year": 1990,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 949249865,
+   "title": "真夏の果実",
+   "artist": "サザンオールスターズ",
+   "year": 1990,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 949344612,
+   "title": "LOVE AFFAIR~秘密のデート",
+   "artist": "サザンオールスターズ",
+   "year": 1998,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 949272127,
+   "title": "いとしのエリー",
+   "artist": "サザンオールスターズ",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 949264709,
+   "title": "涙のキッス",
+   "artist": "サザンオールスターズ",
+   "year": 1992,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 284522040,
+   "title": "もう恋なんてしない",
+   "artist": "槇原敬之",
+   "year": 1992,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 284522066,
+   "title": "冬がはじまるよ",
+   "artist": "槇原敬之",
+   "year": 1991,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 284522063,
+   "title": "遠く遠く",
+   "artist": "槇原敬之",
+   "year": 1992,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 274548876,
+   "title": "北風",
+   "artist": "槇原敬之",
+   "year": 1990,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 295587704,
+   "title": "どんなときも。",
+   "artist": "槇原敬之",
+   "year": 1991,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1581712932,
+   "title": "揺れる想い",
+   "artist": "ZARD",
+   "year": 1993,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1581726951,
+   "title": "マイ フレンド",
+   "artist": "ZARD",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 75713851,
+   "title": "Don't you see!",
+   "artist": "ZARD",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1581727305,
+   "title": "心を開いて",
+   "artist": "ZARD",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1581726961,
+   "title": "DAN DAN 心魅かれてく",
+   "artist": "ZARD",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538927468,
+   "title": "世界中の誰よりきっと",
+   "artist": "中山美穂 & WANDS",
+   "year": 1992,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538927469,
+   "title": "世界中の誰よりきっと〈PART 2〉",
+   "artist": "中山美穂 & WANDS",
+   "year": 1992,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 75471729,
+   "title": "世界が終るまでは…",
+   "artist": "WANDS",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1490814550,
+   "title": "あなただけ見つめてる",
+   "artist": "大黒摩季",
+   "year": 1994,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1490814556,
+   "title": "ら・ら・ら",
+   "artist": "大黒摩季",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1490814552,
+   "title": "夏が来る",
+   "artist": "大黒摩季",
+   "year": 1994,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1490814305,
+   "title": "Da・Ka・Ra",
+   "artist": "大黒摩季",
+   "year": 1993,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1490814557,
+   "title": "いちばん近くにいてね",
+   "artist": "大黒摩季",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536875528,
+   "title": "LOVE TRAIN",
+   "artist": "TM NETWORK",
+   "year": 1991,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536875530,
+   "title": "WILD HEAVEN",
+   "artist": "TM NETWORK",
+   "year": 1991,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538962378,
+   "title": "DIVE INTO YOUR BODY",
+   "artist": "TM NETWORK",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536875529,
+   "title": "WE LOVE THE EARTH",
+   "artist": "TM NETWORK",
+   "year": 1991,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536875523,
+   "title": "THE POINT OF LOVERS' NIGHT",
+   "artist": "TM NETWORK",
+   "year": 1990,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536209106,
+   "title": "そばかす",
+   "artist": "JUDY AND MARY",
+   "year": 1996,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536219865,
+   "title": "Over Drive",
+   "artist": "JUDY AND MARY",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536219869,
+   "title": "くじら12号",
+   "artist": "JUDY AND MARY",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536219867,
+   "title": "クラシック",
+   "artist": "JUDY AND MARY",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536211755,
+   "title": "散歩道",
+   "artist": "JUDY AND MARY",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804622957,
+   "title": "I'm proud",
+   "artist": "華原朋美",
+   "year": 1996,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804623039,
+   "title": "LOVE BRACE",
+   "artist": "華原朋美",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804622942,
+   "title": "Just a real love night",
+   "artist": "華原朋美",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804648854,
+   "title": "Save your dream",
+   "artist": "華原朋美",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804623037,
+   "title": "Somebody loves you",
+   "artist": "華原朋美",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536896257,
+   "title": "シングルベッド",
+   "artist": "シャ乱Q",
+   "year": 1994,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536897904,
+   "title": "ズルい女",
+   "artist": "シャ乱Q",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536897884,
+   "title": "いいわけ",
+   "artist": "シャ乱Q",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536777680,
+   "title": "上・京・物・語",
+   "artist": "シャ乱Q",
+   "year": 1994,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536895532,
+   "title": "空を見なよ",
+   "artist": "シャ乱Q",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1286272772,
+   "title": "NOW AND THEN~失われた時を求めて~",
+   "artist": "My Little Lover",
+   "year": 1996,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1286267296,
+   "title": "Hello,Again~昔からある場所~",
+   "artist": "My Little Lover",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1286266581,
+   "title": "ALICE",
+   "artist": "My Little Lover",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1286267294,
+   "title": "白いカイト",
+   "artist": "My Little Lover",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1286272777,
+   "title": "DESTINY",
+   "artist": "My Little Lover",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 75051726,
+   "title": "出逢った頃のように",
+   "artist": "Every Little Thing",
+   "year": 1997,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1159580698,
+   "title": "Dear My Friend",
+   "artist": "Every Little Thing",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1159580808,
+   "title": "恋文",
+   "artist": "Every Little Thing",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1159580802,
+   "title": "Grip!",
+   "artist": "Every Little Thing",
+   "year": 1999,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1159580699,
+   "title": "For the moment",
+   "artist": "Every Little Thing",
+   "year": 1997,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537549059,
+   "title": "君がいるだけで",
+   "artist": "米米CLUB",
+   "year": 1992,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537385785,
+   "title": "ひとすじになれない",
+   "artist": "米米CLUB",
+   "year": 1991,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537514736,
+   "title": "浪漫飛行",
+   "artist": "米米CLUB",
+   "year": 1990,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537547856,
+   "title": "愛はふしぎさ",
+   "artist": "米米CLUB",
+   "year": 1993,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537508783,
+   "title": "愛してる",
+   "artist": "米米CLUB",
+   "year": 1992,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1810378623,
+   "title": "硝子の少年",
+   "artist": "KinKi Kids",
+   "year": 1997,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1810392988,
+   "title": "フラワー",
+   "artist": "KinKi Kids",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1810384792,
+   "title": "愛されるより 愛したい",
+   "artist": "KinKi Kids",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1810378622,
+   "title": "ジェットコースター・ロマンス",
+   "artist": "KinKi Kids",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1810383385,
+   "title": "青の時代",
+   "artist": "KinKi Kids",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109978637,
+   "title": "カブトムシ",
+   "artist": "aiko",
+   "year": 1999,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109978628,
+   "title": "花火",
+   "artist": "aiko",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109986329,
+   "title": "二時頃",
+   "artist": "aiko",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109965517,
+   "title": "ナキ・ムシ",
+   "artist": "aiko",
+   "year": 1999,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109965518,
+   "title": "あした",
+   "artist": "aiko",
+   "year": 1998,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1384341683,
+   "title": "丸ノ内サディスティック",
+   "artist": "椎名林檎",
+   "year": 1999,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1385302234,
+   "title": "歌舞伎町の女王",
+   "artist": "椎名林檎",
+   "year": 1998,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485676879,
+   "title": "幸福論",
+   "artist": "椎名林檎",
+   "year": 1998,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1384342420,
+   "title": "ここでキスして。",
+   "artist": "椎名林檎",
+   "year": 1999,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1384341677,
+   "title": "正しい街",
+   "artist": "椎名林檎",
+   "year": 1999,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536216815,
+   "title": "愛のしるし",
+   "artist": "PUFFY",
+   "year": 1998,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536216811,
+   "title": "アジアの純真",
+   "artist": "PUFFY",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536216810,
+   "title": "渚にまつわるエトセトラ",
+   "artist": "PUFFY",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536216809,
+   "title": "これが私の生きる道",
+   "artist": "PUFFY",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536216812,
+   "title": "サーキットの娘",
+   "artist": "PUFFY",
+   "year": 1997,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1534588175,
+   "title": "LA・LA・LA LOVE SONG (with ナオミ・キャンベル)",
+   "artist": "久保田利伸",
+   "year": 1996,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1534660047,
+   "title": "雨音",
+   "artist": "久保田利伸",
+   "year": 1991,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1534587924,
+   "title": "Cymbals",
+   "artist": "久保田利伸",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1534595781,
+   "title": "Nice & EZ",
+   "artist": "久保田利伸",
+   "year": 1995,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1534588121,
+   "title": "Indigo Waltz",
+   "artist": "久保田利伸",
+   "year": 1990,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1654000188,
+   "title": "糸",
+   "artist": "中島みゆき",
+   "year": 1992,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1653991584,
+   "title": "時代",
+   "artist": "中島みゆき",
+   "year": 1993,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1653993350,
+   "title": "ファイト!",
+   "artist": "中島みゆき",
+   "year": 1994,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1653993349,
+   "title": "空と君のあいだに",
+   "artist": "中島みゆき",
+   "year": 1994,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1653984313,
+   "title": "誕生",
+   "artist": "中島みゆき",
+   "year": 1992,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 270068275,
+   "title": "太陽が燃えている",
+   "artist": "THE YELLOW MONKEY",
+   "year": 1995,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 270068274,
+   "title": "JAM",
+   "artist": "THE YELLOW MONKEY",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 269886842,
+   "title": "バラ色の日々",
+   "artist": "THE YELLOW MONKEY",
+   "year": 1999,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 270060782,
+   "title": "SPARK",
+   "artist": "THE YELLOW MONKEY",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1075840775,
+   "title": "LOVE LOVE SHOW (Remastered)",
+   "artist": "THE YELLOW MONKEY",
+   "year": 1997,
+   "tier": 3,
+   "clearIntro": true
+  }
+ ]
+}

@@ -1,0 +1,742 @@
+{
+ "id": "anime_game",
+ "title": "アニソン・ゲーム",
+ "genre": "anime",
+ "decades": [
+  1990,
+  2000,
+  2010,
+  2020
+ ],
+ "reviewed": true,
+ "songs": [
+  {
+   "trackId": 258926790,
+   "title": "残酷な天使のテーゼ",
+   "artist": "高橋洋子",
+   "year": 1995,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1408505264,
+   "title": "青と夏",
+   "artist": "Mrs. GREEN APPLE",
+   "year": 2018,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1679278167,
+   "title": "アイドル",
+   "artist": "YOASOBI",
+   "year": 2023,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1597279110,
+   "title": "一途",
+   "artist": "King Gnu",
+   "year": 2021,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1628261505,
+   "title": "ミックスナッツ",
+   "artist": "Official髭男dism",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1648272180,
+   "title": "KICK BACK",
+   "artist": "米津玄師",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1626392364,
+   "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+   "artist": "Ado",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1707001466,
+   "title": "勇者",
+   "artist": "YOASOBI",
+   "year": 2023,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1646939428,
+   "title": "すずめ (feat. 十明)",
+   "artist": "RADWIMPS",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1533208085,
+   "title": "廻廻奇譚",
+   "artist": "Eve",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1647132944,
+   "title": "CHAINSAW BLOOD",
+   "artist": "Vaundy",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536363700,
+   "title": "リライト",
+   "artist": "ASIAN KUNG-FU GENERATION",
+   "year": 2004,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536263347,
+   "title": "ブルーバード",
+   "artist": "いきものがかり",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536275182,
+   "title": "Bright Burning Shout",
+   "artist": "西川 貴教",
+   "year": 2013,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 323948191,
+   "title": "亜麻色の髪の乙女",
+   "artist": "島谷ひとみ",
+   "year": 2002,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1501480423,
+   "title": "Give a reason ~Ballade Version~",
+   "artist": "林原めぐみ",
+   "year": 1996,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 435413360,
+   "title": "CHA-LA HEAD-CHA-LA",
+   "artist": "影山ヒロノブ",
+   "year": 1989,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1739541125,
+   "title": "Get Wild Continual",
+   "artist": "TM NETWORK",
+   "year": 1987,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 297541140,
+   "title": "空想ルンバ-少女が違うVER",
+   "artist": "大槻ケンヂと絶望少女達",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1882220214,
+   "title": "ハレ晴レユカイ",
+   "artist": "平野 綾, 茅原実里 & 後藤邑子",
+   "year": 2006,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537428425,
+   "title": "君の知らない物語",
+   "artist": "supercell",
+   "year": 2009,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1720332181,
+   "title": "Bling-Bang-Bang-Born",
+   "artist": "Creepy Nuts",
+   "year": 2024,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1695666895,
+   "title": "地球儀 - Spinning Globe",
+   "artist": "米津玄師",
+   "year": 2023,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538286723,
+   "title": "紅蓮華",
+   "artist": "LiSA",
+   "year": 2019,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1531847485,
+   "title": "炎",
+   "artist": "LiSA",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537798030,
+   "title": "Catch the Moment",
+   "artist": "LiSA",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1827140040,
+   "title": "残酷な夜に輝け - Shine in the Cruel Night",
+   "artist": "LiSA",
+   "year": 2025,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537241619,
+   "title": "コネクト",
+   "artist": "ClariS",
+   "year": 2011,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537265082,
+   "title": "CLICK",
+   "artist": "ClariS",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537267452,
+   "title": "カラフル",
+   "artist": "ClariS",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537267115,
+   "title": "irony",
+   "artist": "ClariS",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538259004,
+   "title": "カタオモイ",
+   "artist": "Aimer",
+   "year": 2016,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1594814706,
+   "title": "残響散歌",
+   "artist": "Aimer",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538258769,
+   "title": "蝶々結び",
+   "artist": "Aimer",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538261229,
+   "title": "コイワズライ",
+   "artist": "Aimer",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536382006,
+   "title": "Sign",
+   "artist": "FLOW",
+   "year": 2013,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536364740,
+   "title": "GO!!!",
+   "artist": "FLOW",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536482409,
+   "title": "DAYS",
+   "artist": "FLOW",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536482652,
+   "title": "COLORS",
+   "artist": "FLOW",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537412732,
+   "title": "SHAMROCK",
+   "artist": "UVERworld",
+   "year": 2006,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537566586,
+   "title": "THE OVER",
+   "artist": "UVERworld",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537401495,
+   "title": "儚くも永久のカナシ",
+   "artist": "UVERworld",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537412727,
+   "title": "激動",
+   "artist": "UVERworld",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 378277094,
+   "title": "DISCOTHEQUE",
+   "artist": "水樹奈々",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536310902,
+   "title": "Preserved Roses",
+   "artist": "T.M.Revolution & 水樹奈々",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 489753197,
+   "title": "Synchrogazer",
+   "artist": "水樹奈々",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 378474625,
+   "title": "ETERNAL BLAZE",
+   "artist": "水樹奈々",
+   "year": 2005,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804651595,
+   "title": "LEVEL5-judgelight-",
+   "artist": "fripSide",
+   "year": 2010,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804656888,
+   "title": "sister's noise",
+   "artist": "fripSide",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804664579,
+   "title": "only my railgun",
+   "artist": "fripSide",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804676404,
+   "title": "future gazer",
+   "artist": "fripSide",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1569670222,
+   "title": "IGNITE",
+   "artist": "藍井エイル",
+   "year": 2014,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1569670224,
+   "title": "ラピスラズリ",
+   "artist": "藍井エイル",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537262317,
+   "title": "INNOCENCE",
+   "artist": "藍井エイル",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1882328014,
+   "title": "MONSTER",
+   "artist": "藍井エイル",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537333757,
+   "title": "愛に出会い恋は続く",
+   "artist": "HoneyWorks & スフィア",
+   "year": 2016,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537335260,
+   "title": "一分一秒君と僕の",
+   "artist": "HoneyWorks & スフィア",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 268181613,
+   "title": "ジェイムス",
+   "artist": "アコースフィア",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 268182174,
+   "title": "Take You Home",
+   "artist": "アコースフィア",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 469340242,
+   "title": "ライオン",
+   "artist": "May'n & 中島愛",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1872008479,
+   "title": "LOVE IS THE STRONGEST",
+   "artist": "May'n",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1884789436,
+   "title": "What's a Hero",
+   "artist": "May'n",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 469340247,
+   "title": "ノーザンクロス",
+   "artist": "シェリル・ノーム starring May'n",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 269768937,
+   "title": "Shangri-La",
+   "artist": "angela",
+   "year": 2004,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 850175895,
+   "title": "シドニア",
+   "artist": "angela",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 569043145,
+   "title": "KINGS",
+   "artist": "angela",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1503288558,
+   "title": "乙女のルートはひとつじゃない!",
+   "artist": "angela",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1027316508,
+   "title": "Clattanoia",
+   "artist": "OxT",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1634361549,
+   "title": "HOLLOW HUNGER",
+   "artist": "OxT",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1649702260,
+   "title": "HIGHEST",
+   "artist": "OxT",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1439853363,
+   "title": "UNION",
+   "artist": "OxT",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6816878265,
+   "title": "ROSE HIP-BULLET",
+   "artist": "GRANRODEO",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6816874839,
+   "title": "Punky Funky Love",
+   "artist": "GRANRODEO",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6816913657,
+   "title": "変幻自在のマジカルスター",
+   "artist": "GRANRODEO",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538171490,
+   "title": "Howling",
+   "artist": "FLOW & GRANRODEO",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6781591910,
+   "title": "Amore",
+   "artist": "ReoNa",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538287303,
+   "title": "ANIMA",
+   "artist": "ReoNa",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1580904297,
+   "title": "生命線",
+   "artist": "ReoNa",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1532050855,
+   "title": "unknown",
+   "artist": "ReoNa",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538303081,
+   "title": "サウダージ",
+   "artist": "ポルノグラフィティ",
+   "year": 2000,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537375188,
+   "title": "アゲハ蝶",
+   "artist": "ポルノグラフィティ",
+   "year": 2001,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537263578,
+   "title": "ミュージック・アワー",
+   "artist": "ポルノグラフィティ",
+   "year": 2000,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537230152,
+   "title": "メリッサ",
+   "artist": "ポルノグラフィティ",
+   "year": 2003,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 666788983,
+   "title": "紅蓮の弓矢",
+   "artist": "Linked Horizon",
+   "year": 2013,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1229977150,
+   "title": "心臓を捧げよ!",
+   "artist": "Linked Horizon",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1467139927,
+   "title": "憧憬と屍の道",
+   "artist": "Linked Horizon",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 666788984,
+   "title": "自由の翼",
+   "artist": "Linked Horizon",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1657318884,
+   "title": "星座になれたら",
+   "artist": "結束バンド",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1657318882,
+   "title": "忘れてやらない",
+   "artist": "結束バンド",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1646020675,
+   "title": "青春コンプレックス",
+   "artist": "結束バンド",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1650726430,
+   "title": "ギターと孤独と蒼い惑星",
+   "artist": "結束バンド",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  }
+ ]
+}

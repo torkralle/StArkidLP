@@ -1,0 +1,1211 @@
+{
+ "id": "jpop_2000s",
+ "title": "J-POP 2000年代",
+ "genre": "jpop",
+ "decades": [
+  2000
+ ],
+ "reviewed": true,
+ "songs": [
+  {
+   "trackId": 289394993,
+   "title": "SEASONS",
+   "artist": "浜崎あゆみ",
+   "year": 2000,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1144922841,
+   "title": "M",
+   "artist": "浜崎あゆみ",
+   "year": 2000,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 289396231,
+   "title": "BLUE BIRD",
+   "artist": "浜崎あゆみ",
+   "year": 2006,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1144922467,
+   "title": "A Song for ××",
+   "artist": "浜崎あゆみ",
+   "year": 2001,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1144902364,
+   "title": "Voyage",
+   "artist": "浜崎あゆみ",
+   "year": 2002,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444575404,
+   "title": "Flavor Of Life (Remastered 2018)",
+   "artist": "宇多田ヒカル",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1445033374,
+   "title": "Beautiful World",
+   "artist": "宇多田ヒカル",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1448141550,
+   "title": "Can You Keep A Secret? (Remastered 2018)",
+   "artist": "宇多田ヒカル",
+   "year": 2001,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444873881,
+   "title": "Prisoner Of Love",
+   "artist": "宇多田ヒカル",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444855989,
+   "title": "DISTANCE",
+   "artist": "宇多田ヒカル",
+   "year": 2001,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537418577,
+   "title": "イケナイ太陽",
+   "artist": "ORANGE RANGE",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537381288,
+   "title": "以心電信",
+   "artist": "ORANGE RANGE",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537418568,
+   "title": "花",
+   "artist": "ORANGE RANGE",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537418566,
+   "title": "ロコローション",
+   "artist": "ORANGE RANGE",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537418562,
+   "title": "上海ハニー",
+   "artist": "ORANGE RANGE",
+   "year": 2003,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 291873807,
+   "title": "蕾(つぼみ)",
+   "artist": "コブクロ",
+   "year": 2006,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 305785884,
+   "title": "赤い糸",
+   "artist": "コブクロ",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1441818331,
+   "title": "Million Films",
+   "artist": "コブクロ",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1441818332,
+   "title": "ここにしか咲かない花",
+   "artist": "コブクロ",
+   "year": 2005,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1441818306,
+   "title": "桜",
+   "artist": "コブクロ",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 210621961,
+   "title": "Lovers Again",
+   "artist": "EXILE",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1152194317,
+   "title": "Ti Amo",
+   "artist": "EXILE",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1152194286,
+   "title": "道",
+   "artist": "EXILE",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 296503579,
+   "title": "運命のヒト (EXILE BALLAD BEST)",
+   "artist": "EXILE",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 296503575,
+   "title": "We Will~あの場所で~ (EXILE BALLAD BEST)",
+   "artist": "EXILE",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536100668,
+   "title": "瞳をとじて",
+   "artist": "平井 堅",
+   "year": 2004,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536150264,
+   "title": "僕は君に恋をする",
+   "artist": "平井 堅",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536100664,
+   "title": "思いがかさなるその前に・・・",
+   "artist": "平井 堅",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536131459,
+   "title": "楽園",
+   "artist": "平井 堅",
+   "year": 2000,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536109612,
+   "title": "君の好きなとこ",
+   "artist": "平井 堅",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1464634457,
+   "title": "天体観測",
+   "artist": "BUMP OF CHICKEN",
+   "year": 2001,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1464635751,
+   "title": "カルマ",
+   "artist": "BUMP OF CHICKEN",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1464635742,
+   "title": "プラネタリウム",
+   "artist": "BUMP OF CHICKEN",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1464635741,
+   "title": "才悩人応援歌",
+   "artist": "BUMP OF CHICKEN",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1464634874,
+   "title": "車輪の唄",
+   "artist": "BUMP OF CHICKEN",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 419306032,
+   "title": "さくら",
+   "artist": "ケツメイシ",
+   "year": 2005,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 540350625,
+   "title": "夏の思い出",
+   "artist": "ケツメイシ",
+   "year": 2003,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 419283484,
+   "title": "トモダチ",
+   "artist": "ケツメイシ",
+   "year": 2002,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 540347734,
+   "title": "涙",
+   "artist": "ケツメイシ",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 419586137,
+   "title": "出会いのかけら",
+   "artist": "ケツメイシ",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 972569249,
+   "title": "プラネタリウム",
+   "artist": "大塚 愛",
+   "year": 2005,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 76106271,
+   "title": "さくらんぼ",
+   "artist": "大塚 愛",
+   "year": 2003,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 972567334,
+   "title": "黒毛和牛上塩タン焼680円",
+   "artist": "大塚 愛",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 266633603,
+   "title": "PEACH",
+   "artist": "大塚 愛",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 219767230,
+   "title": "SMILY",
+   "artist": "大塚 愛",
+   "year": 2005,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1435978220,
+   "title": "かけがえのない詩",
+   "artist": "mihimaru GT",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444178038,
+   "title": "気分上々↑↑",
+   "artist": "mihimaru GT",
+   "year": 2006,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1435978051,
+   "title": "Love is...",
+   "artist": "mihimaru GT",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1435978055,
+   "title": "いつまでも響くこのmelody",
+   "artist": "mihimaru GT",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440756646,
+   "title": "I SHOULD BE SO LUCKY",
+   "artist": "mihimaru GT",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440780922,
+   "title": "キセキ",
+   "artist": "GReeeeN",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1445030171,
+   "title": "愛唄",
+   "artist": "GReeeeN",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1445025111,
+   "title": "遥か",
+   "artist": "GReeeeN",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440746852,
+   "title": "道",
+   "artist": "GReeeeN",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440747072,
+   "title": "刹那",
+   "artist": "GReeeeN",
+   "year": 2009,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 320457616,
+   "title": "みんな空の下",
+   "artist": "絢香",
+   "year": 2009,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 255912627,
+   "title": "三日月",
+   "artist": "絢香",
+   "year": 2006,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 255911254,
+   "title": "I Believe",
+   "artist": "絢香",
+   "year": 2006,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 274564957,
+   "title": "手をつなごう",
+   "artist": "絢香",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 283971236,
+   "title": "おかえり",
+   "artist": "絢香",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538140648,
+   "title": "気まぐれロマンティック",
+   "artist": "いきものがかり",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536263347,
+   "title": "ブルーバード",
+   "artist": "いきものがかり",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536263350,
+   "title": "YELL",
+   "artist": "いきものがかり",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536231864,
+   "title": "コイスルオトメ",
+   "artist": "いきものがかり",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536260381,
+   "title": "じょいふる",
+   "artist": "いきものがかり",
+   "year": 2009,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1375007474,
+   "title": "HANABI",
+   "artist": "Mr.Children",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1374928853,
+   "title": "Sign",
+   "artist": "Mr.Children",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1375049972,
+   "title": "しるし",
+   "artist": "Mr.Children",
+   "year": 2006,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1374996524,
+   "title": "くるみ",
+   "artist": "Mr.Children",
+   "year": 2003,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1374987915,
+   "title": "君が好き",
+   "artist": "Mr.Children",
+   "year": 2002,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109981970,
+   "title": "ボーイフレンド",
+   "artist": "aiko",
+   "year": 2000,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109978371,
+   "title": "シアワセ",
+   "artist": "aiko",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1499601679,
+   "title": "ハチミツ",
+   "artist": "aiko",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109968361,
+   "title": "キラキラ",
+   "artist": "aiko",
+   "year": 2005,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1109965034,
+   "title": "えりあし",
+   "artist": "aiko",
+   "year": 2003,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1144876233,
+   "title": "愛のうた",
+   "artist": "倖田來未",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 272239501,
+   "title": "you",
+   "artist": "倖田來未",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 291497231,
+   "title": "Moon Crying",
+   "artist": "倖田來未",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1144864080,
+   "title": "恋のつぼみ",
+   "artist": "倖田來未",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1144868964,
+   "title": "Rain",
+   "artist": "倖田來未",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485857408,
+   "title": "Love so sweet",
+   "artist": "嵐",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485847849,
+   "title": "Happiness",
+   "artist": "嵐",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485847813,
+   "title": "One Love",
+   "artist": "嵐",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1573383338,
+   "title": "Still...",
+   "artist": "嵐",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1497106613,
+   "title": "Oh Yeah!",
+   "artist": "嵐",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1535605061,
+   "title": "GLAMOROUS SKY",
+   "artist": "NANA & 中島 美嘉",
+   "year": 2005,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1535604792,
+   "title": "WILL",
+   "artist": "中島 美嘉",
+   "year": 2002,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1535484288,
+   "title": "雪の華",
+   "artist": "中島 美嘉",
+   "year": 2003,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538098529,
+   "title": "STARS",
+   "artist": "中島 美嘉",
+   "year": 2001,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1535504458,
+   "title": "LIFE",
+   "artist": "中島 美嘉",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538303081,
+   "title": "サウダージ",
+   "artist": "ポルノグラフィティ",
+   "year": 2000,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537375188,
+   "title": "アゲハ蝶",
+   "artist": "ポルノグラフィティ",
+   "year": 2001,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537263578,
+   "title": "ミュージック・アワー",
+   "artist": "ポルノグラフィティ",
+   "year": 2000,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537230152,
+   "title": "メリッサ",
+   "artist": "ポルノグラフィティ",
+   "year": 2003,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537234640,
+   "title": "ハネウマライダー",
+   "artist": "ポルノグラフィティ",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536394884,
+   "title": "遥か彼方",
+   "artist": "ASIAN KUNG-FU GENERATION",
+   "year": 2002,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536364102,
+   "title": "Re:Re:",
+   "artist": "ASIAN KUNG-FU GENERATION",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536394894,
+   "title": "アフターダーク",
+   "artist": "ASIAN KUNG-FU GENERATION",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536364097,
+   "title": "君の街まで",
+   "artist": "ASIAN KUNG-FU GENERATION",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536394888,
+   "title": "リライト",
+   "artist": "ASIAN KUNG-FU GENERATION",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537391605,
+   "title": "CHE.R.RY",
+   "artist": "YUI",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537418083,
+   "title": "again",
+   "artist": "YUI",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537446020,
+   "title": "SUMMER SONG",
+   "artist": "YUI",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537391601,
+   "title": "Rolling star",
+   "artist": "YUI",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537445927,
+   "title": "Good-bye days",
+   "artist": "YUI for 雨音 薫",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 657666313,
+   "title": "ポリリズム",
+   "artist": "Perfume",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 657666317,
+   "title": "チョコレイト・ディスコ",
+   "artist": "Perfume",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 657666318,
+   "title": "マカロニ",
+   "artist": "Perfume",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 657671900,
+   "title": "ワンルーム・ディスコ",
+   "artist": "Perfume",
+   "year": 2009,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1479641026,
+   "title": "Dream Fighter",
+   "artist": "Perfume",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 212081733,
+   "title": "恋愛レボリューション21",
+   "artist": "モーニング娘。",
+   "year": 2000,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 212081736,
+   "title": "ザ☆ピ〜ス!",
+   "artist": "モーニング娘。",
+   "year": 2001,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 209701104,
+   "title": "ハッピーサマーウェディング",
+   "artist": "モーニング娘。",
+   "year": 2000,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 209701112,
+   "title": "I WISH",
+   "artist": "モーニング娘。",
+   "year": 2000,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1874903436,
+   "title": "恋のダンスサイト",
+   "artist": "モーニング娘。",
+   "year": 2000,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1694666088,
+   "title": "曖歌",
+   "artist": "湘南乃風",
+   "year": 2009,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1694665563,
+   "title": "睡蓮花",
+   "artist": "湘南乃風",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1694666815,
+   "title": "応援歌 (feat. MOOMIN)",
+   "artist": "湘南乃風",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1694665911,
+   "title": "純恋歌",
+   "artist": "湘南乃風",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1694665931,
+   "title": "恋時雨",
+   "artist": "湘南乃風",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 269672809,
+   "title": "ちっぽけな勇気",
+   "artist": "FUNKY MONKEY BABYS",
+   "year": 2007,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 626133931,
+   "title": "告白",
+   "artist": "FUNKY MONKEY BABYS",
+   "year": 2008,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 352731323,
+   "title": "ヒーロー",
+   "artist": "FUNKY MONKEY BABYS",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 626133934,
+   "title": "希望の唄",
+   "artist": "FUNKY MONKEY BABYS",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 269672753,
+   "title": "Lovin' Life",
+   "artist": "FUNKY MONKEY BABYS",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1857511332,
+   "title": "粉雪",
+   "artist": "レミオロメン",
+   "year": 2005,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1857509406,
+   "title": "3月9日",
+   "artist": "レミオロメン",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1857510084,
+   "title": "南風",
+   "artist": "レミオロメン",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1857512000,
+   "title": "もっと遠くへ",
+   "artist": "レミオロメン",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1857511993,
+   "title": "Sakura",
+   "artist": "レミオロメン",
+   "year": 2009,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1445037956,
+   "title": "奏(かなで)",
+   "artist": "スキマスイッチ",
+   "year": 2004,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1443153873,
+   "title": "全力少年",
+   "artist": "スキマスイッチ",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1442953655,
+   "title": "ボクノート",
+   "artist": "スキマスイッチ",
+   "year": 2006,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444845551,
+   "title": "ゴールデンタイムラバー",
+   "artist": "スキマスイッチ",
+   "year": 2009,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1442953645,
+   "title": "ガラナ",
+   "artist": "スキマスイッチ",
+   "year": 2003,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1445297208,
+   "title": "さくら(独唱)",
+   "artist": "森山直太朗",
+   "year": 2002,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1443347242,
+   "title": "愛し君へ",
+   "artist": "森山直太朗",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1445124120,
+   "title": "生きてることが辛いなら",
+   "artist": "森山直太朗",
+   "year": 2007,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444129023,
+   "title": "夏の終わり",
+   "artist": "森山直太朗",
+   "year": 2003,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1445119372,
+   "title": "生きとし生ける物へ",
+   "artist": "森山直太朗",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 157112134,
+   "title": "もらい泣き",
+   "artist": "一青窈",
+   "year": 2002,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 157155289,
+   "title": "ハナミズキ",
+   "artist": "一青窈",
+   "year": 2004,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 261289623,
+   "title": "かざぐるま",
+   "artist": "一青窈",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 276536509,
+   "title": "つないで手",
+   "artist": "一青窈",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 294401186,
+   "title": "はじめて",
+   "artist": "一青窈",
+   "year": 2008,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 266439860,
+   "title": "リルラ リルハ",
+   "artist": "木村カエラ",
+   "year": 2005,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 317854200,
+   "title": "Butterfly",
+   "artist": "木村カエラ",
+   "year": 2009,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 351333623,
+   "title": "Magic Music",
+   "artist": "木村カエラ",
+   "year": 2006,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 266448223,
+   "title": "Snowdome",
+   "artist": "木村カエラ",
+   "year": 2007,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 351333631,
+   "title": "happiness!!!",
+   "artist": "木村カエラ",
+   "year": 2004,
+   "tier": 3,
+   "clearIntro": true
+  }
+ ]
+}

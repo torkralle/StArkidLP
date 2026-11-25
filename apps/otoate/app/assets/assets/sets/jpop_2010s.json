@@ -1,0 +1,1211 @@
+{
+ "id": "jpop_2010s",
+ "title": "J-POP 2010年代",
+ "genre": "jpop",
+ "decades": [
+  2010
+ ],
+ "reviewed": true,
+ "songs": [
+  {
+   "trackId": 1538265741,
+   "title": "Lemon",
+   "artist": "米津玄師",
+   "year": 2018,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440792118,
+   "title": "アイネクライネ",
+   "artist": "米津玄師",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538275665,
+   "title": "春雷",
+   "artist": "米津玄師",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440792261,
+   "title": "メランコリーキッチン",
+   "artist": "米津玄師",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538265739,
+   "title": "馬と鹿",
+   "artist": "米津玄師",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1273709797,
+   "title": "君はロックを聴かない",
+   "artist": "あいみょん",
+   "year": 2017,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1402042897,
+   "title": "マリーゴールド",
+   "artist": "あいみょん",
+   "year": 2018,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1455341000,
+   "title": "ハルノヒ",
+   "artist": "あいみょん",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1438144188,
+   "title": "今夜このまま",
+   "artist": "あいみょん",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1273710101,
+   "title": "愛を伝えたいだとか",
+   "artist": "あいみょん",
+   "year": 2017,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1459216694,
+   "title": "Pretender",
+   "artist": "Official髭男dism",
+   "year": 2019,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1394013614,
+   "title": "115万キロのフィルム",
+   "artist": "Official髭男dism",
+   "year": 2018,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1024006762,
+   "title": "恋の前ならえ",
+   "artist": "Official髭男dism",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1479397583,
+   "title": "イエスタデイ",
+   "artist": "Official髭男dism",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1394013615,
+   "title": "ノーダウト",
+   "artist": "Official髭男dism",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1451566361,
+   "title": "ヒロイン",
+   "artist": "back number",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1456063581,
+   "title": "HAPPY BIRTHDAY",
+   "artist": "back number",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1456063424,
+   "title": "オールドファッション",
+   "artist": "back number",
+   "year": 2018,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1456063313,
+   "title": "瞬き",
+   "artist": "back number",
+   "year": 2017,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1451577954,
+   "title": "手紙",
+   "artist": "back number",
+   "year": 2016,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1156375396,
+   "title": "恋",
+   "artist": "星野源",
+   "year": 2016,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1003258781,
+   "title": "SUN",
+   "artist": "星野源",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1264566029,
+   "title": "Family Song",
+   "artist": "星野源",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444990839,
+   "title": "アイデア",
+   "artist": "星野源",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1003282460,
+   "title": "くだらないの中に",
+   "artist": "星野源",
+   "year": 2011,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1556595103,
+   "title": "カイコ",
+   "artist": "RADWIMPS",
+   "year": 2014,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1556595104,
+   "title": "あいとわ",
+   "artist": "RADWIMPS",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1556595100,
+   "title": "白日 (10 years ver.)",
+   "artist": "RADWIMPS",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1556595105,
+   "title": "春灯",
+   "artist": "RADWIMPS",
+   "year": 2016,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1556595101,
+   "title": "ブリキ",
+   "artist": "RADWIMPS",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 454109457,
+   "title": "フライングゲット",
+   "artist": "AKB48",
+   "year": 2011,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 385919648,
+   "title": "ヘビーローテーション",
+   "artist": "AKB48",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 372367684,
+   "title": "ポニーテールとシュシュ",
+   "artist": "AKB48",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 435459290,
+   "title": "Everyday、カチューシャ",
+   "artist": "AKB48",
+   "year": 2011,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1063626220,
+   "title": "365日の紙飛行機",
+   "artist": "AKB48",
+   "year": 2015,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537767179,
+   "title": "帰り道は遠回りしたくなる",
+   "artist": "乃木坂46",
+   "year": 2018,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537740032,
+   "title": "インフルエンサー",
+   "artist": "乃木坂46",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537523295,
+   "title": "ガールズルール",
+   "artist": "乃木坂46",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537734949,
+   "title": "サヨナラの意味",
+   "artist": "乃木坂46",
+   "year": 2016,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537777544,
+   "title": "シンクロニシティ",
+   "artist": "乃木坂46",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537562991,
+   "title": "サイレントマジョリティー",
+   "artist": "欅坂46",
+   "year": 2016,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537754633,
+   "title": "ガラスを割れ!",
+   "artist": "欅坂46",
+   "year": 2018,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1533414468,
+   "title": "世界には愛しかない",
+   "artist": "欅坂46",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537737262,
+   "title": "二人セゾン",
+   "artist": "欅坂46",
+   "year": 2016,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537740796,
+   "title": "不協和音",
+   "artist": "欅坂46",
+   "year": 2017,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 985046186,
+   "title": "眠り姫",
+   "artist": "SEKAI NO OWARI",
+   "year": 2012,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 984442915,
+   "title": "RPG",
+   "artist": "SEKAI NO OWARI",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 984426543,
+   "title": "スターライトパレード",
+   "artist": "SEKAI NO OWARI",
+   "year": 2011,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 955796389,
+   "title": "炎と森のカーニバル",
+   "artist": "SEKAI NO OWARI",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1447614089,
+   "title": "虹色の戦争",
+   "artist": "SEKAI NO OWARI",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1838917139,
+   "title": "Wherever you are",
+   "artist": "ONE OK ROCK",
+   "year": 2010,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839482888,
+   "title": "Wasted Nights",
+   "artist": "ONE OK ROCK",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1838917472,
+   "title": "The Beginning",
+   "artist": "ONE OK ROCK",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839433622,
+   "title": "We are",
+   "artist": "ONE OK ROCK",
+   "year": 2017,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839482507,
+   "title": "Stand Out Fit In",
+   "artist": "ONE OK ROCK",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538262381,
+   "title": "if",
+   "artist": "西野カナ",
+   "year": 2010,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537253742,
+   "title": "トリセツ",
+   "artist": "西野カナ",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538262392,
+   "title": "Always",
+   "artist": "西野カナ",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538262332,
+   "title": "GO FOR IT !!",
+   "artist": "西野カナ",
+   "year": 2012,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538262333,
+   "title": "Best Friend",
+   "artist": "西野カナ",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1103995602,
+   "title": "キミに100パーセント",
+   "artist": "きゃりーぱみゅぱみゅ",
+   "year": 2012,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 660107970,
+   "title": "にんじゃりばんばん",
+   "artist": "きゃりーぱみゅぱみゅ",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 660108042,
+   "title": "インベーダーインベーダー",
+   "artist": "きゃりーぱみゅぱみゅ",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1103995478,
+   "title": "つけまつける",
+   "artist": "きゃりーぱみゅぱみゅ",
+   "year": 2011,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1031470155,
+   "title": "Crazy Party Night 〜ぱんぷきんの逆襲〜",
+   "artist": "きゃりーぱみゅぱみゅ",
+   "year": 2015,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1464887222,
+   "title": "レーザービーム",
+   "artist": "Perfume",
+   "year": 2011,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1420297601,
+   "title": "TOKYO GIRL (Remastered)",
+   "artist": "Perfume",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1479640879,
+   "title": "エレクトロ・ワールド",
+   "artist": "Perfume",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1479641035,
+   "title": "ナチュラルに恋して",
+   "artist": "Perfume",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1465083687,
+   "title": "スパイス",
+   "artist": "Perfume",
+   "year": 2011,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485858777,
+   "title": "GUTS !",
+   "artist": "嵐",
+   "year": 2014,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485867808,
+   "title": "Monster",
+   "artist": "嵐",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485848313,
+   "title": "迷宮ラブソング",
+   "artist": "嵐",
+   "year": 2011,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485849202,
+   "title": "果てない空",
+   "artist": "嵐",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1485848641,
+   "title": "ワイルド アット ハート",
+   "artist": "嵐",
+   "year": 2012,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 772944916,
+   "title": "冬物語",
+   "artist": "三代目 J SOUL BROTHERS from EXILE TRIBE",
+   "year": 2013,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1169320319,
+   "title": "Welcome to TOKYO",
+   "artist": "三代目 J Soul Brothers from EXILE TRIBE",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 958015345,
+   "title": "R.Y.U.S.E.I.",
+   "artist": "三代目 J SOUL BROTHERS from EXILE TRIBE",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1453941646,
+   "title": "Yes we are",
+   "artist": "三代目 J SOUL BROTHERS from EXILE TRIBE",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 584740194,
+   "title": "花火",
+   "artist": "三代目 J SOUL BROTHERS from EXILE TRIBE",
+   "year": 2012,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1319369012,
+   "title": "シグナル",
+   "artist": "WANIMA",
+   "year": 2018,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1480390351,
+   "title": "りんどう",
+   "artist": "WANIMA",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1319369442,
+   "title": "ともに",
+   "artist": "WANIMA",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1319369019,
+   "title": "やってみよう",
+   "artist": "WANIMA",
+   "year": 2017,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1718756523,
+   "title": "いいから",
+   "artist": "WANIMA",
+   "year": 2015,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 438648523,
+   "title": "FLY AGAIN",
+   "artist": "MAN WITH A MISSION",
+   "year": 2011,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537776061,
+   "title": "Remember Me",
+   "artist": "MAN WITH A MISSION",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 597398126,
+   "title": "Emotions",
+   "artist": "MAN WITH A MISSION",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537746316,
+   "title": "Raise your flag",
+   "artist": "MAN WITH A MISSION",
+   "year": 2015,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 597398127,
+   "title": "Take What U Want",
+   "artist": "MAN WITH A MISSION",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 978940532,
+   "title": "私以外私じゃないの",
+   "artist": "ゲスの極み乙女",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1065727736,
+   "title": "ロマンスがありあまる",
+   "artist": "ゲスの極み乙女",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 750743720,
+   "title": "キラーボール",
+   "artist": "ゲスの極み乙女",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 918328661,
+   "title": "猟奇的なキスを私にして",
+   "artist": "ゲスの極み乙女",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1065727734,
+   "title": "両成敗でいいじゃない",
+   "artist": "ゲスの極み乙女",
+   "year": 2016,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536455325,
+   "title": "シルエット",
+   "artist": "KANA-BOON",
+   "year": 2014,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 633973274,
+   "title": "ないものねだり",
+   "artist": "KANA-BOON",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538166939,
+   "title": "Fighter",
+   "artist": "KANA-BOON",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538789847,
+   "title": "盛者必衰の理、お断り",
+   "artist": "KANA-BOON",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538160778,
+   "title": "ハグルマ",
+   "artist": "KANA-BOON",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440785669,
+   "title": "ワタリドリ",
+   "artist": "[Alexandros]",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 592333143,
+   "title": "Starrrrrrr",
+   "artist": "[Alexandros]",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440786725,
+   "title": "Run Away",
+   "artist": "[Alexandros]",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1470585076,
+   "title": "月色ホライズン",
+   "artist": "[Alexandros]",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440786239,
+   "title": "Adventure",
+   "artist": "[Alexandros]",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1384347075,
+   "title": "長く短い祭",
+   "artist": "椎名林檎 & 浮雲",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1385324853,
+   "title": "人生は夢だらけ",
+   "artist": "椎名林檎",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1384351747,
+   "title": "JL005便で",
+   "artist": "椎名林檎",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1384351853,
+   "title": "NIPPON",
+   "artist": "椎名林檎",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1384345525,
+   "title": "孤独のあかつき",
+   "artist": "椎名林檎",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1387753665,
+   "title": "U.S.A.",
+   "artist": "DA PUMP",
+   "year": 2018,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1474346247,
+   "title": "P.A.R.T.Y. ~ユニバース・フェスティバル~",
+   "artist": "DA PUMP",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 978239102,
+   "title": "if... arekarabokura",
+   "artist": "DA PUMP",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1453553816,
+   "title": "桜",
+   "artist": "DA PUMP",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1444712262,
+   "title": "if...",
+   "artist": "DA PUMP",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536027148,
+   "title": "白日",
+   "artist": "King Gnu",
+   "year": 2019,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538116465,
+   "title": "飛行艇",
+   "artist": "King Gnu",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538116461,
+   "title": "Teenager Forever",
+   "artist": "King Gnu",
+   "year": 2019,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538287807,
+   "title": "Vinyl",
+   "artist": "King Gnu",
+   "year": 2017,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538114964,
+   "title": "Slumberland",
+   "artist": "King Gnu",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1188915173,
+   "title": "STAY TUNE",
+   "artist": "Suchmos",
+   "year": 2016,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1006497438,
+   "title": "Miree",
+   "artist": "Suchmos",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1188915310,
+   "title": "MINT",
+   "artist": "Suchmos",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538172013,
+   "title": "808",
+   "artist": "Suchmos",
+   "year": 2018,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1006497435,
+   "title": "GAGA",
+   "artist": "Suchmos",
+   "year": 2015,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1842293302,
+   "title": "夜は眠れるかい?",
+   "artist": "flumpool",
+   "year": 2016,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839432057,
+   "title": "ビリーバーズ・ハイ",
+   "artist": "flumpool",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839428960,
+   "title": "どんな未来にも愛はある",
+   "artist": "flumpool",
+   "year": 2011,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839428971,
+   "title": "証",
+   "artist": "flumpool",
+   "year": 2011,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1838917907,
+   "title": "reboot～あきらめない詩～",
+   "artist": "flumpool",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538280994,
+   "title": "あなたがここにいて抱きしめることができるなら",
+   "artist": "miwa",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538283423,
+   "title": "ヒカリヘ",
+   "artist": "miwa",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537513059,
+   "title": "片想い",
+   "artist": "miwa",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538277033,
+   "title": "ミラクル",
+   "artist": "miwa",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538280987,
+   "title": "夜空。 (feat. Hazzie)",
+   "artist": "miwa",
+   "year": 2015,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1198925442,
+   "title": "君がくれた夏",
+   "artist": "家入レオ",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1198925446,
+   "title": "Silly",
+   "artist": "家入レオ",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1198925456,
+   "title": "サブリナ",
+   "artist": "家入レオ",
+   "year": 2012,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1198925455,
+   "title": "Shine",
+   "artist": "家入レオ",
+   "year": 2012,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1198925350,
+   "title": "僕たちの未来",
+   "artist": "家入レオ",
+   "year": 2016,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538127672,
+   "title": "笑顔",
+   "artist": "いきものがかり",
+   "year": 2013,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536263241,
+   "title": "うるわしきひと",
+   "artist": "いきものがかり",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538140652,
+   "title": "帰りたくなったよ",
+   "artist": "いきものがかり",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538140870,
+   "title": "ありがとう",
+   "artist": "いきものがかり",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1536263240,
+   "title": "SAKURA",
+   "artist": "いきものがかり",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 767050885,
+   "title": "表裏一体",
+   "artist": "ゆず",
+   "year": 2013,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 798019859,
+   "title": "雨のち晴レルヤ",
+   "artist": "ゆず",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1223976737,
+   "title": "虹",
+   "artist": "ゆず",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 798021895,
+   "title": "友 〜旅立ちの時〜",
+   "artist": "ゆず",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 628286694,
+   "title": "イロトリドリ",
+   "artist": "ゆず",
+   "year": 2013,
+   "tier": 3,
+   "clearIntro": true
+  }
+ ]
+}

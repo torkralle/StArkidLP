@@ -1,0 +1,855 @@
+{
+ "id": "western_hits",
+ "title": "洋楽ヒット",
+ "genre": "western",
+ "decades": [
+  1980,
+  1990,
+  2000,
+  2010,
+  2020
+ ],
+ "reviewed": true,
+ "songs": [
+  {
+   "trackId": 1468058171,
+   "title": "Cruel Summer",
+   "artist": "テイラー・スウィフト",
+   "year": 2019,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440819310,
+   "title": "Shake It Off",
+   "artist": "テイラー・スウィフト",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6814997425,
+   "title": "Patient Zero",
+   "artist": "テイラー・スウィフト",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6775527443,
+   "title": "I Knew It, I Knew You (From \"Toy Story 5\")",
+   "artist": "テイラー・スウィフト",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1193701392,
+   "title": "Shape of You",
+   "artist": "エド・シーラン",
+   "year": 2017,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1193701400,
+   "title": "Perfect",
+   "artist": "エド・シーラン",
+   "year": 2017,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 858517200,
+   "title": "Thinking Out Loud",
+   "artist": "エド・シーラン",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 858517168,
+   "title": "Photograph",
+   "artist": "エド・シーラン",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 578054246,
+   "title": "Runaway Baby",
+   "artist": "ブルーノ・マーズ",
+   "year": 2010,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 578054244,
+   "title": "Just the Way You Are",
+   "artist": "ブルーノ・マーズ",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1161504043,
+   "title": "That's What I Like",
+   "artist": "ブルーノ・マーズ",
+   "year": 2016,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1866732800,
+   "title": "I Just Might",
+   "artist": "ブルーノ・マーズ",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440859660,
+   "title": "Break Free (feat. Zedd)",
+   "artist": "アリアナ・グランデ",
+   "year": 2014,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6763656725,
+   "title": "hate that i made you love me",
+   "artist": "アリアナ・グランデ",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440859647,
+   "title": "One Last Time",
+   "artist": "アリアナ・グランデ",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440859636,
+   "title": "Problem (feat. Iggy Azalea)",
+   "artist": "アリアナ・グランデ",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440851719,
+   "title": "This Love",
+   "artist": "マルーン5",
+   "year": 2002,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440851735,
+   "title": "Sunday Morning",
+   "artist": "マルーン5",
+   "year": 2002,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440826546,
+   "title": "Animals",
+   "artist": "マルーン5",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440826265,
+   "title": "Maps",
+   "artist": "マルーン5",
+   "year": 2014,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1051332387,
+   "title": "Hello",
+   "artist": "アデル",
+   "year": 2015,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1186725256,
+   "title": "Rolling in the Deep",
+   "artist": "アデル",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1590036021,
+   "title": "Easy On Me",
+   "artist": "アデル",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1186725371,
+   "title": "Someone Like You",
+   "artist": "アデル",
+   "year": 2011,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1621817795,
+   "title": "Main Titles (You’ve Been Called Back to Top Gun)",
+   "artist": "Lorne Balfe, Harold Faltermeyer, Lady Gaga & Hans Zimmer",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1621817907,
+   "title": "Top Gun Anthem",
+   "artist": "Lorne Balfe, Harold Faltermeyer, Lady Gaga & Hans Zimmer",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1621817889,
+   "title": "Darkstar",
+   "artist": "Lorne Balfe, Harold Faltermeyer, Lady Gaga & Hans Zimmer",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1621817897,
+   "title": "Dagger One Is Hit / Time To Let Go",
+   "artist": "Lorne Balfe, Harold Faltermeyer, Lady Gaga & Hans Zimmer",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440795028,
+   "title": "Beauty and a Beat (feat. Nicki Minaj)",
+   "artist": "ジャスティン・ビーバー",
+   "year": 2012,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1443008970,
+   "title": "Baby (feat. Ludacris)",
+   "artist": "ジャスティン・ビーバー",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440849170,
+   "title": "Love Yourself",
+   "artist": "ジャスティン・ビーバー",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440849056,
+   "title": "What Do You Mean?",
+   "artist": "ジャスティン・ビーバー",
+   "year": 2015,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1122773680,
+   "title": "Viva La Vida",
+   "artist": "コールドプレイ",
+   "year": 2008,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 829910927,
+   "title": "A Sky Full of Stars",
+   "artist": "コールドプレイ",
+   "year": 2014,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1122782283,
+   "title": "Yellow",
+   "artist": "コールドプレイ",
+   "year": 2000,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1576350174,
+   "title": "My Universe",
+   "artist": "Coldplay X BTS",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 315025823,
+   "title": "Complicated",
+   "artist": "アヴリル・ラヴィーン",
+   "year": 2002,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 315025826,
+   "title": "Sk8er Boi",
+   "artist": "アヴリル・ラヴィーン",
+   "year": 2002,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 532458095,
+   "title": "What the Hell",
+   "artist": "アヴリル・ラヴィーン",
+   "year": 2011,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 315025828,
+   "title": "I'm with You",
+   "artist": "アヴリル・ラヴィーン",
+   "year": 2002,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 283567164,
+   "title": "I Want It That Way",
+   "artist": "バックストリート・ボーイズ",
+   "year": 1999,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 303171282,
+   "title": "Shape of My Heart",
+   "artist": "バックストリート・ボーイズ",
+   "year": 2000,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 533020725,
+   "title": "Everybody (Backstreet's Back) [Radio Edit]",
+   "artist": "バックストリート・ボーイズ",
+   "year": 1997,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 533020726,
+   "title": "As Long as You Love Me",
+   "artist": "バックストリート・ボーイズ",
+   "year": 1996,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440645045,
+   "title": "スーパースター",
+   "artist": "カーペンターズ & ロイヤル・フィルハーモニー管弦楽団",
+   "year": 2018,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440644792,
+   "title": "イエスタデイ・ワンス・モア",
+   "artist": "カーペンターズ & ロイヤル・フィルハーモニー管弦楽団",
+   "year": 2018,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440724197,
+   "title": "Touch Me When We're Dancing",
+   "artist": "カーペンターズ",
+   "year": 1981,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1413927543,
+   "title": "タッチ・ミー",
+   "artist": "カーペンターズ",
+   "year": 1981,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1422648822,
+   "title": "Lay All Your Love On Me",
+   "artist": "アバ",
+   "year": 1980,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1422648844,
+   "title": "The Winner Takes It All",
+   "artist": "アバ",
+   "year": 1980,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1583776228,
+   "title": "Don't Shut Me Down",
+   "artist": "アバ",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1530394074,
+   "title": "レイ・オール・ユア・ラヴ・オン・ミー",
+   "artist": "アバ",
+   "year": 1980,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6832831742,
+   "title": "Thank God It's Christmas... Again!",
+   "artist": "クイーン",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6832831744,
+   "title": "A Winter's Tale",
+   "artist": "クイーン",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6832831743,
+   "title": "Thank God It's Christmas",
+   "artist": "クイーン",
+   "year": 1984,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6781076397,
+   "title": "Another One Bites The Dust",
+   "artist": "クイーン",
+   "year": 1980,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 269573364,
+   "title": "ビリー・ジーン",
+   "artist": "マイケル・ジャクソン",
+   "year": 1982,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 269573341,
+   "title": "Beat It",
+   "artist": "マイケル・ジャクソン",
+   "year": 1982,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 159294551,
+   "title": "Smooth Criminal",
+   "artist": "マイケル・ジャクソン",
+   "year": 1987,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 269573303,
+   "title": "Thriller",
+   "artist": "マイケル・ジャクソン",
+   "year": 1982,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 585972803,
+   "title": "All I Want for Christmas Is You",
+   "artist": "マライア・キャリー",
+   "year": 1994,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 169962272,
+   "title": "Always Be My Baby",
+   "artist": "マライア・キャリー",
+   "year": 1995,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1476731889,
+   "title": "We Belong Together",
+   "artist": "マライア・キャリー",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 193524820,
+   "title": "Emotions",
+   "artist": "マライア・キャリー",
+   "year": 1991,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 517942283,
+   "title": "My Heart Will Go On (Love Theme from \"Titanic\")",
+   "artist": "セリーヌ・ディオン & ジェームズ・ホーナー",
+   "year": 1997,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1473319246,
+   "title": "It's All Coming Back to Me Now",
+   "artist": "セリーヌ・ディオン",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1370272918,
+   "title": "Because You Loved Me",
+   "artist": "セリーヌ・ディオン",
+   "year": 1996,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1370272914,
+   "title": "That's the Way It Is",
+   "artist": "セリーヌ・ディオン",
+   "year": 1999,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1228739609,
+   "title": "New Rules",
+   "artist": "Dua Lipa",
+   "year": 2017,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538003843,
+   "title": "Levitating",
+   "artist": "Dua Lipa",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6805877227,
+   "title": "Training Season",
+   "artist": "Dua Lipa",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1484636829,
+   "title": "Don't Start Now",
+   "artist": "Dua Lipa",
+   "year": 2019,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1458925223,
+   "title": "Power is Power",
+   "artist": "SZA & The Weeknd & Travis Scott",
+   "year": 2019,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1450695739,
+   "title": "bad guy",
+   "artist": "ビリー・アイリッシュ",
+   "year": 2019,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1739659142,
+   "title": "BIRDS OF A FEATHER",
+   "artist": "ビリー・アイリッシュ",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440899467,
+   "title": "ocean eyes",
+   "artist": "ビリー・アイリッシュ",
+   "year": 2015,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1739659144,
+   "title": "WILDFLOWER",
+   "artist": "ビリー・アイリッシュ",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1889992115,
+   "title": "stupid song",
+   "artist": "オリヴィア・ロドリゴ",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1889992113,
+   "title": "drop dead",
+   "artist": "オリヴィア・ロドリゴ",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6829976181,
+   "title": "take me home (4 christmas)",
+   "artist": "オリヴィア・ロドリゴ",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1889992116,
+   "title": "honeybee",
+   "artist": "オリヴィア・ロドリゴ",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1615585008,
+   "title": "As It Was",
+   "artist": "ハリー・スタイルズ",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1870984036,
+   "title": "American Girls",
+   "artist": "ハリー・スタイルズ",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1870984045,
+   "title": "Coming Up Roses",
+   "artist": "ハリー・スタイルズ",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1226034393,
+   "title": "Sign of the Times",
+   "artist": "ハリー・スタイルズ",
+   "year": 2017,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 716270310,
+   "title": "California Gurls (feat. Snoop Dogg)",
+   "artist": "ケイティ・ペリー",
+   "year": 2010,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440818897,
+   "title": "Roar",
+   "artist": "ケイティ・ペリー",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 716270404,
+   "title": "The One That Got Away",
+   "artist": "ケイティ・ペリー",
+   "year": 2010,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1013030252,
+   "title": "Firework",
+   "artist": "ケイティ・ペリー",
+   "year": 2010,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 697195462,
+   "title": "One More Time",
+   "artist": "ダフト・パンク",
+   "year": 2000,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 617154366,
+   "title": "Get Lucky",
+   "artist": "ダフト・パンク, Pharrell Williams & ナイル・ロジャース",
+   "year": 2013,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 697195787,
+   "title": "Harder Better Faster Stronger",
+   "artist": "ダフト・パンク",
+   "year": 2001,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 696479088,
+   "title": "Technologic",
+   "artist": "ダフト・パンク",
+   "year": 2005,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 523229275,
+   "title": "レッツ・グルーヴ",
+   "artist": "アース・ウィンド・アンド・ファイアー",
+   "year": 1981,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1436074181,
+   "title": "Love Together",
+   "artist": "アース・ウィンド・アンド・ファイアー",
+   "year": 2005,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1530769004,
+   "title": "Let's Groove (Single Version)",
+   "artist": "アース・ウィンド・アンド・ファイアー",
+   "year": 1981,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1579983284,
+   "title": "You Want My Love (feat. Lucky Daye)",
+   "artist": "アース・ウィンド・アンド・ファイアー",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1422955211,
+   "title": "リヴィン・オン・ア・プレイヤー",
+   "artist": "ボン・ジョヴィ",
+   "year": 1986,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440813250,
+   "title": "It's My Life",
+   "artist": "ボン・ジョヴィ",
+   "year": 2000,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1422954999,
+   "title": "禁じられた愛",
+   "artist": "ボン・ジョヴィ",
+   "year": 1986,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1440805631,
+   "title": "Have a Nice Day",
+   "artist": "ボン・ジョヴィ",
+   "year": 2006,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1819861157,
+   "title": "Tears",
+   "artist": "サブリナ・カーペンター",
+   "year": 2025,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1750307079,
+   "title": "Taste",
+   "artist": "サブリナ・カーペンター",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1631579019,
+   "title": "Nonsense",
+   "artist": "サブリナ・カーペンター",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1819861170,
+   "title": "House Tour",
+   "artist": "サブリナ・カーペンター",
+   "year": 2025,
+   "tier": 3,
+   "clearIntro": true
+  }
+ ]
+}

@@ -1,0 +1,1211 @@
+{
+ "id": "jpop_2020s",
+ "title": "J-POP 2020年代",
+ "genre": "jpop",
+ "decades": [
+  2020
+ ],
+ "reviewed": true,
+ "songs": [
+  {
+   "trackId": 6817668876,
+   "title": "咲き誇れ",
+   "artist": "YOASOBI",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1528119630,
+   "title": "群青",
+   "artist": "YOASOBI",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1494399118,
+   "title": "あの夢をなぞって",
+   "artist": "YOASOBI",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1679278167,
+   "title": "アイドル",
+   "artist": "YOASOBI",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1752838890,
+   "title": "UNDEAD",
+   "artist": "YOASOBI",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1704093812,
+   "title": "唱",
+   "artist": "Ado",
+   "year": 2023,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1551508124,
+   "title": "ギラギラ",
+   "artist": "Ado",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1636446959,
+   "title": "私は最強",
+   "artist": "Ado",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1562772211,
+   "title": "踊",
+   "artist": "Ado",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1626392364,
+   "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+   "artist": "Ado",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1706829387,
+   "title": "しわあわせ",
+   "artist": "Vaundy",
+   "year": 2021,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1706832137,
+   "title": "怪獣の花唄",
+   "artist": "Vaundy",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1706828627,
+   "title": "踊り子",
+   "artist": "Vaundy",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1706832351,
+   "title": "napori",
+   "artist": "Vaundy",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1771366342,
+   "title": "風神",
+   "artist": "Vaundy",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1733130377,
+   "title": "満ちてゆく",
+   "artist": "藤井 風",
+   "year": 2024,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1555177261,
+   "title": "旅路",
+   "artist": "藤井 風",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1611482698,
+   "title": "ガーデン",
+   "artist": "藤井 風",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1710724753,
+   "title": "花",
+   "artist": "藤井 風",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1564752145,
+   "title": "きらり",
+   "artist": "藤井 風",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1534620183,
+   "title": "ドライフラワー",
+   "artist": "優里",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1589915077,
+   "title": "ベテルギウス",
+   "artist": "優里",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1658757540,
+   "title": "ビリミリオン",
+   "artist": "優里",
+   "year": 2023,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1599543187,
+   "title": "レオ",
+   "artist": "優里",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1572961420,
+   "title": "シャッター",
+   "artist": "優里",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6788211810,
+   "title": "Brand New",
+   "artist": "Mrs. GREEN APPLE",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1739088799,
+   "title": "ライラック",
+   "artist": "Mrs. GREEN APPLE",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1867354081,
+   "title": "lulu.",
+   "artist": "Mrs. GREEN APPLE",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1790599512,
+   "title": "ダーリン",
+   "artist": "Mrs. GREEN APPLE",
+   "year": 2025,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1648865575,
+   "title": "Soranji",
+   "artist": "Mrs. GREEN APPLE",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1648108988,
+   "title": "Subtitle",
+   "artist": "Official髭男dism",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1492963535,
+   "title": "I LOVE...",
+   "artist": "Official髭男dism",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1628261505,
+   "title": "ミックスナッツ",
+   "artist": "Official髭男dism",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1883590250,
+   "title": "エルダーフラワー",
+   "artist": "Official髭男dism",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1563683060,
+   "title": "Cry Baby",
+   "artist": "Official髭男dism",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1860538548,
+   "title": "AIZO",
+   "artist": "King Gnu",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1600395740,
+   "title": "逆夢",
+   "artist": "King Gnu",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1609217181,
+   "title": "カメレオン",
+   "artist": "King Gnu",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1702823583,
+   "title": "SPECIALZ",
+   "artist": "King Gnu",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6794271993,
+   "title": "GO GHOST",
+   "artist": "King Gnu",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1508133095,
+   "title": "裸の心",
+   "artist": "あいみょん",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1551664064,
+   "title": "桜が降る夜は",
+   "artist": "あいみょん",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1634772810,
+   "title": "姿",
+   "artist": "あいみょん",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1588742426,
+   "title": "ハート",
+   "artist": "あいみょん",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1677103153,
+   "title": "愛の花",
+   "artist": "あいみょん",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1837658529,
+   "title": "IRIS OUT",
+   "artist": "米津玄師",
+   "year": 2025,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6774039202,
+   "title": "烏 - Raven",
+   "artist": "米津玄師",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538265736,
+   "title": "感電",
+   "artist": "米津玄師",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6785367852,
+   "title": "夜鷹 - Yodaka",
+   "artist": "米津玄師",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1840081736,
+   "title": "JANE DOE",
+   "artist": "米津玄師 & 宇多田ヒカル",
+   "year": 2025,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1808852932,
+   "title": "ブルーアンバー",
+   "artist": "back number",
+   "year": 2025,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1579439168,
+   "title": "水平線",
+   "artist": "back number",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1860453512,
+   "title": "どうしてもどうしても",
+   "artist": "back number",
+   "year": 2025,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1566811795,
+   "title": "怪盗",
+   "artist": "back number",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1648411352,
+   "title": "アイラブユー",
+   "artist": "back number",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1567158351,
+   "title": "W / X / Y",
+   "artist": "Tani Yuuki",
+   "year": 2021,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1643856254,
+   "title": "もう一度",
+   "artist": "Tani Yuuki",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1596879565,
+   "title": "おかえり",
+   "artist": "Tani Yuuki",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1596879960,
+   "title": "愛言葉",
+   "artist": "Tani Yuuki",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1521618651,
+   "title": "Myra",
+   "artist": "Tani Yuuki",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1639023912,
+   "title": "NIGHT DANCER",
+   "artist": "imase",
+   "year": 2022,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1770249670,
+   "title": "Dried Flower",
+   "artist": "imase",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6785802769,
+   "title": "Fiction",
+   "artist": "imase",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1598758504,
+   "title": "Have a nice day",
+   "artist": "imase",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1687588567,
+   "title": "Nagisa",
+   "artist": "imase",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1771603031,
+   "title": "オトノケ - Otonoke",
+   "artist": "Creepy Nuts",
+   "year": 2024,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1720332181,
+   "title": "Bling-Bang-Bang-Born",
+   "artist": "Creepy Nuts",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1581367766,
+   "title": "のびしろ",
+   "artist": "Creepy Nuts",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1791484002,
+   "title": "doppelgänger",
+   "artist": "Creepy Nuts",
+   "year": 2025,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1526095601,
+   "title": "かつて天才だった俺たちへ",
+   "artist": "Creepy Nuts",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1498880491,
+   "title": "オトナブルー",
+   "artist": "新しい学校のリーダーズ",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1711148488,
+   "title": "Tokyo Calling",
+   "artist": "新しい学校のリーダーズ",
+   "year": 2023,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1577308868,
+   "title": "Pineapple Kryptonite",
+   "artist": "新しい学校のリーダーズ",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1679910791,
+   "title": "青春を切り裂く波動",
+   "artist": "新しい学校のリーダーズ",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1746886155,
+   "title": "Fly High",
+   "artist": "新しい学校のリーダーズ",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6782756028,
+   "title": "BUGS LIFE",
+   "artist": "Number_i",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6807250735,
+   "title": "DIGITAL GIRL",
+   "artist": "Number_i",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6807250731,
+   "title": "REBON",
+   "artist": "Number_i",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6780368967,
+   "title": "3XL",
+   "artist": "Number_i",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6807250739,
+   "title": "PATRASCHE",
+   "artist": "Number_i",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1807959956,
+   "title": "夢中",
+   "artist": "BE:FIRST",
+   "year": 2025,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6777027010,
+   "title": "Missing",
+   "artist": "BE:FIRST",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6817729829,
+   "title": "NOW U KNOW",
+   "artist": "BE:FIRST",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6817729836,
+   "title": "It's not a bad life",
+   "artist": "BE:FIRST",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1876143316,
+   "title": "BE:FIRST ALL DAY",
+   "artist": "BE:FIRST",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6807076335,
+   "title": "Sour Grapes",
+   "artist": "NiziU",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538127026,
+   "title": "Make you happy",
+   "artist": "NiziU",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1732275019,
+   "title": "SWEET NONFICTION",
+   "artist": "NiziU",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1713138343,
+   "title": "HEARTRIS",
+   "artist": "NiziU",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1780495330,
+   "title": "AlwayS",
+   "artist": "NiziU",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1535412388,
+   "title": "silent",
+   "artist": "SEKAI NO OWARI",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1706781383,
+   "title": "最高到達点",
+   "artist": "SEKAI NO OWARI",
+   "year": 2023,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1618345214,
+   "title": "Habit",
+   "artist": "SEKAI NO OWARI",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6811759780,
+   "title": "Supermarket",
+   "artist": "SEKAI NO OWARI",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1852929107,
+   "title": "最大公約数",
+   "artist": "SEKAI NO OWARI",
+   "year": 2025,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538137547,
+   "title": "Mela!",
+   "artist": "緑黄色社会",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1711411579,
+   "title": "花になって - Be a flower",
+   "artist": "緑黄色社会",
+   "year": 2023,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1697302630,
+   "title": "サマータイムシンデレラ",
+   "artist": "緑黄色社会",
+   "year": 2023,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6792312145,
+   "title": "晴々",
+   "artist": "緑黄色社会",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1753182447,
+   "title": "恥ずかしいか青春は",
+   "artist": "緑黄色社会",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1858168846,
+   "title": "セレナーデ",
+   "artist": "なとり",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1815738585,
+   "title": "プロポーズ",
+   "artist": "なとり",
+   "year": 2025,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1640410315,
+   "title": "Overdose",
+   "artist": "なとり",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1737175490,
+   "title": "絶対零度",
+   "artist": "なとり",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1677741501,
+   "title": "フライデー・ナイト",
+   "artist": "なとり",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839433876,
+   "title": "シンデレラボーイ",
+   "artist": "Saucy Dog",
+   "year": 2021,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839433157,
+   "title": "結",
+   "artist": "Saucy Dog",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839434021,
+   "title": "今更だって僕は言うかな",
+   "artist": "Saucy Dog",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839481499,
+   "title": "魔法にかけられて",
+   "artist": "Saucy Dog",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1839480460,
+   "title": "紫苑",
+   "artist": "Saucy Dog",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6799944400,
+   "title": "運命さがし",
+   "artist": "マカロニえんぴつ",
+   "year": 2026,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1496731154,
+   "title": "恋人ごっこ",
+   "artist": "マカロニえんぴつ",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1591370660,
+   "title": "なんでもないよ、",
+   "artist": "マカロニえんぴつ",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1501480110,
+   "title": "愛のレンタル",
+   "artist": "マカロニえんぴつ",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1534684789,
+   "title": "ルート16",
+   "artist": "マカロニえんぴつ",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1506186636,
+   "title": "春を告げる",
+   "artist": "yama",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1644816114,
+   "title": "色彩",
+   "artist": "yama",
+   "year": 2022,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1526821935,
+   "title": "a.m.3:21",
+   "artist": "yama",
+   "year": 2020,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1589026080,
+   "title": "Oz.",
+   "artist": "yama",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1545904100,
+   "title": "麻痺",
+   "artist": "yama",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1574860055,
+   "title": "Ordinary days",
+   "artist": "milet",
+   "year": 2021,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1678949889,
+   "title": "絆ノ奇跡",
+   "artist": "MAN WITH A MISSION & milet",
+   "year": 2023,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 6828291704,
+   "title": "My Voice, My Life",
+   "artist": "milet",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1708333825,
+   "title": "Anytime Anywhere",
+   "artist": "milet",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1863631485,
+   "title": "The Story of Us",
+   "artist": "milet",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1594814706,
+   "title": "残響散歌",
+   "artist": "Aimer",
+   "year": 2021,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1827140072,
+   "title": "太陽が昇らない世界 - A World Where the Sun Never Rises",
+   "artist": "Aimer",
+   "year": 2025,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1598330658,
+   "title": "おもかげ (produced by Vaundy)",
+   "artist": "milet, Aimer & 幾田りら",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1594814709,
+   "title": "朝が来る",
+   "artist": "Aimer",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1538262061,
+   "title": "SPARK-AGAIN",
+   "artist": "Aimer",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1531847485,
+   "title": "炎",
+   "artist": "LiSA",
+   "year": 2020,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1827140040,
+   "title": "残酷な夜に輝け - Shine in the Cruel Night",
+   "artist": "LiSA",
+   "year": 2025,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1589411366,
+   "title": "明け星",
+   "artist": "LiSA",
+   "year": 2021,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1537406658,
+   "title": "再会 (produced by Ayase)",
+   "artist": "LiSA & Uru",
+   "year": 2020,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1588049004,
+   "title": "往け",
+   "artist": "LiSA",
+   "year": 2021,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1745488818,
+   "title": "はいよろこんで",
+   "artist": "こっちのけんと",
+   "year": 2024,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1803175804,
+   "title": "けっかおーらい",
+   "artist": "こっちのけんと",
+   "year": 2025,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1804307547,
+   "title": "それもいいね",
+   "artist": "Wakeys & こっちのけんと",
+   "year": 2025,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1771376408,
+   "title": "もういいよ",
+   "artist": "こっちのけんと",
+   "year": 2024,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1656864163,
+   "title": "死ぬな!",
+   "artist": "こっちのけんと",
+   "year": 2022,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1705678978,
+   "title": "晩餐歌 - Bansanka",
+   "artist": "tuki.",
+   "year": 2023,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1755114940,
+   "title": "ひゅるりらぱっぱ - HYURURIRAPAPPA",
+   "artist": "tuki.",
+   "year": 2024,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1862116063,
+   "title": "コトノハ - Kotonoha",
+   "artist": "tuki.",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1886100218,
+   "title": "零-zero-",
+   "artist": "tuki.",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1716694879,
+   "title": "一輪花 - Ichirinka",
+   "artist": "tuki.",
+   "year": 2023,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1821849522,
+   "title": "Blue Jeans",
+   "artist": "HANA",
+   "year": 2025,
+   "tier": 1,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1803063210,
+   "title": "ROSE",
+   "artist": "HANA",
+   "year": 2025,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1874511682,
+   "title": "ALL IN",
+   "artist": "HANA",
+   "year": 2026,
+   "tier": 2,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1874511679,
+   "title": "Bloom",
+   "artist": "HANA",
+   "year": 2026,
+   "tier": 3,
+   "clearIntro": true
+  },
+  {
+   "trackId": 1808822211,
+   "title": "Tiger",
+   "artist": "HANA",
+   "year": 2025,
+   "tier": 3,
+   "clearIntro": true
+  }
+ ]
+}
