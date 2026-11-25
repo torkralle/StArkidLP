@@ -6,6 +6,12 @@ export default {
       url.protocol = 'https:';
       return Response.redirect(url.toString(), 301);
     }
+    // Search Console の確認ファイルは .html 付きの URL のまま 200 で返す（静的配信だと /google… へ 307 になり確認に失敗しうる）
+    if (/^\/google[0-9a-f]+\.html$/.test(url.pathname)) {
+      url.pathname = url.pathname.slice(0, -5);
+      const res = await env.ASSETS.fetch(new Request(url.toString(), request));
+      return new Response(res.body, { status: res.status, headers: { 'content-type': 'text/html; charset=utf-8' } });
+    }
     return env.ASSETS.fetch(request);
   },
 };
