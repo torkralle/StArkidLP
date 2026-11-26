@@ -973,4 +973,28 @@
     <loc>https://st.arkid.jp/apps/komemi/app/</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/nanikiru/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/nanikiru/privacy</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/nanikiru/support</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/nanikiru/terms</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
