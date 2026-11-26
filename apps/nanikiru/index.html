@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>何切る道場 - 麻雀の何切る問題・牌効率ドリル｜iPhone・Android アプリ — St.Arkid</title>
-  <meta name="description" content="麻雀の何切る問題 500 問＋ランダム生成。正解はすべて向聴数と受け入れ枚数で計算し、打牌ごとの受け入れ表と 1 問ずつの解説つき。ログイン不要、データは端末の中だけ。">
+  <title>何切る道場 - 麻雀の何切る問題・牌効率ドリル｜iPhone・iPad・Android アプリ — St.Arkid</title>
+  <meta name="description" content="牌効率・形・押し引き基礎の3分野500問と、毎回新しい手牌を作るランダム生成モード。正解はすべて向聴数と受け入れ枚数の計算で検証しています。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://st.arkid.jp/apps/nanikiru/">
-  <meta property="og:title" content="何切る道場 - 麻雀の何切る問題・牌効率ドリル｜iPhone・Android アプリ — St.Arkid">
-  <meta property="og:description" content="麻雀の何切る問題 500 問＋ランダム生成。正解はすべて向聴数と受け入れ枚数で計算し、打牌ごとの受け入れ表と 1 問ずつの解説つき。ログイン不要、データは端末の中だけ。">
+  <meta property="og:title" content="何切る道場 - 麻雀の何切る問題・牌効率ドリル｜iPhone・iPad・Android アプリ — St.Arkid">
+  <meta property="og:description" content="牌効率・形・押し引き基礎の3分野500問と、毎回新しい手牌を作るランダム生成モード。正解はすべて向聴数と受け入れ枚数の計算で検証しています。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://st.arkid.jp/apps/nanikiru/">
   <meta property="og:image" content="https://st.arkid.jp/ogp.png">
@@ -23,11 +23,11 @@
       "@type": "MobileApplication",
       "@id": "https://st.arkid.jp/apps/nanikiru/#app",
       "name": "何切る道場",
-      "description": "麻雀の何切る問題 500 問＋ランダム生成。正解はすべて向聴数と受け入れ枚数で計算し、打牌ごとの受け入れ表と 1 問ずつの解説つき。ログイン不要、データは端末の中だけ。",
+      "description": "牌効率・形・押し引き基礎の3分野500問と、毎回新しい手牌を作るランダム生成モード。正解はすべて向聴数と受け入れ枚数の計算で検証しています。",
       "url": "https://st.arkid.jp/apps/nanikiru/",
       "image": "https://st.arkid.jp/apps/nanikiru/icon.webp",
       "operatingSystem": "iOS, Android",
-      "applicationCategory": "GameApplication",
+      "applicationCategory": "LifestyleApplication",
       "inLanguage": "ja",
       "offers": {
         "@type": "Offer",
@@ -36,7 +36,12 @@
       },
       "publisher": {
         "@id": "https://st.arkid.jp/#organization"
-      }
+      },
+      "screenshot": [
+        "https://st.arkid.jp/apps/nanikiru/ss-1.webp",
+        "https://st.arkid.jp/apps/nanikiru/ss-2.webp",
+        "https://st.arkid.jp/apps/nanikiru/ss-3.webp"
+      ]
     },
     {
       "@type": "FAQPage",
@@ -46,7 +51,7 @@
           "name": "料金はかかりますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "無料でお使いいただけます。広告が表示されますが、買い切りの「広告を消す」で消せます。"
+            "text": "無料です。広告表示に Google AdMob を使っています。買い切りの「広告を消す」を購入すると広告が出なくなります。"
           }
         },
         {
@@ -59,10 +64,18 @@
         },
         {
           "@type": "Question",
-          "name": "初心者でも使えますか？",
+          "name": "オフラインで使えますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "牌効率の基本から順に解けます。解説と受け入れ表で、なぜその牌を切るのかを確かめられます。"
+            "text": "はい。登録不要で、オフラインでも遊べます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "正解が複数あることは？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "同じ受け入れ枚数の打牌が複数あれば、どれも正解になります。"
           }
         }
       ]
@@ -205,39 +218,44 @@
 </header>
 <main>
   <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">St.Arkid</a> › <a href="../">自社アプリ</a> › 何切る道場</nav>
-  <p class="eyebrow">Mahjong Discard Trainer</p>
+  <p class="eyebrow">Mahjong Discard Drill</p>
   <div class="app-hero">
     <img class="app-icon" src="icon.webp" width="80" height="80" alt="何切る道場 のアプリアイコン">
-    <h1>何切る道場<small>麻雀の何切る問題・牌効率ドリル｜iPhone・Android アプリ</small></h1>
+    <h1>何切る道場<small>麻雀の何切る問題・牌効率ドリル｜iPhone・iPad・Android アプリ</small></h1>
   </div>
-  <p class="lead" style="margin-top:20px">「何切る道場」は、麻雀の「何切る」問題で牌効率と押し引きを鍛えるアプリです。14 枚の手牌から最善の 1 枚を選ぶと、正解と打牌ごとの受け入れ表、1 問ずつの解説が出ます。</p>
+  <p class="lead" style="margin-top:20px">「何切る道場」は、麻雀の「何切る」問題を解いて牌効率と押し引きを鍛えるドリルです。14枚の手牌から最善の1枚を選ぶと、すぐに正解と、打牌ごとの向聴数・受け入れ枚数の表、解説が出ます。</p>
   <div class="stores">
-      <span class="coming">近日公開</span>
+      <span class="coming">近日公開（App Store 審査中）</span>
       <a class="store-badge web-app" href="app/" style="display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border-radius:8px;border:1px solid currentColor;line-height:1;font-weight:600;font-size:14px;text-decoration:none">ブラウザで使う（Web 版）</a>
   </div>
-  <p class="facts">状態: 近日公開 ／ 対応: iPhone・iPad・Android ／ 価格: 無料（広告あり・「広告を消す」買い切り） ／ 言語: 日本語・英語ほか 7 言語 ／ 提供: 株式会社St.Arkid</p>
+  <p class="facts">状態: 近日公開（審査中） ／ 対応: iPhone・iPad・Android ／ 価格: 無料（広告あり・アプリ内課金あり） ／ 提供: 株式会社St.Arkid</p>
   <div class="tags"><span class="tag">麻雀</span><span class="tag">何切る</span><span class="tag">牌効率</span><span class="tag">押し引き</span><span class="tag">オフライン</span></div>
   <h2>こんな人におすすめ</h2>
-  <ul class="for-whom"><li>牌効率を身につけて、麻雀で勝てるようになりたい人</li><li>何切る問題を、答えの根拠つきでたくさん解きたい人</li><li>リーチを受けたときの押し引きの基本を知りたい人</li></ul>
+  <ul class="for-whom"><li>麻雀の牌効率を身につけたい人</li><li>何切る問題をスキマ時間に解きたい人</li><li>押すか降りるかの基礎を学びたい人</li></ul>
   <h2>主な特徴</h2>
   <div class="features">
-    <div class="feature"><div class="feature-icon">🀄</div><h3>3 分野・500 問</h3><p>牌効率 250 問・形 200 問・押し引き基礎 50 問。10 問ずつ解けます。</p></div>
-    <div class="feature"><div class="feature-icon">🧮</div><h3>正解はすべて計算</h3><p>向聴数と受け入れ枚数をプログラムで計算して正解を決めています。</p></div>
-    <div class="feature"><div class="feature-icon">📊</div><h3>受け入れ表と解説</h3><p>打牌ごとの向聴数・受け入れの表と、1 問ずつの解説で理由がわかります。</p></div>
-    <div class="feature"><div class="feature-icon">🎲</div><h3>ランダム生成</h3><p>毎回新しい手牌を作って出題。正解は自動で判定するので問題が尽きません。</p></div>
-    <div class="feature"><div class="feature-icon">🔒</div><h3>ログイン不要・端末の中だけ</h3><p>アカウント登録はなく、成績は端末の外へ送りません。</p></div>
+    <div class="feature"><div class="feature-icon">🀄</div><h3>3分野・500問</h3><p>牌効率250問・形200問・押し引き基礎50問。</p></div>
+    <div class="feature"><div class="feature-icon">🧮</div><h3>正解は計算で検証</h3><p>向聴数と受け入れ枚数をプログラムで計算して正解を決めています。</p></div>
+    <div class="feature"><div class="feature-icon">🎲</div><h3>ランダム生成モード</h3><p>毎回新しい手牌を作り、正解は自動で判定。問題が尽きません。</p></div>
+    <div class="feature"><div class="feature-icon">💡</div><h3>1問ずつの解説</h3><p>なぜその牌を切るのか、次点との差はどこかを解説します。</p></div>
+    <div class="feature"><div class="feature-icon">📊</div><h3>成績</h3><p>分野ごとの正解率と最高連続正解。間違えた問題だけを解き直せます。</p></div>
+  </div>
+  <h2>スクリーンショット</h2>
+  <div class="shots">
+    <img src="ss-1.webp" width="440" height="956" loading="lazy" decoding="async" alt="何切る道場 のアプリ画面（1）">
+    <img src="ss-2.webp" width="440" height="956" loading="lazy" decoding="async" alt="何切る道場 のアプリ画面（2）">
+    <img src="ss-3.webp" width="440" height="956" loading="lazy" decoding="async" alt="何切る道場 のアプリ画面（3）">
   </div>
   <h2>よくある質問</h2>
-  <details><summary>料金はかかりますか？</summary><p>無料でお使いいただけます。広告が表示されますが、買い切りの「広告を消す」で消せます。</p></details>
+  <details><summary>料金はかかりますか？</summary><p>無料です。広告表示に Google AdMob を使っています。買い切りの「広告を消す」を購入すると広告が出なくなります。</p></details>
   <details><summary>どのルールの麻雀が対象ですか？</summary><p>日本の立直麻雀（リーチ麻雀）の牌効率と押し引きを扱います。</p></details>
-  <details><summary>初心者でも使えますか？</summary><p>牌効率の基本から順に解けます。解説と受け入れ表で、なぜその牌を切るのかを確かめられます。</p></details>
+  <details><summary>オフラインで使えますか？</summary><p>はい。登録不要で、オフラインでも遊べます。</p></details>
+  <details><summary>正解が複数あることは？</summary><p>同じ受け入れ枚数の打牌が複数あれば、どれも正解になります。</p></details>
   <h2>サポート</h2>
   <p>使い方や不具合のご連絡は、サポートページをご覧ください。</p>
   <p><a href="support">サポート・お問い合わせ</a> ・ <a href="privacy">プライバシーポリシー</a> ・ <a href="terms">利用規約</a></p>
   <h2>St.Arkid のほかのアプリ</h2>
   <div class="others">
-    <a href="../futari-mahjong/">サシ麻雀<span>CPU と 1 対 1 の 2 人麻雀</span></a>
-    <a href="../platelog/">PlateLog<span>撮るだけでカロリーとPFCを推定</span></a>
     <a href="../ippon-board/">大喜利IPPON!<span>みんなのスマホで大喜利を審査</span></a>
     <a href="../temoto-crm/">てもとCRM<span>ノーコードで作る、手元の顧客管理</span></a>
     <a href="../komemi/">コメミ<span>機内でもコメントと一緒に動画を</span></a>
@@ -250,6 +268,7 @@
     <a href="../woradi/">WORaDi<span>単語帳 × AI</span></a>
     <a href="../offline-eigo/">オフライン英語<span>機内でも使える端末内AIの英会話</span></a>
     <a href="../silent-camera/">板書ノート<span>授業ごとに自動でノート整理・Face ID保護</span></a>
+    <a href="../futari-mahjong/">サシ麻雀<span>CPU と 1 対 1 の 2 人麻雀</span></a>
     <a href="../interval/">インターバル。<span>筋トレ・HIIT・タバタ用タイマー</span></a>
     <a href="../nemurimix/">ねむりミックス<span>睡眠音を重ねて、やさしく起きる</span></a>
     <a href="../menkyoGakka/">普通免許 学科ドリル<span>仮免・本免の学科を○×で対策</span></a>
@@ -264,12 +283,23 @@
     <a href="../study-dopagaki/">勉強してドパガキ<span>勉強するまでSNSも動画も開けない</span></a>
     <a href="../wait/">待った。<span>衝動買いを冷却期間で防ぐ</span></a>
     <a href="../urge-surf/">ひと呼吸。<span>衝動を波のようにやり過ごす</span></a>
+    <a href="../platelog/">PlateLog<span>撮るだけでカロリーとPFCを推定</span></a>
     <a href="../igakuAnki/">医学 暗記ドリル<span>解剖学・生理学の4択一問一答</span></a>
     <a href="../kangoKokushi/">看護師国試 一問一答ドリル<span>看護師国試を4択の一問一答で</span></a>
     <a href="../eitangoDrill/">英単語ドリル<span>英単語を4択で覚える。復習つき</span></a>
     <a href="../todofukenKokki/">都道府県・国旗クイズ<span>県庁所在地・名産・国旗・首都を4択で</span></a>
     <a href="../kuku-keisan/">九九・計算ドリル<span>小学1〜3年の九九・たし算・ひき算</span></a>
     <a href="../rekishiGoro/">歴史の年号 語呂合わせ<span>日本史・世界史の年号を語呂で暗記</span></a>
+    <a href="../kaigoFukushi/">介護福祉士 国試ドリル<span>パート合格対応・5択698問と模試</span></a>
+    <a href="../iryoJimu/">医療事務ドリル<span>レセプト・点数計算の練習問題</span></a>
+    <a href="../itPassport/">ITパスポート ドリル<span>iパス600問・本番形式の模試</span></a>
+    <a href="../hishoKentei/">秘書検定ドリル 2級・3級<span>5択632問と模試・敬語や席次の図つき</span></a>
+    <a href="../nandokuKanji/">難読漢字と四字熟語<span>大人の漢字クイズ・読みと意味</span></a>
+    <a href="../kotowazaKids/">ことわざキッズ<span>小学生のことわざ・慣用句クイズ</span></a>
+    <a href="../medInterview/">医学部面接ドリル<span>質問200問と答え方の型で面接練習</span></a>
+    <a href="../kyotsuScore/">共テスコアノート<span>共通テスト模試の点数記録とボーダー比較</span></a>
+    <a href="../shoronbun/">小論文れんしゅう帳<span>お題150・字数カウント・原稿用紙</span></a>
+    <a href="../quitSmoke/">1本まって<span>吸いたい時にひと息・本数を記録</span></a>
   </div>
 </main>
 <footer>
