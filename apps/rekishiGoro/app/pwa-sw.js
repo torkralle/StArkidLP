@@ -1,5 +1,5 @@
 // 自動生成（gen_sw.py）。手で直さない。
-const VERSION = '70eb3732b7ce';
+const VERSION = 'bcf9b301809f';
 const CACHE = 'pwa-' + VERSION;
 const CDN_CACHE = 'pwa-cdn';
 const FILES = ["./", "assets/AssetManifest.bin", "assets/AssetManifest.bin.json", "assets/FontManifest.json", "assets/NOTICES", "assets/assets/content/content.json", "assets/fonts/MaterialIcons-Regular.otf", "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf", "assets/shaders/ink_sparkle.frag", "assets/shaders/stretch_effect.frag", "drift_worker.js", "favicon.png", "flutter.js", "flutter_bootstrap.js", "icons/Icon-192.png", "icons/Icon-512.png", "icons/Icon-maskable-192.png", "icons/Icon-maskable-512.png", "index.html", "main.dart.js", "manifest.json", "sqlite3.wasm", "version.json"];
