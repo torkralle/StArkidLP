@@ -1,0 +1,35 @@
+{
+  "name": "Wobble Tower",
+  "short_name": "Wobble Tower",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#7EC8F2",
+  "theme_color": "#5B9FE8",
+  "description": "How high can you stack in 30 seconds? A physics stacking game.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
