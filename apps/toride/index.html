@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>とりで陣取り - 6×6 の盤で砦を建てて奪い合う2人対戦陣取りゲーム｜iPhone・Android・Web — St.Arkid</title>
+  <meta name="description" content="6×6 の盤で砦を建てて奪い合う、St.Arkid オリジナルの 2 人対戦陣取りゲーム。ふたり対戦と CPU 対戦（弱・中・強）、1 局数分、オフライン・登録不要。ブラウザでもすぐ遊べます。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://st.arkid.jp/apps/toride/">
+  <meta property="og:title" content="とりで陣取り - 6×6 の盤で砦を建てて奪い合う2人対戦陣取りゲーム｜iPhone・Android・Web — St.Arkid">
+  <meta property="og:description" content="6×6 の盤で砦を建てて奪い合う、St.Arkid オリジナルの 2 人対戦陣取りゲーム。ふたり対戦と CPU 対戦（弱・中・強）、1 局数分、オフライン・登録不要。ブラウザでもすぐ遊べます。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://st.arkid.jp/apps/toride/">
+  <meta property="og:image" content="https://st.arkid.jp/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="St.Arkid">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://st.arkid.jp/apps/toride/#app",
+      "name": "とりで陣取り",
+      "alternateName": "Fort Turf Duel",
+      "description": "6×6 の盤で砦を建てて奪い合う、St.Arkid オリジナルの 2 人対戦陣取りゲーム。ふたり対戦と CPU 対戦（弱・中・強）、1 局数分、オフライン・登録不要。ブラウザでもすぐ遊べます。",
+      "url": "https://st.arkid.jp/apps/toride/",
+      "image": "https://st.arkid.jp/apps/toride/icon.webp",
+      "operatingSystem": "iOS, Android, Web",
+      "applicationCategory": "GameApplication",
+      "inLanguage": [
+        "ja",
+        "en",
+        "es",
+        "pt",
+        "de",
+        "ko",
+        "zh-Hant"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "publisher": {
+        "@id": "https://st.arkid.jp/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "料金はかかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "無料で遊べます。アプリ版はバナー広告と対戦の合間の広告が表示されますが、買い切りの「広告を消す」（App Store / Google Play のアプリ内課金）で消せます。ブラウザで遊ぶ Web 版は広告・課金がありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ひとりでも遊べますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "遊べます。CPU 対戦は強さを「弱・中・強」から、先手を「あなた・CPU・ランダム」から選べます。1 台を挟んで向かい合うふたり対戦もできます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "戦績はどこに保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CPU 戦の戦績と設定は端末（Web 版はブラウザの localStorage）の中だけに保存し、外へ送りません。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "St.Arkid",
+          "item": "https://st.arkid.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "自社アプリ",
+          "item": "https://st.arkid.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "とりで陣取り",
+          "item": "https://st.arkid.jp/apps/toride/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://st.arkid.jp/#organization",
+      "name": "株式会社St.Arkid",
+      "url": "https://st.arkid.jp/"
+    }
+  ]
+}
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #121212;
+      --gray: #757575;
+      --gray-light: #c7c7c7;
+      --line: rgba(255,255,255,0.08);
+      --card: #1c1c1c;
+      --white: #ffffff;
+      --accent: #2dd4bf;
+      --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--black); color: var(--white); font-family: var(--font-jp); line-height: 1.9; overflow-x: hidden; }
+    a { color: var(--accent); }
+    header { height: 64px; padding: 0 48px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .header-logo { font-family: var(--font-en); font-size: 20px; font-weight: 500; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+    .header-logo span { color: var(--accent); }
+    .header-logo-sub { font-family: var(--font-en); font-size: 11px; letter-spacing: 0.12em; color: var(--gray); margin-left: 10px; text-transform: uppercase; }
+    main { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+    .eyebrow { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; }
+    h1 { font-size: 28px; font-weight: 700; line-height: 1.5; margin: 8px 0 12px; }
+    .meta, .lead { color: var(--gray-light); font-size: 15px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 48px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { color: var(--gray-light); font-size: 15px; margin: 8px 0; }
+    ul { color: var(--gray-light); font-size: 15px; padding-left: 1.4em; margin: 8px 0; }
+    details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 12px 0; }
+    summary { font-weight: 500; cursor: pointer; }
+    details[open] summary { color: var(--accent); }
+    .contact { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-top: 12px; }
+    footer { border-top: 1px solid var(--line); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { font-family: var(--font-en); font-size: 16px; font-weight: 500; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-logo span { color: var(--accent); }
+    .footer-nav { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-nav a { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-nav a:hover { color: var(--gray-light); }
+    .footer-copy { width: 100%; text-align: center; font-family: var(--font-en); font-size: 11px; color: var(--gray); letter-spacing: 0.05em; padding-top: 24px; }
+    @media (max-width: 768px) {
+      header, footer { padding-left: 16px; padding-right: 16px; }
+      main { padding: 40px 16px 72px; }
+      h1 { font-size: 24px; }
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; color: var(--gray-light); margin: 12px 0; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--card); color: var(--white); }
+    .table-wrap { overflow-x: auto; }
+    ol { color: var(--gray-light); font-size: 15px; padding-left: 1.6em; margin: 8px 0; }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
+  
+    header { justify-content: space-between; }
+    .header-nav a { font-size: 13px; color: var(--gray-light); text-decoration: none; margin-left: 20px; }
+    .header-nav a:hover { color: var(--white); }
+    .crumbs { font-size: 12px; color: var(--gray); margin-bottom: 32px; }
+    .crumbs a { color: var(--gray); text-decoration: none; }
+    .crumbs a:hover { color: var(--gray-light); }
+    .app-hero { display: flex; gap: 20px; align-items: center; }
+    .app-icon { font-size: 44px; width: 80px; height: 80px; flex: none; display: flex; align-items: center; justify-content: center; background: var(--card); border: 1px solid var(--line); border-radius: 20px; }
+    h1 small { display: block; font-size: 15px; font-weight: 400; color: var(--gray-light); margin-top: 4px; }
+    .stores { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 8px; }
+    .store-btn { display: inline-flex; align-items: baseline; gap: 2px; background: var(--white); color: var(--black); text-decoration: none; border-radius: 10px; padding: 10px 18px; font-family: var(--font-en); }
+    .store-btn:hover { opacity: 0.85; }
+    .store-small { font-size: 11px; letter-spacing: 0.04em; }
+    .store-big { font-size: 17px; font-weight: 500; }
+    .store-soon { display: inline-flex; align-items: center; border: 1px solid var(--line); color: var(--gray); border-radius: 10px; padding: 10px 18px; font-size: 14px; }
+    .facts { font-size: 13px; color: var(--gray); margin-top: 8px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+    .feature { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+    .feature-icon { font-size: 24px; }
+    .feature h3 { font-size: 16px; font-weight: 700; margin: 8px 0 4px; line-height: 1.5; }
+    .feature p { font-size: 14px; margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .tag { font-size: 12px; color: var(--accent); border: 1px solid rgba(45,212,191,0.35); border-radius: 999px; padding: 2px 12px; }
+    .note { font-size: 13px; color: var(--gray); }
+    .others { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 12px; }
+    .others a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; color: var(--white); text-decoration: none; font-size: 14px; }
+    .others a:hover { border-color: var(--accent); }
+    .others span { display: block; font-size: 12px; color: var(--gray); }
+    img.app-icon { object-fit: cover; padding: 0; }
+    .stores { align-items: center; }
+    .store-badge { display: inline-block; line-height: 0; }
+    .store-badge img { height: 40px; width: auto; }
+    .store-badge-play img { height: 60px; margin: -10px -10px; }
+    .store-badge:hover { opacity: 0.85; }
+    .shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-top: 16px; }
+    .shots img { flex: none; width: 200px; height: auto; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; background: var(--card); }
+    .for-whom li { margin: 4px 0; }
+  
+    .coming { display: inline-block; font-size: 13px; color: var(--gray-light); border: 1px dashed var(--line); border-radius: 8px; padding: 9px 14px; }
+    .notice { margin: 24px 0 0; padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--card); border-radius: 8px; font-size: 14px; }
+</style>
+  <meta name="google-adsense-account" content="ca-pub-1468496302380146">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1468496302380146" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ Apps</span></a>
+  <nav class="header-nav"><a href="../">アプリ一覧</a><a href="support">サポート</a></nav>
+</header>
+<main>
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">St.Arkid</a> › <a href="../">自社アプリ</a> › とりで陣取り</nav>
+  <p class="eyebrow">Fort Turf Duel</p>
+  <div class="app-hero">
+    <img class="app-icon" src="icon.webp" width="80" height="80" alt="とりで陣取り のアプリアイコン">
+    <h1>とりで陣取り<small>6×6 の盤で砦を建てて奪い合う</small></h1>
+  </div>
+  <p class="lead" style="margin-top:20px">「とりで陣取り」は、St.Arkid のオリジナル 2 人対戦陣取りゲームです。6×6 の盤に砦を建てて強化し、隣の敵の砦を奪い合います。ふたりで向かい合って遊ぶほか、CPU（弱・中・強）とも対戦できます。1 局は数分です。</p>
+  <div class="stores">
+      <span class="coming">App Store・Google Play 近日公開</span>
+      <a class="store-badge web-app" href="app/" style="display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border-radius:8px;border:1px solid currentColor;line-height:1;font-weight:600;font-size:14px;text-decoration:none">ブラウザで遊ぶ（Web 版）</a>
+  </div>
+  <p class="facts">状態: アプリは近日公開 ／ 対応: iPhone・Android・ブラウザ ／ 価格: 無料（アプリは広告あり・買い切りの「広告を消す」あり、Web 版は広告・課金なし） ／ 言語: 日本語・英語ほか 7 言語 ／ 提供: 株式会社St.Arkid</p>
+  <div class="tags"><span class="tag">ボードゲーム</span><span class="tag">陣取り</span><span class="tag">2人対戦</span><span class="tag">CPU対戦</span><span class="tag">オフライン</span></div>
+  <p class="notice"><a href="#languages">English・Español・Português・Deutsch・한국어・繁體中文</a></p>
+  <h2>遊び方</h2>
+  <ol><li>6×6 の盤で、お互い 15 手ずつ打ちます。1 手で、空きマスに砦（Lv1）を建てるか、自分の砦を強化します（最大 Lv3）。</li><li>打った砦より低いレベルの、隣（上下左右）にある敵の砦を奪えます。Lv3 の砦は奪われません。</li><li>得点は「砦の数」＋「自分の砦だけに囲まれた空きマス」。同点のときは砦のレベル合計で決まります。</li></ol>
+  <h2>こんな人におすすめ</h2>
+  <ul class="for-whom"><li>数分で決着がつく対戦ゲームを探している人</li><li>友だちと 1 台の端末で向かい合って遊びたい人</li><li>登録なし・オフラインで、ひとりでも CPU と手軽に遊びたい人</li></ul>
+  <h2>主な特徴</h2>
+  <div class="features">
+    <div class="feature"><div class="feature-icon">🏰</div><h3>建てる・強化する</h3><p>空きマスに砦 Lv1 を建てるか、自分の砦を最大 Lv3 まで強化。</p></div>
+    <div class="feature"><div class="feature-icon">⚔️</div><h3>隣の砦を奪う</h3><p>打った砦より低いレベルの隣の敵の砦を奪います。Lv3 は奪われません。</p></div>
+    <div class="feature"><div class="feature-icon">🧮</div><h3>囲んだ空きマスも得点</h3><p>砦の数に、自分の砦だけに囲まれた空きマスを足して勝負。同点はレベル合計。</p></div>
+    <div class="feature"><div class="feature-icon">🤝</div><h3>ふたり対戦</h3><p>1 台を挟んで向かい合って対戦。上側の表示は逆さまになります。</p></div>
+    <div class="feature"><div class="feature-icon">🤖</div><h3>CPU 対戦（弱・中・強）</h3><p>先手は あなた・CPU・ランダムから選択。戦績は端末に保存されます。</p></div>
+    <div class="feature"><div class="feature-icon">🔒</div><h3>オフライン・登録不要・7 言語</h3><p>1 局数分。日本語・英語・スペイン語・ポルトガル語・ドイツ語・韓国語・中国語。</p></div>
+  </div>
+  <h2>よくある質問</h2>
+  <details><summary>料金はかかりますか？</summary><p>無料で遊べます。アプリ版はバナー広告と対戦の合間の広告が表示されますが、買い切りの「広告を消す」（App Store / Google Play のアプリ内課金）で消せます。ブラウザで遊ぶ Web 版は広告・課金がありません。</p></details>
+  <details><summary>ひとりでも遊べますか？</summary><p>遊べます。CPU 対戦は強さを「弱・中・強」から、先手を「あなた・CPU・ランダム」から選べます。1 台を挟んで向かい合うふたり対戦もできます。</p></details>
+  <details><summary>戦績はどこに保存されますか？</summary><p>CPU 戦の戦績と設定は端末（Web 版はブラウザの localStorage）の中だけに保存し、外へ送りません。</p></details>
+  <h2>サポート</h2>
+  <p>使い方や不具合のご連絡は、サポートページをご覧ください。</p>
+  <p><a href="support">サポート・お問い合わせ</a> ・ <a href="privacy">プライバシーポリシー</a> ・ <a href="terms">利用規約</a></p>
+  <h2 id="languages">Other languages</h2>
+  <div lang="en" class="contact" style="margin-top:12px"><p><strong>Fort Turf Duel</strong>（English）<br>A 2-player territory game by St.Arkid on a 6×6 board. Each side gets 15 moves: build a Lv1 fort on an empty square or upgrade one of your own (up to Lv3). A fort captures adjacent (up/down/left/right) enemy forts of a lower level than the one you just played; Lv3 forts cannot be captured. Score = your forts + empty squares enclosed only by your forts; ties go to the higher total level. Play head-to-head on one device or against the CPU (weak / medium / strong). A game takes a few minutes, works offline, no sign-up.</p><p><a href="app/">Play in your browser (Web version)</a> ・ App Store / Google Play: coming soon<br><a href="support">Support & contact</a> ・ <a href="privacy">Privacy policy</a> ・ <a href="terms">Terms of use</a></p></div>
+  <div lang="es" class="contact" style="margin-top:12px"><p><strong>Fort Turf Duel</strong>（Español）<br>Un juego de territorio para 2 jugadores de St.Arkid en un tablero de 6×6. Cada bando tiene 15 jugadas: construye un fuerte Nv1 en una casilla vacía o mejora uno propio (hasta Nv3). Un fuerte captura los fuertes enemigos adyacentes (arriba/abajo/izquierda/derecha) de nivel inferior al que acabas de jugar; los de Nv3 no pueden ser capturados. Puntuación = tus fuertes + casillas vacías rodeadas solo por tus fuertes; el empate lo decide la suma de niveles. Juega cara a cara en un dispositivo o contra la CPU (débil / media / fuerte). Una partida dura unos minutos, funciona sin conexión y no requiere registro.</p><p><a href="app/">Juega en tu navegador (versión web)</a> ・ App Store / Google Play: próximamente<br><a href="support">Soporte y contacto</a> ・ <a href="privacy">Política de privacidad</a> ・ <a href="terms">Términos de uso</a></p></div>
+  <div lang="pt" class="contact" style="margin-top:12px"><p><strong>Fort Turf Duel</strong>（Português）<br>Um jogo de território para 2 jogadores da St.Arkid em um tabuleiro 6×6. Cada lado tem 15 jogadas: construa um forte Nv1 em uma casa vazia ou melhore um forte seu (até Nv3). Um forte captura fortes inimigos adjacentes (cima/baixo/esquerda/direita) de nível inferior ao que você acabou de jogar; fortes Nv3 não podem ser capturados. Pontuação = seus fortes + casas vazias cercadas apenas por seus fortes; empates são decididos pela soma dos níveis. Jogue frente a frente em um aparelho ou contra a CPU (fraca / média / forte). Uma partida dura alguns minutos, funciona offline e não exige cadastro.</p><p><a href="app/">Jogue no seu navegador (versão Web)</a> ・ App Store / Google Play: em breve<br><a href="support">Suporte e contato</a> ・ <a href="privacy">Política de privacidade</a> ・ <a href="terms">Termos de uso</a></p></div>
+  <div lang="de" class="contact" style="margin-top:12px"><p><strong>Fort Turf Duel</strong>（Deutsch）<br>Ein 2-Spieler-Gebietsspiel von St.Arkid auf einem 6×6-Brett. Jede Seite hat 15 Züge: Baue eine Lv1-Burg auf einem leeren Feld oder verstärke eine eigene (bis Lv3). Eine Burg erobert angrenzende (oben/unten/links/rechts) gegnerische Burgen mit niedrigerem Level als die gerade gesetzte; Lv3-Burgen können nicht erobert werden. Punkte = deine Burgen + leere Felder, die nur von deinen Burgen umschlossen sind; bei Gleichstand zählt die Level-Summe. Spiele gegenüber an einem Gerät oder gegen die CPU (schwach / mittel / stark). Eine Partie dauert wenige Minuten, funktioniert offline und braucht keine Anmeldung.</p><p><a href="app/">Im Browser spielen (Webversion)</a> ・ App Store / Google Play: bald verfügbar<br><a href="support">Support & Kontakt</a> ・ <a href="privacy">Datenschutzerklärung</a> ・ <a href="terms">Nutzungsbedingungen</a></p></div>
+  <div lang="ko" class="contact" style="margin-top:12px"><p><strong>Fort Turf Duel</strong>（한국어）<br>St.Arkid의 2인 대전 땅따먹기 게임. 6×6 판에서 양쪽 각 15수: 빈 칸에 Lv1 요새를 짓거나 내 요새를 강화합니다(최대 Lv3). 방금 둔 요새보다 레벨이 낮은 인접(상하좌우) 적 요새를 빼앗을 수 있고, Lv3 요새는 빼앗기지 않습니다. 점수 = 요새 수 + 내 요새로만 둘러싸인 빈 칸이며, 동점이면 레벨 합계로 가립니다. 한 기기로 마주 보고 대전하거나 CPU(약/중/강)와 대전할 수 있습니다. 한 판은 몇 분, 오프라인 가능, 가입 불필요.</p><p><a href="app/">브라우저에서 플레이 (웹 버전)</a> ・ App Store / Google Play: 곧 출시<br><a href="support">지원 및 문의</a> ・ <a href="privacy">개인정보 처리방침</a> ・ <a href="terms">이용약관</a></p></div>
+  <div lang="zh-Hant" class="contact" style="margin-top:12px"><p><strong>Fort Turf Duel</strong>（繁體中文）<br>St.Arkid 原創的雙人對戰佔地遊戲。在 6×6 棋盤上雙方各 15 手：在空格建造 Lv1 據點，或強化自己的據點（最高 Lv3）。可奪取相鄰（上下左右）、等級低於剛下的據點的敵方據點；Lv3 據點不會被奪走。得分＝據點數＋僅被自己據點包圍的空格，同分則比等級總和。可在同一台裝置上面對面對戰，或挑戰 CPU（弱／中／強）。一局只需幾分鐘，可離線遊玩，無需註冊。</p><p><a href="app/">在瀏覽器中遊玩（網頁版）</a> ・ App Store / Google Play：即將推出<br><a href="support">支援與聯絡</a> ・ <a href="privacy">隱私權政策</a> ・ <a href="terms">使用條款</a></p></div>
+  <h2>St.Arkid のほかのアプリ</h2>
+  <div class="others">
+    <a href="../futari-mahjong/">サシ麻雀<span>CPU と 1 対 1 の 2 人麻雀</span></a>
+    <a href="../platelog/">PlateLog<span>撮るだけでカロリーとPFCを推定</span></a>
+    <a href="../ippon-board/">大喜利IPPON!<span>みんなのスマホで大喜利を審査</span></a>
+    <a href="../temoto-crm/">てもとCRM<span>ノーコードで作る、手元の顧客管理</span></a>
+    <a href="../komemi/">コメミ<span>機内でもコメントと一緒に動画を</span></a>
+    <a href="../dopagaki/">歩いてドパガキ<span>歩いた分だけスマホが使えるアプリ制限</span></a>
+    <a href="../mechanic-exam/">整備士3級 合格ドリル<span>三級自動車整備士（総合）の学科対策</span></a>
+    <a href="../ad-alarm/">広告を見ないと止まらない目覚まし<span>動画を1本見るまで鳴り続ける二度寝防止アラーム</span></a>
+    <a href="../shuchu/">集中。<span>気が散るアプリをブロックして集中</span></a>
+    <a href="../kyotecount/">共テカウント<span>共通テストまでの残り日数と勉強法</span></a>
+    <a href="../medical-wordbook/">医療英単語<span>医療系の英単語を効率よく学ぶ</span></a>
+    <a href="../woradi/">WORaDi<span>単語帳 × AI</span></a>
+    <a href="../offline-eigo/">オフライン英語<span>機内でも使える端末内AIの英会話</span></a>
+    <a href="../silent-camera/">板書ノート<span>授業ごとに自動でノート整理・Face ID保護</span></a>
+    <a href="../interval/">インターバル。<span>筋トレ・HIIT・タバタ用タイマー</span></a>
+    <a href="../nemurimix/">ねむりミックス<span>睡眠音を重ねて、やさしく起きる</span></a>
+    <a href="../menkyoGakka/">普通免許 学科ドリル<span>仮免・本免の学科を○×で対策</span></a>
+    <a href="../kikenbutsuOtsu4/">危険物乙4 合格ドリル<span>乙4の3科目155問を演習・模試</span></a>
+    <a href="../kanjiDrill/">漢字ドリル<span>級別4択で毎日練習できる漢字ドリル</span></a>
+    <a href="../fp3Drill/">FP3級 合格ドリル<span>3級FP学科を一問一答と模試で対策</span></a>
+    <a href="../takkenDrill/">宅建 一問一答ドリル<span>○×で覚える宅建士の試験対策</span></a>
+    <a href="../tourokuHanbaisha/">登録販売者 試験ドリル<span>登録販売者試験の対策・模試・復習</span></a>
+    <a href="../carquiz/">クルマ通検定<span>車好きのための7ジャンル318問クイズ</span></a>
+    <a href="../otoate/">イントロQ<span>出だし数秒で当てる早押し音楽クイズ</span></a>
+    <a href="../daihon/">ダイホン<span>台本を読み上げて台詞を覚える</span></a>
+    <a href="../study-dopagaki/">勉強してドパガキ<span>勉強するまでSNSも動画も開けない</span></a>
+    <a href="../wait/">待った。<span>衝動買いを冷却期間で防ぐ</span></a>
+    <a href="../urge-surf/">ひと呼吸。<span>衝動を波のようにやり過ごす</span></a>
+    <a href="../igakuAnki/">医学 暗記ドリル<span>解剖学・生理学の4択一問一答</span></a>
+    <a href="../kangoKokushi/">看護師国試 一問一答ドリル<span>看護師国試を4択の一問一答で</span></a>
+    <a href="../eitangoDrill/">英単語ドリル<span>英単語を4択で覚える。復習つき</span></a>
+    <a href="../todofukenKokki/">都道府県・国旗クイズ<span>県庁所在地・名産・国旗・首都を4択で</span></a>
+    <a href="../kuku-keisan/">九九・計算ドリル<span>小学1〜3年の九九・たし算・ひき算</span></a>
+    <a href="../rekishiGoro/">歴史の年号 語呂合わせ<span>日本史・世界史の年号を語呂で暗記</span></a>
+  </div>
+</main>
+<footer>
+  <a href="../../" class="footer-logo">St<span>.</span>Arkid</a>
+  <nav class="footer-nav" aria-label="フッターナビゲーション">
+    <a href="support">サポート・お問い合わせ</a> <a href="privacy">プライバシーポリシー</a> <a href="terms">利用規約</a>
+    <a href="../">アプリ一覧</a>
+    <a href="../../">トップへ戻る</a>
+  </nav>
+  <div class="footer-copy">© 2026 St.Arkid. All rights reserved.</div>
+</footer>
+</body>
+</html>
