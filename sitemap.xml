@@ -1145,4 +1145,26 @@
     <loc>https://st.arkid.jp/apps/typing-run/app/</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/idle-lab/</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/idle-lab/privacy</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/idle-lab/support</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/idle-lab/terms</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://st.arkid.jp/apps/idle-lab/app/</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
 </urlset>

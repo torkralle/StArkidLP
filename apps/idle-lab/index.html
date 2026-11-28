@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>放置ラボ 論文工場 - 研究者を雇って論文を量産する放置ゲーム｜iPhone・Android・Web — St.Arkid</title>
+  <meta name="description" content="タップで実験して論文を書き、個性豊かな研究者を雇って論文を量産する放置クリッカー。アプリを閉じていても研究が進みます。ログイン不要、ブラウザでもすぐ遊べます。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://st.arkid.jp/apps/idle-lab/">
+  <meta property="og:title" content="放置ラボ 論文工場 - 研究者を雇って論文を量産する放置ゲーム｜iPhone・Android・Web — St.Arkid">
+  <meta property="og:description" content="タップで実験して論文を書き、個性豊かな研究者を雇って論文を量産する放置クリッカー。アプリを閉じていても研究が進みます。ログイン不要、ブラウザでもすぐ遊べます。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://st.arkid.jp/apps/idle-lab/">
+  <meta property="og:image" content="https://st.arkid.jp/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="St.Arkid">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://st.arkid.jp/apps/idle-lab/#app",
+      "name": "放置ラボ 論文工場",
+      "alternateName": "Idle Lab: Paper Factory",
+      "description": "タップで実験して論文を書き、個性豊かな研究者を雇って論文を量産する放置クリッカー。アプリを閉じていても研究が進みます。ログイン不要、ブラウザでもすぐ遊べます。",
+      "url": "https://st.arkid.jp/apps/idle-lab/",
+      "image": "https://st.arkid.jp/apps/idle-lab/icon.webp",
+      "operatingSystem": "iOS, Android, Web",
+      "applicationCategory": "GameApplication",
+      "inLanguage": [
+        "ja",
+        "en",
+        "es",
+        "pt",
+        "de",
+        "ko",
+        "zh-Hant"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "publisher": {
+        "@id": "https://st.arkid.jp/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "料金はかかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "無料で遊べます。iPhone・Android 版は広告（バナーと任意のリワード動画）が表示されますが、買い切り 480 円の「広告を消す」でバナーを消し、動画を見なくてもブーストを使えます。ブラウザで遊ぶ Web 版は広告・課金がありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "アプリを閉じている間も進みますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "進みます。最大 8 時間、通常の 50% の速さで研究が続き、次に開いたときに「不在時の研究成果」としてまとめて受け取れます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "セーブデータはどこに保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "進行状況は端末（Web 版はブラウザ）の中だけに保存し、外へ送りません。機種変更では引き継げません。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "St.Arkid",
+          "item": "https://st.arkid.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "自社アプリ",
+          "item": "https://st.arkid.jp/apps/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "放置ラボ 論文工場",
+          "item": "https://st.arkid.jp/apps/idle-lab/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://st.arkid.jp/#organization",
+      "name": "株式会社St.Arkid",
+      "url": "https://st.arkid.jp/"
+    }
+  ]
+}
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #121212;
+      --gray: #757575;
+      --gray-light: #c7c7c7;
+      --line: rgba(255,255,255,0.08);
+      --card: #1c1c1c;
+      --white: #ffffff;
+      --accent: #2dd4bf;
+      --font-jp: 'Noto Sans JP', 'Yu Gothic UI', 'Yu Gothic', '游ゴシック体', sans-serif;
+      --font-en: 'Jost', sans-serif;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--black); color: var(--white); font-family: var(--font-jp); line-height: 1.9; overflow-x: hidden; }
+    a { color: var(--accent); }
+    header { height: 64px; padding: 0 48px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .header-logo { font-family: var(--font-en); font-size: 20px; font-weight: 500; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+    .header-logo span { color: var(--accent); }
+    .header-logo-sub { font-family: var(--font-en); font-size: 11px; letter-spacing: 0.12em; color: var(--gray); margin-left: 10px; text-transform: uppercase; }
+    main { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+    .eyebrow { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; }
+    h1 { font-size: 28px; font-weight: 700; line-height: 1.5; margin: 8px 0 12px; }
+    .meta, .lead { color: var(--gray-light); font-size: 15px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 48px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { color: var(--gray-light); font-size: 15px; margin: 8px 0; }
+    ul { color: var(--gray-light); font-size: 15px; padding-left: 1.4em; margin: 8px 0; }
+    details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 12px 0; }
+    summary { font-weight: 500; cursor: pointer; }
+    details[open] summary { color: var(--accent); }
+    .contact { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-top: 12px; }
+    footer { border-top: 1px solid var(--line); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { font-family: var(--font-en); font-size: 16px; font-weight: 500; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-logo span { color: var(--accent); }
+    .footer-nav { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-nav a { font-family: var(--font-en); font-size: 12px; letter-spacing: 0.08em; color: var(--gray); text-decoration: none; }
+    .footer-nav a:hover { color: var(--gray-light); }
+    .footer-copy { width: 100%; text-align: center; font-family: var(--font-en); font-size: 11px; color: var(--gray); letter-spacing: 0.05em; padding-top: 24px; }
+    @media (max-width: 768px) {
+      header, footer { padding-left: 16px; padding-right: 16px; }
+      main { padding: 40px 16px 72px; }
+      h1 { font-size: 24px; }
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; color: var(--gray-light); margin: 12px 0; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--card); color: var(--white); }
+    .table-wrap { overflow-x: auto; }
+    ol { color: var(--gray-light); font-size: 15px; padding-left: 1.6em; margin: 8px 0; }
+    .app-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .app-links a, .app-links span { font-size: 13px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
+    .app-links span { color: var(--gray); }
+  
+    header { justify-content: space-between; }
+    .header-nav a { font-size: 13px; color: var(--gray-light); text-decoration: none; margin-left: 20px; }
+    .header-nav a:hover { color: var(--white); }
+    .crumbs { font-size: 12px; color: var(--gray); margin-bottom: 32px; }
+    .crumbs a { color: var(--gray); text-decoration: none; }
+    .crumbs a:hover { color: var(--gray-light); }
+    .app-hero { display: flex; gap: 20px; align-items: center; }
+    .app-icon { font-size: 44px; width: 80px; height: 80px; flex: none; display: flex; align-items: center; justify-content: center; background: var(--card); border: 1px solid var(--line); border-radius: 20px; }
+    h1 small { display: block; font-size: 15px; font-weight: 400; color: var(--gray-light); margin-top: 4px; }
+    .stores { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 8px; }
+    .store-btn { display: inline-flex; align-items: baseline; gap: 2px; background: var(--white); color: var(--black); text-decoration: none; border-radius: 10px; padding: 10px 18px; font-family: var(--font-en); }
+    .store-btn:hover { opacity: 0.85; }
+    .store-small { font-size: 11px; letter-spacing: 0.04em; }
+    .store-big { font-size: 17px; font-weight: 500; }
+    .store-soon { display: inline-flex; align-items: center; border: 1px solid var(--line); color: var(--gray); border-radius: 10px; padding: 10px 18px; font-size: 14px; }
+    .facts { font-size: 13px; color: var(--gray); margin-top: 8px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+    .feature { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+    .feature-icon { font-size: 24px; }
+    .feature h3 { font-size: 16px; font-weight: 700; margin: 8px 0 4px; line-height: 1.5; }
+    .feature p { font-size: 14px; margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .tag { font-size: 12px; color: var(--accent); border: 1px solid rgba(45,212,191,0.35); border-radius: 999px; padding: 2px 12px; }
+    .note { font-size: 13px; color: var(--gray); }
+    .others { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 12px; }
+    .others a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; color: var(--white); text-decoration: none; font-size: 14px; }
+    .others a:hover { border-color: var(--accent); }
+    .others span { display: block; font-size: 12px; color: var(--gray); }
+    img.app-icon { object-fit: cover; padding: 0; }
+    .stores { align-items: center; }
+    .store-badge { display: inline-block; line-height: 0; }
+    .store-badge img { height: 40px; width: auto; }
+    .store-badge-play img { height: 60px; margin: -10px -10px; }
+    .store-badge:hover { opacity: 0.85; }
+    .shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; margin-top: 16px; }
+    .shots img { flex: none; width: 200px; height: auto; border-radius: 16px; border: 1px solid var(--line); scroll-snap-align: start; background: var(--card); }
+    .for-whom li { margin: 4px 0; }
+  
+    .coming { display: inline-block; font-size: 13px; color: var(--gray-light); border: 1px dashed var(--line); border-radius: 8px; padding: 9px 14px; }
+    .notice { margin: 24px 0 0; padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--card); border-radius: 8px; font-size: 14px; }
+</style>
+  <meta name="google-adsense-account" content="ca-pub-1468496302380146">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1468496302380146" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <a href="../" class="header-logo">St<span>.</span>Arkid<span class="header-logo-sub">/ Apps</span></a>
+  <nav class="header-nav"><a href="../">アプリ一覧</a><a href="support">サポート</a></nav>
+</header>
+<main>
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../../">St.Arkid</a> › <a href="../">自社アプリ</a> › 放置ラボ 論文工場</nav>
+  <p class="eyebrow">Idle Lab: Paper Factory</p>
+  <div class="app-hero">
+    <img class="app-icon" src="icon.webp" width="80" height="80" alt="放置ラボ 論文工場 のアプリアイコン">
+    <h1>放置ラボ 論文工場<small>研究者を雇って論文を量産する放置クリッカー</small></h1>
+  </div>
+  <p class="lead" style="margin-top:20px">「放置ラボ 論文工場」は、研究室を切り盛りして論文を量産する放置（インクリメンタル）ゲームです。「実験」をタップして自分で論文を書き、10 種類の研究者を雇えば毎秒自動で書いてくれます。助成金申請や夜勤など、学術界のあるあるを軽いユーモアで描きます（登場する組織・人物はすべて架空です）。</p>
+  <div class="stores">
+      <span class="coming">App Store・Google Play 近日公開</span>
+      <a class="store-badge web-app" href="app/" style="display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border-radius:8px;border:1px solid currentColor;line-height:1;font-weight:600;font-size:14px;text-decoration:none">ブラウザで遊ぶ（Web 版）</a>
+  </div>
+  <p class="facts">状態: アプリは近日公開（審査中）・Web 版は公開中 ／ 対応: iPhone・Android・ブラウザ ／ 価格: 無料（アプリは広告あり・「広告を消す」買い切り 480 円、Web 版は広告なし） ／ 言語: 日本語・英語ほか 7 言語 ／ 提供: 株式会社St.Arkid</p>
+  <div class="tags"><span class="tag">放置ゲーム</span><span class="tag">クリッカー</span><span class="tag">研究室経営</span><span class="tag">ひまつぶし</span><span class="tag">オフライン</span></div>
+  <p class="notice"><a href="#languages">English・Español・Português・Deutsch・한국어・繁體中文</a></p>
+  <h2>遊び方</h2>
+  <ol><li>「実験」をタップして論文を書きます。論文がこの研究室の通貨です。</li><li>論文で研究者を雇うと、毎秒自動で論文を書いてくれます。購入数は x1・x10・Max で切り替えられます。</li><li>設備を導入して生産を加速し、ある程度育ったら「独立」で研究室をリセット。名声ポイント 1 点ごとにずっと +10% になります。</li></ol>
+  <h2>こんな人におすすめ</h2>
+  <ul class="for-whom"><li>すき間時間にゆるく育てたい人</li><li>数字がどんどん増えていく放置・クリッカーゲームが好きな人</li><li>ログインやガチャ、スタミナ制限なしで気軽に遊びたい人</li></ul>
+  <h2>主な特徴</h2>
+  <div class="features">
+    <div class="feature"><div class="feature-icon">🧪</div><h3>タップで実験</h3><p>タップで論文を手書き。論文が研究室の通貨になります。</p></div>
+    <div class="feature"><div class="feature-icon">👩‍🔬</div><h3>10 種類の研究者</h3><p>研修生から国際コンソーシアムまで。ひとこと紹介つきで毎秒自動で執筆。</p></div>
+    <div class="feature"><div class="feature-icon">✖️</div><h3>マイルストーンで 2 倍</h3><p>同じ研究者が 10・25・50・100 人…と増えるたび、その出力が 2 倍に。</p></div>
+    <div class="feature"><div class="feature-icon">🔬</div><h3>15 種類の研究設備</h3><p>設備を導入するたび、論文の生産レートが加速します。</p></div>
+    <div class="feature"><div class="feature-icon">🎓</div><h3>「独立」で名声ポイント</h3><p>研究室をリセットして名声を獲得。1 点ごとにずっと +10%。</p></div>
+    <div class="feature"><div class="feature-icon">🌙</div><h3>オフラインでも進行</h3><p>閉じている間も最大 8 時間・50% の速さで研究が進みます。</p></div>
+    <div class="feature"><div class="feature-icon">⏩</div><h3>ブースト</h3><p>任意のリワード動画で 10 分間 2 倍（最大 1 時間分まで重ねがけ）。</p></div>
+    <div class="feature"><div class="feature-icon">🔒</div><h3>ログイン不要・7 言語</h3><p>アカウント登録なし。進行状況は端末の中だけ。日本語・英語ほか 7 言語。</p></div>
+  </div>
+  <h2>よくある質問</h2>
+  <details><summary>料金はかかりますか？</summary><p>無料で遊べます。iPhone・Android 版は広告（バナーと任意のリワード動画）が表示されますが、買い切り 480 円の「広告を消す」でバナーを消し、動画を見なくてもブーストを使えます。ブラウザで遊ぶ Web 版は広告・課金がありません。</p></details>
+  <details><summary>アプリを閉じている間も進みますか？</summary><p>進みます。最大 8 時間、通常の 50% の速さで研究が続き、次に開いたときに「不在時の研究成果」としてまとめて受け取れます。</p></details>
+  <details><summary>セーブデータはどこに保存されますか？</summary><p>進行状況は端末（Web 版はブラウザ）の中だけに保存し、外へ送りません。機種変更では引き継げません。</p></details>
+  <h2>サポート</h2>
+  <p>使い方や不具合のご連絡は、サポートページをご覧ください。</p>
+  <p><a href="support">サポート・お問い合わせ</a> ・ <a href="privacy">プライバシーポリシー</a> ・ <a href="terms">利用規約</a></p>
+  <h2 id="languages">Other languages</h2>
+  <div lang="en" class="contact" style="margin-top:12px"><p><strong>Idle Lab: Paper Factory</strong>（English）<br>An idle science clicker: tap "Experiment" to write papers, hire 10 kinds of quirky researchers who write for you every second, add 15 pieces of lab equipment, and "Go independent" for a permanent +10% per reputation point. Your lab keeps working offline (up to 8 hours at 50% speed). Light humor about academic life; all labs and people are fictional.</p><p><a href="app/">Play in your browser (Web version)</a> ・ App Store / Google Play: coming soon<br><a href="support">Support & contact</a> ・ <a href="privacy">Privacy policy</a> ・ <a href="terms">Terms of use</a></p></div>
+  <div lang="es" class="contact" style="margin-top:12px"><p><strong>Idle Lab: Fábrica de Papers</strong>（Español）<br>Un clicker idle de ciencia: toca "Experimento" para escribir papers, contrata 10 tipos de investigadores extravagantes que escriben cada segundo, añade 15 equipos de laboratorio y "hazte independiente" para un +10 % permanente por punto de reputación. Tu laboratorio sigue trabajando sin conexión (hasta 8 horas al 50 % de velocidad). Humor ligero sobre la vida académica; todos los laboratorios y personas son ficticios.</p><p><a href="app/">Juega en tu navegador (versión web)</a> ・ App Store / Google Play: próximamente<br><a href="support">Soporte y contacto</a> ・ <a href="privacy">Política de privacidad</a> ・ <a href="terms">Términos de uso</a></p></div>
+  <div lang="pt" class="contact" style="margin-top:12px"><p><strong>Idle Lab: Fábrica de Artigos</strong>（Português）<br>Um clicker idle de ciência: toque em "Experimento" para escrever artigos, contrate 10 tipos de pesquisadores divertidos que escrevem a cada segundo, adicione 15 equipamentos de laboratório e "torne-se independente" para ganhar +10% permanente por ponto de reputação. Seu laboratório continua trabalhando offline (até 8 horas a 50% da velocidade). Humor leve sobre a vida acadêmica; todos os laboratórios e pessoas são fictícios.</p><p><a href="app/">Jogue no seu navegador (versão Web)</a> ・ App Store / Google Play: em breve<br><a href="support">Suporte e contato</a> ・ <a href="privacy">Política de privacidade</a> ・ <a href="terms">Termos de uso</a></p></div>
+  <div lang="de" class="contact" style="margin-top:12px"><p><strong>Idle Lab: Paper-Fabrik</strong>（Deutsch）<br>Ein Science-Idle-Klicker: Tippe auf „Experiment“, um Papers zu schreiben, stelle 10 Arten schräger Forschender ein, die jede Sekunde für dich schreiben, ergänze 15 Laborgeräte und „mach dich selbstständig“ für dauerhaft +10 % pro Reputationspunkt. Dein Labor arbeitet auch offline weiter (bis zu 8 Stunden mit 50 % Tempo). Leichter Humor über das Uni-Leben; alle Labore und Personen sind erfunden.</p><p><a href="app/">Im Browser spielen (Webversion)</a> ・ App Store / Google Play: bald verfügbar<br><a href="support">Support & Kontakt</a> ・ <a href="privacy">Datenschutzerklärung</a> ・ <a href="terms">Nutzungsbedingungen</a></p></div>
+  <div lang="ko" class="contact" style="margin-top:12px"><p><strong>방치형 랩: 논문 공장</strong>（한국어）<br>과학 방치형 클리커: "실험"을 탭해 논문을 쓰고, 매초 논문을 쓰는 개성 넘치는 연구원 10종을 고용하고, 연구 설비 15종을 갖춘 뒤 "독립"하면 명성 1점당 영구 +10%! 오프라인에서도 연구실이 계속 일합니다(최대 8시간, 50% 속도). 학계 생활을 가볍게 풀어낸 유머이며 모든 연구실과 인물은 가상입니다.</p><p><a href="app/">브라우저에서 플레이 (웹 버전)</a> ・ App Store / Google Play: 곧 출시<br><a href="support">지원 및 문의</a> ・ <a href="privacy">개인정보 처리방침</a> ・ <a href="terms">이용약관</a></p></div>
+  <div lang="zh-Hant" class="contact" style="margin-top:12px"><p><strong>放置實驗室：論文工廠</strong>（繁體中文）<br>科研放置點擊遊戲：點擊「實驗」撰寫論文，招募 10 種個性十足的研究員每秒自動寫論文，再添購 15 種研究設備，「獨立」後每 1 點名聲永久 +10%。離線時研究室也會繼續運作（最多 8 小時、50% 速度）。輕鬆幽默地描寫學術生活，所有研究室與人物皆為虛構。</p><p><a href="app/">在瀏覽器中遊玩（網頁版）</a> ・ App Store / Google Play：即將推出<br><a href="support">支援與聯絡</a> ・ <a href="privacy">隱私權政策</a> ・ <a href="terms">使用條款</a></p></div>
+  <h2>St.Arkid のほかのアプリ</h2>
+  <div class="others">
+    <a href="../futari-mahjong/">サシ麻雀<span>CPU と 1 対 1 の 2 人麻雀</span></a>
+    <a href="../platelog/">PlateLog<span>撮るだけでカロリーとPFCを推定</span></a>
+    <a href="../ippon-board/">大喜利IPPON!<span>みんなのスマホで大喜利を審査</span></a>
+    <a href="../temoto-crm/">てもとCRM<span>ノーコードで作る、手元の顧客管理</span></a>
+    <a href="../komemi/">コメミ<span>機内でもコメントと一緒に動画を</span></a>
+    <a href="../dopagaki/">歩いてドパガキ<span>歩いた分だけスマホが使えるアプリ制限</span></a>
+    <a href="../mechanic-exam/">整備士3級 合格ドリル<span>三級自動車整備士（総合）の学科対策</span></a>
+    <a href="../ad-alarm/">広告を見ないと止まらない目覚まし<span>動画を1本見るまで鳴り続ける二度寝防止アラーム</span></a>
+    <a href="../shuchu/">集中。<span>気が散るアプリをブロックして集中</span></a>
+    <a href="../kyotecount/">共テカウント<span>共通テストまでの残り日数と勉強法</span></a>
+    <a href="../medical-wordbook/">医療英単語<span>医療系の英単語を効率よく学ぶ</span></a>
+    <a href="../woradi/">WORaDi<span>単語帳 × AI</span></a>
+    <a href="../offline-eigo/">オフライン英語<span>機内でも使える端末内AIの英会話</span></a>
+    <a href="../silent-camera/">板書ノート<span>授業ごとに自動でノート整理・Face ID保護</span></a>
+    <a href="../interval/">インターバル。<span>筋トレ・HIIT・タバタ用タイマー</span></a>
+    <a href="../nemurimix/">ねむりミックス<span>睡眠音を重ねて、やさしく起きる</span></a>
+    <a href="../menkyoGakka/">普通免許 学科ドリル<span>仮免・本免の学科を○×で対策</span></a>
+    <a href="../kikenbutsuOtsu4/">危険物乙4 合格ドリル<span>乙4の3科目155問を演習・模試</span></a>
+    <a href="../kanjiDrill/">漢字ドリル<span>級別4択で毎日練習できる漢字ドリル</span></a>
+    <a href="../fp3Drill/">FP3級 合格ドリル<span>3級FP学科を一問一答と模試で対策</span></a>
+    <a href="../takkenDrill/">宅建 一問一答ドリル<span>○×で覚える宅建士の試験対策</span></a>
+    <a href="../tourokuHanbaisha/">登録販売者 試験ドリル<span>登録販売者試験の対策・模試・復習</span></a>
+    <a href="../carquiz/">クルマ通検定<span>車好きのための7ジャンル318問クイズ</span></a>
+    <a href="../otoate/">イントロQ<span>出だし数秒で当てる早押し音楽クイズ</span></a>
+    <a href="../daihon/">ダイホン<span>台本を読み上げて台詞を覚える</span></a>
+    <a href="../study-dopagaki/">勉強してドパガキ<span>勉強するまでSNSも動画も開けない</span></a>
+    <a href="../wait/">待った。<span>衝動買いを冷却期間で防ぐ</span></a>
+    <a href="../urge-surf/">ひと呼吸。<span>衝動を波のようにやり過ごす</span></a>
+    <a href="../igakuAnki/">医学 暗記ドリル<span>解剖学・生理学の4択一問一答</span></a>
+    <a href="../kangoKokushi/">看護師国試 一問一答ドリル<span>看護師国試を4択の一問一答で</span></a>
+    <a href="../eitangoDrill/">英単語ドリル<span>英単語を4択で覚える。復習つき</span></a>
+    <a href="../todofukenKokki/">都道府県・国旗クイズ<span>県庁所在地・名産・国旗・首都を4択で</span></a>
+    <a href="../kuku-keisan/">九九・計算ドリル<span>小学1〜3年の九九・たし算・ひき算</span></a>
+    <a href="../rekishiGoro/">歴史の年号 語呂合わせ<span>日本史・世界史の年号を語呂で暗記</span></a>
+  </div>
+</main>
+<footer>
+  <a href="../../" class="footer-logo">St<span>.</span>Arkid</a>
+  <nav class="footer-nav" aria-label="フッターナビゲーション">
+    <a href="support">サポート・お問い合わせ</a> <a href="privacy">プライバシーポリシー</a> <a href="terms">利用規約</a>
+    <a href="../">アプリ一覧</a>
+    <a href="../../">トップへ戻る</a>
+  </nav>
+  <div class="footer-copy">© 2026 St.Arkid. All rights reserved.</div>
+</footer>
+</body>
+</html>
